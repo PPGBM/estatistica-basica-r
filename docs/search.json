@@ -18,6 +18,6 @@
     "href": "index.html#conteúdo",
     "title": "Estatística Básica com R",
     "section": "Conteúdo",
-    "text": "Conteúdo\n\nConceitos básicos\nPlanejamento de experimentos\nEstatística descritiva\nIntrodução à visualização de dados"
+    "text": "Conteúdo\n\nRevisão de conceitos básicos\n\nConceitos básicos\n\nCenso, população, amostra, …\n\nPlanejamento de experimentos\nEstatística descritiva\nTestes de hipóteses\n\nPacote R\n\nPacote R vs. Python\nPacote R\n\nIntrodução ao pacote R\nPrincipais comandos\n\nO R como calculadora\nTrabalhando com objetos\nMontando um Data frame\nAbrindo arquivos\n\nEstatística descritiva\n\nMedidas de tendência central\nMedidas de dispersão\n\nTestes de hipótese\nGráficos"
   }
 ]
