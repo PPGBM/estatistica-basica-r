@@ -8,7 +8,23 @@ Esta disciplina apresenta os fundamentos da estatística univariada e introduz o
 
 ## Conteúdo
 
--   Conceitos básicos
--   Planejamento de experimentos
--   Estatística descritiva
--   Introdução à visualização de dados
+-   Revisão de conceitos básicos
+    -   Conceitos básicos
+        -   Censo, população, amostra, ...
+    -   Planejamento de experimentos
+    -   Estatística descritiva
+    -   Testes de hipóteses
+-   Pacote R
+    -   Pacote R vs. Python
+    -   Pacote R
+        -   Introdução ao pacote R
+        -   Principais comandos
+            -   O R como calculadora
+            -   Trabalhando com objetos
+            -   Montando um Data frame
+            -   Abrindo arquivos
+        -   Estatística descritiva
+            -   Medidas de tendência central
+            -   Medidas de dispersão
+        -   Testes de hipótese
+        -   Gráficos
