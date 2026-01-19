@@ -1,0 +1,14 @@
+---
+title: "Estatística Básica com R"
+---
+
+## Objetivo da disciplina
+
+Esta disciplina apresenta os fundamentos da estatística univariada e introduz o uso do **R** como ferramenta de análise de dados científicos.
+
+## Conteúdo
+
+-   Conceitos básicos
+-   Planejamento de experimentos
+-   Estatística descritiva
+-   Introdução à visualização de dados

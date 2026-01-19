@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Estatística Básica com R"
+  navbar:
+    left:
+      - text: Início
+        href: index.qmd
+      - text: Aulas
+        href: aulas/aula01.qmd
+      - text: Exercícios
+        href: exercicios/lista01.qmd
+      - text: Materiais
+        href: materiais.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    lang: pt-BR
