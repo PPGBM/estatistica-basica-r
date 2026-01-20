@@ -14,6 +14,8 @@ website:
         href: exercicios/lista01.qmd
       - text: Materiais
         href: materiais.qmd
+      - text: Envio 
+        href: envio.qmd
 
 format:
   html:

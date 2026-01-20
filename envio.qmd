@@ -1,0 +1,43 @@
+---
+title: "Envio de Exercícios"
+---
+
+## 📤 Envio de exercícios
+
+Utilize o formulário abaixo para enviar os exercícios da disciplina.
+
+### Instruções importantes
+
+-   Envie **apenas arquivos `.R` ou `.qmd`**
+-   O envio é **individual**
+-   Verifique se o código **executa sem erros**
+-   Nomeie o arquivo conforme o padrão indicado na lista\
+    (exemplo: `lista01_202312345_NomeSobrenome.R`)
+
+------------------------------------------------------------------------
+
+<form action="https://FORMULARIO_AQUI" method="POST" enctype="multipart/form-data">
+
+<label><strong>Nome completo</strong></label><br> <input type="text" name="nome" required><br><br>
+
+<label><strong>Matrícula</strong></label><br> <input type="text" name="matricula" required><br><br>
+
+<label><strong>Lista de exercícios</strong></label><br> <select name="lista" required> <option value="">Selecione</option> <option value="lista01">Lista 01</option> <option value="lista02">Lista 02</option> </select><br><br>
+
+<label><strong>Arquivo (.R ou .qmd)</strong></label><br> <input
+    type="file"
+    name="arquivo"
+    accept=".R,.qmd"
+    required
+  ><br><br>
+
+<button type="submit">Enviar exercício</button>
+
+</form>
+
+------------------------------------------------------------------------
+
+### ⚠️ Atenção
+
+Após o envio, **não é possível alterar o arquivo**.\
+Em caso de erro, entre em contato com o professor.
