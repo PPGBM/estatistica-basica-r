@@ -166,13 +166,12 @@ ul.task-list li input[type="checkbox"] {
 <li>Envie <strong>apenas arquivos <code>.R</code> ou <code>.qmd</code></strong></li>
 <li>O envio é <strong>individual</strong></li>
 <li>Verifique se o código <strong>executa sem erros</strong></li>
-<li>Nomeie o arquivo conforme o padrão indicado na lista<br>
-(exemplo: <code>lista01_202312345_NomeSobrenome.R</code>)</li>
+<li>O controle de prazo será feito automaticamente pela data e hora de envio</li>
 </ul>
 <hr>
 <form action="https://FORMULARIO_AQUI" method="POST" enctype="multipart/form-data">
+<p><input type="hidden" name="data_envio" id="data_envio"></p>
 <p><label><strong>Nome completo</strong></label><br> <input type="text" name="nome" required=""><br><br></p>
-<p><label><strong>Matrícula</strong></label><br> <input type="text" name="matricula" required=""><br><br></p>
 <p><label><strong>Lista de exercícios</strong></label><br> <select name="lista" required=""> <option value="">Selecione</option> <option value="lista01">Lista 01</option> <option value="lista02">Lista 02</option><option value="lista03">Lista 03</option><option value="lista04">Lista 04</option><option value="lista05">Lista 05</option> </select><br><br></p>
 <p><label><strong>Arquivo (.R ou .qmd)</strong></label><br> <input type="file" name="arquivo" accept=".R,.qmd" required=""><br><br></p>
 <button type="submit">
@@ -185,6 +184,10 @@ Enviar exercício
 <h3 class="anchored" data-anchor-id="atenção">⚠️ Atenção</h3>
 <p>Após o envio, <strong>não é possível alterar o arquivo</strong>.<br>
 Em caso de erro, entre em contato com o professor.</p>
+<script>
+  const agora = new Date().toISOString();
+  document.getElementById("data_envio").value = agora;
+</script>
 
 
 </section>

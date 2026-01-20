@@ -11,16 +11,15 @@ Utilize o formulário abaixo para enviar os exercícios da disciplina.
 -   Envie **apenas arquivos `.R` ou `.qmd`**
 -   O envio é **individual**
 -   Verifique se o código **executa sem erros**
--   Nomeie o arquivo conforme o padrão indicado na lista\
-    (exemplo: `lista01_202312345_NomeSobrenome.R`)
+-   O controle de prazo será feito automaticamente pela data e hora de envio
 
 ------------------------------------------------------------------------
 
 <form action="https://FORMULARIO_AQUI" method="POST" enctype="multipart/form-data">
 
-<label><strong>Nome completo</strong></label><br> <input type="text" name="nome" required><br><br>
+<input type="hidden" name="data_envio" id="data_envio">
 
-<label><strong>Matrícula</strong></label><br> <input type="text" name="matricula" required><br><br>
+<label><strong>Nome completo</strong></label><br> <input type="text" name="nome" required><br><br>
 
 <label><strong>Lista de exercícios</strong></label><br> <select name="lista" required> <option value="">Selecione</option> <option value="lista01">Lista 01</option> <option value="lista02">Lista 02</option><option value="lista03">Lista 03</option><option value="lista04">Lista 04</option><option value="lista05">Lista 05</option> </select><br><br>
 
@@ -41,3 +40,10 @@ Utilize o formulário abaixo para enviar os exercícios da disciplina.
 
 Após o envio, **não é possível alterar o arquivo**.\
 Em caso de erro, entre em contato com o professor.
+
+```{=html}
+<script>
+  const agora = new Date().toISOString();
+  document.getElementById("data_envio").value = agora;
+</script>
+```
