@@ -22,7 +22,7 @@ Utilize o formulário abaixo para enviar os exercícios da disciplina.
 
 <label><strong>Matrícula</strong></label><br> <input type="text" name="matricula" required><br><br>
 
-<label><strong>Lista de exercícios</strong></label><br> <select name="lista" required> <option value="">Selecione</option> <option value="lista01">Lista 01</option> <option value="lista02">Lista 02</option> </select><br><br>
+<label><strong>Lista de exercícios</strong></label><br> <select name="lista" required> <option value="">Selecione</option> <option value="lista01">Lista 01</option> <option value="lista02">Lista 02</option><option value="lista03">Lista 03</option><option value="lista04">Lista 04</option><option value="lista05">Lista 05</option> </select><br><br>
 
 <label><strong>Arquivo (.R ou .qmd)</strong></label><br> <input
     type="file"
