@@ -33,5 +33,159 @@
     "title": "Envio de Exercícios",
     "section": "",
     "text": "Utilize o formulário abaixo para enviar os exercícios da disciplina.\n\n\n\nEnvie apenas arquivos .R ou .qmd\nO envio é individual\nVerifique se o código executa sem erros\nO controle de prazo será feito automaticamente pela data e hora de envio\n\n\n\n\nNome completo \nLista de exercícios  Selecione Lista 01 Lista 02Lista 03Lista 04Lista 05 \nArquivo (.R ou .qmd) \n\nEnviar exercício\n\n\n\n\n\n\nApós o envio, não é possível alterar o arquivo.\nEm caso de erro, entre em contato com o professor."
+  },
+  {
+    "objectID": "aulas/slides/Aula R.html#quarto",
+    "href": "aulas/slides/Aula R.html#quarto",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Quarto",
+    "text": "Quarto\nQuarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see https://quarto.org/docs/presentations/."
+  },
+  {
+    "objectID": "aulas/slides/Aula R.html#bullets",
+    "href": "aulas/slides/Aula R.html#bullets",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Bullets",
+    "text": "Bullets\nWhen you click the Render button a document will be generated that includes:\n\nContent authored with markdown\nOutput from executable code"
+  },
+  {
+    "objectID": "aulas/slides/Aula R.html#code",
+    "href": "aulas/slides/Aula R.html#code",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Code",
+    "text": "Code\nWhen you click the Render button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n\n[1] 2"
+  },
+  {
+    "objectID": "aulas/slides/Aula-R.html#quarto",
+    "href": "aulas/slides/Aula-R.html#quarto",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Quarto",
+    "text": "Quarto\nQuarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see https://quarto.org/docs/presentations/."
+  },
+  {
+    "objectID": "aulas/slides/Aula-R.html#bullets",
+    "href": "aulas/slides/Aula-R.html#bullets",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Bullets",
+    "text": "Bullets\nWhen you click the Render button a document will be generated that includes:\n\nContent authored with markdown\nOutput from executable code"
+  },
+  {
+    "objectID": "aulas/slides/Aula-R.html#code",
+    "href": "aulas/slides/Aula-R.html#code",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Code",
+    "text": "Code\nWhen you click the Render button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n\n[1] 2"
+  },
+  {
+    "objectID": "aulas/slides/Aula-R.html#média-e-desvio-padrão",
+    "href": "aulas/slides/Aula-R.html#média-e-desvio-padrão",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Média e desvio padrão",
+    "text": "Média e desvio padrão\n\n\n[1] 5.843333\n\n\n[1] 0.8280661\n\n\n\np-valor = 0.049\nInterpretação depende fortemente do contexto biológico."
+  },
+  {
+    "objectID": "aulas/slides/Aula-R.html#como-ler-os-slides-deste-curso",
+    "href": "aulas/slides/Aula-R.html#como-ler-os-slides-deste-curso",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Como ler os slides deste curso",
+    "text": "Como ler os slides deste curso\n\nCada elemento visual tem um significado específico.\n\nCódigo em R\n\ngetwd()\n\n\nmean(iris$Sepal.Length)\n\n\nsd(iris$Sepal.Length)\n\n\nBlocos de código mostram exatamente o que você deve digitar no RStudio."
+  },
+  {
+    "objectID": "aulas/slides/Aula-R.html#código-em-r",
+    "href": "aulas/slides/Aula-R.html#código-em-r",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Código em R",
+    "text": "Código em R\n\n\n[1] 5.843333\n\n\n\nBlocos de código mostram exatamente o que você deve digitar no RStudio."
+  },
+  {
+    "objectID": "aulas/slides/Aula-R.html#saída-do-r-output",
+    "href": "aulas/slides/Aula-R.html#saída-do-r-output",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Saída do R (output)",
+    "text": "Saída do R (output)\n\n\n[1] 5.843333\n\n\n\nEste bloco mostra o resultado retornado pelo R após a execução do comando."
+  },
+  {
+    "objectID": "aulas/slides/Aula-R.html#resultados-importantes",
+    "href": "aulas/slides/Aula-R.html#resultados-importantes",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Resultados importantes",
+    "text": "Resultados importantes\n\nValores estatísticos relevantes aparecem destacados neste formato."
+  },
+  {
+    "objectID": "aulas/slides/Aula-R.html#pontos-críticos-cuidados",
+    "href": "aulas/slides/Aula-R.html#pontos-críticos-cuidados",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Pontos críticos / cuidados",
+    "text": "Pontos críticos / cuidados\n\nResultados estatisticamente significativos devem ser interpretados no contexto biológico ou experimental."
+  },
+  {
+    "objectID": "aulas/slides/Aula-R.html#comentários-do-professor",
+    "href": "aulas/slides/Aula-R.html#comentários-do-professor",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Comentários do professor",
+    "text": "Comentários do professor\n\nObservações, interpretações e dicas aparecem neste formato ao longo do curso."
+  },
+  {
+    "objectID": "aulas/slides/Aula-R.html#em-resumo",
+    "href": "aulas/slides/Aula-R.html#em-resumo",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Em resumo",
+    "text": "Em resumo\n\nCódigo → o que foi feito\n\nSaída → o que o R retornou\n\nDestaque → o que é importante\n\nAlerta → o que exige cuidado\n\nComentário → interpretação estatística"
+  },
+  {
+    "objectID": "aulas/slides/Aula-R.html#retorno-dos-códigos-e-respostas",
+    "href": "aulas/slides/Aula-R.html#retorno-dos-códigos-e-respostas",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Retorno dos códigos e respostas",
+    "text": "Retorno dos códigos e respostas\nSaída do R (output)\n\n\n[1] 5.843333\n\n\n\nEste bloco mostra o resultado retornado pelo R após a execução do comando.\n\nResultados importantes\n\nValores estatísticos relevantes aparecem destacados neste formato.\n\nPontos críticos / cuidados\n\nResultados estatisticamente significativos devem ser interpretados no contexto biológico ou experimental."
+  },
+  {
+    "objectID": "aulas/slides/aula-aps-tipografia.html#como-ler-os-slides-deste-curso",
+    "href": "aulas/slides/aula-aps-tipografia.html#como-ler-os-slides-deste-curso",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Como ler os slides deste curso",
+    "text": "Como ler os slides deste curso\n\nCada elemento visual tem um significado específico.\n\nCódigo em R\n\ngetwd()\n\n\nmean(iris$Sepal.Length)\n\n\nsd(iris$Sepal.Length)\n\n\nBlocos de código mostram exatamente o que você deve digitar no RStudio."
+  },
+  {
+    "objectID": "aulas/slides/aula-aps-tipografia.html#retorno-dos-códigos-e-respostas",
+    "href": "aulas/slides/aula-aps-tipografia.html#retorno-dos-códigos-e-respostas",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Retorno dos códigos e respostas",
+    "text": "Retorno dos códigos e respostas\nSaída do R (output)\n\n\n[1] 5.843333\n\n\n\nEste bloco mostra o resultado retornado pelo R após a execução do comando.\n\nResultados importantes\n\nValores estatísticos relevantes aparecem destacados neste formato.\n\nPontos críticos / cuidados\n\nResultados estatisticamente significativos devem ser interpretados no contexto biológico ou experimental."
+  },
+  {
+    "objectID": "aulas/slides/aula-aps-tipografia.html#comentários-do-professor",
+    "href": "aulas/slides/aula-aps-tipografia.html#comentários-do-professor",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Comentários do professor",
+    "text": "Comentários do professor\n\nObservações, interpretações e dicas aparecem neste formato ao longo do curso."
+  },
+  {
+    "objectID": "aulas/slides/aula-aps-tipografia.html#em-resumo",
+    "href": "aulas/slides/aula-aps-tipografia.html#em-resumo",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Em resumo",
+    "text": "Em resumo\n\nCódigo → o que foi feito\n\nSaída → o que o R retornou\n\nDestaque → o que é importante\n\nAlerta → o que exige cuidado\n\nComentário → interpretação estatística"
+  },
+  {
+    "objectID": "aulas/aulas.html",
+    "href": "aulas/aulas.html",
+    "title": "Aulas",
+    "section": "",
+    "text": "Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.\n\n\n\n\nApresentação do curso\n\nCOnteúdos programáticos\nTipografia do curso\n\n➡️ Acessar aula\n\n\n\n\n\nConceitos iniciais sobre o R e o RStudio\n\nPrimeiros comandos\n\nR como calculadora\n\n➡️ Acessar aula\n\n\n\n\n\nOperações matemáticas\n\nCriação de objetos\n\nFunções básicas\n\n➡️ Acessar aula"
+  },
+  {
+    "objectID": "aulas/aulas.html#aulas-da-disciplina",
+    "href": "aulas/aulas.html#aulas-da-disciplina",
+    "title": "Aulas",
+    "section": "",
+    "text": "Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.\n\n\n\n\nApresentação do curso\n\nCOnteúdos programáticos\nTipografia do curso\n\n➡️ Acessar aula\n\n\n\n\n\nConceitos iniciais sobre o R e o RStudio\n\nPrimeiros comandos\n\nR como calculadora\n\n➡️ Acessar aula\n\n\n\n\n\nOperações matemáticas\n\nCriação de objetos\n\nFunções básicas\n\n➡️ Acessar aula"
+  },
+  {
+    "objectID": "aulas/aulas.html#acessar-aula",
+    "href": "aulas/aulas.html#acessar-aula",
+    "title": "Aulas",
+    "section": "➡️ Acessar aula",
+    "text": "➡️ Acessar aula\n\nAula 01 – Introdução ao R\n\nConceitos iniciais sobre o R e o RStudio\n\nPrimeiros comandos\n\nR como calculadora\n\n➡️ Acessar aula\n\n\n\nAula 02 – R como calculadora e objetos\n\nOperações matemáticas\n\nCriação de objetos\n\nFunções básicas\n\n➡️ Acessar aula"
   }
 ]

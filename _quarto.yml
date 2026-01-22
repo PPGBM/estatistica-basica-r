@@ -9,7 +9,7 @@ website:
       - text: Início
         href: index.qmd
       - text: Aulas
-        href: aulas/aula01.qmd
+        href: aulas/aulas.qmd
       - text: Exercícios
         href: exercicios/lista01.qmd
       - text: Materiais

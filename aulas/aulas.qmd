@@ -1,0 +1,39 @@
+---
+title: "Aulas"
+---
+
+## Aulas da disciplina
+
+Abaixo estão listadas as aulas do curso, com acesso direto
+aos conteúdos e aos slides.
+
+
+---
+
+### Apresentação – Introdução ao Curso
+
+- Apresentação do curso  
+- Conteúdos programáticos
+- Tipografia do curso
+
+[➡️ Acessar aula](aula-aps-tipografia.qmd)
+
+---
+
+### Aula 01 – Introdução ao R
+
+- Conceitos iniciais sobre o R e o RStudio  
+- Primeiros comandos  
+- R como calculadora  
+
+[➡️ Acessar aula](aula01.qmd)
+
+---
+
+### Aula 02 – R como calculadora e objetos
+
+- Operações matemáticas  
+- Criação de objetos  
+- Funções básicas  
+
+[➡️ Acessar aula](aula02.qmd)

@@ -1,0 +1,94 @@
+---
+title: "Aula 01 – Introdução ao R"
+author: "Dr. Alexandre Dias Kassuga"
+format:
+  revealjs:
+    theme: simple
+    css: ../../styles/slides.css
+    highlight-style: monokai
+    slide-number: true
+    transition: none
+    center: false
+    margin: 0.08
+---
+
+## Como ler os slides deste curso
+
+::: destaque
+Cada elemento visual tem um significado específico.
+:::
+
+### Código em R
+
+```{r}
+#| echo: true
+#| output: false
+getwd()
+```
+
+
+```{r}
+#| echo: true
+#| output: false
+
+mean(iris$Sepal.Length)
+
+```
+
+
+```{r}
+#| echo: true
+#| output: false
+
+sd(iris$Sepal.Length)
+```
+
+::: comentario
+Blocos de código mostram exatamente o que você deve digitar no RStudio.
+:::
+
+## Retorno dos códigos e respostas
+
+### Saída do R (output)
+
+```{r, echo=FALSE}
+mean(iris$Sepal.Length)
+```
+
+::: comentario
+Este bloco mostra o resultado retornado pelo R após a execução do comando.
+:::
+
+
+
+### Resultados importantes
+
+::: resultado
+Valores estatísticos relevantes aparecem destacados neste formato.
+:::
+
+
+
+### Pontos críticos / cuidados
+
+::: resultado-critico
+Resultados estatisticamente significativos devem ser interpretados no contexto biológico ou experimental.
+:::
+
+------------------------------------------------------------------------
+
+## Comentários do professor
+
+::: comentario
+Observações, interpretações e dicas aparecem neste formato ao longo do curso.
+:::
+
+------------------------------------------------------------------------
+
+## Em resumo
+
+-   Código → o que foi feito\
+-   Saída → o que o R retornou\
+-   Destaque → o que é importante\
+-   Alerta → o que exige cuidado\
+-   Comentário → interpretação estatística

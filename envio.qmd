@@ -30,7 +30,11 @@ Utilize o formulário abaixo para enviar os exercícios da disciplina.
     required
   ><br><br>
 
-<button type="submit">Enviar exercício</button>
+<button type="submit">
+
+Enviar exercício
+
+</button>
 
 </form>
 

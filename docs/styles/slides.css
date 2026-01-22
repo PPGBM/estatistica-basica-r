@@ -1,0 +1,188 @@
+/* =========================
+   BASE
+========================= */
+
+.reveal {
+  background-color: #0f172a;
+  color: #e5e7eb;
+  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 28px;          /* tamanho base ideal para sala */
+  line-height: 1.45;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+
+.reveal h1 {
+  font-size: 56px;
+  color: #60a5fa;
+  font-weight: 600;
+  margin-bottom: 0.4em;
+}
+
+.reveal h2 {
+  font-size: 44px;
+  color: #60a5fa;
+  font-weight: 600;
+  margin-bottom: 0.4em;
+}
+
+.reveal h3 {
+  font-size: 36px;
+  color: #93c5fd;
+  font-weight: 500;
+  margin-bottom: 0.3em;
+}
+
+/* =========================
+   TEXTO E LISTAS
+========================= */
+
+.reveal p {
+  margin-bottom: 0.6em;
+}
+
+.reveal ul,
+.reveal ol {
+  margin-left: 1.2em;
+}
+
+.reveal li {
+  margin-bottom: 0.35em;
+}
+
+/* =========================
+   CÓDIGO
+========================= */
+
+.reveal pre code {
+  font-size: 24px;          /* menor que texto, mas confortável */
+  line-height: 1.4;
+  background: #020617;
+  color: #e5e7eb;
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+/* =========================
+   CLASSES SEMÂNTICAS
+========================= */
+
+.destaque {
+  color: #60a5fa;
+  font-weight: 600;
+}
+
+.alerta {
+  color: #f87171;
+  font-weight: 600;
+}
+
+.comentario {
+  color: #fbbf24;
+  font-style: italic;
+}
+
+/* =========================
+   AJUSTES FINOS
+========================= */
+
+.reveal section {
+  padding-top: 10px;
+}
+
+.reveal strong {
+  font-weight: 600;
+}
+
+/* =========================
+   AJUSTE FINO DO CÓDIGO R
+   (estilo RStudio Tomorrow Night)
+========================= */
+
+.reveal pre code {
+  background-color: #1d1f21; /* fundo típico Tomorrow Night */
+}
+
+/* Comentários */
+.hljs-comment {
+  color: #969896;
+  font-style: italic;
+}
+
+/* Strings */
+.hljs-string {
+  color: #b5bd68;
+}
+
+/* Funções */
+.hljs-title,
+.hljs-function {
+  color: #81a2be;
+}
+
+/* Números */
+.hljs-number {
+  color: #de935f;
+}
+
+/* Operadores */
+.hljs-operator {
+  color: #c5c8c6;
+}
+
+/* =========================
+   OUTPUT DO R (RESULTADOS)
+========================= */
+
+/* Bloco padrão de saída */
+.reveal .cell-output pre {
+  background-color: #020617;   /* ligeiramente diferente do código */
+  color: #e5e7eb;
+  border-left: 4px solid #60a5fa;
+  padding: 12px 16px;
+  margin-top: 0.6em;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+/* Saída numérica importante */
+.resultado {
+  background-color: #020617;
+  border-left: 4px solid #fbbf24;
+  padding: 12px 16px;
+  margin-top: 0.6em;
+  color: #e5e7eb;
+  font-size: 22px;
+}
+
+/* Valores que merecem atenção */
+.valor {
+  color: #fbbf24;
+  font-weight: 600;
+}
+
+/* Resultados críticos */
+.resultado-critico {
+  background-color: #020617;
+  border-left: 4px solid #f87171;
+  padding: 12px 16px;
+  margin-top: 0.6em;
+  color: #e5e7eb;
+  font-size: 22px;
+}
+
+/* =========================
+   NUMERAÇÃO DE LINHAS DO CÓDIGO
+========================= */
+
+.hljs-ln-numbers {
+  color: #94a3b8;        /* cinza azulado claro */
+  opacity: 0.9;
+}
+
+.hljs-ln td.hljs-ln-numbers {
+  text-align: right;
+  padding-right: 12px;
+}

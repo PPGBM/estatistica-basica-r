@@ -4,5 +4,20 @@
   },
   "envio.qmd": {
     "envio.html": "a1cf35c1"
+  },
+  "aulas/slides/aula01.qmd": {
+    "aula01.html": "7b314d88"
+  },
+  "aulas/slides/Aula R.qmd": {
+    "Aula R.html": "7f691521"
+  },
+  "aulas/slides/Aula-R.qmd": {
+    "Aula-R.html": "49eaaebf"
+  },
+  "aulas/slides/aula-aps-tipografia.qmd": {
+    "aula-aps-tipografia.html": "96a940f0"
+  },
+  "aulas/aulas.qmd": {
+    "aulas.html": "ea4595f9"
   }
 }

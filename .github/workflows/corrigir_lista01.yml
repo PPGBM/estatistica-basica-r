@@ -25,6 +25,8 @@ jobs:
         run: |
           Rscript scripts/corrigir_lista01.R
 
-      - name: Mostrar resultado no log
-        run: |
-          cat resultados/resultado_lista01.csv
+      - name: Salvar resultados como artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: resultado-lista01
+          path: resultados/resultado_lista01.csv
