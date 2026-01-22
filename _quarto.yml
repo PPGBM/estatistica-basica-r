@@ -11,7 +11,7 @@ website:
       - text: Aulas
         href: aulas/aulas.qmd
       - text: Exercícios
-        href: exercicios/lista01.qmd
+        href: exercicios.qmd
       - text: Materiais
         href: materiais.qmd
       - text: Envio 

@@ -26,7 +26,7 @@ aos conteúdos e aos slides.
 - Primeiros comandos  
 - R como calculadora  
 
-[➡️ Acessar aula](aula01.qmd)
+[➡️ Acessar aula]()
 
 ---
 
@@ -36,4 +36,4 @@ aos conteúdos e aos slides.
 - Criação de objetos  
 - Funções básicas  
 
-[➡️ Acessar aula](aula02.qmd)
+[➡️ Acessar aula]()
