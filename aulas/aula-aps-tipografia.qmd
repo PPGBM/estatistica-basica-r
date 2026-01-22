@@ -9,7 +9,7 @@ format:
     transition: none
     center: false
     margin: 0.08
-    css: styles/slides.css
+    css: slides.css
 execute:
   echo: false
 website:
