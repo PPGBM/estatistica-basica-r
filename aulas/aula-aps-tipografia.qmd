@@ -1,20 +1,6 @@
 ---
 title: "Aula 01 – Introdução ao R"
-author: "Dr. Alexandre Dias Kassuga"
-format:
-  revealjs:
-    theme: simple
-    highlight-style: monokai
-    slide-number: true
-    transition: none
-    center: false
-    margin: 0.08
-    css: slides.css
-execute:
-  echo: false
-website:
-  page-navigation: false
-  search: false
+
 ---
 
 ## Como ler os slides deste curso
