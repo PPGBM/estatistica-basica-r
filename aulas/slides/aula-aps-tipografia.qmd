@@ -4,17 +4,10 @@ author: "Dr. Alexandre Dias Kassuga"
 format:
   revealjs:
     theme: simple
+    css: slides.css
     highlight-style: monokai
     slide-number: true
-    transition: none
-    center: false
-    margin: 0.08
-    css: slides.css
-execute:
-  echo: false
-website:
-  page-navigation: false
-  search: false
+
 ---
 
 ## Como ler os slides deste curso
