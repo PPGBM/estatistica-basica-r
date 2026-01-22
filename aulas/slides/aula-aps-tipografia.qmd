@@ -4,7 +4,7 @@ author: "Dr. Alexandre Dias Kassuga"
 format:
   revealjs:
     theme: simple
-    css: ../../styles/slides.css
+    css: /styles/slides.css
     highlight-style: monokai
     slide-number: true
     transition: none
