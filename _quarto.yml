@@ -22,6 +22,5 @@ website:
 
 format:
   html:
-    theme: cosmo
     toc: true
     lang: pt-BR
