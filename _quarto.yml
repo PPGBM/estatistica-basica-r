@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Estatística Básica com R"
+  site-path: /estatistica-basica-r
   navbar:
     left:
       - text: Início
