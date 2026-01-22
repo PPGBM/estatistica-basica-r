@@ -16,7 +16,7 @@ aos conteúdos e aos slides.
 - Conteúdos programáticos
 - Tipografia do curso
 
-[➡️ Acessar aula](slides/aula-aps-tipografia.qmd)
+[➡️ Acessar aula](/slides/aula-aps-tipografia.html)
 
 ---
 
