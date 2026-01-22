@@ -4,12 +4,17 @@ author: "Dr. Alexandre Dias Kassuga"
 format:
   revealjs:
     theme: simple
-    css: ../../styles/slides.css
     highlight-style: monokai
     slide-number: true
     transition: none
     center: false
     margin: 0.08
+    css: /styles/slides.css
+execute:
+  echo: false
+website:
+  page-navigation: false
+  search: false
 ---
 
 ## Como ler os slides deste curso
@@ -92,3 +97,8 @@ Observações, interpretações e dicas aparecem neste formato ao longo do curso
 -   Destaque → o que é importante\
 -   Alerta → o que exige cuidado\
 -   Comentário → interpretação estatística
+
+
+
+
+
