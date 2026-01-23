@@ -81,14 +81,14 @@
     "href": "aulas/aulas.html",
     "title": "Aulas",
     "section": "",
-    "text": "Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.\n\n\n\n\nApresentação do curso\n\nConteúdos programáticos\nTipografia do curso\n\n➡️ Acessar aula\n\n\n\n\n\nConceitos iniciais sobre o R e o RStudio\n\nPrimeiros comandos\n\nR como calculadora\n\n➡️ Acessar aula\n\n\n\n\n\nOperações matemáticas\n\nCriação de objetos\n\nFunções básicas\n\n➡️ Acessar aula"
+    "text": "Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.\n\n\n\n\nApresentação do curso\n\nConteúdos programáticos\n\nTipografia do curso\n\n➡️ Acessar slides da aula\n\n\n\n\n\nConceitos iniciais sobre o R e o RStudio\n\nPrimeiros comandos\n\nR como calculadora\n\n➡️ Aula em breve\n\n\n\n\n\nOperações matemáticas\n\nCriação de objetos\n\nFunções básicas\n\n➡️ Aula em breve"
   },
   {
     "objectID": "aulas/aulas.html#aulas-da-disciplina",
     "href": "aulas/aulas.html#aulas-da-disciplina",
     "title": "Aulas",
     "section": "",
-    "text": "Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.\n\n\n\n\nApresentação do curso\n\nConteúdos programáticos\nTipografia do curso\n\n➡️ Acessar aula\n\n\n\n\n\nConceitos iniciais sobre o R e o RStudio\n\nPrimeiros comandos\n\nR como calculadora\n\n➡️ Acessar aula\n\n\n\n\n\nOperações matemáticas\n\nCriação de objetos\n\nFunções básicas\n\n➡️ Acessar aula"
+    "text": "Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.\n\n\n\n\nApresentação do curso\n\nConteúdos programáticos\n\nTipografia do curso\n\n➡️ Acessar slides da aula\n\n\n\n\n\nConceitos iniciais sobre o R e o RStudio\n\nPrimeiros comandos\n\nR como calculadora\n\n➡️ Aula em breve\n\n\n\n\n\nOperações matemáticas\n\nCriação de objetos\n\nFunções básicas\n\n➡️ Aula em breve"
   },
   {
     "objectID": "envio.html",
@@ -103,5 +103,19 @@
     "title": "Envio de Exercícios",
     "section": "",
     "text": "Utilize o formulário abaixo para enviar os exercícios da disciplina.\n\n\n\nEnvie apenas arquivos .R ou .qmd\nO envio é individual\nVerifique se o código executa sem erros\nO controle de prazo será feito automaticamente pela data e hora de envio\n\n\n\n\nNome completo \nLista de exercícios  Selecione Lista 01 Lista 02Lista 03Lista 04Lista 05 \nArquivo (.R ou .qmd) \n\nEnviar exercício\n\n\n\n\n\n\nApós o envio, não é possível alterar o arquivo.\nEm caso de erro, entre em contato com o professor."
+  },
+  {
+    "objectID": "aulas/slides/aula-aps-tipografia.html",
+    "href": "aulas/slides/aula-aps-tipografia.html",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "",
+    "text": "Cada elemento visual tem um significado específico.\n\n\n\n\ngetwd()\n\n\nmean(iris$Sepal.Length)\n\n\nsd(iris$Sepal.Length)\n\n\nBlocos de código mostram exatamente o que você deve digitar no RStudio."
+  },
+  {
+    "objectID": "aulas/aula-aps-tipografia.html",
+    "href": "aulas/aula-aps-tipografia.html",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "",
+    "text": "Cada elemento visual tem um significado específico.\n\n\n\n\ngetwd()\n\n\nmean(iris$Sepal.Length)\n\n\nsd(iris$Sepal.Length)\n\n\nBlocos de código mostram exatamente o que você deve digitar no RStudio."
   }
 ]

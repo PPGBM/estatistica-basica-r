@@ -1,5 +1,11 @@
 ---
 title: "Aula 01 – Introdução ao R"
+format:
+  revealjs:
+    theme: simple
+    css: slides.css
+    highlight-style: monokai
+    slide-number: true
 
 ---
 

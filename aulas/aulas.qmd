@@ -1,5 +1,6 @@
 ---
 title: "Aulas"
+format: html
 ---
 
 ## Aulas da disciplina
@@ -7,16 +8,15 @@ title: "Aulas"
 Abaixo estão listadas as aulas do curso, com acesso direto
 aos conteúdos e aos slides.
 
-
 ---
 
 ### Apresentação – Introdução ao Curso
 
 - Apresentação do curso  
-- Conteúdos programáticos
-- Tipografia do curso
+- Conteúdos programáticos  
+- Tipografia do curso  
 
-[➡️ Acessar aula](slides/aula-aps-tipografia.html){target="_blank"}
+[➡️ Acessar slides da aula](slides/aula-aps-tipografia.qmd){target="_blank" rel="noopener"}
 
 ---
 
@@ -26,7 +26,7 @@ aos conteúdos e aos slides.
 - Primeiros comandos  
 - R como calculadora  
 
-[➡️ Acessar aula]()
+➡️ Aula em breve
 
 ---
 
@@ -36,4 +36,4 @@ aos conteúdos e aos slides.
 - Criação de objetos  
 - Funções básicas  
 
-[➡️ Acessar aula]()
+➡️ Aula em breve
