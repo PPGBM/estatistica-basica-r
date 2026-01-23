@@ -1,0 +1,113 @@
+---
+title: "Template – Slides do Curso Estatística Básica com R"
+author: "Dr. Alexandre Dias Kassuga"
+format:
+  revealjs:
+    theme: simple
+    css: slides.css
+    highlight-style: monokai
+    slide-number: true
+---
+
+## Título da aula
+
+::: destaque
+Substitua este texto pelo objetivo central da aula.
+:::
+
+---
+
+## Código em R
+
+```{r}
+#| echo: true
+#| output: false
+# Substitua este exemplo pelo código da aula
+mean(iris$Sepal.Length)
+```
+
+::: comentario
+Blocos de código mostram exatamente o que deve ser digitado no RStudio.
+:::
+
+---
+
+## Saída do R
+
+```{r, echo=FALSE}
+mean(iris$Sepal.Length)
+```
+
+::: comentario
+Este bloco mostra o resultado retornado pelo R após a execução do código.
+:::
+
+---
+
+## Resultado importante
+
+::: resultado
+Use este bloco para destacar valores estatísticos relevantes,
+estimativas centrais ou conclusões numéricas importantes.
+:::
+
+---
+
+## Ponto crítico / cuidado
+
+::: resultado-critico
+Use este bloco para alertar sobre interpretações incorretas,
+limitações do método ou pressupostos estatísticos.
+:::
+
+---
+
+## Atenção – conceito essencial
+
+::: atencao-1
+Use este bloco para conceitos fundamentais que o aluno
+precisa memorizar e reconhecer rapidamente.
+:::
+
+---
+
+## Atenção – erro crítico
+
+::: atencao-2
+Use este bloco para alertas críticos que podem comprometer
+toda a análise estatística.
+:::
+
+---
+
+## Dicas e boas práticas
+
+::: dicas
+Use este bloco para atalhos, boas práticas e sugestões
+baseadas na experiência prática com R.
+:::
+
+---
+
+## Comentários do professor
+
+::: comentario
+Use este bloco para interpretações conceituais,
+contextualizações biológicas ou observações didáticas.
+:::
+
+---
+
+## Em resumo
+
+- Código → o que foi digitado no R  
+- Saída → o que o R retornou  
+- Destaque → ideia central  
+- Resultado → valor estatístico relevante  
+- Resultado crítico → ponto de atenção  
+- Atenção 1 → conceito essencial  
+- Atenção 2 → erro crítico  
+- Dicas → boas práticas  
+- Comentário → interpretação do professor  
+
+ 

@@ -186,3 +186,38 @@
   text-align: right;
   padding-right: 12px;
 }
+
+
+/* =========================
+   BLOCOS DE ATENÇÃO E DICAS
+   ========================= */
+
+/* ATENÇÃO NÍVEL 1 – amarelo (muito importante) */
+.reveal .atencao-1 {
+  background: #facc1580;          /* fundo escuro padrão */
+  color: #fef9c3;               /* texto amarelo claro */
+  border-left: 6px solid #facc15;
+  padding: 16px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* ATENÇÃO NÍVEL 2 – vermelho (crítico) */
+.reveal .atencao-2 {
+  background: #f70d1a80;
+  color: #fee2e2;               /* texto vermelho claro */
+  border-left: 6px solid #f70d1a;
+  padding: 16px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* DICAS – verde (boas práticas / atalhos) */
+.reveal .dicas {
+  background: #22c55e80;
+  color: #dcfce7;               /* verde claro */
+  border-left: 6px solid #22c55e;
+  padding: 16px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+}

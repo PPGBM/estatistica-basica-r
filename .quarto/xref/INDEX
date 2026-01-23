@@ -22,5 +22,11 @@
   },
   "aulas/aula-aps-tipografia.qmd": {
     "aula-aps-tipografia.html": "fc1f6e88"
+  },
+  "aulas/slides/template-slides.qmd": {
+    "template-slides.html": "e15c97d4"
+  },
+  "aulas/slides/dicionario-visual.qmd": {
+    "dicionario-visual.html": "04e411fd"
   }
 }

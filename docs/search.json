@@ -117,5 +117,173 @@
     "title": "Aula 01 – Introdução ao R",
     "section": "",
     "text": "Cada elemento visual tem um significado específico.\n\n\n\n\ngetwd()\n\n\nmean(iris$Sepal.Length)\n\n\nsd(iris$Sepal.Length)\n\n\nBlocos de código mostram exatamente o que você deve digitar no RStudio."
+  },
+  {
+    "objectID": "aulas/slides/template-slides.html#como-ler-os-slides-deste-curso",
+    "href": "aulas/slides/template-slides.html#como-ler-os-slides-deste-curso",
+    "title": "Template – Slides do Curso Estatística Básica com R",
+    "section": "Como ler os slides deste curso",
+    "text": "Como ler os slides deste curso\n\nCada elemento visual tem um significado específico. Este slide funciona como um guia visual do curso."
+  },
+  {
+    "objectID": "aulas/slides/template-slides.html#código-em-r",
+    "href": "aulas/slides/template-slides.html#código-em-r",
+    "title": "Template – Slides do Curso Estatística Básica com R",
+    "section": "Código em R",
+    "text": "Código em R\n\n# Substitua este exemplo pelo código da aula\nmean(iris$Sepal.Length)\n\n\nBlocos de código mostram exatamente o que deve ser digitado no RStudio."
+  },
+  {
+    "objectID": "aulas/slides/template-slides.html#retorno-dos-códigos-e-respostas",
+    "href": "aulas/slides/template-slides.html#retorno-dos-códigos-e-respostas",
+    "title": "Template – Slides do Curso Estatística Básica com R",
+    "section": "Retorno dos códigos e respostas",
+    "text": "Retorno dos códigos e respostas\nSaída do R (output)\n\n\n[1] 5.843333\n\n\n\nEste bloco mostra o resultado retornado pelo R após a execução do comando."
+  },
+  {
+    "objectID": "aulas/slides/template-slides.html#resultados-importantes",
+    "href": "aulas/slides/template-slides.html#resultados-importantes",
+    "title": "Template – Slides do Curso Estatística Básica com R",
+    "section": "Resultados importantes",
+    "text": "Resultados importantes\n\nValores estatísticos relevantes aparecem destacados neste formato."
+  },
+  {
+    "objectID": "aulas/slides/template-slides.html#pontos-críticos-cuidados",
+    "href": "aulas/slides/template-slides.html#pontos-críticos-cuidados",
+    "title": "Template – Slides do Curso Estatística Básica com R",
+    "section": "Pontos críticos / cuidados",
+    "text": "Pontos críticos / cuidados\n\nResultados estatisticamente significativos devem ser interpretados no contexto biológico ou experimental."
+  },
+  {
+    "objectID": "aulas/slides/template-slides.html#comentários-do-professor",
+    "href": "aulas/slides/template-slides.html#comentários-do-professor",
+    "title": "Template – Slides do Curso Estatística Básica com R",
+    "section": "Comentários do professor",
+    "text": "Comentários do professor\n\nUse este bloco para interpretações conceituais, contextualizações biológicas ou observações didáticas."
+  },
+  {
+    "objectID": "aulas/slides/template-slides.html#em-resumo",
+    "href": "aulas/slides/template-slides.html#em-resumo",
+    "title": "Template – Slides do Curso Estatística Básica com R",
+    "section": "Em resumo",
+    "text": "Em resumo\n\nCódigo → o que foi digitado no R\n\nSaída → o que o R retornou\n\nDestaque → ideia central\n\nResultado → valor estatístico relevante\n\nResultado crítico → ponto de atenção\n\nAtenção 1 → conceito essencial\n\nAtenção 2 → erro crítico\n\nDicas → boas práticas\n\nComentário → interpretação do professor"
+  },
+  {
+    "objectID": "aulas/slides/dicionario-visual.html#como-ler-os-slides-deste-curso",
+    "href": "aulas/slides/dicionario-visual.html#como-ler-os-slides-deste-curso",
+    "title": "Dicionário Visual do Curso",
+    "section": "Como ler os slides deste curso",
+    "text": "Como ler os slides deste curso\n\nEste slide apresenta o dicionário visual utilizado em todo o curso. Cada tipo de bloco tem um significado pedagógico específico."
+  },
+  {
+    "objectID": "aulas/slides/dicionario-visual.html#código-em-r",
+    "href": "aulas/slides/dicionario-visual.html#código-em-r",
+    "title": "Dicionário Visual do Curso",
+    "section": "Código em R",
+    "text": "Código em R\n\nmean(iris$Sepal.Length)\n\n\nBlocos de código mostram exatamente o que deve ser digitado no RStudio."
+  },
+  {
+    "objectID": "aulas/slides/dicionario-visual.html#saída-do-r-resultado-do-código",
+    "href": "aulas/slides/dicionario-visual.html#saída-do-r-resultado-do-código",
+    "title": "Dicionário Visual do Curso",
+    "section": "Saída do R (resultado do código)",
+    "text": "Saída do R (resultado do código)\n\n\n[1] 5.843333\n\n\n\nEste bloco mostra o valor retornado pelo R após a execução do comando."
+  },
+  {
+    "objectID": "aulas/slides/dicionario-visual.html#resultados-importantes",
+    "href": "aulas/slides/dicionario-visual.html#resultados-importantes",
+    "title": "Dicionário Visual do Curso",
+    "section": "Resultados importantes",
+    "text": "Resultados importantes\n\nValores estatísticos relevantes, estimativas centrais ou conclusões numéricas aparecem neste formato."
+  },
+  {
+    "objectID": "aulas/slides/dicionario-visual.html#pontos-críticos-cuidados-estatísticos",
+    "href": "aulas/slides/dicionario-visual.html#pontos-críticos-cuidados-estatísticos",
+    "title": "Dicionário Visual do Curso",
+    "section": "Pontos críticos / cuidados estatísticos",
+    "text": "Pontos críticos / cuidados estatísticos\n\nResultados estatisticamente significativos devem ser interpretados no contexto biológico ou experimental."
+  },
+  {
+    "objectID": "aulas/slides/dicionario-visual.html#comentários-do-professor",
+    "href": "aulas/slides/dicionario-visual.html#comentários-do-professor",
+    "title": "Dicionário Visual do Curso",
+    "section": "Comentários do professor",
+    "text": "Comentários do professor\n\nObservações, interpretações conceituais e dicas práticas aparecem neste formato ao longo das aulas."
+  },
+  {
+    "objectID": "aulas/slides/dicionario-visual.html#atenção-conceito-muito-importante",
+    "href": "aulas/slides/dicionario-visual.html#atenção-conceito-muito-importante",
+    "title": "Dicionário Visual do Curso",
+    "section": "Atenção – conceito muito importante",
+    "text": "Atenção – conceito muito importante\n\nEste conceito é fundamental e costuma aparecer com frequência em avaliações e exercícios."
+  },
+  {
+    "objectID": "aulas/slides/dicionario-visual.html#atenção-ponto-crítico",
+    "href": "aulas/slides/dicionario-visual.html#atenção-ponto-crítico",
+    "title": "Dicionário Visual do Curso",
+    "section": "Atenção – ponto crítico",
+    "text": "Atenção – ponto crítico\n\nErros de interpretação neste ponto podem comprometer toda a análise estatística."
+  },
+  {
+    "objectID": "aulas/slides/dicionario-visual.html#dicas-e-boas-práticas",
+    "href": "aulas/slides/dicionario-visual.html#dicas-e-boas-práticas",
+    "title": "Dicionário Visual do Curso",
+    "section": "Dicas e boas práticas",
+    "text": "Dicas e boas práticas\n\nUse funções exploratórias como str(), summary() e head() antes de iniciar qualquer análise estatística."
+  },
+  {
+    "objectID": "aulas/slides/dicionario-visual.html#em-resumo-dicionário-visual",
+    "href": "aulas/slides/dicionario-visual.html#em-resumo-dicionário-visual",
+    "title": "Dicionário Visual do Curso",
+    "section": "Em resumo – dicionário visual",
+    "text": "Em resumo – dicionário visual\n\nCódigo → o que deve ser digitado no R\n\nSaída → o que o R retorna\n\nDestaque → conceito central da aula\n\nResultado → valor estatístico importante\n\nResultado crítico → cuidado na interpretação\n\nComentário → explicação do professor\n\nAtenção 1 → conceito essencial\n\nAtenção 2 → ponto crítico\n\nDicas → boas práticas e atalhos"
+  },
+  {
+    "objectID": "aulas/slides/template-slides.html#título-da-aula",
+    "href": "aulas/slides/template-slides.html#título-da-aula",
+    "title": "Template – Slides do Curso Estatística Básica com R",
+    "section": "Título da aula",
+    "text": "Título da aula\n\nSubstitua este texto pelo objetivo central da aula."
+  },
+  {
+    "objectID": "aulas/slides/template-slides.html#saída-do-r",
+    "href": "aulas/slides/template-slides.html#saída-do-r",
+    "title": "Template – Slides do Curso Estatística Básica com R",
+    "section": "Saída do R",
+    "text": "Saída do R\n\n\n[1] 5.843333\n\n\n\nEste bloco mostra o resultado retornado pelo R após a execução do código."
+  },
+  {
+    "objectID": "aulas/slides/template-slides.html#resultado-importante",
+    "href": "aulas/slides/template-slides.html#resultado-importante",
+    "title": "Template – Slides do Curso Estatística Básica com R",
+    "section": "Resultado importante",
+    "text": "Resultado importante\n\nUse este bloco para destacar valores estatísticos relevantes, estimativas centrais ou conclusões numéricas importantes."
+  },
+  {
+    "objectID": "aulas/slides/template-slides.html#ponto-crítico-cuidado",
+    "href": "aulas/slides/template-slides.html#ponto-crítico-cuidado",
+    "title": "Template – Slides do Curso Estatística Básica com R",
+    "section": "Ponto crítico / cuidado",
+    "text": "Ponto crítico / cuidado\n\nUse este bloco para alertar sobre interpretações incorretas, limitações do método ou pressupostos estatísticos."
+  },
+  {
+    "objectID": "aulas/slides/template-slides.html#atenção-conceito-essencial",
+    "href": "aulas/slides/template-slides.html#atenção-conceito-essencial",
+    "title": "Template – Slides do Curso Estatística Básica com R",
+    "section": "Atenção – conceito essencial",
+    "text": "Atenção – conceito essencial\n\nUse este bloco para conceitos fundamentais que o aluno precisa memorizar e reconhecer rapidamente."
+  },
+  {
+    "objectID": "aulas/slides/template-slides.html#atenção-erro-crítico",
+    "href": "aulas/slides/template-slides.html#atenção-erro-crítico",
+    "title": "Template – Slides do Curso Estatística Básica com R",
+    "section": "Atenção – erro crítico",
+    "text": "Atenção – erro crítico\n\nUse este bloco para alertas críticos que podem comprometer toda a análise estatística."
+  },
+  {
+    "objectID": "aulas/slides/template-slides.html#dicas-e-boas-práticas",
+    "href": "aulas/slides/template-slides.html#dicas-e-boas-práticas",
+    "title": "Template – Slides do Curso Estatística Básica com R",
+    "section": "Dicas e boas práticas",
+    "text": "Dicas e boas práticas\n\nUse este bloco para atalhos, boas práticas e sugestões baseadas na experiência prática com R."
   }
 ]

@@ -1,0 +1,112 @@
+---
+title: "Dicionário Visual do Curso"
+author: "Dr. Alexandre Dias Kassuga"
+format:
+  revealjs:
+    theme: simple
+    css: slides.css
+    highlight-style: monokai
+    slide-number: true
+---
+
+## Como ler os slides deste curso
+
+::: destaque
+Este slide apresenta o **dicionário visual** utilizado em todo o curso.
+Cada tipo de bloco tem um significado pedagógico específico.
+:::
+
+---
+
+## Código em R
+
+```{r}
+#| echo: true
+#| output: false
+mean(iris$Sepal.Length)
+```
+
+::: comentario
+Blocos de código mostram exatamente o que deve ser digitado no RStudio.
+:::
+
+---
+
+## Saída do R (resultado do código)
+
+```{r, echo=FALSE}
+mean(iris$Sepal.Length)
+```
+
+::: comentario
+Este bloco mostra o valor retornado pelo R após a execução do comando.
+:::
+
+---
+
+## Resultados importantes
+
+::: resultado
+Valores estatísticos relevantes, estimativas centrais
+ou conclusões numéricas aparecem neste formato.
+:::
+
+---
+
+## Pontos críticos / cuidados estatísticos
+
+::: resultado-critico
+Resultados estatisticamente significativos devem ser
+interpretados no contexto biológico ou experimental.
+:::
+
+---
+
+## Comentários do professor
+
+::: comentario
+Observações, interpretações conceituais e dicas práticas
+aparecem neste formato ao longo das aulas.
+:::
+
+---
+
+## Atenção – conceito muito importante
+
+::: atencao-1
+Este conceito é fundamental e costuma aparecer com frequência
+em avaliações e exercícios.
+:::
+
+---
+
+## Atenção – ponto crítico
+
+::: atencao-2
+Erros de interpretação neste ponto podem comprometer
+toda a análise estatística.
+:::
+
+---
+
+## Dicas e boas práticas
+
+::: dicas
+Use funções exploratórias como `str()`, `summary()` e `head()`
+antes de iniciar qualquer análise estatística.
+:::
+
+---
+
+## Em resumo – dicionário visual
+
+- **Código** → o que deve ser digitado no R  
+- **Saída** → o que o R retorna  
+- **Destaque** → conceito central da aula  
+- **Resultado** → valor estatístico importante  
+- **Resultado crítico** → cuidado na interpretação  
+- **Comentário** → explicação do professor  
+- **Atenção 1** → conceito essencial  
+- **Atenção 2** → ponto crítico  
+- **Dicas** → boas práticas e atalhos  
+
