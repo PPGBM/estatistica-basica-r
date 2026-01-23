@@ -68,7 +68,7 @@ Valores estatísticos relevantes aparecem destacados neste formato.
 
 ### Pontos críticos / cuidados
 
-::: resultado-critico
+::: important
 Resultados estatisticamente significativos devem ser interpretados no contexto biológico ou experimental.
 :::
 
