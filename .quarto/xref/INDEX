@@ -28,5 +28,11 @@
   },
   "aulas/slides/dicionario-visual.qmd": {
     "dicionario-visual.html": "04e411fd"
+  },
+  "aulas/guia-quarto-site.qmd": {
+    "guia-quarto-site.html": "2d62b82a"
+  },
+  "aulas/guia-quarto-figuras-slides.qmd": {
+    "guia-quarto-figuras-slides.html": "8770e967"
   }
 }

@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.23">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Guia detalhado – Figuras em apresentações Quarto (reveal.js) – Estatística Básica com R</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Estatística Básica com R</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Início</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../aulas/aulas.html"> 
+<span class="menu-text">Aulas</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../exercicios.qmd"> 
+<span class="menu-text">Exercícios</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../materiais.qmd"> 
+<span class="menu-text">Materiais</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../envio.html"> 
+<span class="menu-text">Envio</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#conceito-geral" id="toc-conceito-geral" class="nav-link active" data-scroll-target="#conceito-geral">Conceito geral</a></li>
+  <li><a href="#inserção-básica-de-imagens" id="toc-inserção-básica-de-imagens" class="nav-link" data-scroll-target="#inserção-básica-de-imagens">Inserção básica de imagens</a>
+  <ul class="collapse">
+  <li><a href="#inserir-imagem-simples" id="toc-inserir-imagem-simples" class="nav-link" data-scroll-target="#inserir-imagem-simples">Inserir imagem simples</a></li>
+  <li><a href="#inserir-imagem-com-legenda" id="toc-inserir-imagem-com-legenda" class="nav-link" data-scroll-target="#inserir-imagem-com-legenda">Inserir imagem com legenda</a></li>
+  </ul></li>
+  <li><a href="#controle-de-tamanho-da-imagem" id="toc-controle-de-tamanho-da-imagem" class="nav-link" data-scroll-target="#controle-de-tamanho-da-imagem">Controle de tamanho da imagem</a>
+  <ul class="collapse">
+  <li><a href="#definir-largura-em-porcentagem-recomendado" id="toc-definir-largura-em-porcentagem-recomendado" class="nav-link" data-scroll-target="#definir-largura-em-porcentagem-recomendado">Definir largura em porcentagem (recomendado)</a></li>
+  <li><a href="#definir-largura-em-pixels" id="toc-definir-largura-em-pixels" class="nav-link" data-scroll-target="#definir-largura-em-pixels">Definir largura em pixels</a></li>
+  <li><a href="#definir-altura-uso-com-cautela" id="toc-definir-altura-uso-com-cautela" class="nav-link" data-scroll-target="#definir-altura-uso-com-cautela">Definir altura (uso com cautela)</a></li>
+  <li><a href="#largura-altura-combinadas" id="toc-largura-altura-combinadas" class="nav-link" data-scroll-target="#largura-altura-combinadas">Largura + altura combinadas</a></li>
+  </ul></li>
+  <li><a href="#centralização-de-imagens" id="toc-centralização-de-imagens" class="nav-link" data-scroll-target="#centralização-de-imagens">Centralização de imagens</a>
+  <ul class="collapse">
+  <li><a href="#centralização-simples-padrão-do-reveal.js" id="toc-centralização-simples-padrão-do-reveal.js" class="nav-link" data-scroll-target="#centralização-simples-padrão-do-reveal.js">Centralização simples (padrão do reveal.js)</a></li>
+  <li><a href="#centralização-forçada-com-bloco" id="toc-centralização-forçada-com-bloco" class="nav-link" data-scroll-target="#centralização-forçada-com-bloco">Centralização forçada com bloco</a></li>
+  </ul></li>
+  <li><a href="#alinhamento-horizontal" id="toc-alinhamento-horizontal" class="nav-link" data-scroll-target="#alinhamento-horizontal">Alinhamento horizontal</a>
+  <ul class="collapse">
+  <li><a href="#alinhar-à-esquerda" id="toc-alinhar-à-esquerda" class="nav-link" data-scroll-target="#alinhar-à-esquerda">Alinhar à esquerda</a></li>
+  <li><a href="#alinhar-à-direita" id="toc-alinhar-à-direita" class="nav-link" data-scroll-target="#alinhar-à-direita">Alinhar à direita</a></li>
+  <li><a href="#alinhar-ao-centro-explicitamente" id="toc-alinhar-ao-centro-explicitamente" class="nav-link" data-scroll-target="#alinhar-ao-centro-explicitamente">Alinhar ao centro explicitamente</a></li>
+  </ul></li>
+  <li><a href="#imagem-texto-lado-a-lado-layout-em-colunas" id="toc-imagem-texto-lado-a-lado-layout-em-colunas" class="nav-link" data-scroll-target="#imagem-texto-lado-a-lado-layout-em-colunas">Imagem + texto lado a lado (layout em colunas)</a>
+  <ul class="collapse">
+  <li><a href="#duas-colunas-figura-texto" id="toc-duas-colunas-figura-texto" class="nav-link" data-scroll-target="#duas-colunas-figura-texto">Duas colunas (figura + texto)</a></li>
+  <li><a href="#figura-grande-texto-curto" id="toc-figura-grande-texto-curto" class="nav-link" data-scroll-target="#figura-grande-texto-curto">Figura grande + texto curto</a></li>
+  </ul></li>
+  <li><a href="#múltiplas-imagens-no-mesmo-slide" id="toc-múltiplas-imagens-no-mesmo-slide" class="nav-link" data-scroll-target="#múltiplas-imagens-no-mesmo-slide">Múltiplas imagens no mesmo slide</a>
+  <ul class="collapse">
+  <li><a href="#duas-imagens-lado-a-lado" id="toc-duas-imagens-lado-a-lado" class="nav-link" data-scroll-target="#duas-imagens-lado-a-lado">Duas imagens lado a lado</a></li>
+  <li><a href="#três-imagens-alinhadas" id="toc-três-imagens-alinhadas" class="nav-link" data-scroll-target="#três-imagens-alinhadas">Três imagens alinhadas</a></li>
+  </ul></li>
+  <li><a href="#controle-de-espaçamento" id="toc-controle-de-espaçamento" class="nav-link" data-scroll-target="#controle-de-espaçamento">Controle de espaçamento</a>
+  <ul class="collapse">
+  <li><a href="#reduzir-espaço-acimaabaixo-da-imagem" id="toc-reduzir-espaço-acimaabaixo-da-imagem" class="nav-link" data-scroll-target="#reduzir-espaço-acimaabaixo-da-imagem">Reduzir espaço acima/abaixo da imagem</a></li>
+  </ul></li>
+  <li><a href="#imagem-como-fundo-de-slide" id="toc-imagem-como-fundo-de-slide" class="nav-link" data-scroll-target="#imagem-como-fundo-de-slide">Imagem como fundo de slide</a>
+  <ul class="collapse">
+  <li><a href="#fundo-simples" id="toc-fundo-simples" class="nav-link" data-scroll-target="#fundo-simples">Fundo simples</a></li>
+  <li><a href="#fundo-com-controle-de-posição" id="toc-fundo-com-controle-de-posição" class="nav-link" data-scroll-target="#fundo-com-controle-de-posição">Fundo com controle de posição</a></li>
+  <li><a href="#fundo-ocupando-todo-o-slide" id="toc-fundo-ocupando-todo-o-slide" class="nav-link" data-scroll-target="#fundo-ocupando-todo-o-slide">Fundo ocupando todo o slide</a></li>
+  </ul></li>
+  <li><a href="#combinar-fundo-conteúdo" id="toc-combinar-fundo-conteúdo" class="nav-link" data-scroll-target="#combinar-fundo-conteúdo">Combinar fundo + conteúdo</a></li>
+  <li><a href="#inserir-figuras-geradas-no-r" id="toc-inserir-figuras-geradas-no-r" class="nav-link" data-scroll-target="#inserir-figuras-geradas-no-r">Inserir figuras geradas no R</a>
+  <ul class="collapse">
+  <li><a href="#gráfico-básico" id="toc-gráfico-básico" class="nav-link" data-scroll-target="#gráfico-básico">Gráfico básico</a></li>
+  </ul></li>
+  <li><a href="#boas-práticas-para-slides" id="toc-boas-práticas-para-slides" class="nav-link" data-scroll-target="#boas-práticas-para-slides">Boas práticas para slides</a></li>
+  <li><a href="#erros-comuns" id="toc-erros-comuns" class="nav-link" data-scroll-target="#erros-comuns">Erros comuns</a></li>
+  <li><a href="#regra-de-ouro" id="toc-regra-de-ouro" class="nav-link" data-scroll-target="#regra-de-ouro">Regra de ouro</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Guia detalhado – Figuras em apresentações Quarto (reveal.js)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="conceito-geral" class="level2">
+<h2 class="anchored" data-anchor-id="conceito-geral">Conceito geral</h2>
+<p>Em apresentações Quarto (reveal.js), <strong>figuras são elementos centrais</strong>. O controle correto de <strong>tamanho, posição e alinhamento</strong> evita slides poluídos e melhora drasticamente a leitura em projetores.</p>
+<hr>
+</section>
+<section id="inserção-básica-de-imagens" class="level2">
+<h2 class="anchored" data-anchor-id="inserção-básica-de-imagens">Inserção básica de imagens</h2>
+<section id="inserir-imagem-simples" class="level3">
+<h3 class="anchored" data-anchor-id="inserir-imagem-simples">Inserir imagem simples</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](figuras/exemplo.png)</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>Usa o tamanho original da imagem</li>
+<li>Não recomendado para slides sem controle de escala</li>
+</ul>
+<hr>
+</section>
+<section id="inserir-imagem-com-legenda" class="level3">
+<h3 class="anchored" data-anchor-id="inserir-imagem-com-legenda">Inserir imagem com legenda</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="al">![Legenda da figura](figuras/exemplo.png)</span></span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>A legenda aparece abaixo da imagem</li>
+<li>Recomendado para gráficos, esquemas e mapas</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="controle-de-tamanho-da-imagem" class="level2">
+<h2 class="anchored" data-anchor-id="controle-de-tamanho-da-imagem">Controle de tamanho da imagem</h2>
+<section id="definir-largura-em-porcentagem-recomendado" class="level3">
+<h3 class="anchored" data-anchor-id="definir-largura-em-porcentagem-recomendado">Definir largura em porcentagem (recomendado)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](figuras/exemplo.png)</span>{width=60%}</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Valores comuns: - <code>40%</code> → figura pequena - <code>60%</code> → figura padrão - <code>80%</code> → figura dominante</p>
+<hr>
+</section>
+<section id="definir-largura-em-pixels" class="level3">
+<h3 class="anchored" data-anchor-id="definir-largura-em-pixels">Definir largura em pixels</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](figuras/exemplo.png)</span>{width=600px}</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Útil quando: - a imagem tem proporção específica - precisa manter tamanho fixo</p>
+<hr>
+</section>
+<section id="definir-altura-uso-com-cautela" class="level3">
+<h3 class="anchored" data-anchor-id="definir-altura-uso-com-cautela">Definir altura (uso com cautela)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](figuras/exemplo.png)</span>{height=400px}</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>⚠️ Pode distorcer a imagem se usada sem largura.</p>
+<hr>
+</section>
+<section id="largura-altura-combinadas" class="level3">
+<h3 class="anchored" data-anchor-id="largura-altura-combinadas">Largura + altura combinadas</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](figuras/exemplo.png)</span>{width=600px height=400px}</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>⚠️ Use apenas se souber a proporção correta.</p>
+<hr>
+</section>
+</section>
+<section id="centralização-de-imagens" class="level2">
+<h2 class="anchored" data-anchor-id="centralização-de-imagens">Centralização de imagens</h2>
+<section id="centralização-simples-padrão-do-reveal.js" class="level3">
+<h3 class="anchored" data-anchor-id="centralização-simples-padrão-do-reveal.js">Centralização simples (padrão do reveal.js)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](figuras/exemplo.png)</span>{width=70%}</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Imagens costumam vir centralizadas automaticamente.</p>
+<hr>
+</section>
+<section id="centralização-forçada-com-bloco" class="level3">
+<h3 class="anchored" data-anchor-id="centralização-forçada-com-bloco">Centralização forçada com bloco</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="al">![](figuras/exemplo.png)</span>{width=70%}</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Use quando: - o alinhamento automático falhar - houver texto antes ou depois</p>
+<hr>
+</section>
+</section>
+<section id="alinhamento-horizontal" class="level2">
+<h2 class="anchored" data-anchor-id="alinhamento-horizontal">Alinhamento horizontal</h2>
+<section id="alinhar-à-esquerda" class="level3">
+<h3 class="anchored" data-anchor-id="alinhar-à-esquerda">Alinhar à esquerda</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](figuras/exemplo.png)</span>{width=50% .left}</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="alinhar-à-direita" class="level3">
+<h3 class="anchored" data-anchor-id="alinhar-à-direita">Alinhar à direita</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](figuras/exemplo.png)</span>{width=50% .right}</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="alinhar-ao-centro-explicitamente" class="level3">
+<h3 class="anchored" data-anchor-id="alinhar-ao-centro-explicitamente">Alinhar ao centro explicitamente</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](figuras/exemplo.png)</span>{width=50% .center}</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="imagem-texto-lado-a-lado-layout-em-colunas" class="level2">
+<h2 class="anchored" data-anchor-id="imagem-texto-lado-a-lado-layout-em-colunas">Imagem + texto lado a lado (layout em colunas)</h2>
+<section id="duas-colunas-figura-texto" class="level3">
+<h3 class="anchored" data-anchor-id="duas-colunas-figura-texto">Duas colunas (figura + texto)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%"}</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="al">![](figuras/exemplo.png)</span>{width=100%}</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%"}</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>Texto explicativo da figura.</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="figura-grande-texto-curto" class="level3">
+<h3 class="anchored" data-anchor-id="figura-grande-texto-curto">Figura grande + texto curto</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>::: {.column width="65%"}</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="al">![](figuras/exemplo.png)</span>{width=100%}</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>::: {.column width="35%"}</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ponto 1</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ponto 2</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ponto 3</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="múltiplas-imagens-no-mesmo-slide" class="level2">
+<h2 class="anchored" data-anchor-id="múltiplas-imagens-no-mesmo-slide">Múltiplas imagens no mesmo slide</h2>
+<section id="duas-imagens-lado-a-lado" class="level3">
+<h3 class="anchored" data-anchor-id="duas-imagens-lado-a-lado">Duas imagens lado a lado</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%"}</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="al">![](figuras/img1.png)</span>{width=100%}</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%"}</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="al">![](figuras/img2.png)</span>{width=100%}</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="três-imagens-alinhadas" class="level3">
+<h3 class="anchored" data-anchor-id="três-imagens-alinhadas">Três imagens alinhadas</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>::: {.column width="33%"}</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="al">![](figuras/img1.png)</span>{width=100%}</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>::: {.column width="33%"}</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="al">![](figuras/img2.png)</span>{width=100%}</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>::: {.column width="33%"}</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="al">![](figuras/img3.png)</span>{width=100%}</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="controle-de-espaçamento" class="level2">
+<h2 class="anchored" data-anchor-id="controle-de-espaçamento">Controle de espaçamento</h2>
+<section id="reduzir-espaço-acimaabaixo-da-imagem" class="level3">
+<h3 class="anchored" data-anchor-id="reduzir-espaço-acimaabaixo-da-imagem">Reduzir espaço acima/abaixo da imagem</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](figuras/exemplo.png)</span>{width=60% style="margin-top:-20px; margin-bottom:-10px;"}</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>⚠️ Use ajustes negativos com cuidado.</p>
+<hr>
+</section>
+</section>
+<section id="imagem-como-fundo-de-slide" class="level2">
+<h2 class="anchored" data-anchor-id="imagem-como-fundo-de-slide">Imagem como fundo de slide</h2>
+<section id="fundo-simples" class="level3">
+<h3 class="anchored" data-anchor-id="fundo-simples">Fundo simples</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Título do slide</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>{background-image="figuras/fundo.png"}</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="fundo-com-controle-de-posição" class="level3">
+<h3 class="anchored" data-anchor-id="fundo-com-controle-de-posição">Fundo com controle de posição</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Título</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>{background-image="figuras/fundo.png"</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a> background-size="contain"</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a> background-position="center"}</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="fundo-ocupando-todo-o-slide" class="level3">
+<h3 class="anchored" data-anchor-id="fundo-ocupando-todo-o-slide">Fundo ocupando todo o slide</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## </span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>{background-image="figuras/fundo.png"</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a> background-size="cover"}</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="combinar-fundo-conteúdo" class="level2">
+<h2 class="anchored" data-anchor-id="combinar-fundo-conteúdo">Combinar fundo + conteúdo</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## </span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>{background-image="figuras/fundo.png"</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a> background-size="cover"</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a> background-opacity="0.25"}</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>Texto sobreposto ao fundo.</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="inserir-figuras-geradas-no-r" class="level2">
+<h2 class="anchored" data-anchor-id="inserir-figuras-geradas-no-r">Inserir figuras geradas no R</h2>
+<section id="gráfico-básico" class="level3">
+<h3 class="anchored" data-anchor-id="gráfico-básico">Gráfico básico</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>::: {.cell}</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r .cell-code}</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(iris<span class="sc">$</span>Sepal.Length, iris<span class="sc">$</span>Petal.Length)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="guia-quarto-figuras-slides_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<p>:::</p>
+<pre><code>
+---
+
+### Controlar tamanho do gráfico
+
+```markdown
+
+::: {.cell}
+
+```{.r .cell-code}
+plot(iris$Sepal.Length, iris$Petal.Length)</code></pre>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="guia-quarto-figuras-slides_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+<p>:::</p>
+<pre><code>
+---
+
+### Inserir legenda no gráfico
+
+```markdown
+
+::: {.cell}
+
+```{.r .cell-code}
+plot(
+  iris$Sepal.Length,
+  iris$Petal.Length,
+  main = "Relação entre sépalas e pétalas",
+  xlab = "Comprimento da sépala",
+  ylab = "Comprimento da pétala"
+)</code></pre>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="guia-quarto-figuras-slides_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<p>:::</p>
+<pre><code>
+---
+
+## Referenciar figuras no texto
+
+```markdown
+Como observado na Figura 1, existe uma relação positiva.</code></pre>
+<p>(use legenda para manter contexto)</p>
+<hr>
+</section>
+</section>
+<section id="boas-práticas-para-slides" class="level2">
+<h2 class="anchored" data-anchor-id="boas-práticas-para-slides">Boas práticas para slides</h2>
+<ul>
+<li>Uma figura por slide sempre que possível</li>
+<li>Texto curto ao lado da imagem</li>
+<li>Nunca usar imagens pequenas demais</li>
+<li>Preferir <code>{width=...}</code> em vez de redimensionar a imagem manualmente</li>
+<li>Testar sempre em tela cheia</li>
+</ul>
+<hr>
+</section>
+<section id="erros-comuns" class="level2">
+<h2 class="anchored" data-anchor-id="erros-comuns">Erros comuns</h2>
+<ul>
+<li>Usar imagens enormes sem controle de largura</li>
+<li>Colocar texto demais ao redor da figura</li>
+<li>Não usar colunas quando necessário</li>
+<li>Usar fundo de slide com contraste ruim</li>
+</ul>
+<hr>
+</section>
+<section id="regra-de-ouro" class="level2">
+<h2 class="anchored" data-anchor-id="regra-de-ouro">Regra de ouro</h2>
+<blockquote class="blockquote">
+<p>Se a figura não for compreendida em 5 segundos, o slide está errado.</p>
+</blockquote>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

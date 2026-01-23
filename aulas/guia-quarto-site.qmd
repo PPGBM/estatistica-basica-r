@@ -1,0 +1,250 @@
+---
+title: "Guia rápido – Quarto para páginas do site"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    lang: pt-BR
+---
+
+## Estrutura básica de uma página
+
+```markdown
+# Título da página
+
+Texto introdutório.
+
+## Seção
+
+Conteúdo da seção.
+```
+
+- `#` → título da página  
+- `##` → seção  
+- `###` → subseção  
+
+---
+
+## Inserir imagens
+
+### Imagem simples
+
+```markdown
+![](figuras/exemplo.png)
+```
+
+### Imagem com largura controlada
+
+```markdown
+![](figuras/exemplo.png){width=60%}
+```
+
+### Imagem com legenda
+
+```markdown
+![Legenda da figura](figuras/exemplo.png){width=70%}
+```
+
+---
+
+## Texto e formatação
+
+```markdown
+**negrito**
+
+*itálico*
+
+`código inline`
+```
+
+---
+
+## Listas
+
+### Lista não ordenada
+
+```markdown
+- Item 1
+- Item 2
+- Item 3
+```
+
+### Lista numerada
+
+```markdown
+1. Primeiro
+2. Segundo
+3. Terceiro
+```
+
+---
+
+## Código em R (páginas do site)
+
+### Mostrar código e resultado
+
+```markdown
+```{r}
+summary(iris)
+```
+```
+
+### Mostrar código e esconder resultado
+
+```markdown
+```{r}
+#| echo: true
+#| output: false
+summary(iris)
+```
+```
+
+### Mostrar resultado e esconder código
+
+```markdown
+```{r}
+#| echo: false
+summary(iris)
+```
+```
+
+---
+
+## Controlar mensagens, avisos e erros
+
+```markdown
+```{r}
+#| message: false
+#| warning: false
+#| error: false
+summary(iris)
+```
+```
+
+---
+
+## Inserir tabelas
+
+### Tabela simples (Markdown)
+
+```markdown
+| Variável | Média | SD |
+|---------|------|----|
+| Sepal L | 5.84 | 0.83 |
+```
+
+### Tabela gerada no R
+
+```markdown
+```{r}
+knitr::kable(
+  head(iris),
+  caption = "Primeiras linhas do conjunto iris"
+)
+```
+```
+
+---
+
+## Blocos semânticos (uso no site)
+
+### Comentário
+
+```markdown
+:::
+Comentário explicativo ou observação importante.
+:::
+```
+
+### Resultado importante
+
+```markdown
+:::
+Valor estatístico relevante para a interpretação.
+:::
+```
+
+### Resultado crítico
+
+```markdown
+:::
+Cuidado com a interpretação deste resultado.
+:::
+```
+
+### Atenção – nível 1
+
+```markdown
+:::
+Este ponto é fundamental para o entendimento do conteúdo.
+:::
+```
+
+### Atenção – nível 2
+
+```markdown
+:::
+Erro comum que compromete toda a análise.
+:::
+```
+
+### Dicas
+
+```markdown
+:::
+Boa prática ou atalho útil.
+:::
+```
+
+---
+
+## Inserir equações
+
+### Equação inline
+
+```markdown
+A média é dada por $\bar{x}$.
+```
+
+### Equação em bloco
+
+```markdown
+$$
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+$$
+```
+
+---
+
+## Links
+
+```markdown
+[Texto do link](https://example.com)
+```
+
+---
+
+## Comentários invisíveis (não aparecem na página)
+
+```markdown
+<!-- Comentário interno para o autor -->
+```
+
+---
+
+## Boas práticas para páginas do site
+
+- Usar `format: html`
+- Evitar slides (`revealjs`) em páginas
+- Texto mais explicativo e menos fragmentado
+- Tabelas e figuras sempre com legenda
+- Blocos semânticos para guiar a leitura
+
+---
+
+## Diferença essencial: site × slides
+
+- **Site (HTML)** → leitura contínua, explicação detalhada  
+- **Slides (reveal.js)** → síntese, apoio visual, pouco texto  
+
+Nunca misturar os dois formatos no mesmo arquivo.

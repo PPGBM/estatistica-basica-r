@@ -1,0 +1,352 @@
+---
+title: "Guia detalhado – Figuras em apresentações Quarto (reveal.js)"
+format: html
+
+---
+
+## Conceito geral
+
+Em apresentações Quarto (reveal.js), **figuras são elementos centrais**.
+O controle correto de **tamanho, posição e alinhamento** evita slides poluídos
+e melhora drasticamente a leitura em projetores.
+
+---
+
+## Inserção básica de imagens
+
+### Inserir imagem simples
+
+```markdown
+![](figuras/exemplo.png)
+```
+
+- Usa o tamanho original da imagem
+- Não recomendado para slides sem controle de escala
+
+---
+
+### Inserir imagem com legenda
+
+```markdown
+![Legenda da figura](figuras/exemplo.png)
+```
+
+- A legenda aparece abaixo da imagem
+- Recomendado para gráficos, esquemas e mapas
+
+---
+
+## Controle de tamanho da imagem
+
+### Definir largura em porcentagem (recomendado)
+
+```markdown
+![](figuras/exemplo.png){width=60%}
+```
+
+Valores comuns:
+- `40%` → figura pequena
+- `60%` → figura padrão
+- `80%` → figura dominante
+
+---
+
+### Definir largura em pixels
+
+```markdown
+![](figuras/exemplo.png){width=600px}
+```
+
+Útil quando:
+- a imagem tem proporção específica
+- precisa manter tamanho fixo
+
+---
+
+### Definir altura (uso com cautela)
+
+```markdown
+![](figuras/exemplo.png){height=400px}
+```
+
+⚠️ Pode distorcer a imagem se usada sem largura.
+
+---
+
+### Largura + altura combinadas
+
+```markdown
+![](figuras/exemplo.png){width=600px height=400px}
+```
+
+⚠️ Use apenas se souber a proporção correta.
+
+---
+
+## Centralização de imagens
+
+### Centralização simples (padrão do reveal.js)
+
+```markdown
+![](figuras/exemplo.png){width=70%}
+```
+
+Imagens costumam vir centralizadas automaticamente.
+
+---
+
+### Centralização forçada com bloco
+
+```markdown
+:::
+![](figuras/exemplo.png){width=70%}
+:::
+```
+
+Use quando:
+- o alinhamento automático falhar
+- houver texto antes ou depois
+
+---
+
+## Alinhamento horizontal
+
+### Alinhar à esquerda
+
+```markdown
+![](figuras/exemplo.png){width=50% .left}
+```
+
+---
+
+### Alinhar à direita
+
+```markdown
+![](figuras/exemplo.png){width=50% .right}
+```
+
+---
+
+### Alinhar ao centro explicitamente
+
+```markdown
+![](figuras/exemplo.png){width=50% .center}
+```
+
+---
+
+## Imagem + texto lado a lado (layout em colunas)
+
+### Duas colunas (figura + texto)
+
+```markdown
+:::: {.columns}
+
+::: {.column width="50%"}
+![](figuras/exemplo.png){width=100%}
+:::
+
+::: {.column width="50%"}
+Texto explicativo da figura.
+:::
+
+:::
+```
+
+---
+
+### Figura grande + texto curto
+
+```markdown
+:::: {.columns}
+
+::: {.column width="65%"}
+![](figuras/exemplo.png){width=100%}
+:::
+
+::: {.column width="35%"}
+- Ponto 1
+- Ponto 2
+- Ponto 3
+:::
+
+:::
+```
+
+---
+
+## Múltiplas imagens no mesmo slide
+
+### Duas imagens lado a lado
+
+```markdown
+:::: {.columns}
+
+::: {.column width="50%"}
+![](figuras/img1.png){width=100%}
+:::
+
+::: {.column width="50%"}
+![](figuras/img2.png){width=100%}
+:::
+
+:::
+```
+
+---
+
+### Três imagens alinhadas
+
+```markdown
+:::: {.columns}
+
+::: {.column width="33%"}
+![](figuras/img1.png){width=100%}
+:::
+
+::: {.column width="33%"}
+![](figuras/img2.png){width=100%}
+:::
+
+::: {.column width="33%"}
+![](figuras/img3.png){width=100%}
+:::
+
+:::
+```
+
+---
+
+## Controle de espaçamento
+
+### Reduzir espaço acima/abaixo da imagem
+
+```markdown
+![](figuras/exemplo.png){width=60% style="margin-top:-20px; margin-bottom:-10px;"}
+```
+
+⚠️ Use ajustes negativos com cuidado.
+
+---
+
+## Imagem como fundo de slide
+
+### Fundo simples
+
+```markdown
+## Título do slide
+{background-image="figuras/fundo.png"}
+```
+
+---
+
+### Fundo com controle de posição
+
+```markdown
+## Título
+{background-image="figuras/fundo.png"
+ background-size="contain"
+ background-position="center"}
+```
+
+---
+
+### Fundo ocupando todo o slide
+
+```markdown
+## 
+{background-image="figuras/fundo.png"
+ background-size="cover"}
+```
+
+---
+
+## Combinar fundo + conteúdo
+
+```markdown
+## 
+{background-image="figuras/fundo.png"
+ background-size="cover"
+ background-opacity="0.25"}
+
+:::
+Texto sobreposto ao fundo.
+:::
+```
+
+---
+
+## Inserir figuras geradas no R
+
+### Gráfico básico
+
+```markdown
+```{r}
+plot(iris$Sepal.Length, iris$Petal.Length)
+```
+```
+
+---
+
+### Controlar tamanho do gráfico
+
+```markdown
+```{r}
+#| fig-width: 8
+#| fig-height: 5
+plot(iris$Sepal.Length, iris$Petal.Length)
+```
+```
+
+---
+
+### Inserir legenda no gráfico
+
+```markdown
+```{r}
+plot(
+  iris$Sepal.Length,
+  iris$Petal.Length,
+  main = "Relação entre sépalas e pétalas",
+  xlab = "Comprimento da sépala",
+  ylab = "Comprimento da pétala"
+)
+```
+```
+
+---
+
+## Referenciar figuras no texto
+
+```markdown
+Como observado na Figura 1, existe uma relação positiva.
+```
+
+(use legenda para manter contexto)
+
+---
+
+## Boas práticas para slides
+
+- Uma figura por slide sempre que possível
+- Texto curto ao lado da imagem
+- Nunca usar imagens pequenas demais
+- Preferir `{width=...}` em vez de redimensionar a imagem manualmente
+- Testar sempre em tela cheia
+
+---
+
+## Erros comuns
+
+- Usar imagens enormes sem controle de largura
+- Colocar texto demais ao redor da figura
+- Não usar colunas quando necessário
+- Usar fundo de slide com contraste ruim
+
+---
+
+## Regra de ouro
+
+> Se a figura não for compreendida em 5 segundos,
+> o slide está errado.
+

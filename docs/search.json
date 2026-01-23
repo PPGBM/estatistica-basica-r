@@ -285,5 +285,201 @@
     "title": "Template – Slides do Curso Estatística Básica com R",
     "section": "Dicas e boas práticas",
     "text": "Dicas e boas práticas\n\nUse este bloco para atalhos, boas práticas e sugestões baseadas na experiência prática com R."
+  },
+  {
+    "objectID": "aulas/guia-quarto-site.html",
+    "href": "aulas/guia-quarto-site.html",
+    "title": "Guia rápido – Quarto para páginas do site",
+    "section": "",
+    "text": "# Título da página\n\nTexto introdutório.\n\n## Seção\n\nConteúdo da seção.\n\n# → título da página\n\n## → seção\n\n### → subseção"
+  },
+  {
+    "objectID": "aulas/guia-quarto-site.html#estrutura-básica-de-uma-página",
+    "href": "aulas/guia-quarto-site.html#estrutura-básica-de-uma-página",
+    "title": "Guia rápido – Quarto para páginas do site",
+    "section": "",
+    "text": "# Título da página\n\nTexto introdutório.\n\n## Seção\n\nConteúdo da seção.\n\n# → título da página\n\n## → seção\n\n### → subseção"
+  },
+  {
+    "objectID": "aulas/guia-quarto-site.html#inserir-imagens",
+    "href": "aulas/guia-quarto-site.html#inserir-imagens",
+    "title": "Guia rápido – Quarto para páginas do site",
+    "section": "Inserir imagens",
+    "text": "Inserir imagens\n\nImagem simples\n![](figuras/exemplo.png)\n\n\nImagem com largura controlada\n![](figuras/exemplo.png){width=60%}\n\n\nImagem com legenda\n![Legenda da figura](figuras/exemplo.png){width=70%}"
+  },
+  {
+    "objectID": "aulas/guia-quarto-site.html#texto-e-formatação",
+    "href": "aulas/guia-quarto-site.html#texto-e-formatação",
+    "title": "Guia rápido – Quarto para páginas do site",
+    "section": "Texto e formatação",
+    "text": "Texto e formatação\n**negrito**\n\n*itálico*\n\n`código inline`"
+  },
+  {
+    "objectID": "aulas/guia-quarto-site.html#listas",
+    "href": "aulas/guia-quarto-site.html#listas",
+    "title": "Guia rápido – Quarto para páginas do site",
+    "section": "Listas",
+    "text": "Listas\n\nLista não ordenada\n- Item 1\n- Item 2\n- Item 3\n\n\nLista numerada\n1. Primeiro\n2. Segundo\n3. Terceiro"
+  },
+  {
+    "objectID": "aulas/guia-quarto-site.html#código-em-r-páginas-do-site",
+    "href": "aulas/guia-quarto-site.html#código-em-r-páginas-do-site",
+    "title": "Guia rápido – Quarto para páginas do site",
+    "section": "Código em R (páginas do site)",
+    "text": "Código em R (páginas do site)\n\nMostrar código e resultado\n\n::: {.cell}\n\n```{.r .cell-code}\nsummary(iris)\n\n  Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   \n Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  \n 1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  \n Median :5.800   Median :3.000   Median :4.350   Median :1.300  \n Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199  \n 3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  \n Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  \n       Species  \n setosa    :50  \n versicolor:50  \n virginica :50  \n                \n                \n                \n\n:::\n\n### Mostrar código e esconder resultado\n\n```markdown\n\n::: {.cell}\n\n```{.r .cell-code}\nsummary(iris)\n:::\n\n### Mostrar resultado e esconder código\n\n```markdown\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\nSepal.Length Sepal.Width Petal.Length Petal.Width\nMin. :4.300 Min. :2.000 Min. :1.000 Min. :0.100\n1st Qu.:5.100 1st Qu.:2.800 1st Qu.:1.600 1st Qu.:0.300\nMedian :5.800 Median :3.000 Median :4.350 Median :1.300\nMean :5.843 Mean :3.057 Mean :3.758 Mean :1.199\n3rd Qu.:6.400 3rd Qu.:3.300 3rd Qu.:5.100 3rd Qu.:1.800\nMax. :7.900 Max. :4.400 Max. :6.900 Max. :2.500\nSpecies\nsetosa :50\nversicolor:50\nvirginica :50\n\n\n:::\n:::"
+  },
+  {
+    "objectID": "aulas/guia-quarto-site.html#controlar-mensagens-avisos-e-erros",
+    "href": "aulas/guia-quarto-site.html#controlar-mensagens-avisos-e-erros",
+    "title": "Guia rápido – Quarto para páginas do site",
+    "section": "Controlar mensagens, avisos e erros",
+    "text": "Controlar mensagens, avisos e erros\n\n::: {.cell}\n\n```{.r .cell-code}\nsummary(iris)\n\n  Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   \n Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  \n 1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  \n Median :5.800   Median :3.000   Median :4.350   Median :1.300  \n Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199  \n 3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  \n Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  \n       Species  \n setosa    :50  \n versicolor:50  \n virginica :50  \n                \n                \n                \n\n:::\n\n---\n\n## Inserir tabelas\n\n### Tabela simples (Markdown)\n\n```markdown\n| Variável | Média | SD |\n|---------|------|----|\n| Sepal L | 5.84 | 0.83 |\n\nTabela gerada no R\n\n::: {.cell}\n\n```{.r .cell-code}\nknitr::kable(\n  head(iris),\n  caption = \"Primeiras linhas do conjunto iris\"\n)\n\n\nPrimeiras linhas do conjunto iris\n\n\nSepal.Length\nSepal.Width\nPetal.Length\nPetal.Width\nSpecies\n\n\n\n\n5.1\n3.5\n1.4\n0.2\nsetosa\n\n\n4.9\n3.0\n1.4\n0.2\nsetosa\n\n\n4.7\n3.2\n1.3\n0.2\nsetosa\n\n\n4.6\n3.1\n1.5\n0.2\nsetosa\n\n\n5.0\n3.6\n1.4\n0.2\nsetosa\n\n\n5.4\n3.9\n1.7\n0.4\nsetosa\n\n\n\n\n:::\n\n---\n\n## Blocos semânticos (uso no site)\n\n### Comentário\n\n```markdown\n:::\nComentário explicativo ou observação importante.\n:::\n\n\nResultado importante\n:::\nValor estatístico relevante para a interpretação.\n:::\n\n\nResultado crítico\n:::\nCuidado com a interpretação deste resultado.\n:::\n\n\nAtenção – nível 1\n:::\nEste ponto é fundamental para o entendimento do conteúdo.\n:::\n\n\nAtenção – nível 2\n:::\nErro comum que compromete toda a análise.\n:::\n\n\nDicas\n:::\nBoa prática ou atalho útil.\n:::"
+  },
+  {
+    "objectID": "aulas/guia-quarto-site.html#inserir-equações",
+    "href": "aulas/guia-quarto-site.html#inserir-equações",
+    "title": "Guia rápido – Quarto para páginas do site",
+    "section": "Inserir equações",
+    "text": "Inserir equações\n\nEquação inline\nA média é dada por $\\bar{x}$.\n\n\nEquação em bloco\n$$\n\\bar{x} = \\frac{1}{n} \\sum_{i=1}^{n} x_i\n$$"
+  },
+  {
+    "objectID": "aulas/guia-quarto-site.html#links",
+    "href": "aulas/guia-quarto-site.html#links",
+    "title": "Guia rápido – Quarto para páginas do site",
+    "section": "Links",
+    "text": "Links\n[Texto do link](https://example.com)"
+  },
+  {
+    "objectID": "aulas/guia-quarto-site.html#comentários-invisíveis-não-aparecem-na-página",
+    "href": "aulas/guia-quarto-site.html#comentários-invisíveis-não-aparecem-na-página",
+    "title": "Guia rápido – Quarto para páginas do site",
+    "section": "Comentários invisíveis (não aparecem na página)",
+    "text": "Comentários invisíveis (não aparecem na página)\n&lt;!-- Comentário interno para o autor --&gt;"
+  },
+  {
+    "objectID": "aulas/guia-quarto-site.html#boas-práticas-para-páginas-do-site",
+    "href": "aulas/guia-quarto-site.html#boas-práticas-para-páginas-do-site",
+    "title": "Guia rápido – Quarto para páginas do site",
+    "section": "Boas práticas para páginas do site",
+    "text": "Boas práticas para páginas do site\n\nUsar format: html\nEvitar slides (revealjs) em páginas\nTexto mais explicativo e menos fragmentado\nTabelas e figuras sempre com legenda\nBlocos semânticos para guiar a leitura"
+  },
+  {
+    "objectID": "aulas/guia-quarto-site.html#diferença-essencial-site-slides",
+    "href": "aulas/guia-quarto-site.html#diferença-essencial-site-slides",
+    "title": "Guia rápido – Quarto para páginas do site",
+    "section": "Diferença essencial: site × slides",
+    "text": "Diferença essencial: site × slides\n\nSite (HTML) → leitura contínua, explicação detalhada\n\nSlides (reveal.js) → síntese, apoio visual, pouco texto\n\nNunca misturar os dois formatos no mesmo arquivo."
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-slides.html#conceito-geral",
+    "href": "aulas/guia-quarto-figuras-slides.html#conceito-geral",
+    "title": "Guia detalhado – Figuras em apresentações Quarto (reveal.js)",
+    "section": "",
+    "text": "Em apresentações Quarto (reveal.js), figuras são elementos centrais. O controle correto de tamanho, posição e alinhamento evita slides poluídos e melhora drasticamente a leitura em projetores."
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-slides.html#inserção-básica-de-imagens",
+    "href": "aulas/guia-quarto-figuras-slides.html#inserção-básica-de-imagens",
+    "title": "Guia detalhado – Figuras em apresentações Quarto (reveal.js)",
+    "section": "Inserção básica de imagens",
+    "text": "Inserção básica de imagens\n\nInserir imagem simples\n![](figuras/exemplo.png)\n\nUsa o tamanho original da imagem\nNão recomendado para slides sem controle de escala\n\n\n\n\nInserir imagem com legenda\n![Legenda da figura](figuras/exemplo.png)\n\nA legenda aparece abaixo da imagem\nRecomendado para gráficos, esquemas e mapas"
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-slides.html#controle-de-tamanho-da-imagem",
+    "href": "aulas/guia-quarto-figuras-slides.html#controle-de-tamanho-da-imagem",
+    "title": "Guia detalhado – Figuras em apresentações Quarto (reveal.js)",
+    "section": "Controle de tamanho da imagem",
+    "text": "Controle de tamanho da imagem\n\nDefinir largura em porcentagem (recomendado)\n![](figuras/exemplo.png){width=60%}\nValores comuns: - 40% → figura pequena - 60% → figura padrão - 80% → figura dominante\n\n\n\nDefinir largura em pixels\n![](figuras/exemplo.png){width=600px}\nÚtil quando: - a imagem tem proporção específica - precisa manter tamanho fixo\n\n\n\nDefinir altura (uso com cautela)\n![](figuras/exemplo.png){height=400px}\n⚠️ Pode distorcer a imagem se usada sem largura.\n\n\n\nLargura + altura combinadas\n![](figuras/exemplo.png){width=600px height=400px}\n⚠️ Use apenas se souber a proporção correta."
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-slides.html#centralização-de-imagens",
+    "href": "aulas/guia-quarto-figuras-slides.html#centralização-de-imagens",
+    "title": "Guia detalhado – Figuras em apresentações Quarto (reveal.js)",
+    "section": "Centralização de imagens",
+    "text": "Centralização de imagens\n\nCentralização simples (padrão do reveal.js)\n![](figuras/exemplo.png){width=70%}\nImagens costumam vir centralizadas automaticamente.\n\n\n\nCentralização forçada com bloco\n:::\n![](figuras/exemplo.png){width=70%}\n:::\nUse quando: - o alinhamento automático falhar - houver texto antes ou depois"
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-slides.html#alinhamento-horizontal",
+    "href": "aulas/guia-quarto-figuras-slides.html#alinhamento-horizontal",
+    "title": "Guia detalhado – Figuras em apresentações Quarto (reveal.js)",
+    "section": "Alinhamento horizontal",
+    "text": "Alinhamento horizontal\n\nAlinhar à esquerda\n![](figuras/exemplo.png){width=50% .left}\n\n\n\nAlinhar à direita\n![](figuras/exemplo.png){width=50% .right}\n\n\n\nAlinhar ao centro explicitamente\n![](figuras/exemplo.png){width=50% .center}"
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-slides.html#imagem-texto-lado-a-lado-layout-em-colunas",
+    "href": "aulas/guia-quarto-figuras-slides.html#imagem-texto-lado-a-lado-layout-em-colunas",
+    "title": "Guia detalhado – Figuras em apresentações Quarto (reveal.js)",
+    "section": "Imagem + texto lado a lado (layout em colunas)",
+    "text": "Imagem + texto lado a lado (layout em colunas)\n\nDuas colunas (figura + texto)\n:::: {.columns}\n\n::: {.column width=\"50%\"}\n![](figuras/exemplo.png){width=100%}\n:::\n\n::: {.column width=\"50%\"}\nTexto explicativo da figura.\n:::\n\n:::\n\n\n\nFigura grande + texto curto\n:::: {.columns}\n\n::: {.column width=\"65%\"}\n![](figuras/exemplo.png){width=100%}\n:::\n\n::: {.column width=\"35%\"}\n- Ponto 1\n- Ponto 2\n- Ponto 3\n:::\n\n:::"
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-slides.html#múltiplas-imagens-no-mesmo-slide",
+    "href": "aulas/guia-quarto-figuras-slides.html#múltiplas-imagens-no-mesmo-slide",
+    "title": "Guia detalhado – Figuras em apresentações Quarto (reveal.js)",
+    "section": "Múltiplas imagens no mesmo slide",
+    "text": "Múltiplas imagens no mesmo slide\n\nDuas imagens lado a lado\n:::: {.columns}\n\n::: {.column width=\"50%\"}\n![](figuras/img1.png){width=100%}\n:::\n\n::: {.column width=\"50%\"}\n![](figuras/img2.png){width=100%}\n:::\n\n:::\n\n\n\nTrês imagens alinhadas\n:::: {.columns}\n\n::: {.column width=\"33%\"}\n![](figuras/img1.png){width=100%}\n:::\n\n::: {.column width=\"33%\"}\n![](figuras/img2.png){width=100%}\n:::\n\n::: {.column width=\"33%\"}\n![](figuras/img3.png){width=100%}\n:::\n\n:::"
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-slides.html#controle-de-espaçamento",
+    "href": "aulas/guia-quarto-figuras-slides.html#controle-de-espaçamento",
+    "title": "Guia detalhado – Figuras em apresentações Quarto (reveal.js)",
+    "section": "Controle de espaçamento",
+    "text": "Controle de espaçamento\n\nReduzir espaço acima/abaixo da imagem\n![](figuras/exemplo.png){width=60% style=\"margin-top:-20px; margin-bottom:-10px;\"}\n⚠️ Use ajustes negativos com cuidado."
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-slides.html#imagem-como-fundo-de-slide",
+    "href": "aulas/guia-quarto-figuras-slides.html#imagem-como-fundo-de-slide",
+    "title": "Guia detalhado – Figuras em apresentações Quarto (reveal.js)",
+    "section": "Imagem como fundo de slide",
+    "text": "Imagem como fundo de slide\n\nFundo simples\n## Título do slide\n{background-image=\"figuras/fundo.png\"}\n\n\n\nFundo com controle de posição\n## Título\n{background-image=\"figuras/fundo.png\"\n background-size=\"contain\"\n background-position=\"center\"}\n\n\n\nFundo ocupando todo o slide\n## \n{background-image=\"figuras/fundo.png\"\n background-size=\"cover\"}"
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-slides.html#combinar-fundo-conteúdo",
+    "href": "aulas/guia-quarto-figuras-slides.html#combinar-fundo-conteúdo",
+    "title": "Guia detalhado – Figuras em apresentações Quarto (reveal.js)",
+    "section": "Combinar fundo + conteúdo",
+    "text": "Combinar fundo + conteúdo\n## \n{background-image=\"figuras/fundo.png\"\n background-size=\"cover\"\n background-opacity=\"0.25\"}\n\n:::\nTexto sobreposto ao fundo.\n:::"
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-slides.html#inserir-figuras-geradas-no-r",
+    "href": "aulas/guia-quarto-figuras-slides.html#inserir-figuras-geradas-no-r",
+    "title": "Guia detalhado – Figuras em apresentações Quarto (reveal.js)",
+    "section": "Inserir figuras geradas no R",
+    "text": "Inserir figuras geradas no R\n\nGráfico básico\n\n::: {.cell}\n\n```{.r .cell-code}\nplot(iris$Sepal.Length, iris$Petal.Length)\n\n\n\n\n\n\n\n:::\n\n---\n\n### Controlar tamanho do gráfico\n\n```markdown\n\n::: {.cell}\n\n```{.r .cell-code}\nplot(iris$Sepal.Length, iris$Petal.Length)\n\n\n\n\n\n\n\n:::\n\n---\n\n### Inserir legenda no gráfico\n\n```markdown\n\n::: {.cell}\n\n```{.r .cell-code}\nplot(\n  iris$Sepal.Length,\n  iris$Petal.Length,\n  main = \"Relação entre sépalas e pétalas\",\n  xlab = \"Comprimento da sépala\",\n  ylab = \"Comprimento da pétala\"\n)\n\n\n\n\n\n\n\n:::\n\n---\n\n## Referenciar figuras no texto\n\n```markdown\nComo observado na Figura 1, existe uma relação positiva.\n(use legenda para manter contexto)"
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-slides.html#referenciar-figuras-no-texto",
+    "href": "aulas/guia-quarto-figuras-slides.html#referenciar-figuras-no-texto",
+    "title": "Guia detalhado – Figuras em apresentações Quarto (reveal.js)",
+    "section": "Referenciar figuras no texto",
+    "text": "Referenciar figuras no texto\nComo observado na Figura 1, existe uma relação positiva.\n(use legenda para manter contexto)"
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-slides.html#boas-práticas-para-slides",
+    "href": "aulas/guia-quarto-figuras-slides.html#boas-práticas-para-slides",
+    "title": "Guia detalhado – Figuras em apresentações Quarto (reveal.js)",
+    "section": "Boas práticas para slides",
+    "text": "Boas práticas para slides\n\nUma figura por slide sempre que possível\nTexto curto ao lado da imagem\nNunca usar imagens pequenas demais\nPreferir {width=...} em vez de redimensionar a imagem manualmente\nTestar sempre em tela cheia"
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-slides.html#erros-comuns",
+    "href": "aulas/guia-quarto-figuras-slides.html#erros-comuns",
+    "title": "Guia detalhado – Figuras em apresentações Quarto (reveal.js)",
+    "section": "Erros comuns",
+    "text": "Erros comuns\n\nUsar imagens enormes sem controle de largura\nColocar texto demais ao redor da figura\nNão usar colunas quando necessário\nUsar fundo de slide com contraste ruim"
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-slides.html#regra-de-ouro",
+    "href": "aulas/guia-quarto-figuras-slides.html#regra-de-ouro",
+    "title": "Guia detalhado – Figuras em apresentações Quarto (reveal.js)",
+    "section": "Regra de ouro",
+    "text": "Regra de ouro\n\nSe a figura não for compreendida em 5 segundos, o slide está errado."
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-slides.html",
+    "href": "aulas/guia-quarto-figuras-slides.html",
+    "title": "Guia detalhado – Figuras em apresentações Quarto (reveal.js)",
+    "section": "",
+    "text": "Em apresentações Quarto (reveal.js), figuras são elementos centrais. O controle correto de tamanho, posição e alinhamento evita slides poluídos e melhora drasticamente a leitura em projetores."
   }
 ]
