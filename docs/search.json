@@ -642,5 +642,75 @@
     "title": "Apresentação do Curso",
     "section": "O poder da FoRça",
     "text": "O poder da FoRça"
+  },
+  {
+    "objectID": "aulas/aula-aps-tipografia.html#quem-eu-sou",
+    "href": "aulas/aula-aps-tipografia.html#quem-eu-sou",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Quem eu sou?",
+    "text": "Quem eu sou?\n\nAlexandre Dias Kassuga\n\n\nDoutor em Oceanografia Ambiental - UFES\n\nMestre em Zoologia - UFPR\n\nBiólogo - UFRJ\n\nE-mail: kassuga@gmail.com"
+  },
+  {
+    "objectID": "aulas/aula-aps-tipografia.html#objetivos",
+    "href": "aulas/aula-aps-tipografia.html#objetivos",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Objetivos",
+    "text": "Objetivos\n\n\n\nRevisão de conceitos básicos\n\nConceitos básicos\n\nCenso, população, amostra, …\n\nPlanejamento de experimentos\nEstatística descritiva\nTestes de hipóteses"
+  },
+  {
+    "objectID": "aulas/aula-aps-tipografia.html#objetivos-1",
+    "href": "aulas/aula-aps-tipografia.html#objetivos-1",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Objetivos",
+    "text": "Objetivos\n\n\n\nPacote R\n\nPacote R\n\nIntrodução ao pacote R\nPrincipais comandos\n\nO R como calculadora\nTrabalhando com objetos\nMontando um Data frame\nAbrindo arquivos\n\nEstatística descritiva\n\nMedidas de tendência central\nMedidas de dispersão\n\nTestes de hipótese\nGráficos"
+  },
+  {
+    "objectID": "aulas/aula-aps-tipografia.html#bibliografia-utilizada",
+    "href": "aulas/aula-aps-tipografia.html#bibliografia-utilizada",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Bibliografia utilizada",
+    "text": "Bibliografia utilizada"
+  },
+  {
+    "objectID": "aulas/aula-aps-tipografia.html#fontes-de-informação-na-internet",
+    "href": "aulas/aula-aps-tipografia.html#fontes-de-informação-na-internet",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Fontes de informação na internet",
+    "text": "Fontes de informação na internet"
+  },
+  {
+    "objectID": "aulas/aula-aps-tipografia.html#bibliografia-sugerida",
+    "href": "aulas/aula-aps-tipografia.html#bibliografia-sugerida",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Bibliografia sugerida",
+    "text": "Bibliografia sugerida"
+  },
+  {
+    "objectID": "aulas/aula-aps-tipografia.html#tenha-paciência",
+    "href": "aulas/aula-aps-tipografia.html#tenha-paciência",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Tenha paciência",
+    "text": "Tenha paciência"
+  },
+  {
+    "objectID": "aulas/aula-aps-tipografia.html#ciência-de-dados-e-o-r",
+    "href": "aulas/aula-aps-tipografia.html#ciência-de-dados-e-o-r",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Ciência de dados e o R",
+    "text": "Ciência de dados e o R"
+  },
+  {
+    "objectID": "aulas/aula-aps-tipografia.html#que-a-força-esteja-com-você",
+    "href": "aulas/aula-aps-tipografia.html#que-a-força-esteja-com-você",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "Que a FoRça esteja com você!",
+    "text": "Que a FoRça esteja com você!\n\n\n\nDomine as ferramentas\nCompreenda o que esta fazendo\nTenha paciência Estude!!!\nTorne-se mais podeRoso\n\nMas cuidado com os atalhos!"
+  },
+  {
+    "objectID": "aulas/aula-aps-tipografia.html#o-poder-da-força",
+    "href": "aulas/aula-aps-tipografia.html#o-poder-da-força",
+    "title": "Aula 01 – Introdução ao R",
+    "section": "O poder da FoRça",
+    "text": "O poder da FoRça"
   }
 ]
