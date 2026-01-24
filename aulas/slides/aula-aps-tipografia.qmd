@@ -1,14 +1,102 @@
 ---
-title: "Aula 01 – Introdução ao R"
-author: "Dr. Alexandre Dias Kassuga"
+title: "Apresentação do Curso"
 format:
   revealjs:
     theme: simple
     css: slides.css
     highlight-style: monokai
     slide-number: true
-
 ---
+
+## Quem eu sou?
+
+-   Alexandre Dias Kassuga\
+    -   Doutor em Oceanografia Ambiental - UFES\
+    -   Mestre em Zoologia - UFPR\
+    -   Biólogo - UFRJ\
+    -   E-mail: kassuga\@gmail.com
+
+## Objetivos
+
+::::: columns
+::: {.column width="50%"}
+-   Revisão de conceitos básicos
+
+    -   Conceitos básicos
+
+        -   Censo, população, amostra, ...
+
+    -   Planejamento de experimentos
+
+    -   Estatística descritiva
+
+    -   Testes de hipóteses
+:::
+
+::: {.column width="50%"}
+![](figuras/learn-stat.jpg){width="100%" style="\"margin-top:-10px"}
+:::
+:::::
+
+## Objetivos
+
+::::: columns
+::: {.column width="45%"}
+-   Pacote R
+    -   Pacote R
+        -   Introdução ao pacote R
+        -   Principais comandos
+            -   O R como calculadora
+            -   Trabalhando com objetos
+            -   Montando um Data frame
+            -   Abrindo arquivos
+        -   Estatística descritiva
+            -   Medidas de tendência central
+            -   Medidas de dispersão
+        -   Testes de hipótese
+        -   Gráficos
+:::
+
+::: {.column width="45%"}
+![](figuras/eu-r-mundo.png){width="100%"}
+:::
+:::::
+
+## Bibliografia utilizada
+
+## Fontes de informação na internet
+
+## Bibliografia sugerida
+
+## Tenha paciência
+
+## Ciência de dados e o R
+
+## Que a Fo**R**ça esteja com você!
+
+::::: columns
+::: {.column width="50%"}
+
+-   Domine as ferramentas
+
+-   Compreenda o que esta fazendo
+
+-   Tenha paciência Estude!!!
+
+-   Torne-se mais pode**R**oso
+
+    -   Mas cuidado com os atalhos!
+    
+:::
+
+::: {.column width="45%"}
+![](figuras/rey-e-r-ass.png){width="100%"}
+:::
+:::::
+
+## O poder da Fo**R**ça
+
+![](figuras/juntos-fortes.png){width="100%"}
 
 ## Como ler os slides deste curso
 
@@ -24,7 +112,6 @@ Cada elemento visual tem um significado específico.
 getwd()
 ```
 
-
 ```{r}
 #| echo: true
 #| output: false
@@ -32,7 +119,6 @@ getwd()
 mean(iris$Sepal.Length)
 
 ```
-
 
 ```{r}
 #| echo: true
@@ -57,15 +143,11 @@ mean(iris$Sepal.Length)
 Este bloco mostra o resultado retornado pelo R após a execução do comando.
 :::
 
-
-
 ### Resultados importantes
 
 ::: resultado
 Valores estatísticos relevantes aparecem destacados neste formato.
 :::
-
-
 
 ### Pontos críticos / cuidados
 
@@ -90,5 +172,3 @@ Observações, interpretações e dicas aparecem neste formato ao longo do curso
 -   Destaque → o que é importante\
 -   Alerta → o que exige cuidado\
 -   Comentário → interpretação estatística
-
-

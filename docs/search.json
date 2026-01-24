@@ -23,28 +23,28 @@
   {
     "objectID": "aulas/slides/aula-aps-tipografia.html#como-ler-os-slides-deste-curso",
     "href": "aulas/slides/aula-aps-tipografia.html#como-ler-os-slides-deste-curso",
-    "title": "Aula 01 – Introdução ao R",
+    "title": "Apresentação do Curso",
     "section": "Como ler os slides deste curso",
     "text": "Como ler os slides deste curso\n\nCada elemento visual tem um significado específico.\n\nCódigo em R\n\ngetwd()\n\n\nmean(iris$Sepal.Length)\n\n\nsd(iris$Sepal.Length)\n\n\nBlocos de código mostram exatamente o que você deve digitar no RStudio."
   },
   {
     "objectID": "aulas/slides/aula-aps-tipografia.html#retorno-dos-códigos-e-respostas",
     "href": "aulas/slides/aula-aps-tipografia.html#retorno-dos-códigos-e-respostas",
-    "title": "Aula 01 – Introdução ao R",
+    "title": "Apresentação do Curso",
     "section": "Retorno dos códigos e respostas",
     "text": "Retorno dos códigos e respostas\nSaída do R (output)\n\n\n[1] 5.843333\n\n\n\nEste bloco mostra o resultado retornado pelo R após a execução do comando.\n\nResultados importantes\n\nValores estatísticos relevantes aparecem destacados neste formato.\n\nPontos críticos / cuidados\n\nResultados estatisticamente significativos devem ser interpretados no contexto biológico ou experimental."
   },
   {
     "objectID": "aulas/slides/aula-aps-tipografia.html#comentários-do-professor",
     "href": "aulas/slides/aula-aps-tipografia.html#comentários-do-professor",
-    "title": "Aula 01 – Introdução ao R",
+    "title": "Apresentação do Curso",
     "section": "Comentários do professor",
     "text": "Comentários do professor\n\nObservações, interpretações e dicas aparecem neste formato ao longo do curso."
   },
   {
     "objectID": "aulas/slides/aula-aps-tipografia.html#em-resumo",
     "href": "aulas/slides/aula-aps-tipografia.html#em-resumo",
-    "title": "Aula 01 – Introdução ao R",
+    "title": "Apresentação do Curso",
     "section": "Em resumo",
     "text": "Em resumo\n\nCódigo → o que foi feito\n\nSaída → o que o R retornou\n\nDestaque → o que é importante\n\nAlerta → o que exige cuidado\n\nComentário → interpretação estatística"
   },
@@ -481,5 +481,166 @@
     "title": "Guia detalhado – Figuras em apresentações Quarto (reveal.js)",
     "section": "",
     "text": "Em apresentações Quarto (reveal.js), figuras são elementos centrais. O controle correto de tamanho, posição e alinhamento evita slides poluídos e melhora drasticamente a leitura em projetores."
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-html.html",
+    "href": "aulas/guia-quarto-figuras-html.html",
+    "title": "Guia detalhado – Figuras em páginas Quarto HTML",
+    "section": "",
+    "text": "Em páginas HTML geradas com Quarto, figuras são usadas para: - ilustrar conceitos - apresentar gráficos - documentar resultados - apoiar explicações longas\nDiferente de slides, o foco é leitura confortável e organização vertical."
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-html.html#conceito-geral",
+    "href": "aulas/guia-quarto-figuras-html.html#conceito-geral",
+    "title": "Guia detalhado – Figuras em páginas Quarto HTML",
+    "section": "",
+    "text": "Em páginas HTML geradas com Quarto, figuras são usadas para: - ilustrar conceitos - apresentar gráficos - documentar resultados - apoiar explicações longas\nDiferente de slides, o foco é leitura confortável e organização vertical."
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-html.html#inserção-básica-de-imagens",
+    "href": "aulas/guia-quarto-figuras-html.html#inserção-básica-de-imagens",
+    "title": "Guia detalhado – Figuras em páginas Quarto HTML",
+    "section": "Inserção básica de imagens",
+    "text": "Inserção básica de imagens\n\nImagem simples\n![](figuras/exemplo.png)\n\nUsa o tamanho original da imagem\nNão recomendado sem controle de largura\n\n\n\n\nImagem com legenda (recomendado)\n![Legenda da figura](figuras/exemplo.png)\n\nA legenda aparece abaixo da imagem\nEssencial para páginas didáticas"
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-html.html#controle-de-tamanho",
+    "href": "aulas/guia-quarto-figuras-html.html#controle-de-tamanho",
+    "title": "Guia detalhado – Figuras em páginas Quarto HTML",
+    "section": "Controle de tamanho",
+    "text": "Controle de tamanho\n\nLargura em porcentagem (recomendado)\n![](figuras/exemplo.png){width=60%}\nValores comuns: - 40% → imagem pequena - 60% → padrão - 80% → destaque\n\n\n\nLargura em pixels\n![](figuras/exemplo.png){width=600px}\nÚtil quando: - precisa de tamanho fixo - mantém proporção conhecida\n\n\n\nAltura (uso cuidadoso)\n![](figuras/exemplo.png){height=400px}\n⚠️ Pode distorcer a imagem se usada sozinha.\n\n\n\nLargura + altura\n![](figuras/exemplo.png){width=600px height=400px}\n⚠️ Use apenas quando conhecer a proporção exata."
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-html.html#centralização-e-alinhamento",
+    "href": "aulas/guia-quarto-figuras-html.html#centralização-e-alinhamento",
+    "title": "Guia detalhado – Figuras em páginas Quarto HTML",
+    "section": "Centralização e alinhamento",
+    "text": "Centralização e alinhamento\n\nCentralização padrão\n![](figuras/exemplo.png){width=70%}\n\n\n\nCentralização forçada\n:::\n![](figuras/exemplo.png){width=70%}\n:::\n\n\n\nAlinhar à esquerda\n![](figuras/exemplo.png){width=50% .left}\n\n\n\nAlinhar à direita\n![](figuras/exemplo.png){width=50% .right}"
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-html.html#imagem-texto-lado-a-lado-layout-em-colunas",
+    "href": "aulas/guia-quarto-figuras-html.html#imagem-texto-lado-a-lado-layout-em-colunas",
+    "title": "Guia detalhado – Figuras em páginas Quarto HTML",
+    "section": "Imagem + texto lado a lado (layout em colunas)",
+    "text": "Imagem + texto lado a lado (layout em colunas)\n\nDuas colunas (figura + texto)\n:::: {.columns}\n\n::: {.column width=\"50%\"}\n![](figuras/exemplo.png){width=100%}\n:::\n\n::: {.column width=\"50%\"}\nTexto explicativo da figura.\n:::\n\n:::\n\n\n\nFigura dominante + texto curto\n:::: {.columns}\n\n::: {.column width=\"65%\"}\n![](figuras/exemplo.png){width=100%}\n:::\n\n::: {.column width=\"35%\"}\n- Ponto 1  \n- Ponto 2  \n- Ponto 3  \n:::\n\n:::"
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-html.html#múltiplas-imagens",
+    "href": "aulas/guia-quarto-figuras-html.html#múltiplas-imagens",
+    "title": "Guia detalhado – Figuras em páginas Quarto HTML",
+    "section": "Múltiplas imagens",
+    "text": "Múltiplas imagens\n\nDuas imagens lado a lado\n:::: {.columns}\n\n::: {.column width=\"50%\"}\n![](figuras/img1.png){width=100%}\n:::\n\n::: {.column width=\"50%\"}\n![](figuras/img2.png){width=100%}\n:::\n\n:::\n\n\n\nTrês imagens alinhadas\n:::: {.columns}\n\n::: {.column width=\"33%\"}\n![](figuras/img1.png){width=100%}\n:::\n\n::: {.column width=\"33%\"}\n![](figuras/img2.png){width=100%}\n:::\n\n::: {.column width=\"33%\"}\n![](figuras/img3.png){width=100%}\n:::\n\n:::"
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-html.html#controle-fino-de-espaçamento",
+    "href": "aulas/guia-quarto-figuras-html.html#controle-fino-de-espaçamento",
+    "title": "Guia detalhado – Figuras em páginas Quarto HTML",
+    "section": "Controle fino de espaçamento",
+    "text": "Controle fino de espaçamento\n\nAjustar margens\n![](figuras/exemplo.png){width=60% style=\"margin-top:-10px; margin-bottom:20px;\"}\nUse ajustes negativos com cautela."
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-html.html#inserir-figuras-geradas-no-r",
+    "href": "aulas/guia-quarto-figuras-html.html#inserir-figuras-geradas-no-r",
+    "title": "Guia detalhado – Figuras em páginas Quarto HTML",
+    "section": "Inserir figuras geradas no R",
+    "text": "Inserir figuras geradas no R\n\nGráfico padrão\n\n::: {.cell}\n\n```{.r .cell-code}\nplot(iris$Sepal.Length, iris$Petal.Length)\n\n\n\n\n\n\n\n:::\n\n---\n\n### Controlar tamanho do gráfico\n\n```markdown\n\n::: {.cell}\n\n```{.r .cell-code}\nplot(iris$Sepal.Length, iris$Petal.Length)\n\n\n\n\n\n\n\n:::\n\n---\n\n### Gráfico com título e rótulos\n\n```markdown\n\n::: {.cell}\n\n```{.r .cell-code}\nplot(\n  iris$Sepal.Length,\n  iris$Petal.Length,\n  main = \"Relação entre sépala e pétala\",\n  xlab = \"Comprimento da sépala\",\n  ylab = \"Comprimento da pétala\"\n)\n\n\n\n\n\n\n\n:::\n\n---\n\n## Inserir gráficos como imagens externas\n\n```markdown\n![](figuras/grafico-resultados.png){width=70%}\nÚtil quando: - gráfico foi feito fora do R - imagem veio de artigo ou relatório"
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-html.html#referenciar-figuras-no-texto",
+    "href": "aulas/guia-quarto-figuras-html.html#referenciar-figuras-no-texto",
+    "title": "Guia detalhado – Figuras em páginas Quarto HTML",
+    "section": "Referenciar figuras no texto",
+    "text": "Referenciar figuras no texto\nComo mostrado na Figura 1, observa-se uma tendência crescente.\nUse legenda para manter clareza."
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-html.html#boas-práticas-para-html",
+    "href": "aulas/guia-quarto-figuras-html.html#boas-práticas-para-html",
+    "title": "Guia detalhado – Figuras em páginas Quarto HTML",
+    "section": "Boas práticas para HTML",
+    "text": "Boas práticas para HTML\n\nTexto explicativo antes e depois da figura\nFiguras sempre com legenda\nEvitar imagens muito grandes\nUsar colunas apenas quando necessário\nTestar em telas pequenas"
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-html.html#erros-comuns",
+    "href": "aulas/guia-quarto-figuras-html.html#erros-comuns",
+    "title": "Guia detalhado – Figuras em páginas Quarto HTML",
+    "section": "Erros comuns",
+    "text": "Erros comuns\n\nImagens sem legenda\nImagens enormes quebrando o layout\nMuitas figuras seguidas sem texto\nUso excessivo de colunas"
+  },
+  {
+    "objectID": "aulas/guia-quarto-figuras-html.html#regra-de-ouro-para-páginas",
+    "href": "aulas/guia-quarto-figuras-html.html#regra-de-ouro-para-páginas",
+    "title": "Guia detalhado – Figuras em páginas Quarto HTML",
+    "section": "Regra de ouro para páginas",
+    "text": "Regra de ouro para páginas\n\nA figura deve complementar o texto,\nnunca substituí-lo."
+  },
+  {
+    "objectID": "aulas/slides/aula-aps-tipografia.html#quem-eu-sou",
+    "href": "aulas/slides/aula-aps-tipografia.html#quem-eu-sou",
+    "title": "Apresentação do Curso",
+    "section": "Quem eu sou?",
+    "text": "Quem eu sou?\n\nAlexandre Dias Kassuga\n\n\nDoutor em Oceanografia Ambiental - UFES\n\nMestre em Zoologia - UFPR\n\nBiólogo - UFRJ\n\nE-mail: kassuga@gmail.com"
+  },
+  {
+    "objectID": "aulas/slides/aula-aps-tipografia.html#objetivos",
+    "href": "aulas/slides/aula-aps-tipografia.html#objetivos",
+    "title": "Apresentação do Curso",
+    "section": "Objetivos",
+    "text": "Objetivos\n\n\n\nRevisão de conceitos básicos\n\nConceitos básicos\n\nCenso, população, amostra, …\n\nPlanejamento de experimentos\nEstatística descritiva\nTestes de hipóteses"
+  },
+  {
+    "objectID": "aulas/slides/aula-aps-tipografia.html#objetivos-1",
+    "href": "aulas/slides/aula-aps-tipografia.html#objetivos-1",
+    "title": "Apresentação do Curso",
+    "section": "Objetivos",
+    "text": "Objetivos\n\n\n\nPacote R\n\nPacote R\n\nIntrodução ao pacote R\nPrincipais comandos\n\nO R como calculadora\nTrabalhando com objetos\nMontando um Data frame\nAbrindo arquivos\n\nEstatística descritiva\n\nMedidas de tendência central\nMedidas de dispersão\n\nTestes de hipótese\nGráficos"
+  },
+  {
+    "objectID": "aulas/slides/aula-aps-tipografia.html#bibliografia-utilizada",
+    "href": "aulas/slides/aula-aps-tipografia.html#bibliografia-utilizada",
+    "title": "Apresentação do Curso",
+    "section": "Bibliografia utilizada",
+    "text": "Bibliografia utilizada"
+  },
+  {
+    "objectID": "aulas/slides/aula-aps-tipografia.html#fontes-de-informação-na-internet",
+    "href": "aulas/slides/aula-aps-tipografia.html#fontes-de-informação-na-internet",
+    "title": "Apresentação do Curso",
+    "section": "Fontes de informação na internet",
+    "text": "Fontes de informação na internet"
+  },
+  {
+    "objectID": "aulas/slides/aula-aps-tipografia.html#bibliografia-sugerida",
+    "href": "aulas/slides/aula-aps-tipografia.html#bibliografia-sugerida",
+    "title": "Apresentação do Curso",
+    "section": "Bibliografia sugerida",
+    "text": "Bibliografia sugerida"
+  },
+  {
+    "objectID": "aulas/slides/aula-aps-tipografia.html#tenha-paciência",
+    "href": "aulas/slides/aula-aps-tipografia.html#tenha-paciência",
+    "title": "Apresentação do Curso",
+    "section": "Tenha paciência",
+    "text": "Tenha paciência"
+  },
+  {
+    "objectID": "aulas/slides/aula-aps-tipografia.html#ciência-de-dados-e-o-r",
+    "href": "aulas/slides/aula-aps-tipografia.html#ciência-de-dados-e-o-r",
+    "title": "Apresentação do Curso",
+    "section": "Ciência de dados e o R",
+    "text": "Ciência de dados e o R"
+  },
+  {
+    "objectID": "aulas/slides/aula-aps-tipografia.html#que-a-força-esteja-com-você",
+    "href": "aulas/slides/aula-aps-tipografia.html#que-a-força-esteja-com-você",
+    "title": "Apresentação do Curso",
+    "section": "Que a FoRça esteja com você!",
+    "text": "Que a FoRça esteja com você!\n\n\n\nDomine as ferramentas\nCompreenda o que esta fazendo\nTenha paciência Estude!!!\nTorne-se mais podeRoso\n\nMas cuidado com os atalhos!"
+  },
+  {
+    "objectID": "aulas/slides/aula-aps-tipografia.html#o-poder-da-força",
+    "href": "aulas/slides/aula-aps-tipografia.html#o-poder-da-força",
+    "title": "Apresentação do Curso",
+    "section": "O poder da FoRça",
+    "text": "O poder da FoRça"
   }
 ]

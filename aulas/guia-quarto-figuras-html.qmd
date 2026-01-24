@@ -1,0 +1,308 @@
+---
+title: "Guia detalhado – Figuras em páginas Quarto HTML"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    lang: pt-BR
+---
+
+## Conceito geral
+
+Em páginas HTML geradas com Quarto, figuras são usadas para:
+- ilustrar conceitos
+- apresentar gráficos
+- documentar resultados
+- apoiar explicações longas
+
+Diferente de slides, o foco é **leitura confortável** e **organização vertical**.
+
+---
+
+## Inserção básica de imagens
+
+### Imagem simples
+
+```markdown
+![](figuras/exemplo.png)
+```
+
+- Usa o tamanho original da imagem
+- Não recomendado sem controle de largura
+
+---
+
+### Imagem com legenda (recomendado)
+
+```markdown
+![Legenda da figura](figuras/exemplo.png)
+```
+
+- A legenda aparece abaixo da imagem
+- Essencial para páginas didáticas
+
+---
+
+## Controle de tamanho
+
+### Largura em porcentagem (recomendado)
+
+```markdown
+![](figuras/exemplo.png){width=60%}
+```
+
+Valores comuns:
+- `40%` → imagem pequena
+- `60%` → padrão
+- `80%` → destaque
+
+---
+
+### Largura em pixels
+
+```markdown
+![](figuras/exemplo.png){width=600px}
+```
+
+Útil quando:
+- precisa de tamanho fixo
+- mantém proporção conhecida
+
+---
+
+### Altura (uso cuidadoso)
+
+```markdown
+![](figuras/exemplo.png){height=400px}
+```
+
+⚠️ Pode distorcer a imagem se usada sozinha.
+
+---
+
+### Largura + altura
+
+```markdown
+![](figuras/exemplo.png){width=600px height=400px}
+```
+
+⚠️ Use apenas quando conhecer a proporção exata.
+
+---
+
+## Centralização e alinhamento
+
+### Centralização padrão
+
+```markdown
+![](figuras/exemplo.png){width=70%}
+```
+
+---
+
+### Centralização forçada
+
+```markdown
+:::
+![](figuras/exemplo.png){width=70%}
+:::
+```
+
+---
+
+### Alinhar à esquerda
+
+```markdown
+![](figuras/exemplo.png){width=50% .left}
+```
+
+---
+
+### Alinhar à direita
+
+```markdown
+![](figuras/exemplo.png){width=50% .right}
+```
+
+---
+
+## Imagem + texto lado a lado (layout em colunas)
+
+### Duas colunas (figura + texto)
+
+```markdown
+:::: {.columns}
+
+::: {.column width="50%"}
+![](figuras/exemplo.png){width=100%}
+:::
+
+::: {.column width="50%"}
+Texto explicativo da figura.
+:::
+
+:::
+```
+
+---
+
+### Figura dominante + texto curto
+
+```markdown
+:::: {.columns}
+
+::: {.column width="65%"}
+![](figuras/exemplo.png){width=100%}
+:::
+
+::: {.column width="35%"}
+- Ponto 1  
+- Ponto 2  
+- Ponto 3  
+:::
+
+:::
+```
+
+---
+
+## Múltiplas imagens
+
+### Duas imagens lado a lado
+
+```markdown
+:::: {.columns}
+
+::: {.column width="50%"}
+![](figuras/img1.png){width=100%}
+:::
+
+::: {.column width="50%"}
+![](figuras/img2.png){width=100%}
+:::
+
+:::
+```
+
+---
+
+### Três imagens alinhadas
+
+```markdown
+:::: {.columns}
+
+::: {.column width="33%"}
+![](figuras/img1.png){width=100%}
+:::
+
+::: {.column width="33%"}
+![](figuras/img2.png){width=100%}
+:::
+
+::: {.column width="33%"}
+![](figuras/img3.png){width=100%}
+:::
+
+:::
+```
+
+---
+
+## Controle fino de espaçamento
+
+### Ajustar margens
+
+```markdown
+![](figuras/exemplo.png){width=60% style="margin-top:-10px; margin-bottom:20px;"}
+```
+
+Use ajustes negativos com cautela.
+
+---
+
+## Inserir figuras geradas no R
+
+### Gráfico padrão
+
+```markdown
+```{r}
+plot(iris$Sepal.Length, iris$Petal.Length)
+```
+```
+
+---
+
+### Controlar tamanho do gráfico
+
+```markdown
+```{r}
+#| fig-width: 7
+#| fig-height: 5
+plot(iris$Sepal.Length, iris$Petal.Length)
+```
+```
+
+---
+
+### Gráfico com título e rótulos
+
+```markdown
+```{r}
+plot(
+  iris$Sepal.Length,
+  iris$Petal.Length,
+  main = "Relação entre sépala e pétala",
+  xlab = "Comprimento da sépala",
+  ylab = "Comprimento da pétala"
+)
+```
+```
+
+---
+
+## Inserir gráficos como imagens externas
+
+```markdown
+![](figuras/grafico-resultados.png){width=70%}
+```
+
+Útil quando:
+- gráfico foi feito fora do R
+- imagem veio de artigo ou relatório
+
+---
+
+## Referenciar figuras no texto
+
+```markdown
+Como mostrado na Figura 1, observa-se uma tendência crescente.
+```
+
+Use legenda para manter clareza.
+
+---
+
+## Boas práticas para HTML
+
+- Texto explicativo **antes e depois** da figura
+- Figuras sempre com legenda
+- Evitar imagens muito grandes
+- Usar colunas apenas quando necessário
+- Testar em telas pequenas
+
+---
+
+## Erros comuns
+
+- Imagens sem legenda
+- Imagens enormes quebrando o layout
+- Muitas figuras seguidas sem texto
+- Uso excessivo de colunas
+
+---
+
+## Regra de ouro para páginas
+
+> A figura deve complementar o texto,  
+> nunca substituí-lo.
+

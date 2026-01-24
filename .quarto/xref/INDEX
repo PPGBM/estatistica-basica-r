@@ -34,5 +34,8 @@
   },
   "aulas/guia-quarto-figuras-slides.qmd": {
     "guia-quarto-figuras-slides.html": "8770e967"
+  },
+  "aulas/guia-quarto-figuras-html.qmd": {
+    "guia-quarto-figuras-html.html": "9096b9a5"
   }
 }
