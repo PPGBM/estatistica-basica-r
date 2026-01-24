@@ -221,3 +221,37 @@
   border-radius: 6px;
   font-weight: 500;
 }
+
+/* =========================
+   LISTAS HIERÁRQUICAS
+   ========================= */
+
+/* Nível 1 */
+.reveal ul,
+.reveal ol {
+  font-size: 1em;
+}
+
+/* Nível 2 */
+.reveal ul ul,
+.reveal ol ol,
+.reveal ul ol,
+.reveal ol ul {
+  font-size: 0.9em;
+}
+
+/* Nível 3 */
+.reveal ul ul ul,
+.reveal ol ol ol,
+.reveal ul ul ol,
+.reveal ul ol ul,
+.reveal ol ul ul,
+.reveal ol ol ul {
+  font-size: 0.8em;
+}
+
+/* Nível 4 ou mais */
+.reveal ul ul ul ul,
+.reveal ol ol ol ol {
+  font-size: 0.75em;
+}

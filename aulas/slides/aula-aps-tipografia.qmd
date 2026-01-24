@@ -10,11 +10,30 @@ format:
 
 ## Quem eu sou?
 
+:::: {.columns}
+::: {.column width="50%"}
+ 
 -   Alexandre Dias Kassuga\
     -   Doutor em Oceanografia Ambiental - UFES\
     -   Mestre em Zoologia - UFPR\
     -   Biólogo - UFRJ\
     -   E-mail: kassuga\@gmail.com
+
+\vspace{5mm} 
+
+![](figuras/eu-esquerda.png){width="100%" style="margin-top: 50px;"}
+:::
+
+::: {.column width="50%"}
+![](figuras/eu-direita.png){width="100%"}
+:::
+
+::::
+
+
+    
+    
+
 
 ## Objetivos
 
