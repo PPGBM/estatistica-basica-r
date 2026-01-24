@@ -1,5 +1,5 @@
 ---
-title: "Aula 01 – Introdução ao R"
+title: "Apresentação do Curso"
 format:
   revealjs:
     theme: simple
