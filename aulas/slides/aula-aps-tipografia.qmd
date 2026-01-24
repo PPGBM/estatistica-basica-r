@@ -10,16 +10,15 @@ format:
 
 ## Quem eu sou?
 
-:::: {.columns}
+::::: columns
 ::: {.column width="50%"}
- 
 -   Alexandre Dias Kassuga\
     -   Doutor em Oceanografia Ambiental - UFES\
     -   Mestre em Zoologia - UFPR\
     -   Biólogo - UFRJ\
     -   E-mail: kassuga\@gmail.com
 
-\vspace{5mm} 
+\vspace{5mm}
 
 ![](figuras/eu-esquerda.png){width="100%" style="margin-top: 50px;"}
 :::
@@ -27,13 +26,7 @@ format:
 ::: {.column width="50%"}
 ![](figuras/eu-direita.png){width="100%"}
 :::
-
-::::
-
-
-    
-    
-
+:::::
 
 ## Objetivos
 
@@ -50,6 +43,8 @@ format:
     -   Estatística descritiva
 
     -   Testes de hipóteses
+
+![](figuras/aps-stat.png){width="100%" style="margin-top: 50px;"}
 :::
 
 ::: {.column width="50%"}
@@ -83,19 +78,56 @@ format:
 
 ## Bibliografia utilizada
 
+![](figuras/biblio-utilizada.png){width="100%"}
+
 ## Fontes de informação na internet
+
+### Páginas do Projeto R
+
+::: {style="font-size: 0.8em;"}
+|  |  |
+|------------------------------------|------------------------------------|
+| http://r-project.org | O *home page* do projeto R |
+| http://cran.br.r-project.org | O servidor mirror (espelho) brasileiro (UFPr) |
+| http://r-project.org/mail | Lista mais apropriada para usuários |
+| http://cran.r-project.org/other-docs.html | Documentos de ajuda e tutoriais em varios formatos |
+:::
+
+### Outras Páginas da internet
 
 ## Bibliografia sugerida
 
+![](figuras/biblio-sugerida.png){width="100%"}
+
 ## Tenha paciência
 
+::::: columns
+::: {.column width="50%"}
+\
+\
+\
+*"Muito a aprender você ainda tem"* [Yoda]{style="font-size: 0.6em;"}\
+\
+
+*"Através do erro vocês atingirão a vitória"* [Mestre dos Magos]{style="font-size: 0.6em;"}\
+\
+
+*"WAGRRRHWRRGGAWWWRR."* [Chewbacca]{style="font-size: 0.6em;"}
+:::
+
+::: {.column width="50%"}
+![](figuras/principio-fim.png){width="100%"}
+:::
+:::::
+
 ## Ciência de dados e o R
+
+![](figuras/ciencia-r.png){width="100%"}
 
 ## Que a Fo**R**ça esteja com você!
 
 ::::: columns
 ::: {.column width="50%"}
-
 -   Domine as ferramentas
 
 -   Compreenda o que esta fazendo
@@ -105,7 +137,6 @@ format:
 -   Torne-se mais pode**R**oso
 
     -   Mas cuidado com os atalhos!
-    
 :::
 
 ::: {.column width="45%"}
