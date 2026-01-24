@@ -37,5 +37,14 @@
   },
   "aulas/guia-quarto-figuras-html.qmd": {
     "guia-quarto-figuras-html.html": "9096b9a5"
+  },
+  "aulas/guia-quarto-layout-html.qmd": {
+    "guia-quarto-layout-html.html": "93c62022"
+  },
+  "aulas/guia-quarto-texto-html.qmd": {
+    "guia-quarto-texto-html.html": "f64685d1"
+  },
+  "aulas/guia-quarto-tabelas-html.qmd": {
+    "guia-quarto-tabelas-html.html": "7ee04ada"
   }
 }

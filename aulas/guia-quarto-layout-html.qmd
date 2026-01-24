@@ -1,0 +1,217 @@
+---
+title: "Guia Rápido – Layout em Quarto (HTML)"
+author: "Alexandre Kassuga"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+execute:
+  echo: false
+---
+
+## 🎯 Objetivo do guia
+
+Este guia apresenta **formas práticas e seguras de organizar layout em documentos Quarto (`.qmd`) renderizados em HTML**, com foco em:
+
+- 📐 Organização espacial de texto e figuras  
+- 🧱 Divisão em colunas  
+- 🖼️ Controle de tamanho e alinhamento  
+- 📊 Integração com gráficos em R  
+
+O material foi pensado como **página de referência**, não como slides.
+
+---
+
+## 🧠 Como o Quarto organiza o layout em HTML
+
+Em HTML, o Quarto funciona como uma camada sobre:
+
+- Markdown (estrutura)
+- HTML (controle fino)
+- CSS (estilo)
+
+👉 **Regra central**:  
+Markdown organiza o conteúdo, HTML ajusta o layout.
+
+---
+
+## 🗂️ Organização vertical simples (padrão)
+
+Exemplo de estrutura básica:
+
+    ## Seção
+    Texto introdutório.
+
+    ### Subtítulo
+    Texto complementar.
+
+Use quando:
+- O fluxo é linear
+- A leitura é sequencial
+- Não há necessidade de comparação visual
+
+---
+
+## 🧱 Layout em colunas (recurso mais importante)
+
+### Texto + figura
+
+    ::: {.columns}
+    ::: {.column width="60%"}
+    ### Conceito
+    - Definição
+    - Contexto
+    - Aplicação
+    :::
+
+    ::: {.column width="40%"}
+    ![](https://placehold.co/400x300){width=100%}
+    :::
+    :::
+
+✔️ Funciona em HTML  
+✔️ Responsivo  
+✔️ Sem CSS extra  
+
+---
+
+## 🖼️ Duas figuras lado a lado
+
+    ::: {.columns}
+    ::: {.column width="50%"}
+    ![](https://placehold.co/300x250){width=100%}
+    :::
+
+    ::: {.column width="50%"}
+    ![](https://placehold.co/300x250){width=100%}
+    :::
+    :::
+
+💡 Ideal para comparações visuais.
+
+---
+
+## 📏 Controle de tamanho de imagens
+
+### Método recomendado (Markdown)
+
+    ![](figura.png){width=60%}
+
+Vantagens:
+- Simples
+- Compatível com HTML e PDF
+- Fácil manutenção
+
+---
+
+## 🎯 Controle preciso com HTML
+
+    <img src="figura.png" style="width: 300px;">
+
+Use quando precisar de:
+- Tamanho exato
+- Margens personalizadas
+- Layout mais rígido
+
+---
+
+## 📊 Gráfico em R + interpretação
+
+    ::: {.columns}
+    ::: {.column width="55%"}
+    ```{r}
+    plot(cars)
+    ```
+    :::
+
+    ::: {.column width="45%"}
+    ### Interpretação
+    - Relação positiva
+    - Variância crescente
+    - Exemplo clássico
+    :::
+    :::
+
+📌 Muito útil em:
+- Estatística
+- Métodos quantitativos
+- Relatórios técnicos
+
+---
+
+## 🧠 Caixas de destaque (callouts)
+
+### 📝 Nota
+
+    ::: {.callout-note}
+    Este conceito é fundamental para os próximos tópicos.
+    :::
+
+### ⚠️ Atenção
+
+    ::: {.callout-warning}
+    Suposição frequentemente violada na prática.
+    :::
+
+### 💡 Dica
+
+    ::: {.callout-tip}
+    Use este padrão em todos os relatórios.
+    :::
+
+---
+
+## 🧩 Layout livre com HTML
+
+Use apenas quando Markdown não for suficiente.
+
+    <div style="display: flex; gap: 20px;">
+
+      <div style="width: 60%;">
+        <h3>📐 Teoria</h3>
+        <ul>
+          <li>Definição</li>
+          <li>Hipótese</li>
+        </ul>
+      </div>
+
+      <div style="width: 40%;">
+        <img src="https://placehold.co/300x300" style="width: 100%;">
+      </div>
+
+    </div>
+
+⚠️ Recomendado apenas para usuários intermediários.
+
+---
+
+## 🔴 Erros comuns
+
+❌ Muito texto em uma única seção  
+❌ Imagens sem controle de tamanho  
+❌ Layout diferente em cada página  
+❌ Uso excessivo de HTML  
+
+✔️ Prefira padrões reutilizáveis  
+✔️ Use colunas com consistência  
+
+---
+
+## 🧭 Boas práticas finais
+
+- 🧱 Um layout = uma ideia
+- 👁️ Priorize leitura
+- 🔁 Reutilize estruturas
+- 📘 Pense como material didático
+
+> HTML em Quarto é para organizar o pensamento visual, não para decorar a página.
+
+---
+
+## ▶️ Próximos guias sugeridos
+
+- 🎨 Temas e CSS no Quarto  
+- 📊 Tabelas profissionais em HTML  
+- 🧠 Organização de relatórios longos  
+- 🧪 Templates para disciplinas  

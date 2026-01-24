@@ -84,16 +84,33 @@ format:
 
 ### Páginas do Projeto R
 
-::: {style="font-size: 0.8em;"}
+::: {style="font-size: 0.7em;"}
 |  |  |
 |------------------------------------|------------------------------------|
-| http://r-project.org | O *home page* do projeto R |
-| http://cran.br.r-project.org | O servidor mirror (espelho) brasileiro (UFPr) |
-| http://r-project.org/mail | Lista mais apropriada para usuários |
-| http://cran.r-project.org/other-docs.html | Documentos de ajuda e tutoriais em varios formatos |
+| [http://r-project.org](http://r-project.org) | O *home page* do projeto R |
+| [http://cran.br.r-project.org](http://cran.br.r-project.org) | O servidor mirror (espelho) brasileiro (UFPr) |
+| [http://r-project.org/mail](http://r-project.org/mail) | Lista mais apropriada para usuários |
+| [http://cran.r-project.org/other-docs.html](http://cran.r-project.org/other-docs.html) | Documentos de ajuda e tutoriais em varios formatos |
 :::
 
+\
+
 ### Outras Páginas da internet
+
+::: {style="font-size: 0.7em;"}
+|  |  |
+|------------------------------------|------------------------------------|
+| [http://www.agr.kuleuven.ac.be/vakken/StatisticsByR/index.htm](http://www.agr.kuleuven.ac.be/vakken/StatisticsByR/index.htm) | Introducao a análise de dados usando R |
+| [http://www.math.csi.cuny.edu/Statistics/R/simpleR/index.html](http://www.math.csi.cuny.edu/Statistics/R/simpleR/index.html) | Introducao usando o pacote Simple em R |
+| [http://www.est.ufpr.br/Rtutorial/contents.html](http://www.est.ufpr.br/Rtutorial/contents.html) | Tutorial sobre R em Portugues |
+:::
+\
+
+::: {style="font-size: 0.6em;"}
+
+Colin Robert Beasley, 2004. Bioestatística usando R apostila de exemplos para o biólogo
+
+:::
 
 ## Bibliografia sugerida
 

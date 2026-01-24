@@ -1,0 +1,65 @@
+---
+title: "Guia Rápido – Tabelas em Quarto (HTML)"
+author: "Alexandre Kassuga"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+execute:
+  echo: true
+  warning: false
+---
+
+## 🎯 Objetivo do guia
+
+Este guia apresenta **formas corretas e progressivas de criar tabelas em documentos Quarto (`.qmd`) renderizados em HTML**, cobrindo:
+
+- 📋 Tabelas simples em Markdown  
+- 📊 Tabelas a partir de objetos do R  
+- 🎨 Tabelas formatadas para leitura humana  
+- 🧠 Boas práticas didáticas e técnicas  
+
+O foco é **HTML**, com uso típico em relatórios, sites e material didático.
+
+---
+
+## 🧠 Conceito geral: tabelas em Quarto
+
+Em Quarto, tabelas podem ser criadas a partir de:
+
+- Markdown puro (simples)
+- Data frames do R
+- Pacotes de formatação (`knitr`, `gt`)
+
+👉 **Regra prática**:  
+quanto maior o controle visual, mais próximo você fica do HTML.
+
+---
+
+## 📋 Tabela simples em Markdown
+
+Use apenas para tabelas pequenas.
+
+    | Variável | Média | Desvio |
+    |----------|-------|--------|
+    | A        | 10.2  | 1.3    |
+    | B        |  8.5  | 0.9    |
+
+Vantagens:
+- Simples
+- Rápida
+- Leitura direta
+
+Limitações:
+- Pouco controle visual
+- Não escala bem
+
+---
+
+## 📊 Tabela a partir de um data frame (automático)
+
+Qualquer data frame impresso vira tabela HTML.
+
+```{r}
+head(cars)

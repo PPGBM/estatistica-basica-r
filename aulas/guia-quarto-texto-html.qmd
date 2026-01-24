@@ -1,0 +1,226 @@
+---
+title: "Guia Rápido – Textos e Links em Quarto (HTML)"
+author: "Alexandre Kassuga"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+execute:
+  echo: false
+---
+
+## 🎯 Objetivo do guia
+
+Este guia apresenta **como escrever textos e criar links em documentos Quarto (`.qmd`) renderizados em HTML**, com foco em:
+
+- ✍️ Estrutura e hierarquia de texto  
+- 🔗 Links externos e internos  
+- 📎 Links para arquivos  
+- 🎯 Boas práticas de leitura e acessibilidade  
+
+O material foi pensado como **página de referência rápida**, para relatórios, sites e materiais didáticos.
+
+---
+
+## 🧠 Texto em Quarto: o básico que funciona sempre
+
+O Quarto usa **Markdown padrão**, com renderização HTML.
+
+### Títulos e hierarquia
+
+    # Título principal (H1)
+    ## Seção (H2)
+    ### Subseção (H3)
+    #### Detalhe (H4)
+
+Boas práticas:
+- Use **H2** para seções principais
+- Evite pular níveis (H2 → H4)
+- Não use títulos apenas para “aumentar fonte”
+
+---
+
+## ✍️ Parágrafos e quebras de linha
+
+    Este é um parágrafo.
+    
+    Este é outro parágrafo.
+
+Quebra de linha manual (raro em HTML):
+
+    Linha 1  
+    Linha 2
+
+👉 Prefira parágrafos bem separados.
+
+---
+
+## ✨ Ênfase no texto
+
+    *itálico*
+    **negrito**
+    ***negrito e itálico***
+    `código inline`
+
+Uso recomendado:
+- **Negrito** → conceitos-chave
+- *Itálico* → termos estrangeiros
+- `código` → funções, objetos, caminhos
+
+---
+
+## 📝 Listas (leitura escaneável)
+
+### Lista não ordenada
+
+    - Item 1
+    - Item 2
+      - Subitem
+    - Item 3
+
+### Lista ordenada
+
+    1. Primeiro passo
+    2. Segundo passo
+    3. Terceiro passo
+
+💡 Ideal para guias e tutoriais.
+
+---
+
+## 🔗 Links externos (forma padrão)
+
+    [Texto do link](https://quarto.org)
+
+Boas práticas:
+- Texto do link deve **explicar o destino**
+- Evite “clique aqui”
+
+Exemplo bom:
+- Documentação oficial do [Quarto](https://quarto.org)
+
+---
+
+## 🔗 Links internos (âncoras)
+
+Links para seções da mesma página:
+
+    [Ir para a seção de listas](#listas-leitura-escaneável)
+
+Regras:
+- O link usa o **slug automático do título**
+- Letras minúsculas
+- Espaços viram `-`
+
+---
+
+## 📎 Links para arquivos locais
+
+Exemplo: PDF, planilha, script.
+
+    [Baixar apostila](arquivos/apostila.pdf)
+
+Organização recomendada:
+
+    projeto/
+    ├── index.qmd
+    └── arquivos/
+        └── apostila.pdf
+
+✔️ Funciona localmente  
+✔️ Funciona no GitHub Pages  
+
+---
+
+## 🌐 Links abrindo em nova aba (HTML)
+
+Quando necessário:
+
+    <a href="https://quarto.org" target="_blank" rel="noopener">
+      Site oficial do Quarto
+    </a>
+
+Use com moderação:
+- Bom para links externos
+- Evite em navegação interna
+
+---
+
+## 🧠 Links + texto explicativo (didático)
+
+    📘 Consulte a
+    [documentação oficial do Quarto](https://quarto.org)
+    para detalhes completos sobre formatos de saída.
+
+👉 Facilita leitura contínua.
+
+---
+
+## 🧩 Listas com links (muito comum em cursos)
+
+    - 📊 [Introdução à Estatística](aulas/aula01.html)
+    - 📈 [Gráficos em R](aulas/aula02.html)
+    - 🧪 [Exercícios](exercicios/index.html)
+
+Excelente para:
+- Sites de disciplina
+- Sumários
+- Páginas iniciais
+
+---
+
+## 🧠 Callouts com links
+
+    ::: {.callout-note}
+    📎 Material complementar disponível em  
+    [Apostila em PDF](arquivos/apostila.pdf)
+    :::
+
+Funciona💡:
+- Em HTML
+- Em sites
+- Em relatórios
+
+---
+
+## ♿ Boas práticas de acessibilidade
+
+✔️ Texto do link descreve o destino  
+✔️ Evite URLs “cruas” no texto  
+✔️ Use títulos claros  
+✔️ Estrutura lógica de seções  
+
+Evite:
+- “clique aqui”
+- Links longos sem contexto
+
+---
+
+## 🔴 Erros comuns
+
+❌ Links sem descrição  
+❌ Excesso de negrito  
+❌ Texto muito longo sem subtítulos  
+❌ URLs jogadas no meio do parágrafo  
+
+✔️ Pense em leitura rápida  
+✔️ Estruture o texto visualmente  
+
+---
+
+## 🧭 Resumo final
+
+- ✍️ Markdown resolve 90% dos casos
+- 🔗 Links bem escritos guiam o leitor
+- 📘 Texto organizado é parte do conteúdo
+- 🌐 HTML serve para ajustes pontuais
+
+---
+
+## ▶️ Próximos guias sugeridos
+
+- 🎨 Estilo de texto com CSS no Quarto  
+- 📊 Tabelas em HTML  
+- 🧱 Organização de páginas longas  
+- 🧪 Templates de sites didáticos  

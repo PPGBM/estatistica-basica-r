@@ -606,7 +606,7 @@
     "href": "aulas/slides/aula-aps-tipografia.html#fontes-de-informação-na-internet",
     "title": "Apresentação do Curso",
     "section": "Fontes de informação na internet",
-    "text": "Fontes de informação na internet\nPáginas do Projeto R\n\n\n\n\n\nO home page do projeto R\n\n\nhttp://cran.br.r-project.org\nO servidor mirror (espelho) brasileiro (UFPr)\n\n\nhttp://r-project.org/mail\nLista mais apropriada para usuários\n\n\nhttp://cran.r-project.org/other-docs.html\nDocumentos de ajuda e tutoriais em varios formatos\n\n\n\n\nOutras Páginas da internet"
+    "text": "Fontes de informação na internet\nPáginas do Projeto R\n\n\n\n\nhttp://r-project.org\nO home page do projeto R\n\n\nhttp://cran.br.r-project.org\nO servidor mirror (espelho) brasileiro (UFPr)\n\n\nhttp://r-project.org/mail\nLista mais apropriada para usuários\n\n\nhttp://cran.r-project.org/other-docs.html\nDocumentos de ajuda e tutoriais em varios formatos\n\n\n\n\n\n\nOutras Páginas da internet\n\n\n\n\nhttp://www.agr.kuleuven.ac.be/vakken/StatisticsByR/index.htm\nIntroducao a análise de dados usando R\n\n\nhttp://www.math.csi.cuny.edu/Statistics/R/simpleR/index.html\nIntroducao usando o pacote Simple em R\n\n\nhttp://www.est.ufpr.br/Rtutorial/contents.html\nTutorial sobre R em Portugues\n\n\n\n\n\n\n\nColin Robert Beasley, 2004. Bioestatística usando R apostila de exemplos para o biólogo"
   },
   {
     "objectID": "aulas/slides/aula-aps-tipografia.html#bibliografia-sugerida",
@@ -712,5 +712,257 @@
     "title": "Apresentação do Curso",
     "section": "O poder da FoRça",
     "text": "O poder da FoRça"
+  },
+  {
+    "objectID": "aulas/guia-quarto-layout-html.html",
+    "href": "aulas/guia-quarto-layout-html.html",
+    "title": "Guia Rápido – Layout em Quarto (HTML)",
+    "section": "",
+    "text": "Este guia apresenta formas práticas e seguras de organizar layout em documentos Quarto (.qmd) renderizados em HTML, com foco em:\n\n📐 Organização espacial de texto e figuras\n\n🧱 Divisão em colunas\n\n🖼️ Controle de tamanho e alinhamento\n\n📊 Integração com gráficos em R\n\nO material foi pensado como página de referência, não como slides."
+  },
+  {
+    "objectID": "aulas/guia-quarto-layout-html.html#objetivo-do-guia",
+    "href": "aulas/guia-quarto-layout-html.html#objetivo-do-guia",
+    "title": "Guia Rápido – Layout em Quarto (HTML)",
+    "section": "",
+    "text": "Este guia apresenta formas práticas e seguras de organizar layout em documentos Quarto (.qmd) renderizados em HTML, com foco em:\n\n📐 Organização espacial de texto e figuras\n\n🧱 Divisão em colunas\n\n🖼️ Controle de tamanho e alinhamento\n\n📊 Integração com gráficos em R\n\nO material foi pensado como página de referência, não como slides."
+  },
+  {
+    "objectID": "aulas/guia-quarto-layout-html.html#como-o-quarto-organiza-o-layout-em-html",
+    "href": "aulas/guia-quarto-layout-html.html#como-o-quarto-organiza-o-layout-em-html",
+    "title": "Guia Rápido – Layout em Quarto (HTML)",
+    "section": "🧠 Como o Quarto organiza o layout em HTML",
+    "text": "🧠 Como o Quarto organiza o layout em HTML\nEm HTML, o Quarto funciona como uma camada sobre:\n\nMarkdown (estrutura)\nHTML (controle fino)\nCSS (estilo)\n\n👉 Regra central:\nMarkdown organiza o conteúdo, HTML ajusta o layout."
+  },
+  {
+    "objectID": "aulas/guia-quarto-layout-html.html#organização-vertical-simples-padrão",
+    "href": "aulas/guia-quarto-layout-html.html#organização-vertical-simples-padrão",
+    "title": "Guia Rápido – Layout em Quarto (HTML)",
+    "section": "🗂️ Organização vertical simples (padrão)",
+    "text": "🗂️ Organização vertical simples (padrão)\nExemplo de estrutura básica:\n## Seção\nTexto introdutório.\n\n### Subtítulo\nTexto complementar.\nUse quando: - O fluxo é linear - A leitura é sequencial - Não há necessidade de comparação visual"
+  },
+  {
+    "objectID": "aulas/guia-quarto-layout-html.html#layout-em-colunas-recurso-mais-importante",
+    "href": "aulas/guia-quarto-layout-html.html#layout-em-colunas-recurso-mais-importante",
+    "title": "Guia Rápido – Layout em Quarto (HTML)",
+    "section": "🧱 Layout em colunas (recurso mais importante)",
+    "text": "🧱 Layout em colunas (recurso mais importante)\n\nTexto + figura\n::: {.columns}\n::: {.column width=\"60%\"}\n### Conceito\n- Definição\n- Contexto\n- Aplicação\n:::\n\n::: {.column width=\"40%\"}\n![](https://placehold.co/400x300){width=100%}\n:::\n:::\n✔️ Funciona em HTML\n✔️ Responsivo\n✔️ Sem CSS extra"
+  },
+  {
+    "objectID": "aulas/guia-quarto-layout-html.html#duas-figuras-lado-a-lado",
+    "href": "aulas/guia-quarto-layout-html.html#duas-figuras-lado-a-lado",
+    "title": "Guia Rápido – Layout em Quarto (HTML)",
+    "section": "🖼️ Duas figuras lado a lado",
+    "text": "🖼️ Duas figuras lado a lado\n::: {.columns}\n::: {.column width=\"50%\"}\n![](https://placehold.co/300x250){width=100%}\n:::\n\n::: {.column width=\"50%\"}\n![](https://placehold.co/300x250){width=100%}\n:::\n:::\n💡 Ideal para comparações visuais."
+  },
+  {
+    "objectID": "aulas/guia-quarto-layout-html.html#controle-de-tamanho-de-imagens",
+    "href": "aulas/guia-quarto-layout-html.html#controle-de-tamanho-de-imagens",
+    "title": "Guia Rápido – Layout em Quarto (HTML)",
+    "section": "📏 Controle de tamanho de imagens",
+    "text": "📏 Controle de tamanho de imagens\n\nMétodo recomendado (Markdown)\n![](figura.png){width=60%}\nVantagens: - Simples - Compatível com HTML e PDF - Fácil manutenção"
+  },
+  {
+    "objectID": "aulas/guia-quarto-layout-html.html#controle-preciso-com-html",
+    "href": "aulas/guia-quarto-layout-html.html#controle-preciso-com-html",
+    "title": "Guia Rápido – Layout em Quarto (HTML)",
+    "section": "🎯 Controle preciso com HTML",
+    "text": "🎯 Controle preciso com HTML\n&lt;img src=\"figura.png\" style=\"width: 300px;\"&gt;\nUse quando precisar de: - Tamanho exato - Margens personalizadas - Layout mais rígido"
+  },
+  {
+    "objectID": "aulas/guia-quarto-layout-html.html#gráfico-em-r-interpretação",
+    "href": "aulas/guia-quarto-layout-html.html#gráfico-em-r-interpretação",
+    "title": "Guia Rápido – Layout em Quarto (HTML)",
+    "section": "📊 Gráfico em R + interpretação",
+    "text": "📊 Gráfico em R + interpretação\n::: {.columns}\n::: {.column width=\"55%\"}\n\n::: {.cell}\n::: {.cell-output-display}\n![](guia-quarto-layout-html_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n:::\n\n::: {.column width=\"45%\"}\n### Interpretação\n- Relação positiva\n- Variância crescente\n- Exemplo clássico\n:::\n:::\n📌 Muito útil em: - Estatística - Métodos quantitativos - Relatórios técnicos"
+  },
+  {
+    "objectID": "aulas/guia-quarto-layout-html.html#caixas-de-destaque-callouts",
+    "href": "aulas/guia-quarto-layout-html.html#caixas-de-destaque-callouts",
+    "title": "Guia Rápido – Layout em Quarto (HTML)",
+    "section": "🧠 Caixas de destaque (callouts)",
+    "text": "🧠 Caixas de destaque (callouts)\n\n📝 Nota\n::: {.callout-note}\nEste conceito é fundamental para os próximos tópicos.\n:::\n\n\n⚠️ Atenção\n::: {.callout-warning}\nSuposição frequentemente violada na prática.\n:::\n\n\n💡 Dica\n::: {.callout-tip}\nUse este padrão em todos os relatórios.\n:::"
+  },
+  {
+    "objectID": "aulas/guia-quarto-layout-html.html#layout-livre-com-html",
+    "href": "aulas/guia-quarto-layout-html.html#layout-livre-com-html",
+    "title": "Guia Rápido – Layout em Quarto (HTML)",
+    "section": "🧩 Layout livre com HTML",
+    "text": "🧩 Layout livre com HTML\nUse apenas quando Markdown não for suficiente.\n&lt;div style=\"display: flex; gap: 20px;\"&gt;\n\n  &lt;div style=\"width: 60%;\"&gt;\n    &lt;h3&gt;📐 Teoria&lt;/h3&gt;\n    &lt;ul&gt;\n      &lt;li&gt;Definição&lt;/li&gt;\n      &lt;li&gt;Hipótese&lt;/li&gt;\n    &lt;/ul&gt;\n  &lt;/div&gt;\n\n  &lt;div style=\"width: 40%;\"&gt;\n    &lt;img src=\"https://placehold.co/300x300\" style=\"width: 100%;\"&gt;\n  &lt;/div&gt;\n\n&lt;/div&gt;\n⚠️ Recomendado apenas para usuários intermediários."
+  },
+  {
+    "objectID": "aulas/guia-quarto-layout-html.html#erros-comuns",
+    "href": "aulas/guia-quarto-layout-html.html#erros-comuns",
+    "title": "Guia Rápido – Layout em Quarto (HTML)",
+    "section": "🔴 Erros comuns",
+    "text": "🔴 Erros comuns\n❌ Muito texto em uma única seção\n❌ Imagens sem controle de tamanho\n❌ Layout diferente em cada página\n❌ Uso excessivo de HTML\n✔️ Prefira padrões reutilizáveis\n✔️ Use colunas com consistência"
+  },
+  {
+    "objectID": "aulas/guia-quarto-layout-html.html#boas-práticas-finais",
+    "href": "aulas/guia-quarto-layout-html.html#boas-práticas-finais",
+    "title": "Guia Rápido – Layout em Quarto (HTML)",
+    "section": "🧭 Boas práticas finais",
+    "text": "🧭 Boas práticas finais\n\n🧱 Um layout = uma ideia\n👁️ Priorize leitura\n🔁 Reutilize estruturas\n📘 Pense como material didático\n\n\nHTML em Quarto é para organizar o pensamento visual, não para decorar a página."
+  },
+  {
+    "objectID": "aulas/guia-quarto-layout-html.html#próximos-guias-sugeridos",
+    "href": "aulas/guia-quarto-layout-html.html#próximos-guias-sugeridos",
+    "title": "Guia Rápido – Layout em Quarto (HTML)",
+    "section": "▶️ Próximos guias sugeridos",
+    "text": "▶️ Próximos guias sugeridos\n\n🎨 Temas e CSS no Quarto\n\n📊 Tabelas profissionais em HTML\n\n🧠 Organização de relatórios longos\n\n🧪 Templates para disciplinas"
+  },
+  {
+    "objectID": "aulas/guia-quarto-texto-html.html",
+    "href": "aulas/guia-quarto-texto-html.html",
+    "title": "Guia Rápido – Textos e Links em Quarto (HTML)",
+    "section": "",
+    "text": "Este guia apresenta como escrever textos e criar links em documentos Quarto (.qmd) renderizados em HTML, com foco em:\n\n✍️ Estrutura e hierarquia de texto\n\n🔗 Links externos e internos\n\n📎 Links para arquivos\n\n🎯 Boas práticas de leitura e acessibilidade\n\nO material foi pensado como página de referência rápida, para relatórios, sites e materiais didáticos."
+  },
+  {
+    "objectID": "aulas/guia-quarto-texto-html.html#objetivo-do-guia",
+    "href": "aulas/guia-quarto-texto-html.html#objetivo-do-guia",
+    "title": "Guia Rápido – Textos e Links em Quarto (HTML)",
+    "section": "",
+    "text": "Este guia apresenta como escrever textos e criar links em documentos Quarto (.qmd) renderizados em HTML, com foco em:\n\n✍️ Estrutura e hierarquia de texto\n\n🔗 Links externos e internos\n\n📎 Links para arquivos\n\n🎯 Boas práticas de leitura e acessibilidade\n\nO material foi pensado como página de referência rápida, para relatórios, sites e materiais didáticos."
+  },
+  {
+    "objectID": "aulas/guia-quarto-texto-html.html#texto-em-quarto-o-básico-que-funciona-sempre",
+    "href": "aulas/guia-quarto-texto-html.html#texto-em-quarto-o-básico-que-funciona-sempre",
+    "title": "Guia Rápido – Textos e Links em Quarto (HTML)",
+    "section": "🧠 Texto em Quarto: o básico que funciona sempre",
+    "text": "🧠 Texto em Quarto: o básico que funciona sempre\nO Quarto usa Markdown padrão, com renderização HTML.\n\nTítulos e hierarquia\n# Título principal (H1)\n## Seção (H2)\n### Subseção (H3)\n#### Detalhe (H4)\nBoas práticas: - Use H2 para seções principais - Evite pular níveis (H2 → H4) - Não use títulos apenas para “aumentar fonte”"
+  },
+  {
+    "objectID": "aulas/guia-quarto-texto-html.html#parágrafos-e-quebras-de-linha",
+    "href": "aulas/guia-quarto-texto-html.html#parágrafos-e-quebras-de-linha",
+    "title": "Guia Rápido – Textos e Links em Quarto (HTML)",
+    "section": "✍️ Parágrafos e quebras de linha",
+    "text": "✍️ Parágrafos e quebras de linha\nEste é um parágrafo.\n\nEste é outro parágrafo.\nQuebra de linha manual (raro em HTML):\nLinha 1  \nLinha 2\n👉 Prefira parágrafos bem separados."
+  },
+  {
+    "objectID": "aulas/guia-quarto-texto-html.html#ênfase-no-texto",
+    "href": "aulas/guia-quarto-texto-html.html#ênfase-no-texto",
+    "title": "Guia Rápido – Textos e Links em Quarto (HTML)",
+    "section": "✨ Ênfase no texto",
+    "text": "✨ Ênfase no texto\n*itálico*\n**negrito**\n***negrito e itálico***\n`código inline`\nUso recomendado: - Negrito → conceitos-chave - Itálico → termos estrangeiros - código → funções, objetos, caminhos"
+  },
+  {
+    "objectID": "aulas/guia-quarto-texto-html.html#listas-leitura-escaneável",
+    "href": "aulas/guia-quarto-texto-html.html#listas-leitura-escaneável",
+    "title": "Guia Rápido – Textos e Links em Quarto (HTML)",
+    "section": "📝 Listas (leitura escaneável)",
+    "text": "📝 Listas (leitura escaneável)\n\nLista não ordenada\n- Item 1\n- Item 2\n  - Subitem\n- Item 3\n\n\nLista ordenada\n1. Primeiro passo\n2. Segundo passo\n3. Terceiro passo\n💡 Ideal para guias e tutoriais."
+  },
+  {
+    "objectID": "aulas/guia-quarto-texto-html.html#links-externos-forma-padrão",
+    "href": "aulas/guia-quarto-texto-html.html#links-externos-forma-padrão",
+    "title": "Guia Rápido – Textos e Links em Quarto (HTML)",
+    "section": "🔗 Links externos (forma padrão)",
+    "text": "🔗 Links externos (forma padrão)\n[Texto do link](https://quarto.org)\nBoas práticas: - Texto do link deve explicar o destino - Evite “clique aqui”\nExemplo bom: - Documentação oficial do Quarto"
+  },
+  {
+    "objectID": "aulas/guia-quarto-texto-html.html#links-internos-âncoras",
+    "href": "aulas/guia-quarto-texto-html.html#links-internos-âncoras",
+    "title": "Guia Rápido – Textos e Links em Quarto (HTML)",
+    "section": "🔗 Links internos (âncoras)",
+    "text": "🔗 Links internos (âncoras)\nLinks para seções da mesma página:\n[Ir para a seção de listas](#listas-leitura-escaneável)\nRegras: - O link usa o slug automático do título - Letras minúsculas - Espaços viram -"
+  },
+  {
+    "objectID": "aulas/guia-quarto-texto-html.html#links-para-arquivos-locais",
+    "href": "aulas/guia-quarto-texto-html.html#links-para-arquivos-locais",
+    "title": "Guia Rápido – Textos e Links em Quarto (HTML)",
+    "section": "📎 Links para arquivos locais",
+    "text": "📎 Links para arquivos locais\nExemplo: PDF, planilha, script.\n[Baixar apostila](arquivos/apostila.pdf)\nOrganização recomendada:\nprojeto/\n├── index.qmd\n└── arquivos/\n    └── apostila.pdf\n✔️ Funciona localmente\n✔️ Funciona no GitHub Pages"
+  },
+  {
+    "objectID": "aulas/guia-quarto-texto-html.html#links-abrindo-em-nova-aba-html",
+    "href": "aulas/guia-quarto-texto-html.html#links-abrindo-em-nova-aba-html",
+    "title": "Guia Rápido – Textos e Links em Quarto (HTML)",
+    "section": "🌐 Links abrindo em nova aba (HTML)",
+    "text": "🌐 Links abrindo em nova aba (HTML)\nQuando necessário:\n&lt;a href=\"https://quarto.org\" target=\"_blank\" rel=\"noopener\"&gt;\n  Site oficial do Quarto\n&lt;/a&gt;\nUse com moderação: - Bom para links externos - Evite em navegação interna"
+  },
+  {
+    "objectID": "aulas/guia-quarto-texto-html.html#links-texto-explicativo-didático",
+    "href": "aulas/guia-quarto-texto-html.html#links-texto-explicativo-didático",
+    "title": "Guia Rápido – Textos e Links em Quarto (HTML)",
+    "section": "🧠 Links + texto explicativo (didático)",
+    "text": "🧠 Links + texto explicativo (didático)\n📘 Consulte a\n[documentação oficial do Quarto](https://quarto.org)\npara detalhes completos sobre formatos de saída.\n👉 Facilita leitura contínua."
+  },
+  {
+    "objectID": "aulas/guia-quarto-texto-html.html#listas-com-links-muito-comum-em-cursos",
+    "href": "aulas/guia-quarto-texto-html.html#listas-com-links-muito-comum-em-cursos",
+    "title": "Guia Rápido – Textos e Links em Quarto (HTML)",
+    "section": "🧩 Listas com links (muito comum em cursos)",
+    "text": "🧩 Listas com links (muito comum em cursos)\n- 📊 [Introdução à Estatística](aulas/aula01.html)\n- 📈 [Gráficos em R](aulas/aula02.html)\n- 🧪 [Exercícios](exercicios/index.html)\nExcelente para: - Sites de disciplina - Sumários - Páginas iniciais"
+  },
+  {
+    "objectID": "aulas/guia-quarto-texto-html.html#callouts-com-links",
+    "href": "aulas/guia-quarto-texto-html.html#callouts-com-links",
+    "title": "Guia Rápido – Textos e Links em Quarto (HTML)",
+    "section": "🧠 Callouts com links",
+    "text": "🧠 Callouts com links\n::: {.callout-note}\n📎 Material complementar disponível em  \n[Apostila em PDF](arquivos/apostila.pdf)\n:::\nFunciona💡: - Em HTML - Em sites - Em relatórios"
+  },
+  {
+    "objectID": "aulas/guia-quarto-texto-html.html#boas-práticas-de-acessibilidade",
+    "href": "aulas/guia-quarto-texto-html.html#boas-práticas-de-acessibilidade",
+    "title": "Guia Rápido – Textos e Links em Quarto (HTML)",
+    "section": "♿ Boas práticas de acessibilidade",
+    "text": "♿ Boas práticas de acessibilidade\n✔️ Texto do link descreve o destino\n✔️ Evite URLs “cruas” no texto\n✔️ Use títulos claros\n✔️ Estrutura lógica de seções\nEvite: - “clique aqui” - Links longos sem contexto"
+  },
+  {
+    "objectID": "aulas/guia-quarto-texto-html.html#erros-comuns",
+    "href": "aulas/guia-quarto-texto-html.html#erros-comuns",
+    "title": "Guia Rápido – Textos e Links em Quarto (HTML)",
+    "section": "🔴 Erros comuns",
+    "text": "🔴 Erros comuns\n❌ Links sem descrição\n❌ Excesso de negrito\n❌ Texto muito longo sem subtítulos\n❌ URLs jogadas no meio do parágrafo\n✔️ Pense em leitura rápida\n✔️ Estruture o texto visualmente"
+  },
+  {
+    "objectID": "aulas/guia-quarto-texto-html.html#resumo-final",
+    "href": "aulas/guia-quarto-texto-html.html#resumo-final",
+    "title": "Guia Rápido – Textos e Links em Quarto (HTML)",
+    "section": "🧭 Resumo final",
+    "text": "🧭 Resumo final\n\n✍️ Markdown resolve 90% dos casos\n🔗 Links bem escritos guiam o leitor\n📘 Texto organizado é parte do conteúdo\n🌐 HTML serve para ajustes pontuais"
+  },
+  {
+    "objectID": "aulas/guia-quarto-texto-html.html#próximos-guias-sugeridos",
+    "href": "aulas/guia-quarto-texto-html.html#próximos-guias-sugeridos",
+    "title": "Guia Rápido – Textos e Links em Quarto (HTML)",
+    "section": "▶️ Próximos guias sugeridos",
+    "text": "▶️ Próximos guias sugeridos\n\n🎨 Estilo de texto com CSS no Quarto\n\n📊 Tabelas em HTML\n\n🧱 Organização de páginas longas\n\n🧪 Templates de sites didáticos"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html",
+    "href": "aulas/guia-quarto-tabelas-html.html",
+    "title": "Guia Rápido – Tabelas em Quarto (HTML)",
+    "section": "",
+    "text": "Este guia apresenta formas corretas e progressivas de criar tabelas em documentos Quarto (.qmd) renderizados em HTML, cobrindo:\n\n📋 Tabelas simples em Markdown\n\n📊 Tabelas a partir de objetos do R\n\n🎨 Tabelas formatadas para leitura humana\n\n🧠 Boas práticas didáticas e técnicas\n\nO foco é HTML, com uso típico em relatórios, sites e material didático."
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html#objetivo-do-guia",
+    "href": "aulas/guia-quarto-tabelas-html.html#objetivo-do-guia",
+    "title": "Guia Rápido – Tabelas em Quarto (HTML)",
+    "section": "",
+    "text": "Este guia apresenta formas corretas e progressivas de criar tabelas em documentos Quarto (.qmd) renderizados em HTML, cobrindo:\n\n📋 Tabelas simples em Markdown\n\n📊 Tabelas a partir de objetos do R\n\n🎨 Tabelas formatadas para leitura humana\n\n🧠 Boas práticas didáticas e técnicas\n\nO foco é HTML, com uso típico em relatórios, sites e material didático."
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html#conceito-geral-tabelas-em-quarto",
+    "href": "aulas/guia-quarto-tabelas-html.html#conceito-geral-tabelas-em-quarto",
+    "title": "Guia Rápido – Tabelas em Quarto (HTML)",
+    "section": "🧠 Conceito geral: tabelas em Quarto",
+    "text": "🧠 Conceito geral: tabelas em Quarto\nEm Quarto, tabelas podem ser criadas a partir de:\n\nMarkdown puro (simples)\nData frames do R\nPacotes de formatação (knitr, gt)\n\n👉 Regra prática:\nquanto maior o controle visual, mais próximo você fica do HTML."
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html#tabela-simples-em-markdown",
+    "href": "aulas/guia-quarto-tabelas-html.html#tabela-simples-em-markdown",
+    "title": "Guia Rápido – Tabelas em Quarto (HTML)",
+    "section": "📋 Tabela simples em Markdown",
+    "text": "📋 Tabela simples em Markdown\nUse apenas para tabelas pequenas.\n| Variável | Média | Desvio |\n|----------|-------|--------|\n| A        | 10.2  | 1.3    |\n| B        |  8.5  | 0.9    |\nVantagens: - Simples - Rápida - Leitura direta\nLimitações: - Pouco controle visual - Não escala bem"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html#tabela-a-partir-de-um-data-frame-automático",
+    "href": "aulas/guia-quarto-tabelas-html.html#tabela-a-partir-de-um-data-frame-automático",
+    "title": "Guia Rápido – Tabelas em Quarto (HTML)",
+    "section": "📊 Tabela a partir de um data frame (automático)",
+    "text": "📊 Tabela a partir de um data frame (automático)\nQualquer data frame impresso vira tabela HTML.\nhead(cars)"
   }
 ]
