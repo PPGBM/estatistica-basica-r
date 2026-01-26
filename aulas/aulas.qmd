@@ -44,7 +44,7 @@ aos conteúdos e aos slides.
 - Tabelas do contingência
 - Distribuição de frequências
 
-➡️ Aula em breve
+[➡️ Acessar slides da aula](slides/aula-conceitos-basicos-3-organizando.qmd){target="_blank" rel="noopener"}
 
 
 ---
