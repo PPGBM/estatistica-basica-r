@@ -20,20 +20,41 @@ aos conteúdos e aos slides.
 
 ---
 
-### Aula 01 – Introdução ao R
+### Aula 01 – Conceitos básicos
 
-- Conceitos iniciais sobre o R e o RStudio  
-- Primeiros comandos  
-- R como calculadora  
+- O que é a estatística
+- O que são Dados
+- Amostragem e generalização
+- Tipos de dados
+
+[➡️ Acessar slides da aula](slides/aula-conceitos-basicos-1-dados.qmd){target="_blank" rel="noopener"}
+
+---
+
+### Aula 02 – Conceitos básicos
+
+- Planejando experimentos 
 
 ➡️ Aula em breve
 
 ---
 
-### Aula 02 – R como calculadora e objetos
+### Aula 03 – Organizando dados
 
-- Operações matemáticas  
-- Criação de objetos  
-- Funções básicas  
+- Tabelas do contingência
+- Distribuição de frequências
 
 ➡️ Aula em breve
+
+
+---
+
+### Aula 04 – Estatística descritiva
+
+- Medidas de tendência central
+- Medidas de dispersão
+
+➡️ Aula em breve
+
+
+

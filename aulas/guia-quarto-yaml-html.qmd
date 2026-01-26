@@ -1,0 +1,238 @@
+
+---
+title: "Guia Rápido – Formatação de Slides no YAML (Quarto)"
+author: "Alexandre Kassuga"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+execute:
+  echo: false
+---
+
+## 🎯 Objetivo do guia
+
+Este guia explica **como configurar e formatar apresentações em Quarto usando apenas o YAML**, com foco em:
+
+- 🎞️ Uso de `revealjs`
+- 🎨 Tema, tipografia e aparência global
+- 📐 Comportamento e layout dos slides
+- 🔢 Navegação, numeração e transições
+
+O guia é apresentado como **página HTML de referência**, para consulta durante a criação de slides.
+
+---
+
+## 🧠 O papel do YAML em apresentações Quarto
+
+No Quarto, o YAML controla **tudo que é global** na apresentação:
+
+- Tipo de saída (slides)
+- Tema visual
+- Alinhamento padrão
+- Proporção da tela
+- Navegação e transições
+- Comportamento de código
+
+👉 Regra central:  
+**O YAML define o ambiente dos slides; o corpo do arquivo define o conteúdo.**
+
+---
+
+## 🎞️ YAML mínimo para slides com Reveal.js
+
+Exemplo funcional mínimo:
+
+    ---
+    title: "Minha Apresentação"
+    author: "Nome do Autor"
+    format:
+      revealjs:
+        theme: simple
+    ---
+
+Esse YAML já permite renderizar slides corretamente.
+
+---
+
+## 🎨 Tema visual (`theme`)
+
+Configuração típica:
+
+    format:
+      revealjs:
+        theme: simple
+
+Temas mais usados:
+- `simple` – limpo e didático
+- `default` – padrão do Reveal.js
+- `serif` – mais formal
+- `night` – fundo escuro
+- `solarized` – contraste equilibrado
+
+💡 Para aulas e cursos, `simple` é o mais previsível.
+
+---
+
+## 🔤 Tamanho base da fonte
+
+    format:
+      revealjs:
+        fontsize: 32px
+
+Observações:
+- Afeta o texto base
+- Títulos escalam automaticamente
+- Ajustes finos devem ser feitos via CSS
+
+---
+
+## 📐 Centralização vertical do conteúdo
+
+    format:
+      revealjs:
+        center: false
+
+- `true` → conteúdo centralizado verticalmente
+- `false` → conteúdo alinhado ao topo
+
+✔️ Recomendado usar `false` para slides com colunas, gráficos e tabelas.
+
+---
+
+## 🔢 Numeração de slides
+
+Ativar numeração simples:
+
+    format:
+      revealjs:
+        slide-number: true
+
+Formato avançado:
+
+    slide-number: c/t
+
+Exibe:
+- Slide atual
+- Total de slides
+
+---
+
+## 🎬 Transições entre slides
+
+    format:
+      revealjs:
+        transition: fade
+
+Transições disponíveis:
+- `none`
+- `fade`
+- `slide`
+- `convex`
+- `concave`
+- `zoom`
+
+💡 Para aulas longas, prefira `fade` ou `none`.
+
+---
+
+## 🧭 Controles de navegação
+
+    format:
+      revealjs:
+        controls: true
+        progress: true
+
+- `controls` → setas laterais
+- `progress` → barra de progresso inferior
+
+Útil para:
+- Apresentações extensas
+- Cursos modulares
+
+---
+
+## 🖥️ Proporção e tamanho da tela
+
+Configuração explícita:
+
+    format:
+      revealjs:
+        width: 1280
+        height: 720
+
+Proporções comuns:
+- 16:9 → 1280 × 720
+- 4:3 → 1024 × 768
+
+---
+
+## 🧩 Fragmentos (animações automáticas)
+
+    format:
+      revealjs:
+        fragments: true
+
+Permite revelar gradualmente:
+- Itens de listas
+- Imagens
+- Blocos de conteúdo
+
+Sem necessidade de marcar cada item manualmente.
+
+---
+
+## 🧪 Configuração de código nos slides
+
+    format:
+      revealjs:
+        code-fold: true
+        highlight-style: github
+
+- `code-fold` → botão para esconder código
+- `highlight-style` → tema de sintaxe
+
+Ideal para:
+- Aulas de R
+- Demonstrações ao vivo
+
+---
+
+## 🎨 CSS personalizado para slides
+
+    format:
+      revealjs:
+        css: slides.css
+
+Use CSS para:
+- Ajustar fontes
+- Controlar tamanho de bullets
+- Refinar espaçamentos
+- Padronizar visual institucional
+
+👉 YAML chama o CSS, o CSS faz o trabalho fino.
+
+---
+
+## 🔴 Erros comuns no YAML de slides
+
+❌ YAML excessivamente longo  
+❌ Misturar layout no YAML e no corpo  
+❌ Centralização automática sem perceber  
+❌ Ignorar proporção da tela  
+
+✔️ YAML simples e previsível  
+✔️ Ajustes repetitivos vão para CSS  
+
+---
+
+## 🧭 Resumo final
+
+- 🎞️ `format: revealjs` define o tipo de saída
+- 🎨 Tema e tipografia vêm do YAML
+- 📐 Alinhamento global começa no YAML
+- 🎬 Transições e navegação são globais
+- 🎯 Quanto mais simples o YAML, menor a chance de erro
+
+> **Um bom YAML não chama atenção — ele simplesmente funciona.**

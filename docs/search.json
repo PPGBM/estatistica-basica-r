@@ -81,14 +81,14 @@
     "href": "aulas/aulas.html",
     "title": "Aulas",
     "section": "",
-    "text": "Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.\n\n\n\n\nApresentação do curso\n\nConteúdos programáticos\n\nTipografia do curso\n\n➡️ Acessar slides da aula\n\n\n\n\n\nConceitos iniciais sobre o R e o RStudio\n\nPrimeiros comandos\n\nR como calculadora\n\n➡️ Aula em breve\n\n\n\n\n\nOperações matemáticas\n\nCriação de objetos\n\nFunções básicas\n\n➡️ Aula em breve"
+    "text": "Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.\n\n\n\n\nApresentação do curso\n\nConteúdos programáticos\n\nTipografia do curso\n\n➡️ Acessar slides da aula\n\n\n\n\n\nO que é a estatística\nO que são Dados\nAmostragem e generalização\nTipos de dados\n\n➡️ Acessar slides da aula\n\n\n\n\n\nPlanejando experimentos\n\n➡️ Aula em breve\n\n\n\n\n\nTabelas do contingência\nDistribuição de frequências\n\n➡️ Aula em breve\n\n\n\n\n\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve"
   },
   {
     "objectID": "aulas/aulas.html#aulas-da-disciplina",
     "href": "aulas/aulas.html#aulas-da-disciplina",
     "title": "Aulas",
     "section": "",
-    "text": "Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.\n\n\n\n\nApresentação do curso\n\nConteúdos programáticos\n\nTipografia do curso\n\n➡️ Acessar slides da aula\n\n\n\n\n\nConceitos iniciais sobre o R e o RStudio\n\nPrimeiros comandos\n\nR como calculadora\n\n➡️ Aula em breve\n\n\n\n\n\nOperações matemáticas\n\nCriação de objetos\n\nFunções básicas\n\n➡️ Aula em breve"
+    "text": "Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.\n\n\n\n\nApresentação do curso\n\nConteúdos programáticos\n\nTipografia do curso\n\n➡️ Acessar slides da aula\n\n\n\n\n\nO que é a estatística\nO que são Dados\nAmostragem e generalização\nTipos de dados\n\n➡️ Acessar slides da aula\n\n\n\n\n\nPlanejando experimentos\n\n➡️ Aula em breve\n\n\n\n\n\nTabelas do contingência\nDistribuição de frequências\n\n➡️ Aula em breve\n\n\n\n\n\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve"
   },
   {
     "objectID": "envio.html",
@@ -964,5 +964,243 @@
     "title": "Guia Rápido – Tabelas em Quarto (HTML)",
     "section": "📊 Tabela a partir de um data frame (automático)",
     "text": "📊 Tabela a partir de um data frame (automático)\nQualquer data frame impresso vira tabela HTML.\nhead(cars)"
+  },
+  {
+    "objectID": "aulas/guia-quarto-yaml-html.html",
+    "href": "aulas/guia-quarto-yaml-html.html",
+    "title": "Guia Rápido – Formatação de Slides no YAML (Quarto)",
+    "section": "",
+    "text": "Este guia explica como configurar e formatar apresentações em Quarto usando apenas o YAML, com foco em:\n\n🎞️ Uso de revealjs\n🎨 Tema, tipografia e aparência global\n📐 Comportamento e layout dos slides\n🔢 Navegação, numeração e transições\n\nO guia é apresentado como página HTML de referência, para consulta durante a criação de slides."
+  },
+  {
+    "objectID": "aulas/guia-quarto-yaml-html.html#objetivo-do-guia",
+    "href": "aulas/guia-quarto-yaml-html.html#objetivo-do-guia",
+    "title": "Guia Rápido – Formatação de Slides no YAML (Quarto)",
+    "section": "",
+    "text": "Este guia explica como configurar e formatar apresentações em Quarto usando apenas o YAML, com foco em:\n\n🎞️ Uso de revealjs\n🎨 Tema, tipografia e aparência global\n📐 Comportamento e layout dos slides\n🔢 Navegação, numeração e transições\n\nO guia é apresentado como página HTML de referência, para consulta durante a criação de slides."
+  },
+  {
+    "objectID": "aulas/guia-quarto-yaml-html.html#o-papel-do-yaml-em-apresentações-quarto",
+    "href": "aulas/guia-quarto-yaml-html.html#o-papel-do-yaml-em-apresentações-quarto",
+    "title": "Guia Rápido – Formatação de Slides no YAML (Quarto)",
+    "section": "🧠 O papel do YAML em apresentações Quarto",
+    "text": "🧠 O papel do YAML em apresentações Quarto\nNo Quarto, o YAML controla tudo que é global na apresentação:\n\nTipo de saída (slides)\nTema visual\nAlinhamento padrão\nProporção da tela\nNavegação e transições\nComportamento de código\n\n👉 Regra central:\nO YAML define o ambiente dos slides; o corpo do arquivo define o conteúdo."
+  },
+  {
+    "objectID": "aulas/guia-quarto-yaml-html.html#yaml-mínimo-para-slides-com-reveal.js",
+    "href": "aulas/guia-quarto-yaml-html.html#yaml-mínimo-para-slides-com-reveal.js",
+    "title": "Guia Rápido – Formatação de Slides no YAML (Quarto)",
+    "section": "🎞️ YAML mínimo para slides com Reveal.js",
+    "text": "🎞️ YAML mínimo para slides com Reveal.js\nExemplo funcional mínimo:\n---\ntitle: \"Minha Apresentação\"\nauthor: \"Nome do Autor\"\nformat:\n  revealjs:\n    theme: simple\n---\nEsse YAML já permite renderizar slides corretamente."
+  },
+  {
+    "objectID": "aulas/guia-quarto-yaml-html.html#tema-visual-theme",
+    "href": "aulas/guia-quarto-yaml-html.html#tema-visual-theme",
+    "title": "Guia Rápido – Formatação de Slides no YAML (Quarto)",
+    "section": "🎨 Tema visual (theme)",
+    "text": "🎨 Tema visual (theme)\nConfiguração típica:\nformat:\n  revealjs:\n    theme: simple\nTemas mais usados: - simple – limpo e didático - default – padrão do Reveal.js - serif – mais formal - night – fundo escuro - solarized – contraste equilibrado\n💡 Para aulas e cursos, simple é o mais previsível."
+  },
+  {
+    "objectID": "aulas/guia-quarto-yaml-html.html#tamanho-base-da-fonte",
+    "href": "aulas/guia-quarto-yaml-html.html#tamanho-base-da-fonte",
+    "title": "Guia Rápido – Formatação de Slides no YAML (Quarto)",
+    "section": "🔤 Tamanho base da fonte",
+    "text": "🔤 Tamanho base da fonte\nformat:\n  revealjs:\n    fontsize: 32px\nObservações: - Afeta o texto base - Títulos escalam automaticamente - Ajustes finos devem ser feitos via CSS"
+  },
+  {
+    "objectID": "aulas/guia-quarto-yaml-html.html#centralização-vertical-do-conteúdo",
+    "href": "aulas/guia-quarto-yaml-html.html#centralização-vertical-do-conteúdo",
+    "title": "Guia Rápido – Formatação de Slides no YAML (Quarto)",
+    "section": "📐 Centralização vertical do conteúdo",
+    "text": "📐 Centralização vertical do conteúdo\nformat:\n  revealjs:\n    center: false\n\ntrue → conteúdo centralizado verticalmente\nfalse → conteúdo alinhado ao topo\n\n✔️ Recomendado usar false para slides com colunas, gráficos e tabelas."
+  },
+  {
+    "objectID": "aulas/guia-quarto-yaml-html.html#numeração-de-slides",
+    "href": "aulas/guia-quarto-yaml-html.html#numeração-de-slides",
+    "title": "Guia Rápido – Formatação de Slides no YAML (Quarto)",
+    "section": "🔢 Numeração de slides",
+    "text": "🔢 Numeração de slides\nAtivar numeração simples:\nformat:\n  revealjs:\n    slide-number: true\nFormato avançado:\nslide-number: c/t\nExibe: - Slide atual - Total de slides"
+  },
+  {
+    "objectID": "aulas/guia-quarto-yaml-html.html#transições-entre-slides",
+    "href": "aulas/guia-quarto-yaml-html.html#transições-entre-slides",
+    "title": "Guia Rápido – Formatação de Slides no YAML (Quarto)",
+    "section": "🎬 Transições entre slides",
+    "text": "🎬 Transições entre slides\nformat:\n  revealjs:\n    transition: fade\nTransições disponíveis: - none - fade - slide - convex - concave - zoom\n💡 Para aulas longas, prefira fade ou none."
+  },
+  {
+    "objectID": "aulas/guia-quarto-yaml-html.html#controles-de-navegação",
+    "href": "aulas/guia-quarto-yaml-html.html#controles-de-navegação",
+    "title": "Guia Rápido – Formatação de Slides no YAML (Quarto)",
+    "section": "🧭 Controles de navegação",
+    "text": "🧭 Controles de navegação\nformat:\n  revealjs:\n    controls: true\n    progress: true\n\ncontrols → setas laterais\nprogress → barra de progresso inferior\n\nÚtil para: - Apresentações extensas - Cursos modulares"
+  },
+  {
+    "objectID": "aulas/guia-quarto-yaml-html.html#proporção-e-tamanho-da-tela",
+    "href": "aulas/guia-quarto-yaml-html.html#proporção-e-tamanho-da-tela",
+    "title": "Guia Rápido – Formatação de Slides no YAML (Quarto)",
+    "section": "🖥️ Proporção e tamanho da tela",
+    "text": "🖥️ Proporção e tamanho da tela\nConfiguração explícita:\nformat:\n  revealjs:\n    width: 1280\n    height: 720\nProporções comuns: - 16:9 → 1280 × 720 - 4:3 → 1024 × 768"
+  },
+  {
+    "objectID": "aulas/guia-quarto-yaml-html.html#fragmentos-animações-automáticas",
+    "href": "aulas/guia-quarto-yaml-html.html#fragmentos-animações-automáticas",
+    "title": "Guia Rápido – Formatação de Slides no YAML (Quarto)",
+    "section": "🧩 Fragmentos (animações automáticas)",
+    "text": "🧩 Fragmentos (animações automáticas)\nformat:\n  revealjs:\n    fragments: true\nPermite revelar gradualmente: - Itens de listas - Imagens - Blocos de conteúdo\nSem necessidade de marcar cada item manualmente."
+  },
+  {
+    "objectID": "aulas/guia-quarto-yaml-html.html#configuração-de-código-nos-slides",
+    "href": "aulas/guia-quarto-yaml-html.html#configuração-de-código-nos-slides",
+    "title": "Guia Rápido – Formatação de Slides no YAML (Quarto)",
+    "section": "🧪 Configuração de código nos slides",
+    "text": "🧪 Configuração de código nos slides\nformat:\n  revealjs:\n    code-fold: true\n    highlight-style: github\n\ncode-fold → botão para esconder código\nhighlight-style → tema de sintaxe\n\nIdeal para: - Aulas de R - Demonstrações ao vivo"
+  },
+  {
+    "objectID": "aulas/guia-quarto-yaml-html.html#css-personalizado-para-slides",
+    "href": "aulas/guia-quarto-yaml-html.html#css-personalizado-para-slides",
+    "title": "Guia Rápido – Formatação de Slides no YAML (Quarto)",
+    "section": "🎨 CSS personalizado para slides",
+    "text": "🎨 CSS personalizado para slides\nformat:\n  revealjs:\n    css: slides.css\nUse CSS para: - Ajustar fontes - Controlar tamanho de bullets - Refinar espaçamentos - Padronizar visual institucional\n👉 YAML chama o CSS, o CSS faz o trabalho fino."
+  },
+  {
+    "objectID": "aulas/guia-quarto-yaml-html.html#erros-comuns-no-yaml-de-slides",
+    "href": "aulas/guia-quarto-yaml-html.html#erros-comuns-no-yaml-de-slides",
+    "title": "Guia Rápido – Formatação de Slides no YAML (Quarto)",
+    "section": "🔴 Erros comuns no YAML de slides",
+    "text": "🔴 Erros comuns no YAML de slides\n❌ YAML excessivamente longo\n❌ Misturar layout no YAML e no corpo\n❌ Centralização automática sem perceber\n❌ Ignorar proporção da tela\n✔️ YAML simples e previsível\n✔️ Ajustes repetitivos vão para CSS"
+  },
+  {
+    "objectID": "aulas/guia-quarto-yaml-html.html#resumo-final",
+    "href": "aulas/guia-quarto-yaml-html.html#resumo-final",
+    "title": "Guia Rápido – Formatação de Slides no YAML (Quarto)",
+    "section": "🧭 Resumo final",
+    "text": "🧭 Resumo final\n\n🎞️ format: revealjs define o tipo de saída\n🎨 Tema e tipografia vêm do YAML\n📐 Alinhamento global começa no YAML\n🎬 Transições e navegação são globais\n🎯 Quanto mais simples o YAML, menor a chance de erro\n\n\nUm bom YAML não chama atenção — ele simplesmente funciona."
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-1-dados.html#conceitos-básicos",
+    "href": "aulas/slides/aula-conceitos-basicos-1-dados.html#conceitos-básicos",
+    "title": "Revisão de conceitos básicos",
+    "section": "Conceitos básicos",
+    "text": "Conceitos básicos\n\n\nEstatística\nConjunto de métodos para:\n\nelaboração de experimentos,\nobtenção de dados: organização, resumo, apresentação, análise, interpretação e elaboração de conclusões.."
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-1-dados.html#código-em-r",
+    "href": "aulas/slides/aula-conceitos-basicos-1-dados.html#código-em-r",
+    "title": "Revisão de conceitos básicos",
+    "section": "Código em R",
+    "text": "Código em R\n\n# Substitua este exemplo pelo código da aula\nmean(iris$Sepal.Length)\n\n\nBlocos de código mostram exatamente o que deve ser digitado no RStudio."
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-1-dados.html#saída-do-r",
+    "href": "aulas/slides/aula-conceitos-basicos-1-dados.html#saída-do-r",
+    "title": "Revisão de conceitos básicos",
+    "section": "Saída do R",
+    "text": "Saída do R\n\n\n[1] 5.843333\n\n\n\nEste bloco mostra o resultado retornado pelo R após a execução do código."
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-1-dados.html#resultado-importante",
+    "href": "aulas/slides/aula-conceitos-basicos-1-dados.html#resultado-importante",
+    "title": "Revisão de conceitos básicos",
+    "section": "Resultado importante",
+    "text": "Resultado importante\n\nUse este bloco para destacar valores estatísticos relevantes, estimativas centrais ou conclusões numéricas importantes."
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-1-dados.html#ponto-crítico-cuidado",
+    "href": "aulas/slides/aula-conceitos-basicos-1-dados.html#ponto-crítico-cuidado",
+    "title": "Revisão de conceitos básicos",
+    "section": "Ponto crítico / cuidado",
+    "text": "Ponto crítico / cuidado\n\nUse este bloco para alertar sobre interpretações incorretas, limitações do método ou pressupostos estatísticos."
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-1-dados.html#atenção-conceito-essencial",
+    "href": "aulas/slides/aula-conceitos-basicos-1-dados.html#atenção-conceito-essencial",
+    "title": "Revisão de conceitos básicos",
+    "section": "Atenção – conceito essencial",
+    "text": "Atenção – conceito essencial\n\nUse este bloco para conceitos fundamentais que o aluno precisa memorizar e reconhecer rapidamente."
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-1-dados.html#atenção-erro-crítico",
+    "href": "aulas/slides/aula-conceitos-basicos-1-dados.html#atenção-erro-crítico",
+    "title": "Revisão de conceitos básicos",
+    "section": "Atenção – erro crítico",
+    "text": "Atenção – erro crítico\n\nUse este bloco para alertas críticos que podem comprometer toda a análise estatística."
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-1-dados.html#dicas-e-boas-práticas",
+    "href": "aulas/slides/aula-conceitos-basicos-1-dados.html#dicas-e-boas-práticas",
+    "title": "Revisão de conceitos básicos",
+    "section": "Dicas e boas práticas",
+    "text": "Dicas e boas práticas\n\nUse este bloco para atalhos, boas práticas e sugestões baseadas na experiência prática com R."
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-1-dados.html#comentários-do-professor",
+    "href": "aulas/slides/aula-conceitos-basicos-1-dados.html#comentários-do-professor",
+    "title": "Revisão de conceitos básicos",
+    "section": "Comentários do professor",
+    "text": "Comentários do professor\n\nUse este bloco para interpretações conceituais, contextualizações biológicas ou observações didáticas."
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-1-dados.html#em-resumo",
+    "href": "aulas/slides/aula-conceitos-basicos-1-dados.html#em-resumo",
+    "title": "Revisão de conceitos básicos",
+    "section": "Em resumo",
+    "text": "Em resumo\n\nCódigo → o que foi digitado no R\n\nSaída → o que o R retornou\n\nDestaque → ideia central\n\nResultado → valor estatístico relevante\n\nResultado crítico → ponto de atenção\n\nAtenção 1 → conceito essencial\n\nAtenção 2 → erro crítico\n\nDicas → boas práticas\n\nComentário → interpretação do professor"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-1-dados.html#conceitos-básicos-1",
+    "href": "aulas/slides/aula-conceitos-basicos-1-dados.html#conceitos-básicos-1",
+    "title": "Revisão de conceitos básicos",
+    "section": "Conceitos básicos",
+    "text": "Conceitos básicos\n\n\nDados: Conjunto de observações.\n\nProcedente da:\n\nPopulação: conjunto de seres ou objetos com pelo menos uma característica em comum.\n\nVariável de interesse: Característica analisada\nCenso: Observação de toda população\nAmostra: Observação de alguns membros da população"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-1-dados.html#conceitos-básicos-2",
+    "href": "aulas/slides/aula-conceitos-basicos-1-dados.html#conceitos-básicos-2",
+    "title": "Revisão de conceitos básicos",
+    "section": "Conceitos básicos",
+    "text": "Conceitos básicos\n\n\nDados: Conjunto de observações.\n\nProcedente da:\n\nPopulação: conjunto de seres ou objetos com pelo menos uma característica em comum.\n\nVariável de interesse: Característica analisada\nCenso: Observação de toda população\nAmostra: Observação de alguns membros da população"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-1-dados.html#conceitos-básicos-3",
+    "href": "aulas/slides/aula-conceitos-basicos-1-dados.html#conceitos-básicos-3",
+    "title": "Revisão de conceitos básicos",
+    "section": "Conceitos básicos",
+    "text": "Conceitos básicos\n\n\nDados: Conjunto de observações.\n\nProcedente da:\n\nPopulação: conjunto de seres ou objetos com pelo menos uma característica em comum.\n\nVariável de interesse: Característica analisada\nCenso: Observação de toda população\nAmostra: Observação de alguns membros da população"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-1-dados.html#conceitos-básicos-4",
+    "href": "aulas/slides/aula-conceitos-basicos-1-dados.html#conceitos-básicos-4",
+    "title": "Revisão de conceitos básicos",
+    "section": "Conceitos básicos",
+    "text": "Conceitos básicos\n\n\nDados: Conjunto de observações.\n\nProcedente da:\n\nPopulação: conjunto de seres ou objetos com pelo menos uma característica em comum.\n\nVariável de interesse: Característica analisada\nCenso: Observação de toda população\nAmostra: Observação de alguns membros da população"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-1-dados.html#conceitos-básicos-5",
+    "href": "aulas/slides/aula-conceitos-basicos-1-dados.html#conceitos-básicos-5",
+    "title": "Revisão de conceitos básicos",
+    "section": "Conceitos básicos",
+    "text": "Conceitos básicos\n\nDados: Conjunto de observações.\n\nProcedente da:\n\nPopulação: conjunto de seres ou objetos com pelo menos uma característica em comum.\n\nVariável de interesse: Característica analisada\nCenso: Observação de toda população\nAmostra: Observação de alguns membros da população"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-1-dados.html#conceitos-básicos-6",
+    "href": "aulas/slides/aula-conceitos-basicos-1-dados.html#conceitos-básicos-6",
+    "title": "Revisão de conceitos básicos",
+    "section": "Conceitos básicos",
+    "text": "Conceitos básicos\n\n\nDados: Tipos\n\nQuantitativos (numéricos)\n\nDiscretos\n\nPossibilidade de valores finita; não pertencem a escala\nEx. Contagens\n\nContínuos\n\nPossibilidade de valores infinita; pertencem a uma escala\nEx. Peso; temperatura, comprimento\n\n\nQualitativos (categorias ou atributos)\n\nSexos\nCategorias demográficas\n\nMorfotipo\nCor"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-1-dados.html#conceitos-básicos-7",
+    "href": "aulas/slides/aula-conceitos-basicos-1-dados.html#conceitos-básicos-7",
+    "title": "Revisão de conceitos básicos",
+    "section": "Conceitos básicos",
+    "text": "Conceitos básicos\n\n\nDados: Tipos\n\nQuantitativos (numéricos)\n\nDiscretos\n\nPossibilidade de valores finita; não pertencem a escala\nEx. Contagens\n\nContínuos\n\nPossibilidade de valores infinita; pertencem a uma escala\nEx. Peso; temperatura, comprimento\n\n\nQualitativos (categorias ou atributos)\n\nSexos\nCategorias demográficas\n\nMorfotipo\nCor"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-1-dados.html#conceitos-básicos-8",
+    "href": "aulas/slides/aula-conceitos-basicos-1-dados.html#conceitos-básicos-8",
+    "title": "Revisão de conceitos básicos",
+    "section": "Conceitos básicos",
+    "text": "Conceitos básicos\n\n\nDados: Tipos\n\nQuantitativos (numéricos)\n\nDiscretos\n\nPossibilidade de valores finita; não pertencem a escala\nEx. Contagens\n\nContínuos\n\nPossibilidade de valores infinita; pertencem a uma escala\nEx. Peso; temperatura, comprimento\n\n\nQualitativos (categorias ou atributos)\n\nSexos\nCategorias demográficas\n\nMorfotipo\nCor"
   }
 ]

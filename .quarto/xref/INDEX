@@ -46,5 +46,11 @@
   },
   "aulas/guia-quarto-tabelas-html.qmd": {
     "guia-quarto-tabelas-html.html": "7ee04ada"
+  },
+  "aulas/guia-quarto-yaml-html.qmd": {
+    "guia-quarto-yaml-html.html": "c7403391"
+  },
+  "aulas/slides/aula-conceitos-basicos-1-dados.qmd": {
+    "aula-conceitos-basicos-1-dados.html": "378e7ea8"
   }
 }

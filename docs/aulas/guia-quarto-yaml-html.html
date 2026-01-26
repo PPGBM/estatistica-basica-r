@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Alexandre Kassuga">
 
-<title>Aulas – Estatística Básica com R</title>
+<title>Guia Rápido – Formatação de Slides no YAML (Quarto) – Estatística Básica com R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-e31584831b205ffbb2d98406f31c2a5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -96,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Início</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../aulas/aulas.html" aria-current="page"> 
+    <a class="nav-link" href="../aulas/aulas.html"> 
 <span class="menu-text">Aulas</span></a>
   </li>  
   <li class="nav-item">
@@ -127,14 +128,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#aulas-da-disciplina" id="toc-aulas-da-disciplina" class="nav-link active" data-scroll-target="#aulas-da-disciplina">Aulas da disciplina</a>
-  <ul class="collapse">
-  <li><a href="#apresentação-introdução-ao-curso" id="toc-apresentação-introdução-ao-curso" class="nav-link" data-scroll-target="#apresentação-introdução-ao-curso">Apresentação – Introdução ao Curso</a></li>
-  <li><a href="#aula-01-conceitos-básicos" id="toc-aula-01-conceitos-básicos" class="nav-link" data-scroll-target="#aula-01-conceitos-básicos">Aula 01 – Conceitos básicos</a></li>
-  <li><a href="#aula-02-conceitos-básicos" id="toc-aula-02-conceitos-básicos" class="nav-link" data-scroll-target="#aula-02-conceitos-básicos">Aula 02 – Conceitos básicos</a></li>
-  <li><a href="#aula-03-organizando-dados" id="toc-aula-03-organizando-dados" class="nav-link" data-scroll-target="#aula-03-organizando-dados">Aula 03 – Organizando dados</a></li>
-  <li><a href="#aula-04-estatística-descritiva" id="toc-aula-04-estatística-descritiva" class="nav-link" data-scroll-target="#aula-04-estatística-descritiva">Aula 04 – Estatística descritiva</a></li>
-  </ul></li>
+  <li><a href="#objetivo-do-guia" id="toc-objetivo-do-guia" class="nav-link active" data-scroll-target="#objetivo-do-guia">🎯 Objetivo do guia</a></li>
+  <li><a href="#o-papel-do-yaml-em-apresentações-quarto" id="toc-o-papel-do-yaml-em-apresentações-quarto" class="nav-link" data-scroll-target="#o-papel-do-yaml-em-apresentações-quarto">🧠 O papel do YAML em apresentações Quarto</a></li>
+  <li><a href="#yaml-mínimo-para-slides-com-reveal.js" id="toc-yaml-mínimo-para-slides-com-reveal.js" class="nav-link" data-scroll-target="#yaml-mínimo-para-slides-com-reveal.js">🎞️ YAML mínimo para slides com Reveal.js</a></li>
+  <li><a href="#tema-visual-theme" id="toc-tema-visual-theme" class="nav-link" data-scroll-target="#tema-visual-theme">🎨 Tema visual (<code>theme</code>)</a></li>
+  <li><a href="#tamanho-base-da-fonte" id="toc-tamanho-base-da-fonte" class="nav-link" data-scroll-target="#tamanho-base-da-fonte">🔤 Tamanho base da fonte</a></li>
+  <li><a href="#centralização-vertical-do-conteúdo" id="toc-centralização-vertical-do-conteúdo" class="nav-link" data-scroll-target="#centralização-vertical-do-conteúdo">📐 Centralização vertical do conteúdo</a></li>
+  <li><a href="#numeração-de-slides" id="toc-numeração-de-slides" class="nav-link" data-scroll-target="#numeração-de-slides">🔢 Numeração de slides</a></li>
+  <li><a href="#transições-entre-slides" id="toc-transições-entre-slides" class="nav-link" data-scroll-target="#transições-entre-slides">🎬 Transições entre slides</a></li>
+  <li><a href="#controles-de-navegação" id="toc-controles-de-navegação" class="nav-link" data-scroll-target="#controles-de-navegação">🧭 Controles de navegação</a></li>
+  <li><a href="#proporção-e-tamanho-da-tela" id="toc-proporção-e-tamanho-da-tela" class="nav-link" data-scroll-target="#proporção-e-tamanho-da-tela">🖥️ Proporção e tamanho da tela</a></li>
+  <li><a href="#fragmentos-animações-automáticas" id="toc-fragmentos-animações-automáticas" class="nav-link" data-scroll-target="#fragmentos-animações-automáticas">🧩 Fragmentos (animações automáticas)</a></li>
+  <li><a href="#configuração-de-código-nos-slides" id="toc-configuração-de-código-nos-slides" class="nav-link" data-scroll-target="#configuração-de-código-nos-slides">🧪 Configuração de código nos slides</a></li>
+  <li><a href="#css-personalizado-para-slides" id="toc-css-personalizado-para-slides" class="nav-link" data-scroll-target="#css-personalizado-para-slides">🎨 CSS personalizado para slides</a></li>
+  <li><a href="#erros-comuns-no-yaml-de-slides" id="toc-erros-comuns-no-yaml-de-slides" class="nav-link" data-scroll-target="#erros-comuns-no-yaml-de-slides">🔴 Erros comuns no YAML de slides</a></li>
+  <li><a href="#resumo-final" id="toc-resumo-final" class="nav-link" data-scroll-target="#resumo-final">🧭 Resumo final</a></li>
   </ul>
 </nav>
     </div>
@@ -143,13 +151,19 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Aulas</h1>
+<h1 class="title">Guia Rápido – Formatação de Slides no YAML (Quarto)</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Alexandre Kassuga </p>
+          </div>
+  </div>
     
   
     
@@ -160,60 +174,174 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="aulas-da-disciplina" class="level2">
-<h2 class="anchored" data-anchor-id="aulas-da-disciplina">Aulas da disciplina</h2>
-<p>Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.</p>
-<hr>
-<section id="apresentação-introdução-ao-curso" class="level3">
-<h3 class="anchored" data-anchor-id="apresentação-introdução-ao-curso">Apresentação – Introdução ao Curso</h3>
+<section id="objetivo-do-guia" class="level2">
+<h2 class="anchored" data-anchor-id="objetivo-do-guia">🎯 Objetivo do guia</h2>
+<p>Este guia explica <strong>como configurar e formatar apresentações em Quarto usando apenas o YAML</strong>, com foco em:</p>
 <ul>
-<li>Apresentação do curso<br>
-</li>
-<li>Conteúdos programáticos<br>
-</li>
-<li>Tipografia do curso</li>
+<li>🎞️ Uso de <code>revealjs</code></li>
+<li>🎨 Tema, tipografia e aparência global</li>
+<li>📐 Comportamento e layout dos slides</li>
+<li>🔢 Navegação, numeração e transições</li>
 </ul>
-<p><a href="../aulas/slides/aula-aps-tipografia.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
+<p>O guia é apresentado como <strong>página HTML de referência</strong>, para consulta durante a criação de slides.</p>
 <hr>
 </section>
-<section id="aula-01-conceitos-básicos" class="level3">
-<h3 class="anchored" data-anchor-id="aula-01-conceitos-básicos">Aula 01 – Conceitos básicos</h3>
+<section id="o-papel-do-yaml-em-apresentações-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="o-papel-do-yaml-em-apresentações-quarto">🧠 O papel do YAML em apresentações Quarto</h2>
+<p>No Quarto, o YAML controla <strong>tudo que é global</strong> na apresentação:</p>
 <ul>
-<li>O que é a estatística</li>
-<li>O que são Dados</li>
-<li>Amostragem e generalização</li>
-<li>Tipos de dados</li>
+<li>Tipo de saída (slides)</li>
+<li>Tema visual</li>
+<li>Alinhamento padrão</li>
+<li>Proporção da tela</li>
+<li>Navegação e transições</li>
+<li>Comportamento de código</li>
 </ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-1-dados.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
+<p>👉 Regra central:<br>
+<strong>O YAML define o ambiente dos slides; o corpo do arquivo define o conteúdo.</strong></p>
 <hr>
 </section>
-<section id="aula-02-conceitos-básicos" class="level3">
-<h3 class="anchored" data-anchor-id="aula-02-conceitos-básicos">Aula 02 – Conceitos básicos</h3>
-<ul>
-<li>Planejando experimentos</li>
-</ul>
-<p>➡️ Aula em breve</p>
+<section id="yaml-mínimo-para-slides-com-reveal.js" class="level2">
+<h2 class="anchored" data-anchor-id="yaml-mínimo-para-slides-com-reveal.js">🎞️ YAML mínimo para slides com Reveal.js</h2>
+<p>Exemplo funcional mínimo:</p>
+<pre><code>---
+title: "Minha Apresentação"
+author: "Nome do Autor"
+format:
+  revealjs:
+    theme: simple
+---</code></pre>
+<p>Esse YAML já permite renderizar slides corretamente.</p>
 <hr>
 </section>
-<section id="aula-03-organizando-dados" class="level3">
-<h3 class="anchored" data-anchor-id="aula-03-organizando-dados">Aula 03 – Organizando dados</h3>
-<ul>
-<li>Tabelas do contingência</li>
-<li>Distribuição de frequências</li>
-</ul>
-<p>➡️ Aula em breve</p>
+<section id="tema-visual-theme" class="level2">
+<h2 class="anchored" data-anchor-id="tema-visual-theme">🎨 Tema visual (<code>theme</code>)</h2>
+<p>Configuração típica:</p>
+<pre><code>format:
+  revealjs:
+    theme: simple</code></pre>
+<p>Temas mais usados: - <code>simple</code> – limpo e didático - <code>default</code> – padrão do Reveal.js - <code>serif</code> – mais formal - <code>night</code> – fundo escuro - <code>solarized</code> – contraste equilibrado</p>
+<p>💡 Para aulas e cursos, <code>simple</code> é o mais previsível.</p>
 <hr>
 </section>
-<section id="aula-04-estatística-descritiva" class="level3">
-<h3 class="anchored" data-anchor-id="aula-04-estatística-descritiva">Aula 04 – Estatística descritiva</h3>
+<section id="tamanho-base-da-fonte" class="level2">
+<h2 class="anchored" data-anchor-id="tamanho-base-da-fonte">🔤 Tamanho base da fonte</h2>
+<pre><code>format:
+  revealjs:
+    fontsize: 32px</code></pre>
+<p>Observações: - Afeta o texto base - Títulos escalam automaticamente - Ajustes finos devem ser feitos via CSS</p>
+<hr>
+</section>
+<section id="centralização-vertical-do-conteúdo" class="level2">
+<h2 class="anchored" data-anchor-id="centralização-vertical-do-conteúdo">📐 Centralização vertical do conteúdo</h2>
+<pre><code>format:
+  revealjs:
+    center: false</code></pre>
 <ul>
-<li>Medidas de tendência central</li>
-<li>Medidas de dispersão</li>
+<li><code>true</code> → conteúdo centralizado verticalmente</li>
+<li><code>false</code> → conteúdo alinhado ao topo</li>
 </ul>
-<p>➡️ Aula em breve</p>
+<p>✔️ Recomendado usar <code>false</code> para slides com colunas, gráficos e tabelas.</p>
+<hr>
+</section>
+<section id="numeração-de-slides" class="level2">
+<h2 class="anchored" data-anchor-id="numeração-de-slides">🔢 Numeração de slides</h2>
+<p>Ativar numeração simples:</p>
+<pre><code>format:
+  revealjs:
+    slide-number: true</code></pre>
+<p>Formato avançado:</p>
+<pre><code>slide-number: c/t</code></pre>
+<p>Exibe: - Slide atual - Total de slides</p>
+<hr>
+</section>
+<section id="transições-entre-slides" class="level2">
+<h2 class="anchored" data-anchor-id="transições-entre-slides">🎬 Transições entre slides</h2>
+<pre><code>format:
+  revealjs:
+    transition: fade</code></pre>
+<p>Transições disponíveis: - <code>none</code> - <code>fade</code> - <code>slide</code> - <code>convex</code> - <code>concave</code> - <code>zoom</code></p>
+<p>💡 Para aulas longas, prefira <code>fade</code> ou <code>none</code>.</p>
+<hr>
+</section>
+<section id="controles-de-navegação" class="level2">
+<h2 class="anchored" data-anchor-id="controles-de-navegação">🧭 Controles de navegação</h2>
+<pre><code>format:
+  revealjs:
+    controls: true
+    progress: true</code></pre>
+<ul>
+<li><code>controls</code> → setas laterais</li>
+<li><code>progress</code> → barra de progresso inferior</li>
+</ul>
+<p>Útil para: - Apresentações extensas - Cursos modulares</p>
+<hr>
+</section>
+<section id="proporção-e-tamanho-da-tela" class="level2">
+<h2 class="anchored" data-anchor-id="proporção-e-tamanho-da-tela">🖥️ Proporção e tamanho da tela</h2>
+<p>Configuração explícita:</p>
+<pre><code>format:
+  revealjs:
+    width: 1280
+    height: 720</code></pre>
+<p>Proporções comuns: - 16:9 → 1280 × 720 - 4:3 → 1024 × 768</p>
+<hr>
+</section>
+<section id="fragmentos-animações-automáticas" class="level2">
+<h2 class="anchored" data-anchor-id="fragmentos-animações-automáticas">🧩 Fragmentos (animações automáticas)</h2>
+<pre><code>format:
+  revealjs:
+    fragments: true</code></pre>
+<p>Permite revelar gradualmente: - Itens de listas - Imagens - Blocos de conteúdo</p>
+<p>Sem necessidade de marcar cada item manualmente.</p>
+<hr>
+</section>
+<section id="configuração-de-código-nos-slides" class="level2">
+<h2 class="anchored" data-anchor-id="configuração-de-código-nos-slides">🧪 Configuração de código nos slides</h2>
+<pre><code>format:
+  revealjs:
+    code-fold: true
+    highlight-style: github</code></pre>
+<ul>
+<li><code>code-fold</code> → botão para esconder código</li>
+<li><code>highlight-style</code> → tema de sintaxe</li>
+</ul>
+<p>Ideal para: - Aulas de R - Demonstrações ao vivo</p>
+<hr>
+</section>
+<section id="css-personalizado-para-slides" class="level2">
+<h2 class="anchored" data-anchor-id="css-personalizado-para-slides">🎨 CSS personalizado para slides</h2>
+<pre><code>format:
+  revealjs:
+    css: slides.css</code></pre>
+<p>Use CSS para: - Ajustar fontes - Controlar tamanho de bullets - Refinar espaçamentos - Padronizar visual institucional</p>
+<p>👉 YAML chama o CSS, o CSS faz o trabalho fino.</p>
+<hr>
+</section>
+<section id="erros-comuns-no-yaml-de-slides" class="level2">
+<h2 class="anchored" data-anchor-id="erros-comuns-no-yaml-de-slides">🔴 Erros comuns no YAML de slides</h2>
+<p>❌ YAML excessivamente longo<br>
+❌ Misturar layout no YAML e no corpo<br>
+❌ Centralização automática sem perceber<br>
+❌ Ignorar proporção da tela</p>
+<p>✔️ YAML simples e previsível<br>
+✔️ Ajustes repetitivos vão para CSS</p>
+<hr>
+</section>
+<section id="resumo-final" class="level2">
+<h2 class="anchored" data-anchor-id="resumo-final">🧭 Resumo final</h2>
+<ul>
+<li>🎞️ <code>format: revealjs</code> define o tipo de saída</li>
+<li>🎨 Tema e tipografia vêm do YAML</li>
+<li>📐 Alinhamento global começa no YAML</li>
+<li>🎬 Transições e navegação são globais</li>
+<li>🎯 Quanto mais simples o YAML, menor a chance de erro</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Um bom YAML não chama atenção — ele simplesmente funciona.</strong></p>
+</blockquote>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

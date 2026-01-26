@@ -219,3 +219,8 @@
 .reveal .slides section ol ol ol ol {
   font-size: 0.75em !important;
 }
+
+
+.reveal .texto-menor {
+  font-size: 0.85em;
+}

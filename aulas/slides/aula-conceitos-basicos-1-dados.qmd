@@ -1,0 +1,260 @@
+---
+title: "Revisão de conceitos básicos"
+author: "Dr. Alexandre Dias Kassuga"
+format:
+  revealjs:
+    theme: simple
+    css: slides.css
+    highlight-style: monokai
+    slide-number: true
+    format: wide
+---
+
+## Conceitos básicos
+
+::::: columns
+::: {.column width="50%"}
+Estatística
+
+Conjunto de métodos para:
+
+-   elaboração de experimentos,
+
+-   obtenção de dados: organização, resumo, apresentação, análise, interpretação e elaboração de conclusões..
+:::
+
+::: {.column width="50%"}
+![](figuras/stat-geral.png){width="100%"}
+:::
+:::::
+
+## Conceitos básicos
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Dados: Conjunto de observações.
+
+-   Procedente da:
+
+    -   População: conjunto de seres ou objetos com pelo menos uma característica em comum.
+
+        -   Variável de interesse: Característica analisada
+
+        -   Censo: Observação de toda população
+
+        -   Amostra: Observação de alguns membros da população
+
+
+:::
+
+::: {.column width="50%"}
+
+![](figuras/exemplo-dados1.png){.absolute top="-10"} 
+
+:::
+
+
+::::
+
+
+## Conceitos básicos
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Dados: Conjunto de observações.
+
+-   Procedente da:
+
+    -   População: conjunto de seres ou objetos com pelo menos uma característica em comum.
+
+        -   Variável de interesse: Característica analisada
+
+        -   Censo: Observação de toda população
+
+        -   Amostra: Observação de alguns membros da população
+
+
+:::
+
+::: {.column width="50%"}
+
+![](figuras/exemplo-dados2.png){.absolute top="-10"} 
+
+:::
+
+
+::::
+
+
+## Conceitos básicos
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Dados: Conjunto de observações.
+
+-   Procedente da:
+
+    -   População: conjunto de seres ou objetos com pelo menos uma característica em comum.
+
+        -   Variável de interesse: Característica analisada
+
+        -   Censo: Observação de toda população
+
+        -   Amostra: Observação de alguns membros da população
+
+
+:::
+
+::: {.column width="50%"}
+
+![](figuras/exemplo-dados3.png){.absolute top="-10"} 
+
+:::
+
+
+::::
+
+
+## Conceitos básicos
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Dados: Conjunto de observações.
+
+-   Procedente da:
+
+    -   População: conjunto de seres ou objetos com pelo menos uma característica em comum.
+
+        -   Variável de interesse: Característica analisada
+
+        -   Censo: Observação de toda população
+
+        -   Amostra: Observação de alguns membros da população
+
+
+:::
+
+::: {.column width="50%"}
+
+![](figuras/exemplo-dados4.png){.absolute top="-10"} 
+
+:::
+
+
+::::
+
+
+## Conceitos básicos
+
+::: {.texto-menor}
+Dados: Conjunto de observações.
+
+-   Procedente da:
+
+    -   População: conjunto de seres ou objetos com pelo menos uma característica em comum.
+
+        -   Variável de interesse: Característica analisada
+
+        -   Censo: Observação de toda população
+
+        -   Amostra: Observação de alguns membros da população
+
+:::
+![](figuras/exemplo-dados-inferencia.png){fig-align="center"} 
+
+## Conceitos básicos
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Dados: Tipos
+
+- Quantitativos (numéricos)
+  - Discretos
+    - Possibilidade de valores finita; não pertencem a escala
+    - Ex. Contagens
+  - Contínuos
+     - Possibilidade de valores infinita; pertencem a uma escala
+      - Ex. Peso; temperatura, comprimento
+- Qualitativos (categorias ou atributos)
+  - Sexos
+  - Categorias demográficas
+    - Morfotipo
+    - Cor
+
+:::
+
+::: {.column width="50%"}
+
+:::
+
+::::
+
+
+## Conceitos básicos
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Dados: Tipos
+
+- <span style="color:#f87171;">Quantitativos (numéricos)</span>
+  - Discretos
+    - Possibilidade de valores finita; não pertencem a escala
+    - Ex. Contagens
+  - Contínuos
+     - Possibilidade de valores infinita; pertencem a uma escala
+      - Ex. Peso; temperatura, comprimento
+- Qualitativos (categorias ou atributos)
+  - Sexos
+  - Categorias demográficas
+    - Morfotipo
+    - Cor
+
+:::
+
+::: {.column width="50%"}
+![](figuras/dados-tipos1.png){.absolute top="-10" width="70%"}
+:::
+
+::::
+
+
+## Conceitos básicos
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Dados: Tipos
+
+- Quantitativos (numéricos)
+  - Discretos
+    - Possibilidade de valores finita; não pertencem a escala
+    - Ex. Contagens
+  - Contínuos
+     - Possibilidade de valores infinita; pertencem a uma escala
+      - Ex. Peso; temperatura, comprimento
+- <span style="color:#f87171;">Qualitativos (categorias ou atributos)</span>
+  - Sexos
+  - Categorias demográficas
+    - Morfotipo
+    - Cor
+
+:::
+
+::: {.column width="50%"}
+![](figuras/dados-tipos2.png){.absolute bottom="10" width="70%" }
+:::
+
+::::
