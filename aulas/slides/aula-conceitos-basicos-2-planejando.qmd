@@ -1,0 +1,70 @@
+---
+title: "Revisão de conceitos básicos"
+subtitle: "Planejando experimentos"
+author: "Dr. Alexandre Dias Kassuga"
+format:
+  revealjs:
+    theme: simple
+    css: slides.css
+    highlight-style: monokai
+    slide-number: true
+    format: wide
+---
+
+## Planejando experimentos
+
+![](figuras/planejamento-phdcomics.png){.absolute top="150px" width="100%"}
+
+
+## Planejando experimentos
+
+![](figuras/planejamento-1.png){width="100%"}
+
+## Planejando experimentos
+
+![](figuras/planejamento-2.png){width="100%"}
+
+## Planejando experimentos
+
+![](figuras/planejamento-3.png){width="100%"}
+
+
+## Planejando experimentos
+
+![](figuras/planejamento-4.png){width="100%"}
+
+## Planejando experimentos
+
+![](figuras/planejamento-5.png){width="100%"}
+
+## Planejando experimentos
+
+![](figuras/planejamento-6.png){width="100%"}
+
+## Planejando experimentos
+
+![](figuras/planejamento-7.png){width="100%"}
+
+## Planejando experimentos
+
+![](figuras/planejamento-8.png){width="100%"}
+
+## Planejando experimentos
+
+![](figuras/planejamento-9.png){width="100%"}
+
+## Planejando experimentos
+
+![](figuras/planejamento-10.png){width="100%"}
+
+## Planejando experimentos
+
+![](figuras/planejamento-11.png){width="100%"}
+
+## Planejando experimentos
+
+![](figuras/planejamento-12.png){width="100%"}
+
+## Planejando experimentos
+
+![](figuras/planejamento-geral.png){width="100%"}

@@ -81,14 +81,14 @@
     "href": "aulas/aulas.html",
     "title": "Aulas",
     "section": "",
-    "text": "Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.\n\n\n\n\nApresentação do curso\n\nConteúdos programáticos\n\nTipografia do curso\n\n➡️ Acessar slides da aula\n\n\n\n\n\nO que é a estatística\nO que são Dados\nAmostragem e generalização\nTipos de dados\n\n➡️ Acessar slides da aula\n\n\n\n\n\nPlanejando experimentos\n\n➡️ Aula em breve\n\n\n\n\n\nTabelas do contingência\nDistribuição de frequências\n\n➡️ Aula em breve\n\n\n\n\n\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve"
+    "text": "Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.\n\n\n\n\nApresentação do curso\n\nConteúdos programáticos\n\nTipografia do curso\n\n➡️ Acessar slides da aula\n\n\n\n\n\nO que é a estatística\nO que são Dados\nAmostragem e generalização\nTipos de dados\n\n➡️ Acessar slides da aula\n\n\n\n\n\nPlanejando experimentos\n\n➡️ Acessar slides da aula\n\n\n\n\n\nTabelas do contingência\nDistribuição de frequências\n\n➡️ Aula em breve\n\n\n\n\n\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve"
   },
   {
     "objectID": "aulas/aulas.html#aulas-da-disciplina",
     "href": "aulas/aulas.html#aulas-da-disciplina",
     "title": "Aulas",
     "section": "",
-    "text": "Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.\n\n\n\n\nApresentação do curso\n\nConteúdos programáticos\n\nTipografia do curso\n\n➡️ Acessar slides da aula\n\n\n\n\n\nO que é a estatística\nO que são Dados\nAmostragem e generalização\nTipos de dados\n\n➡️ Acessar slides da aula\n\n\n\n\n\nPlanejando experimentos\n\n➡️ Aula em breve\n\n\n\n\n\nTabelas do contingência\nDistribuição de frequências\n\n➡️ Aula em breve\n\n\n\n\n\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve"
+    "text": "Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.\n\n\n\n\nApresentação do curso\n\nConteúdos programáticos\n\nTipografia do curso\n\n➡️ Acessar slides da aula\n\n\n\n\n\nO que é a estatística\nO que são Dados\nAmostragem e generalização\nTipos de dados\n\n➡️ Acessar slides da aula\n\n\n\n\n\nPlanejando experimentos\n\n➡️ Acessar slides da aula\n\n\n\n\n\nTabelas do contingência\nDistribuição de frequências\n\n➡️ Aula em breve\n\n\n\n\n\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve"
   },
   {
     "objectID": "envio.html",
@@ -933,16 +933,16 @@
   {
     "objectID": "aulas/guia-quarto-tabelas-html.html",
     "href": "aulas/guia-quarto-tabelas-html.html",
-    "title": "Guia Rápido – Tabelas em Quarto (HTML)",
+    "title": "Guia Avançado – Tabelas em Quarto (HTML)",
     "section": "",
-    "text": "Este guia apresenta formas corretas e progressivas de criar tabelas em documentos Quarto (.qmd) renderizados em HTML, cobrindo:\n\n📋 Tabelas simples em Markdown\n\n📊 Tabelas a partir de objetos do R\n\n🎨 Tabelas formatadas para leitura humana\n\n🧠 Boas práticas didáticas e técnicas\n\nO foco é HTML, com uso típico em relatórios, sites e material didático."
+    "text": "Este guia apresenta de forma detalhada e progressiva como construir, formatar e controlar tabelas em documentos Quarto (.qmd) renderizados em HTML, cobrindo:\n\n📋 Tabelas manuais (com e sem cabeçalho)\n🧱 Controle estrutural de colunas e linhas\n📊 Tabelas a partir de objetos do R\n🎨 Formatação visual e leitura humana\n🧠 Boas práticas didáticas e técnicas\n\nO foco é HTML estático, típico de relatórios, sites e material didático."
   },
   {
     "objectID": "aulas/guia-quarto-tabelas-html.html#objetivo-do-guia",
     "href": "aulas/guia-quarto-tabelas-html.html#objetivo-do-guia",
-    "title": "Guia Rápido – Tabelas em Quarto (HTML)",
+    "title": "Guia Avançado – Tabelas em Quarto (HTML)",
     "section": "",
-    "text": "Este guia apresenta formas corretas e progressivas de criar tabelas em documentos Quarto (.qmd) renderizados em HTML, cobrindo:\n\n📋 Tabelas simples em Markdown\n\n📊 Tabelas a partir de objetos do R\n\n🎨 Tabelas formatadas para leitura humana\n\n🧠 Boas práticas didáticas e técnicas\n\nO foco é HTML, com uso típico em relatórios, sites e material didático."
+    "text": "Este guia apresenta de forma detalhada e progressiva como construir, formatar e controlar tabelas em documentos Quarto (.qmd) renderizados em HTML, cobrindo:\n\n📋 Tabelas manuais (com e sem cabeçalho)\n🧱 Controle estrutural de colunas e linhas\n📊 Tabelas a partir de objetos do R\n🎨 Formatação visual e leitura humana\n🧠 Boas práticas didáticas e técnicas\n\nO foco é HTML estático, típico de relatórios, sites e material didático."
   },
   {
     "objectID": "aulas/guia-quarto-tabelas-html.html#conceito-geral-tabelas-em-quarto",
@@ -1202,5 +1202,418 @@
     "title": "Revisão de conceitos básicos",
     "section": "Conceitos básicos",
     "text": "Conceitos básicos\n\n\nDados: Tipos\n\nQuantitativos (numéricos)\n\nDiscretos\n\nPossibilidade de valores finita; não pertencem a escala\nEx. Contagens\n\nContínuos\n\nPossibilidade de valores infinita; pertencem a uma escala\nEx. Peso; temperatura, comprimento\n\n\nQualitativos (categorias ou atributos)\n\nSexos\nCategorias demográficas\n\nMorfotipo\nCor"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#conceitos-básicos",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#conceitos-básicos",
+    "title": "Revisão de conceitos básicos",
+    "section": "Conceitos básicos",
+    "text": "Conceitos básicos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#conceitos-básicos-1",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#conceitos-básicos-1",
+    "title": "Revisão de conceitos básicos",
+    "section": "Conceitos básicos",
+    "text": "Conceitos básicos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#conceitos-básicos-2",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#conceitos-básicos-2",
+    "title": "Revisão de conceitos básicos",
+    "section": "Conceitos básicos",
+    "text": "Conceitos básicos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#conceitos-básicos-3",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#conceitos-básicos-3",
+    "title": "Revisão de conceitos básicos",
+    "section": "Conceitos básicos",
+    "text": "Conceitos básicos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#conceitos-básicos-4",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#conceitos-básicos-4",
+    "title": "Revisão de conceitos básicos",
+    "section": "Conceitos básicos",
+    "text": "Conceitos básicos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#conceitos-básicos-5",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#conceitos-básicos-5",
+    "title": "Revisão de conceitos básicos",
+    "section": "Conceitos básicos",
+    "text": "Conceitos básicos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#conceitos-básicos-6",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#conceitos-básicos-6",
+    "title": "Revisão de conceitos básicos",
+    "section": "Conceitos básicos",
+    "text": "Conceitos básicos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#conceitos-básicos-7",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#conceitos-básicos-7",
+    "title": "Revisão de conceitos básicos",
+    "section": "Conceitos básicos",
+    "text": "Conceitos básicos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-1",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-1",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-2",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-2",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-3",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-3",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-4",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-4",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-5",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-5",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-6",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-6",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-7",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-7",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-8",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-8",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-9",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-9",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-10",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-10",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-11",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-11",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-12",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-12",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-13",
+    "href": "aulas/slides/aula-conceitos-basicos-2-planejando.html#planejando-experimentos-13",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos\n\n\n\n\n\n\n\n\nRight\nLeft\nCentered\n\n\n\n\nBananas\n$1.34\nbuilt-in wrapper"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-1",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-1",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-2",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-2",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-3",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-3",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-4",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-4",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-5",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-5",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-6",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-6",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-7",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-7",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-8",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-8",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-9",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-9",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-10",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-10",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-11",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-11",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-12",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-12",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-13",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#planejando-experimentos-13",
+    "title": "Revisão de conceitos básicos",
+    "section": "Planejando experimentos",
+    "text": "Planejando experimentos"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html#conceito-central-o-que-é-uma-boa-tabela-em-html",
+    "href": "aulas/guia-quarto-tabelas-html.html#conceito-central-o-que-é-uma-boa-tabela-em-html",
+    "title": "Guia Avançado – Tabelas em Quarto (HTML)",
+    "section": "🧠 Conceito central: o que é uma boa tabela em HTML",
+    "text": "🧠 Conceito central: o que é uma boa tabela em HTML\nUma boa tabela deve: - Ser compreendida sem o texto ao redor - Ter estrutura clara (linhas, colunas, cabeçalho) - Evitar excesso de informação visual - Priorizar leitura, não compactação\n👉 Em Quarto, tabela é conteúdo, não “saída de console”."
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html#tabelas-manuais-em-markdown-forma-mais-simples",
+    "href": "aulas/guia-quarto-tabelas-html.html#tabelas-manuais-em-markdown-forma-mais-simples",
+    "title": "Guia Avançado – Tabelas em Quarto (HTML)",
+    "section": "📋 Tabelas manuais em Markdown (forma mais simples)",
+    "text": "📋 Tabelas manuais em Markdown (forma mais simples)\n\nTabela com cabeçalho\n| Variável | Média | Desvio |\n|----------|-------|--------|\n| A        | 10.2  | 1.3    |\n| B        |  8.5  | 0.9    |\nCaracterísticas: - Primeira linha = cabeçalho - Segunda linha = separador obrigatório - Alinhamento definido por : (opcional)\n\n\n\nControle de alinhamento\n| Variável | Média | Desvio |\n|:---------|------:|:------:|\n| A        | 10.2  | 1.3    |\n| B        |  8.5  | 0.9    |\n\n: à esquerda → alinhado à esquerda\n: à direita → alinhado à direita\n: dos dois lados → centralizado"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html#tabela-sem-cabeçalho-quando-faz-sentido",
+    "href": "aulas/guia-quarto-tabelas-html.html#tabela-sem-cabeçalho-quando-faz-sentido",
+    "title": "Guia Avançado – Tabelas em Quarto (HTML)",
+    "section": "📋 Tabela sem cabeçalho (quando faz sentido)",
+    "text": "📋 Tabela sem cabeçalho (quando faz sentido)\nMarkdown não tem suporte nativo explícito a tabelas sem cabeçalho.\nA solução correta é usar HTML direto.\n&lt;table&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;A&lt;/td&gt;\n      &lt;td&gt;10.2&lt;/td&gt;\n      &lt;td&gt;1.3&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;B&lt;/td&gt;\n      &lt;td&gt;8.5&lt;/td&gt;\n      &lt;td&gt;0.9&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\nUse tabelas sem cabeçalho apenas para: - Matrizes pequenas - Resumos visuais - Layout auxiliar (com parcimônia)"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html#estrutura-html-explícita-controle-total",
+    "href": "aulas/guia-quarto-tabelas-html.html#estrutura-html-explícita-controle-total",
+    "title": "Guia Avançado – Tabelas em Quarto (HTML)",
+    "section": "🧱 Estrutura HTML explícita (controle total)",
+    "text": "🧱 Estrutura HTML explícita (controle total)\n&lt;table&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;Variável&lt;/th&gt;\n      &lt;th&gt;Média&lt;/th&gt;\n      &lt;th&gt;Desvio&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;A&lt;/td&gt;\n      &lt;td&gt;10.2&lt;/td&gt;\n      &lt;td&gt;1.3&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;B&lt;/td&gt;\n      &lt;td&gt;8.5&lt;/td&gt;\n      &lt;td&gt;0.9&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\nVantagens: - Controle absoluto - Compatível com CSS - Ideal para casos especiais\nDesvantagem: - Mais verboso - Menos prático para muitas tabelas"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html#tabelas-a-partir-de-objetos-do-r-automático",
+    "href": "aulas/guia-quarto-tabelas-html.html#tabelas-a-partir-de-objetos-do-r-automático",
+    "title": "Guia Avançado – Tabelas em Quarto (HTML)",
+    "section": "📊 Tabelas a partir de objetos do R (automático)",
+    "text": "📊 Tabelas a partir de objetos do R (automático)\nQualquer data frame impresso vira tabela HTML:\nhead(cars)\nVantagens: - Rápido - Zero configuração\nLimitações: - Aparência básica - Pouco controle visual"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html#knitrkable-padrão-profissional-mínimo",
+    "href": "aulas/guia-quarto-tabelas-html.html#knitrkable-padrão-profissional-mínimo",
+    "title": "Guia Avançado – Tabelas em Quarto (HTML)",
+    "section": "📦 knitr::kable() – padrão profissional mínimo",
+    "text": "📦 knitr::kable() – padrão profissional mínimo\nknitr::kable(\n  head(cars),\n  caption = \"Tabela 1. Conjunto de dados cars\"\n)\nVantagens: - Legenda (caption) - HTML limpo - Confiável e leve\nRecomendado para: - Relatórios - Apostilas - Material didático"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html#melhorando-aparência-com-kableextra",
+    "href": "aulas/guia-quarto-tabelas-html.html#melhorando-aparência-com-kableextra",
+    "title": "Guia Avançado – Tabelas em Quarto (HTML)",
+    "section": "🎨 Melhorando aparência com kableExtra",
+    "text": "🎨 Melhorando aparência com kableExtra\nknitr::kable(\n  head(cars),\n  caption = \"Tabela 2. cars formatada\"\n) |&gt;\n  kableExtra::kable_styling(\n    bootstrap_options = c(\"striped\", \"hover\"),\n    full_width = false\n  )\nOpções comuns: - striped → linhas alternadas - hover → destaque ao passar o mouse - condensed → tabela mais compacta"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html#controle-de-largura-da-tabela",
+    "href": "aulas/guia-quarto-tabelas-html.html#controle-de-largura-da-tabela",
+    "title": "Guia Avançado – Tabelas em Quarto (HTML)",
+    "section": "📏 Controle de largura da tabela",
+    "text": "📏 Controle de largura da tabela\nknitr::kable(head(cars)) |&gt;\n  kableExtra::kable_styling(full_width = false)\nUse: - full_width = true para ocupar a página - false para leitura mais confortável"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html#tabelas-longas-scroll-em-html",
+    "href": "aulas/guia-quarto-tabelas-html.html#tabelas-longas-scroll-em-html",
+    "title": "Guia Avançado – Tabelas em Quarto (HTML)",
+    "section": "🧠 Tabelas longas (scroll em HTML)",
+    "text": "🧠 Tabelas longas (scroll em HTML)\nknitr::kable(head(iris, 20)) |&gt;\n  kableExtra::scroll_box(\n    width = \"100%\",\n    height = \"300px\"\n  )\nEvita: - Quebra de layout - Tabelas ilegíveis em telas menores"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html#tabelas-com-gt-nível-relatóriopublicação",
+    "href": "aulas/guia-quarto-tabelas-html.html#tabelas-com-gt-nível-relatóriopublicação",
+    "title": "Guia Avançado – Tabelas em Quarto (HTML)",
+    "section": "🧪 Tabelas com gt (nível relatório/publicação)",
+    "text": "🧪 Tabelas com gt (nível relatório/publicação)\nlibrary(gt)\n\ncars |&gt;\n  head() |&gt;\n  gt() |&gt;\n  tab_header(\n    title = \"Tabela 3. Conjunto cars\",\n    subtitle = \"Exemplo com gt\"\n  )\nVantagens: - Visual moderno - Controle fino - Excelente em HTML\nIndicado para: - Relatórios finais - Documentos institucionais - Divulgação científica"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html#formatação-fina-com-gt",
+    "href": "aulas/guia-quarto-tabelas-html.html#formatação-fina-com-gt",
+    "title": "Guia Avançado – Tabelas em Quarto (HTML)",
+    "section": "🎯 Formatação fina com gt",
+    "text": "🎯 Formatação fina com gt\ncars |&gt;\n  head() |&gt;\n  gt() |&gt;\n  fmt_number(\n    columns = everything(),\n    decimals = 1\n  ) |&gt;\n  cols_label(\n    speed = \"Velocidade\",\n    dist  = \"Distância\"\n  )\nBoas práticas: - Poucas casas decimais - Nomes claros de colunas - Evitar abreviações obscuras"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html#acessibilidade-e-leitura",
+    "href": "aulas/guia-quarto-tabelas-html.html#acessibilidade-e-leitura",
+    "title": "Guia Avançado – Tabelas em Quarto (HTML)",
+    "section": "♿ Acessibilidade e leitura",
+    "text": "♿ Acessibilidade e leitura\n✔️ Cabeçalhos claros\n✔️ Alinhamento numérico correto\n✔️ Legendas explicativas\n✔️ Evitar excesso de colunas\nLembre-se: &gt; Tabela boa é lida sem explicação verbal."
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html#erros-comuns",
+    "href": "aulas/guia-quarto-tabelas-html.html#erros-comuns",
+    "title": "Guia Avançado – Tabelas em Quarto (HTML)",
+    "section": "🔴 Erros comuns",
+    "text": "🔴 Erros comuns\n❌ Tabela gigante sem formatação\n❌ Colunas ambíguas\n❌ Casas decimais excessivas\n❌ Tabela como “print” de console\n✔️ Pense na tabela como parte do texto\n✔️ Priorize leitura humana"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas-html.html#resumo-final",
+    "href": "aulas/guia-quarto-tabelas-html.html#resumo-final",
+    "title": "Guia Avançado – Tabelas em Quarto (HTML)",
+    "section": "🧭 Resumo final",
+    "text": "🧭 Resumo final\n\n📋 Markdown → tabelas simples\n🧱 HTML → controle estrutural\n📦 kable() → padrão confiável\n🎨 kableExtra → melhor visual\n🧪 gt → nível publicação\n\n\nEm HTML, a tabela é tão importante quanto o texto que a cita."
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#organizando-dados",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#organizando-dados",
+    "title": "Revisão de conceitos básicos",
+    "section": "Organizando dados",
+    "text": "Organizando dados\n\n\n\nTabelas\n\nApresentam os dados de forma organizada\nApresenta\n\nTítulo\nCabeçalho\nColuna indicadora\nCorpo da tabela\nPodem apresentar frequência relativa\n\n\n\n\n\nNúmero de insetos coletados em cada armadilha\n\n\n\n\n\n\n\nArmadilha\nFrequência\nFrequência relativa\n\n\n\n\nAmarelo Azul Vermelha\n65\n37\n95\n\n32.99\n18.79\n48.22\n\n\n\nTotal\n197\n100.00"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#organizando-dados-1",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#organizando-dados-1",
+    "title": "Revisão de conceitos básicos",
+    "section": "Organizando dados",
+    "text": "Organizando dados\n\n\n\nTabelas de contingência\n\nApresentam os dados classificados por dois fatores\nRealizamos coletas utilizando 3 cores de armadilha, em duas condições de exposição\n\n\n\n\n\n\nColetas de armadilhas de inseto por cor e exposição a luz\n\n\n\n\n\n\n\n\n\nAmarela\nAzul\nVermelha\n\n\n\n\nSombra Luz\n140\n65\n\n180\n37\n\n43\n95"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#organizando-dados-2",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#organizando-dados-2",
+    "title": "Revisão de conceitos básicos",
+    "section": "Organizando dados",
+    "text": "Organizando dados\n\n\n\n\n\nDistribuição de frequências\n\nGrande conjunto de dados\nOrganização dos dados\nVisualização\nListagem de dados agrupados junto com suas ocorrências\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n23\n27\n33\n32\n18\n\n33\n26\n16\n30\n21\n\n21\n21\n24\n19\n17\n\n19\n24\n21\n18\n34\n\n30\n21\n23\n27\n16\n\n23\n18\n26\n24\n27\n\n8\n30\n21\n8\n20\n\n28\n31\n26\n19\n17\n\n\n\n\n\n\n\n\n\\[\nC = 1 + 3.222*log_{10} n\n\\]\n\nC -&gt; Número de Classes\nn -&gt; Número de dados\n\n\n}\n\n\nn = 40"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#organizando-dados-3",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#organizando-dados-3",
+    "title": "Revisão de conceitos básicos",
+    "section": "Organizando dados",
+    "text": "Organizando dados\n\n\n\n\n\nDistribuição de frequências\n\nDiretriz de Sturges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n23\n27\n33\n32\n18\n\n33\n26\n16\n30\n21\n\n21\n21\n24\n19\n17\n\n19\n24\n21\n18\n34\n\n30\n21\n23\n27\n16\n\n23\n18\n26\n24\n27\n\n8\n30\n21\n8\n20\n\n28\n31\n26\n19\n17\n\n\n\n\n\n\n\n\n\\[\nC = 1 + 3.222*log_{10} n\n\\]\n\nC -&gt; Número de Classes\nn -&gt; Número de dados\n\n\n}\n\n\nn = 40\n\n\n\\[\nC = 1 + 3.222*log_{10} 40\n\\]\n\n\nC ~ 6.16 ~ 6"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#organizando-dados-4",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#organizando-dados-4",
+    "title": "Revisão de conceitos básicos",
+    "section": "Organizando dados",
+    "text": "Organizando dados\n\n\n\n\n\nDistribuição de frequências\n\nDIretriz de Sturges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n23\n27\n33\n32\n18\n\n33\n26\n16\n30\n21\n\n21\n21\n24\n19\n17\n\n19\n24\n21\n18\n34\n\n30\n21\n23\n27\n16\n\n23\n18\n26\n24\n27\n\n8\n30\n21\n8\n20\n\n28\n31\n26\n19\n17\n\n\n\n\n\n\n\n\n\\[\nC = 1 + 3.222*log_{10} n\n\\]\n\nC -&gt; Número de Classes\nn -&gt; Número de dados\n\n\nC ~ 6\n\n\n\\[\nintervalo = (max-min)/C\n\\]\n\n\n\\[\nintervalo = (34-8)/6\n\\]\n\n\n\\[\nintervalo = 4.22\n\\]\n\n\n\\[\nintervalo \\approx 5\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#organizando-dados-5",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#organizando-dados-5",
+    "title": "Revisão de conceitos básicos",
+    "section": "Organizando dados",
+    "text": "Organizando dados\n\n\n\n\n\nDistribuição de frequências\n\nDIretriz de Sturges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nli\nls\npm\nfrequencia\n\n\n\n\n[8\n[13\n[18\n[23\n[28\n[33\n\n13)\n18)\n23)\n28)\n33)\n38)\n\n\n\n\n\n\n\n\n\n\n\n\\[\nC = 1 + 3.222*log_{10} n\n\\]\n\n\n\nDefinimos os limites inferiores (li) e superiores (ls)"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#organizando-dados-6",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#organizando-dados-6",
+    "title": "Revisão de conceitos básicos",
+    "section": "Organizando dados",
+    "text": "Organizando dados\n\n\n\n\n\nDistribuição de frequências\n\nDIretriz de Sturges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nli\nls\npm\nfrequencia\n\n\n\n\n[8\n[13\n[18\n[23\n[28\n[33\n\n13)\n18)\n23)\n28)\n33)\n38)\n\n10.5\n15.5\n20.5\n25.5\n30.5\n35.5\n\n\n\n\n\n\n\n\n\n\n\\[\nC = 1 + 3.222*log_{10} n\n\\]\n\n\n\nDefinimos o ponto médios de cada classe (pm)\n\n\\[\npm= (ls + li)/2\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#organizando-dados-7",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#organizando-dados-7",
+    "title": "Revisão de conceitos básicos",
+    "section": "Organizando dados",
+    "text": "Organizando dados\n\n\n\n\n\nDistribuição de frequências\n\nDIretriz de Sturges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nli\nls\npm\nfrequencia\n\n\n\n\n[8\n[13\n[18\n[23\n[28\n[33\n\n13)\n18)\n23)\n28)\n33)\n38)\n\n10.5\n15.5\n20.5\n25.5\n30.5\n35.5\n\n2\n4\n13\n12\n6\n3\n\n\n\n\n\n\n\n\n\n\\[\nC = 1 + 3.222*log_{10} n\n\\]\n\nDeterminamos a frequencia de cada classe\n\n\n\n\n\n\n\n\n\n\n\n\n\n23\n27\n33\n32\n18\n\n33\n26\n16\n30\n21\n\n21\n21\n24\n19\n17\n\n19\n24\n21\n18\n34\n\n30\n21\n23\n27\n16\n\n23\n18\n26\n24\n27\n\n8\n30\n21\n8\n20\n\n28\n31\n26\n19\n17"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-3-organizando.html#organizando-dados-8",
+    "href": "aulas/slides/aula-conceitos-basicos-3-organizando.html#organizando-dados-8",
+    "title": "Revisão de conceitos básicos",
+    "section": "Organizando dados",
+    "text": "Organizando dados\n\n\n\n\n\nDistribuição de frequências\n\nDIretriz de Sturges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nli\nls\npm\nfrequencia\n\n\n\n\n[8\n[13\n[18\n[23\n[28\n[33\n\n13)\n18)\n23)\n28)\n33)\n38)\n\n10.5\n15.5\n20.5\n25.5\n30.5\n35.5\n\n2\n4\n13\n12\n6\n3"
   }
 ]

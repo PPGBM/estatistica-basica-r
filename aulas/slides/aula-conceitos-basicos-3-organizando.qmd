@@ -1,0 +1,435 @@
+---
+title: "Revisão de conceitos básicos"
+subtitle: "Organizando dados"
+author: "Dr. Alexandre Dias Kassuga"
+format:
+  revealjs:
+    theme: simple
+    css: slides.css
+    highlight-style: monokai
+    slide-number: true
+    format: wide
+    mermaid: 
+      theme: default
+---
+
+## Organizando dados
+
+::::: columns
+::: {.column width="50%"}
+-   Tabelas
+    -   Apresentam os dados de forma organizada
+    -   Apresenta
+        -   Título
+        -   Cabeçalho
+        -   Coluna indicadora
+        -   Corpo da tabela
+        -   Podem apresentar frequência relativa
+:::
+
+::: {.column width="50%"}
++-----------------------+----------------+---------------------+
+| Armadilha             | Frequência     | Frequência relativa |
++:=====================:+:==============:+:===================:+
+| Amarelo Azul Vermelha | 65\            | 32.99\              |
+|                       | 37\            | 18.79\              |
+|                       | 95\            | 48.22\              |
++-----------------------+----------------+---------------------+
+| Total                 | 197            | 100.00              |
++-----------------------+----------------+---------------------+
+
+: Número de insetos coletados em cada armadilha
+:::
+:::::
+
+## Organizando dados
+
+\
+
+-   Tabelas de contingência
+    -   Apresentam os dados classificados por dois fatores
+    -   Realizamos coletas utilizando 3 cores de armadilha, em duas condições de exposição
+
+\
+\
+
++------------+---------+---------+----------+
+|            | Amarela | Azul    | Vermelha |
++:==========:+:=======:+:=======:+:========:+
+| Sombra Luz | 140\    | 180\    | 43\      |
+|            | 65\     | 37\     | 95       |
++------------+---------+---------+----------+
+
+: Coletas de armadilhas de inseto por cor e exposição a luz
+
+## Organizando dados
+
+:::::::: columns
+::: {.column width="50%"}
+\
+
+-   Distribuição de frequências
+    -   Grande conjunto de dados
+    -   Organização dos dados
+    -   Visualização
+    -   Listagem de dados agrupados junto com suas ocorrências
+
+\
+
++:---:+:---:+:---:+:---:+:---:+:---:+:---:+:---:+
+| 23\ | 33\ | 21\ | 19\ | 30\ | 23\ | 8\  | 28\ |
+| 27\ | 26\ | 21\ | 24\ | 21\ | 18\ | 30\ | 31\ |
+| 33\ | 16\ | 24\ | 21\ | 23\ | 26\ | 21\ | 26\ |
+| 32\ | 30\ | 19\ | 18\ | 27\ | 24\ | 8\  | 19\ |
+| 18\ | 21\ | 17\ | 34\ | 16\ | 27\ | 20\ | 17\ |
++-----+-----+-----+-----+-----+-----+-----+-----+
+:::
+
+:::::: {.column width="50%"}
+\
+\
+\
+$$
+C = 1 + 3.222*log_{10} n
+$$
+
+::: {.texto-menor style="text-align: center;"}
+C -\> Número de Classes\
+n -\> Número de dados
+:::
+
+::: {style="font-size: 200px; position: absolute; left: 45%; top: 57.5%; color: red; "}
+}
+:::
+
+::: {.absolute left="53%" top="77%" style="font-size: 24px;"}
+n = 40
+:::
+::::::
+::::::::
+
+## Organizando dados
+
+:::::::::: columns
+::: {.column width="50%"}
+\
+
+-   Distribuição de frequências
+    -   Diretriz de Sturges
+
+\
+\
+\
+\
+\
+
++:---:+:---:+:---:+:---:+:---:+:---:+:---:+:---:+
+| 23\ | 33\ | 21\ | 19\ | 30\ | 23\ | 8\  | 28\ |
+| 27\ | 26\ | 21\ | 24\ | 21\ | 18\ | 30\ | 31\ |
+| 33\ | 16\ | 24\ | 21\ | 23\ | 26\ | 21\ | 26\ |
+| 32\ | 30\ | 19\ | 18\ | 27\ | 24\ | 8\  | 19\ |
+| 18\ | 21\ | 17\ | 34\ | 16\ | 27\ | 20\ | 17\ |
++-----+-----+-----+-----+-----+-----+-----+-----+
+:::
+
+:::::::: {.column width="50%"}
+\
+\
+\
+$$
+C = 1 + 3.222*log_{10} n
+$$
+
+::: {.texto-menor style="text-align: center;"}
+C -\> Número de Classes\
+n -\> Número de dados
+:::
+
+::: {style="font-size: 200px; position: absolute; left: 45%; top: 56%; color: red; "}
+}
+:::
+
+::: {.absolute left="53%" top="76%" style="font-size: 24px;"}
+n = 40
+:::
+
+::: {.absolute left="65%" top="74%" style="font-size: 24px;"}
+$$
+C = 1 + 3.222*log_{10} 40
+$$
+:::
+
+::: {.absolute left="65%" top="80%" style="font-size: 24px;"}
+C \~ 6.16 \~ 6
+:::
+::::::::
+::::::::::
+
+## Organizando dados
+
+::::::::::: columns
+::: {.column width="50%"}
+\
+
+-   Distribuição de frequências
+    -   DIretriz de Sturges
+
+\
+\
+\
+\
+\
+
++:---:+:---:+:---:+:---:+:---:+:---:+:---:+:---:+
+| 23\ | 33\ | 21\ | 19\ | 30\ | 23\ | 8\  | 28\ |
+| 27\ | 26\ | 21\ | 24\ | 21\ | 18\ | 30\ | 31\ |
+| 33\ | 16\ | 24\ | 21\ | 23\ | 26\ | 21\ | 26\ |
+| 32\ | 30\ | 19\ | 18\ | 27\ | 24\ | 8\  | 19\ |
+| 18\ | 21\ | 17\ | 34\ | 16\ | 27\ | 20\ | 17\ |
++-----+-----+-----+-----+-----+-----+-----+-----+
+:::
+
+::::::::: {.column width="50%"}
+\
+\
+\
+$$
+C = 1 + 3.222*log_{10} n
+$$
+
+::: {.texto-menor style="text-align: center;"}
+C -\> Número de Classes\
+n -\> Número de dados
+:::
+
+::: {.absolute left="80%" top="58%" style="font-size: 24px;"}
+C \~ 6
+:::
+
+::: {.absolute left="70%" top="65%" style="font-size: 24px;"}
+$$
+intervalo = (max-min)/C
+$$
+:::
+
+::: {.absolute left="70%" top="70%" style="font-size: 24px;"}
+$$
+intervalo = (34-8)/6
+$$
+:::
+
+::: {.absolute left="70%" top="75%" style="font-size: 24px;"}
+$$
+intervalo = 4.22 
+$$
+:::
+
+::: {.absolute left="70%" top="80%" style="font-size: 24px;"}
+$$
+intervalo \approx 5 
+$$
+:::
+:::::::::
+:::::::::::
+
+## Organizando dados
+
+::::::: columns
+::: {.column width="50%"}
+\
+
+-   Distribuição de frequências
+    -   DIretriz de Sturges
+
+\
+\
+\
+
+::: {.texto-menor}
+
++------+-------+------+------------+
+| li   | ls    |   pm | frequencia |
++:====:+:=====:+:====:+:==========:+
+| [8\  | 13)\  |      |            |
+| [13\ | 18)\  |      |            |
+| [18\ | 23)\  |      |            |
+| [23\ | 28)\  |      |            |
+| [28\ | 33)\  |      |            |
+| [33\ | 38)\  |      |            |
++------+-------+------+------------+
+
+:::
+
+:::
+
+::::: {.column width="50%"}
+\
+\
+\
+$$
+C = 1 + 3.222*log_{10} n
+$$
+
+\
+\
+
+Definimos os limites inferiores *(li)* e superiores *(ls)*
+
+
+:::::
+:::::::
+
+
+## Organizando dados
+
+::::::: columns
+::: {.column width="50%"}
+\
+
+-   Distribuição de frequências
+    -   DIretriz de Sturges
+
+\
+\
+\
+
+::: {.texto-menor}
+
++------+-------+--------+------------+
+| li   | ls    |   pm   | frequencia |
++:====:+:=====:+:======:+:==========:+
+| [8\  | 13)\  | 10.5\  |            |
+| [13\ | 18)\  | 15.5\  |            |
+| [18\ | 23)\  | 20.5\  |            |
+| [23\ | 28)\  | 25.5\  |            |
+| [28\ | 33)\  | 30.5\  |            |
+| [33\ | 38)\  | 35.5\  |            |
++------+-------+--------+------------+
+
+:::
+
+:::
+
+::::: {.column width="50%"}
+\
+\
+\
+$$
+C = 1 + 3.222*log_{10} n
+$$
+
+\
+\
+
+Definimos o ponto médios de cada classe (pm)
+
+
+::: {.absolute left="60%" top="70%" style="font-size: 24px;"}
+$$
+pm= (ls + li)/2
+$$
+:::
+:::::
+:::::::
+
+
+## Organizando dados
+
+::::::: columns
+::: {.column width="50%"}
+\
+
+-   Distribuição de frequências
+    -   DIretriz de Sturges
+
+\
+\
+\
+
+::: {.texto-menor}
+
++------+-------+--------+------------+
+| li   | ls    |   pm   | frequencia |
++:====:+:=====:+:======:+:==========:+
+| [8\  | 13)\  | 10.5\  |   2\       |
+| [13\ | 18)\  | 15.5\  |   4\       |
+| [18\ | 23)\  | 20.5\  |   13\      |
+| [23\ | 28)\  | 25.5\  |   12\      |
+| [28\ | 33)\  | 30.5\  |   6\       |
+| [33\ | 38)\  | 35.5\  |   3\       |
++------+-------+--------+------------+
+
+:::
+
+:::
+
+::::: {.column width="50%"}
+\
+\
+\
+$$
+C = 1 + 3.222*log_{10} n
+$$
+\
+
+Determinamos a frequencia de cada classe
+
+
+
+
++:---:+:---:+:---:+:---:+:---:+:---:+:---:+:---:+
+| 23\ | 33\ | 21\ | 19\ | 30\ | 23\ | 8\  | 28\ |
+| 27\ | 26\ | 21\ | 24\ | 21\ | 18\ | 30\ | 31\ |
+| 33\ | 16\ | 24\ | 21\ | 23\ | 26\ | 21\ | 26\ |
+| 32\ | 30\ | 19\ | 18\ | 27\ | 24\ | 8\  | 19\ |
+| 18\ | 21\ | 17\ | 34\ | 16\ | 27\ | 20\ | 17\ |
++-----+-----+-----+-----+-----+-----+-----+-----+
+:::::
+:::::::
+
+## Organizando dados
+
+::::::: columns
+::: {.column width="50%"}
+\
+
+-   Distribuição de frequências
+    -   DIretriz de Sturges
+
+\
+\
+\
+
+::: {.texto-menor}
+
++------+-------+--------+------------+
+| li   | ls    |   pm   | frequencia |
++:====:+:=====:+:======:+:==========:+
+| [8\  | 13)\  | 10.5\  |   2\       |
+| [13\ | 18)\  | 15.5\  |   4\       |
+| [18\ | 23)\  | 20.5\  |   13\      |
+| [23\ | 28)\  | 25.5\  |   12\      |
+| [28\ | 33)\  | 30.5\  |   6\       |
+| [33\ | 38)\  | 35.5\  |   3\       |
++------+-------+--------+------------+
+
+:::
+
+:::
+
+::::: {.column width="50%"}
+
+```{R}
+#| fig-height: 10
+#| 
+sturges <- c(23, 33, 21, 19, 30, 23, 8,28, 27, 26, 21, 24, 21, 18, 30, 31, 33, 16, 24, 21, 23, 26, 21, 26, 32, 30, 19, 18, 27, 24, 8, 19, 18, 21, 17, 34, 16, 27, 20, 17)
+
+sturges.pm <- c(10.5, 15.5, 20.5, 25.5, 30.5, 35.5)  
+sturges.freq <- c(2, 4, 13, 12, 6, 3)
+
+
+barplot(sturges.freq, names.arg = sturges.pm, xlab = "Ponto médio", ylab = "Frequência", main = "Distribuição de frequências - Sturges", space = 0, cex.axis = 1.5, cex.names = 1.5)
+
+```
+:::::
+:::::::

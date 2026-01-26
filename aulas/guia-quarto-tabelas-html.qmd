@@ -1,5 +1,5 @@
 ---
-title: "Guia Rápido – Tabelas em Quarto (HTML)"
+title: "Guia Avançado – Tabelas em Quarto (HTML)"
 author: "Alexandre Kassuga"
 format:
   html:
@@ -13,53 +13,274 @@ execute:
 
 ## 🎯 Objetivo do guia
 
-Este guia apresenta **formas corretas e progressivas de criar tabelas em documentos Quarto (`.qmd`) renderizados em HTML**, cobrindo:
+Este guia apresenta **de forma detalhada e progressiva** como **construir, formatar e controlar tabelas em documentos Quarto (`.qmd`) renderizados em HTML**, cobrindo:
 
-- 📋 Tabelas simples em Markdown  
-- 📊 Tabelas a partir de objetos do R  
-- 🎨 Tabelas formatadas para leitura humana  
-- 🧠 Boas práticas didáticas e técnicas  
+- 📋 Tabelas manuais (com e sem cabeçalho)
+- 🧱 Controle estrutural de colunas e linhas
+- 📊 Tabelas a partir de objetos do R
+- 🎨 Formatação visual e leitura humana
+- 🧠 Boas práticas didáticas e técnicas
 
-O foco é **HTML**, com uso típico em relatórios, sites e material didático.
-
----
-
-## 🧠 Conceito geral: tabelas em Quarto
-
-Em Quarto, tabelas podem ser criadas a partir de:
-
-- Markdown puro (simples)
-- Data frames do R
-- Pacotes de formatação (`knitr`, `gt`)
-
-👉 **Regra prática**:  
-quanto maior o controle visual, mais próximo você fica do HTML.
+O foco é **HTML estático**, típico de relatórios, sites e material didático.
 
 ---
 
-## 📋 Tabela simples em Markdown
+## 🧠 Conceito central: o que é uma boa tabela em HTML
 
-Use apenas para tabelas pequenas.
+Uma boa tabela deve:
+- Ser compreendida **sem o texto ao redor**
+- Ter estrutura clara (linhas, colunas, cabeçalho)
+- Evitar excesso de informação visual
+- Priorizar leitura, não compactação
+
+👉 Em Quarto, **tabela é conteúdo**, não “saída de console”.
+
+---
+
+## 📋 Tabelas manuais em Markdown (forma mais simples)
+
+### Tabela com cabeçalho
 
     | Variável | Média | Desvio |
     |----------|-------|--------|
     | A        | 10.2  | 1.3    |
     | B        |  8.5  | 0.9    |
 
-Vantagens:
-- Simples
-- Rápida
-- Leitura direta
-
-Limitações:
-- Pouco controle visual
-- Não escala bem
+Características:
+- Primeira linha = cabeçalho
+- Segunda linha = separador obrigatório
+- Alinhamento definido por `:` (opcional)
 
 ---
 
-## 📊 Tabela a partir de um data frame (automático)
+### Controle de alinhamento
 
-Qualquer data frame impresso vira tabela HTML.
+    | Variável | Média | Desvio |
+    |:---------|------:|:------:|
+    | A        | 10.2  | 1.3    |
+    | B        |  8.5  | 0.9    |
 
-```{r}
-head(cars)
+- `:` à esquerda → alinhado à esquerda
+- `:` à direita → alinhado à direita
+- `:` dos dois lados → centralizado
+
+---
+
+## 📋 Tabela sem cabeçalho (quando faz sentido)
+
+Markdown **não tem suporte nativo explícito** a tabelas sem cabeçalho.  
+A solução correta é usar **HTML direto**.
+
+    <table>
+      <tbody>
+        <tr>
+          <td>A</td>
+          <td>10.2</td>
+          <td>1.3</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>8.5</td>
+          <td>0.9</td>
+        </tr>
+      </tbody>
+    </table>
+
+Use tabelas sem cabeçalho apenas para:
+- Matrizes pequenas
+- Resumos visuais
+- Layout auxiliar (com parcimônia)
+
+---
+
+## 🧱 Estrutura HTML explícita (controle total)
+
+    <table>
+      <thead>
+        <tr>
+          <th>Variável</th>
+          <th>Média</th>
+          <th>Desvio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A</td>
+          <td>10.2</td>
+          <td>1.3</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>8.5</td>
+          <td>0.9</td>
+        </tr>
+      </tbody>
+    </table>
+
+Vantagens:
+- Controle absoluto
+- Compatível com CSS
+- Ideal para casos especiais
+
+Desvantagem:
+- Mais verboso
+- Menos prático para muitas tabelas
+
+---
+
+## 📊 Tabelas a partir de objetos do R (automático)
+
+Qualquer data frame impresso vira tabela HTML:
+
+    head(cars)
+
+Vantagens:
+- Rápido
+- Zero configuração
+
+Limitações:
+- Aparência básica
+- Pouco controle visual
+
+---
+
+## 📦 knitr::kable() – padrão profissional mínimo
+
+    knitr::kable(
+      head(cars),
+      caption = "Tabela 1. Conjunto de dados cars"
+    )
+
+Vantagens:
+- Legenda (caption)
+- HTML limpo
+- Confiável e leve
+
+Recomendado para:
+- Relatórios
+- Apostilas
+- Material didático
+
+---
+
+## 🎨 Melhorando aparência com kableExtra
+
+    knitr::kable(
+      head(cars),
+      caption = "Tabela 2. cars formatada"
+    ) |>
+      kableExtra::kable_styling(
+        bootstrap_options = c("striped", "hover"),
+        full_width = false
+      )
+
+Opções comuns:
+- `striped` → linhas alternadas
+- `hover` → destaque ao passar o mouse
+- `condensed` → tabela mais compacta
+
+---
+
+## 📏 Controle de largura da tabela
+
+    knitr::kable(head(cars)) |>
+      kableExtra::kable_styling(full_width = false)
+
+Use:
+- `full_width = true` para ocupar a página
+- `false` para leitura mais confortável
+
+---
+
+## 🧠 Tabelas longas (scroll em HTML)
+
+    knitr::kable(head(iris, 20)) |>
+      kableExtra::scroll_box(
+        width = "100%",
+        height = "300px"
+      )
+
+Evita:
+- Quebra de layout
+- Tabelas ilegíveis em telas menores
+
+---
+
+## 🧪 Tabelas com gt (nível relatório/publicação)
+
+    library(gt)
+
+    cars |>
+      head() |>
+      gt() |>
+      tab_header(
+        title = "Tabela 3. Conjunto cars",
+        subtitle = "Exemplo com gt"
+      )
+
+Vantagens:
+- Visual moderno
+- Controle fino
+- Excelente em HTML
+
+Indicado para:
+- Relatórios finais
+- Documentos institucionais
+- Divulgação científica
+
+---
+
+## 🎯 Formatação fina com gt
+
+    cars |>
+      head() |>
+      gt() |>
+      fmt_number(
+        columns = everything(),
+        decimals = 1
+      ) |>
+      cols_label(
+        speed = "Velocidade",
+        dist  = "Distância"
+      )
+
+Boas práticas:
+- Poucas casas decimais
+- Nomes claros de colunas
+- Evitar abreviações obscuras
+
+---
+
+## ♿ Acessibilidade e leitura
+
+✔️ Cabeçalhos claros  
+✔️ Alinhamento numérico correto  
+✔️ Legendas explicativas  
+✔️ Evitar excesso de colunas  
+
+Lembre-se:
+> **Tabela boa é lida sem explicação verbal.**
+
+---
+
+## 🔴 Erros comuns
+
+❌ Tabela gigante sem formatação  
+❌ Colunas ambíguas  
+❌ Casas decimais excessivas  
+❌ Tabela como “print” de console  
+
+✔️ Pense na tabela como parte do texto  
+✔️ Priorize leitura humana  
+
+---
+
+## 🧭 Resumo final
+
+- 📋 Markdown → tabelas simples
+- 🧱 HTML → controle estrutural
+- 📦 `kable()` → padrão confiável
+- 🎨 `kableExtra` → melhor visual
+- 🧪 `gt` → nível publicação
+
+> **Em HTML, a tabela é tão importante quanto o texto que a cita.**

@@ -8,7 +8,7 @@
 
 <meta name="author" content="Alexandre Kassuga">
 
-<title>Guia Rápido – Tabelas em Quarto (HTML) – Estatística Básica com R</title>
+<title>Guia Avançado – Tabelas em Quarto (HTML) – Estatística Básica com R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -129,9 +129,24 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#objetivo-do-guia" id="toc-objetivo-do-guia" class="nav-link active" data-scroll-target="#objetivo-do-guia">🎯 Objetivo do guia</a></li>
-  <li><a href="#conceito-geral-tabelas-em-quarto" id="toc-conceito-geral-tabelas-em-quarto" class="nav-link" data-scroll-target="#conceito-geral-tabelas-em-quarto">🧠 Conceito geral: tabelas em Quarto</a></li>
-  <li><a href="#tabela-simples-em-markdown" id="toc-tabela-simples-em-markdown" class="nav-link" data-scroll-target="#tabela-simples-em-markdown">📋 Tabela simples em Markdown</a></li>
-  <li><a href="#tabela-a-partir-de-um-data-frame-automático" id="toc-tabela-a-partir-de-um-data-frame-automático" class="nav-link" data-scroll-target="#tabela-a-partir-de-um-data-frame-automático">📊 Tabela a partir de um data frame (automático)</a></li>
+  <li><a href="#conceito-central-o-que-é-uma-boa-tabela-em-html" id="toc-conceito-central-o-que-é-uma-boa-tabela-em-html" class="nav-link" data-scroll-target="#conceito-central-o-que-é-uma-boa-tabela-em-html">🧠 Conceito central: o que é uma boa tabela em HTML</a></li>
+  <li><a href="#tabelas-manuais-em-markdown-forma-mais-simples" id="toc-tabelas-manuais-em-markdown-forma-mais-simples" class="nav-link" data-scroll-target="#tabelas-manuais-em-markdown-forma-mais-simples">📋 Tabelas manuais em Markdown (forma mais simples)</a>
+  <ul class="collapse">
+  <li><a href="#tabela-com-cabeçalho" id="toc-tabela-com-cabeçalho" class="nav-link" data-scroll-target="#tabela-com-cabeçalho">Tabela com cabeçalho</a></li>
+  <li><a href="#controle-de-alinhamento" id="toc-controle-de-alinhamento" class="nav-link" data-scroll-target="#controle-de-alinhamento">Controle de alinhamento</a></li>
+  </ul></li>
+  <li><a href="#tabela-sem-cabeçalho-quando-faz-sentido" id="toc-tabela-sem-cabeçalho-quando-faz-sentido" class="nav-link" data-scroll-target="#tabela-sem-cabeçalho-quando-faz-sentido">📋 Tabela sem cabeçalho (quando faz sentido)</a></li>
+  <li><a href="#estrutura-html-explícita-controle-total" id="toc-estrutura-html-explícita-controle-total" class="nav-link" data-scroll-target="#estrutura-html-explícita-controle-total">🧱 Estrutura HTML explícita (controle total)</a></li>
+  <li><a href="#tabelas-a-partir-de-objetos-do-r-automático" id="toc-tabelas-a-partir-de-objetos-do-r-automático" class="nav-link" data-scroll-target="#tabelas-a-partir-de-objetos-do-r-automático">📊 Tabelas a partir de objetos do R (automático)</a></li>
+  <li><a href="#knitrkable-padrão-profissional-mínimo" id="toc-knitrkable-padrão-profissional-mínimo" class="nav-link" data-scroll-target="#knitrkable-padrão-profissional-mínimo">📦 knitr::kable() – padrão profissional mínimo</a></li>
+  <li><a href="#melhorando-aparência-com-kableextra" id="toc-melhorando-aparência-com-kableextra" class="nav-link" data-scroll-target="#melhorando-aparência-com-kableextra">🎨 Melhorando aparência com kableExtra</a></li>
+  <li><a href="#controle-de-largura-da-tabela" id="toc-controle-de-largura-da-tabela" class="nav-link" data-scroll-target="#controle-de-largura-da-tabela">📏 Controle de largura da tabela</a></li>
+  <li><a href="#tabelas-longas-scroll-em-html" id="toc-tabelas-longas-scroll-em-html" class="nav-link" data-scroll-target="#tabelas-longas-scroll-em-html">🧠 Tabelas longas (scroll em HTML)</a></li>
+  <li><a href="#tabelas-com-gt-nível-relatóriopublicação" id="toc-tabelas-com-gt-nível-relatóriopublicação" class="nav-link" data-scroll-target="#tabelas-com-gt-nível-relatóriopublicação">🧪 Tabelas com gt (nível relatório/publicação)</a></li>
+  <li><a href="#formatação-fina-com-gt" id="toc-formatação-fina-com-gt" class="nav-link" data-scroll-target="#formatação-fina-com-gt">🎯 Formatação fina com gt</a></li>
+  <li><a href="#acessibilidade-e-leitura" id="toc-acessibilidade-e-leitura" class="nav-link" data-scroll-target="#acessibilidade-e-leitura">♿ Acessibilidade e leitura</a></li>
+  <li><a href="#erros-comuns" id="toc-erros-comuns" class="nav-link" data-scroll-target="#erros-comuns">🔴 Erros comuns</a></li>
+  <li><a href="#resumo-final" id="toc-resumo-final" class="nav-link" data-scroll-target="#resumo-final">🧭 Resumo final</a></li>
   </ul>
 </nav>
     </div>
@@ -140,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Guia Rápido – Tabelas em Quarto (HTML)</h1>
+<h1 class="title">Guia Avançado – Tabelas em Quarto (HTML)</h1>
 </div>
 
 
@@ -165,46 +180,206 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="objetivo-do-guia" class="level2">
 <h2 class="anchored" data-anchor-id="objetivo-do-guia">🎯 Objetivo do guia</h2>
-<p>Este guia apresenta <strong>formas corretas e progressivas de criar tabelas em documentos Quarto (<code>.qmd</code>) renderizados em HTML</strong>, cobrindo:</p>
+<p>Este guia apresenta <strong>de forma detalhada e progressiva</strong> como <strong>construir, formatar e controlar tabelas em documentos Quarto (<code>.qmd</code>) renderizados em HTML</strong>, cobrindo:</p>
 <ul>
-<li>📋 Tabelas simples em Markdown<br>
-</li>
-<li>📊 Tabelas a partir de objetos do R<br>
-</li>
-<li>🎨 Tabelas formatadas para leitura humana<br>
-</li>
+<li>📋 Tabelas manuais (com e sem cabeçalho)</li>
+<li>🧱 Controle estrutural de colunas e linhas</li>
+<li>📊 Tabelas a partir de objetos do R</li>
+<li>🎨 Formatação visual e leitura humana</li>
 <li>🧠 Boas práticas didáticas e técnicas</li>
 </ul>
-<p>O foco é <strong>HTML</strong>, com uso típico em relatórios, sites e material didático.</p>
+<p>O foco é <strong>HTML estático</strong>, típico de relatórios, sites e material didático.</p>
 <hr>
 </section>
-<section id="conceito-geral-tabelas-em-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="conceito-geral-tabelas-em-quarto">🧠 Conceito geral: tabelas em Quarto</h2>
-<p>Em Quarto, tabelas podem ser criadas a partir de:</p>
-<ul>
-<li>Markdown puro (simples)</li>
-<li>Data frames do R</li>
-<li>Pacotes de formatação (<code>knitr</code>, <code>gt</code>)</li>
-</ul>
-<p>👉 <strong>Regra prática</strong>:<br>
-quanto maior o controle visual, mais próximo você fica do HTML.</p>
+<section id="conceito-central-o-que-é-uma-boa-tabela-em-html" class="level2">
+<h2 class="anchored" data-anchor-id="conceito-central-o-que-é-uma-boa-tabela-em-html">🧠 Conceito central: o que é uma boa tabela em HTML</h2>
+<p>Uma boa tabela deve: - Ser compreendida <strong>sem o texto ao redor</strong> - Ter estrutura clara (linhas, colunas, cabeçalho) - Evitar excesso de informação visual - Priorizar leitura, não compactação</p>
+<p>👉 Em Quarto, <strong>tabela é conteúdo</strong>, não “saída de console”.</p>
 <hr>
 </section>
-<section id="tabela-simples-em-markdown" class="level2">
-<h2 class="anchored" data-anchor-id="tabela-simples-em-markdown">📋 Tabela simples em Markdown</h2>
-<p>Use apenas para tabelas pequenas.</p>
+<section id="tabelas-manuais-em-markdown-forma-mais-simples" class="level2">
+<h2 class="anchored" data-anchor-id="tabelas-manuais-em-markdown-forma-mais-simples">📋 Tabelas manuais em Markdown (forma mais simples)</h2>
+<section id="tabela-com-cabeçalho" class="level3">
+<h3 class="anchored" data-anchor-id="tabela-com-cabeçalho">Tabela com cabeçalho</h3>
 <pre><code>| Variável | Média | Desvio |
 |----------|-------|--------|
 | A        | 10.2  | 1.3    |
 | B        |  8.5  | 0.9    |</code></pre>
-<p>Vantagens: - Simples - Rápida - Leitura direta</p>
-<p>Limitações: - Pouco controle visual - Não escala bem</p>
+<p>Características: - Primeira linha = cabeçalho - Segunda linha = separador obrigatório - Alinhamento definido por <code>:</code> (opcional)</p>
 <hr>
 </section>
-<section id="tabela-a-partir-de-um-data-frame-automático" class="level2">
-<h2 class="anchored" data-anchor-id="tabela-a-partir-de-um-data-frame-automático">📊 Tabela a partir de um data frame (automático)</h2>
-<p>Qualquer data frame impresso vira tabela HTML.</p>
-<p>head(cars)</p>
+<section id="controle-de-alinhamento" class="level3">
+<h3 class="anchored" data-anchor-id="controle-de-alinhamento">Controle de alinhamento</h3>
+<pre><code>| Variável | Média | Desvio |
+|:---------|------:|:------:|
+| A        | 10.2  | 1.3    |
+| B        |  8.5  | 0.9    |</code></pre>
+<ul>
+<li><code>:</code> à esquerda → alinhado à esquerda</li>
+<li><code>:</code> à direita → alinhado à direita</li>
+<li><code>:</code> dos dois lados → centralizado</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="tabela-sem-cabeçalho-quando-faz-sentido" class="level2">
+<h2 class="anchored" data-anchor-id="tabela-sem-cabeçalho-quando-faz-sentido">📋 Tabela sem cabeçalho (quando faz sentido)</h2>
+<p>Markdown <strong>não tem suporte nativo explícito</strong> a tabelas sem cabeçalho.<br>
+A solução correta é usar <strong>HTML direto</strong>.</p>
+<pre><code>&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;A&lt;/td&gt;
+      &lt;td&gt;10.2&lt;/td&gt;
+      &lt;td&gt;1.3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;B&lt;/td&gt;
+      &lt;td&gt;8.5&lt;/td&gt;
+      &lt;td&gt;0.9&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+<p>Use tabelas sem cabeçalho apenas para: - Matrizes pequenas - Resumos visuais - Layout auxiliar (com parcimônia)</p>
+<hr>
+</section>
+<section id="estrutura-html-explícita-controle-total" class="level2">
+<h2 class="anchored" data-anchor-id="estrutura-html-explícita-controle-total">🧱 Estrutura HTML explícita (controle total)</h2>
+<pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Variável&lt;/th&gt;
+      &lt;th&gt;Média&lt;/th&gt;
+      &lt;th&gt;Desvio&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;A&lt;/td&gt;
+      &lt;td&gt;10.2&lt;/td&gt;
+      &lt;td&gt;1.3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;B&lt;/td&gt;
+      &lt;td&gt;8.5&lt;/td&gt;
+      &lt;td&gt;0.9&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+<p>Vantagens: - Controle absoluto - Compatível com CSS - Ideal para casos especiais</p>
+<p>Desvantagem: - Mais verboso - Menos prático para muitas tabelas</p>
+<hr>
+</section>
+<section id="tabelas-a-partir-de-objetos-do-r-automático" class="level2">
+<h2 class="anchored" data-anchor-id="tabelas-a-partir-de-objetos-do-r-automático">📊 Tabelas a partir de objetos do R (automático)</h2>
+<p>Qualquer data frame impresso vira tabela HTML:</p>
+<pre><code>head(cars)</code></pre>
+<p>Vantagens: - Rápido - Zero configuração</p>
+<p>Limitações: - Aparência básica - Pouco controle visual</p>
+<hr>
+</section>
+<section id="knitrkable-padrão-profissional-mínimo" class="level2">
+<h2 class="anchored" data-anchor-id="knitrkable-padrão-profissional-mínimo">📦 knitr::kable() – padrão profissional mínimo</h2>
+<pre><code>knitr::kable(
+  head(cars),
+  caption = "Tabela 1. Conjunto de dados cars"
+)</code></pre>
+<p>Vantagens: - Legenda (caption) - HTML limpo - Confiável e leve</p>
+<p>Recomendado para: - Relatórios - Apostilas - Material didático</p>
+<hr>
+</section>
+<section id="melhorando-aparência-com-kableextra" class="level2">
+<h2 class="anchored" data-anchor-id="melhorando-aparência-com-kableextra">🎨 Melhorando aparência com kableExtra</h2>
+<pre><code>knitr::kable(
+  head(cars),
+  caption = "Tabela 2. cars formatada"
+) |&gt;
+  kableExtra::kable_styling(
+    bootstrap_options = c("striped", "hover"),
+    full_width = false
+  )</code></pre>
+<p>Opções comuns: - <code>striped</code> → linhas alternadas - <code>hover</code> → destaque ao passar o mouse - <code>condensed</code> → tabela mais compacta</p>
+<hr>
+</section>
+<section id="controle-de-largura-da-tabela" class="level2">
+<h2 class="anchored" data-anchor-id="controle-de-largura-da-tabela">📏 Controle de largura da tabela</h2>
+<pre><code>knitr::kable(head(cars)) |&gt;
+  kableExtra::kable_styling(full_width = false)</code></pre>
+<p>Use: - <code>full_width = true</code> para ocupar a página - <code>false</code> para leitura mais confortável</p>
+<hr>
+</section>
+<section id="tabelas-longas-scroll-em-html" class="level2">
+<h2 class="anchored" data-anchor-id="tabelas-longas-scroll-em-html">🧠 Tabelas longas (scroll em HTML)</h2>
+<pre><code>knitr::kable(head(iris, 20)) |&gt;
+  kableExtra::scroll_box(
+    width = "100%",
+    height = "300px"
+  )</code></pre>
+<p>Evita: - Quebra de layout - Tabelas ilegíveis em telas menores</p>
+<hr>
+</section>
+<section id="tabelas-com-gt-nível-relatóriopublicação" class="level2">
+<h2 class="anchored" data-anchor-id="tabelas-com-gt-nível-relatóriopublicação">🧪 Tabelas com gt (nível relatório/publicação)</h2>
+<pre><code>library(gt)
+
+cars |&gt;
+  head() |&gt;
+  gt() |&gt;
+  tab_header(
+    title = "Tabela 3. Conjunto cars",
+    subtitle = "Exemplo com gt"
+  )</code></pre>
+<p>Vantagens: - Visual moderno - Controle fino - Excelente em HTML</p>
+<p>Indicado para: - Relatórios finais - Documentos institucionais - Divulgação científica</p>
+<hr>
+</section>
+<section id="formatação-fina-com-gt" class="level2">
+<h2 class="anchored" data-anchor-id="formatação-fina-com-gt">🎯 Formatação fina com gt</h2>
+<pre><code>cars |&gt;
+  head() |&gt;
+  gt() |&gt;
+  fmt_number(
+    columns = everything(),
+    decimals = 1
+  ) |&gt;
+  cols_label(
+    speed = "Velocidade",
+    dist  = "Distância"
+  )</code></pre>
+<p>Boas práticas: - Poucas casas decimais - Nomes claros de colunas - Evitar abreviações obscuras</p>
+<hr>
+</section>
+<section id="acessibilidade-e-leitura" class="level2">
+<h2 class="anchored" data-anchor-id="acessibilidade-e-leitura">♿ Acessibilidade e leitura</h2>
+<p>✔️ Cabeçalhos claros<br>
+✔️ Alinhamento numérico correto<br>
+✔️ Legendas explicativas<br>
+✔️ Evitar excesso de colunas</p>
+<p>Lembre-se: &gt; <strong>Tabela boa é lida sem explicação verbal.</strong></p>
+<hr>
+</section>
+<section id="erros-comuns" class="level2">
+<h2 class="anchored" data-anchor-id="erros-comuns">🔴 Erros comuns</h2>
+<p>❌ Tabela gigante sem formatação<br>
+❌ Colunas ambíguas<br>
+❌ Casas decimais excessivas<br>
+❌ Tabela como “print” de console</p>
+<p>✔️ Pense na tabela como parte do texto<br>
+✔️ Priorize leitura humana</p>
+<hr>
+</section>
+<section id="resumo-final" class="level2">
+<h2 class="anchored" data-anchor-id="resumo-final">🧭 Resumo final</h2>
+<ul>
+<li>📋 Markdown → tabelas simples</li>
+<li>🧱 HTML → controle estrutural</li>
+<li>📦 <code>kable()</code> → padrão confiável</li>
+<li>🎨 <code>kableExtra</code> → melhor visual</li>
+<li>🧪 <code>gt</code> → nível publicação</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Em HTML, a tabela é tão importante quanto o texto que a cita.</strong></p>
+</blockquote>
 
 
 </section>
