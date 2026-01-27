@@ -81,7 +81,7 @@
     "href": "aulas/aulas.html",
     "title": "Aulas",
     "section": "",
-    "text": "Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.\n\n\n\n\nApresentação do curso\n\nConteúdos programáticos\n\nTipografia do curso\n\n➡️ Acessar slides da aula\n\n\n\n\n\nO que é a estatística\nO que são Dados\nAmostragem e generalização\nTipos de dados\n\n➡️ Acessar slides da aula\n\n\n\n\n\nPlanejando experimentos\n\n➡️ Acessar slides da aula\n\n\n\n\n\nTabelas do contingência\nDistribuição de frequências\n\n➡️ Acessar slides da aula\n\n\n\n\n\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve"
+    "text": "Aulas da disciplina\nAbaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides."
   },
   {
     "objectID": "aulas/aulas.html#aulas-da-disciplina",
@@ -1615,5 +1615,19 @@
     "title": "Revisão de conceitos básicos",
     "section": "Organizando dados",
     "text": "Organizando dados\n\n\n\n\n\nDistribuição de frequências\n\nDIretriz de Sturges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nli\nls\npm\nfrequencia\n\n\n\n\n[8\n[13\n[18\n[23\n[28\n[33\n\n13)\n18)\n23)\n28)\n33)\n38)\n\n10.5\n15.5\n20.5\n25.5\n30.5\n35.5\n\n2\n4\n13\n12\n6\n3"
+  },
+  {
+    "objectID": "aulas/aulas.html#revisão-de-estatística",
+    "href": "aulas/aulas.html#revisão-de-estatística",
+    "title": "Aulas",
+    "section": "Revisão de Estatística",
+    "text": "Revisão de Estatística\n\n\nApresentação – Introdução ao Curso\n\nApresentação do curso\n\nConteúdos programáticos\n\nTipografia do curso\n\n➡️ Acessar slides da aula\n\n\n\nAula 01 – Conceitos básicos\n\nO que é a estatística\nO que são Dados\nAmostragem e generalização\nTipos de dados\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – Conceitos básicos\n\nPlanejando experimentos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Organizando dados\n\nTabelas do contingência\nDistribuição de frequências\n\n➡️ Acessar slides da aula\n\n\n\nAula 04 – Estatística descritiva\n\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve\n\n\n\nAula 05 – Testes de hipóteses e significâncias\n\nO que são testes de hipóteses\nDefinições\nUm pouco de história…\nNão tenha medo do erro\nR x Python\n\n➡️ Aula em breve\n\n\n\nAula 06 – Testes de hipótese 1\n\nEstatística Paramétrica\nTestes de significância para uma amostra\nTeste T\nQui-quadrdo\n\n➡️ Aula em breve\n\n\n\nAula 07 – Testes de hipótese 2\n\nEstatística paramétrica\nTestes de significância para duas amostras\nTeste T para duas amostras independentes\n\n\n➡️ Aula em breve\n\n\n\nAula 08 – Testes de hipótese 3\n\nEstatística paramétrica\nTestes de significância para mais de duas amostras\nANOVA\n\n➡️ Aula em breve\n\n\n\nAula 09 – Testes de hipótese 4\n\nEstatística não paramétrica\nMann-Whitney\nKruskal-Wallis\n\n➡️ Aula em breve"
+  },
+  {
+    "objectID": "aulas/aulas.html#linguagem-r",
+    "href": "aulas/aulas.html#linguagem-r",
+    "title": "Aulas",
+    "section": "Linguagem R",
+    "text": "Linguagem R\n\n\nAula 01 – A Linguagem R\n\nO R é para mim?\nA linguagem R\nUm pouco de história…\nNão tenha medo do erro\nR x Python\n\n➡️ Aula em breve\n\n\n\nAula 02 – O pacote R\n\nO pacote R\nRStudio\nComandos Básicos\nPacotes\nO R como calculadora\nIniciando em objetos\n\n➡️ Aula em breve\n\n\n\nAula 03 – Objetos e Dados\n\nAtribuição\nNomeando objetos\nUtilizando objetos em R\nTipos de dados em R\nAlguns comandos\n\n➡️ Aula em breve\n\n\n\nAula 04 – Funções e objetos\n\nFunções\nCriando funções\nMais sobre objetos\nEstruturas de dados\n\n➡️ Aula em breve\n\n\n\nAula 05 – Graficos no R\n\nComo funcionam gráficos no R\nTipos de gráficos\nParâmetros gráficos\n\n➡️ Aula em breve\n\n\nAula 06 – Estatística descritiva no R\n\nEstatística descritiva\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve\n\n\nAula 07 – Testes de significância em R\n\nTestes de significância\n\nTeste t\nMann-Whitney\nQui-quadrado\nAnálise de Variância\nKruskall-Wallis\n\n\n➡️ Aula em breve"
   }
 ]

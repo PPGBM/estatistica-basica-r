@@ -3,10 +3,14 @@ title: "Aulas"
 format: html
 ---
 
-## Aulas da disciplina
+Aulas da disciplina
 
 Abaixo estão listadas as aulas do curso, com acesso direto
 aos conteúdos e aos slides.
+
+---
+
+## Revisão de Estatística
 
 ---
 
@@ -56,5 +60,139 @@ aos conteúdos e aos slides.
 
 ➡️ Aula em breve
 
+---
+
+### Aula 05 – Testes de hipóteses e significâncias
+
+- O que são testes de hipóteses
+- Definições
+- Um pouco de história...
+- Não tenha medo do erro
+- R x Python
+
+➡️ Aula em breve
+
+---
+
+### Aula 06 – Testes de hipótese 1
+
+- Estatística Paramétrica
+- Testes de significância para uma amostra
+- Teste T
+- Qui-quadrdo
+
+➡️ Aula em breve
+
+---
+
+### Aula 07 – Testes de hipótese 2
+
+- Estatística paramétrica
+- Testes de significância para duas amostras
+- Teste T para duas amostras independentes
+- 
+
+➡️ Aula em breve
+
+---
+
+### Aula 08 – Testes de hipótese 3
+
+- Estatística paramétrica
+- Testes de significância para mais de duas amostras
+- ANOVA
+
+➡️ Aula em breve
+
+---
+
+### Aula 09 – Testes de hipótese 4
+
+- Estatística não paramétrica
+- Mann-Whitney
+- Kruskal-Wallis
+
+➡️ Aula em breve
+
+---
+
+## Linguagem R
+
+---
+
+### Aula 01 – A Linguagem R
+
+- O R é para mim?
+- A linguagem R
+- Um pouco de história...
+- Não tenha medo do erro
+- R x Python
+
+➡️ Aula em breve
+
+---
+
+### Aula 02 – O pacote R
+
+- O pacote R
+- RStudio
+- Comandos Básicos
+- Pacotes
+- O R como calculadora
+- Iniciando em objetos
+
+➡️ Aula em breve
+
+---
+
+### Aula 03 – Objetos e Dados
+
+- Atribuição
+- Nomeando objetos
+- Utilizando objetos em R
+- Tipos de dados em R
+- Alguns comandos
 
 
+➡️ Aula em breve
+
+---
+
+### Aula 04 – Funções e objetos
+
+- Funções
+- Criando funções
+- Mais sobre objetos
+- Estruturas de dados
+
+
+➡️ Aula em breve
+
+---
+
+### Aula 05 – Graficos no R
+
+- Como funcionam gráficos no R
+- Tipos de gráficos
+- Parâmetros gráficos
+
+➡️ Aula em breve
+
+### Aula 06 – Estatística descritiva no R
+
+- Estatística descritiva
+- Medidas de tendência central
+- Medidas de dispersão
+
+➡️ Aula em breve
+
+### Aula 07 – Testes de significância em R
+
+- Testes de significância
+  - Teste t
+  - Mann-Whitney
+  - Qui-quadrado
+  - Análise de Variância
+  - Kruskall-Wallis
+
+➡️ Aula em breve
