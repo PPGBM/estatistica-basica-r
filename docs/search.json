@@ -2210,5 +2210,68 @@
     "title": "Revisão de conceitos básicos",
     "section": "Testes de normalidade",
     "text": "Testes de normalidade\n\n\n\nFinalidade\n\nVerificar se uma amostra é proveniente de uma distribuição normal\nKolmogorov-Smirnov não testa normalidade no R.\n\nUtilizamos o teste de Shapiro-Wilk\n\nGráfico Quartil-Quartil"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html#testes-de-significância-para-uma-amostra",
+    "href": "aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html#testes-de-significância-para-uma-amostra",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para uma amostra",
+    "text": "Testes de significância para uma amostra\n\nFinalidade\n\nTestar se a média populacional de uma variável de interesse é igual a determinado valor especificado pelo pesquisador\n\n\n\n\n\nCondições:\n\nVariáveis quantitativas contínuas\nTamanho da amostra\n\nPequena (n&lt;30) – Teste t Student\n\nDados com distribuição normal\n\nGrande (n&gt;30) – Teste Z\n\nNão há restrição quanto a normalidade (TCL)\n\n\n\n\n\n\\[\nZ = \\frac{\\bar{X} - \\mu_0}{\\frac{\\sigma}{\\sqrt{n}}}\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html#teste-t",
+    "href": "aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html#teste-t",
+    "title": "Revisão de conceitos básicos",
+    "section": "Teste T",
+    "text": "Teste T\n\n\n\nWilliam Sealy Gosset\n\n(13 de Junho de 1876 – 16 de Outubro de 1937)\nTrabalhou como estatístico na Guinness\nKarl Pearson\n\nRegressão linear\nClassificação de distribuições\nChi-quadrado de Pearson\nCoeficiente de correlação\nCENTENAS DE DADOS\n\nMétodo para pequenas amostras\nNão era permitido publicar trabalhando na Guinness\n\n“Student”"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html#teste-t-1",
+    "href": "aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html#teste-t-1",
+    "title": "Revisão de conceitos básicos",
+    "section": "Teste T",
+    "text": "Teste T"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html#testes-de-significância-para-uma-amostra-1",
+    "href": "aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html#testes-de-significância-para-uma-amostra-1",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para uma amostra",
+    "text": "Testes de significância para uma amostra\n\n\n\nEtapas:\n\nH0: Fixar o valor µ0 da média µ a ser testado - µ = µ0.\nH1: Escolher hipótese alternativa:\n\nµ &lt; µ0\nµ &gt; µ0\nµ ≠ µ0\n\nDeterminar o valor crítico:\n\nPara pequenas amostras\n\ntα/2 ou tα (teste unilateral), com v = n-1 g.l.\n\n\nPara grandes amostras\n\nz α/2 ou tα (teste unilateral)\n\n\n\n\n\n\n\n\\[\nZ = \\frac{\\bar{x}-\\mu_0}{\\frac{\\sigma}{\\sqrt{n}}}\n\\]\n\n\n\n\\[\nt = \\frac{\\bar{x}-\\mu_0}{\\frac{s}{\\sqrt{n}}}\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html#testes-de-significância-para-uma-amostra-2",
+    "href": "aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html#testes-de-significância-para-uma-amostra-2",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para uma amostra",
+    "text": "Testes de significância para uma amostra\n\n\n\nEtapas:\n\nH0: Fixar o valor µ0 da média µ a ser testado - µ = µ0.\nH1: Escolher hipótese alternativa:\n\nµ &lt; µ0\nµ &gt; µ0\nµ ≠ µ0\n\nDeterminar o valor crítico:\n\nPara pequenas amostras\n\ntα/2 ou tα (teste unilateral), com v = n-1 g.l.\n\n\nPara grandes amostras\n\nz α/2 ou tα (teste unilateral)\n\n\n\n\n\n\n\n\\[\nZ = \\frac{\\bar{x}-\\mu_0}{\\frac{\\sigma}{\\sqrt{n}}}\n\\]\n\n\n\n\\[\nt = \\frac{\\bar{x}-\\mu_0}{\\frac{s}{\\sqrt{n}}}\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html#testes-de-significância-para-uma-amostra-3",
+    "href": "aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html#testes-de-significância-para-uma-amostra-3",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para uma amostra",
+    "text": "Testes de significância para uma amostra\n\nEtapas:\n\nTomada de decisão\n\nCompara-se o valor zα ou t α com o calculado\nCom base no valor de p\np &lt; α – Rejeita hipótese nula\n\n\n\n\n\n\n\nTabela t de Student – Valores críticos\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nν\n0.6\n0.7\n0.8\n0.9\n0.95\n0.975\n0.98\n0.99\n0.995\n\n\n\n\n1\n0.325\n0.727\n1.376\n3.078\n6.314\n12.706\n15.895\n31.821\n63.657\n\n\n2\n0.289\n0.617\n1.061\n1.886\n2.920\n4.303\n4.849\n6.965\n9.925\n\n\n3\n0.277\n0.584\n0.978\n1.638\n2.353\n3.182\n3.482\n4.541\n5.841\n\n\n4\n0.271\n0.569\n0.941\n1.533\n2.132\n2.776\n2.999\n3.747\n4.604\n\n\n5\n0.267\n0.559\n0.920\n1.476\n2.015\n2.571\n2.757\n3.365\n4.032\n\n\n6\n0.265\n0.553\n0.906\n1.440\n1.943\n2.447\n2.612\n3.143\n3.707\n\n\n7\n0.263\n0.549\n0.896\n1.415\n1.895\n2.365\n2.517\n2.998\n3.499\n\n\n8\n0.262\n0.546\n0.889\n1.397\n1.860\n2.306\n2.449\n2.896\n3.355\n\n\n9\n0.261\n0.543\n0.883\n1.383\n1.833\n2.262\n2.398\n2.821\n3.250\n\n\n10\n0.260\n0.542\n0.879\n1.372\n1.812\n2.228\n2.359\n2.764\n3.169"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html#testes-de-significância-para-uma-amostra-4",
+    "href": "aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html#testes-de-significância-para-uma-amostra-4",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para uma amostra",
+    "text": "Testes de significância para uma amostra\n\n\n\nQui quadrado (\\(\\chi^2\\))\n\nFinalidade\n\nVerificar se a distribuição de frequências absolutas observadas na amostra difere da distribuição esperada\n\nCondições\n\nVariáveis qualitativas\n\nNominais\nOrdinais\n\nSe 2 categorias – frequência &gt; 5\nSe 3+ categorias\n\nmenos de 20% das frequências &lt;5\nTodas &gt;1\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\chi^2 = \\sum_{i=1}^{k} \\frac{(O_i - E_i)^2}{E_i}\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html#testes-de-significância-para-duas-amostras",
+    "href": "aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html#testes-de-significância-para-duas-amostras",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para duas amostras",
+    "text": "Testes de significância para duas amostras\n\nTeste t para duas amostras independentes\n\nFinalidade\n\nVerificar a diferença entre as médias populacionais de dois grupos independentes\n\nCondições\n\nAmostras independentes\nNormalidade dos dados\nCalculo depende se amostras tem variâncias iguais\n\nMaior s2 até 4x a menor s2, então s12 = s22\n\nTestar com teste F\n\n\\(𝐹=  \\frac{(𝑠_1^2)}{(𝑠_2^2 )}\\)\n\n\n\n\n\n\\[\nt = \\frac{X_2 - X_1}{\\sqrt{s^2(\\frac{1}{n_1}+\\frac{1}{n_2})}}\n\\]\n\n\\[\nt = \\frac{X_2 - X_1}{\\sqrt{s^2(\\frac{s_1^2}{n_1}+\\frac{s_2^2}{n_2})}}\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html#testes-de-significância-para-duas-amostras-1",
+    "href": "aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html#testes-de-significância-para-duas-amostras-1",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para duas amostras",
+    "text": "Testes de significância para duas amostras\n\n\n\nTeste t para duas amostras independentes\n\nTeste F\n\nCalcular a variância de cada grupo\n\nVariância do grupo 1 \\((𝑠_1^2)\\)\nVariância do grupo 2 \\((𝑠_2^2)\\)\n\nCalcular o valor de F\n\n\\(F =  \\frac{𝑚𝑎𝑖𝑜𝑟  𝑠^2}{𝑚𝑒𝑛𝑜𝑟 𝑠^2 }\\)\n\\(𝐹=  \\frac{(𝑠_1^2)}{(𝑠_2^2 )}\\)\n\nComparar com Ftab\n\\(g.l. \\frac{𝑛−1 g.l. do numerador}{𝑛−1 g.ç. do denominador}\\)\n\n\n\n\nSe \\(F \\ge F_{tab} - s_1^2 \\ne s_2^2\\)\n\n\n\n\n\n\nTabela t de Student – Teste t de duas amostras (bilateral)\n\n\ngl\n90%\n95%\n99%\n\n\n\n\n1\n6.314\n12.706\n63.657\n\n\n2\n2.920\n4.303\n9.925\n\n\n3\n2.353\n3.182\n5.841\n\n\n4\n2.132\n2.776\n4.604\n\n\n5\n2.015\n2.571\n4.032\n\n\n6\n1.943\n2.447\n3.707\n\n\n7\n1.895\n2.365\n3.499\n\n\n8\n1.860\n2.306\n3.355\n\n\n9\n1.833\n2.262\n3.250\n\n\n10\n1.812\n2.228\n3.169"
   }
 ]

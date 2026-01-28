@@ -1,0 +1,369 @@
+---
+title: "Revisão de conceitos básicos"
+subtitle: "Testes de hipóteses"
+author: "Dr. Alexandre Dias Kassuga"
+format:
+  revealjs:
+    theme: simple
+    css: slides.css
+    highlight-style: monokai
+    slide-number: true
+    format: wide
+---
+
+## Testes de significância para uma amostra
+
+
+- Finalidade
+  - Testar se a média populacional de uma variável de interesse é igual a determinado valor especificado pelo pesquisador
+
+\
+
+- Condições:
+  - Variáveis quantitativas contínuas
+  - Tamanho da amostra
+    - Pequena (n<30) – Teste t Student
+      - Dados com distribuição normal
+    - Grande (n>30) – Teste Z
+      - Não há restrição quanto a normalidade (TCL)
+
+
+::: {.absolute top="400" right="50"}
+
+$$
+Z = \frac{\bar{X} - \mu_0}{\frac{\sigma}{\sqrt{n}}}
+$$
+
+:::
+
+## Teste T
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- William Sealy Gosset 
+  - (13 de Junho de 1876 – 16 de Outubro de 1937)
+  - Trabalhou como estatístico na Guinness
+  - Karl Pearson
+    - Regressão linear
+    - Classificação de distribuições
+    - Chi-quadrado de Pearson
+    - Coeficiente de correlação
+    - CENTENAS DE DADOS
+  - Método para pequenas amostras
+  - Não era permitido publicar trabalhando na Guinness
+    - “Student”
+
+
+
+:::
+
+::: {.column width="50%"}
+
+![](figuras/gosset-guinness.png){width="100%"}
+
+:::
+
+::::
+
+
+## Teste T
+
+![](figuras/gosset-guinness2.png){width="60%"}
+
+
+## Testes de significância para uma amostra
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Etapas:
+  - H0: Fixar o valor µ0 da média µ a ser testado - µ = µ0.
+  - H1: Escolher hipótese alternativa:
+    (a) µ < µ0
+    (b) µ > µ0
+    (c) µ ≠ µ0
+  - Determinar o valor crítico:
+    - Para pequenas amostras
+      - tα/2 ou tα (teste unilateral), com v = n-1 g.l.
+  - Para grandes amostras
+      - z α/2  ou tα (teste unilateral)
+
+:::
+
+::: {.column width="50%"}
+
+\
+\
+
+$$
+Z = \frac{\bar{x}-\mu_0}{\frac{\sigma}{\sqrt{n}}}
+$$
+\
+\
+\
+
+$$
+t = \frac{\bar{x}-\mu_0}{\frac{s}{\sqrt{n}}}
+$$
+
+:::
+
+::::
+
+
+## Testes de significância para uma amostra
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Etapas:
+  - H0: Fixar o valor µ0 da média µ a ser testado - µ = µ0.
+  - H1: Escolher hipótese alternativa:
+    (a) µ < µ0
+    (b) µ > µ0
+    (c) µ ≠ µ0
+  - Determinar o valor crítico:
+    - Para pequenas amostras
+      - tα/2 ou tα (teste unilateral), com v = n-1 g.l.
+  - Para grandes amostras
+      - z α/2  ou tα (teste unilateral)
+
+:::
+
+::: {.column width="50%"}
+
+\
+\
+
+$$
+Z = \frac{\bar{x}-\mu_0}{\frac{\sigma}{\sqrt{n}}}
+$$
+\
+\
+\
+
+$$
+t = \frac{\bar{x}-\mu_0}{\frac{s}{\sqrt{n}}}
+$$
+
+:::
+
+::::
+
+::: {.absolute top="110" left="610"}
+
+![](figuras/placa-media-amostral.png){width="45%"}
+
+:::
+
+::: {.absolute top="115" left="835"}
+
+![](figuras/placa-media-testada.png){width="100%"}
+
+:::
+
+::: {.absolute top="205" left="805"}
+
+![](figuras/placa-desvio-pop.png){width="100%"}
+
+:::
+
+::: {.absolute top="225" left="670"}
+
+![](figuras/placa-n.png){width="50%"}
+
+:::
+
+::: {.absolute top="455" left="805"}
+
+![](figuras/placa-desvio-amostral.png){width="100%"}
+
+:::
+
+## Testes de significância para uma amostra
+
+- Etapas:
+  - Tomada de decisão
+    - Compara-se o valor zα ou t α com o calculado
+    - Com base no valor de p
+    - p < α – Rejeita hipótese nula
+
+
+::: texto-65
+
+```{r}
+
+# Tabela t de Student - valores críticos
+
+# Graus de liberdade
+nu <- 1:10
+
+# Probabilidades (colunas da tabela)
+p <- c(0.6, 0.7, 0.8, 0.9, 0.95, 0.975, 0.98, 0.99, 0.995)
+
+# Criar data frame base
+tabela_t <- data.frame(
+  `ν` = nu
+)
+
+# Calcular quantis da t
+for (prob in p) {
+  tabela_t[[as.character(prob)]] <- qt(prob, df = nu)
+}
+
+# Arredondar (padrão de livro)
+tabela_t[ , -1] <- round(tabela_t[ , -1], 3)
+
+# Exibir tabela
+knitr::kable(
+  tabela_t,
+  caption = "Tabela t de Student – Valores críticos",
+  align = "c"
+)
+
+
+```
+
+:::
+
+## Testes de significância para uma amostra
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+- Qui quadrado ($\chi^2$)
+  - Finalidade
+    - Verificar se a distribuição de frequências absolutas observadas na amostra difere da distribuição esperada
+  - Condições
+    - Variáveis qualitativas
+      - Nominais
+      - Ordinais
+    - Se 2 categorias – frequência > 5
+    - Se 3+ categorias 
+      - menos de 20% das frequências <5
+      - Todas >1
+      
+:::
+
+::: {.column width="40%"}
+
+\
+\
+\
+\
+\
+\
+
+$$
+\chi^2 = \sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i}
+$$
+
+:::
+
+::::
+
+## Testes de significância para duas amostras
+
+- Teste t para duas amostras independentes
+  - Finalidade
+    - Verificar a diferença entre as médias populacionais de dois grupos independentes
+  - Condições
+    - Amostras independentes
+    - Normalidade dos dados
+    - Calculo depende se amostras tem variâncias iguais
+      - Maior s2 até 4x a menor s2, então s12 = s22
+    - Testar com teste F
+      - $𝐹=  \frac{(𝑠_1^2)}{(𝑠_2^2 )}$
+
+
+
+::: {.absolute top="300" left="700"}
+$$
+t = \frac{X_2 - X_1}{\sqrt{s^2(\frac{1}{n_1}+\frac{1}{n_2})}}
+$$
+\
+
+$$
+t = \frac{X_2 - X_1}{\sqrt{s^2(\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2})}}
+$$
+
+:::
+
+
+## Testes de significância para duas amostras
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Teste t para duas amostras independentes
+  - Teste F
+    - Calcular a variância de cada grupo
+      - Variância do grupo 1 $(𝑠_1^2)$
+      - Variância do grupo 2 $(𝑠_2^2)$
+    - Calcular o valor de F
+      - $F =  \frac{𝑚𝑎𝑖𝑜𝑟  𝑠^2}{𝑚𝑒𝑛𝑜𝑟 𝑠^2 }$
+      - $𝐹=  \frac{(𝑠_1^2)}{(𝑠_2^2 )}$
+    - Comparar com Ftab
+    - $g.l. \frac{𝑛−1 g.l. do numerador}{𝑛−1 g.ç. do denominador}$
+    
+:::
+
+::: {.column width="50%"}
+
+
+Se $F \ge F_{tab} - s_1^2 \ne s_2^2$
+
+\
+
+::: texto-07
+
+```{r}
+
+# Tabela t de Student
+# Teste t de duas amostras (bilateral)
+
+# Graus de liberdade
+gl <- 1:10
+
+# Níveis de confiança (bilateral)
+conf <- c(
+  "90%"  = 0.95,
+  "95%"  = 0.975,
+  "99%"  = 0.995
+)
+
+# Criar tabela
+tabela_t2 <- data.frame(
+  `gl` = gl
+)
+
+for (nome in names(conf)) {
+  tabela_t2[[nome]] <- qt(conf[nome], df = gl)
+}
+
+# Arredondar (padrão de livro)
+tabela_t2[ , -1] <- round(tabela_t2[ , -1], 3)
+
+# Exibir tabela
+knitr::kable(
+  tabela_t2,
+  caption = "Tabela t de Student – Teste t de duas amostras (bilateral)",
+  align = "c"
+)
+
+```
+
+:::
+
+:::
+
+::::
+
+
