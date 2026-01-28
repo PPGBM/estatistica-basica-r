@@ -289,7 +289,7 @@ $$
 \
 
 $$
-t = \frac{X_2 - X_1}{\sqrt{s^2(\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2})}}
+t = \frac{X_2 - X_1}{\sqrt{(\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2})}}
 $$
 
 :::
@@ -326,37 +326,38 @@ Se $F \ge F_{tab} - s_1^2 \ne s_2^2$
 
 ```{r}
 
-# Tabela t de Student
-# Teste t de duas amostras (bilateral)
+# Tabela F - Valores críticos
+# Nivel de significancia: 5%
 
 # Graus de liberdade
-gl <- 1:10
+gl_num <- 1:7     # numerador (colunas)
+gl_den <- 1:10    # denominador (linhas)
 
-# Níveis de confiança (bilateral)
-conf <- c(
-  "90%"  = 0.95,
-  "95%"  = 0.975,
-  "99%"  = 0.995
+# Criar tabela base
+tabela_f <- data.frame(
+  `gl_den` = gl_den
 )
 
-# Criar tabela
-tabela_t2 <- data.frame(
-  `gl` = gl
-)
-
-for (nome in names(conf)) {
-  tabela_t2[[nome]] <- qt(conf[nome], df = gl)
+# Calcular valores criticos de F
+for (gln in gl_num) {
+  tabela_f[[as.character(gln)]] <- 
+    qf(0.95, df1 = gln, df2 = gl_den)
 }
 
-# Arredondar (padrão de livro)
-tabela_t2[ , -1] <- round(tabela_t2[ , -1], 3)
+# Arredondar (padrao de livro)
+tabela_f[ , -1] <- round(tabela_f[ , -1], 2)
 
 # Exibir tabela
 knitr::kable(
-  tabela_t2,
-  caption = "Tabela t de Student – Teste t de duas amostras (bilateral)",
+  tabela_f,
+  caption = "Tabela F – Valores críticos para α = 5%",
+  col.names = c(
+    "GL Den.",
+    paste("GL Num.", gl_num)
+  ),
   align = "c"
 )
+
 
 ```
 
@@ -367,3 +368,84 @@ knitr::kable(
 ::::
 
 
+
+## Testes de significância para uma amostra
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+- Teste t para duas amostras independentes
+  - Variâncias são iguais
+    - Temos $s_1^2$ e $s_2^2$
+    - Calculamos a variância ponderada
+$$
+ s^2=  \frac{(𝑛_1−1)𝑠_1^2+(𝑛_2−1)𝑠_2^2}{(𝑛_1+ 𝑛_2  −2)}
+$$
+
+    - Calculamos o valor de t
+
+\
+
+$$
+t = \frac{X_2 - X_1}{\sqrt{s^2(\frac{1}{n_1}+\frac{1}{n_2})}}
+$$
+:::
+
+::: {.column width="40%"}
+
+\
+\
+\
+\
+\
+\
+\
+\
+\
+
+Se o valor absoluto de $t \ge t_{tab}$: médias são diferentes
+
+:::
+
+::::
+
+
+## Testes de significância para uma amostra
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+- Teste t para duas amostras independentes
+  - Variâncias são diferentes
+    - Temos $s_1^2$ e $s_2^2$
+    - Calculamos o valor de t
+$$
+t = \frac{X_2 - X_1}{\sqrt{(\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2})}}
+$$
+    
+    - Calculamos g. l.
+
+$$
+g = \frac{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}{\frac{(\frac{s_1^2}{n_1})^2}{n_1-1}+\frac{(\frac{s_2^2}{n_2})^2}{n_2-1}}
+$$
+:::
+
+::: {.column width="40%"}
+
+\
+\
+\
+\
+\
+\
+\
+\
+\
+
+Se o valor absoluto de $t \ge t_{tab}$: médias são diferentes
+
+:::
+
+::::

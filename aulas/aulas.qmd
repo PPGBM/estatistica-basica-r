@@ -81,10 +81,11 @@ aos conteúdos e aos slides.
 
 - Estatística Paramétrica
 - Testes de significância para uma amostra
-- Teste T
-- Qui-quadrdo
+- Qui-quadrado
+- Teste T para uma amostra
+- Teste T para duas amostras independentes
 
-➡️ Aula em breve
+[➡️ Acessar slides da aula](slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.qmd){target="_blank" rel="noopener"}
 
 ---
 
