@@ -70,5 +70,11 @@
   },
   "aulas/guia-quarto-latex-math-pdf-1A4-2col.qmd": {
     "guia-quarto-latex-math-pdf-1A4-2col.tex": "f3ddfc1a"
+  },
+  "aulas/guia-quarto-latex-math-completo-html.qmd": {
+    "guia-quarto-latex-math-completo-html.html": "da62c6a0"
+  },
+  "aulas/slides/aula-conceitos-basicos-5-testes-de-hipoteses.qmd": {
+    "aula-conceitos-basicos-5-testes-de-hipoteses.html": "345f9fb9"
   }
 }

@@ -1,0 +1,449 @@
+---
+title: "Guia Completo – LaTeX Math em Quarto (HTML)"
+author: "Alexandre Kassuga"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+execute:
+  echo: false
+---
+
+## 🎯 Objetivo do guia
+
+Este guia apresenta **o uso completo de LaTeX Math em documentos Quarto (`.qmd`)**, com foco em:
+
+- ✏️ Escrita correta de fórmulas matemáticas
+- 📐 Matemática inline e em bloco
+- 🎨 Modificações visuais (tamanho, cor e estilo)
+- 🔢 Funções matemáticas básicas
+- 📘 Notação estatística e científica padrão
+
+O material foi pensado como **referência técnica e didática**, para relatórios, aulas e material impresso ou online.
+
+---
+
+## 🧠 Como funciona LaTeX Math no Quarto
+
+O Quarto utiliza **MathJax** para renderizar matemática em HTML.
+
+Isso significa que:
+- Você escreve **LaTeX puro**
+- A renderização é feita no navegador
+- Não é necessário instalar pacotes
+- Não é necessário configurar o YAML
+
+---
+
+## ✏️ Matemática inline
+
+Use **um cifrão (`$`)** antes e depois da expressão.
+
+Código:
+
+    $\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$
+
+Resultado:
+
+$\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$
+
+Use matemática inline para:
+- símbolos
+- expressões curtas
+- notação dentro do texto
+
+---
+
+## 📐 Matemática em bloco
+
+Use **dois cifrões (`$$`)** antes e depois.
+
+Código:
+
+    $$
+    \bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+    $$
+
+Resultado:
+
+$$
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+$$
+
+Use matemática em bloco para:
+- definições formais
+- equações importantes
+- destaque visual
+
+---
+
+## 🔢 Subscritos e sobrescritos
+
+Código:
+
+    x_i,\; x_{ij},\; x^2,\; x^{n+1}
+
+Resultado:
+
+$x_i$, $x_{ij}$, $x^2$, $x^{n+1}$
+
+**Regra importante:**  
+Use `{}` sempre que houver mais de um caractere.
+
+---
+
+## ➗ Frações e raízes
+
+Código:
+
+    \frac{a}{b},\; \sqrt{x},\; \sqrt[n]{x}
+
+Resultado:
+
+$\frac{a}{b}$, $\sqrt{x}$, $\sqrt[n]{x}$
+
+---
+
+## ➕ Operações matemáticas básicas
+
+Código:
+
+    x + y,\; x - y,\; x \times y,\; x \div y
+
+Resultado:
+
+$x + y$, $x - y$, $x \times y$, $x \div y$
+
+Outras formas comuns:
+- `\cdot` → multiplicação ($x \cdot y$)
+
+---
+
+## 📊 Somatórios, produtórios e limites
+
+Código:
+
+    \sum_{i=1}^{n} x_i  
+    \prod_{i=1}^{n} x_i  
+    \lim_{n \to \infty} x_n
+
+Resultado:
+
+$\sum_{i=1}^{n} x_i$  
+$\prod_{i=1}^{n} x_i$  
+$\lim_{n \to \infty} x_n$
+
+---
+
+## 📐 Funções matemáticas comuns
+
+Código:
+
+    \log(x),\; \ln(x),\; \exp(x)
+
+Resultado:
+
+$\log(x)$, $\ln(x)$, $\exp(x)$
+
+Trigonometria:
+
+    \sin(x),\; \cos(x),\; \tan(x)
+
+Resultado:
+
+$\sin(x)$, $\cos(x)$, $\tan(x)$
+
+---
+
+## 🎨 Modificações visuais no texto matemático
+
+### Negrito (vetores e matrizes)
+
+Código:
+
+    \mathbf{x},\; \mathbf{X}
+
+Resultado:
+
+$\mathbf{x}$, $\mathbf{X}$
+
+---
+
+### Itálico (padrão matemático)
+
+Variáveis matemáticas já são itálicas por padrão:
+
+    x,\; y,\; z
+
+Resultado:
+
+$x$, $y$, $z$
+
+---
+
+### Texto dentro da fórmula
+
+Código:
+
+    x_{\text{obs}},\; H_{\text{max}}
+
+Resultado:
+
+$x_{\text{obs}}$, $H_{\text{max}}$
+
+---
+
+### Cor no texto matemático
+
+Código:
+
+    \color{red}{x},\; \color{blue}{\mu}
+
+Resultado:
+
+$\color{red}{x}$, $\color{blue}{\mu}$
+
+⚠️ Use cor com moderação (ênfase visual).
+
+---
+
+### Tamanho do texto matemático
+
+Código:
+
+    {\small x},\; {\Large x},\; {\Huge x}
+
+Resultado:
+
+${\small x}$, ${\Large x}$, ${\Huge x}$
+
+---
+
+## 📈 Probabilidade e Estatística – exemplos clássicos
+
+Código:
+
+    P(X = x),\; E(X)=\mu,\; Var(X)=\sigma^2
+
+Resultado:
+
+$P(X = x)$, $E(X)=\mu$, $Var(X)=\sigma^2$
+
+Distribuição normal:
+
+    X \sim \mathcal{N}(\mu,\sigma^2)
+
+Resultado:
+
+$X \sim \mathcal{N}(\mu,\sigma^2)$
+
+---
+
+## 📘 Dicionário essencial de símbolos estatísticos  
+*(símbolo — código — significado)*
+
+### Estatística descritiva
+
+- $\bar{x}$ — `\bar{x}` — média amostral  
+- $\mu$ — `\mu` — média populacional  
+- $s^2$ — `s^2` — variância amostral  
+- $\sigma^2$ — `\sigma^2` — variância populacional  
+- $s$ — `s` — desvio padrão amostral  
+- $\sigma$ — `\sigma` — desvio padrão populacional  
+- $n$ — `n` — tamanho da amostra  
+
+---
+
+### Probabilidade
+
+- $P(A)$ — `P(A)` — probabilidade  
+- $P(A \mid B)$ — `P(A \mid B)` — prob. condicional  
+- $\Omega$ — `\Omega` — espaço amostral  
+- $A^c$ — `A^c` — complemento  
+
+---
+
+### Inferência estatística
+
+- $\hat{\theta}$ — `\hat{\theta}` — estimador  
+- $H_0$ — `H_0` — hipótese nula  
+- $\alpha$ — `\alpha` — significância  
+- $p$ — `p` — valor-p  
+
+---
+
+
+# 📐 Equações estatísticas prontas (uso direto)
+
+Esta seção reúne **equações clássicas**, prontas para copiar e usar em relatórios, provas e slides.
+
+---
+
+## Média amostral
+
+Código:
+
+    $$
+    \bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+    $$
+
+$$
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+$$
+
+---
+
+## Variância amostral
+
+Código:
+
+    $$
+    s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2
+    $$
+
+$$
+s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2
+$$
+
+---
+
+## Desvio padrão amostral
+
+Código:
+
+    $$
+    s = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2}
+    $$
+
+$$
+s = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2}
+$$
+
+---
+
+## Teste t (uma amostra)
+
+Código:
+
+    $$
+    t = \frac{\bar{x} - \mu_0}{s / \sqrt{n}}
+    $$
+
+$$
+t = \frac{\bar{x} - \mu_0}{s / \sqrt{n}}
+$$
+
+---
+
+## Teste t (duas amostras independentes)
+
+Código:
+
+    $$
+    t = \frac{\bar{x}_1 - \bar{x}_2}
+    {\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}
+    $$
+
+$$
+t = \frac{\bar{x}_1 - \bar{x}_2}
+{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}
+$$
+
+---
+
+## Qui-quadrado ($\chi^2$)
+
+Código:
+
+    $$
+    \chi^2 = \sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i}
+    $$
+
+$$
+\chi^2 = \sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i}
+$$
+
+---
+
+## ANOVA univariada
+
+Código:
+
+    $$
+    F = \frac{QM_{\text{entre}}}{QM_{\text{dentro}}}
+    $$
+
+$$
+F = \frac{QM_{\text{entre}}}{QM_{\text{dentro}}}
+$$
+
+---
+
+## Mann–Whitney (U)
+
+Código:
+
+    $$
+    U = n_1 n_2 + \frac{n_1(n_1+1)}{2} - R_1
+    $$
+
+$$
+U = n_1 n_2 + \frac{n_1(n_1+1)}{2} - R_1
+$$
+
+---
+
+## Kruskal–Wallis (H)
+
+Código:
+
+    $$
+    H = \frac{12}{N(N+1)} \sum_{j=1}^{k} \frac{R_j^2}{n_j} - 3(N+1)
+    $$
+
+$$
+H = \frac{12}{N(N+1)} \sum_{j=1}^{k} \frac{R_j^2}{n_j} - 3(N+1)
+$$
+
+---
+
+## 🧭 Boas práticas finais
+
+- Copie as equações prontas e adapte símbolos
+- Defina cada termo no texto
+- Seja consistente com notação
+- Prefira equações em bloco para métodos estatísticos
+
+> **Equação boa é aquela que pode ser lida sem o texto ao redor.**
+
+## ⚠️ Erros comuns
+
+- Esquecer `$` ou `$$`
+- Não usar `{}` em índices/expoentes
+- Misturar texto e matemática
+- Usar imagem no lugar de fórmula
+- Exagerar em cores e tamanhos
+
+---
+
+## 🧭 Boas práticas finais
+
+- Inline → símbolos e expressões curtas
+- Bloco → definições importantes
+- Use cor e tamanho apenas para destaque
+- Seja consistente com a notação
+
+> **Uma boa notação matemática reduz drasticamente a ambiguidade do texto científico.**
+
+---
+
+## 📌 Resumo final
+
+- LaTeX Math funciona nativamente no Quarto
+- `$...$` cria matemática inline
+- `$$...$$` cria matemática em bloco
+- Subscritos, frações e raízes são essenciais
+- Controle visual deve ser sutil e consciente
+
+Este guia pode ser usado como **material de aula, referência rápida ou base para apostilas**.

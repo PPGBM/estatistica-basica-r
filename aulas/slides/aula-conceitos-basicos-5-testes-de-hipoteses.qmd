@@ -1,0 +1,188 @@
+---
+title: "Revisão de conceitos básicos"
+subtitle: "Testes de hipóteses"
+author: "Dr. Alexandre Dias Kassuga"
+format:
+  revealjs:
+    theme: simple
+    css: slides.css
+    highlight-style: monokai
+    slide-number: true
+    format: wide
+---
+
+## Testes de hipóteses e significâncias
+
+\
+
+-   Avaliam se uma suposição sobre o conjunto de dados é falsa ou verdadeira
+-   Dividem-se em dois grupos
+    -   Testes de hipóteses paramétricos
+        -   Dependem de premissas sobre a forma da distribuição da população
+            -   Geralmente exigem distribuição normal
+    -   Testes de hipóteses não-paramétricos
+        -   Não dependem de premissas sobre a forma da distribuição da população
+
+## Testes de hipóteses e significâncias
+
+::::: columns
+::: {.column width="50%"}
+-   Definições
+    -   Hipótese nula - $H_0$
+    -   Hipótese alternativa - $H_1$
+
+\
+\
+\
+
+$H_0$: não há diferença entre as média
+
+$H_1$: há diferença entre as médias
+:::
+
+::: {.column width="50%"}
+\
+\
+\
+
+![](figuras/reg-rejeicao.png){width="100%"}
+:::
+:::::
+
+## Testes de hipóteses e significâncias
+
+::::: columns
+::: {.column width="50%"}
+-   Definições
+    -   Erros de precisão
+        -   Tipo I: rejeitar $H_0$ quando $H_0$ é verdadeira (falso positivo)
+        -   Tipo II: não rejeitar $H_0$ quando $H_1$ é verdadeira (falso negativo)
+
+\
+\
+\
+\
+\
+
+$\alpha$: P erro tipo I
+
+$\beta$: P erro tipo II
+:::
+
+::: {.column width="50%"}
+:::
+:::::
+
+::: {.absolute top="250" left="470"}
+![](figuras/erros-tab.png){width="90%"}
+:::
+
+::: {.absolute top="400" right="0"}
+![](figuras/erros-graf.png){width="100%"}
+:::
+
+## Testes de hipóteses e significâncias
+
+-   Definições
+    -   Nível de significância
+    -   Probablilidade de cometer o erro do tipo I
+    -   Definida pelo pesquisador
+        -   $alpha = 0.05$
+        -   $alpha = 0.01$
+    -   Poder do teste
+        -   Probabilidade de rejeitar $H_0$ quando $H_1$ é verdadeira
+        -   $1 - \beta$
+
+![](figuras/erros-graf.png){width="100%" fig-align="right"}
+
+## Testes de hipóteses e significâncias
+
+-   Definições
+    -   Região de rejeição
+    -   Valor crítico
+    -   Valor $p$
+
+\
+\
+\
+
+                     $H_0: \mu = \mu_0$
+
+                     $H_1: \mu \ne \mu_0$
+
+::: {.absolute top="150" right="0"}
+![](figuras/reg-critica.png){width="100%"}
+:::
+
+
+## Testes de hipóteses e significâncias
+
+:::: {.columns}
+
+::: {.column width="20%"}
+
+-   Definições
+    -   Região de rejeição
+    -   Valor crítico
+    -   Valor $p$
+
+:::
+
+::: {.column width="80%"}
+
+\
+\
+
+
+![](figuras/reg-critica2.png){width="100%" fig-align="right"}
+
+                       $H_0: \mu = \mu_0$                             $H_0: \mu = \mu_0$
+
+                       $H_1: \mu < \mu_0$                             $H_1: \mu > \mu_0$
+
+:::
+
+::::
+
+
+## Testes de hipóteses e significâncias
+
+:::: {.columns}
+
+::: {.column width="20%"}
+
+-   Definições
+    -   Região de rejeição
+    -   Valor crítico
+    -   Valor $p$
+
+:::
+
+::: {.column width="80%"}
+
+\
+\
+
+
+![](figuras/uni-bidirecional.png){width="100%" fig-align="right"}
+
+
+:::
+
+::::
+
+## Testes de normalidade
+
+\
+
+- Finalidade
+  - Verificar se uma amostra é proveniente de uma distribuição normal
+  - Kolmogorov-Smirnov não testa normalidade no R.
+    - Utilizamos o teste de Shapiro-Wilk
+  - Gráfico Quartil-Quartil
+\
+\
+
+
+![](figuras/normalidade.png){width="100%" fig-align="center"}
+

@@ -66,11 +66,14 @@ aos conteúdos e aos slides.
 
 - O que são testes de hipóteses
 - Definições
-- Um pouco de história...
-- Não tenha medo do erro
-- R x Python
+  - Hipótese nula e alternativa
+  - Erro tipo I e II
+  - Nível de significância
+  - Poder do teste
+  - Unicaudal e bicaudal
 
-➡️ Aula em breve
+
+[➡️ Acessar slides da aula](slides/aula-conceitos-basicos-5-testes-de-hipoteses.qmd){target="_blank" rel="noopener"}
 
 ---
 
