@@ -1,0 +1,256 @@
+---
+title: "Guia Rápido – LaTeX Math em R Markdown / Quarto (HTML)"
+author: "Alexandre Kassuga"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+execute:
+  echo: false
+---
+
+## 🎯 Objetivo do guia
+
+Este guia apresenta **como escrever fórmulas matemáticas usando LaTeX Math em documentos R Markdown e Quarto (`.qmd`) renderizados em HTML**, com foco em:
+
+- ✏️ Escrita correta de fórmulas
+- 📐 Diferença entre matemática inline e em bloco
+- 📊 Notação estatística padrão
+- 📘 Um dicionário prático dos principais símbolos usados em Estatística
+
+O material foi pensado como **referência rápida e confiável** para relatórios, aulas e materiais didáticos.
+
+---
+
+## 🧠 Como funciona LaTeX Math em R Markdown / Quarto
+
+R Markdown e Quarto usam **MathJax** para renderizar matemática em HTML.  
+Isso significa que você escreve **LaTeX puro**, e o navegador faz a renderização.
+
+Não é necessário:
+- instalar pacotes
+- ativar opções no YAML
+- usar código R
+
+---
+
+## ✏️ Matemática inline (no meio do texto)
+
+Use **um cifrão (`$`)** antes e depois da expressão.
+
+Exemplo de escrita:
+
+    A média amostral é dada por $\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$.
+
+Resultado renderizado:
+
+A média amostral é dada por $\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$.
+
+Use matemática inline para:
+- símbolos
+- pequenas expressões
+- notação dentro do parágrafo
+
+---
+
+## 📐 Matemática em bloco (equações destacadas)
+
+Use **dois cifrões (`$$`)** antes e depois.
+
+Exemplo:
+
+    $$
+    \bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+    $$
+
+Resultado:
+
+$$
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+$$
+
+Use matemática em bloco para:
+- definições formais
+- equações importantes
+- deduções matemáticas
+
+---
+
+## 🔢 Índices, expoentes e frações
+
+Escrita:
+
+    x_i, x^2, x_i^2  
+    \frac{a}{b}
+
+Resultado:
+
+$x_i$, $x^2$, $x_i^2$, $\frac{a}{b}$
+
+Regras importantes:
+- `{}` agrupa elementos
+- sempre use `{}` em expoentes longos
+
+---
+
+## 📊 Somatórios, produtórios e limites
+
+Somatório:
+
+    $$
+    \sum_{i=1}^{n} x_i
+    $$
+
+  - Resultado: $\sum_{i=1}^{n} x_i$
+
+Produtório:
+
+    $$
+    \prod_{i=1}^{n} x_i
+    $$
+
+  - Resultado: $\prod_{i=1}^{n} x_i$
+
+Limite:
+
+    $$
+    \lim_{n \to \infty} \bar{x}_n
+    $$
+
+  - Resultado: $\lim_{n \to \infty} \bar{x}_n$
+
+---
+
+## 📈 Probabilidade e Estatística – exemplos clássicos
+
+Probabilidade:
+
+    $$
+    P(X = x)
+    $$
+    
+  - Resultado: $P(X = x)$
+
+Esperança:
+
+    $$
+    E(X) = \mu
+    $$
+    
+  - Resultado: $E(X) = \mu$
+
+Variância:
+
+    $$
+    Var(X) = \sigma^2
+    $$
+    
+  - Resultado: $Var(X) = \sigma^2$
+
+Distribuição normal:
+
+    $$
+    X \sim \mathcal{N}(\mu, \sigma^2)
+    $$
+
+  - Resultado: $X \sim \mathcal{N}(\mu, \sigma^2)$
+
+---
+
+## 📘 Dicionário essencial de símbolos estatísticos  
+*(símbolo → código LaTeX → significado)*
+
+---
+
+### 📐 Estatística descritiva
+
+- $\bar{x}$ — `\bar{x}` → média amostral  
+- $\mu$ — `\mu` → média populacional  
+- $s^2$ — `s^2` → variância amostral  
+- $\sigma^2$ — `\sigma^2` → variância populacional  
+- $s$ — `s` → desvio padrão amostral  
+- $\sigma$ — `\sigma` → desvio padrão populacional  
+- $n$ — `n` → tamanho da amostra  
+
+---
+
+### 🎯 Probabilidade
+
+- $P(A)$ — `P(A)` → probabilidade do evento $A$  
+- $P(A \mid B)$ — `P(A \mid B)` → probabilidade condicional  
+- $\Omega$ — `\Omega` → espaço amostral  
+- $\cap$ — `\cap` → interseção de eventos  
+- $\cup$ — `\cup` → união de eventos  
+- $A^c$ — `A^c` → complemento do evento $A$  
+
+---
+
+### 📊 Variáveis aleatórias
+
+- $X, Y$ — `X, Y` → variáveis aleatórias  
+- $x_i$ — `x_i` → observação $i$  
+- $f(x)$ — `f(x)` → função densidade de probabilidade  
+- $F(x)$ — `F(x)` → função distribuição acumulada  
+
+---
+
+### 📈 Inferência estatística
+
+- $\hat{\theta}$ — `\hat{\theta}` → estimador do parâmetro $\theta$  
+- $\theta$ — `\theta` → parâmetro populacional  
+- $H_0$ — `H_0` → hipótese nula  
+- $H_1$ — `H_1` → hipótese alternativa  
+- $\alpha$ — `\alpha` → nível de significância  
+- $\beta$ — `\beta` → erro tipo II  
+- $1 - \beta$ — `1 - \beta` → poder do teste  
+
+---
+
+### 📐 Testes e distribuições
+
+- $z$ — `z` → estatística normal padrão  
+- $t$ — `t` → estatística t de Student  
+- $\chi^2$ — `\chi^2` → qui-quadrado  
+- $F$ — `F` → distribuição F  
+- $p$ — `p` → valor-p  
+
+---
+
+### 🧠 Matrizes e vetores
+
+- $\mathbf{x}$ — `\mathbf{x}` → vetor  
+- $\mathbf{X}$ — `\mathbf{X}` → matriz  
+- $\mathbf{X}^\top$ — `\mathbf{X}^\top` → transposta  
+- $\mathbf{X}^{-1}$ — `\mathbf{X}^{-1}` → inversa  
+- $\det(\mathbf{X})$ — `\det(\mathbf{X})` → determinante  
+
+---
+
+## ⚠️ Erros comuns ao usar LaTeX Math
+
+- Esquecer `$` ou `$$`
+- Usar `_` ou `^` sem `{}` quando necessário
+- Misturar texto e matemática sem separação
+- Usar imagens no lugar de fórmulas
+
+---
+
+## 🧭 Boas práticas finais
+
+- Use inline math para símbolos
+- Use block math para definições
+- Seja consistente com a notação
+- Explique cada símbolo no texto
+
+> **Uma fórmula bem escrita reduz drasticamente a ambiguidade do texto estatístico.**
+
+---
+
+## 📌 Resumo final
+
+- LaTeX Math funciona nativamente em HTML
+- `$...$` → matemática inline
+- `$$...$$` → matemática em bloco
+- Mostrar símbolo + código ajuda no aprendizado
+- Um dicionário padronizado evita inconsistências

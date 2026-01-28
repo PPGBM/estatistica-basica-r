@@ -58,7 +58,7 @@ aos conteúdos e aos slides.
 - Medidas de tendência central
 - Medidas de dispersão
 
-➡️ Aula em breve
+[➡️ Acessar slides da aula](slides/aula-conceitos-basicos-4-descritiva.qmd){target="_blank" rel="noopener"}
 
 ---
 

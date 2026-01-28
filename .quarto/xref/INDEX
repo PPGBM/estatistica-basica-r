@@ -58,5 +58,17 @@
   },
   "aulas/slides/aula-conceitos-basicos-3-organizando.qmd": {
     "aula-conceitos-basicos-3-organizando.html": "53468a29"
+  },
+  "aulas/guia-quarto-latex-math-html.qmd": {
+    "guia-quarto-latex-math-html.html": "5256630b"
+  },
+  "aulas/slides/aula-conceitos-basicos-4-descritiva.qmd": {
+    "aula-conceitos-basicos-4-descritiva.html": "0fdc5ad1"
+  },
+  "aulas/guia-quarto-latex-math-pdf-1A4.qmd": {
+    "guia-quarto-latex-math-pdf-1A4.tex": "5386585b"
+  },
+  "aulas/guia-quarto-latex-math-pdf-1A4-2col.qmd": {
+    "guia-quarto-latex-math-pdf-1A4-2col.tex": "f3ddfc1a"
   }
 }

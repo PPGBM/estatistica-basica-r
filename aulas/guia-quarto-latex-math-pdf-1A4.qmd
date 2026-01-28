@@ -1,0 +1,111 @@
+---
+title: "LaTeX Math – Guia de Consulta Rápida (1 página A4)"
+author: "Alexandre Kassuga"
+format:
+  pdf:
+    documentclass: article
+    fontsize: 10pt
+    geometry: margin=2cm
+    toc: false
+execute:
+  echo: false
+---
+
+# LaTeX Math em R Markdown / Quarto  
+**Guia de consulta rápida para impressão (A4)**
+
+---
+
+## 1. Sintaxe essencial
+
+**Inline** → `$ ... $`  
+Exemplo (código):
+
+    $\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$
+
+Resultado: $\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$
+
+**Bloco** → `$$ ... $$`  
+Exemplo (código):
+
+    $$
+    \bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+    $$
+
+Resultado:
+$$
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+$$
+
+---
+
+## 2. Índices, expoentes e frações
+
+- Código: `x_i` → $x_i$  
+- Código: `x^2` → $x^2$  
+- Código: `x_i^2` → $x_i^2$  
+- Código: `\frac{a}{b}` → $\frac{a}{b}$  
+
+**Regra:** use `{}` sempre que houver mais de um símbolo.
+
+---
+
+## 3. Operadores comuns
+
+- `\sum_{i=1}^{n} x_i` → $\sum_{i=1}^{n} x_i$  
+- `\prod_{i=1}^{n} x_i` → $\prod_{i=1}^{n} x_i$  
+- `\lim_{n \to \infty} \bar{x}_n` → $\lim_{n \to \infty} \bar{x}_n$  
+
+---
+
+## 4. Probabilidade e Estatística (exemplos)
+
+- `P(X = x)` → $P(X = x)$  
+- `E(X) = \mu` → $E(X) = \mu$  
+- `Var(X) = \sigma^2` → $Var(X) = \sigma^2$  
+- `X \sim \mathcal{N}(\mu, \sigma^2)` → $X \sim \mathcal{N}(\mu, \sigma^2)$  
+
+---
+
+## 5. Dicionário essencial de símbolos estatísticos  
+*(símbolo — código — significado)*
+
+### Estatística descritiva
+- $\bar{x}$ — `\bar{x}` — média amostral  
+- $\mu$ — `\mu` — média populacional  
+- $s^2$ — `s^2` — variância amostral  
+- $\sigma^2$ — `\sigma^2` — variância populacional  
+- $s$ — `s` — desvio padrão amostral  
+- $\sigma$ — `\sigma` — desvio padrão populacional  
+- $n$ — `n` — tamanho da amostra  
+
+### Probabilidade
+- $P(A)$ — `P(A)` — probabilidade  
+- $P(A \mid B)$ — `P(A \mid B)` — prob. condicional  
+- $\Omega$ — `\Omega` — espaço amostral  
+- $A^c$ — `A^c` — complemento  
+
+### Inferência
+- $\hat{\theta}$ — `\hat{\theta}` — estimador  
+- $H_0$ — `H_0` — hipótese nula  
+- $\alpha$ — `\alpha` — significância  
+- $p$ — `p` — valor-p  
+
+### Matrizes
+- $\mathbf{x}$ — `\mathbf{x}` — vetor  
+- $\mathbf{X}$ — `\mathbf{X}` — matriz  
+- $\mathbf{X}^\top$ — `\mathbf{X}^\top` — transposta  
+
+---
+
+## 6. Erros comuns (evite)
+
+- Esquecer `$` ou `$$`
+- Não usar `{}` em índices/expoentes
+- Misturar texto e matemática sem separação
+- Usar imagens em vez de LaTeX Math
+
+---
+
+**Regra de ouro:**  
+*Se a notação não estiver clara no PDF impresso, ela não está clara o suficiente.*

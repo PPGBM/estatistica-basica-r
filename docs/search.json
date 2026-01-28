@@ -1621,7 +1621,7 @@
     "href": "aulas/aulas.html#revisão-de-estatística",
     "title": "Aulas",
     "section": "Revisão de Estatística",
-    "text": "Revisão de Estatística\n\n\nApresentação – Introdução ao Curso\n\nApresentação do curso\n\nConteúdos programáticos\n\nTipografia do curso\n\n➡️ Acessar slides da aula\n\n\n\nAula 01 – Conceitos básicos\n\nO que é a estatística\nO que são Dados\nAmostragem e generalização\nTipos de dados\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – Conceitos básicos\n\nPlanejando experimentos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Organizando dados\n\nTabelas do contingência\nDistribuição de frequências\n\n➡️ Acessar slides da aula\n\n\n\nAula 04 – Estatística descritiva\n\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve\n\n\n\nAula 05 – Testes de hipóteses e significâncias\n\nO que são testes de hipóteses\nDefinições\nUm pouco de história…\nNão tenha medo do erro\nR x Python\n\n➡️ Aula em breve\n\n\n\nAula 06 – Testes de hipótese 1\n\nEstatística Paramétrica\nTestes de significância para uma amostra\nTeste T\nQui-quadrdo\n\n➡️ Aula em breve\n\n\n\nAula 07 – Testes de hipótese 2\n\nEstatística paramétrica\nTestes de significância para duas amostras\nTeste T para duas amostras independentes\n\n\n➡️ Aula em breve\n\n\n\nAula 08 – Testes de hipótese 3\n\nEstatística paramétrica\nTestes de significância para mais de duas amostras\nANOVA\n\n➡️ Aula em breve\n\n\n\nAula 09 – Testes de hipótese 4\n\nEstatística não paramétrica\nMann-Whitney\nKruskal-Wallis\n\n➡️ Aula em breve"
+    "text": "Revisão de Estatística\n\n\nApresentação – Introdução ao Curso\n\nApresentação do curso\n\nConteúdos programáticos\n\nTipografia do curso\n\n➡️ Acessar slides da aula\n\n\n\nAula 01 – Conceitos básicos\n\nO que é a estatística\nO que são Dados\nAmostragem e generalização\nTipos de dados\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – Conceitos básicos\n\nPlanejando experimentos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Organizando dados\n\nTabelas do contingência\nDistribuição de frequências\n\n➡️ Acessar slides da aula\n\n\n\nAula 04 – Estatística descritiva\n\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Acessar slides da aula\n\n\n\nAula 05 – Testes de hipóteses e significâncias\n\nO que são testes de hipóteses\nDefinições\nUm pouco de história…\nNão tenha medo do erro\nR x Python\n\n➡️ Aula em breve\n\n\n\nAula 06 – Testes de hipótese 1\n\nEstatística Paramétrica\nTestes de significância para uma amostra\nTeste T\nQui-quadrdo\n\n➡️ Aula em breve\n\n\n\nAula 07 – Testes de hipótese 2\n\nEstatística paramétrica\nTestes de significância para duas amostras\nTeste T para duas amostras independentes\n\n\n➡️ Aula em breve\n\n\n\nAula 08 – Testes de hipótese 3\n\nEstatística paramétrica\nTestes de significância para mais de duas amostras\nANOVA\n\n➡️ Aula em breve\n\n\n\nAula 09 – Testes de hipótese 4\n\nEstatística não paramétrica\nMann-Whitney\nKruskal-Wallis\n\n➡️ Aula em breve"
   },
   {
     "objectID": "aulas/aulas.html#linguagem-r",
@@ -1629,5 +1629,348 @@
     "title": "Aulas",
     "section": "Linguagem R",
     "text": "Linguagem R\n\n\nAula 01 – A Linguagem R\n\nO R é para mim?\nA linguagem R\nUm pouco de história…\nNão tenha medo do erro\nR x Python\n\n➡️ Aula em breve\n\n\n\nAula 02 – O pacote R\n\nO pacote R\nRStudio\nComandos Básicos\nPacotes\nO R como calculadora\nIniciando em objetos\n\n➡️ Aula em breve\n\n\n\nAula 03 – Objetos e Dados\n\nAtribuição\nNomeando objetos\nUtilizando objetos em R\nTipos de dados em R\nAlguns comandos\n\n➡️ Aula em breve\n\n\n\nAula 04 – Funções e objetos\n\nFunções\nCriando funções\nMais sobre objetos\nEstruturas de dados\n\n➡️ Aula em breve\n\n\n\nAula 05 – Graficos no R\n\nComo funcionam gráficos no R\nTipos de gráficos\nParâmetros gráficos\n\n➡️ Aula em breve\n\n\nAula 06 – Estatística descritiva no R\n\nEstatística descritiva\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve\n\n\nAula 07 – Testes de significância em R\n\nTestes de significância\n\nTeste t\nMann-Whitney\nQui-quadrado\nAnálise de Variância\nKruskall-Wallis\n\n\n➡️ Aula em breve"
+  },
+  {
+    "objectID": "aulas/guia-quarto-latex-math-html.html",
+    "href": "aulas/guia-quarto-latex-math-html.html",
+    "title": "Guia Rápido – LaTeX Math em R Markdown / Quarto (HTML)",
+    "section": "",
+    "text": "Este guia apresenta como escrever fórmulas matemáticas usando LaTeX Math em documentos R Markdown e Quarto (.qmd) renderizados em HTML, com foco em:\n\n✏️ Escrita correta de fórmulas\n📐 Diferença entre matemática inline e em bloco\n📊 Notação estatística padrão\n📘 Um dicionário prático dos principais símbolos usados em Estatística\n\nO material foi pensado como referência rápida e confiável para relatórios, aulas e materiais didáticos."
+  },
+  {
+    "objectID": "aulas/guia-quarto-latex-math-html.html#objetivo-do-guia",
+    "href": "aulas/guia-quarto-latex-math-html.html#objetivo-do-guia",
+    "title": "Guia Rápido – LaTeX Math em R Markdown / Quarto (HTML)",
+    "section": "",
+    "text": "Este guia apresenta como escrever fórmulas matemáticas usando LaTeX Math em documentos R Markdown e Quarto (.qmd) renderizados em HTML, com foco em:\n\n✏️ Escrita correta de fórmulas\n📐 Diferença entre matemática inline e em bloco\n📊 Notação estatística padrão\n📘 Um dicionário prático dos principais símbolos usados em Estatística\n\nO material foi pensado como referência rápida e confiável para relatórios, aulas e materiais didáticos."
+  },
+  {
+    "objectID": "aulas/guia-quarto-latex-math-html.html#como-funciona-latex-math-em-r-markdown-quarto",
+    "href": "aulas/guia-quarto-latex-math-html.html#como-funciona-latex-math-em-r-markdown-quarto",
+    "title": "Guia Rápido – LaTeX Math em R Markdown / Quarto (HTML)",
+    "section": "🧠 Como funciona LaTeX Math em R Markdown / Quarto",
+    "text": "🧠 Como funciona LaTeX Math em R Markdown / Quarto\nR Markdown e Quarto usam MathJax para renderizar matemática em HTML.\nIsso significa que você escreve LaTeX puro, e o navegador faz a renderização.\nNão é necessário: - instalar pacotes - ativar opções no YAML - usar código R"
+  },
+  {
+    "objectID": "aulas/guia-quarto-latex-math-html.html#matemática-inline-no-meio-do-texto",
+    "href": "aulas/guia-quarto-latex-math-html.html#matemática-inline-no-meio-do-texto",
+    "title": "Guia Rápido – LaTeX Math em R Markdown / Quarto (HTML)",
+    "section": "✏️ Matemática inline (no meio do texto)",
+    "text": "✏️ Matemática inline (no meio do texto)\nUse um cifrão ($) antes e depois da expressão.\nExemplo de escrita:\nA média amostral é dada por $\\bar{x} = \\frac{1}{n}\\sum_{i=1}^{n} x_i$.\nResultado renderizado:\nA média amostral é dada por \\(\\bar{x} = \\frac{1}{n}\\sum_{i=1}^{n} x_i\\).\nUse matemática inline para: - símbolos - pequenas expressões - notação dentro do parágrafo"
+  },
+  {
+    "objectID": "aulas/guia-quarto-latex-math-html.html#matemática-em-bloco-equações-destacadas",
+    "href": "aulas/guia-quarto-latex-math-html.html#matemática-em-bloco-equações-destacadas",
+    "title": "Guia Rápido – LaTeX Math em R Markdown / Quarto (HTML)",
+    "section": "📐 Matemática em bloco (equações destacadas)",
+    "text": "📐 Matemática em bloco (equações destacadas)\nUse dois cifrões ($$) antes e depois.\nExemplo:\n$$\n\\bar{x} = \\frac{1}{n}\\sum_{i=1}^{n} x_i\n$$\nResultado:\n\\[\n\\bar{x} = \\frac{1}{n}\\sum_{i=1}^{n} x_i\n\\]\nUse matemática em bloco para: - definições formais - equações importantes - deduções matemáticas"
+  },
+  {
+    "objectID": "aulas/guia-quarto-latex-math-html.html#índices-expoentes-e-frações",
+    "href": "aulas/guia-quarto-latex-math-html.html#índices-expoentes-e-frações",
+    "title": "Guia Rápido – LaTeX Math em R Markdown / Quarto (HTML)",
+    "section": "🔢 Índices, expoentes e frações",
+    "text": "🔢 Índices, expoentes e frações\nEscrita:\nx_i, x^2, x_i^2  \n\\frac{a}{b}\nResultado:\n\\(x_i\\), \\(x^2\\), \\(x_i^2\\), \\(\\frac{a}{b}\\)\nRegras importantes: - {} agrupa elementos - sempre use {} em expoentes longos"
+  },
+  {
+    "objectID": "aulas/guia-quarto-latex-math-html.html#somatórios-produtórios-e-limites",
+    "href": "aulas/guia-quarto-latex-math-html.html#somatórios-produtórios-e-limites",
+    "title": "Guia Rápido – LaTeX Math em R Markdown / Quarto (HTML)",
+    "section": "📊 Somatórios, produtórios e limites",
+    "text": "📊 Somatórios, produtórios e limites\nSomatório:\n$$\n\\sum_{i=1}^{n} x_i\n$$\n\nResultado: \\(\\sum_{i=1}^{n} x_i\\)\n\nProdutório:\n$$\n\\prod_{i=1}^{n} x_i\n$$\n\nResultado: \\(\\prod_{i=1}^{n} x_i\\)\n\nLimite:\n$$\n\\lim_{n \\to \\infty} \\bar{x}_n\n$$\n\nResultado: \\(\\lim_{n \\to \\infty} \\bar{x}_n\\)"
+  },
+  {
+    "objectID": "aulas/guia-quarto-latex-math-html.html#probabilidade-e-estatística-exemplos-clássicos",
+    "href": "aulas/guia-quarto-latex-math-html.html#probabilidade-e-estatística-exemplos-clássicos",
+    "title": "Guia Rápido – LaTeX Math em R Markdown / Quarto (HTML)",
+    "section": "📈 Probabilidade e Estatística – exemplos clássicos",
+    "text": "📈 Probabilidade e Estatística – exemplos clássicos\nProbabilidade:\n$$\nP(X = x)\n$$\n\nResultado: \\(P(X = x)\\)\n\nEsperança:\n$$\nE(X) = \\mu\n$$\n\nResultado: \\(E(X) = \\mu\\)\n\nVariância:\n$$\nVar(X) = \\sigma^2\n$$\n\nResultado: \\(Var(X) = \\sigma^2\\)\n\nDistribuição normal:\n$$\nX \\sim \\mathcal{N}(\\mu, \\sigma^2)\n$$\n\nResultado: \\(X \\sim \\mathcal{N}(\\mu, \\sigma^2)\\)"
+  },
+  {
+    "objectID": "aulas/guia-quarto-latex-math-html.html#dicionário-essencial-de-símbolos-estatísticos",
+    "href": "aulas/guia-quarto-latex-math-html.html#dicionário-essencial-de-símbolos-estatísticos",
+    "title": "Guia Rápido – LaTeX Math em R Markdown / Quarto (HTML)",
+    "section": "📘 Dicionário essencial de símbolos estatísticos",
+    "text": "📘 Dicionário essencial de símbolos estatísticos\n(símbolo → código LaTeX → significado)\n\n\n📐 Estatística descritiva\n\n\\(\\bar{x}\\) — \\bar{x} → média amostral\n\n\\(\\mu\\) — \\mu → média populacional\n\n\\(s^2\\) — s^2 → variância amostral\n\n\\(\\sigma^2\\) — \\sigma^2 → variância populacional\n\n\\(s\\) — s → desvio padrão amostral\n\n\\(\\sigma\\) — \\sigma → desvio padrão populacional\n\n\\(n\\) — n → tamanho da amostra\n\n\n\n\n🎯 Probabilidade\n\n\\(P(A)\\) — P(A) → probabilidade do evento \\(A\\)\n\n\\(P(A \\mid B)\\) — P(A \\mid B) → probabilidade condicional\n\n\\(\\Omega\\) — \\Omega → espaço amostral\n\n\\(\\cap\\) — \\cap → interseção de eventos\n\n\\(\\cup\\) — \\cup → união de eventos\n\n\\(A^c\\) — A^c → complemento do evento \\(A\\)\n\n\n\n\n📊 Variáveis aleatórias\n\n\\(X, Y\\) — X, Y → variáveis aleatórias\n\n\\(x_i\\) — x_i → observação \\(i\\)\n\n\\(f(x)\\) — f(x) → função densidade de probabilidade\n\n\\(F(x)\\) — F(x) → função distribuição acumulada\n\n\n\n\n📈 Inferência estatística\n\n\\(\\hat{\\theta}\\) — \\hat{\\theta} → estimador do parâmetro \\(\\theta\\)\n\n\\(\\theta\\) — \\theta → parâmetro populacional\n\n\\(H_0\\) — H_0 → hipótese nula\n\n\\(H_1\\) — H_1 → hipótese alternativa\n\n\\(\\alpha\\) — \\alpha → nível de significância\n\n\\(\\beta\\) — \\beta → erro tipo II\n\n\\(1 - \\beta\\) — 1 - \\beta → poder do teste\n\n\n\n\n📐 Testes e distribuições\n\n\\(z\\) — z → estatística normal padrão\n\n\\(t\\) — t → estatística t de Student\n\n\\(\\chi^2\\) — \\chi^2 → qui-quadrado\n\n\\(F\\) — F → distribuição F\n\n\\(p\\) — p → valor-p\n\n\n\n\n🧠 Matrizes e vetores\n\n\\(\\mathbf{x}\\) — \\mathbf{x} → vetor\n\n\\(\\mathbf{X}\\) — \\mathbf{X} → matriz\n\n\\(\\mathbf{X}^\\top\\) — \\mathbf{X}^\\top → transposta\n\n\\(\\mathbf{X}^{-1}\\) — \\mathbf{X}^{-1} → inversa\n\n\\(\\det(\\mathbf{X})\\) — \\det(\\mathbf{X}) → determinante"
+  },
+  {
+    "objectID": "aulas/guia-quarto-latex-math-html.html#matrizes-e-vetores-muito-usados-em-modelos",
+    "href": "aulas/guia-quarto-latex-math-html.html#matrizes-e-vetores-muito-usados-em-modelos",
+    "title": "Guia Rápido – LaTeX Math em R Markdown / Quarto (HTML)",
+    "section": "🧠 Matrizes e vetores (muito usados em modelos)",
+    "text": "🧠 Matrizes e vetores (muito usados em modelos)\n\n\\(\\mathbf{x}\\) → vetor\n\n\\(\\mathbf{X}\\) → matriz\n\n\\(\\mathbf{X}^\\top\\) → transposta\n\n\\(\\mathbf{X}^{-1}\\) → inversa\n\n\\(\\det(\\mathbf{X})\\) → determinante"
+  },
+  {
+    "objectID": "aulas/guia-quarto-latex-math-html.html#erros-comuns-ao-usar-latex-math",
+    "href": "aulas/guia-quarto-latex-math-html.html#erros-comuns-ao-usar-latex-math",
+    "title": "Guia Rápido – LaTeX Math em R Markdown / Quarto (HTML)",
+    "section": "⚠️ Erros comuns ao usar LaTeX Math",
+    "text": "⚠️ Erros comuns ao usar LaTeX Math\n\nEsquecer $ ou $$\nUsar _ ou ^ sem {} quando necessário\nMisturar texto e matemática sem separação\nUsar imagens no lugar de fórmulas"
+  },
+  {
+    "objectID": "aulas/guia-quarto-latex-math-html.html#boas-práticas-finais",
+    "href": "aulas/guia-quarto-latex-math-html.html#boas-práticas-finais",
+    "title": "Guia Rápido – LaTeX Math em R Markdown / Quarto (HTML)",
+    "section": "🧭 Boas práticas finais",
+    "text": "🧭 Boas práticas finais\n\nUse inline math para símbolos\nUse block math para definições\nSeja consistente com a notação\nExplique cada símbolo no texto\n\n\nUma fórmula bem escrita reduz drasticamente a ambiguidade do texto estatístico."
+  },
+  {
+    "objectID": "aulas/guia-quarto-latex-math-html.html#resumo-final",
+    "href": "aulas/guia-quarto-latex-math-html.html#resumo-final",
+    "title": "Guia Rápido – LaTeX Math em R Markdown / Quarto (HTML)",
+    "section": "📌 Resumo final",
+    "text": "📌 Resumo final\n\nLaTeX Math funciona nativamente em HTML\n$...$ → matemática inline\n$$...$$ → matemática em bloco\nMostrar símbolo + código ajuda no aprendizado\nUm dicionário padronizado evita inconsistências"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html",
+    "title": "Revisão de conceitos básicos",
+    "section": "",
+    "text": "Tabelas\n\nApresentam os dados de forma organizada\nApresenta\n\nTítulo\nCabeçalho\nColuna indicadora\nCorpo da tabela\nPodem apresentar frequência relativa\n\n\n\n\n\nNúmero de insetos coletados em cada armadilha\n\n\n\n\n\n\n\nArmadilha\nFrequência\nFrequência relativa\n\n\n\n\nAmarelo Azul Vermelha\n65\n37\n95\n\n32.99\n18.79\n48.22\n\n\n\nTotal\n197\n100.00"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#organizando-dados",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#organizando-dados",
+    "title": "Revisão de conceitos básicos",
+    "section": "",
+    "text": "Tabelas\n\nApresentam os dados de forma organizada\nApresenta\n\nTítulo\nCabeçalho\nColuna indicadora\nCorpo da tabela\nPodem apresentar frequência relativa\n\n\n\n\n\nNúmero de insetos coletados em cada armadilha\n\n\n\n\n\n\n\nArmadilha\nFrequência\nFrequência relativa\n\n\n\n\nAmarelo Azul Vermelha\n65\n37\n95\n\n32.99\n18.79\n48.22\n\n\n\nTotal\n197\n100.00"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#organizando-dados-1",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#organizando-dados-1",
+    "title": "Revisão de conceitos básicos",
+    "section": "Organizando dados",
+    "text": "Organizando dados\n\n\n\nTabelas de contingência\n\nApresentam os dados classificados por dois fatores\nRealizamos coletas utilizando 3 cores de armadilha, em duas condições de exposição\n\n\n\n\n\n\nColetas de armadilhas de inseto por cor e exposição a luz\n\n\n\n\n\n\n\n\n\nAmarela\nAzul\nVermelha\n\n\n\n\nSombra Luz\n140\n65\n\n180\n37\n\n43\n95"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#organizando-dados-2",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#organizando-dados-2",
+    "title": "Revisão de conceitos básicos",
+    "section": "Organizando dados",
+    "text": "Organizando dados\n\n\n\n\n\nDistribuição de frequências\n\nGrande conjunto de dados\nOrganização dos dados\nVisualização\nListagem de dados agrupados junto com suas ocorrências\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n23\n27\n33\n32\n18\n\n33\n26\n16\n30\n21\n\n21\n21\n24\n19\n17\n\n19\n24\n21\n18\n34\n\n30\n21\n23\n27\n16\n\n23\n18\n26\n24\n27\n\n8\n30\n21\n8\n20\n\n28\n31\n26\n19\n17\n\n\n\n\n\n\n\n\n\\[\nC = 1 + 3.222*log_{10} n\n\\]\n\nC -&gt; Número de Classes\nn -&gt; Número de dados\n\n\n}\n\n\nn = 40"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#organizando-dados-3",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#organizando-dados-3",
+    "title": "Revisão de conceitos básicos",
+    "section": "Organizando dados",
+    "text": "Organizando dados\n\n\n\n\n\nDistribuição de frequências\n\nDiretriz de Sturges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n23\n27\n33\n32\n18\n\n33\n26\n16\n30\n21\n\n21\n21\n24\n19\n17\n\n19\n24\n21\n18\n34\n\n30\n21\n23\n27\n16\n\n23\n18\n26\n24\n27\n\n8\n30\n21\n8\n20\n\n28\n31\n26\n19\n17\n\n\n\n\n\n\n\n\n\\[\nC = 1 + 3.222*log_{10} n\n\\]\n\nC -&gt; Número de Classes\nn -&gt; Número de dados\n\n\n}\n\n\nn = 40\n\n\n\\[\nC = 1 + 3.222*log_{10} 40\n\\]\n\n\nC ~ 6.16 ~ 6"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#organizando-dados-4",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#organizando-dados-4",
+    "title": "Revisão de conceitos básicos",
+    "section": "Organizando dados",
+    "text": "Organizando dados\n\n\n\n\n\nDistribuição de frequências\n\nDIretriz de Sturges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n23\n27\n33\n32\n18\n\n33\n26\n16\n30\n21\n\n21\n21\n24\n19\n17\n\n19\n24\n21\n18\n34\n\n30\n21\n23\n27\n16\n\n23\n18\n26\n24\n27\n\n8\n30\n21\n8\n20\n\n28\n31\n26\n19\n17\n\n\n\n\n\n\n\n\n\\[\nC = 1 + 3.222*log_{10} n\n\\]\n\nC -&gt; Número de Classes\nn -&gt; Número de dados\n\n\nC ~ 6\n\n\n\\[\nintervalo = (max-min)/C\n\\]\n\n\n\\[\nintervalo = (34-8)/6\n\\]\n\n\n\\[\nintervalo = 4.22\n\\]\n\n\n\\[\nintervalo \\approx 5\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#organizando-dados-5",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#organizando-dados-5",
+    "title": "Revisão de conceitos básicos",
+    "section": "Organizando dados",
+    "text": "Organizando dados\n\n\n\n\n\nDistribuição de frequências\n\nDIretriz de Sturges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nli\nls\npm\nfrequencia\n\n\n\n\n[8\n[13\n[18\n[23\n[28\n[33\n\n13)\n18)\n23)\n28)\n33)\n38)\n\n\n\n\n\n\n\n\n\n\n\n\\[\nC = 1 + 3.222*log_{10} n\n\\]\n\n\n\nDefinimos os limites inferiores (li) e superiores (ls)"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#organizando-dados-6",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#organizando-dados-6",
+    "title": "Revisão de conceitos básicos",
+    "section": "Organizando dados",
+    "text": "Organizando dados\n\n\n\n\n\nDistribuição de frequências\n\nDIretriz de Sturges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nli\nls\npm\nfrequencia\n\n\n\n\n[8\n[13\n[18\n[23\n[28\n[33\n\n13)\n18)\n23)\n28)\n33)\n38)\n\n10.5\n15.5\n20.5\n25.5\n30.5\n35.5\n\n\n\n\n\n\n\n\n\n\n\\[\nC = 1 + 3.222*log_{10} n\n\\]\n\n\n\nDefinimos o ponto médios de cada classe (pm)\n\n\\[\npm= (ls + li)/2\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#organizando-dados-7",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#organizando-dados-7",
+    "title": "Revisão de conceitos básicos",
+    "section": "Organizando dados",
+    "text": "Organizando dados\n\n\n\n\n\nDistribuição de frequências\n\nDIretriz de Sturges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nli\nls\npm\nfrequencia\n\n\n\n\n[8\n[13\n[18\n[23\n[28\n[33\n\n13)\n18)\n23)\n28)\n33)\n38)\n\n10.5\n15.5\n20.5\n25.5\n30.5\n35.5\n\n2\n4\n13\n12\n6\n3\n\n\n\n\n\n\n\n\n\n\\[\nC = 1 + 3.222*log_{10} n\n\\]\n\nDeterminamos a frequencia de cada classe\n\n\n\n\n\n\n\n\n\n\n\n\n\n23\n27\n33\n32\n18\n\n33\n26\n16\n30\n21\n\n21\n21\n24\n19\n17\n\n19\n24\n21\n18\n34\n\n30\n21\n23\n27\n16\n\n23\n18\n26\n24\n27\n\n8\n30\n21\n8\n20\n\n28\n31\n26\n19\n17"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#organizando-dados-8",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#organizando-dados-8",
+    "title": "Revisão de conceitos básicos",
+    "section": "Organizando dados",
+    "text": "Organizando dados\n\n\n\n\n\nDistribuição de frequências\n\nDIretriz de Sturges\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nli\nls\npm\nfrequencia\n\n\n\n\n[8\n[13\n[18\n[23\n[28\n[33\n\n13)\n18)\n23)\n28)\n33)\n38)\n\n10.5\n15.5\n20.5\n25.5\n30.5\n35.5\n\n2\n4\n13\n12\n6\n3\n\n\n\n\n\n\n\nsturges &lt;- c(23, 33, 21, 19, 30, 23, 8,28, 27, 26, 21, 24, 21, 18, 30, 31, 33, 16, 24, 21, 23, 26, 21, 26, 32, 30, 19, 18, 27, 24, 8, 19, 18, 21, 17, 34, 16, 27, 20, 17)\n\nsturges.pm &lt;- c(10.5, 15.5, 20.5, 25.5, 30.5, 35.5)  \nsturges.freq &lt;- c(2, 4, 13, 12, 6, 3)\n\n\nbarplot(sturges.freq, names.arg = sturges.pm, xlab = \"Ponto médio\", ylab = \"Frequência\", main = \"Distribuição de frequências - Sturges\", space = 0, cex.axis = 1.5, cex.names = 1.5)"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-tendência-central",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-tendência-central",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de tendência central",
+    "text": "Medidas de tendência central\n\n\n\n\nValores de centro ou meio do conjunto de dados\n\n\n\n\n\n\n\n\nMédia\n\nAritmética\n\\(\\bar{x}\\) - amostral\n\\(\\mu\\) - populacional\n\nMediana\nModa"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-tendência-central-1",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-tendência-central-1",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de tendência central",
+    "text": "Medidas de tendência central\n\n\n\n\n\n\n\nMédia\n\nSoma dos valores dos dados divididos pelo n\nMuito comum\nLeva em conta todos os valores\nAfetada por valores extremos\nFunciona bem com diversos métodos estatísticos\n\n\n\n\\[\n\\mu = \\frac{\\sum_{i=1}^{N} X_i}{N}\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-tendência-central-2",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-tendência-central-2",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de tendência central",
+    "text": "Medidas de tendência central\n\n\n\n\n\n\n\nMédia\n\nSoma dos valores dos dados divididos pelo n\nMuito comum\nLeva em conta todos os valores\nAfetada por valores extremos\nFunciona bem com diversos métodos estatísticos\n\n\n\n\n\n\n\n10\n12\n11\n13\n11\n15\n14\n\n\n10\n12\n11\n13\n11\n15\n50\n\n\n\n\n\\[\n\\mu = \\frac{\\sum_{i=1}^{N} X_i}{N}\n\\]\n\n\n\n\n\n\n\n\\[\n\\mu = \\frac{10+12+11+13+11+15+14}{7}\\approx12.3\n\\]\n\n\n\n\\[\n\\mu = \\frac{10+12+11+13+11+15+50}{7}\\approx17.4\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-tendência-central-3",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-tendência-central-3",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de tendência central",
+    "text": "Medidas de tendência central\n\n\n\n\n\n\n\nMediana\n\nValor central\nMuito comum\nLeva em conta valores extremos\nNão é afetada por valores extremos\nBoa se há alguns valores extremos\n\n\n\n\n\n\n\n   10\n   12\n   11\n   13\n   11\n   15\n   14\n\n\n   10\n   12\n   11\n   13\n   11\n   15\n   50"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-tendência-central-4",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-tendência-central-4",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de tendência central",
+    "text": "Medidas de tendência central\n\n\n\n\n\n\n\nMediana\n\nValor central\nMuito comum\nLeva em conta valores extremos\nNão é afetada por valores extremos\nBoa se há alguns valores extremos\n\n\n\n\n\n\n\n   10               10\n   12               11\n   11               11\n   13               12\n   11               13\n   15               14\n   14               15\n\n\n   10               10\n   12               11\n   11               11\n   13               12\n   11               13\n   15               14\n   50               50"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-tendência-central-5",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-tendência-central-5",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de tendência central",
+    "text": "Medidas de tendência central\n\n\n\n\n\n\n\nMediana\n\nValor central\nMuito comum\nLeva em conta valores extremos\nNão é afetada por valores extremos\nBoa se há alguns valores extremos\n\n\n\n\n\n\n\n   10               10     [1]\n   12               11     [2]\n   11               11     [3]\n   13               12     [4]\n   11               13     [5]\n   15               14     [6]\n   14               15     [7]\n\n\n   10               10     [1]\n   12               11     [2]\n   11               11     [3]\n   13               12     [4]\n   11               13     [5]\n   15               14     [6]\n   50               50     [7]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-tendência-central-6",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-tendência-central-6",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de tendência central",
+    "text": "Medidas de tendência central\n\n\n\n\n\n\nModa\n\nValor que mais ocorre no conjunto de dados\nMuito usado em alguns estudos em biologia\nPode não existir, pode haver mais de uma\nNão leva em conta todos os valores\nNão é afetada por valores extremos\nApropriada para dados nominais"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-tendência-central-7",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-tendência-central-7",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de tendência central",
+    "text": "Medidas de tendência central\n\n\n\n\n\n\nModa\n\nValor que mais ocorre no conjunto de dados\nMuito usado em alguns estudos em biologia\nPode não existir, pode haver mais de uma\nNão leva em conta todos os valores\nNão é afetada por valores extremos\nApropriada para dados nominais\n\n\n\n\n\n\n\n   10               10\n   12               11\n   11               11\n   13               12\n   11               13\n   15               14\n   14               15\n\n\n   10               10\n   12               11\n   11               11\n   13               12\n   11               13\n   15               14\n   50               50\n\n➔\n\n\n➔\n\n\n➔\n\n\n➔"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de dispersão",
+    "text": "Medidas de dispersão\n\n\n\n\nValores que medem o GRAU DE ESPALHAMENTO ou AFASTAMENTO do conjunto de dados ao redor da média.\n\n\nAmplitude\nVariância\n\nPopulação\nAmostra\n\nDesvio-padrão\nCoeficiente de variação"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#próxima-aula",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#próxima-aula",
+    "title": "Revisão de conceitos básicos",
+    "section": "Próxima aula",
+    "text": "Próxima aula"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#teste",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#teste",
+    "title": "Revisão de conceitos básicos",
+    "section": "teste",
+    "text": "teste"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-1",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-1",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de dispersão",
+    "text": "Medidas de dispersão\n\n\n\nAmplitude                    \\(A = X_{max} - X_{min}\\)\n\n\nVariância\n\n\n\nPopulação                  \\(\\sigma^2 = \\frac{\\sum (x-\\mu)^2}{N}\\) \n\n\nAmostra                    \\(s^2 = \\frac{\\sum (x-\\bar{X})^2}{N}\\)\n\n\n\nDesvio-padrão                \\(s = \\sqrt{n^2}\\)\n\n\nCoeficiente de variação              \\(s^2 = \\frac{s}{x}*100\\)"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-2",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-2",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de dispersão",
+    "text": "Medidas de dispersão\n\n\n\n\n\n\nAmplitude\n\nDiferença entre o maior e o menor dado observado\nNão é um bom medidor de dispersão dos dados\nUtiliza somente valores extremos\n\n\n\n\n\n\n\n\n\\[\nA = X_{max} - X_{min}\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-3",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-3",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de dispersão",
+    "text": "Medidas de dispersão\n\n\n\n\n\n\nAmplitude\n\nDiferença entre o maior e o menor dado observado\nNão é um bom medidor de dispersão dos dados\nUtiliza somente valores extremos\n\n\n\n\n\n\n\n\n   10\n   12\n   11\n   13\n   11\n   15\n   14\n\n\n   10\n   12\n   11\n   13\n   11\n   15\n   50\n\n\n\n\n\n\\[\nA = X_{max} - X_{min}\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-4",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-4",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de dispersão",
+    "text": "Medidas de dispersão\n\n\n\n\n\n\nAmplitude\n\nDiferença entre o maior e o menor dado observado\nNão é um bom medidor de dispersão dos dados\nUtiliza somente valores extremos\n\n\n\n\n\n\n\n\n   10               10\n   12               11\n   11               11\n   13               12\n   11               13\n   15               14\n   14               15\n\n\n   10               10\n   12               11\n   11               11\n   13               12\n   11               13\n   15               14\n   50               50\n\n\n\n\n\n\\[\nA = X_{max} - X_{min}\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-5",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-5",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de dispersão",
+    "text": "Medidas de dispersão\n\n\n\n\n\n\nAmplitude\n\nDiferença entre o maior e o menor dado observado\nNão é um bom medidor de dispersão dos dados\nUtiliza somente valores extremos\n\n\n\n\n\n\n\n\n   10               10\n   12               11\n   11               11\n   13               12\n   11               13\n   15               14\n   14               15\n\n\n   10               10\n   12               11\n   11               11\n   13               12\n   11               13\n   15               14\n   50               50\n\n\n\n\n\n\n\n\\[\nA = 15 - 10 = 5\n\\]\n\n\n\n\\[\nA = 50 - 10 = 40\n\\]\n\n\n\\[\nA = X_{max} - X_{min}\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-6",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-6",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de dispersão",
+    "text": "Medidas de dispersão\n\n\n\nVariância\n\n\n\nPopulação                 \\(\\sigma^2 = \\frac{\\sum (x-\\mu)^2}{N}\\)\n\n\nAmostra                    \\(s^2 = \\frac{\\sum (x-\\bar{X})^2}{N}\\)"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-7",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-7",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de dispersão",
+    "text": "Medidas de dispersão\n\n\n\nVariância\n\n\n\nPopulação                 \\(\\sigma^2 = \\frac{\\sum (x-\\mu)^2}{N}\\)\n\n\nAmostra                    \\(s^2 = \\frac{\\sum (x-\\bar{X})^2}{N}\\)"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-8",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-8",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de dispersão",
+    "text": "Medidas de dispersão\n\n\n\nVariância\n\n\n\nPopulação                 \\(\\sigma^2 = \\frac{\\sum (x-\\mu)^2}{N}\\)\n\n\nAmostra                    \\(s^2 = \\frac{\\sum (x-\\bar{X})^2}{N}\\)"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-9",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-9",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de dispersão",
+    "text": "Medidas de dispersão\n\n\n\nVariância\n\n\n\n\n\n\n\n\n   10\n   12\n   11\n   13\n   11\n   15\n   14\n\n\n   10\n   12\n   11\n   13\n   11\n   15\n   50\n\n\n\n\n\n\\[\n{\\small s^2 = \\frac{\\sum (x-\\bar{X})^2}{N}}\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-10",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-10",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de dispersão",
+    "text": "Medidas de dispersão\n\n\n\nVariância\n\n\n\n\n\n\n                    Desvios da média\n\n   10               10 - 12.3 = -2.3\n   12               12 - 12.3 = -0.3\n   11               11 - 12.3 = -1.3\n   13               13 - 12.3 = 0.7\n   11               11 - 12.3 = -1.3\n   15               15 - 12.3 = 2.7\n   14               14 - 12.3 = 1.7\n\n\n   10               10 - 17.4 = -7.4\n   12               12 - 17.4 = -5.4\n   11               11 - 17.4 = -6.4\n   13               13 - 17.4 = -4.4\n   11               11 - 17.4 = -6.4\n   15               15 - 17.4 = -2.4\n   50               50 - 17.4 = 32.6\n\n\n\n\n\n\\[\n{\\small s^2 = \\frac{\\sum (x-\\bar{X})^2}{N}}\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-11",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-11",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de dispersão",
+    "text": "Medidas de dispersão\n\n\n\nVariância\n\n\n\n\n\n\n                    Desvios da média                   Q.D.\n\n   10               10 - 12.3 = -2.3              -2.3² = 5.29\n   12               12 - 12.3 = -0.3              -0.3² = 0.09\n   11               11 - 12.3 = -1.3              -1.3² = 1.69\n   13               13 - 12.3 = 0.7                0.7² = 0.49\n   11               11 - 12.3 = -1.3              -1.3² = 1.69\n   15               15 - 12.3 = 2.7                2.7² = 7.29\n   14               14 - 12.3 = 1.7                1.7² = 2.89\n\n\n   10               10 - 17.4 = -7.4              -7.4² = 54.76\n   12               12 - 17.4 = -5.4               5.4² = 29.16\n   11               11 - 17.4 = -6.4              -6.4² = 40.96\n   13               13 - 17.4 = -4.4              -4.4² = 19.36\n   11               11 - 17.4 = -6.4              -6.4² = 40.96\n   15               15 - 17.4 = -2.4              -2.4² = 5.76\n   50               50 - 17.4 = 32.6              32.6² = 1062.76\n\n\n\n\n\n\\[\n{\\small s^2 = \\frac{\\sum (x-\\bar{X})^2}{N}}\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-12",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-12",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de dispersão",
+    "text": "Medidas de dispersão\n\n\n\nVariância\n\n\n\n\n\n\n                    Desvios da média                   Q.D.                    S.Q.D.\n\n   10               10 - 12.3 = -2.3              -2.3² = 5.29\n   12               12 - 12.3 = -0.3              -0.3² = 0.09\n   11               11 - 12.3 = -1.3              -1.3² = 1.69\n   13               13 - 12.3 = 0.7                0.7² = 0.49                19.43\n   11               11 - 12.3 = -1.3              -1.3² = 1.69\n   15               15 - 12.3 = 2.7                2.7² = 7.29\n   14               14 - 12.3 = 1.7                1.7² = 2.89\n\n\n   10               10 - 17.4 = -7.4              -7.4² = 54.76\n   12               12 - 17.4 = -5.4               5.4² = 29.16\n   11               11 - 17.4 = -6.4              -6.4² = 40.96\n   13               13 - 17.4 = -4.4              -4.4² = 19.36           1253.72\n   11               11 - 17.4 = -6.4              -6.4² = 40.96\n   15               15 - 17.4 = -2.4              -2.4² = 5.76\n   50               50 - 17.4 = 32.6              32.6² = 1062.76\n\n\n\n\n\n\\[\n{\\small s^2 = \\frac{\\sum (x-\\bar{X})^2}{N}}\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-13",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-13",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de dispersão",
+    "text": "Medidas de dispersão\n\n\n\nVariância\n\n\n\n\n\n\n                    Desvios da média                   Q.D.                    S.Q.D.\n\n   10               10 - 12.3 = -2.3              -2.3² = 5.29\n   12               12 - 12.3 = -0.3              -0.3² = 0.09\n   11               11 - 12.3 = -1.3              -1.3² = 1.69\n   13               13 - 12.3 = 0.7                0.7² = 0.49                19.43\n   11               11 - 12.3 = -1.3              -1.3² = 1.69\n   15               15 - 12.3 = 2.7                2.7² = 7.29\n   14               14 - 12.3 = 1.7                1.7² = 2.89\n\n\n   10               10 - 17.4 = -7.4              -7.4² = 54.76\n   12               12 - 17.4 = -5.4               5.4² = 29.16\n   11               11 - 17.4 = -6.4              -6.4² = 40.96\n   13               13 - 17.4 = -4.4              -4.4² = 19.36           1253.72\n   11               11 - 17.4 = -6.4              -6.4² = 40.96\n   15               15 - 17.4 = -2.4              -2.4² = 5.76\n   50               50 - 17.4 = 32.6              32.6² = 1062.76\n\n\n\n\n\n\n     Variância\n\n\n\n\\[\n\\frac{19.43}{7-1}\n\\]\n\\[\ns^2 = 3.24\n\\]\n\n\n\n\n\\[\n\\frac{1253.72}{7-1}\n\\]\n\\[\ns^2 = 208.95\n\\]\n\n\n\n\\[\n{\\small s^2 = \\frac{\\sum (x-\\bar{X})^2}{N}}\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-14",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-14",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de dispersão",
+    "text": "Medidas de dispersão\n\n\n\nDesvio-padrão\n\nA variância não segue a unidade da medida, sempre está ao quadrado da unidade\nMuitas vezes precisamos de uma medida na mesma unidade.\n\n\n\n\n\n\n\n\n\n\n\\[\n{\\large s = \\sqrt{s^2}}\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-15",
+    "href": "aulas/slides/aula-conceitos-basicos-4-descritiva.html#medidas-de-dispersão-15",
+    "title": "Revisão de conceitos básicos",
+    "section": "Medidas de dispersão",
+    "text": "Medidas de dispersão\n\n\n\n\n\n\nCoeficiente de variação – C.V.\n\nRelaciona a grandeza do desvio-padrão com a média\nAdimensional\nApresentado como porcentagem\n\n\n\n\n\n\n\n\n\n\\[\n{C.V. = \\frac{s}{\\bar{X}} * 100}\n\\]\n\n\n\n\n          A               B\n          3               55\n          2               57\n          5               53\n       s = 2          s = 2\n     \\(\\bar{X}\\) = 4        \\(\\bar{X}\\) = 55"
   }
 ]

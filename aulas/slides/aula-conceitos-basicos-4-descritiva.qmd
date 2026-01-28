@@ -1,0 +1,1246 @@
+---
+title: "Revisão de conceitos básicos"
+subtitle: "Estatística descritiva"
+author: "Dr. Alexandre Dias Kassuga"
+format:
+  revealjs:
+    theme: simple
+    css: slides.css
+    highlight-style: monokai
+    slide-number: true
+    format: wide
+
+---
+
+## Medidas de tendência central
+
+\
+\
+
+::: {style="text-align: center;"}
+Valores de centro ou meio do conjunto de dados
+:::
+
+\
+\
+\
+
+::::: columns
+
+::: {.column width="40%"}
+-   Média
+    -   Aritmética
+    -   $\bar{x}$ - amostral
+    -   $\mu$ - populacional
+-   Mediana
+-   Moda
+:::
+
+::: {.column width="60%"}
+
+![](figuras/tendencia-central-1.png){width="100%"}
+:::
+
+:::::
+
+## Medidas de tendência central
+
+::::: columns
+
+::: {.column width="40%"}
+
+\
+\
+\
+
+-   Média
+    -   Soma dos valores dos dados divididos pelo n
+    -   Muito comum
+    -   Leva em conta todos os valores
+    -   Afetada por valores extremos
+    -   Funciona bem com diversos métodos estatísticos
+:::
+
+::: {.column width="60%"}
+
+$$
+\mu = \frac{\sum_{i=1}^{N} X_i}{N}
+$$
+:::
+
+:::::
+
+## Medidas de tendência central
+
+::::::::: columns
+
+::: {.column width="45%"}
+\
+\
+\
+
+-   Média
+    -   Soma dos valores dos dados divididos pelo n
+    -   Muito comum
+    -   Leva em conta todos os valores
+    -   Afetada por valores extremos
+    -   Funciona bem com diversos métodos estatísticos
+:::
+
+:::: {.column width="10%"}
+
+\
+\
+
+::: texto-menor
+
+10\
+12\
+11\
+13\
+11\
+15\
+14\
+\
+
+10\
+12\
+11\
+13\
+11\
+15\
+50\
+
+:::
+
+::::
+
+::::: {.column width="45%"}
+
+::: {.absolute top="10" left="900"}
+
+$$
+\mu = \frac{\sum_{i=1}^{N} X_i}{N}
+$$
+:::
+
+\
+\
+\
+\
+
+::: texto-menor
+
+$$
+\mu = \frac{10+12+11+13+11+15+14}{7}\approx12.3
+$$\
+\
+\
+
+$$
+\mu = \frac{10+12+11+13+11+15+50}{7}\approx17.4
+$$
+:::
+
+:::::
+
+:::::::::
+
+## Medidas de tendência central
+
+:::::: columns
+
+::: {.column width="50%"}
+\
+\
+\
+
+-   Mediana
+    -   Valor central
+    -   Muito comum
+    -   Leva em conta valores extremos
+    -   Não é afetada por valores extremos
+    -   Boa se há alguns valores extremos
+:::
+
+:::: {.column width="50%"}
+\
+\
+
+::: texto-menor
+|    10
+|    12
+|    11
+|    13
+|    11
+|    15
+|    14
+
+\
+
+|    10
+|    12
+|    11
+|    13
+|    11
+|    15
+|    50
+:::
+
+::::
+
+::::::
+
+## Medidas de tendência central
+
+:::::: columns
+
+::: {.column width="50%"}
+\
+\
+\
+
+-   Mediana
+    -   Valor central
+    -   Muito comum
+    -   Leva em conta valores extremos
+    -   Não é afetada por valores extremos
+    -   Boa se há alguns valores extremos
+:::
+
+:::: {.column width="50%"}
+
+\
+\
+
+::: texto-menor
+|    10               10
+|    12               11
+|    11               11
+|    13               12
+|    11               13
+|    15               14
+|    14               15
+
+\
+
+|    10               10
+|    12               11
+|    11               11
+|    13               12
+|    11               13
+|    15               14
+|    50               50
+
+:::
+
+::::
+
+::::::
+
+
+## Medidas de tendência central
+
+:::::: columns
+
+::: {.column width="50%"}
+
+\
+\
+\
+
+-   Mediana
+    -   Valor central
+    -   Muito comum
+    -   Leva em conta valores extremos
+    -   Não é afetada por valores extremos
+    -   Boa se há alguns valores extremos
+    
+:::
+
+::: {.column width="50%"}
+
+\
+\
+
+::: {.texto-menor}
+
+|    10               10     <span style="color: red;">[1]</span>
+|    12               11     <span style="color: red;">[2]</span>
+|    11               11     <span style="color: red;">[3]</span>
+|    13               12     <span style="color: red;">[4]</span>
+|    11               13     <span style="color: red;">[5]</span>
+|    15               14     <span style="color: red;">[6]</span>
+|    14               15     <span style="color: red;">[7]</span>
+
+\
+
+|    10               10     <span style="color: red;">[1]</span>
+|    12               11     <span style="color: red;">[2]</span>
+|    11               11     <span style="color: red;">[3]</span>
+|    13               12     <span style="color: red;">[4]</span>
+|    11               13     <span style="color: red;">[5]</span>
+|    15               14     <span style="color: red;">[6]</span>
+|    50               50     <span style="color: red;">[7]</span>
+
+
+<div style="position: absolute; top: 258px; left: 635px; width: 10%; height: 3px; background-color: orange;"></div>
+
+<div style="position: absolute; top: 283px; left: 635px; width: 10%; height: 3px; background-color: orange;"></div>
+
+
+<div style="position: absolute; top: 485px; left: 635px; width: 10%; height: 3px; background-color: orange;"></div>
+
+<div style="position: absolute; top: 512px; left: 635px; width: 10%; height: 3px; background-color: orange;"></div>
+
+:::
+
+:::
+
+::::::
+
+
+## Medidas de tendência central
+
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+\
+\
+
+- Moda
+  - Valor que mais ocorre no conjunto de dados
+  - Muito usado em alguns estudos em biologia
+  - Pode não existir, pode haver mais de uma
+  - Não leva em conta todos os valores
+  - Não é afetada por valores extremos
+  - Apropriada para dados nominais
+\
+
+:::
+
+::: {.column width="30%"}
+
+:::
+
+::::
+
+## Medidas de tendência central
+
+::::: {.columns}
+
+::: {.column width="70%"}
+
+\
+\
+
+- Moda
+  - Valor que mais ocorre no conjunto de dados
+  - Muito usado em alguns estudos em biologia
+  - Pode não existir, pode haver mais de uma
+  - Não leva em conta todos os valores
+  - Não é afetada por valores extremos
+  - Apropriada para dados nominais
+
+:::
+
+::: {.column width="30%"}
+
+\
+\
+
+::: {.texto-menor}
+
+|    10               10
+|    12               11
+|    11               11
+|    13               12
+|    11               13
+|    15               14
+|    14               15
+
+\
+
+|    10               10
+|    12               11
+|    11               11
+|    13               12
+|    11               13
+|    15               14
+|    50               50
+
+
+
+<div style="position: absolute; top: 170px; left: 885px; font-size: 2rem; color: orange; transform: rotate(150deg);">
+  ➔
+</div>
+
+
+<div style="position: absolute; top: 200px; left: 885px; font-size: 2rem; color: orange; transform: rotate(150deg);">
+  ➔
+</div>
+
+
+<div style="position: absolute; top: 400px; left: 885px; font-size: 2rem; color: orange; transform: rotate(150deg);">
+  ➔
+</div>
+
+
+<div style="position: absolute; top: 430px; left: 885px; font-size: 2rem; color: orange; transform: rotate(150deg);">
+  ➔
+</div>
+
+:::
+
+:::
+
+:::::
+
+
+## Medidas de dispersão
+
+\
+\
+
+::: {style="text-align: center;"}
+Valores que medem o <span style="color: orange;">GRAU DE ESPALHAMENTO</span> ou <span style="color: orange;">AFASTAMENTO</span> do conjunto de dados ao redor da média.
+:::
+
+- Amplitude
+- Variância
+  - População
+  - Amostra
+- Desvio-padrão
+- Coeficiente de variação
+
+
+## Medidas de dispersão
+
+\
+
+
+- Amplitude                    $A = X_{max} - X_{min}$\
+\
+- Variância\
+\
+  - População                  $\sigma^2 = \frac{\sum (x-\mu)^2}{N}$\   
+\
+  - Amostra                    $s^2 = \frac{\sum (x-\bar{X})^2}{N}$\
+\
+- Desvio-padrão                $s = \sqrt{n^2}$\
+\
+- Coeficiente de variação              $s^2 = \frac{s}{x}*100$\
+
+
+
+
+
+## Medidas de dispersão
+
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+\
+\
+
+- Amplitude
+  - Diferença entre o maior e o menor dado observado
+  - Não é um bom medidor de dispersão dos dados
+  - Utiliza somente valores extremos
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+::: {.column width="40%"}
+
+:::
+
+::::
+
+
+::: {.absolute top="150" left="600"}
+
+$$
+A = X_{max} - X_{min}
+$$
+
+:::
+
+## Medidas de dispersão
+
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+\
+\
+
+- Amplitude
+  - Diferença entre o maior e o menor dado observado
+  - Não é um bom medidor de dispersão dos dados
+  - Utiliza somente valores extremos
+
+:::
+
+::: {.column width="20%"}
+
+::: texto-menor
+
+\
+\
+\
+
+|    10
+|    12
+|    11
+|    13
+|    11
+|    15
+|    14
+
+\
+
+|    10
+|    12
+|    11
+|    13
+|    11
+|    15
+|    50
+
+:::
+
+:::
+
+::: {.column width="40%"}
+
+:::
+
+::::
+
+
+
+::: {.absolute top="10" left="800"}
+
+$$
+A = X_{max} - X_{min}
+$$
+
+:::
+
+
+## Medidas de dispersão
+
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+\
+\
+
+- Amplitude
+  - Diferença entre o maior e o menor dado observado
+  - Não é um bom medidor de dispersão dos dados
+  - Utiliza somente valores extremos
+
+:::
+
+::: {.column width="20%"}
+
+::: texto-menor
+
+\
+\
+\
+
+|    10               10
+|    12               11
+|    11               11
+|    13               12
+|    11               13
+|    15               14
+|    14               15
+
+\
+
+|    10               10
+|    12               11
+|    11               11
+|    13               12
+|    11               13
+|    15               14
+|    50               50
+
+:::
+
+:::
+
+::: {.column width="40%"}
+
+:::
+
+::::
+
+
+::: {.absolute top="10" left="800"}
+
+$$
+A = X_{max} - X_{min}
+$$
+
+:::
+
+
+## Medidas de dispersão
+
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+\
+\
+
+- Amplitude
+  - Diferença entre o maior e o menor dado observado
+  - Não é um bom medidor de dispersão dos dados
+  - Utiliza somente valores extremos
+
+:::
+
+::: {.column width="20%"}
+
+::: texto-menor
+
+\
+\
+\
+
+|    10               10
+|    12               11
+|    11               11
+|    13               12
+|    11               13
+|    15               14
+|    14               15
+
+\
+
+|    10               10
+|    12               11
+|    11               11
+|    13               12
+|    11               13
+|    15               14
+|    50               50
+
+:::
+
+:::
+
+::: {.column width="40%"}
+
+\
+\
+\
+\
+
+$$
+A = 15 - 10 = 5
+$$
+\
+\
+\
+
+$$
+A = 50 - 10 = 40
+$$
+
+
+:::
+
+::::
+
+
+::: {.absolute top="10" left="800"}
+
+$$
+A = X_{max} - X_{min}
+$$
+
+:::
+
+
+
+## Medidas de dispersão
+
+:::: {.columns}
+
+::: {.column width="33%"}
+
+- Variância\
+\
+  - População                 $\sigma^2 = \frac{\sum (x-\mu)^2}{N}$\
+ \
+  - Amostra                    $s^2 = \frac{\sum (x-\bar{X})^2}{N}$\
+
+:::
+
+::: {.column width="33%"}
+
+:::
+
+::: {.column width="33%"}
+
+:::
+
+::::
+
+## Medidas de dispersão
+
+:::: {.columns}
+
+::: {.column width="33%"}
+
+- Variância\
+\
+  - População                 $\sigma^2 = \frac{\sum (x-\mu)^2}{N}$\
+ \
+  - Amostra                    $s^2 = \frac{\sum (x-\bar{X})^2}{N}$\
+
+:::
+
+::: {.column width="67%"}
+
+\
+\
+\
+\
+
+![](figuras/variancia1.png){width="75%" fig-align="right"}
+
+:::
+
+::::
+
+
+
+
+## Medidas de dispersão
+
+:::: {.columns}
+
+::: {.column width="33%"}
+
+- Variância\
+\
+  - População                 $\sigma^2 = \frac{\sum (x-\mu)^2}{N}$\
+ \
+  - Amostra                    $s^2 = \frac{\sum (x-\bar{X})^2}{N}$\
+
+:::
+
+::: {.column width="67%"}
+
+\
+\
+\
+\
+
+![](figuras/variancia2.png){width="75%" fig-align="right"}
+
+:::
+
+::::
+
+
+## Medidas de dispersão
+
+:::: {.columns}
+
+::: {.column width="25%"}
+
+- Variância
+
+:::
+
+::: {.column width="60%"}
+
+::: texto-menor
+
+\
+\
+
+|
+|
+|    10
+|    12
+|    11
+|    13
+|    11
+|    15
+|    14
+
+\
+
+|    10
+|    12
+|    11
+|    13
+|    11
+|    15
+|    50
+
+:::
+
+:::
+
+::: {.column width="15%"}
+
+:::
+
+::::
+
+
+::: {.absolute top="350" left="0"}
+
+$$
+{\small s^2 = \frac{\sum (x-\bar{X})^2}{N}}
+$$
+
+:::
+
+  
+  
+## Medidas de dispersão
+
+
+
+:::: {.columns}
+
+::: {.column width="25%"}
+
+- Variância
+
+:::
+
+::: {.column width="60%"}
+
+::: texto-menor
+
+\
+\
+
+|                     Desvios da média
+|
+|    10               10 - 12.3 = -2.3
+|    12               12 - 12.3 = -0.3
+|    11               11 - 12.3 = -1.3
+|    13               13 - 12.3 = 0.7
+|    11               11 - 12.3 = -1.3
+|    15               15 - 12.3 = 2.7
+|    14               14 - 12.3 = 1.7
+
+\
+
+|    10               10 - 17.4 = -7.4
+|    12               12 - 17.4 = -5.4
+|    11               11 - 17.4 = -6.4
+|    13               13 - 17.4 = -4.4
+|    11               11 - 17.4 = -6.4
+|    15               15 - 17.4 = -2.4
+|    50               50 - 17.4 = 32.6
+
+:::
+
+:::
+
+::: {.column width="15%"}
+
+:::
+
+::::
+
+
+::: {.absolute top="350" left="0"}
+
+$$
+{\small s^2 = \frac{\sum (x-\bar{X})^2}{N}}
+$$
+
+:::
+
+::: {.absolute top="53" left="355"}
+
+![](figuras/var-desvio-media.png){width="40%"}
+
+:::
+
+## Medidas de dispersão
+
+
+
+:::: {.columns}
+
+::: {.column width="25%"}
+
+- Variância
+
+ 
+
+:::
+
+::: {.column width="60%"}
+
+::: texto-menor
+
+\
+\
+
+|                     Desvios da média                   Q.D.
+|
+|    10               10 - 12.3 = -2.3              -2.3² = 5.29
+|    12               12 - 12.3 = -0.3              -0.3² = 0.09
+|    11               11 - 12.3 = -1.3              -1.3² = 1.69
+|    13               13 - 12.3 = 0.7                0.7² = 0.49
+|    11               11 - 12.3 = -1.3              -1.3² = 1.69
+|    15               15 - 12.3 = 2.7                2.7² = 7.29
+|    14               14 - 12.3 = 1.7                1.7² = 2.89
+
+\
+
+|    10               10 - 17.4 = -7.4              -7.4² = 54.76
+|    12               12 - 17.4 = -5.4               5.4² = 29.16
+|    11               11 - 17.4 = -6.4              -6.4² = 40.96
+|    13               13 - 17.4 = -4.4              -4.4² = 19.36
+|    11               11 - 17.4 = -6.4              -6.4² = 40.96
+|    15               15 - 17.4 = -2.4              -2.4² = 5.76
+|    50               50 - 17.4 = 32.6              32.6² = 1062.76
+
+:::
+
+:::
+
+::: {.column width="15%"}
+
+:::
+
+::::
+
+
+::: {.absolute top="350" left="0"}
+
+$$
+{\small s^2 = \frac{\sum (x-\bar{X})^2}{N}}
+$$
+
+:::
+
+::: {.absolute top="53" left="355"}
+
+![](figuras/var-desvio-media.png){width="40%"}
+
+:::
+
+
+::: {.absolute top="53" left="620"}
+
+![](figuras/var-qd.png){width="40%"}
+
+:::
+
+## Medidas de dispersão
+
+
+
+:::: {.columns}
+
+::: {.column width="25%"}
+
+- Variância
+
+ 
+
+:::
+
+::: {.column width="60%"}
+
+::: texto-menor
+
+\
+\
+
+|                     Desvios da média                   Q.D.                    S.Q.D.
+|
+|    10               10 - 12.3 = -2.3              -2.3² = 5.29
+|    12               12 - 12.3 = -0.3              -0.3² = 0.09
+|    11               11 - 12.3 = -1.3              -1.3² = 1.69
+|    13               13 - 12.3 = 0.7                0.7² = 0.49                19.43
+|    11               11 - 12.3 = -1.3              -1.3² = 1.69
+|    15               15 - 12.3 = 2.7                2.7² = 7.29
+|    14               14 - 12.3 = 1.7                1.7² = 2.89
+
+\
+
+|    10               10 - 17.4 = -7.4              -7.4² = 54.76
+|    12               12 - 17.4 = -5.4               5.4² = 29.16
+|    11               11 - 17.4 = -6.4              -6.4² = 40.96
+|    13               13 - 17.4 = -4.4              -4.4² = 19.36           1253.72
+|    11               11 - 17.4 = -6.4              -6.4² = 40.96
+|    15               15 - 17.4 = -2.4              -2.4² = 5.76
+|    50               50 - 17.4 = 32.6              32.6² = 1062.76
+
+:::
+
+:::
+
+::: {.column width="15%"}
+
+:::
+
+::::
+
+
+::: {.absolute top="350" left="0"}
+
+$$
+{\small s^2 = \frac{\sum (x-\bar{X})^2}{N}}
+$$
+
+:::
+
+
+::: {.absolute top="53" left="355"}
+
+![](figuras/var-desvio-media.png){width="40%"}
+
+:::
+
+
+::: {.absolute top="53" left="620"}
+
+![](figuras/var-qd.png){width="40%"}
+
+:::
+
+
+::: {.absolute top="35" left="760"}
+
+![](figuras/var-sqd.png){width="50%"}
+
+:::
+
+## Medidas de dispersão
+
+
+
+:::: {.columns}
+
+::: {.column width="25%"}
+
+- Variância
+
+ 
+
+:::
+
+::: {.column width="60%"}
+
+::: texto-menor
+
+\
+\
+
+|                     Desvios da média                   Q.D.                    S.Q.D.
+|
+|    10               10 - 12.3 = -2.3              -2.3² = 5.29
+|    12               12 - 12.3 = -0.3              -0.3² = 0.09
+|    11               11 - 12.3 = -1.3              -1.3² = 1.69
+|    13               13 - 12.3 = 0.7                0.7² = 0.49                19.43
+|    11               11 - 12.3 = -1.3              -1.3² = 1.69
+|    15               15 - 12.3 = 2.7                2.7² = 7.29
+|    14               14 - 12.3 = 1.7                1.7² = 2.89
+
+\
+
+|    10               10 - 17.4 = -7.4              -7.4² = 54.76
+|    12               12 - 17.4 = -5.4               5.4² = 29.16
+|    11               11 - 17.4 = -6.4              -6.4² = 40.96
+|    13               13 - 17.4 = -4.4              -4.4² = 19.36           1253.72
+|    11               11 - 17.4 = -6.4              -6.4² = 40.96
+|    15               15 - 17.4 = -2.4              -2.4² = 5.76
+|    50               50 - 17.4 = 32.6              32.6² = 1062.76
+
+:::
+
+:::
+
+::: {.column width="15%"}
+
+::: texto-menor
+
+\
+\
+
+      Variância
+
+
+
+\
+\
+
+$$
+ \frac{19.43}{7-1}
+$$
+
+$$
+s^2 = 3.24
+$$
+
+\
+\
+\
+
+
+$$
+\frac{1253.72}{7-1}
+$$
+
+$$
+s^2 = 208.95
+$$
+:::
+
+:::
+
+::::
+
+
+::: {.absolute top="350" left="0"}
+
+$$
+{\small s^2 = \frac{\sum (x-\bar{X})^2}{N}}
+$$
+
+:::
+
+::: {.absolute top="53" left="355"}
+
+![](figuras/var-desvio-media.png){width="40%"}
+
+:::
+
+::: {.absolute top="53" left="620"}
+
+![](figuras/var-qd.png){width="40%"}
+
+:::
+
+::: {.absolute top="35" left="760"}
+
+![](figuras/var-sqd.png){width="50%"}
+
+:::
+
+::: {.absolute top="35" left="915"}
+
+![](figuras/var-var.png){width="80%"}
+
+:::
+
+
+## Medidas de dispersão
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Desvio-padrão
+  - A variância não segue a unidade da medida, sempre está ao quadrado da unidade
+  - Muitas vezes precisamos de uma medida na mesma unidade.
+  
+:::
+
+::: {.column width="50%"}
+
+\
+\
+\
+\
+\
+\
+
+$$
+{\large s = \sqrt{s^2}}
+$$
+
+:::
+
+::::
+
+## Medidas de dispersão
+
+:::: {.columns}
+
+
+  
+::: {.column width="40%"}
+
+\
+\
+
+- Coeficiente de variação – C.V.
+  - Relaciona a grandeza do desvio-padrão com a média
+  - Adimensional
+  - Apresentado como porcentagem
+
+:::
+
+::: {.column width="30%"}
+
+\
+\
+\
+\
+\
+
+$$
+{C.V. = \frac{s}{\bar{X}} * 100}
+$$
+
+:::
+
+::: {.column width="30%"}
+
+\
+\
+
+|           A               B
+|           3               55
+|           2               57
+|           5               53
+
+|        s = 2          s = 2
+|      $\bar{X}$ = 4        $\bar{X}$ = 55
+
+
+:::
+
+::::
+
+
+
+

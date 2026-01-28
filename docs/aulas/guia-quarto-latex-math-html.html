@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Alexandre Kassuga">
 
-<title>Aulas – Estatística Básica com R</title>
+<title>Guia Rápido – LaTeX Math em R Markdown / Quarto (HTML) – Estatística Básica com R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-e31584831b205ffbb2d98406f31c2a5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -96,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Início</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../aulas/aulas.html" aria-current="page"> 
+    <a class="nav-link" href="../aulas/aulas.html"> 
 <span class="menu-text">Aulas</span></a>
   </li>  
   <li class="nav-item">
@@ -127,29 +157,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#revisão-de-estatística" id="toc-revisão-de-estatística" class="nav-link active" data-scroll-target="#revisão-de-estatística">Revisão de Estatística</a>
+  <li><a href="#objetivo-do-guia" id="toc-objetivo-do-guia" class="nav-link active" data-scroll-target="#objetivo-do-guia">🎯 Objetivo do guia</a></li>
+  <li><a href="#como-funciona-latex-math-em-r-markdown-quarto" id="toc-como-funciona-latex-math-em-r-markdown-quarto" class="nav-link" data-scroll-target="#como-funciona-latex-math-em-r-markdown-quarto">🧠 Como funciona LaTeX Math em R Markdown / Quarto</a></li>
+  <li><a href="#matemática-inline-no-meio-do-texto" id="toc-matemática-inline-no-meio-do-texto" class="nav-link" data-scroll-target="#matemática-inline-no-meio-do-texto">✏️ Matemática inline (no meio do texto)</a></li>
+  <li><a href="#matemática-em-bloco-equações-destacadas" id="toc-matemática-em-bloco-equações-destacadas" class="nav-link" data-scroll-target="#matemática-em-bloco-equações-destacadas">📐 Matemática em bloco (equações destacadas)</a></li>
+  <li><a href="#índices-expoentes-e-frações" id="toc-índices-expoentes-e-frações" class="nav-link" data-scroll-target="#índices-expoentes-e-frações">🔢 Índices, expoentes e frações</a></li>
+  <li><a href="#somatórios-produtórios-e-limites" id="toc-somatórios-produtórios-e-limites" class="nav-link" data-scroll-target="#somatórios-produtórios-e-limites">📊 Somatórios, produtórios e limites</a></li>
+  <li><a href="#probabilidade-e-estatística-exemplos-clássicos" id="toc-probabilidade-e-estatística-exemplos-clássicos" class="nav-link" data-scroll-target="#probabilidade-e-estatística-exemplos-clássicos">📈 Probabilidade e Estatística – exemplos clássicos</a></li>
+  <li><a href="#dicionário-essencial-de-símbolos-estatísticos" id="toc-dicionário-essencial-de-símbolos-estatísticos" class="nav-link" data-scroll-target="#dicionário-essencial-de-símbolos-estatísticos">📘 Dicionário essencial de símbolos estatísticos</a>
   <ul class="collapse">
-  <li><a href="#apresentação-introdução-ao-curso" id="toc-apresentação-introdução-ao-curso" class="nav-link" data-scroll-target="#apresentação-introdução-ao-curso">Apresentação – Introdução ao Curso</a></li>
-  <li><a href="#aula-01-conceitos-básicos" id="toc-aula-01-conceitos-básicos" class="nav-link" data-scroll-target="#aula-01-conceitos-básicos">Aula 01 – Conceitos básicos</a></li>
-  <li><a href="#aula-02-conceitos-básicos" id="toc-aula-02-conceitos-básicos" class="nav-link" data-scroll-target="#aula-02-conceitos-básicos">Aula 02 – Conceitos básicos</a></li>
-  <li><a href="#aula-03-organizando-dados" id="toc-aula-03-organizando-dados" class="nav-link" data-scroll-target="#aula-03-organizando-dados">Aula 03 – Organizando dados</a></li>
-  <li><a href="#aula-04-estatística-descritiva" id="toc-aula-04-estatística-descritiva" class="nav-link" data-scroll-target="#aula-04-estatística-descritiva">Aula 04 – Estatística descritiva</a></li>
-  <li><a href="#aula-05-testes-de-hipóteses-e-significâncias" id="toc-aula-05-testes-de-hipóteses-e-significâncias" class="nav-link" data-scroll-target="#aula-05-testes-de-hipóteses-e-significâncias">Aula 05 – Testes de hipóteses e significâncias</a></li>
-  <li><a href="#aula-06-testes-de-hipótese-1" id="toc-aula-06-testes-de-hipótese-1" class="nav-link" data-scroll-target="#aula-06-testes-de-hipótese-1">Aula 06 – Testes de hipótese 1</a></li>
-  <li><a href="#aula-07-testes-de-hipótese-2" id="toc-aula-07-testes-de-hipótese-2" class="nav-link" data-scroll-target="#aula-07-testes-de-hipótese-2">Aula 07 – Testes de hipótese 2</a></li>
-  <li><a href="#aula-08-testes-de-hipótese-3" id="toc-aula-08-testes-de-hipótese-3" class="nav-link" data-scroll-target="#aula-08-testes-de-hipótese-3">Aula 08 – Testes de hipótese 3</a></li>
-  <li><a href="#aula-09-testes-de-hipótese-4" id="toc-aula-09-testes-de-hipótese-4" class="nav-link" data-scroll-target="#aula-09-testes-de-hipótese-4">Aula 09 – Testes de hipótese 4</a></li>
+  <li><a href="#estatística-descritiva" id="toc-estatística-descritiva" class="nav-link" data-scroll-target="#estatística-descritiva">📐 Estatística descritiva</a></li>
+  <li><a href="#probabilidade" id="toc-probabilidade" class="nav-link" data-scroll-target="#probabilidade">🎯 Probabilidade</a></li>
+  <li><a href="#variáveis-aleatórias" id="toc-variáveis-aleatórias" class="nav-link" data-scroll-target="#variáveis-aleatórias">📊 Variáveis aleatórias</a></li>
+  <li><a href="#inferência-estatística" id="toc-inferência-estatística" class="nav-link" data-scroll-target="#inferência-estatística">📈 Inferência estatística</a></li>
+  <li><a href="#testes-e-distribuições" id="toc-testes-e-distribuições" class="nav-link" data-scroll-target="#testes-e-distribuições">📐 Testes e distribuições</a></li>
+  <li><a href="#matrizes-e-vetores" id="toc-matrizes-e-vetores" class="nav-link" data-scroll-target="#matrizes-e-vetores">🧠 Matrizes e vetores</a></li>
   </ul></li>
-  <li><a href="#linguagem-r" id="toc-linguagem-r" class="nav-link" data-scroll-target="#linguagem-r">Linguagem R</a>
-  <ul class="collapse">
-  <li><a href="#aula-01-a-linguagem-r" id="toc-aula-01-a-linguagem-r" class="nav-link" data-scroll-target="#aula-01-a-linguagem-r">Aula 01 – A Linguagem R</a></li>
-  <li><a href="#aula-02-o-pacote-r" id="toc-aula-02-o-pacote-r" class="nav-link" data-scroll-target="#aula-02-o-pacote-r">Aula 02 – O pacote R</a></li>
-  <li><a href="#aula-03-objetos-e-dados" id="toc-aula-03-objetos-e-dados" class="nav-link" data-scroll-target="#aula-03-objetos-e-dados">Aula 03 – Objetos e Dados</a></li>
-  <li><a href="#aula-04-funções-e-objetos" id="toc-aula-04-funções-e-objetos" class="nav-link" data-scroll-target="#aula-04-funções-e-objetos">Aula 04 – Funções e objetos</a></li>
-  <li><a href="#aula-05-graficos-no-r" id="toc-aula-05-graficos-no-r" class="nav-link" data-scroll-target="#aula-05-graficos-no-r">Aula 05 – Graficos no R</a></li>
-  <li><a href="#aula-06-estatística-descritiva-no-r" id="toc-aula-06-estatística-descritiva-no-r" class="nav-link" data-scroll-target="#aula-06-estatística-descritiva-no-r">Aula 06 – Estatística descritiva no R</a></li>
-  <li><a href="#aula-07-testes-de-significância-em-r" id="toc-aula-07-testes-de-significância-em-r" class="nav-link" data-scroll-target="#aula-07-testes-de-significância-em-r">Aula 07 – Testes de significância em R</a></li>
-  </ul></li>
+  <li><a href="#erros-comuns-ao-usar-latex-math" id="toc-erros-comuns-ao-usar-latex-math" class="nav-link" data-scroll-target="#erros-comuns-ao-usar-latex-math">⚠️ Erros comuns ao usar LaTeX Math</a></li>
+  <li><a href="#boas-práticas-finais" id="toc-boas-práticas-finais" class="nav-link" data-scroll-target="#boas-práticas-finais">🧭 Boas práticas finais</a></li>
+  <li><a href="#resumo-final" id="toc-resumo-final" class="nav-link" data-scroll-target="#resumo-final">📌 Resumo final</a></li>
   </ul>
 </nav>
     </div>
@@ -158,13 +184,19 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Aulas</h1>
+<h1 class="title">Guia Rápido – LaTeX Math em R Markdown / Quarto (HTML)</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Alexandre Kassuga </p>
+          </div>
+  </div>
     
   
     
@@ -175,201 +207,253 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Aulas da disciplina</p>
-<p>Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.</p>
-<hr>
-<section id="revisão-de-estatística" class="level2">
-<h2 class="anchored" data-anchor-id="revisão-de-estatística">Revisão de Estatística</h2>
-<hr>
-<section id="apresentação-introdução-ao-curso" class="level3">
-<h3 class="anchored" data-anchor-id="apresentação-introdução-ao-curso">Apresentação – Introdução ao Curso</h3>
+<section id="objetivo-do-guia" class="level2">
+<h2 class="anchored" data-anchor-id="objetivo-do-guia">🎯 Objetivo do guia</h2>
+<p>Este guia apresenta <strong>como escrever fórmulas matemáticas usando LaTeX Math em documentos R Markdown e Quarto (<code>.qmd</code>) renderizados em HTML</strong>, com foco em:</p>
 <ul>
-<li>Apresentação do curso<br>
+<li>✏️ Escrita correta de fórmulas</li>
+<li>📐 Diferença entre matemática inline e em bloco</li>
+<li>📊 Notação estatística padrão</li>
+<li>📘 Um dicionário prático dos principais símbolos usados em Estatística</li>
+</ul>
+<p>O material foi pensado como <strong>referência rápida e confiável</strong> para relatórios, aulas e materiais didáticos.</p>
+<hr>
+</section>
+<section id="como-funciona-latex-math-em-r-markdown-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="como-funciona-latex-math-em-r-markdown-quarto">🧠 Como funciona LaTeX Math em R Markdown / Quarto</h2>
+<p>R Markdown e Quarto usam <strong>MathJax</strong> para renderizar matemática em HTML.<br>
+Isso significa que você escreve <strong>LaTeX puro</strong>, e o navegador faz a renderização.</p>
+<p>Não é necessário: - instalar pacotes - ativar opções no YAML - usar código R</p>
+<hr>
+</section>
+<section id="matemática-inline-no-meio-do-texto" class="level2">
+<h2 class="anchored" data-anchor-id="matemática-inline-no-meio-do-texto">✏️ Matemática inline (no meio do texto)</h2>
+<p>Use <strong>um cifrão (<code>$</code>)</strong> antes e depois da expressão.</p>
+<p>Exemplo de escrita:</p>
+<pre><code>A média amostral é dada por $\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$.</code></pre>
+<p>Resultado renderizado:</p>
+<p>A média amostral é dada por <span class="math inline">\(\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i\)</span>.</p>
+<p>Use matemática inline para: - símbolos - pequenas expressões - notação dentro do parágrafo</p>
+<hr>
+</section>
+<section id="matemática-em-bloco-equações-destacadas" class="level2">
+<h2 class="anchored" data-anchor-id="matemática-em-bloco-equações-destacadas">📐 Matemática em bloco (equações destacadas)</h2>
+<p>Use <strong>dois cifrões (<code>$$</code>)</strong> antes e depois.</p>
+<p>Exemplo:</p>
+<pre><code>$$
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+$$</code></pre>
+<p>Resultado:</p>
+<p><span class="math display">\[
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+\]</span></p>
+<p>Use matemática em bloco para: - definições formais - equações importantes - deduções matemáticas</p>
+<hr>
+</section>
+<section id="índices-expoentes-e-frações" class="level2">
+<h2 class="anchored" data-anchor-id="índices-expoentes-e-frações">🔢 Índices, expoentes e frações</h2>
+<p>Escrita:</p>
+<pre><code>x_i, x^2, x_i^2  
+\frac{a}{b}</code></pre>
+<p>Resultado:</p>
+<p><span class="math inline">\(x_i\)</span>, <span class="math inline">\(x^2\)</span>, <span class="math inline">\(x_i^2\)</span>, <span class="math inline">\(\frac{a}{b}\)</span></p>
+<p>Regras importantes: - <code>{}</code> agrupa elementos - sempre use <code>{}</code> em expoentes longos</p>
+<hr>
+</section>
+<section id="somatórios-produtórios-e-limites" class="level2">
+<h2 class="anchored" data-anchor-id="somatórios-produtórios-e-limites">📊 Somatórios, produtórios e limites</h2>
+<p>Somatório:</p>
+<pre><code>$$
+\sum_{i=1}^{n} x_i
+$$</code></pre>
+<ul>
+<li>Resultado: <span class="math inline">\(\sum_{i=1}^{n} x_i\)</span></li>
+</ul>
+<p>Produtório:</p>
+<pre><code>$$
+\prod_{i=1}^{n} x_i
+$$</code></pre>
+<ul>
+<li>Resultado: <span class="math inline">\(\prod_{i=1}^{n} x_i\)</span></li>
+</ul>
+<p>Limite:</p>
+<pre><code>$$
+\lim_{n \to \infty} \bar{x}_n
+$$</code></pre>
+<ul>
+<li>Resultado: <span class="math inline">\(\lim_{n \to \infty} \bar{x}_n\)</span></li>
+</ul>
+<hr>
+</section>
+<section id="probabilidade-e-estatística-exemplos-clássicos" class="level2">
+<h2 class="anchored" data-anchor-id="probabilidade-e-estatística-exemplos-clássicos">📈 Probabilidade e Estatística – exemplos clássicos</h2>
+<p>Probabilidade:</p>
+<pre><code>$$
+P(X = x)
+$$</code></pre>
+<ul>
+<li>Resultado: <span class="math inline">\(P(X = x)\)</span></li>
+</ul>
+<p>Esperança:</p>
+<pre><code>$$
+E(X) = \mu
+$$</code></pre>
+<ul>
+<li>Resultado: <span class="math inline">\(E(X) = \mu\)</span></li>
+</ul>
+<p>Variância:</p>
+<pre><code>$$
+Var(X) = \sigma^2
+$$</code></pre>
+<ul>
+<li>Resultado: <span class="math inline">\(Var(X) = \sigma^2\)</span></li>
+</ul>
+<p>Distribuição normal:</p>
+<pre><code>$$
+X \sim \mathcal{N}(\mu, \sigma^2)
+$$</code></pre>
+<ul>
+<li>Resultado: <span class="math inline">\(X \sim \mathcal{N}(\mu, \sigma^2)\)</span></li>
+</ul>
+<hr>
+</section>
+<section id="dicionário-essencial-de-símbolos-estatísticos" class="level2">
+<h2 class="anchored" data-anchor-id="dicionário-essencial-de-símbolos-estatísticos">📘 Dicionário essencial de símbolos estatísticos</h2>
+<p><em>(símbolo → código LaTeX → significado)</em></p>
+<hr>
+<section id="estatística-descritiva" class="level3">
+<h3 class="anchored" data-anchor-id="estatística-descritiva">📐 Estatística descritiva</h3>
+<ul>
+<li><span class="math inline">\(\bar{x}\)</span> — <code>\bar{x}</code> → média amostral<br>
 </li>
-<li>Conteúdos programáticos<br>
+<li><span class="math inline">\(\mu\)</span> — <code>\mu</code> → média populacional<br>
 </li>
-<li>Tipografia do curso</li>
+<li><span class="math inline">\(s^2\)</span> — <code>s^2</code> → variância amostral<br>
+</li>
+<li><span class="math inline">\(\sigma^2\)</span> — <code>\sigma^2</code> → variância populacional<br>
+</li>
+<li><span class="math inline">\(s\)</span> — <code>s</code> → desvio padrão amostral<br>
+</li>
+<li><span class="math inline">\(\sigma\)</span> — <code>\sigma</code> → desvio padrão populacional<br>
+</li>
+<li><span class="math inline">\(n\)</span> — <code>n</code> → tamanho da amostra</li>
 </ul>
-<p><a href="../aulas/slides/aula-aps-tipografia.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
 <hr>
 </section>
-<section id="aula-01-conceitos-básicos" class="level3">
-<h3 class="anchored" data-anchor-id="aula-01-conceitos-básicos">Aula 01 – Conceitos básicos</h3>
+<section id="probabilidade" class="level3">
+<h3 class="anchored" data-anchor-id="probabilidade">🎯 Probabilidade</h3>
 <ul>
-<li>O que é a estatística</li>
-<li>O que são Dados</li>
-<li>Amostragem e generalização</li>
-<li>Tipos de dados</li>
+<li><span class="math inline">\(P(A)\)</span> — <code>P(A)</code> → probabilidade do evento <span class="math inline">\(A\)</span><br>
+</li>
+<li><span class="math inline">\(P(A \mid B)\)</span> — <code>P(A \mid B)</code> → probabilidade condicional<br>
+</li>
+<li><span class="math inline">\(\Omega\)</span> — <code>\Omega</code> → espaço amostral<br>
+</li>
+<li><span class="math inline">\(\cap\)</span> — <code>\cap</code> → interseção de eventos<br>
+</li>
+<li><span class="math inline">\(\cup\)</span> — <code>\cup</code> → união de eventos<br>
+</li>
+<li><span class="math inline">\(A^c\)</span> — <code>A^c</code> → complemento do evento <span class="math inline">\(A\)</span></li>
 </ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-1-dados.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
 <hr>
 </section>
-<section id="aula-02-conceitos-básicos" class="level3">
-<h3 class="anchored" data-anchor-id="aula-02-conceitos-básicos">Aula 02 – Conceitos básicos</h3>
+<section id="variáveis-aleatórias" class="level3">
+<h3 class="anchored" data-anchor-id="variáveis-aleatórias">📊 Variáveis aleatórias</h3>
 <ul>
-<li>Planejando experimentos</li>
+<li><span class="math inline">\(X, Y\)</span> — <code>X, Y</code> → variáveis aleatórias<br>
+</li>
+<li><span class="math inline">\(x_i\)</span> — <code>x_i</code> → observação <span class="math inline">\(i\)</span><br>
+</li>
+<li><span class="math inline">\(f(x)\)</span> — <code>f(x)</code> → função densidade de probabilidade<br>
+</li>
+<li><span class="math inline">\(F(x)\)</span> — <code>F(x)</code> → função distribuição acumulada</li>
 </ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-2-planejando.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
 <hr>
 </section>
-<section id="aula-03-organizando-dados" class="level3">
-<h3 class="anchored" data-anchor-id="aula-03-organizando-dados">Aula 03 – Organizando dados</h3>
+<section id="inferência-estatística" class="level3">
+<h3 class="anchored" data-anchor-id="inferência-estatística">📈 Inferência estatística</h3>
 <ul>
-<li>Tabelas do contingência</li>
-<li>Distribuição de frequências</li>
+<li><span class="math inline">\(\hat{\theta}\)</span> — <code>\hat{\theta}</code> → estimador do parâmetro <span class="math inline">\(\theta\)</span><br>
+</li>
+<li><span class="math inline">\(\theta\)</span> — <code>\theta</code> → parâmetro populacional<br>
+</li>
+<li><span class="math inline">\(H_0\)</span> — <code>H_0</code> → hipótese nula<br>
+</li>
+<li><span class="math inline">\(H_1\)</span> — <code>H_1</code> → hipótese alternativa<br>
+</li>
+<li><span class="math inline">\(\alpha\)</span> — <code>\alpha</code> → nível de significância<br>
+</li>
+<li><span class="math inline">\(\beta\)</span> — <code>\beta</code> → erro tipo II<br>
+</li>
+<li><span class="math inline">\(1 - \beta\)</span> — <code>1 - \beta</code> → poder do teste</li>
 </ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-3-organizando.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
 <hr>
 </section>
-<section id="aula-04-estatística-descritiva" class="level3">
-<h3 class="anchored" data-anchor-id="aula-04-estatística-descritiva">Aula 04 – Estatística descritiva</h3>
+<section id="testes-e-distribuições" class="level3">
+<h3 class="anchored" data-anchor-id="testes-e-distribuições">📐 Testes e distribuições</h3>
 <ul>
-<li>Medidas de tendência central</li>
-<li>Medidas de dispersão</li>
+<li><span class="math inline">\(z\)</span> — <code>z</code> → estatística normal padrão<br>
+</li>
+<li><span class="math inline">\(t\)</span> — <code>t</code> → estatística t de Student<br>
+</li>
+<li><span class="math inline">\(\chi^2\)</span> — <code>\chi^2</code> → qui-quadrado<br>
+</li>
+<li><span class="math inline">\(F\)</span> — <code>F</code> → distribuição F<br>
+</li>
+<li><span class="math inline">\(p\)</span> — <code>p</code> → valor-p</li>
 </ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-4-descritiva.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
 <hr>
 </section>
-<section id="aula-05-testes-de-hipóteses-e-significâncias" class="level3">
-<h3 class="anchored" data-anchor-id="aula-05-testes-de-hipóteses-e-significâncias">Aula 05 – Testes de hipóteses e significâncias</h3>
+<section id="matrizes-e-vetores" class="level3">
+<h3 class="anchored" data-anchor-id="matrizes-e-vetores">🧠 Matrizes e vetores</h3>
 <ul>
-<li>O que são testes de hipóteses</li>
-<li>Definições</li>
-<li>Um pouco de história…</li>
-<li>Não tenha medo do erro</li>
-<li>R x Python</li>
+<li><span class="math inline">\(\mathbf{x}\)</span> — <code>\mathbf{x}</code> → vetor<br>
+</li>
+<li><span class="math inline">\(\mathbf{X}\)</span> — <code>\mathbf{X}</code> → matriz<br>
+</li>
+<li><span class="math inline">\(\mathbf{X}^\top\)</span> — <code>\mathbf{X}^\top</code> → transposta<br>
+</li>
+<li><span class="math inline">\(\mathbf{X}^{-1}\)</span> — <code>\mathbf{X}^{-1}</code> → inversa<br>
+</li>
+<li><span class="math inline">\(\det(\mathbf{X})\)</span> — <code>\det(\mathbf{X})</code> → determinante</li>
 </ul>
-<p>➡️ Aula em breve</p>
-<hr>
-</section>
-<section id="aula-06-testes-de-hipótese-1" class="level3">
-<h3 class="anchored" data-anchor-id="aula-06-testes-de-hipótese-1">Aula 06 – Testes de hipótese 1</h3>
-<ul>
-<li>Estatística Paramétrica</li>
-<li>Testes de significância para uma amostra</li>
-<li>Teste T</li>
-<li>Qui-quadrdo</li>
-</ul>
-<p>➡️ Aula em breve</p>
-<hr>
-</section>
-<section id="aula-07-testes-de-hipótese-2" class="level3">
-<h3 class="anchored" data-anchor-id="aula-07-testes-de-hipótese-2">Aula 07 – Testes de hipótese 2</h3>
-<ul>
-<li>Estatística paramétrica</li>
-<li>Testes de significância para duas amostras</li>
-<li>Teste T para duas amostras independentes</li>
-<li></li>
-</ul>
-<p>➡️ Aula em breve</p>
-<hr>
-</section>
-<section id="aula-08-testes-de-hipótese-3" class="level3">
-<h3 class="anchored" data-anchor-id="aula-08-testes-de-hipótese-3">Aula 08 – Testes de hipótese 3</h3>
-<ul>
-<li>Estatística paramétrica</li>
-<li>Testes de significância para mais de duas amostras</li>
-<li>ANOVA</li>
-</ul>
-<p>➡️ Aula em breve</p>
-<hr>
-</section>
-<section id="aula-09-testes-de-hipótese-4" class="level3">
-<h3 class="anchored" data-anchor-id="aula-09-testes-de-hipótese-4">Aula 09 – Testes de hipótese 4</h3>
-<ul>
-<li>Estatística não paramétrica</li>
-<li>Mann-Whitney</li>
-<li>Kruskal-Wallis</li>
-</ul>
-<p>➡️ Aula em breve</p>
 <hr>
 </section>
 </section>
-<section id="linguagem-r" class="level2">
-<h2 class="anchored" data-anchor-id="linguagem-r">Linguagem R</h2>
-<hr>
-<section id="aula-01-a-linguagem-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-01-a-linguagem-r">Aula 01 – A Linguagem R</h3>
+<section id="erros-comuns-ao-usar-latex-math" class="level2">
+<h2 class="anchored" data-anchor-id="erros-comuns-ao-usar-latex-math">⚠️ Erros comuns ao usar LaTeX Math</h2>
 <ul>
-<li>O R é para mim?</li>
-<li>A linguagem R</li>
-<li>Um pouco de história…</li>
-<li>Não tenha medo do erro</li>
-<li>R x Python</li>
+<li>Esquecer <code>$</code> ou <code>$$</code></li>
+<li>Usar <code>_</code> ou <code>^</code> sem <code>{}</code> quando necessário</li>
+<li>Misturar texto e matemática sem separação</li>
+<li>Usar imagens no lugar de fórmulas</li>
 </ul>
-<p>➡️ Aula em breve</p>
 <hr>
 </section>
-<section id="aula-02-o-pacote-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-02-o-pacote-r">Aula 02 – O pacote R</h3>
+<section id="boas-práticas-finais" class="level2">
+<h2 class="anchored" data-anchor-id="boas-práticas-finais">🧭 Boas práticas finais</h2>
 <ul>
-<li>O pacote R</li>
-<li>RStudio</li>
-<li>Comandos Básicos</li>
-<li>Pacotes</li>
-<li>O R como calculadora</li>
-<li>Iniciando em objetos</li>
+<li>Use inline math para símbolos</li>
+<li>Use block math para definições</li>
+<li>Seja consistente com a notação</li>
+<li>Explique cada símbolo no texto</li>
 </ul>
-<p>➡️ Aula em breve</p>
+<blockquote class="blockquote">
+<p><strong>Uma fórmula bem escrita reduz drasticamente a ambiguidade do texto estatístico.</strong></p>
+</blockquote>
 <hr>
 </section>
-<section id="aula-03-objetos-e-dados" class="level3">
-<h3 class="anchored" data-anchor-id="aula-03-objetos-e-dados">Aula 03 – Objetos e Dados</h3>
+<section id="resumo-final" class="level2">
+<h2 class="anchored" data-anchor-id="resumo-final">📌 Resumo final</h2>
 <ul>
-<li>Atribuição</li>
-<li>Nomeando objetos</li>
-<li>Utilizando objetos em R</li>
-<li>Tipos de dados em R</li>
-<li>Alguns comandos</li>
+<li>LaTeX Math funciona nativamente em HTML</li>
+<li><code>$...$</code> → matemática inline</li>
+<li><code>$$...$$</code> → matemática em bloco</li>
+<li>Mostrar símbolo + código ajuda no aprendizado</li>
+<li>Um dicionário padronizado evita inconsistências</li>
 </ul>
-<p>➡️ Aula em breve</p>
-<hr>
-</section>
-<section id="aula-04-funções-e-objetos" class="level3">
-<h3 class="anchored" data-anchor-id="aula-04-funções-e-objetos">Aula 04 – Funções e objetos</h3>
-<ul>
-<li>Funções</li>
-<li>Criando funções</li>
-<li>Mais sobre objetos</li>
-<li>Estruturas de dados</li>
-</ul>
-<p>➡️ Aula em breve</p>
-<hr>
-</section>
-<section id="aula-05-graficos-no-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-05-graficos-no-r">Aula 05 – Graficos no R</h3>
-<ul>
-<li>Como funcionam gráficos no R</li>
-<li>Tipos de gráficos</li>
-<li>Parâmetros gráficos</li>
-</ul>
-<p>➡️ Aula em breve</p>
-</section>
-<section id="aula-06-estatística-descritiva-no-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-06-estatística-descritiva-no-r">Aula 06 – Estatística descritiva no R</h3>
-<ul>
-<li>Estatística descritiva</li>
-<li>Medidas de tendência central</li>
-<li>Medidas de dispersão</li>
-</ul>
-<p>➡️ Aula em breve</p>
-</section>
-<section id="aula-07-testes-de-significância-em-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-07-testes-de-significância-em-r">Aula 07 – Testes de significância em R</h3>
-<ul>
-<li>Testes de significância
-<ul>
-<li>Teste t</li>
-<li>Mann-Whitney</li>
-<li>Qui-quadrado</li>
-<li>Análise de Variância</li>
-<li>Kruskall-Wallis</li>
-</ul></li>
-</ul>
-<p>➡️ Aula em breve</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
