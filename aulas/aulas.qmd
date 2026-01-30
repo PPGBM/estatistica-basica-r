@@ -92,25 +92,14 @@ aos conteúdos e aos slides.
 ### Aula 07 – Testes de hipótese 2
 
 - Estatística paramétrica
-- Testes de significância para duas amostras
-- Teste T para duas amostras independentes
-- 
+- Testes de significância para mais de duas amostras
+- ANOVA
 
-➡️ Aula em breve
+[➡️ Acessar slides da aula](slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.qmd){target="_blank" rel="noopener"}
 
 ---
 
 ### Aula 08 – Testes de hipótese 3
-
-- Estatística paramétrica
-- Testes de significância para mais de duas amostras
-- ANOVA
-
-➡️ Aula em breve
-
----
-
-### Aula 09 – Testes de hipótese 4
 
 - Estatística não paramétrica
 - Mann-Whitney
@@ -119,6 +108,7 @@ aos conteúdos e aos slides.
 ➡️ Aula em breve
 
 ---
+
 
 ## Linguagem R
 

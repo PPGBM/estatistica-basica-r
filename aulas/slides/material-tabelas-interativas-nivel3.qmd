@@ -1,0 +1,179 @@
+---
+title: "Tabelas Estatísticas"
+subtitle: "Consulta inteligente para Estatística Básica"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    theme: cosmo
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r}
+library(DT)
+library(knitr)
+```
+
+<style>
+.box-didatico {
+  background: #f8f9fa;
+  border-left: 5px solid #0d6efd;
+  padding: 12px;
+  margin: 15px 0;
+}
+
+.highlight-row {
+  background-color: #fff3cd !important;
+}
+</style>
+
+<script>
+function highlightRow(tableId, value) {
+  var table = $('#' + tableId).DataTable();
+  table.rows().every(function () {
+    var data = this.data();
+    if (data[0] == value) {
+      $(this.node()).addClass('highlight-row');
+    } else {
+      $(this.node()).removeClass('highlight-row');
+    }
+  });
+}
+</script>
+
+## 📘 Introdução
+
+<div class="box-didatico">
+<strong>Como usar:</strong>
+<ul>
+<li>Digite o valor pedido (ex.: graus de liberdade)</li>
+<li>A linha correspondente será destacada</li>
+<li>Confira o valor crítico e a função equivalente no R</li>
+</ul>
+</div>
+
+---
+
+## 🔢 Tabelas Estatísticas {.tabset}
+
+### 📙 Distribuição t de Student
+
+#### 🎯 Seletor de graus de liberdade
+
+<div class="box-didatico">
+Digite o valor de <strong>GL</strong>:
+<input type="number" id="gl_t" value="10" min="1" max="120"
+onchange="highlightRow('t_table', this.value)">
+</div>
+
+#### 📘 Tabela t (bilateral, α = 5%)
+
+```{r}
+gl <- c(1:10, 12, 15, 20, 30, 60, 120)
+
+tabela_t <- data.frame(
+  GL = gl,
+  `t crítico` = round(qt(0.975, df = gl), 3)
+)
+
+datatable(
+  tabela_t,
+  elementId = "t_table",
+  options = list(
+    pageLength = 10,
+    dom = 't'
+  ),
+  rownames = FALSE
+)
+```
+
+#### 🧮 Mini-calculadora (R)
+
+```{r}
+qt(0.975, df = 10)
+```
+
+---
+
+### 📓 Distribuição Qui-quadrado (χ²)
+
+#### 🎯 Seletor de graus de liberdade
+
+<div class="box-didatico">
+Digite o valor de <strong>GL</strong>:
+<input type="number" id="gl_chi" value="5" min="1" max="120"
+onchange="highlightRow('chi_table', this.value)">
+</div>
+
+#### 📘 Tabela Qui-quadrado (α = 5%)
+
+```{r}
+gl <- c(1:10, 12, 15, 20, 30, 60, 120)
+
+tabela_chi <- data.frame(
+  GL = gl,
+  `χ² crítico` = round(qchisq(0.95, df = gl), 3)
+)
+
+datatable(
+  tabela_chi,
+  elementId = "chi_table",
+  options = list(
+    pageLength = 10,
+    dom = 't'
+  ),
+  rownames = FALSE
+)
+```
+
+#### 🧮 Mini-calculadora (R)
+
+```{r}
+qchisq(0.95, df = 5)
+```
+
+---
+
+### 📕 Distribuição F (consulta)
+
+```{r}
+gl_num <- 1:5
+gl_den <- 1:10
+
+tabela_f <- data.frame(GL_Den = gl_den)
+
+for (gln in gl_num) {
+  tabela_f[[paste0("GL_Num_", gln)]] <- round(qf(0.95, gln, gl_den), 2)
+}
+
+datatable(
+  tabela_f,
+  options = list(
+    pageLength = 5,
+    scrollX = TRUE
+  ),
+  rownames = FALSE
+)
+```
+
+---
+
+## 🧠 Conexão com o R
+
+```{r}
+qt(0.975, df = 16)
+qchisq(0.95, df = 5)
+qf(0.95, df1 = 3, df2 = 10)
+```
+
+---
+
+## 📌 Observações finais
+
+- Destaque automático = **ajuda visual**
+- Valor crítico = **decisão estatística**
+- Função do R = **ferramenta real**
+- Página pertencente à aba **Materiais → Tabelas**

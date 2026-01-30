@@ -1621,7 +1621,7 @@
     "href": "aulas/aulas.html#revisão-de-estatística",
     "title": "Aulas",
     "section": "Revisão de Estatística",
-    "text": "Revisão de Estatística\n\n\nApresentação – Introdução ao Curso\n\nApresentação do curso\n\nConteúdos programáticos\n\nTipografia do curso\n\n➡️ Acessar slides da aula\n\n\n\nAula 01 – Conceitos básicos\n\nO que é a estatística\nO que são Dados\nAmostragem e generalização\nTipos de dados\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – Conceitos básicos\n\nPlanejando experimentos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Organizando dados\n\nTabelas do contingência\nDistribuição de frequências\n\n➡️ Acessar slides da aula\n\n\n\nAula 04 – Estatística descritiva\n\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Acessar slides da aula\n\n\n\nAula 05 – Testes de hipóteses e significâncias\n\nO que são testes de hipóteses\nDefinições\n\nHipótese nula e alternativa\nErro tipo I e II\nNível de significância\nPoder do teste\nUnicaudal e bicaudal\n\n\n➡️ Acessar slides da aula\n\n\n\nAula 06 – Testes de hipótese 1\n\nEstatística Paramétrica\nTestes de significância para uma amostra\nQui-quadrado\nTeste T para uma amostra\nTeste T para duas amostras independentes\n\n➡️ Acessar slides da aula\n\n\n\nAula 07 – Testes de hipótese 2\n\nEstatística paramétrica\nTestes de significância para duas amostras\nTeste T para duas amostras independentes\n\n\n➡️ Aula em breve\n\n\n\nAula 08 – Testes de hipótese 3\n\nEstatística paramétrica\nTestes de significância para mais de duas amostras\nANOVA\n\n➡️ Aula em breve\n\n\n\nAula 09 – Testes de hipótese 4\n\nEstatística não paramétrica\nMann-Whitney\nKruskal-Wallis\n\n➡️ Aula em breve"
+    "text": "Revisão de Estatística\n\n\nApresentação – Introdução ao Curso\n\nApresentação do curso\n\nConteúdos programáticos\n\nTipografia do curso\n\n➡️ Acessar slides da aula\n\n\n\nAula 01 – Conceitos básicos\n\nO que é a estatística\nO que são Dados\nAmostragem e generalização\nTipos de dados\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – Conceitos básicos\n\nPlanejando experimentos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Organizando dados\n\nTabelas do contingência\nDistribuição de frequências\n\n➡️ Acessar slides da aula\n\n\n\nAula 04 – Estatística descritiva\n\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Acessar slides da aula\n\n\n\nAula 05 – Testes de hipóteses e significâncias\n\nO que são testes de hipóteses\nDefinições\n\nHipótese nula e alternativa\nErro tipo I e II\nNível de significância\nPoder do teste\nUnicaudal e bicaudal\n\n\n➡️ Acessar slides da aula\n\n\n\nAula 06 – Testes de hipótese 1\n\nEstatística Paramétrica\nTestes de significância para uma amostra\nQui-quadrado\nTeste T para uma amostra\nTeste T para duas amostras independentes\n\n➡️ Acessar slides da aula\n\n\n\nAula 07 – Testes de hipótese 2\n\nEstatística paramétrica\nTestes de significância para mais de duas amostras\nANOVA\n\n➡️ Acessar slides da aula\n\n\n\nAula 08 – Testes de hipótese 3\n\nEstatística não paramétrica\nMann-Whitney\nKruskal-Wallis\n\n➡️ Aula em breve"
   },
   {
     "objectID": "aulas/aulas.html#linguagem-r",
@@ -2287,5 +2287,530 @@
     "title": "Revisão de conceitos básicos",
     "section": "Testes de significância para uma amostra",
     "text": "Testes de significância para uma amostra\n\n\n\nTeste t para duas amostras independentes\n\nVariâncias são diferentes\n\nTemos \\(s_1^2\\) e \\(s_2^2\\)\nCalculamos o valor de t \\[\nt = \\frac{X_2 - X_1}{\\sqrt{(\\frac{s_1^2}{n_1}+\\frac{s_2^2}{n_2})}}\n\\]\nCalculamos g. l.\n\n\n\n\\[\ng = \\frac{\\frac{s_1^2}{n_1}+\\frac{s_2^2}{n_2}}{\\frac{(\\frac{s_1^2}{n_1})^2}{n_1-1}+\\frac{(\\frac{s_2^2}{n_2})^2}{n_2-1}}\n\\]\n\n\n\n\n\n\n\n\n\n\n\nSe o valor absoluto de \\(t \\ge t_{tab}\\): médias são diferentes"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas.html",
+    "href": "aulas/slides/material-tabelas.html",
+    "title": "Tabelas Estatísticas",
+    "section": "",
+    "text": "Esta página reúne tabelas estatísticas clássicas, organizadas de forma visual, clara e amigável, para apoio às aulas e resolução de exercícios.\nTodas as tabelas são geradas automaticamente em R, garantindo: - Reprodutibilidade - Correção dos valores - Conexão direta com os testes estatísticos\n\n📌 Importante: as tabelas são ferramentas de apoio. Sempre que possível, confirme os valores usando as funções do R."
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas.html#introdução",
+    "href": "aulas/slides/material-tabelas.html#introdução",
+    "title": "Tabelas Estatísticas",
+    "section": "",
+    "text": "Esta página reúne tabelas estatísticas clássicas, organizadas de forma visual, clara e amigável, para apoio às aulas e resolução de exercícios.\nTodas as tabelas são geradas automaticamente em R, garantindo: - Reprodutibilidade - Correção dos valores - Conexão direta com os testes estatísticos\n\n📌 Importante: as tabelas são ferramentas de apoio. Sempre que possível, confirme os valores usando as funções do R."
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas.html#distribuição-normal-padrão-tabela-z",
+    "href": "aulas/slides/material-tabelas.html#distribuição-normal-padrão-tabela-z",
+    "title": "Tabelas Estatísticas",
+    "section": "📗 Distribuição Normal Padrão (Tabela Z)",
+    "text": "📗 Distribuição Normal Padrão (Tabela Z)\nUsada em: - Probabilidades com a normal padrão\n- Testes Z\n- Introdução aos testes de hipóteses\n\nComo ler\n\nLinha: parte inteira e primeira casa decimal de z\n\nColuna: segunda casa decimal\n\nValor: P(Z ≤ z)\n\n\n# Tabela Z – Distribuição Normal Padrão\n\nlinhas &lt;- seq(0.0, 3.9, by = 0.1)\ncolunas &lt;- seq(0.00, 0.09, by = 0.01)\n\ntabela_z &lt;- data.frame(z = linhas)\n\nfor (c in colunas) {\n  tabela_z[[sprintf(\"%.2f\", c)]] &lt;- pnorm(linhas + c)\n}\n\ntabela_z[, -1] &lt;- round(tabela_z[, -1], 4)\n\nknitr::kable(\n  tabela_z,\n  caption = \"Tabela Z – Distribuição Normal Padrão (P(Z ≤ z))\",\n  align = \"c\"\n)\n\n\nTabela Z – Distribuição Normal Padrão (P(Z ≤ z))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nz\n0.00\n0.01\n0.02\n0.03\n0.04\n0.05\n0.06\n0.07\n0.08\n0.09\n\n\n\n\n0.0\n0.5000\n0.5040\n0.5080\n0.5120\n0.5160\n0.5199\n0.5239\n0.5279\n0.5319\n0.5359\n\n\n0.1\n0.5398\n0.5438\n0.5478\n0.5517\n0.5557\n0.5596\n0.5636\n0.5675\n0.5714\n0.5753\n\n\n0.2\n0.5793\n0.5832\n0.5871\n0.5910\n0.5948\n0.5987\n0.6026\n0.6064\n0.6103\n0.6141\n\n\n0.3\n0.6179\n0.6217\n0.6255\n0.6293\n0.6331\n0.6368\n0.6406\n0.6443\n0.6480\n0.6517\n\n\n0.4\n0.6554\n0.6591\n0.6628\n0.6664\n0.6700\n0.6736\n0.6772\n0.6808\n0.6844\n0.6879\n\n\n0.5\n0.6915\n0.6950\n0.6985\n0.7019\n0.7054\n0.7088\n0.7123\n0.7157\n0.7190\n0.7224\n\n\n0.6\n0.7257\n0.7291\n0.7324\n0.7357\n0.7389\n0.7422\n0.7454\n0.7486\n0.7517\n0.7549\n\n\n0.7\n0.7580\n0.7611\n0.7642\n0.7673\n0.7704\n0.7734\n0.7764\n0.7794\n0.7823\n0.7852\n\n\n0.8\n0.7881\n0.7910\n0.7939\n0.7967\n0.7995\n0.8023\n0.8051\n0.8078\n0.8106\n0.8133\n\n\n0.9\n0.8159\n0.8186\n0.8212\n0.8238\n0.8264\n0.8289\n0.8315\n0.8340\n0.8365\n0.8389\n\n\n1.0\n0.8413\n0.8438\n0.8461\n0.8485\n0.8508\n0.8531\n0.8554\n0.8577\n0.8599\n0.8621\n\n\n1.1\n0.8643\n0.8665\n0.8686\n0.8708\n0.8729\n0.8749\n0.8770\n0.8790\n0.8810\n0.8830\n\n\n1.2\n0.8849\n0.8869\n0.8888\n0.8907\n0.8925\n0.8944\n0.8962\n0.8980\n0.8997\n0.9015\n\n\n1.3\n0.9032\n0.9049\n0.9066\n0.9082\n0.9099\n0.9115\n0.9131\n0.9147\n0.9162\n0.9177\n\n\n1.4\n0.9192\n0.9207\n0.9222\n0.9236\n0.9251\n0.9265\n0.9279\n0.9292\n0.9306\n0.9319\n\n\n1.5\n0.9332\n0.9345\n0.9357\n0.9370\n0.9382\n0.9394\n0.9406\n0.9418\n0.9429\n0.9441\n\n\n1.6\n0.9452\n0.9463\n0.9474\n0.9484\n0.9495\n0.9505\n0.9515\n0.9525\n0.9535\n0.9545\n\n\n1.7\n0.9554\n0.9564\n0.9573\n0.9582\n0.9591\n0.9599\n0.9608\n0.9616\n0.9625\n0.9633\n\n\n1.8\n0.9641\n0.9649\n0.9656\n0.9664\n0.9671\n0.9678\n0.9686\n0.9693\n0.9699\n0.9706\n\n\n1.9\n0.9713\n0.9719\n0.9726\n0.9732\n0.9738\n0.9744\n0.9750\n0.9756\n0.9761\n0.9767\n\n\n2.0\n0.9772\n0.9778\n0.9783\n0.9788\n0.9793\n0.9798\n0.9803\n0.9808\n0.9812\n0.9817\n\n\n2.1\n0.9821\n0.9826\n0.9830\n0.9834\n0.9838\n0.9842\n0.9846\n0.9850\n0.9854\n0.9857\n\n\n2.2\n0.9861\n0.9864\n0.9868\n0.9871\n0.9875\n0.9878\n0.9881\n0.9884\n0.9887\n0.9890\n\n\n2.3\n0.9893\n0.9896\n0.9898\n0.9901\n0.9904\n0.9906\n0.9909\n0.9911\n0.9913\n0.9916\n\n\n2.4\n0.9918\n0.9920\n0.9922\n0.9925\n0.9927\n0.9929\n0.9931\n0.9932\n0.9934\n0.9936\n\n\n2.5\n0.9938\n0.9940\n0.9941\n0.9943\n0.9945\n0.9946\n0.9948\n0.9949\n0.9951\n0.9952\n\n\n2.6\n0.9953\n0.9955\n0.9956\n0.9957\n0.9959\n0.9960\n0.9961\n0.9962\n0.9963\n0.9964\n\n\n2.7\n0.9965\n0.9966\n0.9967\n0.9968\n0.9969\n0.9970\n0.9971\n0.9972\n0.9973\n0.9974\n\n\n2.8\n0.9974\n0.9975\n0.9976\n0.9977\n0.9977\n0.9978\n0.9979\n0.9979\n0.9980\n0.9981\n\n\n2.9\n0.9981\n0.9982\n0.9982\n0.9983\n0.9984\n0.9984\n0.9985\n0.9985\n0.9986\n0.9986\n\n\n3.0\n0.9987\n0.9987\n0.9987\n0.9988\n0.9988\n0.9989\n0.9989\n0.9989\n0.9990\n0.9990\n\n\n3.1\n0.9990\n0.9991\n0.9991\n0.9991\n0.9992\n0.9992\n0.9992\n0.9992\n0.9993\n0.9993\n\n\n3.2\n0.9993\n0.9993\n0.9994\n0.9994\n0.9994\n0.9994\n0.9994\n0.9995\n0.9995\n0.9995\n\n\n3.3\n0.9995\n0.9995\n0.9995\n0.9996\n0.9996\n0.9996\n0.9996\n0.9996\n0.9996\n0.9997\n\n\n3.4\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9998\n\n\n3.5\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n\n\n3.6\n0.9998\n0.9998\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.7\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.8\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.9\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas.html#distribuição-t-de-student-teste-t-duas-amostras",
+    "href": "aulas/slides/material-tabelas.html#distribuição-t-de-student-teste-t-duas-amostras",
+    "title": "Tabelas Estatísticas",
+    "section": "📙 Distribuição t de Student – Teste t (duas amostras)",
+    "text": "📙 Distribuição t de Student – Teste t (duas amostras)\nUsada em: - Teste t para duas amostras independentes\n- Intervalos de confiança para a média\n\nObservação didática\nAntes de aplicar o teste t clássico, costuma-se verificar se as variâncias podem ser consideradas iguais (teste F).\n\n# Tabela t de Student – Teste t bilateral\n\ngl &lt;- c(1:10, 12, 15, 20, 30, 60, 120)\n\nconf &lt;- c(\n  \"90%\" = 0.95,\n  \"95%\" = 0.975,\n  \"99%\" = 0.995\n)\n\ntabela_t &lt;- data.frame(GL = gl)\n\nfor (nome in names(conf)) {\n  tabela_t[[nome]] &lt;- qt(conf[nome], df = gl)\n}\n\ntabela_t[, -1] &lt;- round(tabela_t[, -1], 3)\n\nknitr::kable(\n  tabela_t,\n  caption = \"Tabela t de Student – Teste t bilateral\",\n  align = \"c\"\n)\n\n\nTabela t de Student – Teste t bilateral\n\n\nGL\n90%\n95%\n99%\n\n\n\n\n1\n6.314\n12.706\n63.657\n\n\n2\n2.920\n4.303\n9.925\n\n\n3\n2.353\n3.182\n5.841\n\n\n4\n2.132\n2.776\n4.604\n\n\n5\n2.015\n2.571\n4.032\n\n\n6\n1.943\n2.447\n3.707\n\n\n7\n1.895\n2.365\n3.499\n\n\n8\n1.860\n2.306\n3.355\n\n\n9\n1.833\n2.262\n3.250\n\n\n10\n1.812\n2.228\n3.169\n\n\n12\n1.782\n2.179\n3.055\n\n\n15\n1.753\n2.131\n2.947\n\n\n20\n1.725\n2.086\n2.845\n\n\n30\n1.697\n2.042\n2.750\n\n\n60\n1.671\n2.000\n2.660\n\n\n120\n1.658\n1.980\n2.617"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas.html#distribuição-f-valores-críticos-α-5",
+    "href": "aulas/slides/material-tabelas.html#distribuição-f-valores-críticos-α-5",
+    "title": "Tabelas Estatísticas",
+    "section": "📕 Distribuição F – Valores críticos (α = 5%)",
+    "text": "📕 Distribuição F – Valores críticos (α = 5%)\nUsada em: - Teste F para comparação de variâncias\n- Verificação de homogeneidade antes do teste t\n- ANOVA\n\nComo ler\n\nLinhas: graus de liberdade do denominador (ν₂)\n\nColunas: graus de liberdade do numerador (ν₁)\n\nRegião crítica à direita: F(0.95, ν₁, ν₂)\n\n\n# Tabela F – Valores críticos (α = 5%)\n\ngl_num &lt;- 1:7\ngl_den &lt;- 1:20\n\ntabela_f &lt;- data.frame(`GL Den.` = gl_den)\n\nfor (gln in gl_num) {\n  tabela_f[[paste0(\"GL Num \", gln)]] &lt;- qf(0.95, df1 = gln, df2 = gl_den)\n}\n\ntabela_f[, -1] &lt;- round(tabela_f[, -1], 2)\n\nknitr::kable(\n  tabela_f,\n  caption = \"Tabela F – Valores críticos para α = 5%\",\n  align = \"c\"\n)\n\n\nTabela F – Valores críticos para α = 5%\n\n\n\n\n\n\n\n\n\n\n\n\nGL.Den.\nGL Num 1\nGL Num 2\nGL Num 3\nGL Num 4\nGL Num 5\nGL Num 6\nGL Num 7\n\n\n\n\n1\n161.45\n199.50\n215.71\n224.58\n230.16\n233.99\n236.77\n\n\n2\n18.51\n19.00\n19.16\n19.25\n19.30\n19.33\n19.35\n\n\n3\n10.13\n9.55\n9.28\n9.12\n9.01\n8.94\n8.89\n\n\n4\n7.71\n6.94\n6.59\n6.39\n6.26\n6.16\n6.09\n\n\n5\n6.61\n5.79\n5.41\n5.19\n5.05\n4.95\n4.88\n\n\n6\n5.99\n5.14\n4.76\n4.53\n4.39\n4.28\n4.21\n\n\n7\n5.59\n4.74\n4.35\n4.12\n3.97\n3.87\n3.79\n\n\n8\n5.32\n4.46\n4.07\n3.84\n3.69\n3.58\n3.50\n\n\n9\n5.12\n4.26\n3.86\n3.63\n3.48\n3.37\n3.29\n\n\n10\n4.96\n4.10\n3.71\n3.48\n3.33\n3.22\n3.14\n\n\n11\n4.84\n3.98\n3.59\n3.36\n3.20\n3.09\n3.01\n\n\n12\n4.75\n3.89\n3.49\n3.26\n3.11\n3.00\n2.91\n\n\n13\n4.67\n3.81\n3.41\n3.18\n3.03\n2.92\n2.83\n\n\n14\n4.60\n3.74\n3.34\n3.11\n2.96\n2.85\n2.76\n\n\n15\n4.54\n3.68\n3.29\n3.06\n2.90\n2.79\n2.71\n\n\n16\n4.49\n3.63\n3.24\n3.01\n2.85\n2.74\n2.66\n\n\n17\n4.45\n3.59\n3.20\n2.96\n2.81\n2.70\n2.61\n\n\n18\n4.41\n3.55\n3.16\n2.93\n2.77\n2.66\n2.58\n\n\n19\n4.38\n3.52\n3.13\n2.90\n2.74\n2.63\n2.54\n\n\n20\n4.35\n3.49\n3.10\n2.87\n2.71\n2.60\n2.51"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas.html#distribuição-qui-quadrado-χ²",
+    "href": "aulas/slides/material-tabelas.html#distribuição-qui-quadrado-χ²",
+    "title": "Tabelas Estatísticas",
+    "section": "📓 Distribuição Qui-quadrado (χ²)",
+    "text": "📓 Distribuição Qui-quadrado (χ²)\nUsada em: - Testes de independência\n- Testes de aderência\n- Intervalos de confiança para variância\n\nRegião crítica à direita\nχ²(1 − α, ν)\n\n# Tabela Qui-quadrado – Valores críticos\n\ngl &lt;- c(1:10, 12, 15, 20, 30, 60, 120)\n\nalpha &lt;- c(\n  \"10%\" = 0.90,\n  \"5%\"  = 0.95,\n  \"1%\"  = 0.99\n)\n\ntabela_chi &lt;- data.frame(GL = gl)\n\nfor (nome in names(alpha)) {\n  tabela_chi[[nome]] &lt;- qchisq(alpha[nome], df = gl)\n}\n\ntabela_chi[, -1] &lt;- round(tabela_chi[, -1], 3)\n\nknitr::kable(\n  tabela_chi,\n  caption = \"Tabela Qui-quadrado – Valores críticos\",\n  align = \"c\"\n)\n\n\nTabela Qui-quadrado – Valores críticos\n\n\nGL\n10%\n5%\n1%\n\n\n\n\n1\n2.706\n3.841\n6.635\n\n\n2\n4.605\n5.991\n9.210\n\n\n3\n6.251\n7.815\n11.345\n\n\n4\n7.779\n9.488\n13.277\n\n\n5\n9.236\n11.070\n15.086\n\n\n6\n10.645\n12.592\n16.812\n\n\n7\n12.017\n14.067\n18.475\n\n\n8\n13.362\n15.507\n20.090\n\n\n9\n14.684\n16.919\n21.666\n\n\n10\n15.987\n18.307\n23.209\n\n\n12\n18.549\n21.026\n26.217\n\n\n15\n22.307\n24.996\n30.578\n\n\n20\n28.412\n31.410\n37.566\n\n\n30\n40.256\n43.773\n50.892\n\n\n60\n74.397\n79.082\n88.379\n\n\n120\n140.233\n146.567\n158.950"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas.html#conexão-direta-com-o-r",
+    "href": "aulas/slides/material-tabelas.html#conexão-direta-com-o-r",
+    "title": "Tabelas Estatísticas",
+    "section": "🧠 Conexão direta com o R",
+    "text": "🧠 Conexão direta com o R\n\nqnorm(0.975)\n\n[1] 1.959964\n\nqt(0.975, df = 16)\n\n[1] 2.119905\n\nqf(0.95, df1 = 3, df2 = 10)\n\n[1] 3.708265\n\nqchisq(0.95, df = 5)\n\n[1] 11.0705"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas.html#observações-finais",
+    "href": "aulas/slides/material-tabelas.html#observações-finais",
+    "title": "Tabelas Estatísticas",
+    "section": "📌 Observações finais",
+    "text": "📌 Observações finais\n\nAs tabelas seguem o padrão de livros-texto clássicos\n\nPequenas diferenças podem ocorrer por arredondamento\n\nPara análises reais, prefira sempre o cálculo direto no R\n\nEsta página pertence à aba Materiais → Tabelas"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas-interativas.html",
+    "href": "aulas/slides/material-tabelas-interativas.html",
+    "title": "Tabelas Estatísticas",
+    "section": "",
+    "text": "library(DT)\nlibrary(knitr)"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas-interativas.html#introdução",
+    "href": "aulas/slides/material-tabelas-interativas.html#introdução",
+    "title": "Tabelas Estatísticas",
+    "section": "📘 Introdução",
+    "text": "📘 Introdução\nEsta página reúne tabelas estatísticas clássicas, organizadas de forma visual, clara e amigável, para apoio às aulas e resolução de exercícios.\nAs tabelas são apresentadas em duas formas: - 📘 Estática → estilo livro-texto (para aprender) - 🖱️ Interativa → para consulta rápida no site"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas-interativas.html#distribuição-normal-padrão-tabela-z",
+    "href": "aulas/slides/material-tabelas-interativas.html#distribuição-normal-padrão-tabela-z",
+    "title": "Tabelas Estatísticas",
+    "section": "📗 Distribuição Normal Padrão (Tabela Z)",
+    "text": "📗 Distribuição Normal Padrão (Tabela Z)\n\n📘 Versão estática\n\nlinhas &lt;- seq(0.0, 3.9, by = 0.1)\ncolunas &lt;- seq(0.00, 0.09, by = 0.01)\n\ntabela_z &lt;- data.frame(z = linhas)\n\nfor (c in colunas) {\n  tabela_z[[sprintf(\"%.2f\", c)]] &lt;- pnorm(linhas + c)\n}\n\ntabela_z[, -1] &lt;- round(tabela_z[, -1], 4)\n\nknitr::kable(\n  tabela_z,\n  caption = \"Tabela Z – Distribuição Normal Padrão (P(Z ≤ z))\",\n  align = \"c\"\n)\n\n\nTabela Z – Distribuição Normal Padrão (P(Z ≤ z))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nz\n0.00\n0.01\n0.02\n0.03\n0.04\n0.05\n0.06\n0.07\n0.08\n0.09\n\n\n\n\n0.0\n0.5000\n0.5040\n0.5080\n0.5120\n0.5160\n0.5199\n0.5239\n0.5279\n0.5319\n0.5359\n\n\n0.1\n0.5398\n0.5438\n0.5478\n0.5517\n0.5557\n0.5596\n0.5636\n0.5675\n0.5714\n0.5753\n\n\n0.2\n0.5793\n0.5832\n0.5871\n0.5910\n0.5948\n0.5987\n0.6026\n0.6064\n0.6103\n0.6141\n\n\n0.3\n0.6179\n0.6217\n0.6255\n0.6293\n0.6331\n0.6368\n0.6406\n0.6443\n0.6480\n0.6517\n\n\n0.4\n0.6554\n0.6591\n0.6628\n0.6664\n0.6700\n0.6736\n0.6772\n0.6808\n0.6844\n0.6879\n\n\n0.5\n0.6915\n0.6950\n0.6985\n0.7019\n0.7054\n0.7088\n0.7123\n0.7157\n0.7190\n0.7224\n\n\n0.6\n0.7257\n0.7291\n0.7324\n0.7357\n0.7389\n0.7422\n0.7454\n0.7486\n0.7517\n0.7549\n\n\n0.7\n0.7580\n0.7611\n0.7642\n0.7673\n0.7704\n0.7734\n0.7764\n0.7794\n0.7823\n0.7852\n\n\n0.8\n0.7881\n0.7910\n0.7939\n0.7967\n0.7995\n0.8023\n0.8051\n0.8078\n0.8106\n0.8133\n\n\n0.9\n0.8159\n0.8186\n0.8212\n0.8238\n0.8264\n0.8289\n0.8315\n0.8340\n0.8365\n0.8389\n\n\n1.0\n0.8413\n0.8438\n0.8461\n0.8485\n0.8508\n0.8531\n0.8554\n0.8577\n0.8599\n0.8621\n\n\n1.1\n0.8643\n0.8665\n0.8686\n0.8708\n0.8729\n0.8749\n0.8770\n0.8790\n0.8810\n0.8830\n\n\n1.2\n0.8849\n0.8869\n0.8888\n0.8907\n0.8925\n0.8944\n0.8962\n0.8980\n0.8997\n0.9015\n\n\n1.3\n0.9032\n0.9049\n0.9066\n0.9082\n0.9099\n0.9115\n0.9131\n0.9147\n0.9162\n0.9177\n\n\n1.4\n0.9192\n0.9207\n0.9222\n0.9236\n0.9251\n0.9265\n0.9279\n0.9292\n0.9306\n0.9319\n\n\n1.5\n0.9332\n0.9345\n0.9357\n0.9370\n0.9382\n0.9394\n0.9406\n0.9418\n0.9429\n0.9441\n\n\n1.6\n0.9452\n0.9463\n0.9474\n0.9484\n0.9495\n0.9505\n0.9515\n0.9525\n0.9535\n0.9545\n\n\n1.7\n0.9554\n0.9564\n0.9573\n0.9582\n0.9591\n0.9599\n0.9608\n0.9616\n0.9625\n0.9633\n\n\n1.8\n0.9641\n0.9649\n0.9656\n0.9664\n0.9671\n0.9678\n0.9686\n0.9693\n0.9699\n0.9706\n\n\n1.9\n0.9713\n0.9719\n0.9726\n0.9732\n0.9738\n0.9744\n0.9750\n0.9756\n0.9761\n0.9767\n\n\n2.0\n0.9772\n0.9778\n0.9783\n0.9788\n0.9793\n0.9798\n0.9803\n0.9808\n0.9812\n0.9817\n\n\n2.1\n0.9821\n0.9826\n0.9830\n0.9834\n0.9838\n0.9842\n0.9846\n0.9850\n0.9854\n0.9857\n\n\n2.2\n0.9861\n0.9864\n0.9868\n0.9871\n0.9875\n0.9878\n0.9881\n0.9884\n0.9887\n0.9890\n\n\n2.3\n0.9893\n0.9896\n0.9898\n0.9901\n0.9904\n0.9906\n0.9909\n0.9911\n0.9913\n0.9916\n\n\n2.4\n0.9918\n0.9920\n0.9922\n0.9925\n0.9927\n0.9929\n0.9931\n0.9932\n0.9934\n0.9936\n\n\n2.5\n0.9938\n0.9940\n0.9941\n0.9943\n0.9945\n0.9946\n0.9948\n0.9949\n0.9951\n0.9952\n\n\n2.6\n0.9953\n0.9955\n0.9956\n0.9957\n0.9959\n0.9960\n0.9961\n0.9962\n0.9963\n0.9964\n\n\n2.7\n0.9965\n0.9966\n0.9967\n0.9968\n0.9969\n0.9970\n0.9971\n0.9972\n0.9973\n0.9974\n\n\n2.8\n0.9974\n0.9975\n0.9976\n0.9977\n0.9977\n0.9978\n0.9979\n0.9979\n0.9980\n0.9981\n\n\n2.9\n0.9981\n0.9982\n0.9982\n0.9983\n0.9984\n0.9984\n0.9985\n0.9985\n0.9986\n0.9986\n\n\n3.0\n0.9987\n0.9987\n0.9987\n0.9988\n0.9988\n0.9989\n0.9989\n0.9989\n0.9990\n0.9990\n\n\n3.1\n0.9990\n0.9991\n0.9991\n0.9991\n0.9992\n0.9992\n0.9992\n0.9992\n0.9993\n0.9993\n\n\n3.2\n0.9993\n0.9993\n0.9994\n0.9994\n0.9994\n0.9994\n0.9994\n0.9995\n0.9995\n0.9995\n\n\n3.3\n0.9995\n0.9995\n0.9995\n0.9996\n0.9996\n0.9996\n0.9996\n0.9996\n0.9996\n0.9997\n\n\n3.4\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9998\n\n\n3.5\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n\n\n3.6\n0.9998\n0.9998\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.7\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.8\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.9\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n\n\n\n\n\n\n\n🖱️ Versão interativa\n\nDT::datatable(\n  tabela_z,\n  options = list(\n    pageLength = 10,\n    scrollX = TRUE\n  ),\n  caption = \"Tabela Z – versão interativa\"\n)"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas-interativas.html#distribuição-t-de-student-teste-t-duas-amostras",
+    "href": "aulas/slides/material-tabelas-interativas.html#distribuição-t-de-student-teste-t-duas-amostras",
+    "title": "Tabelas Estatísticas",
+    "section": "📙 Distribuição t de Student – Teste t (duas amostras)",
+    "text": "📙 Distribuição t de Student – Teste t (duas amostras)\n\n📘 Versão estática\n\ngl &lt;- c(1:10, 12, 15, 20, 30, 60, 120)\n\nconf &lt;- c(\n  \"90%\" = 0.95,\n  \"95%\" = 0.975,\n  \"99%\" = 0.995\n)\n\ntabela_t &lt;- data.frame(GL = gl)\n\nfor (nome in names(conf)) {\n  tabela_t[[nome]] &lt;- qt(conf[nome], df = gl)\n}\n\ntabela_t[, -1] &lt;- round(tabela_t[, -1], 3)\n\nknitr::kable(\n  tabela_t,\n  caption = \"Tabela t de Student – Teste t bilateral\",\n  align = \"c\"\n)\n\n\nTabela t de Student – Teste t bilateral\n\n\nGL\n90%\n95%\n99%\n\n\n\n\n1\n6.314\n12.706\n63.657\n\n\n2\n2.920\n4.303\n9.925\n\n\n3\n2.353\n3.182\n5.841\n\n\n4\n2.132\n2.776\n4.604\n\n\n5\n2.015\n2.571\n4.032\n\n\n6\n1.943\n2.447\n3.707\n\n\n7\n1.895\n2.365\n3.499\n\n\n8\n1.860\n2.306\n3.355\n\n\n9\n1.833\n2.262\n3.250\n\n\n10\n1.812\n2.228\n3.169\n\n\n12\n1.782\n2.179\n3.055\n\n\n15\n1.753\n2.131\n2.947\n\n\n20\n1.725\n2.086\n2.845\n\n\n30\n1.697\n2.042\n2.750\n\n\n60\n1.671\n2.000\n2.660\n\n\n120\n1.658\n1.980\n2.617\n\n\n\n\n\n\n\n🖱️ Versão interativa\n\nDT::datatable(\n  tabela_t,\n  options = list(\n    pageLength = 10\n  ),\n  caption = \"Tabela t – versão interativa\"\n)"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas-interativas.html#distribuição-f-valores-críticos-α-5",
+    "href": "aulas/slides/material-tabelas-interativas.html#distribuição-f-valores-críticos-α-5",
+    "title": "Tabelas Estatísticas",
+    "section": "📕 Distribuição F – Valores críticos (α = 5%)",
+    "text": "📕 Distribuição F – Valores críticos (α = 5%)\n\n📘 Versão estática\n\ngl_num &lt;- 1:7\ngl_den &lt;- 1:20\n\ntabela_f &lt;- data.frame(GL_Den = gl_den)\n\nfor (gln in gl_num) {\n  tabela_f[[paste0(\"GL_Num_\", gln)]] &lt;- qf(0.95, df1 = gln, df2 = gl_den)\n}\n\ntabela_f[, -1] &lt;- round(tabela_f[, -1], 2)\n\nknitr::kable(\n  tabela_f,\n  caption = \"Tabela F – Valores críticos para α = 5%\",\n  align = \"c\"\n)\n\n\nTabela F – Valores críticos para α = 5%\n\n\n\n\n\n\n\n\n\n\n\n\nGL_Den\nGL_Num_1\nGL_Num_2\nGL_Num_3\nGL_Num_4\nGL_Num_5\nGL_Num_6\nGL_Num_7\n\n\n\n\n1\n161.45\n199.50\n215.71\n224.58\n230.16\n233.99\n236.77\n\n\n2\n18.51\n19.00\n19.16\n19.25\n19.30\n19.33\n19.35\n\n\n3\n10.13\n9.55\n9.28\n9.12\n9.01\n8.94\n8.89\n\n\n4\n7.71\n6.94\n6.59\n6.39\n6.26\n6.16\n6.09\n\n\n5\n6.61\n5.79\n5.41\n5.19\n5.05\n4.95\n4.88\n\n\n6\n5.99\n5.14\n4.76\n4.53\n4.39\n4.28\n4.21\n\n\n7\n5.59\n4.74\n4.35\n4.12\n3.97\n3.87\n3.79\n\n\n8\n5.32\n4.46\n4.07\n3.84\n3.69\n3.58\n3.50\n\n\n9\n5.12\n4.26\n3.86\n3.63\n3.48\n3.37\n3.29\n\n\n10\n4.96\n4.10\n3.71\n3.48\n3.33\n3.22\n3.14\n\n\n11\n4.84\n3.98\n3.59\n3.36\n3.20\n3.09\n3.01\n\n\n12\n4.75\n3.89\n3.49\n3.26\n3.11\n3.00\n2.91\n\n\n13\n4.67\n3.81\n3.41\n3.18\n3.03\n2.92\n2.83\n\n\n14\n4.60\n3.74\n3.34\n3.11\n2.96\n2.85\n2.76\n\n\n15\n4.54\n3.68\n3.29\n3.06\n2.90\n2.79\n2.71\n\n\n16\n4.49\n3.63\n3.24\n3.01\n2.85\n2.74\n2.66\n\n\n17\n4.45\n3.59\n3.20\n2.96\n2.81\n2.70\n2.61\n\n\n18\n4.41\n3.55\n3.16\n2.93\n2.77\n2.66\n2.58\n\n\n19\n4.38\n3.52\n3.13\n2.90\n2.74\n2.63\n2.54\n\n\n20\n4.35\n3.49\n3.10\n2.87\n2.71\n2.60\n2.51\n\n\n\n\n\n\n\n🖱️ Versão interativa\n\nDT::datatable(\n  tabela_f,\n  options = list(\n    pageLength = 10,\n    scrollX = TRUE\n  ),\n  caption = \"Tabela F – versão interativa\"\n)"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas-interativas.html#distribuição-qui-quadrado-χ²",
+    "href": "aulas/slides/material-tabelas-interativas.html#distribuição-qui-quadrado-χ²",
+    "title": "Tabelas Estatísticas",
+    "section": "📓 Distribuição Qui-quadrado (χ²)",
+    "text": "📓 Distribuição Qui-quadrado (χ²)\n\n📘 Versão estática\n\ngl &lt;- c(1:10, 12, 15, 20, 30, 60, 120)\n\nalpha &lt;- c(\n  \"10%\" = 0.90,\n  \"5%\"  = 0.95,\n  \"1%\"  = 0.99\n)\n\ntabela_chi &lt;- data.frame(GL = gl)\n\nfor (nome in names(alpha)) {\n  tabela_chi[[nome]] &lt;- qchisq(alpha[nome], df = gl)\n}\n\ntabela_chi[, -1] &lt;- round(tabela_chi[, -1], 3)\n\nknitr::kable(\n  tabela_chi,\n  caption = \"Tabela Qui-quadrado – Valores críticos\",\n  align = \"c\"\n)\n\n\nTabela Qui-quadrado – Valores críticos\n\n\nGL\n10%\n5%\n1%\n\n\n\n\n1\n2.706\n3.841\n6.635\n\n\n2\n4.605\n5.991\n9.210\n\n\n3\n6.251\n7.815\n11.345\n\n\n4\n7.779\n9.488\n13.277\n\n\n5\n9.236\n11.070\n15.086\n\n\n6\n10.645\n12.592\n16.812\n\n\n7\n12.017\n14.067\n18.475\n\n\n8\n13.362\n15.507\n20.090\n\n\n9\n14.684\n16.919\n21.666\n\n\n10\n15.987\n18.307\n23.209\n\n\n12\n18.549\n21.026\n26.217\n\n\n15\n22.307\n24.996\n30.578\n\n\n20\n28.412\n31.410\n37.566\n\n\n30\n40.256\n43.773\n50.892\n\n\n60\n74.397\n79.082\n88.379\n\n\n120\n140.233\n146.567\n158.950\n\n\n\n\n\n\n\n🖱️ Versão interativa\n\nDT::datatable(\n  tabela_chi,\n  options = list(\n    pageLength = 10\n  ),\n  caption = \"Tabela Qui-quadrado – versão interativa\"\n)"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas-interativas.html#conexão-direta-com-o-r",
+    "href": "aulas/slides/material-tabelas-interativas.html#conexão-direta-com-o-r",
+    "title": "Tabelas Estatísticas",
+    "section": "🧠 Conexão direta com o R",
+    "text": "🧠 Conexão direta com o R\n\nqnorm(0.975)\n\n[1] 1.959964\n\nqt(0.975, df = 16)\n\n[1] 2.119905\n\nqf(0.95, df1 = 3, df2 = 10)\n\n[1] 3.708265\n\nqchisq(0.95, df = 5)\n\n[1] 11.0705"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas-interativas.html#observações-finais",
+    "href": "aulas/slides/material-tabelas-interativas.html#observações-finais",
+    "title": "Tabelas Estatísticas",
+    "section": "📌 Observações finais",
+    "text": "📌 Observações finais\n\nVersões interativas são apenas para consulta\nEm provas e exercícios, use a versão estática\nEm análises reais, prefira sempre o cálculo direto no R\nPágina pertencente à aba Materiais → Tabelas"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas-interativas-nivel2.html",
+    "href": "aulas/slides/material-tabelas-interativas-nivel2.html",
+    "title": "Tabelas Estatísticas",
+    "section": "",
+    "text": "library(DT)\nlibrary(knitr)"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas-interativas-nivel2.html#introdução",
+    "href": "aulas/slides/material-tabelas-interativas-nivel2.html#introdução",
+    "title": "Tabelas Estatísticas",
+    "section": "📘 Introdução",
+    "text": "📘 Introdução\n\n📌 Como usar esta página\n\n\nVersão estática: entender o conceito e aprender a ler a tabela\n\n\nVersão interativa: consulta rápida para exercícios\n\n\nPara análises reais, use sempre as funções do R"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas-interativas-nivel2.html#tabelas-estatísticas",
+    "href": "aulas/slides/material-tabelas-interativas-nivel2.html#tabelas-estatísticas",
+    "title": "Tabelas Estatísticas",
+    "section": "🔢 Tabelas Estatísticas",
+    "text": "🔢 Tabelas Estatísticas\n\n📗 Distribuição Normal (Z)\n\n📘 Versão estática\n\nlinhas &lt;- seq(0.0, 3.9, by = 0.1)\ncolunas &lt;- seq(0.00, 0.09, by = 0.01)\n\ntabela_z &lt;- data.frame(z = linhas)\n\nfor (c in colunas) {\n  tabela_z[[sprintf(\"%.2f\", c)]] &lt;- pnorm(linhas + c)\n}\n\ntabela_z[, -1] &lt;- round(tabela_z[, -1], 4)\n\nknitr::kable(\n  tabela_z,\n  caption = \"Tabela Z – P(Z ≤ z)\",\n  align = \"c\"\n)\n\n\nTabela Z – P(Z ≤ z)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nz\n0.00\n0.01\n0.02\n0.03\n0.04\n0.05\n0.06\n0.07\n0.08\n0.09\n\n\n\n\n0.0\n0.5000\n0.5040\n0.5080\n0.5120\n0.5160\n0.5199\n0.5239\n0.5279\n0.5319\n0.5359\n\n\n0.1\n0.5398\n0.5438\n0.5478\n0.5517\n0.5557\n0.5596\n0.5636\n0.5675\n0.5714\n0.5753\n\n\n0.2\n0.5793\n0.5832\n0.5871\n0.5910\n0.5948\n0.5987\n0.6026\n0.6064\n0.6103\n0.6141\n\n\n0.3\n0.6179\n0.6217\n0.6255\n0.6293\n0.6331\n0.6368\n0.6406\n0.6443\n0.6480\n0.6517\n\n\n0.4\n0.6554\n0.6591\n0.6628\n0.6664\n0.6700\n0.6736\n0.6772\n0.6808\n0.6844\n0.6879\n\n\n0.5\n0.6915\n0.6950\n0.6985\n0.7019\n0.7054\n0.7088\n0.7123\n0.7157\n0.7190\n0.7224\n\n\n0.6\n0.7257\n0.7291\n0.7324\n0.7357\n0.7389\n0.7422\n0.7454\n0.7486\n0.7517\n0.7549\n\n\n0.7\n0.7580\n0.7611\n0.7642\n0.7673\n0.7704\n0.7734\n0.7764\n0.7794\n0.7823\n0.7852\n\n\n0.8\n0.7881\n0.7910\n0.7939\n0.7967\n0.7995\n0.8023\n0.8051\n0.8078\n0.8106\n0.8133\n\n\n0.9\n0.8159\n0.8186\n0.8212\n0.8238\n0.8264\n0.8289\n0.8315\n0.8340\n0.8365\n0.8389\n\n\n1.0\n0.8413\n0.8438\n0.8461\n0.8485\n0.8508\n0.8531\n0.8554\n0.8577\n0.8599\n0.8621\n\n\n1.1\n0.8643\n0.8665\n0.8686\n0.8708\n0.8729\n0.8749\n0.8770\n0.8790\n0.8810\n0.8830\n\n\n1.2\n0.8849\n0.8869\n0.8888\n0.8907\n0.8925\n0.8944\n0.8962\n0.8980\n0.8997\n0.9015\n\n\n1.3\n0.9032\n0.9049\n0.9066\n0.9082\n0.9099\n0.9115\n0.9131\n0.9147\n0.9162\n0.9177\n\n\n1.4\n0.9192\n0.9207\n0.9222\n0.9236\n0.9251\n0.9265\n0.9279\n0.9292\n0.9306\n0.9319\n\n\n1.5\n0.9332\n0.9345\n0.9357\n0.9370\n0.9382\n0.9394\n0.9406\n0.9418\n0.9429\n0.9441\n\n\n1.6\n0.9452\n0.9463\n0.9474\n0.9484\n0.9495\n0.9505\n0.9515\n0.9525\n0.9535\n0.9545\n\n\n1.7\n0.9554\n0.9564\n0.9573\n0.9582\n0.9591\n0.9599\n0.9608\n0.9616\n0.9625\n0.9633\n\n\n1.8\n0.9641\n0.9649\n0.9656\n0.9664\n0.9671\n0.9678\n0.9686\n0.9693\n0.9699\n0.9706\n\n\n1.9\n0.9713\n0.9719\n0.9726\n0.9732\n0.9738\n0.9744\n0.9750\n0.9756\n0.9761\n0.9767\n\n\n2.0\n0.9772\n0.9778\n0.9783\n0.9788\n0.9793\n0.9798\n0.9803\n0.9808\n0.9812\n0.9817\n\n\n2.1\n0.9821\n0.9826\n0.9830\n0.9834\n0.9838\n0.9842\n0.9846\n0.9850\n0.9854\n0.9857\n\n\n2.2\n0.9861\n0.9864\n0.9868\n0.9871\n0.9875\n0.9878\n0.9881\n0.9884\n0.9887\n0.9890\n\n\n2.3\n0.9893\n0.9896\n0.9898\n0.9901\n0.9904\n0.9906\n0.9909\n0.9911\n0.9913\n0.9916\n\n\n2.4\n0.9918\n0.9920\n0.9922\n0.9925\n0.9927\n0.9929\n0.9931\n0.9932\n0.9934\n0.9936\n\n\n2.5\n0.9938\n0.9940\n0.9941\n0.9943\n0.9945\n0.9946\n0.9948\n0.9949\n0.9951\n0.9952\n\n\n2.6\n0.9953\n0.9955\n0.9956\n0.9957\n0.9959\n0.9960\n0.9961\n0.9962\n0.9963\n0.9964\n\n\n2.7\n0.9965\n0.9966\n0.9967\n0.9968\n0.9969\n0.9970\n0.9971\n0.9972\n0.9973\n0.9974\n\n\n2.8\n0.9974\n0.9975\n0.9976\n0.9977\n0.9977\n0.9978\n0.9979\n0.9979\n0.9980\n0.9981\n\n\n2.9\n0.9981\n0.9982\n0.9982\n0.9983\n0.9984\n0.9984\n0.9985\n0.9985\n0.9986\n0.9986\n\n\n3.0\n0.9987\n0.9987\n0.9987\n0.9988\n0.9988\n0.9989\n0.9989\n0.9989\n0.9990\n0.9990\n\n\n3.1\n0.9990\n0.9991\n0.9991\n0.9991\n0.9992\n0.9992\n0.9992\n0.9992\n0.9993\n0.9993\n\n\n3.2\n0.9993\n0.9993\n0.9994\n0.9994\n0.9994\n0.9994\n0.9994\n0.9995\n0.9995\n0.9995\n\n\n3.3\n0.9995\n0.9995\n0.9995\n0.9996\n0.9996\n0.9996\n0.9996\n0.9996\n0.9996\n0.9997\n\n\n3.4\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9998\n\n\n3.5\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n\n\n3.6\n0.9998\n0.9998\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.7\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.8\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.9\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n\n\n\n\n\n\n\n🖱️ Versão interativa\n\ndatatable(\n  tabela_z,\n  options = list(\n    pageLength = 8,\n    scrollX = TRUE\n  )\n)\n\n\n\n\n\n\n\n\n\n📙 Distribuição t de Student\n\n📘 Versão estática\n\ngl &lt;- c(1:10, 12, 15, 20, 30, 60, 120)\n\nconf &lt;- c(\n  \"90%\" = 0.95,\n  \"95%\" = 0.975,\n  \"99%\" = 0.995\n)\n\ntabela_t &lt;- data.frame(GL = gl)\n\nfor (nome in names(conf)) {\n  tabela_t[[nome]] &lt;- qt(conf[nome], df = gl)\n}\n\ntabela_t[, -1] &lt;- round(tabela_t[, -1], 3)\n\nknitr::kable(\n  tabela_t,\n  caption = \"Tabela t de Student – Teste bilateral\",\n  align = \"c\"\n)\n\n\nTabela t de Student – Teste bilateral\n\n\nGL\n90%\n95%\n99%\n\n\n\n\n1\n6.314\n12.706\n63.657\n\n\n2\n2.920\n4.303\n9.925\n\n\n3\n2.353\n3.182\n5.841\n\n\n4\n2.132\n2.776\n4.604\n\n\n5\n2.015\n2.571\n4.032\n\n\n6\n1.943\n2.447\n3.707\n\n\n7\n1.895\n2.365\n3.499\n\n\n8\n1.860\n2.306\n3.355\n\n\n9\n1.833\n2.262\n3.250\n\n\n10\n1.812\n2.228\n3.169\n\n\n12\n1.782\n2.179\n3.055\n\n\n15\n1.753\n2.131\n2.947\n\n\n20\n1.725\n2.086\n2.845\n\n\n30\n1.697\n2.042\n2.750\n\n\n60\n1.671\n2.000\n2.660\n\n\n120\n1.658\n1.980\n2.617\n\n\n\n\n\n\n\n🖱️ Versão interativa\n\ndatatable(\n  tabela_t,\n  options = list(pageLength = 8)\n)\n\n\n\n\n\n\n\n\n\n📕 Distribuição F (α = 5%)\n\n📘 Versão estática\n\ngl_num &lt;- 1:7\ngl_den &lt;- 1:20\n\ntabela_f &lt;- data.frame(GL_Den = gl_den)\n\nfor (gln in gl_num) {\n  tabela_f[[paste0(\"GL_Num_\", gln)]] &lt;- qf(0.95, df1 = gln, df2 = gl_den)\n}\n\ntabela_f[, -1] &lt;- round(tabela_f[, -1], 2)\n\nknitr::kable(\n  tabela_f,\n  caption = \"Tabela F – α = 5%\",\n  align = \"c\"\n)\n\n\nTabela F – α = 5%\n\n\n\n\n\n\n\n\n\n\n\n\nGL_Den\nGL_Num_1\nGL_Num_2\nGL_Num_3\nGL_Num_4\nGL_Num_5\nGL_Num_6\nGL_Num_7\n\n\n\n\n1\n161.45\n199.50\n215.71\n224.58\n230.16\n233.99\n236.77\n\n\n2\n18.51\n19.00\n19.16\n19.25\n19.30\n19.33\n19.35\n\n\n3\n10.13\n9.55\n9.28\n9.12\n9.01\n8.94\n8.89\n\n\n4\n7.71\n6.94\n6.59\n6.39\n6.26\n6.16\n6.09\n\n\n5\n6.61\n5.79\n5.41\n5.19\n5.05\n4.95\n4.88\n\n\n6\n5.99\n5.14\n4.76\n4.53\n4.39\n4.28\n4.21\n\n\n7\n5.59\n4.74\n4.35\n4.12\n3.97\n3.87\n3.79\n\n\n8\n5.32\n4.46\n4.07\n3.84\n3.69\n3.58\n3.50\n\n\n9\n5.12\n4.26\n3.86\n3.63\n3.48\n3.37\n3.29\n\n\n10\n4.96\n4.10\n3.71\n3.48\n3.33\n3.22\n3.14\n\n\n11\n4.84\n3.98\n3.59\n3.36\n3.20\n3.09\n3.01\n\n\n12\n4.75\n3.89\n3.49\n3.26\n3.11\n3.00\n2.91\n\n\n13\n4.67\n3.81\n3.41\n3.18\n3.03\n2.92\n2.83\n\n\n14\n4.60\n3.74\n3.34\n3.11\n2.96\n2.85\n2.76\n\n\n15\n4.54\n3.68\n3.29\n3.06\n2.90\n2.79\n2.71\n\n\n16\n4.49\n3.63\n3.24\n3.01\n2.85\n2.74\n2.66\n\n\n17\n4.45\n3.59\n3.20\n2.96\n2.81\n2.70\n2.61\n\n\n18\n4.41\n3.55\n3.16\n2.93\n2.77\n2.66\n2.58\n\n\n19\n4.38\n3.52\n3.13\n2.90\n2.74\n2.63\n2.54\n\n\n20\n4.35\n3.49\n3.10\n2.87\n2.71\n2.60\n2.51\n\n\n\n\n\n\n\n🖱️ Versão interativa\n\ndatatable(\n  tabela_f,\n  options = list(\n    pageLength = 8,\n    scrollX = TRUE\n  )\n)\n\n\n\n\n\n\n\n\n\n📓 Qui-quadrado (χ²)\n\n📘 Versão estática\n\ngl &lt;- c(1:10, 12, 15, 20, 30, 60, 120)\n\nalpha &lt;- c(\n  \"10%\" = 0.90,\n  \"5%\"  = 0.95,\n  \"1%\"  = 0.99\n)\n\ntabela_chi &lt;- data.frame(GL = gl)\n\nfor (nome in names(alpha)) {\n  tabela_chi[[nome]] &lt;- qchisq(alpha[nome], df = gl)\n}\n\ntabela_chi[, -1] &lt;- round(tabela_chi[, -1], 3)\n\nknitr::kable(\n  tabela_chi,\n  caption = \"Tabela Qui-quadrado – valores críticos\",\n  align = \"c\"\n)\n\n\nTabela Qui-quadrado – valores críticos\n\n\nGL\n10%\n5%\n1%\n\n\n\n\n1\n2.706\n3.841\n6.635\n\n\n2\n4.605\n5.991\n9.210\n\n\n3\n6.251\n7.815\n11.345\n\n\n4\n7.779\n9.488\n13.277\n\n\n5\n9.236\n11.070\n15.086\n\n\n6\n10.645\n12.592\n16.812\n\n\n7\n12.017\n14.067\n18.475\n\n\n8\n13.362\n15.507\n20.090\n\n\n9\n14.684\n16.919\n21.666\n\n\n10\n15.987\n18.307\n23.209\n\n\n12\n18.549\n21.026\n26.217\n\n\n15\n22.307\n24.996\n30.578\n\n\n20\n28.412\n31.410\n37.566\n\n\n30\n40.256\n43.773\n50.892\n\n\n60\n74.397\n79.082\n88.379\n\n\n120\n140.233\n146.567\n158.950\n\n\n\n\n\n\n\n🖱️ Versão interativa\n\ndatatable(\n  tabela_chi,\n  options = list(pageLength = 8)\n)"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas-interativas-nivel2.html#conexão-com-o-r",
+    "href": "aulas/slides/material-tabelas-interativas-nivel2.html#conexão-com-o-r",
+    "title": "Tabelas Estatísticas",
+    "section": "🧠 Conexão com o R",
+    "text": "🧠 Conexão com o R\n\nqnorm(0.975)\n\n[1] 1.959964\n\nqt(0.975, df = 16)\n\n[1] 2.119905\n\nqf(0.95, df1 = 3, df2 = 10)\n\n[1] 3.708265\n\nqchisq(0.95, df = 5)\n\n[1] 11.0705"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas-interativas-nivel2.html#observações-finais",
+    "href": "aulas/slides/material-tabelas-interativas-nivel2.html#observações-finais",
+    "title": "Tabelas Estatísticas",
+    "section": "📌 Observações finais",
+    "text": "📌 Observações finais\n\nTabelas interativas são para consulta\nEm avaliações, utilize a versão estática\nPara análise real: R sempre\nPágina da aba Materiais → Tabelas"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas-interativas-nivel3.html",
+    "href": "aulas/slides/material-tabelas-interativas-nivel3.html",
+    "title": "Tabelas Estatísticas",
+    "section": "",
+    "text": "library(DT)\nlibrary(knitr)"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas-interativas-nivel3.html#introdução",
+    "href": "aulas/slides/material-tabelas-interativas-nivel3.html#introdução",
+    "title": "Tabelas Estatísticas",
+    "section": "📘 Introdução",
+    "text": "📘 Introdução\n\nComo usar:\n\n\nDigite o valor pedido (ex.: graus de liberdade)\n\n\nA linha correspondente será destacada\n\n\nConfira o valor crítico e a função equivalente no R"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas-interativas-nivel3.html#tabelas-estatísticas",
+    "href": "aulas/slides/material-tabelas-interativas-nivel3.html#tabelas-estatísticas",
+    "title": "Tabelas Estatísticas",
+    "section": "🔢 Tabelas Estatísticas",
+    "text": "🔢 Tabelas Estatísticas\n\n📙 Distribuição t de Student\n\n🎯 Seletor de graus de liberdade\n\nDigite o valor de GL: \n\n\n\n📘 Tabela t (bilateral, α = 5%)\n\ngl &lt;- c(1:10, 12, 15, 20, 30, 60, 120)\n\ntabela_t &lt;- data.frame(\n  GL = gl,\n  `t crítico` = round(qt(0.975, df = gl), 3)\n)\n\ndatatable(\n  tabela_t,\n  elementId = \"t_table\",\n  options = list(\n    pageLength = 10,\n    dom = 't'\n  ),\n  rownames = FALSE\n)\n\n\n\n\n\n\n\n🧮 Mini-calculadora (R)\n\nqt(0.975, df = 10)\n\n[1] 2.228139\n\n\n\n\n\n\n📓 Distribuição Qui-quadrado (χ²)\n\n🎯 Seletor de graus de liberdade\n\nDigite o valor de GL: \n\n\n\n📘 Tabela Qui-quadrado (α = 5%)\n\ngl &lt;- c(1:10, 12, 15, 20, 30, 60, 120)\n\ntabela_chi &lt;- data.frame(\n  GL = gl,\n  `χ² crítico` = round(qchisq(0.95, df = gl), 3)\n)\n\ndatatable(\n  tabela_chi,\n  elementId = \"chi_table\",\n  options = list(\n    pageLength = 10,\n    dom = 't'\n  ),\n  rownames = FALSE\n)\n\n\n\n\n\n\n\n🧮 Mini-calculadora (R)\n\nqchisq(0.95, df = 5)\n\n[1] 11.0705\n\n\n\n\n\n\n📕 Distribuição F (consulta)\n\ngl_num &lt;- 1:5\ngl_den &lt;- 1:10\n\ntabela_f &lt;- data.frame(GL_Den = gl_den)\n\nfor (gln in gl_num) {\n  tabela_f[[paste0(\"GL_Num_\", gln)]] &lt;- round(qf(0.95, gln, gl_den), 2)\n}\n\ndatatable(\n  tabela_f,\n  options = list(\n    pageLength = 5,\n    scrollX = TRUE\n  ),\n  rownames = FALSE\n)"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas-interativas-nivel3.html#conexão-com-o-r",
+    "href": "aulas/slides/material-tabelas-interativas-nivel3.html#conexão-com-o-r",
+    "title": "Tabelas Estatísticas",
+    "section": "🧠 Conexão com o R",
+    "text": "🧠 Conexão com o R\n\nqt(0.975, df = 16)\n\n[1] 2.119905\n\nqchisq(0.95, df = 5)\n\n[1] 11.0705\n\nqf(0.95, df1 = 3, df2 = 10)\n\n[1] 3.708265"
+  },
+  {
+    "objectID": "aulas/slides/material-tabelas-interativas-nivel3.html#observações-finais",
+    "href": "aulas/slides/material-tabelas-interativas-nivel3.html#observações-finais",
+    "title": "Tabelas Estatísticas",
+    "section": "📌 Observações finais",
+    "text": "📌 Observações finais\n\nDestaque automático = ajuda visual\nValor crítico = decisão estatística\nFunção do R = ferramenta real\nPágina pertencente à aba Materiais → Tabelas"
+  },
+  {
+    "objectID": "material/tabelas/tabelas-estatica-z.html",
+    "href": "material/tabelas/tabelas-estatica-z.html",
+    "title": "Tabelas Estatísticas",
+    "section": "",
+    "text": "Esta página apresenta a tabela Z da Distribuição Normal Padrão em formato estático, no estilo dos livros-texto clássicos.\nO objetivo aqui é aprender a ler e interpretar a tabela, não apenas buscar valores."
+  },
+  {
+    "objectID": "material/tabelas/tabelas-estatica-z.html#objetivo-desta-página",
+    "href": "material/tabelas/tabelas-estatica-z.html#objetivo-desta-página",
+    "title": "Tabelas Estatísticas",
+    "section": "",
+    "text": "Esta página apresenta a tabela Z da Distribuição Normal Padrão em formato estático, no estilo dos livros-texto clássicos.\nO objetivo aqui é aprender a ler e interpretar a tabela, não apenas buscar valores."
+  },
+  {
+    "objectID": "material/tabelas/tabelas-estatica-z.html#distribuição-normal-padrão-tabela-z",
+    "href": "material/tabelas/tabelas-estatica-z.html#distribuição-normal-padrão-tabela-z",
+    "title": "Tabelas Estatísticas",
+    "section": "📗 Distribuição Normal Padrão (Tabela Z)",
+    "text": "📗 Distribuição Normal Padrão (Tabela Z)\nA tabela Z fornece valores da função de distribuição acumulada:\n[ P(Z z) ]\nonde Z é uma variável aleatória com distribuição normal padrão\n(média = 0, desvio-padrão = 1)."
+  },
+  {
+    "objectID": "material/tabelas/tabelas-estatica-z.html#como-ler-a-tabela-z",
+    "href": "material/tabelas/tabelas-estatica-z.html#como-ler-a-tabela-z",
+    "title": "Tabelas Estatísticas",
+    "section": "📖 Como ler a tabela Z",
+    "text": "📖 Como ler a tabela Z\n\nLinhas: parte inteira e primeira casa decimal de z\nColunas: segunda casa decimal de z\nValor da célula: probabilidade acumulada\n( P(Z z) )\n\n📌 A tabela mostra área à esquerda do valor z."
+  },
+  {
+    "objectID": "material/tabelas/tabelas-estatica-z.html#tabela-z-estática",
+    "href": "material/tabelas/tabelas-estatica-z.html#tabela-z-estática",
+    "title": "Tabelas Estatísticas",
+    "section": "📊 Tabela Z (estática)",
+    "text": "📊 Tabela Z (estática)\n\nlinhas &lt;- seq(0.0, 3.9, by = 0.1)\ncolunas &lt;- seq(0.00, 0.09, by = 0.01)\n\ntabela_z &lt;- data.frame(z = linhas)\n\nfor (c in colunas) {\n  tabela_z[[sprintf(\"%.2f\", c)]] &lt;- pnorm(linhas + c)\n}\n\ntabela_z[, -1] &lt;- round(tabela_z[, -1], 4)\n\nknitr::kable(\n  tabela_z,\n  caption = \"Tabela Z – Distribuição Normal Padrão (P(Z ≤ z))\",\n  align = \"c\"\n)\n\n\nTabela Z – Distribuição Normal Padrão (P(Z ≤ z))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nz\n0.00\n0.01\n0.02\n0.03\n0.04\n0.05\n0.06\n0.07\n0.08\n0.09\n\n\n\n\n0.0\n0.5000\n0.5040\n0.5080\n0.5120\n0.5160\n0.5199\n0.5239\n0.5279\n0.5319\n0.5359\n\n\n0.1\n0.5398\n0.5438\n0.5478\n0.5517\n0.5557\n0.5596\n0.5636\n0.5675\n0.5714\n0.5753\n\n\n0.2\n0.5793\n0.5832\n0.5871\n0.5910\n0.5948\n0.5987\n0.6026\n0.6064\n0.6103\n0.6141\n\n\n0.3\n0.6179\n0.6217\n0.6255\n0.6293\n0.6331\n0.6368\n0.6406\n0.6443\n0.6480\n0.6517\n\n\n0.4\n0.6554\n0.6591\n0.6628\n0.6664\n0.6700\n0.6736\n0.6772\n0.6808\n0.6844\n0.6879\n\n\n0.5\n0.6915\n0.6950\n0.6985\n0.7019\n0.7054\n0.7088\n0.7123\n0.7157\n0.7190\n0.7224\n\n\n0.6\n0.7257\n0.7291\n0.7324\n0.7357\n0.7389\n0.7422\n0.7454\n0.7486\n0.7517\n0.7549\n\n\n0.7\n0.7580\n0.7611\n0.7642\n0.7673\n0.7704\n0.7734\n0.7764\n0.7794\n0.7823\n0.7852\n\n\n0.8\n0.7881\n0.7910\n0.7939\n0.7967\n0.7995\n0.8023\n0.8051\n0.8078\n0.8106\n0.8133\n\n\n0.9\n0.8159\n0.8186\n0.8212\n0.8238\n0.8264\n0.8289\n0.8315\n0.8340\n0.8365\n0.8389\n\n\n1.0\n0.8413\n0.8438\n0.8461\n0.8485\n0.8508\n0.8531\n0.8554\n0.8577\n0.8599\n0.8621\n\n\n1.1\n0.8643\n0.8665\n0.8686\n0.8708\n0.8729\n0.8749\n0.8770\n0.8790\n0.8810\n0.8830\n\n\n1.2\n0.8849\n0.8869\n0.8888\n0.8907\n0.8925\n0.8944\n0.8962\n0.8980\n0.8997\n0.9015\n\n\n1.3\n0.9032\n0.9049\n0.9066\n0.9082\n0.9099\n0.9115\n0.9131\n0.9147\n0.9162\n0.9177\n\n\n1.4\n0.9192\n0.9207\n0.9222\n0.9236\n0.9251\n0.9265\n0.9279\n0.9292\n0.9306\n0.9319\n\n\n1.5\n0.9332\n0.9345\n0.9357\n0.9370\n0.9382\n0.9394\n0.9406\n0.9418\n0.9429\n0.9441\n\n\n1.6\n0.9452\n0.9463\n0.9474\n0.9484\n0.9495\n0.9505\n0.9515\n0.9525\n0.9535\n0.9545\n\n\n1.7\n0.9554\n0.9564\n0.9573\n0.9582\n0.9591\n0.9599\n0.9608\n0.9616\n0.9625\n0.9633\n\n\n1.8\n0.9641\n0.9649\n0.9656\n0.9664\n0.9671\n0.9678\n0.9686\n0.9693\n0.9699\n0.9706\n\n\n1.9\n0.9713\n0.9719\n0.9726\n0.9732\n0.9738\n0.9744\n0.9750\n0.9756\n0.9761\n0.9767\n\n\n2.0\n0.9772\n0.9778\n0.9783\n0.9788\n0.9793\n0.9798\n0.9803\n0.9808\n0.9812\n0.9817\n\n\n2.1\n0.9821\n0.9826\n0.9830\n0.9834\n0.9838\n0.9842\n0.9846\n0.9850\n0.9854\n0.9857\n\n\n2.2\n0.9861\n0.9864\n0.9868\n0.9871\n0.9875\n0.9878\n0.9881\n0.9884\n0.9887\n0.9890\n\n\n2.3\n0.9893\n0.9896\n0.9898\n0.9901\n0.9904\n0.9906\n0.9909\n0.9911\n0.9913\n0.9916\n\n\n2.4\n0.9918\n0.9920\n0.9922\n0.9925\n0.9927\n0.9929\n0.9931\n0.9932\n0.9934\n0.9936\n\n\n2.5\n0.9938\n0.9940\n0.9941\n0.9943\n0.9945\n0.9946\n0.9948\n0.9949\n0.9951\n0.9952\n\n\n2.6\n0.9953\n0.9955\n0.9956\n0.9957\n0.9959\n0.9960\n0.9961\n0.9962\n0.9963\n0.9964\n\n\n2.7\n0.9965\n0.9966\n0.9967\n0.9968\n0.9969\n0.9970\n0.9971\n0.9972\n0.9973\n0.9974\n\n\n2.8\n0.9974\n0.9975\n0.9976\n0.9977\n0.9977\n0.9978\n0.9979\n0.9979\n0.9980\n0.9981\n\n\n2.9\n0.9981\n0.9982\n0.9982\n0.9983\n0.9984\n0.9984\n0.9985\n0.9985\n0.9986\n0.9986\n\n\n3.0\n0.9987\n0.9987\n0.9987\n0.9988\n0.9988\n0.9989\n0.9989\n0.9989\n0.9990\n0.9990\n\n\n3.1\n0.9990\n0.9991\n0.9991\n0.9991\n0.9992\n0.9992\n0.9992\n0.9992\n0.9993\n0.9993\n\n\n3.2\n0.9993\n0.9993\n0.9994\n0.9994\n0.9994\n0.9994\n0.9994\n0.9995\n0.9995\n0.9995\n\n\n3.3\n0.9995\n0.9995\n0.9995\n0.9996\n0.9996\n0.9996\n0.9996\n0.9996\n0.9996\n0.9997\n\n\n3.4\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9998\n\n\n3.5\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n\n\n3.6\n0.9998\n0.9998\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.7\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.8\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.9\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000"
+  },
+  {
+    "objectID": "material/tabelas/tabelas-estatica-z.html#exemplo-de-uso",
+    "href": "material/tabelas/tabelas-estatica-z.html#exemplo-de-uso",
+    "title": "Tabelas Estatísticas",
+    "section": "🧪 Exemplo de uso",
+    "text": "🧪 Exemplo de uso\nSuponha que desejamos calcular:\n[ P(Z 23) ]\nPassos: 1. Linha 1.2 2. Coluna 0.03 3. Valor encontrado na tabela\n📌 Esse valor representa a probabilidade acumulada até z = 1,23."
+  },
+  {
+    "objectID": "material/tabelas/tabelas-estatica-z.html#versão-interativa-da-tabela",
+    "href": "material/tabelas/tabelas-estatica-z.html#versão-interativa-da-tabela",
+    "title": "Tabelas Estatísticas",
+    "section": "🔗 Versão interativa da tabela",
+    "text": "🔗 Versão interativa da tabela\nPara consulta rápida, com busca e visualização gráfica da região crítica:\n🖱️ 🔎 Consultar tabela Z interativa"
+  },
+  {
+    "objectID": "material/tabelas/tabelas-estatica-z.html#conexão-com-o-r",
+    "href": "material/tabelas/tabelas-estatica-z.html#conexão-com-o-r",
+    "title": "Tabelas Estatísticas",
+    "section": "🧠 Conexão com o R",
+    "text": "🧠 Conexão com o R\nA tabela Z nada mais é do que o resultado da função:\n\npnorm(1.23)\n\n[1] 0.8906514\n\n\nEm aplicações reais, prefira sempre o cálculo direto no R."
+  },
+  {
+    "objectID": "material/tabelas/z-interativa[.html",
+    "href": "material/tabelas/z-interativa[.html",
+    "title": "Tabela Z – Versão Interativa",
+    "section": "",
+    "text": "Use esta página para consultar valores rapidamente durante a resolução de exercícios."
+  },
+  {
+    "objectID": "material/tabelas/z-interativa[.html#consulta-rápida-tabela-z",
+    "href": "material/tabelas/z-interativa[.html#consulta-rápida-tabela-z",
+    "title": "Tabela Z – Versão Interativa",
+    "section": "",
+    "text": "Use esta página para consultar valores rapidamente durante a resolução de exercícios."
+  },
+  {
+    "objectID": "material/tabelas/z-interativa[.html#tabela-z-interativa",
+    "href": "material/tabelas/z-interativa[.html#tabela-z-interativa",
+    "title": "Tabela Z – Versão Interativa",
+    "section": "📊 Tabela Z interativa",
+    "text": "📊 Tabela Z interativa"
+  },
+  {
+    "objectID": "material/tabelas/z-interativa[.html#região-crítica-visualização-gráfica",
+    "href": "material/tabelas/z-interativa[.html#região-crítica-visualização-gráfica",
+    "title": "Tabela Z – Versão Interativa",
+    "section": "📈 Região crítica – visualização gráfica",
+    "text": "📈 Região crítica – visualização gráfica\nSelecione um valor de z para visualizar a área acumulada.\n\n\n\n\n\n\n\n\n\n📌 A área sombreada representa:\n[ P(Z z) ]"
+  },
+  {
+    "objectID": "material/tabelas/z-interativa[.html#voltar-para-a-versão-didática",
+    "href": "material/tabelas/z-interativa[.html#voltar-para-a-versão-didática",
+    "title": "Tabela Z – Versão Interativa",
+    "section": "🔙 Voltar para a versão didática",
+    "text": "🔙 Voltar para a versão didática\n⬅️ Voltar para a tabela explicada"
+  },
+  {
+    "objectID": "materiais/tabelas/z-interativa.html",
+    "href": "materiais/tabelas/z-interativa.html",
+    "title": "Tabela Z – Versão Interativa",
+    "section": "",
+    "text": "Use esta página para consultar valores rapidamente durante a resolução de exercícios."
+  },
+  {
+    "objectID": "materiais/tabelas/z-interativa.html#consulta-rápida-tabela-z",
+    "href": "materiais/tabelas/z-interativa.html#consulta-rápida-tabela-z",
+    "title": "Tabela Z – Versão Interativa",
+    "section": "",
+    "text": "Use esta página para consultar valores rapidamente durante a resolução de exercícios."
+  },
+  {
+    "objectID": "materiais/tabelas/z-interativa.html#tabela-z-interativa",
+    "href": "materiais/tabelas/z-interativa.html#tabela-z-interativa",
+    "title": "Tabela Z – Versão Interativa",
+    "section": "📊 Tabela Z interativa",
+    "text": "📊 Tabela Z interativa"
+  },
+  {
+    "objectID": "materiais/tabelas/z-interativa.html#região-crítica-visualização-gráfica",
+    "href": "materiais/tabelas/z-interativa.html#região-crítica-visualização-gráfica",
+    "title": "Tabela Z – Versão Interativa",
+    "section": "📈 Região crítica – visualização gráfica",
+    "text": "📈 Região crítica – visualização gráfica\nSelecione um valor de z para visualizar a área acumulada.\n\n\n\n\n\n\n\n\n\n📌 A área sombreada representa:\n[ P(Z z) ]"
+  },
+  {
+    "objectID": "materiais/tabelas/z-interativa.html#voltar-para-a-versão-didática",
+    "href": "materiais/tabelas/z-interativa.html#voltar-para-a-versão-didática",
+    "title": "Tabela Z – Versão Interativa",
+    "section": "🔙 Voltar para a versão didática",
+    "text": "🔙 Voltar para a versão didática\n⬅️ Voltar para a tabela explicada"
+  },
+  {
+    "objectID": "materiais/tabelas/index.qmd.html",
+    "href": "materiais/tabelas/index.qmd.html",
+    "title": "Tabelas Estatísticas",
+    "section": "",
+    "text": "Esta página apresenta a tabela Z da Distribuição Normal Padrão em formato estático, no estilo dos livros-texto clássicos.\nO objetivo aqui é aprender a ler e interpretar a tabela, não apenas buscar valores."
+  },
+  {
+    "objectID": "materiais/tabelas/index.qmd.html#objetivo-desta-página",
+    "href": "materiais/tabelas/index.qmd.html#objetivo-desta-página",
+    "title": "Tabelas Estatísticas",
+    "section": "",
+    "text": "Esta página apresenta a tabela Z da Distribuição Normal Padrão em formato estático, no estilo dos livros-texto clássicos.\nO objetivo aqui é aprender a ler e interpretar a tabela, não apenas buscar valores."
+  },
+  {
+    "objectID": "materiais/tabelas/index.qmd.html#distribuição-normal-padrão-tabela-z",
+    "href": "materiais/tabelas/index.qmd.html#distribuição-normal-padrão-tabela-z",
+    "title": "Tabelas Estatísticas",
+    "section": "📗 Distribuição Normal Padrão (Tabela Z)",
+    "text": "📗 Distribuição Normal Padrão (Tabela Z)\nA tabela Z fornece valores da função de distribuição acumulada:\n[ P(Z z) ]\nonde Z é uma variável aleatória com distribuição normal padrão\n(média = 0, desvio-padrão = 1)."
+  },
+  {
+    "objectID": "materiais/tabelas/index.qmd.html#como-ler-a-tabela-z",
+    "href": "materiais/tabelas/index.qmd.html#como-ler-a-tabela-z",
+    "title": "Tabelas Estatísticas",
+    "section": "📖 Como ler a tabela Z",
+    "text": "📖 Como ler a tabela Z\n\nLinhas: parte inteira e primeira casa decimal de z\nColunas: segunda casa decimal de z\nValor da célula: probabilidade acumulada\n( P(Z z) )\n\n📌 A tabela mostra área à esquerda do valor z."
+  },
+  {
+    "objectID": "materiais/tabelas/index.qmd.html#tabela-z-estática",
+    "href": "materiais/tabelas/index.qmd.html#tabela-z-estática",
+    "title": "Tabelas Estatísticas",
+    "section": "📊 Tabela Z (estática)",
+    "text": "📊 Tabela Z (estática)\n\nlinhas &lt;- seq(0.0, 3.9, by = 0.1)\ncolunas &lt;- seq(0.00, 0.09, by = 0.01)\n\ntabela_z &lt;- data.frame(z = linhas)\n\nfor (c in colunas) {\n  tabela_z[[sprintf(\"%.2f\", c)]] &lt;- pnorm(linhas + c)\n}\n\ntabela_z[, -1] &lt;- round(tabela_z[, -1], 4)\n\nknitr::kable(\n  tabela_z,\n  caption = \"Tabela Z – Distribuição Normal Padrão (P(Z ≤ z))\",\n  align = \"c\"\n)\n\n\nTabela Z – Distribuição Normal Padrão (P(Z ≤ z))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nz\n0.00\n0.01\n0.02\n0.03\n0.04\n0.05\n0.06\n0.07\n0.08\n0.09\n\n\n\n\n0.0\n0.5000\n0.5040\n0.5080\n0.5120\n0.5160\n0.5199\n0.5239\n0.5279\n0.5319\n0.5359\n\n\n0.1\n0.5398\n0.5438\n0.5478\n0.5517\n0.5557\n0.5596\n0.5636\n0.5675\n0.5714\n0.5753\n\n\n0.2\n0.5793\n0.5832\n0.5871\n0.5910\n0.5948\n0.5987\n0.6026\n0.6064\n0.6103\n0.6141\n\n\n0.3\n0.6179\n0.6217\n0.6255\n0.6293\n0.6331\n0.6368\n0.6406\n0.6443\n0.6480\n0.6517\n\n\n0.4\n0.6554\n0.6591\n0.6628\n0.6664\n0.6700\n0.6736\n0.6772\n0.6808\n0.6844\n0.6879\n\n\n0.5\n0.6915\n0.6950\n0.6985\n0.7019\n0.7054\n0.7088\n0.7123\n0.7157\n0.7190\n0.7224\n\n\n0.6\n0.7257\n0.7291\n0.7324\n0.7357\n0.7389\n0.7422\n0.7454\n0.7486\n0.7517\n0.7549\n\n\n0.7\n0.7580\n0.7611\n0.7642\n0.7673\n0.7704\n0.7734\n0.7764\n0.7794\n0.7823\n0.7852\n\n\n0.8\n0.7881\n0.7910\n0.7939\n0.7967\n0.7995\n0.8023\n0.8051\n0.8078\n0.8106\n0.8133\n\n\n0.9\n0.8159\n0.8186\n0.8212\n0.8238\n0.8264\n0.8289\n0.8315\n0.8340\n0.8365\n0.8389\n\n\n1.0\n0.8413\n0.8438\n0.8461\n0.8485\n0.8508\n0.8531\n0.8554\n0.8577\n0.8599\n0.8621\n\n\n1.1\n0.8643\n0.8665\n0.8686\n0.8708\n0.8729\n0.8749\n0.8770\n0.8790\n0.8810\n0.8830\n\n\n1.2\n0.8849\n0.8869\n0.8888\n0.8907\n0.8925\n0.8944\n0.8962\n0.8980\n0.8997\n0.9015\n\n\n1.3\n0.9032\n0.9049\n0.9066\n0.9082\n0.9099\n0.9115\n0.9131\n0.9147\n0.9162\n0.9177\n\n\n1.4\n0.9192\n0.9207\n0.9222\n0.9236\n0.9251\n0.9265\n0.9279\n0.9292\n0.9306\n0.9319\n\n\n1.5\n0.9332\n0.9345\n0.9357\n0.9370\n0.9382\n0.9394\n0.9406\n0.9418\n0.9429\n0.9441\n\n\n1.6\n0.9452\n0.9463\n0.9474\n0.9484\n0.9495\n0.9505\n0.9515\n0.9525\n0.9535\n0.9545\n\n\n1.7\n0.9554\n0.9564\n0.9573\n0.9582\n0.9591\n0.9599\n0.9608\n0.9616\n0.9625\n0.9633\n\n\n1.8\n0.9641\n0.9649\n0.9656\n0.9664\n0.9671\n0.9678\n0.9686\n0.9693\n0.9699\n0.9706\n\n\n1.9\n0.9713\n0.9719\n0.9726\n0.9732\n0.9738\n0.9744\n0.9750\n0.9756\n0.9761\n0.9767\n\n\n2.0\n0.9772\n0.9778\n0.9783\n0.9788\n0.9793\n0.9798\n0.9803\n0.9808\n0.9812\n0.9817\n\n\n2.1\n0.9821\n0.9826\n0.9830\n0.9834\n0.9838\n0.9842\n0.9846\n0.9850\n0.9854\n0.9857\n\n\n2.2\n0.9861\n0.9864\n0.9868\n0.9871\n0.9875\n0.9878\n0.9881\n0.9884\n0.9887\n0.9890\n\n\n2.3\n0.9893\n0.9896\n0.9898\n0.9901\n0.9904\n0.9906\n0.9909\n0.9911\n0.9913\n0.9916\n\n\n2.4\n0.9918\n0.9920\n0.9922\n0.9925\n0.9927\n0.9929\n0.9931\n0.9932\n0.9934\n0.9936\n\n\n2.5\n0.9938\n0.9940\n0.9941\n0.9943\n0.9945\n0.9946\n0.9948\n0.9949\n0.9951\n0.9952\n\n\n2.6\n0.9953\n0.9955\n0.9956\n0.9957\n0.9959\n0.9960\n0.9961\n0.9962\n0.9963\n0.9964\n\n\n2.7\n0.9965\n0.9966\n0.9967\n0.9968\n0.9969\n0.9970\n0.9971\n0.9972\n0.9973\n0.9974\n\n\n2.8\n0.9974\n0.9975\n0.9976\n0.9977\n0.9977\n0.9978\n0.9979\n0.9979\n0.9980\n0.9981\n\n\n2.9\n0.9981\n0.9982\n0.9982\n0.9983\n0.9984\n0.9984\n0.9985\n0.9985\n0.9986\n0.9986\n\n\n3.0\n0.9987\n0.9987\n0.9987\n0.9988\n0.9988\n0.9989\n0.9989\n0.9989\n0.9990\n0.9990\n\n\n3.1\n0.9990\n0.9991\n0.9991\n0.9991\n0.9992\n0.9992\n0.9992\n0.9992\n0.9993\n0.9993\n\n\n3.2\n0.9993\n0.9993\n0.9994\n0.9994\n0.9994\n0.9994\n0.9994\n0.9995\n0.9995\n0.9995\n\n\n3.3\n0.9995\n0.9995\n0.9995\n0.9996\n0.9996\n0.9996\n0.9996\n0.9996\n0.9996\n0.9997\n\n\n3.4\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9998\n\n\n3.5\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n\n\n3.6\n0.9998\n0.9998\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.7\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.8\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.9\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000"
+  },
+  {
+    "objectID": "materiais/tabelas/index.qmd.html#exemplo-de-uso",
+    "href": "materiais/tabelas/index.qmd.html#exemplo-de-uso",
+    "title": "Tabelas Estatísticas",
+    "section": "🧪 Exemplo de uso",
+    "text": "🧪 Exemplo de uso\nSuponha que desejamos calcular:\n[ P(Z 23) ]\nPassos: 1. Linha 1.2 2. Coluna 0.03 3. Valor encontrado na tabela\n📌 Esse valor representa a probabilidade acumulada até z = 1,23."
+  },
+  {
+    "objectID": "materiais/tabelas/index.qmd.html#versão-interativa-da-tabela",
+    "href": "materiais/tabelas/index.qmd.html#versão-interativa-da-tabela",
+    "title": "Tabelas Estatísticas",
+    "section": "🔗 Versão interativa da tabela",
+    "text": "🔗 Versão interativa da tabela\nPara consulta rápida, com busca e visualização gráfica da região crítica:\n🖱️ 🔎 Consultar tabela Z interativa"
+  },
+  {
+    "objectID": "materiais/tabelas/index.qmd.html#conexão-com-o-r",
+    "href": "materiais/tabelas/index.qmd.html#conexão-com-o-r",
+    "title": "Tabelas Estatísticas",
+    "section": "🧠 Conexão com o R",
+    "text": "🧠 Conexão com o R\nA tabela Z nada mais é do que o resultado da função:\n\npnorm(1.23)\n\n[1] 0.8906514\n\n\nEm aplicações reais, prefira sempre o cálculo direto no R."
+  },
+  {
+    "objectID": "materiais/tabelas/tabelas-estaticas.html",
+    "href": "materiais/tabelas/tabelas-estaticas.html",
+    "title": "Tabela Z – Distribuição Normal Padrão",
+    "section": "",
+    "text": "Esta página tem como objetivo ensinar o uso correto da Tabela Z, explicando:\n\no que é a Distribuição Normal Padrão\ncomo calcular o valor de Z\ncomo ler a tabela\ncomo interpretar o resultado\ncomo confirmar o valor usando o R\n\n\n📌 Esta página é para entender o método.\nPara consulta rápida, use a versão interativa ao final."
+  },
+  {
+    "objectID": "materiais/tabelas/tabelas-estaticas.html#objetivo-desta-página",
+    "href": "materiais/tabelas/tabelas-estaticas.html#objetivo-desta-página",
+    "title": "Tabela Z – Distribuição Normal Padrão",
+    "section": "",
+    "text": "Esta página tem como objetivo ensinar o uso correto da Tabela Z, explicando:\n\no que é a Distribuição Normal Padrão\ncomo calcular o valor de Z\ncomo ler a tabela\ncomo interpretar o resultado\ncomo confirmar o valor usando o R\n\n\n📌 Esta página é para entender o método.\nPara consulta rápida, use a versão interativa ao final."
+  },
+  {
+    "objectID": "materiais/tabelas/tabelas-estaticas.html#distribuição-normal-padrão-tabela-z",
+    "href": "materiais/tabelas/tabelas-estaticas.html#distribuição-normal-padrão-tabela-z",
+    "title": "Tabelas Estatísticas",
+    "section": "📗 Distribuição Normal Padrão (Tabela Z)",
+    "text": "📗 Distribuição Normal Padrão (Tabela Z)\nA tabela Z fornece valores da função de distribuição acumulada:\n[ P(Z z) ]\nonde Z é uma variável aleatória com distribuição normal padrão\n(média = 0, desvio-padrão = 1)."
+  },
+  {
+    "objectID": "materiais/tabelas/tabelas-estaticas.html#como-ler-a-tabela-z",
+    "href": "materiais/tabelas/tabelas-estaticas.html#como-ler-a-tabela-z",
+    "title": "Tabela Z – Distribuição Normal Padrão",
+    "section": "📊 Como ler a Tabela Z",
+    "text": "📊 Como ler a Tabela Z\nPara um valor como Z = 2,00:\n\nLinha → 2.0\n\nColuna → 0.00\n\nValor da célula → probabilidade acumulada\n\nEsse valor representa: \\[\nP(Z \\le 2{,}00)\n\\]"
+  },
+  {
+    "objectID": "materiais/tabelas/tabelas-estaticas.html#tabela-z-estática",
+    "href": "materiais/tabelas/tabelas-estaticas.html#tabela-z-estática",
+    "title": "Tabelas Estatísticas",
+    "section": "📊 Tabela Z (estática)",
+    "text": "📊 Tabela Z (estática)\n\nlinhas &lt;- seq(0.0, 3.9, by = 0.1)\ncolunas &lt;- seq(0.00, 0.09, by = 0.01)\n\ntabela_z &lt;- data.frame(z = linhas)\n\nfor (c in colunas) {\n  tabela_z[[sprintf(\"%.2f\", c)]] &lt;- pnorm(linhas + c)\n}\n\ntabela_z[, -1] &lt;- round(tabela_z[, -1], 4)\n\nknitr::kable(\n  tabela_z,\n  caption = \"Tabela Z – Distribuição Normal Padrão (P(Z ≤ z))\",\n  align = \"c\"\n)\n\n\nTabela Z – Distribuição Normal Padrão (P(Z ≤ z))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nz\n0.00\n0.01\n0.02\n0.03\n0.04\n0.05\n0.06\n0.07\n0.08\n0.09\n\n\n\n\n0.0\n0.5000\n0.5040\n0.5080\n0.5120\n0.5160\n0.5199\n0.5239\n0.5279\n0.5319\n0.5359\n\n\n0.1\n0.5398\n0.5438\n0.5478\n0.5517\n0.5557\n0.5596\n0.5636\n0.5675\n0.5714\n0.5753\n\n\n0.2\n0.5793\n0.5832\n0.5871\n0.5910\n0.5948\n0.5987\n0.6026\n0.6064\n0.6103\n0.6141\n\n\n0.3\n0.6179\n0.6217\n0.6255\n0.6293\n0.6331\n0.6368\n0.6406\n0.6443\n0.6480\n0.6517\n\n\n0.4\n0.6554\n0.6591\n0.6628\n0.6664\n0.6700\n0.6736\n0.6772\n0.6808\n0.6844\n0.6879\n\n\n0.5\n0.6915\n0.6950\n0.6985\n0.7019\n0.7054\n0.7088\n0.7123\n0.7157\n0.7190\n0.7224\n\n\n0.6\n0.7257\n0.7291\n0.7324\n0.7357\n0.7389\n0.7422\n0.7454\n0.7486\n0.7517\n0.7549\n\n\n0.7\n0.7580\n0.7611\n0.7642\n0.7673\n0.7704\n0.7734\n0.7764\n0.7794\n0.7823\n0.7852\n\n\n0.8\n0.7881\n0.7910\n0.7939\n0.7967\n0.7995\n0.8023\n0.8051\n0.8078\n0.8106\n0.8133\n\n\n0.9\n0.8159\n0.8186\n0.8212\n0.8238\n0.8264\n0.8289\n0.8315\n0.8340\n0.8365\n0.8389\n\n\n1.0\n0.8413\n0.8438\n0.8461\n0.8485\n0.8508\n0.8531\n0.8554\n0.8577\n0.8599\n0.8621\n\n\n1.1\n0.8643\n0.8665\n0.8686\n0.8708\n0.8729\n0.8749\n0.8770\n0.8790\n0.8810\n0.8830\n\n\n1.2\n0.8849\n0.8869\n0.8888\n0.8907\n0.8925\n0.8944\n0.8962\n0.8980\n0.8997\n0.9015\n\n\n1.3\n0.9032\n0.9049\n0.9066\n0.9082\n0.9099\n0.9115\n0.9131\n0.9147\n0.9162\n0.9177\n\n\n1.4\n0.9192\n0.9207\n0.9222\n0.9236\n0.9251\n0.9265\n0.9279\n0.9292\n0.9306\n0.9319\n\n\n1.5\n0.9332\n0.9345\n0.9357\n0.9370\n0.9382\n0.9394\n0.9406\n0.9418\n0.9429\n0.9441\n\n\n1.6\n0.9452\n0.9463\n0.9474\n0.9484\n0.9495\n0.9505\n0.9515\n0.9525\n0.9535\n0.9545\n\n\n1.7\n0.9554\n0.9564\n0.9573\n0.9582\n0.9591\n0.9599\n0.9608\n0.9616\n0.9625\n0.9633\n\n\n1.8\n0.9641\n0.9649\n0.9656\n0.9664\n0.9671\n0.9678\n0.9686\n0.9693\n0.9699\n0.9706\n\n\n1.9\n0.9713\n0.9719\n0.9726\n0.9732\n0.9738\n0.9744\n0.9750\n0.9756\n0.9761\n0.9767\n\n\n2.0\n0.9772\n0.9778\n0.9783\n0.9788\n0.9793\n0.9798\n0.9803\n0.9808\n0.9812\n0.9817\n\n\n2.1\n0.9821\n0.9826\n0.9830\n0.9834\n0.9838\n0.9842\n0.9846\n0.9850\n0.9854\n0.9857\n\n\n2.2\n0.9861\n0.9864\n0.9868\n0.9871\n0.9875\n0.9878\n0.9881\n0.9884\n0.9887\n0.9890\n\n\n2.3\n0.9893\n0.9896\n0.9898\n0.9901\n0.9904\n0.9906\n0.9909\n0.9911\n0.9913\n0.9916\n\n\n2.4\n0.9918\n0.9920\n0.9922\n0.9925\n0.9927\n0.9929\n0.9931\n0.9932\n0.9934\n0.9936\n\n\n2.5\n0.9938\n0.9940\n0.9941\n0.9943\n0.9945\n0.9946\n0.9948\n0.9949\n0.9951\n0.9952\n\n\n2.6\n0.9953\n0.9955\n0.9956\n0.9957\n0.9959\n0.9960\n0.9961\n0.9962\n0.9963\n0.9964\n\n\n2.7\n0.9965\n0.9966\n0.9967\n0.9968\n0.9969\n0.9970\n0.9971\n0.9972\n0.9973\n0.9974\n\n\n2.8\n0.9974\n0.9975\n0.9976\n0.9977\n0.9977\n0.9978\n0.9979\n0.9979\n0.9980\n0.9981\n\n\n2.9\n0.9981\n0.9982\n0.9982\n0.9983\n0.9984\n0.9984\n0.9985\n0.9985\n0.9986\n0.9986\n\n\n3.0\n0.9987\n0.9987\n0.9987\n0.9988\n0.9988\n0.9989\n0.9989\n0.9989\n0.9990\n0.9990\n\n\n3.1\n0.9990\n0.9991\n0.9991\n0.9991\n0.9992\n0.9992\n0.9992\n0.9992\n0.9993\n0.9993\n\n\n3.2\n0.9993\n0.9993\n0.9994\n0.9994\n0.9994\n0.9994\n0.9994\n0.9995\n0.9995\n0.9995\n\n\n3.3\n0.9995\n0.9995\n0.9995\n0.9996\n0.9996\n0.9996\n0.9996\n0.9996\n0.9996\n0.9997\n\n\n3.4\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9998\n\n\n3.5\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n\n\n3.6\n0.9998\n0.9998\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.7\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.8\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.9\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000"
+  },
+  {
+    "objectID": "materiais/tabelas/tabelas-estaticas.html#exemplo-de-uso",
+    "href": "materiais/tabelas/tabelas-estaticas.html#exemplo-de-uso",
+    "title": "Tabelas Estatísticas",
+    "section": "🧪 Exemplo de uso",
+    "text": "🧪 Exemplo de uso\nSuponha que desejamos calcular:\n[ P(Z 23) ]\nPassos: 1. Linha 1.2 2. Coluna 0.03 3. Valor encontrado na tabela\n📌 Esse valor representa a probabilidade acumulada até z = 1,23."
+  },
+  {
+    "objectID": "materiais/tabelas/tabelas-estaticas.html#versão-interativa-da-tabela",
+    "href": "materiais/tabelas/tabelas-estaticas.html#versão-interativa-da-tabela",
+    "title": "Tabela Z – Distribuição Normal Padrão",
+    "section": "🔗 Versão interativa da tabela",
+    "text": "🔗 Versão interativa da tabela\nPara consulta rápida, busca direta e visualização da região crítica:\n🖱️ 🔎 Consultar tabela Z interativa"
+  },
+  {
+    "objectID": "materiais/tabelas/tabelas-estaticas.html#conexão-com-o-r",
+    "href": "materiais/tabelas/tabelas-estaticas.html#conexão-com-o-r",
+    "title": "Tabelas Estatísticas",
+    "section": "🧠 Conexão com o R",
+    "text": "🧠 Conexão com o R\nA tabela Z nada mais é do que o resultado da função:\n\npnorm(1.23)\n\n[1] 0.8906514\n\n\nEm aplicações reais, prefira sempre o cálculo direto no R."
+  },
+  {
+    "objectID": "materiais/tabelas/tabelas-estaticas.html#o-que-é-a-distribuição-normal-padrão",
+    "href": "materiais/tabelas/tabelas-estaticas.html#o-que-é-a-distribuição-normal-padrão",
+    "title": "Tabela Z – Distribuição Normal Padrão",
+    "section": "📗 O que é a Distribuição Normal Padrão?",
+    "text": "📗 O que é a Distribuição Normal Padrão?\nUma variável aleatória Z segue a Distribuição Normal Padrão quando:\n\nmédia = 0\n\ndesvio-padrão = 1\n\nEssa distribuição é usada para padronizar valores, permitindo comparar observações de diferentes contextos usando a mesma escala."
+  },
+  {
+    "objectID": "materiais/tabelas/tabelas-estaticas.html#a-fórmula-do-valor-z",
+    "href": "materiais/tabelas/tabelas-estaticas.html#a-fórmula-do-valor-z",
+    "title": "Tabela Z – Distribuição Normal Padrão",
+    "section": "📐 A fórmula do valor Z",
+    "text": "📐 A fórmula do valor Z\nPara transformar um valor observado em um valor Z, usamos a fórmula:\n\\[\nZ = \\frac{X - \\mu}{\\sigma}\n\\]\nonde:\n\nX → valor observado\n\nμ → média da população (ou amostra)\n\nσ → desvio-padrão da população (ou amostra)\n\nZ → número de desvios-padrão que X está afastado da média\n\n\n📌 Interpretação do Z\n\nZ &gt; 0 → valor acima da média\n\nZ &lt; 0 → valor abaixo da média\n\nZ = 0 → valor igual à média"
+  },
+  {
+    "objectID": "materiais/tabelas/tabelas-estaticas.html#exemplo-prático-completo",
+    "href": "materiais/tabelas/tabelas-estaticas.html#exemplo-prático-completo",
+    "title": "Tabela Z – Distribuição Normal Padrão",
+    "section": "🧪 Exemplo prático completo",
+    "text": "🧪 Exemplo prático completo\nSuponha que:\n\nA altura média de uma população é 170 cm\nO desvio-padrão é 6 cm\nUma pessoa tem 182 cm de altura\n\n\nPasso 1 — Calcular o valor Z\n\\[\nZ = \\frac{182 - 170}{6} = \\frac{12}{6} = 2{,}00\n\\]\n👉 Esse valor está 2 desvios-padrão acima da média."
+  },
+  {
+    "objectID": "materiais/tabelas/tabelas-estaticas.html#o-que-a-tabela-z-mostra",
+    "href": "materiais/tabelas/tabelas-estaticas.html#o-que-a-tabela-z-mostra",
+    "title": "Tabela Z – Distribuição Normal Padrão",
+    "section": "📖 O que a Tabela Z mostra?",
+    "text": "📖 O que a Tabela Z mostra?\nA Tabela Z fornece a probabilidade acumulada:\n\\[\nP(Z \\le z)\n\\]\nOu seja: &gt; a área sob a curva normal à esquerda de um valor Z\n📌 Importante: - A tabela não mostra densidade - Ela mostra probabilidade acumulada"
+  },
+  {
+    "objectID": "materiais/tabelas/tabelas-estaticas.html#tabela-z-versão-estática",
+    "href": "materiais/tabelas/tabelas-estaticas.html#tabela-z-versão-estática",
+    "title": "Tabela Z – Distribuição Normal Padrão",
+    "section": "📊 Tabela Z (versão estática)",
+    "text": "📊 Tabela Z (versão estática)\n\nlinhas &lt;- seq(0.0, 3.9, by = 0.1)\ncolunas &lt;- seq(0.00, 0.09, by = 0.01)\n\ntabela_z &lt;- data.frame(z = linhas)\n\nfor (c in colunas) {\n  tabela_z[[sprintf(\"%.2f\", c)]] &lt;- pnorm(linhas + c)\n}\n\ntabela_z[, -1] &lt;- round(tabela_z[, -1], 4)\n\nknitr::kable(\n  tabela_z,\n  caption = \"Tabela Z – Distribuição Normal Padrão (P(Z ≤ z))\",\n  align = \"c\"\n)\n\n\nTabela Z – Distribuição Normal Padrão (P(Z ≤ z))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nz\n0.00\n0.01\n0.02\n0.03\n0.04\n0.05\n0.06\n0.07\n0.08\n0.09\n\n\n\n\n0.0\n0.5000\n0.5040\n0.5080\n0.5120\n0.5160\n0.5199\n0.5239\n0.5279\n0.5319\n0.5359\n\n\n0.1\n0.5398\n0.5438\n0.5478\n0.5517\n0.5557\n0.5596\n0.5636\n0.5675\n0.5714\n0.5753\n\n\n0.2\n0.5793\n0.5832\n0.5871\n0.5910\n0.5948\n0.5987\n0.6026\n0.6064\n0.6103\n0.6141\n\n\n0.3\n0.6179\n0.6217\n0.6255\n0.6293\n0.6331\n0.6368\n0.6406\n0.6443\n0.6480\n0.6517\n\n\n0.4\n0.6554\n0.6591\n0.6628\n0.6664\n0.6700\n0.6736\n0.6772\n0.6808\n0.6844\n0.6879\n\n\n0.5\n0.6915\n0.6950\n0.6985\n0.7019\n0.7054\n0.7088\n0.7123\n0.7157\n0.7190\n0.7224\n\n\n0.6\n0.7257\n0.7291\n0.7324\n0.7357\n0.7389\n0.7422\n0.7454\n0.7486\n0.7517\n0.7549\n\n\n0.7\n0.7580\n0.7611\n0.7642\n0.7673\n0.7704\n0.7734\n0.7764\n0.7794\n0.7823\n0.7852\n\n\n0.8\n0.7881\n0.7910\n0.7939\n0.7967\n0.7995\n0.8023\n0.8051\n0.8078\n0.8106\n0.8133\n\n\n0.9\n0.8159\n0.8186\n0.8212\n0.8238\n0.8264\n0.8289\n0.8315\n0.8340\n0.8365\n0.8389\n\n\n1.0\n0.8413\n0.8438\n0.8461\n0.8485\n0.8508\n0.8531\n0.8554\n0.8577\n0.8599\n0.8621\n\n\n1.1\n0.8643\n0.8665\n0.8686\n0.8708\n0.8729\n0.8749\n0.8770\n0.8790\n0.8810\n0.8830\n\n\n1.2\n0.8849\n0.8869\n0.8888\n0.8907\n0.8925\n0.8944\n0.8962\n0.8980\n0.8997\n0.9015\n\n\n1.3\n0.9032\n0.9049\n0.9066\n0.9082\n0.9099\n0.9115\n0.9131\n0.9147\n0.9162\n0.9177\n\n\n1.4\n0.9192\n0.9207\n0.9222\n0.9236\n0.9251\n0.9265\n0.9279\n0.9292\n0.9306\n0.9319\n\n\n1.5\n0.9332\n0.9345\n0.9357\n0.9370\n0.9382\n0.9394\n0.9406\n0.9418\n0.9429\n0.9441\n\n\n1.6\n0.9452\n0.9463\n0.9474\n0.9484\n0.9495\n0.9505\n0.9515\n0.9525\n0.9535\n0.9545\n\n\n1.7\n0.9554\n0.9564\n0.9573\n0.9582\n0.9591\n0.9599\n0.9608\n0.9616\n0.9625\n0.9633\n\n\n1.8\n0.9641\n0.9649\n0.9656\n0.9664\n0.9671\n0.9678\n0.9686\n0.9693\n0.9699\n0.9706\n\n\n1.9\n0.9713\n0.9719\n0.9726\n0.9732\n0.9738\n0.9744\n0.9750\n0.9756\n0.9761\n0.9767\n\n\n2.0\n0.9772\n0.9778\n0.9783\n0.9788\n0.9793\n0.9798\n0.9803\n0.9808\n0.9812\n0.9817\n\n\n2.1\n0.9821\n0.9826\n0.9830\n0.9834\n0.9838\n0.9842\n0.9846\n0.9850\n0.9854\n0.9857\n\n\n2.2\n0.9861\n0.9864\n0.9868\n0.9871\n0.9875\n0.9878\n0.9881\n0.9884\n0.9887\n0.9890\n\n\n2.3\n0.9893\n0.9896\n0.9898\n0.9901\n0.9904\n0.9906\n0.9909\n0.9911\n0.9913\n0.9916\n\n\n2.4\n0.9918\n0.9920\n0.9922\n0.9925\n0.9927\n0.9929\n0.9931\n0.9932\n0.9934\n0.9936\n\n\n2.5\n0.9938\n0.9940\n0.9941\n0.9943\n0.9945\n0.9946\n0.9948\n0.9949\n0.9951\n0.9952\n\n\n2.6\n0.9953\n0.9955\n0.9956\n0.9957\n0.9959\n0.9960\n0.9961\n0.9962\n0.9963\n0.9964\n\n\n2.7\n0.9965\n0.9966\n0.9967\n0.9968\n0.9969\n0.9970\n0.9971\n0.9972\n0.9973\n0.9974\n\n\n2.8\n0.9974\n0.9975\n0.9976\n0.9977\n0.9977\n0.9978\n0.9979\n0.9979\n0.9980\n0.9981\n\n\n2.9\n0.9981\n0.9982\n0.9982\n0.9983\n0.9984\n0.9984\n0.9985\n0.9985\n0.9986\n0.9986\n\n\n3.0\n0.9987\n0.9987\n0.9987\n0.9988\n0.9988\n0.9989\n0.9989\n0.9989\n0.9990\n0.9990\n\n\n3.1\n0.9990\n0.9991\n0.9991\n0.9991\n0.9992\n0.9992\n0.9992\n0.9992\n0.9993\n0.9993\n\n\n3.2\n0.9993\n0.9993\n0.9994\n0.9994\n0.9994\n0.9994\n0.9994\n0.9995\n0.9995\n0.9995\n\n\n3.3\n0.9995\n0.9995\n0.9995\n0.9996\n0.9996\n0.9996\n0.9996\n0.9996\n0.9996\n0.9997\n\n\n3.4\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9997\n0.9998\n\n\n3.5\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n0.9998\n\n\n3.6\n0.9998\n0.9998\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.7\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.8\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n0.9999\n\n\n3.9\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000\n1.0000"
+  },
+  {
+    "objectID": "materiais/tabelas/tabelas-estaticas.html#interpretando-o-resultado-do-exemplo",
+    "href": "materiais/tabelas/tabelas-estaticas.html#interpretando-o-resultado-do-exemplo",
+    "title": "Tabela Z – Distribuição Normal Padrão",
+    "section": "🧠 Interpretando o resultado do exemplo",
+    "text": "🧠 Interpretando o resultado do exemplo\nPara Z = 2,00, a tabela fornece aproximadamente:\n\\[\nP(Z \\le 2{,}00) \\approx 0{,}9772\n\\]\nIsso significa que: - Cerca de 97,72% da população tem valores menores ou iguais a 182 cm - Apenas 2,28% têm valores maiores"
+  },
+  {
+    "objectID": "materiais/tabelas/tabelas-estaticas.html#comparação-direta-com-o-r",
+    "href": "materiais/tabelas/tabelas-estaticas.html#comparação-direta-com-o-r",
+    "title": "Tabela Z – Distribuição Normal Padrão",
+    "section": "🔄 Comparação direta com o R",
+    "text": "🔄 Comparação direta com o R\nA Tabela Z nada mais é do que o resultado da função:\n\npnorm(2.00)\n\n[1] 0.9772499\n\n\n📌 Em análises reais: - use sempre o R - a tabela serve como apoio conceitual"
+  },
+  {
+    "objectID": "materiais/tabelas/tabelas-estaticas.html#observações-finais",
+    "href": "materiais/tabelas/tabelas-estaticas.html#observações-finais",
+    "title": "Tabela Z – Distribuição Normal Padrão",
+    "section": "📌 Observações finais",
+    "text": "📌 Observações finais\n\nA Tabela Z mostra probabilidade acumulada\nSempre calcule o valor Z antes de usar a tabela\nTabela ≠ substituto de cálculo\nEntender o processo evita erros conceituais comuns"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.html#testes-de-significância-para-mais-de-duas-amostras",
+    "href": "aulas/slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.html#testes-de-significância-para-mais-de-duas-amostras",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para mais de duas amostras",
+    "text": "Testes de significância para mais de duas amostras\n\nAnálise de variância (ANOVA)\n\nFinalidade\n\nVerificar se há diferença entre as médias de várias populações\n\nCondições\n\nDados com distribuição normal\nTodas as populações possuem as mesmas variâncias (homocedasticidade)\n\nTodas as amostras são aleatórias e independentes"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.html#testes-de-significância-para-mais-de-duas-amostras-1",
+    "href": "aulas/slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.html#testes-de-significância-para-mais-de-duas-amostras-1",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para mais de duas amostras",
+    "text": "Testes de significância para mais de duas amostras\n\n\n\nAnálise de variância (ANOVA)\n\nCalculamos os graus de liberdade\n\nDos tratamentos: \\(k-1\\)\nDo total: \\(n-1\\)\nDo resíduo: \\((n-1)-(k-1) = n-k\\)\n\nCalculamos o valor de correção (C)\n\n\\(C = \\frac{(\\sum{x})^2}{n}\\)\n\n\nA soma de quadrados total\n\n\\(SQT = \\sum{x^2 - C}\\)\n\nA soma de quadrados de tratamentos\n\n\\(SQT_r = \\sum{T^2 - C}\\)\n\n\n\n\n\n\n\n\nAmostras\n\n\nA\nB\nC\nD\n\n\n\n\n11\n8\n5\n4\n\n\n8\n5\n7\n4\n\n\n5\n2\n3\n2\n\n\n8\n5\n3\n0\n\n\n8\n5\n7\n0\n\n\n8\n5\n5\n2"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.html#testes-de-significância-para-mais-de-duas-amostras-2",
+    "href": "aulas/slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.html#testes-de-significância-para-mais-de-duas-amostras-2",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para mais de duas amostras",
+    "text": "Testes de significância para mais de duas amostras\n\n\n\nAnálise de variância (ANOVA)\n\nCalculamos os graus de liberdade\n\nDos tratamentos: \\(k-1\\)\nDo total: \\(n-1\\)\nDo resíduo: \\((n-1)-(k-1) = n-k\\)\n\nCalculamos o valor de correção (C)\n\n\\(C = \\frac{(\\sum{x})^2}{n}\\)\n\n\nA soma de quadrados total\n\n\\(SQT = \\sum{x^2 - C}\\)\n\nA soma de quadrados de tratamentos\n\n\\(SQT_r = \\sum{T^2 - C}\\)\n\n\n\n\n\n\n\n\nAmostras\n\n\nA\nB\nC\nD\n\n\n\n\n11\n8\n5\n4\n\n\n8\n5\n7\n4\n\n\n5\n2\n3\n2\n\n\n8\n5\n3\n0\n\n\n8\n5\n7\n0\n\n\n8\n5\n5\n2"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.html#testes-de-significância-para-mais-de-duas-amostras-3",
+    "href": "aulas/slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.html#testes-de-significância-para-mais-de-duas-amostras-3",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para mais de duas amostras",
+    "text": "Testes de significância para mais de duas amostras\n\n\n\nAnálise de variância (ANOVA)\n\nA soma dos quadrados de resíduo \n\\(SQR = SQT - SQT_R\\)\n\nO quadrado médio de tratamentos \n\\(QMTR = \\frac{SQT_R}{k-1}\\)\nO quadrado médio de resíduo\n\n\\(QMR = \\frac{SQR}{n-k}\\)\n\nO valor de F\n\n\\(F = \\frac{QMTR}{QMR}\\)\n\n\n\n\n\n\n\n\nAmostras\n\n\nA\nB\nC\nD\n\n\n\n\n11\n8\n5\n4\n\n\n8\n5\n7\n4\n\n\n5\n2\n3\n2\n\n\n8\n5\n3\n0\n\n\n8\n5\n7\n0\n\n\n8\n5\n5\n2"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.html#testes-de-significância-para-mais-de-duas-amostras-4",
+    "href": "aulas/slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.html#testes-de-significância-para-mais-de-duas-amostras-4",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para mais de duas amostras",
+    "text": "Testes de significância para mais de duas amostras\n\n\n\nAnálise de variância (ANOVA)\n\n\n\n\n\n\n\n\n\n\n\nAmostras\n\n\nA\nB\nC\nD\n\n\n\n\n11\n8\n5\n4\n\n\n8\n5\n7\n4\n\n\n5\n2\n3\n2\n\n\n8\n5\n3\n0\n\n\n8\n5\n7\n0\n\n\n8\n5\n5\n2"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.html#testes-de-significância-para-mais-de-duas-amostras-5",
+    "href": "aulas/slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.html#testes-de-significância-para-mais-de-duas-amostras-5",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para mais de duas amostras",
+    "text": "Testes de significância para mais de duas amostras\n\n\n\nAnálise de variância (ANOVA)\n\n\n\n\n\n\n\nComparamos com valor de Ftab\n\n\\(F &gt; F_{tab}\\) – Médias são diferentes\n\n7,06 &gt; 3,24\n\n\n\n\n\n\n\n\nAmostras\n\n\nA\nB\nC\nD\n\n\n\n\n11\n8\n5\n4\n\n\n8\n5\n7\n4\n\n\n5\n2\n3\n2\n\n\n8\n5\n3\n0\n\n\n8\n5\n7\n0\n\n\n8\n5\n5\n2"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.html#testes-de-significância-para-mais-de-duas-amostras-6",
+    "href": "aulas/slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.html#testes-de-significância-para-mais-de-duas-amostras-6",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para mais de duas amostras",
+    "text": "Testes de significância para mais de duas amostras\n\n\n\n- Análise de variância (ANOVA) - ANOVA demonstra que há diferença - Não demonstra onde estão as diferenças - Teste a posteriori - Tukey\n\n\n\n\n\\[\n𝑑.𝑚.𝑠=𝑞\\sqrt\\frac{𝑄𝑀R}{𝑟}\n\\]\n\n\n\n\n\nAmostras\n\n\nA\nB\nC\nD\n\n\n\n\n11\n8\n5\n4\n\n\n8\n5\n7\n4\n\n\n5\n2\n3\n2\n\n\n8\n5\n3\n0\n\n\n8\n5\n7\n0\n\n\n8\n5\n5\n2"
   }
 ]

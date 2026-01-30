@@ -1,0 +1,177 @@
+---
+title: "Tabela Z – Distribuição Normal Padrão"
+subtitle: "Como calcular, interpretar e usar a tabela"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+## 📘 Objetivo desta página
+
+Esta página tem como objetivo **ensinar o uso correto da Tabela Z**, explicando:
+
+- o que é a **Distribuição Normal Padrão**
+- como calcular o valor de **Z**
+- como **ler a tabela**
+- como **interpretar o resultado**
+- como **confirmar o valor usando o R**
+
+> 📌 Esta página é para **entender o método**.  
+> Para consulta rápida, use a **versão interativa** ao final.
+
+---
+
+## 📗 O que é a Distribuição Normal Padrão?
+
+Uma variável aleatória **Z** segue a **Distribuição Normal Padrão** quando:
+
+- média = 0  
+- desvio-padrão = 1  
+
+Essa distribuição é usada para **padronizar valores**, permitindo comparar observações de diferentes contextos usando a mesma escala.
+
+---
+
+## 📐 A fórmula do valor Z
+
+Para transformar um valor observado em um valor Z, usamos a fórmula:
+
+$$
+Z = \frac{X - \mu}{\sigma}
+$$
+
+onde:
+
+- **X** → valor observado  
+- **μ** → média da população (ou amostra)  
+- **σ** → desvio-padrão da população (ou amostra)  
+- **Z** → número de desvios-padrão que X está afastado da média  
+
+### 📌 Interpretação do Z
+- Z > 0 → valor acima da média  
+- Z < 0 → valor abaixo da média  
+- Z = 0 → valor igual à média  
+
+---
+
+## 🧪 Exemplo prático completo
+
+Suponha que:
+
+- A altura média de uma população é **170 cm**
+- O desvio-padrão é **6 cm**
+- Uma pessoa tem **182 cm** de altura
+
+### Passo 1 — Calcular o valor Z
+
+$$
+Z = \frac{182 - 170}{6} = \frac{12}{6} = 2{,}00
+$$
+
+👉 Esse valor está **2 desvios-padrão acima da média**.
+
+---
+
+## 📖 O que a Tabela Z mostra?
+
+A Tabela Z fornece a probabilidade acumulada:
+
+$$
+P(Z \le z)
+$$
+
+Ou seja:
+> **a área sob a curva normal à esquerda de um valor Z**
+
+📌 Importante:
+- A tabela **não mostra densidade**
+- Ela mostra **probabilidade acumulada**
+
+---
+
+## 📊 Como ler a Tabela Z
+
+Para um valor como **Z = 2,00**:
+
+- **Linha** → 2.0  
+- **Coluna** → 0.00  
+- **Valor da célula** → probabilidade acumulada  
+
+Esse valor representa:
+$$
+P(Z \le 2{,}00)
+$$
+
+---
+
+## 📊 Tabela Z (versão estática)
+
+```{r}
+linhas <- seq(0.0, 3.9, by = 0.1)
+colunas <- seq(0.00, 0.09, by = 0.01)
+
+tabela_z <- data.frame(z = linhas)
+
+for (c in colunas) {
+  tabela_z[[sprintf("%.2f", c)]] <- pnorm(linhas + c)
+}
+
+tabela_z[, -1] <- round(tabela_z[, -1], 4)
+
+knitr::kable(
+  tabela_z,
+  caption = "Tabela Z – Distribuição Normal Padrão (P(Z ≤ z))",
+  align = "c"
+)
+```
+
+---
+
+## 🧠 Interpretando o resultado do exemplo
+
+Para **Z = 2,00**, a tabela fornece aproximadamente:
+
+$$
+P(Z \le 2{,}00) \approx 0{,}9772
+$$
+
+Isso significa que:
+- Cerca de **97,72%** da população tem valores **menores ou iguais** a 182 cm
+- Apenas **2,28%** têm valores **maiores**
+
+---
+
+## 🔄 Comparação direta com o R
+
+A Tabela Z nada mais é do que o resultado da função:
+
+```{r}
+pnorm(2.00)
+```
+
+📌 Em análises reais:
+- **use sempre o R**
+- a tabela serve como **apoio conceitual**
+
+---
+
+## 🔗 Versão interativa da tabela
+
+Para **consulta rápida**, busca direta e visualização da região crítica:
+
+🖱️ **[🔎 Consultar tabela Z interativa](z-interativa.qmd)**
+
+---
+
+## 📌 Observações finais
+
+- A Tabela Z mostra **probabilidade acumulada**
+- Sempre calcule o **valor Z antes de usar a tabela**
+- Tabela ≠ substituto de cálculo
+- Entender o processo evita erros conceituais comuns

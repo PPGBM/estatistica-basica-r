@@ -1,0 +1,190 @@
+---
+title: "Tabelas Estatísticas"
+subtitle: "Consulta rápida para Estatística Básica"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    theme: cosmo
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+## 📘 Introdução
+
+Esta página reúne **tabelas estatísticas clássicas**, organizadas de forma **visual, clara e amigável**, para apoio às aulas e resolução de exercícios.
+
+Todas as tabelas são **geradas automaticamente em R**, garantindo:
+- Reprodutibilidade
+- Correção dos valores
+- Conexão direta com os testes estatísticos
+
+> 📌 **Importante**: as tabelas são ferramentas de apoio. Sempre que possível, confirme os valores usando as funções do R.
+
+---
+
+## 📗 Distribuição Normal Padrão (Tabela Z)
+
+Usada em:
+- Probabilidades com a normal padrão  
+- Testes Z  
+- Introdução aos testes de hipóteses  
+
+### Como ler
+- Linha: parte inteira e primeira casa decimal de *z*  
+- Coluna: segunda casa decimal  
+- Valor: **P(Z ≤ z)**  
+
+```{r}
+# Tabela Z – Distribuição Normal Padrão
+
+linhas <- seq(0.0, 3.9, by = 0.1)
+colunas <- seq(0.00, 0.09, by = 0.01)
+
+tabela_z <- data.frame(z = linhas)
+
+for (c in colunas) {
+  tabela_z[[sprintf("%.2f", c)]] <- pnorm(linhas + c)
+}
+
+tabela_z[, -1] <- round(tabela_z[, -1], 4)
+
+knitr::kable(
+  tabela_z,
+  caption = "Tabela Z – Distribuição Normal Padrão (P(Z ≤ z))",
+  align = "c"
+)
+```
+
+---
+
+## 📙 Distribuição t de Student – Teste t (duas amostras)
+
+Usada em:
+- Teste *t* para duas amostras independentes  
+- Intervalos de confiança para a média  
+
+### Observação didática
+Antes de aplicar o teste *t* clássico, costuma-se verificar se as variâncias podem ser consideradas iguais (teste F).
+
+```{r}
+# Tabela t de Student – Teste t bilateral
+
+gl <- c(1:10, 12, 15, 20, 30, 60, 120)
+
+conf <- c(
+  "90%" = 0.95,
+  "95%" = 0.975,
+  "99%" = 0.995
+)
+
+tabela_t <- data.frame(GL = gl)
+
+for (nome in names(conf)) {
+  tabela_t[[nome]] <- qt(conf[nome], df = gl)
+}
+
+tabela_t[, -1] <- round(tabela_t[, -1], 3)
+
+knitr::kable(
+  tabela_t,
+  caption = "Tabela t de Student – Teste t bilateral",
+  align = "c"
+)
+```
+
+---
+
+## 📕 Distribuição F – Valores críticos (α = 5%)
+
+Usada em:
+- Teste F para comparação de variâncias  
+- Verificação de homogeneidade antes do teste *t*  
+- ANOVA  
+
+### Como ler
+- Linhas: graus de liberdade do denominador (ν₂)  
+- Colunas: graus de liberdade do numerador (ν₁)  
+- Região crítica à direita: **F(0.95, ν₁, ν₂)**  
+
+```{r}
+# Tabela F – Valores críticos (α = 5%)
+
+gl_num <- 1:7
+gl_den <- 1:20
+
+tabela_f <- data.frame(`GL Den.` = gl_den)
+
+for (gln in gl_num) {
+  tabela_f[[paste0("GL Num ", gln)]] <- qf(0.95, df1 = gln, df2 = gl_den)
+}
+
+tabela_f[, -1] <- round(tabela_f[, -1], 2)
+
+knitr::kable(
+  tabela_f,
+  caption = "Tabela F – Valores críticos para α = 5%",
+  align = "c"
+)
+```
+
+---
+
+## 📓 Distribuição Qui-quadrado (χ²)
+
+Usada em:
+- Testes de independência  
+- Testes de aderência  
+- Intervalos de confiança para variância  
+
+### Região crítica à direita
+**χ²(1 − α, ν)**
+
+```{r}
+# Tabela Qui-quadrado – Valores críticos
+
+gl <- c(1:10, 12, 15, 20, 30, 60, 120)
+
+alpha <- c(
+  "10%" = 0.90,
+  "5%"  = 0.95,
+  "1%"  = 0.99
+)
+
+tabela_chi <- data.frame(GL = gl)
+
+for (nome in names(alpha)) {
+  tabela_chi[[nome]] <- qchisq(alpha[nome], df = gl)
+}
+
+tabela_chi[, -1] <- round(tabela_chi[, -1], 3)
+
+knitr::kable(
+  tabela_chi,
+  caption = "Tabela Qui-quadrado – Valores críticos",
+  align = "c"
+)
+```
+
+---
+
+## 🧠 Conexão direta com o R
+
+```{r}
+qnorm(0.975)
+qt(0.975, df = 16)
+qf(0.95, df1 = 3, df2 = 10)
+qchisq(0.95, df = 5)
+```
+
+---
+
+## 📌 Observações finais
+
+- As tabelas seguem o padrão de livros-texto clássicos  
+- Pequenas diferenças podem ocorrer por arredondamento  
+- Para análises reais, prefira sempre o cálculo direto no R  
+- Esta página pertence à aba **Materiais → Tabelas**
+

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Aulas – Estatística Básica com R</title>
+<title>Tabela Z – Versão Interativa – Estatística Básica com R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-e31584831b205ffbb2d98406f31c2a5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,6 +68,26 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Procurar"
   }
 }</script>
+<link href="../../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<link href="../../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+
+<script src="../../site_libs/datatables-binding-0.34.0/datatables.js"></script>
+
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+
+<link href="../../site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+
+<link href="../../site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+
+<script src="../../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+
+<link href="../../site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+
+<script src="../../site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+
 
 
 </head>
@@ -79,9 +99,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Estatística Básica com R</span>
     </a>
   </div>
@@ -92,23 +112,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Início</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../aulas/aulas.html" aria-current="page"> 
+    <a class="nav-link" href="../../aulas/aulas.html"> 
 <span class="menu-text">Aulas</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../exercicios.qmd"> 
+    <a class="nav-link" href="../../exercicios.qmd"> 
 <span class="menu-text">Exercícios</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../materiais.qmd"> 
+    <a class="nav-link" href="../../materiais.qmd"> 
 <span class="menu-text">Materiais</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../envio.html"> 
+    <a class="nav-link" href="../../envio.html"> 
 <span class="menu-text">Envio</span></a>
   </li>  
 </ul>
@@ -127,28 +147,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#revisão-de-estatística" id="toc-revisão-de-estatística" class="nav-link active" data-scroll-target="#revisão-de-estatística">Revisão de Estatística</a>
-  <ul class="collapse">
-  <li><a href="#apresentação-introdução-ao-curso" id="toc-apresentação-introdução-ao-curso" class="nav-link" data-scroll-target="#apresentação-introdução-ao-curso">Apresentação – Introdução ao Curso</a></li>
-  <li><a href="#aula-01-conceitos-básicos" id="toc-aula-01-conceitos-básicos" class="nav-link" data-scroll-target="#aula-01-conceitos-básicos">Aula 01 – Conceitos básicos</a></li>
-  <li><a href="#aula-02-conceitos-básicos" id="toc-aula-02-conceitos-básicos" class="nav-link" data-scroll-target="#aula-02-conceitos-básicos">Aula 02 – Conceitos básicos</a></li>
-  <li><a href="#aula-03-organizando-dados" id="toc-aula-03-organizando-dados" class="nav-link" data-scroll-target="#aula-03-organizando-dados">Aula 03 – Organizando dados</a></li>
-  <li><a href="#aula-04-estatística-descritiva" id="toc-aula-04-estatística-descritiva" class="nav-link" data-scroll-target="#aula-04-estatística-descritiva">Aula 04 – Estatística descritiva</a></li>
-  <li><a href="#aula-05-testes-de-hipóteses-e-significâncias" id="toc-aula-05-testes-de-hipóteses-e-significâncias" class="nav-link" data-scroll-target="#aula-05-testes-de-hipóteses-e-significâncias">Aula 05 – Testes de hipóteses e significâncias</a></li>
-  <li><a href="#aula-06-testes-de-hipótese-1" id="toc-aula-06-testes-de-hipótese-1" class="nav-link" data-scroll-target="#aula-06-testes-de-hipótese-1">Aula 06 – Testes de hipótese 1</a></li>
-  <li><a href="#aula-07-testes-de-hipótese-2" id="toc-aula-07-testes-de-hipótese-2" class="nav-link" data-scroll-target="#aula-07-testes-de-hipótese-2">Aula 07 – Testes de hipótese 2</a></li>
-  <li><a href="#aula-08-testes-de-hipótese-3" id="toc-aula-08-testes-de-hipótese-3" class="nav-link" data-scroll-target="#aula-08-testes-de-hipótese-3">Aula 08 – Testes de hipótese 3</a></li>
-  </ul></li>
-  <li><a href="#linguagem-r" id="toc-linguagem-r" class="nav-link" data-scroll-target="#linguagem-r">Linguagem R</a>
-  <ul class="collapse">
-  <li><a href="#aula-01-a-linguagem-r" id="toc-aula-01-a-linguagem-r" class="nav-link" data-scroll-target="#aula-01-a-linguagem-r">Aula 01 – A Linguagem R</a></li>
-  <li><a href="#aula-02-o-pacote-r" id="toc-aula-02-o-pacote-r" class="nav-link" data-scroll-target="#aula-02-o-pacote-r">Aula 02 – O pacote R</a></li>
-  <li><a href="#aula-03-objetos-e-dados" id="toc-aula-03-objetos-e-dados" class="nav-link" data-scroll-target="#aula-03-objetos-e-dados">Aula 03 – Objetos e Dados</a></li>
-  <li><a href="#aula-04-funções-e-objetos" id="toc-aula-04-funções-e-objetos" class="nav-link" data-scroll-target="#aula-04-funções-e-objetos">Aula 04 – Funções e objetos</a></li>
-  <li><a href="#aula-05-graficos-no-r" id="toc-aula-05-graficos-no-r" class="nav-link" data-scroll-target="#aula-05-graficos-no-r">Aula 05 – Graficos no R</a></li>
-  <li><a href="#aula-06-estatística-descritiva-no-r" id="toc-aula-06-estatística-descritiva-no-r" class="nav-link" data-scroll-target="#aula-06-estatística-descritiva-no-r">Aula 06 – Estatística descritiva no R</a></li>
-  <li><a href="#aula-07-testes-de-significância-em-r" id="toc-aula-07-testes-de-significância-em-r" class="nav-link" data-scroll-target="#aula-07-testes-de-significância-em-r">Aula 07 – Testes de significância em R</a></li>
-  </ul></li>
+  <li><a href="#consulta-rápida-tabela-z" id="toc-consulta-rápida-tabela-z" class="nav-link active" data-scroll-target="#consulta-rápida-tabela-z">🔎 Consulta rápida – Tabela Z</a></li>
+  <li><a href="#tabela-z-interativa" id="toc-tabela-z-interativa" class="nav-link" data-scroll-target="#tabela-z-interativa">📊 Tabela Z interativa</a></li>
+  <li><a href="#região-crítica-visualização-gráfica" id="toc-região-crítica-visualização-gráfica" class="nav-link" data-scroll-target="#região-crítica-visualização-gráfica">📈 Região crítica – visualização gráfica</a></li>
+  <li><a href="#voltar-para-a-versão-didática" id="toc-voltar-para-a-versão-didática" class="nav-link" data-scroll-target="#voltar-para-a-versão-didática">🔙 Voltar para a versão didática</a></li>
   </ul>
 </nav>
     </div>
@@ -157,7 +159,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Aulas</h1>
+<h1 class="title">Tabela Z – Versão Interativa</h1>
+<p class="subtitle lead">Distribuição Normal Padrão</p>
 </div>
 
 
@@ -174,195 +177,42 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Aulas da disciplina</p>
-<p>Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.</p>
-<hr>
-<section id="revisão-de-estatística" class="level2">
-<h2 class="anchored" data-anchor-id="revisão-de-estatística">Revisão de Estatística</h2>
-<hr>
-<section id="apresentação-introdução-ao-curso" class="level3">
-<h3 class="anchored" data-anchor-id="apresentação-introdução-ao-curso">Apresentação – Introdução ao Curso</h3>
-<ul>
-<li>Apresentação do curso<br>
-</li>
-<li>Conteúdos programáticos<br>
-</li>
-<li>Tipografia do curso</li>
-</ul>
-<p><a href="../aulas/slides/aula-aps-tipografia.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
+<section id="consulta-rápida-tabela-z" class="level2">
+<h2 class="anchored" data-anchor-id="consulta-rápida-tabela-z">🔎 Consulta rápida – Tabela Z</h2>
+<p>Use esta página para <strong>consultar valores rapidamente</strong> durante a resolução de exercícios.</p>
 <hr>
 </section>
-<section id="aula-01-conceitos-básicos" class="level3">
-<h3 class="anchored" data-anchor-id="aula-01-conceitos-básicos">Aula 01 – Conceitos básicos</h3>
-<ul>
-<li>O que é a estatística</li>
-<li>O que são Dados</li>
-<li>Amostragem e generalização</li>
-<li>Tipos de dados</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-1-dados.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
+<section id="tabela-z-interativa" class="level2">
+<h2 class="anchored" data-anchor-id="tabela-z-interativa">📊 Tabela Z interativa</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-3906253e6e3943e334c0" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-3906253e6e3943e334c0">{"x":{"filter":"none","vertical":false,"data":[[0,0.1,0.2,0.3,0.4,0.5,0.6000000000000001,0.7000000000000001,0.8,0.9,1,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,2,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,3,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9],[0.5,0.5397999999999999,0.5793,0.6179,0.6554,0.6915,0.7257,0.758,0.7881,0.8159,0.8413,0.8643,0.8849,0.9032,0.9192,0.9332,0.9452,0.9554,0.9641,0.9713000000000001,0.9772,0.9821,0.9861,0.9893,0.9918,0.9938,0.9953,0.9965000000000001,0.9974,0.9981,0.9987,0.999,0.9993,0.9995000000000001,0.9997,0.9998,0.9998,0.9999,0.9999,1],[0.504,0.5438,0.5832000000000001,0.6217,0.6591,0.695,0.7291,0.7611,0.791,0.8186,0.8438,0.8665,0.8869,0.9049,0.9207,0.9345,0.9463,0.9564,0.9649,0.9719,0.9778,0.9826,0.9864000000000001,0.9896,0.992,0.994,0.9955000000000001,0.9966,0.9975000000000001,0.9982,0.9987,0.9991,0.9993,0.9995000000000001,0.9997,0.9998,0.9998,0.9999,0.9999,1],[0.508,0.5478,0.5871,0.6254999999999999,0.6627999999999999,0.6985,0.7324000000000001,0.7642,0.7939000000000001,0.8212,0.8461,0.8686,0.8888,0.9066,0.9222,0.9357,0.9474,0.9573,0.9656,0.9726,0.9782999999999999,0.983,0.9868,0.9898,0.9922,0.9941,0.9956,0.9967,0.9976,0.9982,0.9987,0.9991,0.9994,0.9995000000000001,0.9997,0.9998,0.9999,0.9999,0.9999,1],[0.512,0.5517,0.591,0.6293,0.6664,0.7019,0.7357,0.7673,0.7967,0.8238,0.8485,0.8708,0.8907,0.9082,0.9236,0.9370000000000001,0.9484,0.9582000000000001,0.9664,0.9732,0.9788,0.9834000000000001,0.9871,0.9901,0.9925,0.9943,0.9957,0.9968,0.9977,0.9983,0.9988,0.9991,0.9994,0.9996,0.9997,0.9998,0.9999,0.9999,0.9999,1],[0.516,0.5557,0.5948,0.6331,0.67,0.7054,0.7389,0.7704,0.7995,0.8264,0.8508,0.8729,0.8925,0.9099,0.9251,0.9382,0.9495,0.9591,0.9671,0.9738,0.9792999999999999,0.9838,0.9875,0.9903999999999999,0.9927,0.9945000000000001,0.9959,0.9969,0.9977,0.9984,0.9988,0.9992,0.9994,0.9996,0.9997,0.9998,0.9999,0.9999,0.9999,1],[0.5199,0.5596,0.5987,0.6368,0.6736,0.7088,0.7422,0.7734,0.8023,0.8289,0.8531,0.8749,0.8944,0.9115,0.9265,0.9394,0.9505,0.9599,0.9678,0.9744,0.9798,0.9842,0.9878,0.9906,0.9929,0.9946,0.996,0.997,0.9978,0.9984,0.9989,0.9992,0.9994,0.9996,0.9997,0.9998,0.9999,0.9999,0.9999,1],[0.5239,0.5636,0.6026,0.6405999999999999,0.6772,0.7123,0.7454,0.7764,0.8051,0.8315,0.8554,0.877,0.8962,0.9131,0.9278999999999999,0.9406,0.9515,0.9608,0.9686,0.975,0.9802999999999999,0.9846,0.9881,0.9909,0.9931,0.9948,0.9961,0.9971,0.9979,0.9985000000000001,0.9989,0.9992,0.9994,0.9996,0.9997,0.9998,0.9999,0.9999,0.9999,1],[0.5279,0.5675,0.6064000000000001,0.6443,0.6808,0.7157,0.7486,0.7794,0.8078,0.834,0.8577,0.879,0.898,0.9147,0.9292,0.9418,0.9525,0.9616,0.9693000000000001,0.9756,0.9808,0.985,0.9883999999999999,0.9911,0.9932,0.9949,0.9962,0.9972,0.9979,0.9985000000000001,0.9989,0.9992,0.9995000000000001,0.9996,0.9997,0.9998,0.9999,0.9999,0.9999,1],[0.5319,0.5714,0.6103,0.648,0.6844,0.719,0.7517,0.7823,0.8106,0.8365,0.8599,0.881,0.8997000000000001,0.9162,0.9306,0.9429,0.9535,0.9625,0.9699,0.9761,0.9812,0.9854000000000001,0.9887,0.9913,0.9933999999999999,0.9951,0.9963,0.9973,0.998,0.9986,0.999,0.9993,0.9995000000000001,0.9996,0.9997,0.9998,0.9999,0.9999,0.9999,1],[0.5359,0.5753,0.6141,0.6516999999999999,0.6879,0.7224,0.7549,0.7852,0.8133,0.8389,0.8621,0.883,0.9015,0.9177,0.9319,0.9441000000000001,0.9545,0.9633,0.9706,0.9767,0.9817,0.9857,0.989,0.9916,0.9936,0.9952,0.9964,0.9974,0.9981,0.9986,0.999,0.9993,0.9995000000000001,0.9997,0.9998,0.9998,0.9999,0.9999,0.9999,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>z<\/th>\n      <th>0.00<\/th>\n      <th>0.01<\/th>\n      <th>0.02<\/th>\n      <th>0.03<\/th>\n      <th>0.04<\/th>\n      <th>0.05<\/th>\n      <th>0.06<\/th>\n      <th>0.07<\/th>\n      <th>0.08<\/th>\n      <th>0.09<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"scrollX":true,"searching":true,"columnDefs":[{"className":"dt-right","targets":[0,1,2,3,4,5,6,7,8,9,10]},{"name":"z","targets":0},{"name":"0.00","targets":1},{"name":"0.01","targets":2},{"name":"0.02","targets":3},{"name":"0.03","targets":4},{"name":"0.04","targets":5},{"name":"0.05","targets":6},{"name":"0.06","targets":7},{"name":"0.07","targets":8},{"name":"0.08","targets":9},{"name":"0.09","targets":10}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 <hr>
 </section>
-<section id="aula-02-conceitos-básicos" class="level3">
-<h3 class="anchored" data-anchor-id="aula-02-conceitos-básicos">Aula 02 – Conceitos básicos</h3>
-<ul>
-<li>Planejando experimentos</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-2-planejando.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
+<section id="região-crítica-visualização-gráfica" class="level2">
+<h2 class="anchored" data-anchor-id="região-crítica-visualização-gráfica">📈 Região crítica – visualização gráfica</h2>
+<p>Selecione um valor de <strong>z</strong> para visualizar a área acumulada.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="z-interativa_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>📌 A área sombreada representa:</p>
+<p>[ P(Z z) ]</p>
 <hr>
 </section>
-<section id="aula-03-organizando-dados" class="level3">
-<h3 class="anchored" data-anchor-id="aula-03-organizando-dados">Aula 03 – Organizando dados</h3>
-<ul>
-<li>Tabelas do contingência</li>
-<li>Distribuição de frequências</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-3-organizando.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-04-estatística-descritiva" class="level3">
-<h3 class="anchored" data-anchor-id="aula-04-estatística-descritiva">Aula 04 – Estatística descritiva</h3>
-<ul>
-<li>Medidas de tendência central</li>
-<li>Medidas de dispersão</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-4-descritiva.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-05-testes-de-hipóteses-e-significâncias" class="level3">
-<h3 class="anchored" data-anchor-id="aula-05-testes-de-hipóteses-e-significâncias">Aula 05 – Testes de hipóteses e significâncias</h3>
-<ul>
-<li>O que são testes de hipóteses</li>
-<li>Definições
-<ul>
-<li>Hipótese nula e alternativa</li>
-<li>Erro tipo I e II</li>
-<li>Nível de significância</li>
-<li>Poder do teste</li>
-<li>Unicaudal e bicaudal</li>
-</ul></li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-5-testes-de-hipoteses.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-06-testes-de-hipótese-1" class="level3">
-<h3 class="anchored" data-anchor-id="aula-06-testes-de-hipótese-1">Aula 06 – Testes de hipótese 1</h3>
-<ul>
-<li>Estatística Paramétrica</li>
-<li>Testes de significância para uma amostra</li>
-<li>Qui-quadrado</li>
-<li>Teste T para uma amostra</li>
-<li>Teste T para duas amostras independentes</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-07-testes-de-hipótese-2" class="level3">
-<h3 class="anchored" data-anchor-id="aula-07-testes-de-hipótese-2">Aula 07 – Testes de hipótese 2</h3>
-<ul>
-<li>Estatística paramétrica</li>
-<li>Testes de significância para mais de duas amostras</li>
-<li>ANOVA</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-08-testes-de-hipótese-3" class="level3">
-<h3 class="anchored" data-anchor-id="aula-08-testes-de-hipótese-3">Aula 08 – Testes de hipótese 3</h3>
-<ul>
-<li>Estatística não paramétrica</li>
-<li>Mann-Whitney</li>
-<li>Kruskal-Wallis</li>
-</ul>
-<p>➡️ Aula em breve</p>
-<hr>
-</section>
-</section>
-<section id="linguagem-r" class="level2">
-<h2 class="anchored" data-anchor-id="linguagem-r">Linguagem R</h2>
-<hr>
-<section id="aula-01-a-linguagem-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-01-a-linguagem-r">Aula 01 – A Linguagem R</h3>
-<ul>
-<li>O R é para mim?</li>
-<li>A linguagem R</li>
-<li>Um pouco de história…</li>
-<li>Não tenha medo do erro</li>
-<li>R x Python</li>
-</ul>
-<p>➡️ Aula em breve</p>
-<hr>
-</section>
-<section id="aula-02-o-pacote-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-02-o-pacote-r">Aula 02 – O pacote R</h3>
-<ul>
-<li>O pacote R</li>
-<li>RStudio</li>
-<li>Comandos Básicos</li>
-<li>Pacotes</li>
-<li>O R como calculadora</li>
-<li>Iniciando em objetos</li>
-</ul>
-<p>➡️ Aula em breve</p>
-<hr>
-</section>
-<section id="aula-03-objetos-e-dados" class="level3">
-<h3 class="anchored" data-anchor-id="aula-03-objetos-e-dados">Aula 03 – Objetos e Dados</h3>
-<ul>
-<li>Atribuição</li>
-<li>Nomeando objetos</li>
-<li>Utilizando objetos em R</li>
-<li>Tipos de dados em R</li>
-<li>Alguns comandos</li>
-</ul>
-<p>➡️ Aula em breve</p>
-<hr>
-</section>
-<section id="aula-04-funções-e-objetos" class="level3">
-<h3 class="anchored" data-anchor-id="aula-04-funções-e-objetos">Aula 04 – Funções e objetos</h3>
-<ul>
-<li>Funções</li>
-<li>Criando funções</li>
-<li>Mais sobre objetos</li>
-<li>Estruturas de dados</li>
-</ul>
-<p>➡️ Aula em breve</p>
-<hr>
-</section>
-<section id="aula-05-graficos-no-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-05-graficos-no-r">Aula 05 – Graficos no R</h3>
-<ul>
-<li>Como funcionam gráficos no R</li>
-<li>Tipos de gráficos</li>
-<li>Parâmetros gráficos</li>
-</ul>
-<p>➡️ Aula em breve</p>
-</section>
-<section id="aula-06-estatística-descritiva-no-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-06-estatística-descritiva-no-r">Aula 06 – Estatística descritiva no R</h3>
-<ul>
-<li>Estatística descritiva</li>
-<li>Medidas de tendência central</li>
-<li>Medidas de dispersão</li>
-</ul>
-<p>➡️ Aula em breve</p>
-</section>
-<section id="aula-07-testes-de-significância-em-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-07-testes-de-significância-em-r">Aula 07 – Testes de significância em R</h3>
-<ul>
-<li>Testes de significância
-<ul>
-<li>Teste t</li>
-<li>Mann-Whitney</li>
-<li>Qui-quadrado</li>
-<li>Análise de Variância</li>
-<li>Kruskall-Wallis</li>
-</ul></li>
-</ul>
-<p>➡️ Aula em breve</p>
+<section id="voltar-para-a-versão-didática" class="level2">
+<h2 class="anchored" data-anchor-id="voltar-para-a-versão-didática">🔙 Voltar para a versão didática</h2>
+<p>⬅️ <strong><a href="../../materiais/tabelas/tabelas-estaticas.html">Voltar para a tabela explicada</a></strong></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

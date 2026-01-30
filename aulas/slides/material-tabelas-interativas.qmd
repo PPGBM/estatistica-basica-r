@@ -1,0 +1,206 @@
+---
+title: "Tabelas Estatísticas"
+subtitle: "Consulta rápida para Estatística Básica"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    theme: cosmo
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r}
+library(DT)
+library(knitr)
+```
+
+## 📘 Introdução
+
+Esta página reúne **tabelas estatísticas clássicas**, organizadas de forma **visual, clara e amigável**, para apoio às aulas e resolução de exercícios.
+
+As tabelas são apresentadas em duas formas:
+- 📘 **Estática** → estilo livro-texto (para aprender)
+- 🖱️ **Interativa** → para consulta rápida no site
+
+---
+
+## 📗 Distribuição Normal Padrão (Tabela Z)
+
+### 📘 Versão estática
+
+```{r}
+linhas <- seq(0.0, 3.9, by = 0.1)
+colunas <- seq(0.00, 0.09, by = 0.01)
+
+tabela_z <- data.frame(z = linhas)
+
+for (c in colunas) {
+  tabela_z[[sprintf("%.2f", c)]] <- pnorm(linhas + c)
+}
+
+tabela_z[, -1] <- round(tabela_z[, -1], 4)
+
+knitr::kable(
+  tabela_z,
+  caption = "Tabela Z – Distribuição Normal Padrão (P(Z ≤ z))",
+  align = "c"
+)
+```
+
+### 🖱️ Versão interativa
+
+```{r}
+DT::datatable(
+  tabela_z,
+  options = list(
+    pageLength = 10,
+    scrollX = TRUE
+  ),
+  caption = "Tabela Z – versão interativa"
+)
+```
+
+---
+
+## 📙 Distribuição t de Student – Teste t (duas amostras)
+
+### 📘 Versão estática
+
+```{r}
+gl <- c(1:10, 12, 15, 20, 30, 60, 120)
+
+conf <- c(
+  "90%" = 0.95,
+  "95%" = 0.975,
+  "99%" = 0.995
+)
+
+tabela_t <- data.frame(GL = gl)
+
+for (nome in names(conf)) {
+  tabela_t[[nome]] <- qt(conf[nome], df = gl)
+}
+
+tabela_t[, -1] <- round(tabela_t[, -1], 3)
+
+knitr::kable(
+  tabela_t,
+  caption = "Tabela t de Student – Teste t bilateral",
+  align = "c"
+)
+```
+
+### 🖱️ Versão interativa
+
+```{r}
+DT::datatable(
+  tabela_t,
+  options = list(
+    pageLength = 10
+  ),
+  caption = "Tabela t – versão interativa"
+)
+```
+
+---
+
+## 📕 Distribuição F – Valores críticos (α = 5%)
+
+### 📘 Versão estática
+
+```{r}
+gl_num <- 1:7
+gl_den <- 1:20
+
+tabela_f <- data.frame(GL_Den = gl_den)
+
+for (gln in gl_num) {
+  tabela_f[[paste0("GL_Num_", gln)]] <- qf(0.95, df1 = gln, df2 = gl_den)
+}
+
+tabela_f[, -1] <- round(tabela_f[, -1], 2)
+
+knitr::kable(
+  tabela_f,
+  caption = "Tabela F – Valores críticos para α = 5%",
+  align = "c"
+)
+```
+
+### 🖱️ Versão interativa
+
+```{r}
+DT::datatable(
+  tabela_f,
+  options = list(
+    pageLength = 10,
+    scrollX = TRUE
+  ),
+  caption = "Tabela F – versão interativa"
+)
+```
+
+---
+
+## 📓 Distribuição Qui-quadrado (χ²)
+
+### 📘 Versão estática
+
+```{r}
+gl <- c(1:10, 12, 15, 20, 30, 60, 120)
+
+alpha <- c(
+  "10%" = 0.90,
+  "5%"  = 0.95,
+  "1%"  = 0.99
+)
+
+tabela_chi <- data.frame(GL = gl)
+
+for (nome in names(alpha)) {
+  tabela_chi[[nome]] <- qchisq(alpha[nome], df = gl)
+}
+
+tabela_chi[, -1] <- round(tabela_chi[, -1], 3)
+
+knitr::kable(
+  tabela_chi,
+  caption = "Tabela Qui-quadrado – Valores críticos",
+  align = "c"
+)
+```
+
+### 🖱️ Versão interativa
+
+```{r}
+DT::datatable(
+  tabela_chi,
+  options = list(
+    pageLength = 10
+  ),
+  caption = "Tabela Qui-quadrado – versão interativa"
+)
+```
+
+---
+
+## 🧠 Conexão direta com o R
+
+```{r}
+qnorm(0.975)
+qt(0.975, df = 16)
+qf(0.95, df1 = 3, df2 = 10)
+qchisq(0.95, df = 5)
+```
+
+---
+
+## 📌 Observações finais
+
+- Versões interativas são **apenas para consulta**
+- Em provas e exercícios, use a versão estática
+- Em análises reais, prefira sempre o cálculo direto no R
+- Página pertencente à aba **Materiais → Tabelas**

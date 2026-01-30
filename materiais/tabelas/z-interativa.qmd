@@ -1,0 +1,86 @@
+---
+title: "Tabela Z – Versão Interativa"
+subtitle: "Distribuição Normal Padrão"
+format:
+  html:
+    theme: cosmo
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+library(DT)
+```
+
+## 🔎 Consulta rápida – Tabela Z
+
+Use esta página para **consultar valores rapidamente** durante a resolução de exercícios.
+
+---
+
+## 📊 Tabela Z interativa
+
+```{r}
+linhas <- seq(0.0, 3.9, by = 0.1)
+colunas <- seq(0.00, 0.09, by = 0.01)
+
+tabela_z <- data.frame(z = linhas)
+
+for (c in colunas) {
+  tabela_z[[sprintf("%.2f", c)]] <- round(pnorm(linhas + c), 4)
+}
+
+datatable(
+  tabela_z,
+  options = list(
+    pageLength = 10,
+    scrollX = TRUE,
+    searching = TRUE
+  ),
+  rownames = FALSE
+)
+```
+
+---
+
+## 📈 Região crítica – visualização gráfica
+
+Selecione um valor de **z** para visualizar a área acumulada.
+
+```{r}
+z_val <- 1.23
+
+curve(
+  dnorm(x),
+  from = -4,
+  to = 4,
+  lwd = 2,
+  ylab = "Densidade",
+  xlab = "z",
+  main = paste("Distribuição Normal Padrão – z =", z_val)
+)
+
+x_seq <- seq(-4, z_val, length.out = 500)
+polygon(
+  c(x_seq, rev(x_seq)),
+  c(dnorm(x_seq), rep(0, length(x_seq))),
+  col = rgb(0.2, 0.4, 0.8, 0.4),
+  border = NA
+)
+
+abline(v = z_val, col = "red", lwd = 2)
+```
+
+📌 A área sombreada representa:
+
+\[
+P(Z \le z)
+\]
+
+---
+
+## 🔙 Voltar para a versão didática
+
+⬅️ **[Voltar para a tabela explicada](tabelas-estaticas.qmd)**
