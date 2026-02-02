@@ -1,0 +1,13 @@
+/* Rodapé fixo em todos os slides */
+.reveal .slides::after {
+  content: "© Alexandre Kassuga — Estatística Básica com R";
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+
+  font-size: 0.6em;
+  color: rgba(0, 0, 0, 0.4);
+
+  pointer-events: none;
+  z-index: 9999;
+}

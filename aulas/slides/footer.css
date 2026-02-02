@@ -1,0 +1,24 @@
+.reveal .slides::after {
+  content: "© kassuga.ad — Estatística Básica com R";
+  position: fixed;
+  bottom: 10px;
+  left: 60px;
+
+  font-size: 0.6em;
+  color: rgba(100, 100, 100, 0.4);
+}
+
+.reveal .slides::before {
+  content: "";
+  position: fixed;
+  bottom: 8px;
+  left: 20px;
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url("logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
