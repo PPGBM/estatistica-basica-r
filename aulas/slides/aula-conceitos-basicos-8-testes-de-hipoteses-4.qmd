@@ -1,0 +1,316 @@
+---
+title: "Revisão de conceitos básicos"
+subtitle: "Testes de hipóteses"
+author: "Dr. Alexandre Dias Kassuga"
+format:
+  revealjs:
+    theme: simple
+    css: slides.css
+    highlight-style: monokai
+    slide-number: true
+    format: wide
+---
+
+## Testes de significância para mais de duas amostras
+
+-   Análise de variância (ANOVA)
+    -   Finalidade
+        -   Verificar se há diferença entre as médias de várias populações
+    -   Condições
+        -   Dados com distribuição normal
+        -   Todas as populações possuem as mesmas variâncias (homocedasticidade)
+    -   Todas as amostras são aleatórias e independentes
+
+
+
+
+
+## Testes de significância para mais de duas amostras
+
+:::: {.columns}
+
+::: {.column width="80%"}
+
+-   Análise de variância (ANOVA)
+    -   Calculamos os graus de liberdade
+        -   Dos tratamentos: $k-1$
+        -   Do total: $n-1$
+        -   Do resíduo: $(n-1)-(k-1) = n-k$
+    -   Calculamos o valor de correção (C)\
+    \
+     $C = \frac{(\sum{x})^2}{n}$ \
+     \
+    - A soma de quadrados total\
+    \
+     $SQT = \sum{x^2 - C}$
+     \
+    - A soma de quadrados de tratamentos\
+    \
+     $SQT_r = \sum{T^2 - C}$
+
+
+:::
+
+::: {.column width="20%"}
+
+\
+\
+\
+
+| A   | B   | C   | D   |
+|-----|-----|-----|-----|
+| 11  | 8   | 5   | 4   |
+| 8   | 5   | 7   | 4   |
+| 5   | 2   | 3   | 2   |
+| 8   | 5   | 3   | 0   |
+| 8   | 5   | 7   | 0   |
+|**8**|**5**|**5**|**2**|
+
+
+: Amostras
+
+:::
+
+::::
+
+
+## Testes de significância para mais de duas amostras
+
+:::: {.columns}
+
+::: {.column width="80%"}
+
+-   Análise de variância (ANOVA)
+    -   Calculamos os graus de liberdade
+        -   Dos tratamentos: $k-1$
+        -   Do total: $n-1$
+        -   Do resíduo: $(n-1)-(k-1) = n-k$
+    -   Calculamos o valor de correção (C)\
+    \
+     $C = \frac{(\sum{x})^2}{n}$ \
+     \
+    - A soma de quadrados total\
+    \
+     $SQT = \sum{x^2 - C}$
+     \
+    - A soma de quadrados de tratamentos\
+    \
+     $SQT_r = \sum{T^2 - C}$
+
+
+:::
+
+::: {.column width="20%"}
+
+\
+\
+\
+
+| A   | B   | C   | D   |
+|-----|-----|-----|-----|
+|11   | 8   | 5   | 4   |
+| 8   | 5   | 7   | 4   |
+| 5   | 2   | 3   | 2   |
+| 8   | 5   | 3   | 0   |
+| 8   | 5   | 7   | 0   |
+|**8**|**5**|**5**|**2**|
+
+
+: Amostras
+
+:::
+
+::::
+
+::: {.absolute top="185" left="580"}
+
+![](figuras/r-repeticoes.png){width="70%"}
+:::
+
+
+::: {.absolute top="87" right="-140" width="350"}
+
+![](figuras/k-tratamentos.png){}
+
+:::
+
+
+## Testes de significância para mais de duas amostras
+
+:::: {.columns}
+
+::: {.column width="80%"}
+
+-   Análise de variância (ANOVA)
+    - A soma dos quadrados de resíduo\ 
+    
+       $SQR = SQT - SQT_R$\
+       
+    - O quadrado médio de tratamentos\ 
+    
+        $QMTR = \frac{SQT_R}{k-1}$ 
+        
+    - O quadrado médio de resíduo\
+    
+        $QMR = \frac{SQR}{n-k}$\
+    
+    - O valor de F\
+    
+        $F = \frac{QMTR}{QMR}$\
+    
+
+:::
+
+::: {.column width="20%"}
+
+\
+\
+
+| A   | B   | C   | D   |
+|-----|-----|-----|-----|
+|11   | 8   | 5   | 4   |
+| 8   | 5   | 7   | 4   |
+| 5   | 2   | 3   | 2   |
+| 8   | 5   | 3   | 0   |
+| 8   | 5   | 7   | 0   |
+|**8**|**5**|**5**|**2**|
+
+
+: Amostras
+
+
+:::
+
+::::
+
+
+
+
+## Testes de significância para mais de duas amostras
+
+:::: {.columns}
+
+::: {.column width="80%"}
+
+-   Análise de variância (ANOVA)
+
+\
+\
+\
+
+![](figuras/anova-causas-var.png)
+
+:::
+
+::: {.column width="20%"}
+
+\
+\
+
+| A   | B   | C   | D   |
+|-----|-----|-----|-----|
+|11   | 8   | 5   | 4   |
+| 8   | 5   | 7   | 4   |
+| 5   | 2   | 3   | 2   |
+| 8   | 5   | 3   | 0   |
+| 8   | 5   | 7   | 0   |
+|**8**|**5**|**5**|**2**|
+
+
+: Amostras
+
+
+:::
+
+::::
+
+
+
+
+## Testes de significância para mais de duas amostras
+
+:::: {.columns}
+
+::: {.column width="80%"}
+
+-   Análise de variância (ANOVA)
+
+\
+\
+\
+
+![](figuras/anova-causas-var-n.png)
+
+
+- Comparamos com valor de Ftab
+  - $F > F_{tab}$ – Médias são diferentes
+    - 7,06 > 3,24
+:::
+
+::: {.column width="20%"}
+
+\
+\
+
+| A   | B   | C   | D   |
+|-----|-----|-----|-----|
+|11   | 8   | 5   | 4   |
+| 8   | 5   | 7   | 4   |
+| 5   | 2   | 3   | 2   |
+| 8   | 5   | 3   | 0   |
+| 8   | 5   | 7   | 0   |
+|**8**|**5**|**5**|**2**|
+
+
+: Amostras
+
+
+:::
+
+::::
+
+
+## Testes de significância para mais de duas amostras
+
+:::: {.columns}
+
+::: {.column width="80%"}
+
+\
+-   Análise de variância (ANOVA)
+    - ANOVA demonstra que há diferença
+    - Não demonstra onde estão as diferenças
+    - Teste a posteriori
+      - Tukey
+      
+\
+\
+\
+
+$$
+𝑑.𝑚.𝑠=𝑞\sqrt\frac{𝑄𝑀R}{𝑟}
+$$
+
+:::
+
+::: {.column width="20%"}
+
+\
+\
+
+| A   | B   | C   | D   |
+|-----|-----|-----|-----|
+|11   | 8   | 5   | 4   |
+| 8   | 5   | 7   | 4   |
+| 5   | 2   | 3   | 2   |
+| 8   | 5   | 3   | 0   |
+| 8   | 5   | 7   | 0   |
+|**8**|**5**|**5**|**2**|
+
+
+: Amostras
+
+
+:::
+
+::::
