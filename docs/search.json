@@ -1621,7 +1621,7 @@
     "href": "aulas/aulas.html#revisão-de-estatística",
     "title": "Aulas",
     "section": "Revisão de Estatística",
-    "text": "Revisão de Estatística\n\n\nApresentação – Introdução ao Curso\n\nApresentação do curso\n\nConteúdos programáticos\n\nTipografia do curso\n\n➡️ Acessar slides da aula\n\n\n\nAula 01 – Conceitos básicos\n\nO que é a estatística\nO que são Dados\nAmostragem e generalização\nTipos de dados\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – Conceitos básicos\n\nPlanejando experimentos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Organizando dados\n\nTabelas do contingência\nDistribuição de frequências\n\n➡️ Acessar slides da aula\n\n\n\nAula 04 – Estatística descritiva\n\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Acessar slides da aula\n\n\n\nAula 05 – Testes de hipóteses e significâncias\n\nO que são testes de hipóteses\nDefinições\n\nHipótese nula e alternativa\nErro tipo I e II\nNível de significância\nPoder do teste\nUnicaudal e bicaudal\n\n\n➡️ Acessar slides da aula\n\n\n\nAula 06 – Testes de hipótese 1\n\nEstatística Paramétrica\nTestes de significância para uma amostra\nQui-quadrado\nTeste T para uma amostra\nTeste T para duas amostras independentes\n\n➡️ Acessar slides da aula\n\n\n\nAula 07 – Testes de hipótese 2\n\nEstatística paramétrica\nTestes de significância para mais de duas amostras\nANOVA\n\n➡️ Acessar slides da aula\n\n\n\nAula 08 – Testes de hipótese 3\n\nEstatística não paramétrica\nMann-Whitney\nKruskal-Wallis\n\n➡️ Aula em breve"
+    "text": "Revisão de Estatística\n\n\nApresentação – Introdução ao Curso\n\nApresentação do curso\n\nConteúdos programáticos\n\nTipografia do curso\n\n➡️ Acessar slides da aula\n\n\n\nAula 01 – Conceitos básicos\n\nO que é a estatística\nO que são Dados\nAmostragem e generalização\nTipos de dados\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – Conceitos básicos\n\nPlanejando experimentos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Organizando dados\n\nTabelas do contingência\nDistribuição de frequências\n\n➡️ Acessar slides da aula\n\n\n\nAula 04 – Estatística descritiva\n\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Acessar slides da aula\n\n\n\nAula 05 – Testes de hipóteses e significâncias\n\nO que são testes de hipóteses\nDefinições\n\nHipótese nula e alternativa\nErro tipo I e II\nNível de significância\nPoder do teste\nUnicaudal e bicaudal\n\n\n➡️ Acessar slides da aula\n\n\n\nAula 06 – Testes de hipótese 1\n\nEstatística Paramétrica\nTestes de significância para uma amostra\nQui-quadrado\nTeste T para uma amostra\nTeste T para duas amostras independentes\n\n➡️ Acessar slides da aula\n\n\n\nAula 07 – Testes de hipótese 2\n\nEstatística paramétrica\nTestes de significância para mais de duas amostras\nANOVA\n\n➡️ Acessar slides da aula\n\n\n\nAula 08 – Testes de hipótese 3\n\nEstatística não paramétrica\nMann-Whitney\nKruskal-Wallis\n\n➡️ Acessar slides da aula"
   },
   {
     "objectID": "aulas/aulas.html#linguagem-r",
@@ -2812,5 +2812,82 @@
     "title": "Revisão de conceitos básicos",
     "section": "Testes de significância para mais de duas amostras",
     "text": "Testes de significância para mais de duas amostras\n\n\n\n- Análise de variância (ANOVA) - ANOVA demonstra que há diferença - Não demonstra onde estão as diferenças - Teste a posteriori - Tukey\n\n\n\n\n\\[\n𝑑.𝑚.𝑠=𝑞\\sqrt\\frac{𝑄𝑀R}{𝑟}\n\\]\n\n\n\n\n\nAmostras\n\n\nA\nB\nC\nD\n\n\n\n\n11\n8\n5\n4\n\n\n8\n5\n7\n4\n\n\n5\n2\n3\n2\n\n\n8\n5\n3\n0\n\n\n8\n5\n7\n0\n\n\n8\n5\n5\n2"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#estatística-não-paramétrica",
+    "href": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#estatística-não-paramétrica",
+    "title": "Revisão de conceitos básicos",
+    "section": "Estatística não paramétrica",
+    "text": "Estatística não paramétrica\n\nTestes paramétricos\n\nPossuem várias exigências\n\nDistribuição normal\nHomogeneidade de variâncias\n\nHipóteses feitas sobre parâmetros (Ex. média)\n\nTestes não-paramétricos\n\nNão possuem exigências de distribuição\nNão substituem os testes paramétricos\n\nAs hipóteses são diferentes\nPodemos aplicar caso as premissas para paramétricos sejam seriamente transgredidas"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#section",
+    "href": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#section",
+    "title": "Revisão de conceitos básicos",
+    "section": "",
+    "text": "Testes não-paramétricos\n\nNão são calculadas com base nos dados originais, mas nos postos\n\nPostos\n\nOrdene os dados\nAtribua a cada valor um número de ordem\nEmpates\n\nAtribua as médias dos postos que receberiam.\n\nA soma dos postos é sempre igual a\n\n\\[\n\\frac{n(n-1)}{2} = \\frac{8(8+1)}{2} = 36\n\\]\n\n\n\n\nTestes de significância para duas amostras\n\nTeste de Mann- Whitney\n\nFinalidade\n\nVerificar se duas populações tem a mesma distribuição\nAlternativa ao teste t para amostras independentes\n\nCondições\n\nAmostras são independentes\nAmostras pequenas e/ou pressuposições para t muito comprometidas\nObservações medidas em escala ordinal ou numérica\n\n\n\n\n\nTestes de significância para duas amostras\n\n\n\nTeste de Mann- Whitney\n\nEstabelecemos o nível de significância\nSepare os grupos 1(n1) e 2(n2)\nJunte os dois em um grupo e determine os postos\nCalcule \\(\\sum{R_1}\\) e \\(\\sum{R_2}\\)\nCalcule a estatística de Mann-Whitney\n\nSe \\(n_1 = n_2\\) – utilize o grupo de menor \\(\\sum{R}\\)\nSe \\(n_1 \\neq n2\\) – calcule para os dois e escolha o menor U\n\n\\[\n\\sum{R_1} - [\\frac{n_1(n_1+1)}{2}]\n\\]\n\n\n\n\n\n\n\nTestes de significância para duas amostras\n\n\n\nTeste de Mann- Whitney\n\nEstabelecemos o nível de significância\nSepare os grupos 1(n1) e 2(n2)\nJunte os dois em um grupo e determine os postos\nCalcule \\(\\sum{R_1}\\) e \\(\\sum{R_2}\\)\nCalcule a estatística de Mann-Whitney\n\nSe \\(n_1 = n_2\\) – utilize o grupo de menor \\(\\sum{R}\\)\nSe \\(n_1 \\neq n2\\) – calcule para os dois e escolha o menor U\n\n\\[\n\\sum{R_1} - [\\frac{n_1(n_1+1)}{2}]\n\\]\n\n\n\n\nα = 0,01 Experimental – grupo 1 – n1 = 8 Controle – grupo 2 – n2 = 9\nU(experimental) = 14,5 U(controle) = 57,55"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#testes-de-significância-para-duas-amostras",
+    "href": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#testes-de-significância-para-duas-amostras",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para duas amostras",
+    "text": "Testes de significância para duas amostras\n\nTeste de Mann- Whitney\n\nFinalidade\n\nVerificar se duas populações tem a mesma distribuição\nAlternativa ao teste t para amostras independentes\n\nCondições\n\nAmostras são independentes\nAmostras pequenas e/ou pressuposições para t muito comprometidas\nObservações medidas em escala ordinal ou numérica"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#testes-de-significância-para-duas-amostras-1",
+    "href": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#testes-de-significância-para-duas-amostras-1",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para duas amostras",
+    "text": "Testes de significância para duas amostras\n\n\n\nTeste de Mann- Whitney\n\nEstabelecemos o nível de significância\nSepare os grupos 1(n1) e 2(n2)\nJunte os dois em um grupo e determine os postos\nCalcule \\(\\sum{R_1}\\) e \\(\\sum{R_2}\\)\nCalcule a estatística de Mann-Whitney\n\nSe \\(n_1 = n_2\\) – utilize o grupo de menor \\(\\sum{R}\\)\nSe \\(n_1 \\neq n2\\) – calcule para os dois e escolha o menor U\n\n\\[\n\\sum{R_1} - [\\frac{n_1(n_1+1)}{2}]\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#testes-de-significância-para-duas-amostras-2",
+    "href": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#testes-de-significância-para-duas-amostras-2",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para duas amostras",
+    "text": "Testes de significância para duas amostras\n\n\n\nTeste de Mann- Whitney\n\nEstabelecemos o nível de significância\nSepare os grupos 1(n1) e 2(n2)\nJunte os dois em um grupo e determine os postos\nCalcule \\(\\sum{R_1}\\) e \\(\\sum{R_2}\\)\nCalcule a estatística de Mann-Whitney\n\nSe \\(n_1 = n_2\\) – utilize o grupo de menor \\(\\sum{R}\\)\nSe \\(n_1 \\neq n2\\) – calcule para os dois e escolha o menor U\n\n\\[\n\\sum{R_1} - [\\frac{n_1(n_1+1)}{2}]\n\\]\n\n\n\n\n\nα = 0,01\nExperimental – grupo 1 – n1 = 8\nControle – grupo 2 – n2 = 9"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#estatística-não-paramétrica-1",
+    "href": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#estatística-não-paramétrica-1",
+    "title": "Revisão de conceitos básicos",
+    "section": "Estatística não paramétrica",
+    "text": "Estatística não paramétrica\n\nTestes não-paramétricos\n\nNão são calculadas com base nos dados originais, mas nos postos\n\nPostos\n\nOrdene os dados\nAtribua a cada valor um número de ordem\nEmpates\n\nAtribua as médias dos postos que receberiam.\n\nA soma dos postos é sempre igual a\n\n\\[\n\\frac{n(n-1)}{2} = \\frac{8(8+1)}{2} = 36\n\\]"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#testes-de-significância-para-duas-amostras-3",
+    "href": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#testes-de-significância-para-duas-amostras-3",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para duas amostras",
+    "text": "Testes de significância para duas amostras\n\n\n\nTeste de Mann- Whitney\n\nEstabelecemos o nível de significância\nSepare os grupos 1(n1) e 2(n2)\nJunte os dois em um grupo e determine os postos\nCalcule \\(\\sum{R_1}\\) e \\(\\sum{R_2}\\)\nCalcule a estatística de Mann-Whitney\n\nSe \\(n_1 = n_2\\) – utilize o grupo de menor \\(\\sum{R}\\)\nSe \\(n_1 \\neq n2\\) – calcule para os dois e escolha o menor U\n\n\\[\n\\sum{R_1} - [\\frac{n_1(n_1+1)}{2}]\n\\]\n\n\n\n\n\nα = 0,01\nExperimental – grupo 1 – n1 = 8\nControle – grupo 2 – n2 = 9\n\nU(experimental) = 14,5\nU(controle) = 57,55"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#testes-de-significância-para-duas-amostras-4",
+    "href": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#testes-de-significância-para-duas-amostras-4",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para duas amostras",
+    "text": "Testes de significância para duas amostras\n\n\n\nTeste de Mann-Whitney\n\nCalcule z\n\n\\[\nz = \\frac{U = \\frac{n_1n_2}{2}}{\\sqrt{\\frac{n_1n_2(n_1+n_2+1)}{12}}}\n\\]\n\nCompare com valor critico da tabela\nPara facilitar comparação, calcule as medias dos postos\n\n\n\n\n\n\n\nUtilizamos o menor valor de U (14,5)\n\nZ = -2,06884\nabs(-2,06884) = 2,06884\n\nValor crítico = 2,58\nZ &lt; 2,58 – Não rejeito a hipótese nula\n\nGrupo experimental X = 6,3\nGrupo controle X = 11,4"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#testes-de-significância-para-duas-amostras-5",
+    "href": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#testes-de-significância-para-duas-amostras-5",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para duas amostras",
+    "text": "Testes de significância para duas amostras\n\n\n\nTeste de Mann-Whitney\n\nCalcule z\n\n\\[\nz = \\frac{U = \\frac{n_1n_2}{2}}{\\sqrt{\\frac{n_1n_2(n_1+n_2+1)}{12}}}\n\\]\n\nCompare com valor critico da tabela\nPara facilitar comparação, calcule as medias dos postos\n\n\n\n\n\n\n\nUtilizamos o menor valor de U (14,5)\n\nZ = -2,06884\nabs(-2,06884) = 2,06884\n\nValor crítico = 2,58\nZ &lt; 2,58 – Não rejeito a hipótese nula\n\nGrupo experimental X = 6,3\nGrupo controle X = 11,4"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#testes-de-significância-para-mais-de-duas-amostras",
+    "href": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#testes-de-significância-para-mais-de-duas-amostras",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para mais de duas amostras",
+    "text": "Testes de significância para mais de duas amostras\n\nKruskal-Wallis\n\nFinalidade\n\nTestar se varias populações tem a mesma distribuição\nAlternativa para Anova univariada (Anova by ranks test)\n\nCondições\n\nAmostras pequenas e/ou pressuposições muito comprometidas\nObservações medidas em escala ordinal ou numérica\nSe houverem somente 3 grupos, necessário haver pelo menos 5 casos"
+  },
+  {
+    "objectID": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#testes-de-significância-para-mais-de-duas-amostras-1",
+    "href": "aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html#testes-de-significância-para-mais-de-duas-amostras-1",
+    "title": "Revisão de conceitos básicos",
+    "section": "Testes de significância para mais de duas amostras",
+    "text": "Testes de significância para mais de duas amostras\n\nKruskal-Wallis\n\nA lógica é semelhante ao teste de Mann-Whitney\n\nSão executados para k grupos\nEstabelece postos\nCalcula os somatórios\n\n\\[\nH = \\frac{12}{n(n+1)}[\\frac{(\\sum{R_1}^2)}{n_1}+\\frac{(\\sum{R_2})^2}{n_2}+...+\\frac{(\\sum{R_n}^2)}{n_n}]-3(n+1)\n\\]\n\nCalcula o valor de H"
   }
 ]

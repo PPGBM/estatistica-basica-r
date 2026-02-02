@@ -1,6 +1,6 @@
 ---
 title: "Revisão de conceitos básicos"
-subtitle: "Testes de hipóteses"
+subtitle: "Estatística não paramétrica"
 author: "Dr. Alexandre Dias Kassuga"
 format:
   revealjs:
@@ -11,172 +11,115 @@ format:
     format: wide
 ---
 
-## Testes de significância para mais de duas amostras
-
--   Análise de variância (ANOVA)
-    -   Finalidade
-        -   Verificar se há diferença entre as médias de várias populações
-    -   Condições
-        -   Dados com distribuição normal
-        -   Todas as populações possuem as mesmas variâncias (homocedasticidade)
-    -   Todas as amostras são aleatórias e independentes
+## Estatística não paramétrica
 
 
+- Testes paramétricos
+  - Possuem várias exigências
+    - Distribuição normal
+    - Homogeneidade de variâncias
+  - Hipóteses feitas sobre parâmetros (Ex. média)
+- Testes não-paramétricos
+  - Não possuem exigências de distribuição
+  - Não substituem os testes paramétricos
+    - As hipóteses são diferentes
+    - Podemos aplicar caso as premissas para paramétricos sejam seriamente transgredidas
+    
+    
+## Estatística não paramétrica
 
+- Testes não-paramétricos
+  - Não são calculadas com base nos dados originais, mas nos postos
+- Postos
+  - Ordene os dados
+  - Atribua a cada valor um número de ordem
+  - Empates	
+    - Atribua as médias dos postos que receberiam.
+  - A soma dos postos é sempre igual a
+  
+  $$
+  \frac{n(n-1)}{2} = \frac{8(8+1)}{2} = 36
+  $$
+  
+::: {.absolute top="200" left="700"}
 
-
-## Testes de significância para mais de duas amostras
-
-:::: {.columns}
-
-::: {.column width="80%"}
-
--   Análise de variância (ANOVA)
-    -   Calculamos os graus de liberdade
-        -   Dos tratamentos: $k-1$
-        -   Do total: $n-1$
-        -   Do resíduo: $(n-1)-(k-1) = n-k$
-    -   Calculamos o valor de correção (C)\
-    \
-     $C = \frac{(\sum{x})^2}{n}$ \
-     \
-    - A soma de quadrados total\
-    \
-     $SQT = \sum{x^2 - C}$
-     \
-    - A soma de quadrados de tratamentos\
-    \
-     $SQT_r = \sum{T^2 - C}$
-
+![](figuras/postos.png){width="50%"}
 
 :::
 
-::: {.column width="20%"}
+## Testes de significância para duas amostras
 
-\
-\
-\
-
-| A   | B   | C   | D   |
-|-----|-----|-----|-----|
-| 11  | 8   | 5   | 4   |
-| 8   | 5   | 7   | 4   |
-| 5   | 2   | 3   | 2   |
-| 8   | 5   | 3   | 0   |
-| 8   | 5   | 7   | 0   |
-|**8**|**5**|**5**|**2**|
+- Teste de Mann- Whitney
+  - Finalidade
+    - Verificar se duas populações tem a mesma distribuição
+    - Alternativa ao teste t para amostras independentes
+  - Condições
+    - Amostras são independentes
+    - Amostras pequenas e/ou pressuposições para t muito comprometidas
+    - Observações medidas em escala ordinal ou numérica
 
 
-: Amostras
+## Testes de significância para duas amostras
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+- Teste de Mann- Whitney
+  - Estabelecemos o nível de significância
+  - Separe os grupos 1(n1) e 2(n2)
+  - Junte os dois em um grupo e determine os postos
+  - Calcule $\sum{R_1}$  e $\sum{R_2}$ 
+  - Calcule a estatística de Mann-Whitney
+    - Se $n_1 = n_2$ – utilize o grupo de menor $\sum{R}$ 
+    - Se $n_1 \neq n2$ – calcule para os dois e escolha o menor U
+    
+    $$
+    \sum{R_1} - [\frac{n_1(n_1+1)}{2}]
+    $$
+:::
+
+::: {.column width="40%"}
 
 :::
 
 ::::
 
 
-## Testes de significância para mais de duas amostras
+
+## Testes de significância para duas amostras
 
 :::: {.columns}
 
-::: {.column width="80%"}
+::: {.column width="60%"}
 
--   Análise de variância (ANOVA)
-    -   Calculamos os graus de liberdade
-        -   Dos tratamentos: $k-1$
-        -   Do total: $n-1$
-        -   Do resíduo: $(n-1)-(k-1) = n-k$
-    -   Calculamos o valor de correção (C)\
-    \
-     $C = \frac{(\sum{x})^2}{n}$ \
-     \
-    - A soma de quadrados total\
-    \
-     $SQT = \sum{x^2 - C}$
-     \
-    - A soma de quadrados de tratamentos\
-    \
-     $SQT_r = \sum{T^2 - C}$
+- Teste de Mann- Whitney
+  - Estabelecemos o nível de significância
+  - Separe os grupos 1(n1) e 2(n2)
+  - Junte os dois em um grupo e determine os postos
+  - Calcule $\sum{R_1}$  e $\sum{R_2}$ 
+  - Calcule a estatística de Mann-Whitney
+    - Se $n_1 = n_2$ – utilize o grupo de menor $\sum{R}$ 
+    - Se $n_1 \neq n2$ – calcule para os dois e escolha o menor U
+    
+    $$
+    \sum{R_1} - [\frac{n_1(n_1+1)}{2}]
+    $$
+:::
+
+::: {.column width="40%"}
+
+![](figuras/mw1.png){width="46%"}
+
+
+::: texto-menor
+
+α = 0,01\
+Experimental – grupo 1 – n1 = 8\
+Controle – grupo 2 – n2 = 9\
 
 
 :::
-
-::: {.column width="20%"}
-
-\
-\
-\
-
-| A   | B   | C   | D   |
-|-----|-----|-----|-----|
-|11   | 8   | 5   | 4   |
-| 8   | 5   | 7   | 4   |
-| 5   | 2   | 3   | 2   |
-| 8   | 5   | 3   | 0   |
-| 8   | 5   | 7   | 0   |
-|**8**|**5**|**5**|**2**|
-
-
-: Amostras
-
-:::
-
-::::
-
-::: {.absolute top="185" left="580"}
-
-![](figuras/r-repeticoes.png){width="70%"}
-:::
-
-
-::: {.absolute top="87" right="-140" width="350"}
-
-![](figuras/k-tratamentos.png){}
-
-:::
-
-
-## Testes de significância para mais de duas amostras
-
-:::: {.columns}
-
-::: {.column width="80%"}
-
--   Análise de variância (ANOVA)
-    - A soma dos quadrados de resíduo\ 
-    
-       $SQR = SQT - SQT_R$\
-       
-    - O quadrado médio de tratamentos\ 
-    
-        $QMTR = \frac{SQT_R}{k-1}$ 
-        
-    - O quadrado médio de resíduo\
-    
-        $QMR = \frac{SQR}{n-k}$\
-    
-    - O valor de F\
-    
-        $F = \frac{QMTR}{QMR}$\
-    
-
-:::
-
-::: {.column width="20%"}
-
-\
-\
-
-| A   | B   | C   | D   |
-|-----|-----|-----|-----|
-|11   | 8   | 5   | 4   |
-| 8   | 5   | 7   | 4   |
-| 5   | 2   | 3   | 2   |
-| 8   | 5   | 3   | 0   |
-| 8   | 5   | 7   | 0   |
-|**8**|**5**|**5**|**2**|
-
-
-: Amostras
 
 
 :::
@@ -185,39 +128,90 @@ format:
 
 
 
-
-## Testes de significância para mais de duas amostras
+## Testes de significância para duas amostras
 
 :::: {.columns}
 
-::: {.column width="80%"}
+::: {.column width="60%"}
 
--   Análise de variância (ANOVA)
+- Teste de Mann- Whitney
+  - Estabelecemos o nível de significância
+  - Separe os grupos 1(n1) e 2(n2)
+  - Junte os dois em um grupo e determine os postos
+  - Calcule $\sum{R_1}$  e $\sum{R_2}$ 
+  - Calcule a estatística de Mann-Whitney
+    - Se $n_1 = n_2$ – utilize o grupo de menor $\sum{R}$ 
+    - Se $n_1 \neq n2$ – calcule para os dois e escolha o menor U
+    
+    $$
+    \sum{R_1} - [\frac{n_1(n_1+1)}{2}]
+    $$
+:::
 
-\
-\
-\
+::: {.column width="40%"}
 
-![](figuras/anova-causas-var.png)
+![](figuras/mw2.png){width="100%"}
+
+
+::: texto-menor
+
+α = 0,01\
+Experimental – grupo 1 – n1 = 8\
+Controle – grupo 2 – n2 = 9\
+
+U(experimental) = 14,5\
+U(controle) = 57,55
 
 :::
 
-::: {.column width="20%"}
 
+:::
+
+::::
+
+
+
+## Testes de significância para duas amostras
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Teste de Mann-Whitney
+  - Calcule z
+  
+  $$
+  z = \frac{U = \frac{n_1n_2}{2}}{\sqrt{\frac{n_1n_2(n_1+n_2+1)}{12}}}
+  $$
+  
+  - Compare com valor critico da tabela
+  - Para facilitar comparação, calcule as medias dos postos
+  
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="40%"}
+
+::: texto-menor
+
+
+![](figuras/mw2.png){width="100%"}
+
+Utilizamos o menor valor de U (14,5)\
+
+Z = -2,06884\
+abs(-2,06884) = 2,06884\
+
+Valor crítico = 2,58\
+Z < 2,58 – Não rejeito a hipótese nula\
 \
-\
+Grupo experimental X = 6,3\
+Grupo controle X = 11,4\
 
-| A   | B   | C   | D   |
-|-----|-----|-----|-----|
-|11   | 8   | 5   | 4   |
-| 8   | 5   | 7   | 4   |
-| 5   | 2   | 3   | 2   |
-| 8   | 5   | 3   | 0   |
-| 8   | 5   | 7   | 0   |
-|**8**|**5**|**5**|**2**|
-
-
-: Amostras
+:::
 
 
 :::
@@ -227,90 +221,45 @@ format:
 
 
 
+
 ## Testes de significância para mais de duas amostras
 
-:::: {.columns}
-
-::: {.column width="80%"}
-
--   Análise de variância (ANOVA)
-
-\
-\
-\
-
-![](figuras/anova-causas-var-n.png)
-
-
-- Comparamos com valor de Ftab
-  - $F > F_{tab}$ – Médias são diferentes
-    - 7,06 > 3,24
-:::
-
-::: {.column width="20%"}
-
-\
-\
-
-| A   | B   | C   | D   |
-|-----|-----|-----|-----|
-|11   | 8   | 5   | 4   |
-| 8   | 5   | 7   | 4   |
-| 5   | 2   | 3   | 2   |
-| 8   | 5   | 3   | 0   |
-| 8   | 5   | 7   | 0   |
-|**8**|**5**|**5**|**2**|
-
-
-: Amostras
-
-
-:::
-
-::::
+- Kruskal-Wallis
+  - Finalidade
+    - Testar se varias populações tem a mesma distribuição
+    - Alternativa para Anova univariada (Anova by ranks test)
+  - Condições
+    - Amostras pequenas e/ou pressuposições muito comprometidas
+    - Observações medidas em escala ordinal ou numérica
+    - Se houverem somente 3 grupos, necessário haver pelo menos 5 casos
 
 
 ## Testes de significância para mais de duas amostras
 
-:::: {.columns}
-
-::: {.column width="80%"}
-
-\
--   Análise de variância (ANOVA)
-    - ANOVA demonstra que há diferença
-    - Não demonstra onde estão as diferenças
-    - Teste a posteriori
-      - Tukey
-      
-\
-\
-\
-
-$$
-𝑑.𝑚.𝑠=𝑞\sqrt\frac{𝑄𝑀R}{𝑟}
-$$
-
-:::
-
-::: {.column width="20%"}
-
-\
-\
-
-| A   | B   | C   | D   |
-|-----|-----|-----|-----|
-|11   | 8   | 5   | 4   |
-| 8   | 5   | 7   | 4   |
-| 5   | 2   | 3   | 2   |
-| 8   | 5   | 3   | 0   |
-| 8   | 5   | 7   | 0   |
-|**8**|**5**|**5**|**2**|
+- Kruskal-Wallis
+  - A lógica é semelhante ao teste de Mann-Whitney
+    - São executados para k grupos
+    - Estabelece postos
+    - Calcula os somatórios
+    
+    $$
+    H = \frac{12}{n(n+1)}[\frac{(\sum{R_1}^2)}{n_1}+\frac{(\sum{R_2})^2}{n_2}+...+\frac{(\sum{R_n}^2)}{n_n}]-3(n+1)
+    $$
+    
+    - Calcula o valor de H
 
 
-: Amostras
 
 
-:::
 
-::::
+
+
+
+
+
+
+
+
+
+
+

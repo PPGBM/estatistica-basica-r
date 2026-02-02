@@ -105,7 +105,7 @@ aos conteúdos e aos slides.
 - Mann-Whitney
 - Kruskal-Wallis
 
-➡️ Aula em breve
+[➡️ Acessar slides da aula](slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.qmd){target="_blank" rel="noopener"}
 
 ---
 
