@@ -1,0 +1,313 @@
+---
+title: "Estatística Básica utilizando R"
+subtitle: |
+  - Atribuição
+  - Nomeando objetos
+  - Tipos de dados
+author: "Dr. Alexandre Dias Kassuga"
+format:
+  revealjs:
+    theme: simple
+    css: 
+      - slides.css
+      - footer.css
+    highlight-style: monokai
+    slide-number: true
+    width: 1280
+    height: 720
+---
+
+## Utilizando Objetos
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- No R trabalhamos com objetos
+  - Utilizamos o operador “<-" para definir os objetos
+  - Damos um nome e valores associados
+    - Quantitativos ou qualitativos
+
+```{r}
+#| echo: true
+x <- 10
+x
+```
+::: texto-05
+
+\
+
+:::
+
+```{r}
+#| echo: true
+y <- 1:10
+y
+```
+
+:::
+
+::: {.column width="50%"}
+
+:::
+
+::::
+
+
+
+
+## Utilizando Objetos
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- No R trabalhamos com objetos
+  - Utilizamos o operador “<-" para definir os objetos
+  - Damos um nome e valores associados
+    - Quantitativos ou qualitativos
+
+```{r}
+#| echo: true
+x <- 10
+x
+```
+::: texto-05
+
+\
+
+:::
+
+```{r}
+#| echo: true
+y <- 1:10
+y
+```
+
+:::
+
+::: {.column width="50%"}
+
+:::
+
+::::
+
+
+![](figuras/atrib.png){.absolute top="50" left="330" width="25%"}
+
+![](figuras/dica.png){.absolute top="15" right="250" width="25%"}
+
+
+## Utilizando Objetos
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- No R trabalhamos com objetos
+  - Utilizamos o operador “<-" para definir os objetos
+  - Damos um nome e valores associados
+    - Quantitativos ou qualitativos
+    - Com estes objetos podemos executar funções
+      - Associado a função sempre temos "( )"
+    - Podemos extrair parte dos objetos
+      - Utilizando "[ ]"
+
+
+:::
+
+::: {.column width="50%"}
+
+:::
+
+::::
+
+
+
+## Utilizando Objetos
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+::: texto-05
+
+\
+\
+
+:::
+
+```{r}
+#| echo: true
+x <- 10
+x
+```
+
+::: texto-05
+
+\
+
+:::
+
+```{r}
+#| echo: true
+y <- 2
+y
+```
+
+::: texto-05
+
+\
+
+:::
+
+
+```{r}
+#| echo: true
+x + y
+```
+
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="45%"}
+
+\
+\
+
+```{r}
+#| echo: true
+x^y
+```
+\
+```{r}
+#| echo: true
+z <- "Olá mundo"
+z
+```
+:::
+
+::::
+
+
+## Utilizando Objetos
+
+- No R trabalhamos com objetos
+  - Podemos dar quase qualquer nome para os objetos
+  - Não pode iniciar em números
+  - Não pode possuir alguns símbolos especiais
+    - Ex: ^, !, $, @, +, -, / ou *
+  - Percebe maiúsculas e minúsculas
+
+[> Numero <- 10]{style="color: red"}  
+[> numero <- 3]{style="color: red"}
+
+
+![](figuras/nomes.png){.absolute bottom="30" right="50" width="50%"}
+
+
+## Utilizando Objetos
+
+- No R trabalhamos com objetos
+  - Podemos dar quase qualquer nome para os objetos
+  - Não pode iniciar em números
+  - Não pode possuir alguns símbolos especiais
+    - Ex: ^, !, $, @, +, -, / ou *
+  - Percebe maiúsculas e minúsculas
+  - Não pode ser “reserved words” [> ?reserved]{style="color: red"}
+
+::: texto-05 
+
+\
+
+:::
+
+::: {.table-invisible}
+
+|  |  | | |
+| :---: | :---: | :---: | :---: |
+| if | for | FALSE | NA_integer|
+| else | in | NULL | NA_real|
+| repeat | next | Inf | NA_complex|
+| while | break | NaN | NA_character|
+| function | TRUE | NA | |
+
+:::
+
+## Utilizando objetos
+
+- Tipos de dados
+  - Existem basicamente quatro tipos de dados no R
+    - Numéricos ("numeric")
+    - Caracteres ("string")
+    - Lógicos ("logical")
+    - Números complexos ("complex")
+  - Função typeof() identifica o tipo de dado
+
+
+## Utilizando objetos
+
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Tipos de dados
+  - Existem basicamente quatro tipos de dados no R
+    - Numéricos ("numeric")
+    - Caracteres ("string")
+    - Lógicos ("logical")
+    - Números complexos ("complex")
+  - Função typeof() identifica o tipo de dado
+
+::: texto-menor
+
+Numéricos
+```{r}
+#| echo: true
+valor <- 605
+valor
+```
+
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: texto-menor
+
+
+Caracteres
+```{r}
+#| echo: true
+string <- "Ola mundo"
+string
+```
+
+Lógicos
+```{r}
+#| echo: true
+2<6
+```
+
+Números complexos
+```{r}
+#| echo: true
+nc  <-  2 + 3i
+nc
+```
+
+:::
+
+
+:::
+
+::::
+
+  
+  
+  

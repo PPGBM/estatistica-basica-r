@@ -145,10 +145,9 @@ aos conteúdos e aos slides.
 - Nomeando objetos
 - Utilizando objetos em R
 - Tipos de dados em R
-- Alguns comandos
 
 
-➡️ Aula em breve
+[➡️ Acessar slides da aula](slides/aula-R-3-objetos.qmd){target="_blank" rel="noopener"}
 
 ---
 

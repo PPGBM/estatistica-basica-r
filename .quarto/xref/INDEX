@@ -124,5 +124,11 @@
   },
   "aulas/slides/aula-R-2-primeiros-passos.qmd": {
     "aula-R-2-primeiros-passos.html": "b5ccd1df"
+  },
+  "aulas/slides/aula-R-3-objetos.qmd": {
+    "aula-R-3-objetos.html": "44fc63bc"
+  },
+  "aulas/guia-quarto-tabelas.qmd": {
+    "guia-quarto-tabelas.html": "d4f546f2"
   }
 }

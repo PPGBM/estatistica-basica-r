@@ -56,13 +56,38 @@
    CÓDIGO
 ========================= */
 
-.reveal pre code {
-  font-size: 24px;          /* menor que texto, mas confortável */
+/* Código R digitado (entrada) */
+.reveal pre code.sourceCode {
+  font-size: 22px;          /* tamanho do código */
   line-height: 1.4;
-  background: #020617;
+  background-color: #1d1f21; /* Tomorrow Night */
   color: #e5e7eb;
   border-radius: 8px;
   padding: 14px 16px;
+}
+
+/* Saída do R (resultado) */
+.reveal .cell-output pre {
+  background-color: #020617;
+  color: #e5e7eb;
+  border-left: 4px solid #60a5fa;
+  padding: 0;
+  margin-top: 0.6em;
+  font-size: 22px;          /* menor que o código */
+  line-height: 1.4;
+}
+
+/* Texto do resultado do R (garantir que não fique preto) */
+.reveal .cell-output pre code {
+  color: #1a2ec7;   /* texto claro */
+}
+
+/* Conteúdo interno do output (alinhado ao código) */
+.reveal .cell-output pre code {
+  display: block;
+  padding: 12px 12px;         /* MESMO padding do código */
+  font-size: 22px;
+  line-height: 1.4;
 }
 
 /* =========================
@@ -141,9 +166,9 @@
   background-color: #020617;   /* ligeiramente diferente do código */
   color: #e5e7eb;
   border-left: 4px solid #60a5fa;
-  padding: 12px 16px;
+  padding: 0;
   margin-top: 0.6em;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 1.4;
 }
 
@@ -295,4 +320,16 @@
   padding: 0.2em 0.5em;
   border-radius: 8px;
   font-weight: 500;
+}
+
+
+/* =========================
+   TABELAS
+   ========================= */
+
+/* No seu arquivo style.css */
+.table-invisible table, 
+.table-invisible th, 
+.table-invisible td {
+  border: none !important;
 }

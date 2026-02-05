@@ -1,0 +1,257 @@
+---
+title: "Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML)"
+author: "Alexandre Kassuga"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+execute:
+  echo: false
+---
+
+## 🎯 Objetivo do guia
+
+Este guia apresenta **todas as formas práticas de inserir, editar e controlar tabelas em documentos Quarto (`.qmd`) renderizados em HTML**, com foco em:
+
+- 📋 Tabelas simples em Markdown  
+- 🧱 Tabelas sem cabeçalho  
+- 🎨 Alinhamento e formatação  
+- 🧠 Boas práticas para material didático e científico  
+- ⚙️ Quando usar Markdown, HTML ou R  
+
+O objetivo é servir como **referência rápida e confiável**.
+
+---
+
+## 🧠 Conceito fundamental
+
+No Quarto, tabelas podem ser criadas de três formas principais:
+
+1. **Markdown puro** → simples, rápido, didático  
+2. **HTML** → controle total de layout  
+3. **R (knitr / gt / kable)** → tabelas dinâmicas  
+
+👉 Regra prática:  
+**quanto mais simples a tabela, mais simples a ferramenta**.
+
+---
+
+## 📋 Tabela básica em Markdown
+
+Estrutura:
+
+    | Coluna A | Coluna B | Coluna C |
+    |----------|----------|----------|
+    | 10       | 20       | 30       |
+    | 15       | 25       | 35       |
+
+Resultado:
+
+| Coluna A | Coluna B | Coluna C |
+|----------|----------|----------|
+| 10 | 20 | 30 |
+| 15 | 25 | 35 |
+
+---
+
+## 📌 Cabeçalho obrigatório em Markdown
+
+Em Markdown, **toda tabela precisa de uma linha de cabeçalho**, mesmo que você não queira exibi-lo.
+
+Se você **não quer cabeçalho visível**, use um truque simples.
+
+---
+
+## 🚫 Tabela sem cabeçalho (truque funcional)
+
+Use nomes genéricos e oculte visualmente com CSS depois.
+
+    |   |   |
+    |---|---|
+    | Média | 12.5 |
+    | Desvio | 3.2 |
+
+Resultado:
+
+|   |   |
+|---|---|
+| Média | 12.5 |
+| Desvio | 3.2 |
+
+(O CSS pode remover a linha superior se necessário.)
+
+---
+
+## ↔️ Alinhamento de colunas
+
+Use `:` na linha separadora.
+
+    | Esquerda | Centro | Direita |
+    |:---------|:------:|--------:|
+    | a        | b      | 10      |
+    | c        | d      | 20      |
+
+Resultado:
+
+| Esquerda | Centro | Direita |
+|:---------|:------:|--------:|
+| a | b | 10 |
+| c | d | 20 |
+
+---
+
+## 🔢 Conteúdo matemático em tabelas
+
+LaTeX Math funciona normalmente dentro das células.
+
+    | Estatística | Fórmula |
+    |-------------|---------|
+    | Média | $\bar{x} = \frac{1}{n}\sum x_i$ |
+    | Variância | $s^2$ |
+
+Resultado:
+
+| Estatística | Fórmula |
+|-------------|---------|
+| Média | $\bar{x} = \frac{1}{n}\sum x_i$ |
+| Variância | $s^2$ |
+
+---
+
+## 🎨 Ênfase visual dentro da tabela
+
+Você pode usar Markdown comum:
+
+    | Item | Valor |
+    |------|-------|
+    | **Média** | *Alta* |
+    | Desvio | **Baixo** |
+
+Resultado:
+
+| Item | Valor |
+|------|-------|
+| **Média** | *Alta* |
+| Desvio | **Baixo** |
+
+---
+
+## 🧩 Quebras de linha dentro da célula
+
+Use `<br>` quando necessário:
+
+    | Variável | Descrição |
+    |----------|-----------|
+    | pH | Medida de acidez<br>Escala logarítmica |
+
+Resultado:
+
+| Variável | Descrição |
+|----------|-----------|
+| pH | Medida de acidez<br>Escala logarítmica |
+
+---
+
+## 🧱 Quando usar tabela em HTML
+
+Use HTML quando precisar de:
+
+- células mescladas  
+- controle total de estilo  
+- remover cabeçalhos  
+- layout mais complexo  
+
+Exemplo simples:
+
+    <table>
+      <tr>
+        <td>Média</td>
+        <td>12.5</td>
+      </tr>
+      <tr>
+        <td>Desvio</td>
+        <td>3.2</td>
+      </tr>
+    </table>
+
+Resultado:
+
+<table>
+  <tr>
+    <td>Média</td>
+    <td>12.5</td>
+  </tr>
+  <tr>
+    <td>Desvio</td>
+    <td>3.2</td>
+  </tr>
+</table>
+
+---
+
+## 🎨 Estilizando tabelas com CSS
+
+No arquivo `styles.css`:
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 6px;
+    }
+
+    th {
+      background-color: #f5f5f5;
+    }
+
+---
+
+## 📊 Tabelas geradas a partir do R
+
+Exemplo simples com `knitr::kable()`:
+
+    ```{r}
+    knitr::kable(
+      head(mtcars),
+      caption = "Primeiras linhas do mtcars"
+    )
+    ```
+
+(Use para tabelas dinâmicas ou grandes.)
+
+---
+
+## 🧠 Boas práticas didáticas
+
+- poucas colunas  
+- cabeçalhos claros  
+- números alinhados à direita  
+- evite tabelas largas demais  
+- explique a tabela no texto  
+
+👉 **Tabela boa se entende sem legenda longa.**
+
+---
+
+## ⚠️ Erros comuns
+
+- tabela grande demais para a página  
+- excesso de bordas  
+- alinhamento inconsistente  
+- usar tabela quando gráfico é melhor  
+
+---
+
+## 📌 Resumo final
+
+- Markdown é suficiente para 80% dos casos  
+- HTML resolve layouts complexos  
+- LaTeX Math funciona dentro das células  
+- CSS dá acabamento profissional  
+- Clareza é mais importante que estética  
+
+Este guia pode ser usado como **referência padrão para criação de tabelas em Quarto (HTML)**.

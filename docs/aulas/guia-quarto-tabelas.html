@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dr.&nbsp;Alexandre Dias Kassuga">
+<meta name="author" content="Alexandre Kassuga">
 
-<title>Estatística Básica utilizando R – Estatística Básica com R</title>
+<title>Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML) – Estatística Básica com R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,24 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-e31584831b205ffbb2d98406f31c2a5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -109,9 +109,9 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Estatística Básica com R</span>
     </a>
   </div>
@@ -122,23 +122,23 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Início</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../aulas/aulas.html"> 
+    <a class="nav-link" href="../aulas/aulas.html"> 
 <span class="menu-text">Aulas</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../exercicios.qmd"> 
+    <a class="nav-link" href="../exercicios.qmd"> 
 <span class="menu-text">Exercícios</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../materiais.qmd"> 
+    <a class="nav-link" href="../materiais.qmd"> 
 <span class="menu-text">Materiais</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../envio.html"> 
+    <a class="nav-link" href="../envio.html"> 
 <span class="menu-text">Envio</span></a>
   </li>  
 </ul>
@@ -157,30 +157,30 @@ window.Quarto = {
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#pacote-r---comandos-básicos" id="toc-pacote-r---comandos-básicos" class="nav-link active" data-scroll-target="#pacote-r---comandos-básicos">Pacote R - Comandos Básicos</a></li>
-  <li><a href="#pacote-r---comandos-básicos-1" id="toc-pacote-r---comandos-básicos-1" class="nav-link" data-scroll-target="#pacote-r---comandos-básicos-1">Pacote R - Comandos Básicos</a></li>
-  <li><a href="#pacote-r---comandos-básicos-2" id="toc-pacote-r---comandos-básicos-2" class="nav-link" data-scroll-target="#pacote-r---comandos-básicos-2">Pacote R - Comandos Básicos</a></li>
-  <li><a href="#pacote-r---comandos-básicos-3" id="toc-pacote-r---comandos-básicos-3" class="nav-link" data-scroll-target="#pacote-r---comandos-básicos-3">Pacote R - Comandos Básicos</a></li>
-  <li><a href="#pacote-r---comandos-básicos-4" id="toc-pacote-r---comandos-básicos-4" class="nav-link" data-scroll-target="#pacote-r---comandos-básicos-4">Pacote R - Comandos básicos</a></li>
-  <li><a href="#pacote-r---comandos-básicos-5" id="toc-pacote-r---comandos-básicos-5" class="nav-link" data-scroll-target="#pacote-r---comandos-básicos-5">Pacote R - Comandos básicos</a></li>
-  <li><a href="#pacote-r---comandos-básicos-6" id="toc-pacote-r---comandos-básicos-6" class="nav-link" data-scroll-target="#pacote-r---comandos-básicos-6">Pacote R - Comandos básicos</a></li>
-  <li><a href="#pacote-r---comandos-básicos-7" id="toc-pacote-r---comandos-básicos-7" class="nav-link" data-scroll-target="#pacote-r---comandos-básicos-7">Pacote R - Comandos básicos</a></li>
-  <li><a href="#pacote-r---comandos-básicos-8" id="toc-pacote-r---comandos-básicos-8" class="nav-link" data-scroll-target="#pacote-r---comandos-básicos-8">Pacote R - Comandos básicos</a></li>
-  <li><a href="#pacote-r---comandos-básicos-9" id="toc-pacote-r---comandos-básicos-9" class="nav-link" data-scroll-target="#pacote-r---comandos-básicos-9">Pacote R - Comandos básicos</a></li>
-  <li><a href="#pacote-r---comandos-básicos-10" id="toc-pacote-r---comandos-básicos-10" class="nav-link" data-scroll-target="#pacote-r---comandos-básicos-10">Pacote R - Comandos básicos</a></li>
-  <li><a href="#pacote-r---comandos-básicos-11" id="toc-pacote-r---comandos-básicos-11" class="nav-link" data-scroll-target="#pacote-r---comandos-básicos-11">Pacote R - Comandos básicos</a></li>
+  <li><a href="#objetivo-do-guia" id="toc-objetivo-do-guia" class="nav-link active" data-scroll-target="#objetivo-do-guia">🎯 Objetivo do guia</a></li>
+  <li><a href="#conceito-fundamental" id="toc-conceito-fundamental" class="nav-link" data-scroll-target="#conceito-fundamental">🧠 Conceito fundamental</a></li>
+  <li><a href="#tabela-básica-em-markdown" id="toc-tabela-básica-em-markdown" class="nav-link" data-scroll-target="#tabela-básica-em-markdown">📋 Tabela básica em Markdown</a></li>
+  <li><a href="#cabeçalho-obrigatório-em-markdown" id="toc-cabeçalho-obrigatório-em-markdown" class="nav-link" data-scroll-target="#cabeçalho-obrigatório-em-markdown">📌 Cabeçalho obrigatório em Markdown</a></li>
+  <li><a href="#tabela-sem-cabeçalho-truque-funcional" id="toc-tabela-sem-cabeçalho-truque-funcional" class="nav-link" data-scroll-target="#tabela-sem-cabeçalho-truque-funcional">🚫 Tabela sem cabeçalho (truque funcional)</a></li>
+  <li><a href="#alinhamento-de-colunas" id="toc-alinhamento-de-colunas" class="nav-link" data-scroll-target="#alinhamento-de-colunas">↔︎️ Alinhamento de colunas</a></li>
+  <li><a href="#conteúdo-matemático-em-tabelas" id="toc-conteúdo-matemático-em-tabelas" class="nav-link" data-scroll-target="#conteúdo-matemático-em-tabelas">🔢 Conteúdo matemático em tabelas</a></li>
+  <li><a href="#ênfase-visual-dentro-da-tabela" id="toc-ênfase-visual-dentro-da-tabela" class="nav-link" data-scroll-target="#ênfase-visual-dentro-da-tabela">🎨 Ênfase visual dentro da tabela</a></li>
+  <li><a href="#quebras-de-linha-dentro-da-célula" id="toc-quebras-de-linha-dentro-da-célula" class="nav-link" data-scroll-target="#quebras-de-linha-dentro-da-célula">🧩 Quebras de linha dentro da célula</a></li>
+  <li><a href="#quando-usar-tabela-em-html" id="toc-quando-usar-tabela-em-html" class="nav-link" data-scroll-target="#quando-usar-tabela-em-html">🧱 Quando usar tabela em HTML</a></li>
+  <li><a href="#estilizando-tabelas-com-css" id="toc-estilizando-tabelas-com-css" class="nav-link" data-scroll-target="#estilizando-tabelas-com-css">🎨 Estilizando tabelas com CSS</a></li>
+  <li><a href="#tabelas-geradas-a-partir-do-r" id="toc-tabelas-geradas-a-partir-do-r" class="nav-link" data-scroll-target="#tabelas-geradas-a-partir-do-r">📊 Tabelas geradas a partir do R</a></li>
+  <li><a href="#boas-práticas-didáticas" id="toc-boas-práticas-didáticas" class="nav-link" data-scroll-target="#boas-práticas-didáticas">🧠 Boas práticas didáticas</a></li>
+  <li><a href="#erros-comuns" id="toc-erros-comuns" class="nav-link" data-scroll-target="#erros-comuns">⚠️ Erros comuns</a></li>
+  <li><a href="#resumo-final" id="toc-resumo-final" class="nav-link" data-scroll-target="#resumo-final">📌 Resumo final</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Outros formatos</h2><ul><li><a href="aula-R-2-primeiros-passos.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Estatística Básica utilizando R</h1>
-<p class="subtitle lead"></p><ul>
-<li>Pacote R: primeiros comandos</li>
-</ul><p></p>
+<h1 class="title">Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML)</h1>
 </div>
 
 
@@ -190,7 +190,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Autor</div>
     <div class="quarto-title-meta-contents">
-             <p>Dr.&nbsp;Alexandre Dias Kassuga </p>
+             <p>Alexandre Kassuga </p>
           </div>
   </div>
     
@@ -203,390 +203,336 @@ window.Quarto = {
 </header>
 
 
-<section id="pacote-r---comandos-básicos" class="level2">
-<h2 class="anchored" data-anchor-id="pacote-r---comandos-básicos">Pacote R - Comandos Básicos</h2>
-<p><br>
-</p>
+<section id="objetivo-do-guia" class="level2">
+<h2 class="anchored" data-anchor-id="objetivo-do-guia">🎯 Objetivo do guia</h2>
+<p>Este guia apresenta <strong>todas as formas práticas de inserir, editar e controlar tabelas em documentos Quarto (<code>.qmd</code>) renderizados em HTML</strong>, com foco em:</p>
 <ul>
-<li>#
-<ul>
-<li>Indica que sequência de caracteres após “#” não deve ser lido</li>
-<li>Permite inserir comentários dentro do script</li>
-<li>Muito importante para lembrar e compartilhar os códigos</li>
-</ul></li>
+<li>📋 Tabelas simples em Markdown<br>
+</li>
+<li>🧱 Tabelas sem cabeçalho<br>
+</li>
+<li>🎨 Alinhamento e formatação<br>
+</li>
+<li>🧠 Boas práticas para material didático e científico<br>
+</li>
+<li>⚙️ Quando usar Markdown, HTML ou R</li>
 </ul>
-<p><br>
-<br>
-</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figuras/comentarios.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
+<p>O objetivo é servir como <strong>referência rápida e confiável</strong>.</p>
+<hr>
 </section>
-<section id="pacote-r---comandos-básicos-1" class="level2">
-<h2 class="anchored" data-anchor-id="pacote-r---comandos-básicos-1">Pacote R - Comandos Básicos</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><br>
-</p>
-<ul>
-<li>#</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figuras/sem-comentarios.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figuras/com-comentarios.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
+<section id="conceito-fundamental" class="level2">
+<h2 class="anchored" data-anchor-id="conceito-fundamental">🧠 Conceito fundamental</h2>
+<p>No Quarto, tabelas podem ser criadas de três formas principais:</p>
+<ol type="1">
+<li><strong>Markdown puro</strong> → simples, rápido, didático<br>
+</li>
+<li><strong>HTML</strong> → controle total de layout<br>
+</li>
+<li><strong>R (knitr / gt / kable)</strong> → tabelas dinâmicas</li>
+</ol>
+<p>👉 Regra prática:<br>
+<strong>quanto mais simples a tabela, mais simples a ferramenta</strong>.</p>
+<hr>
 </section>
-<section id="pacote-r---comandos-básicos-2" class="level2">
-<h2 class="anchored" data-anchor-id="pacote-r---comandos-básicos-2">Pacote R - Comandos Básicos</h2>
-<ul>
-<li>Definir a pasta de trabalho
-<ul>
-<li>Via Menu</li>
-<li>Via comando:
-<ul>
-<li>setwd()</li>
-<li>Cuidado com a “\”
-<ul>
-<li>Deve ser “\ \”</li>
-<li>Ou “/”</li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul>
-<p><img src="figuras/diretorio.png" class="absolute img-fluid" style="width:50.0%" data-top="0" data-right="0 "></p>
+<section id="tabela-básica-em-markdown" class="level2">
+<h2 class="anchored" data-anchor-id="tabela-básica-em-markdown">📋 Tabela básica em Markdown</h2>
+<p>Estrutura:</p>
+<pre><code>| Coluna A | Coluna B | Coluna C |
+|----------|----------|----------|
+| 10       | 20       | 30       |
+| 15       | 25       | 35       |</code></pre>
+<p>Resultado:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Coluna A</th>
+<th>Coluna B</th>
+<th>Coluna C</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>10</td>
+<td>20</td>
+<td>30</td>
+</tr>
+<tr class="even">
+<td>15</td>
+<td>25</td>
+<td>35</td>
+</tr>
+</tbody>
+</table>
+<hr>
 </section>
-<section id="pacote-r---comandos-básicos-3" class="level2">
-<h2 class="anchored" data-anchor-id="pacote-r---comandos-básicos-3">Pacote R - Comandos Básicos</h2>
-<div class="columns">
-<div class="column" style="width:45%;">
+<section id="cabeçalho-obrigatório-em-markdown" class="level2">
+<h2 class="anchored" data-anchor-id="cabeçalho-obrigatório-em-markdown">📌 Cabeçalho obrigatório em Markdown</h2>
+<p>Em Markdown, <strong>toda tabela precisa de uma linha de cabeçalho</strong>, mesmo que você não queira exibi-lo.</p>
+<p>Se você <strong>não quer cabeçalho visível</strong>, use um truque simples.</p>
+<hr>
+</section>
+<section id="tabela-sem-cabeçalho-truque-funcional" class="level2">
+<h2 class="anchored" data-anchor-id="tabela-sem-cabeçalho-truque-funcional">🚫 Tabela sem cabeçalho (truque funcional)</h2>
+<p>Use nomes genéricos e oculte visualmente com CSS depois.</p>
+<pre><code>|   |   |
+|---|---|
+| Média | 12.5 |
+| Desvio | 3.2 |</code></pre>
+<p>Resultado:</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td>Média</td>
+<td>12.5</td>
+</tr>
+<tr class="even">
+<td>Desvio</td>
+<td>3.2</td>
+</tr>
+</tbody>
+</table>
+<p>(O CSS pode remover a linha superior se necessário.)</p>
+<hr>
+</section>
+<section id="alinhamento-de-colunas" class="level2">
+<h2 class="anchored" data-anchor-id="alinhamento-de-colunas">↔︎️ Alinhamento de colunas</h2>
+<p>Use <code>:</code> na linha separadora.</p>
+<pre><code>| Esquerda | Centro | Direita |
+|:---------|:------:|--------:|
+| a        | b      | 10      |
+| c        | d      | 20      |</code></pre>
+<p>Resultado:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Esquerda</th>
+<th style="text-align: center;">Centro</th>
+<th style="text-align: right;">Direita</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">a</td>
+<td style="text-align: center;">b</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">c</td>
+<td style="text-align: center;">d</td>
+<td style="text-align: right;">20</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="conteúdo-matemático-em-tabelas" class="level2">
+<h2 class="anchored" data-anchor-id="conteúdo-matemático-em-tabelas">🔢 Conteúdo matemático em tabelas</h2>
+<p>LaTeX Math funciona normalmente dentro das células.</p>
+<pre><code>| Estatística | Fórmula |
+|-------------|---------|
+| Média | $\bar{x} = \frac{1}{n}\sum x_i$ |
+| Variância | $s^2$ |</code></pre>
+<p>Resultado:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Estatística</th>
+<th>Fórmula</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Média</td>
+<td><span class="math inline">\(\bar{x} = \frac{1}{n}\sum x_i\)</span></td>
+</tr>
+<tr class="even">
+<td>Variância</td>
+<td><span class="math inline">\(s^2\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="ênfase-visual-dentro-da-tabela" class="level2">
+<h2 class="anchored" data-anchor-id="ênfase-visual-dentro-da-tabela">🎨 Ênfase visual dentro da tabela</h2>
+<p>Você pode usar Markdown comum:</p>
+<pre><code>| Item | Valor |
+|------|-------|
+| **Média** | *Alta* |
+| Desvio | **Baixo** |</code></pre>
+<p>Resultado:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Média</strong></td>
+<td><em>Alta</em></td>
+</tr>
+<tr class="even">
+<td>Desvio</td>
+<td><strong>Baixo</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="quebras-de-linha-dentro-da-célula" class="level2">
+<h2 class="anchored" data-anchor-id="quebras-de-linha-dentro-da-célula">🧩 Quebras de linha dentro da célula</h2>
+<p>Use <code>&lt;br&gt;</code> quando necessário:</p>
+<pre><code>| Variável | Descrição |
+|----------|-----------|
+| pH | Medida de acidez&lt;br&gt;Escala logarítmica |</code></pre>
+<p>Resultado:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Variável</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>pH</td>
+<td>Medida de acidez<br>Escala logarítmica</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="quando-usar-tabela-em-html" class="level2">
+<h2 class="anchored" data-anchor-id="quando-usar-tabela-em-html">🧱 Quando usar tabela em HTML</h2>
+<p>Use HTML quando precisar de:</p>
 <ul>
-<li>Pacotes
-<ul>
-<li>Carregam conjuntos de funções e dados</li>
-<li>O programa já vem com 7 pacotes instalados
-<ul>
-<li>base: funções essenciais;</li>
-<li>stats: estatística paramétrica e não-paramétrica;</li>
-<li>graphics: histogramas, boxplots, diagramas de dispersão;</li>
-<li>utils: pedir ajuda, instalar pacotes e importar dados;</li>
-<li>datasets: bancos de dados de exemplo;</li>
-<li>grDevices: visualizar tela e exportar gráficos; e</li>
-<li>methods: ver a classe e fazer coerção de objetos.</li>
-</ul></li>
-</ul></li>
+<li>células mescladas<br>
+</li>
+<li>controle total de estilo<br>
+</li>
+<li>remover cabeçalhos<br>
+</li>
+<li>layout mais complexo</li>
 </ul>
-</div><div class="column" style="width:10%;">
+<p>Exemplo simples:</p>
+<pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Média&lt;/td&gt;
+    &lt;td&gt;12.5&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Desvio&lt;/td&gt;
+    &lt;td&gt;3.2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<p>Resultado:</p>
+<table>
+<tbody><tr>
+<td>
+Média
+</td>
+<td>
+12.5
+</td>
+</tr>
+<tr>
+<td>
+Desvio
+</td>
+<td>
+3.2
+</td>
+</tr>
+</tbody></table>
+<hr>
+</section>
+<section id="estilizando-tabelas-com-css" class="level2">
+<h2 class="anchored" data-anchor-id="estilizando-tabelas-com-css">🎨 Estilizando tabelas com CSS</h2>
+<p>No arquivo <code>styles.css</code>:</p>
+<pre><code>table {
+  border-collapse: collapse;
+  width: 100%;
+}
 
-</div><div class="column" style="width:45%;">
-<ul>
-<li>Instalação
-<ul>
-<li>Pela internet
-<ul>
-<li>Console <span style="color: red"> &gt; install.packages(“NOME DO PACOTE”)</span></li>
-<li>Menu Pacotes – Instalar Pacotes</li>
-</ul></li>
-<li>Arquivo zip
-<ul>
-<li>Menu Pacotes – Instalar pacote(s) de arquivos locais<br>
-</li>
-</ul></li>
-</ul></li>
-<li>Abrir
-<ul>
-<li>Console <span style="color: red"> &gt; library(“NOME DO PACOTE”)</span></li>
-<li>Menu</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="pacote-r---comandos-básicos-4" class="level2">
-<h2 class="anchored" data-anchor-id="pacote-r---comandos-básicos-4">Pacote R - Comandos básicos</h2>
-<div class="columns">
-<div class="column" style="width:45%;">
-<ul>
-<li>Calculadora
-<ul>
-<li>“+” - soma</li>
-<li>“-” - subtração</li>
-<li>“/” - divisão</li>
-<li>“*” - multiplicação</li>
-<li>“^” – potência</li>
-<li>“()” – expressões complexas</li>
-</ul></li>
-</ul>
-<p><br>
-</p>
-<p><span style="color: red"> &gt; 5*3</span><br>
-<span style="color: blue"> [1] 15</span><br>
-<span style="color: red"> &gt; 5*(3+2) </span><br>
-<span style="color: blue">[1]</span> ?<br>
-</p>
-</div><div class="column" style="width:10%;">
+th, td {
+  border: 1px solid #ccc;
+  padding: 6px;
+}
 
-</div><div class="column" style="width:45%;">
-<p><img src="figuras/pac-r-console.png" class="img-fluid" style="width:100.0%"></p>
-</div>
-</div>
+th {
+  background-color: #f5f5f5;
+}</code></pre>
+<hr>
 </section>
-<section id="pacote-r---comandos-básicos-5" class="level2">
-<h2 class="anchored" data-anchor-id="pacote-r---comandos-básicos-5">Pacote R - Comandos básicos</h2>
-<div class="columns">
-<div class="column" style="width:45%;">
-<ul>
-<li>Calculadora
-<ul>
-<li>“+” - soma</li>
-<li>“-” - subtração</li>
-<li>“/” - divisão</li>
-<li>“*” - multiplicação</li>
-<li>“^” – potência</li>
-<li>“()” – expressões complexas</li>
-</ul></li>
-</ul>
-<p><br>
-</p>
-<p><span style="color: red"> &gt; 5*3</span><br>
-<span style="color: blue"> [1] 15</span><br>
-<span style="color: red"> &gt; 5*(3+2) </span><br>
-<span style="color: blue">[1]</span> ?<br>
-</p>
-</div><div class="column" style="width:10%;">
+<section id="tabelas-geradas-a-partir-do-r" class="level2">
+<h2 class="anchored" data-anchor-id="tabelas-geradas-a-partir-do-r">📊 Tabelas geradas a partir do R</h2>
+<p>Exemplo simples com <code>knitr::kable()</code>:</p>
+<pre><code>::: {.cell}
+::: {.cell-output-display}
 
-</div><div class="column" style="width:45%;">
-<ul>
-<li>log(x) <span style="color: yellow"> # logaritmo natural</span></li>
-<li>log10(x) <span style="color: yellow"> # log de x na base 10</span></li>
-<li>log(x,base) <span style="color: yellow"> # log de x na base escolhida</span></li>
-<li>abs(x) <span style="color: yellow"> # “valor absoluto”. </span></li>
-<li>factorial(x) <span style="color: yellow"> # fatorial. </span></li>
-<li>sqrt(x) <span style="color: yellow"> # raiz</span></li>
-<li>prod (x,x) <span style="color: yellow"> # produto (mesma coisa que x*x)</span></li>
-<li>prod(x,x,x,x,x) <span style="color: yellow"> # confira se é igual a x^5</span></li>
-<li>prod(1,2,3,4) <span style="color: yellow"> # confira</span></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="pacote-r---comandos-básicos-6" class="level2">
-<h2 class="anchored" data-anchor-id="pacote-r---comandos-básicos-6">Pacote R - Comandos básicos</h2>
-<div class="columns">
-<div class="column" style="width:45%;">
-<ul>
-<li>Calculadora
-<ul>
-<li>“+” - soma</li>
-<li>“-” - subtração</li>
-<li>“/” - divisão</li>
-<li>“*” - multiplicação</li>
-<li>“^” – potência</li>
-<li>“()” – expressões complexas</li>
-</ul></li>
-</ul>
-<p><br>
-</p>
-<p><span style="color: red"> &gt; 5*3</span><br>
-<span style="color: blue"> [1] 15</span><br>
-<span style="color: red"> &gt; 5*(3+2) </span><br>
-<span style="color: blue">[1]</span> ?<br>
-</p>
-</div><div class="column" style="width:10%;">
 
-</div><div class="column" style="width:45%;">
-<ul>
-<li>Exercício :
-<ul>
-<li><span class="math inline">\(35*7 =\)</span></li>
-<li><span class="math inline">\(5^2 =\)</span></li>
-<li><span class="math inline">\((2+\frac{15}{3})*7 =\)</span></li>
-<li>Três caminhões transportam 200m³ de areia. Para transportar 1600m³ de areia, quantos caminhões iguais a esse seriam necessários? Resposta:</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="pacote-r---comandos-básicos-7" class="level2">
-<h2 class="anchored" data-anchor-id="pacote-r---comandos-básicos-7">Pacote R - Comandos básicos</h2>
-<div class="columns">
-<div class="column" style="width:45%;">
-<ul>
-<li>Calculadora
-<ul>
-<li>“+” - soma</li>
-<li>“-” - subtração</li>
-<li>“/” - divisão</li>
-<li>“*” - multiplicação</li>
-<li>“^” – potência</li>
-<li>“()” – expressões complexas</li>
-</ul></li>
-</ul>
-<p><br>
-</p>
-<p><span style="color: red"> &gt; 5*3</span><br>
-<span style="color: blue"> [1] 15</span><br>
-<span style="color: red"> &gt; 5*(3+2) </span><br>
-<span style="color: blue">[1]</span> ?<br>
-</p>
-</div><div class="column" style="width:10%;">
+Table: Primeiras linhas do mtcars
 
-</div><div class="column" style="width:45%;">
-<ul>
-<li>Exercício :
-<ul>
-<li><span class="math inline">\(35*7 = 245\)</span></li>
-<li><span class="math inline">\(5^2 = 25\)</span></li>
-<li><span class="math inline">\((2+\frac{15}{3})*7 = 49\)</span></li>
-<li>Três caminhões transportam 200m³ de areia. Para transportar 1600m³ de areia, quantos caminhões iguais a esse seriam necessários? Resposta: 24 caminhões</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="pacote-r---comandos-básicos-8" class="level2">
-<h2 class="anchored" data-anchor-id="pacote-r---comandos-básicos-8">Pacote R - Comandos básicos</h2>
-<ul>
-<li>Primeiro exercício em programação</li>
-</ul>
-<p><br>
-</p>
-<p><span style="color: red"> &gt; print(“Olá mundo”)</span><br>
-<span style="color: blue"> [1] “Olá mundo” </span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figuras/funcao-print.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
-</figure>
-</div>
-</section>
-<section id="pacote-r---comandos-básicos-9" class="level2">
-<h2 class="anchored" data-anchor-id="pacote-r---comandos-básicos-9">Pacote R - Comandos básicos</h2>
-<ul>
-<li>No R trabalhamos com objetos
-<ul>
-<li>Utilizamos “&lt;-” ou “=” para definir os objetos
-<ul>
-<li>Damos um nome e valores associados Quantitativos ou qualitativos</li>
-</ul></li>
-<li>Com estes objetos podemos executar funções
-<ul>
-<li>Associado a função sempre temos “( )”</li>
-</ul></li>
-<li>Podemos extrair parte dos objeto
-<ul>
-<li>Utilizando “[ ]”</li>
-</ul></li>
-</ul></li>
-</ul>
-</section>
-<section id="pacote-r---comandos-básicos-10" class="level2">
-<h2 class="anchored" data-anchor-id="pacote-r---comandos-básicos-10">Pacote R - Comandos básicos</h2>
-<div class="columns">
-<div class="column" style="width:45%;">
-<ul>
-<li>Objetos</li>
-</ul>
-<p><span style="color: red"> &gt; x &lt;- 83</span><br>
-<span style="color: red"> &gt; x</span><br>
-<span style="color: blue">[1] 83 </span><br>
-<span style="color: red"> &gt; y &lt;- 10</span><br>
-<span style="color: red"> &gt; y</span><br>
-<span style="color: blue">[1] 10</span><br>
-<span style="color: red"> &gt; x + y</span><br>
-<span style="color: blue">[1]</span> ?<br>
-</p>
-</div><div class="column" style="width:10%;">
+|                  |  mpg| cyl| disp|  hp| drat|    wt|  qsec| vs| am| gear| carb|
+|:-----------------|----:|---:|----:|---:|----:|-----:|-----:|--:|--:|----:|----:|
+|Mazda RX4         | 21.0|   6|  160| 110| 3.90| 2.620| 16.46|  0|  1|    4|    4|
+|Mazda RX4 Wag     | 21.0|   6|  160| 110| 3.90| 2.875| 17.02|  0|  1|    4|    4|
+|Datsun 710        | 22.8|   4|  108|  93| 3.85| 2.320| 18.61|  1|  1|    4|    1|
+|Hornet 4 Drive    | 21.4|   6|  258| 110| 3.08| 3.215| 19.44|  1|  0|    3|    1|
+|Hornet Sportabout | 18.7|   8|  360| 175| 3.15| 3.440| 17.02|  0|  0|    3|    2|
+|Valiant           | 18.1|   6|  225| 105| 2.76| 3.460| 20.22|  1|  0|    3|    1|
 
-</div><div class="column" style="width:45%;">
-<ul>
-<li>Exercício : <span style="color: red"> (agora utilizando objetos)</span>
-<ul>
-<li><span class="math inline">\(35*7 = 245\)</span></li>
-<li><span class="math inline">\(5^2 = 25\)</span></li>
-<li><span class="math inline">\((2+\frac{15}{3})*7 = 49\)</span></li>
-<li>Três caminhões transportam 200m³ de areia. Para transportar 1600m³ de areia, quantos caminhões iguais a esse seriam necessários? Resposta: 24 caminhões</li>
-</ul></li>
-</ul>
-</div>
-</div>
+
+:::
+:::</code></pre>
+<p>(Use para tabelas dinâmicas ou grandes.)</p>
+<hr>
 </section>
-<section id="pacote-r---comandos-básicos-11" class="level1">
-<h1>Pacote R - Comandos básicos</h1>
-<div class="columns">
-<div class="column" style="width:45%;">
+<section id="boas-práticas-didáticas" class="level2">
+<h2 class="anchored" data-anchor-id="boas-práticas-didáticas">🧠 Boas práticas didáticas</h2>
 <ul>
-<li>Objetos</li>
+<li>poucas colunas<br>
+</li>
+<li>cabeçalhos claros<br>
+</li>
+<li>números alinhados à direita<br>
+</li>
+<li>evite tabelas largas demais<br>
+</li>
+<li>explique a tabela no texto</li>
 </ul>
-<p><span style="color: red"> &gt; x &lt;- 83</span><br>
-<span style="color: red"> &gt; x</span><br>
-<span style="color: blue">[1] 83 </span><br>
-<span style="color: red"> &gt; y &lt;- 10</span><br>
-<span style="color: red"> &gt; y</span><br>
-<span style="color: blue">[1] 10</span><br>
-<span style="color: red"> &gt; x + y</span><br>
-<span style="color: blue">[1]</span> ?<br>
-</p>
-</div><div class="column" style="width:45%;">
+<p>👉 <strong>Tabela boa se entende sem legenda longa.</strong></p>
+<hr>
+</section>
+<section id="erros-comuns" class="level2">
+<h2 class="anchored" data-anchor-id="erros-comuns">⚠️ Erros comuns</h2>
 <ul>
-<li>Exercício : <span style="color: red"> (agora utilizando objetos)</span>
-<ul>
-<li><span class="math inline">\(35*7 = 245\)</span>
-<ul>
-<li><span style="color: red"> &gt; x &lt;- 35</span><br>
+<li>tabela grande demais para a página<br>
 </li>
-<li><span style="color: red"> &gt; y &lt;- 7</span><br>
+<li>excesso de bordas<br>
 </li>
-<li><span style="color: red"> &gt; x * y</span><br>
+<li>alinhamento inconsistente<br>
 </li>
-</ul></li>
-<li><span class="math inline">\(5^2 = 25\)</span>
-<ul>
-<li><span style="color: red"> &gt; x &lt;- 5</span><br>
-</li>
-<li><span style="color: red"> &gt; y &lt;- 2</span><br>
-</li>
-<li><span style="color: red"> &gt; x^y</span>&nbsp;</li>
-</ul></li>
-<li><span class="math inline">\((2+\frac{15}{3})*7 = 49\)</span>
-<ul>
-<li><span style="color: red"> &gt; x &lt;- 2</span><br>
-</li>
-<li><span style="color: red"> &gt; y &lt;- 15/3</span><br>
-</li>
-<li><span style="color: red"> &gt; z &lt;- 7</span><br>
-</li>
-<li><span style="color: red"> &gt; z &lt;- 7</span><br>
-</li>
-</ul></li>
-</ul></li>
+<li>usar tabela quando gráfico é melhor</li>
 </ul>
-<div class="texto-65">
-<div class="absolute" data-bottom="200" data-right="0">
-<p>Três caminhões transportam 200m³ de<br>
-areia.Para transportar 1600m³ de areia,<br>
-quantos caminhões iguais a esse seriam<br>
-necessários?<br>
-Resposta: 24 caminhões<br>
-<span style="color: red"> &gt; vol1 &lt;- 200</span><br>
-<span style="color: red"> &gt; caminhoes &lt;- 3</span><br>
-<span style="color: red"> vol_total &lt;- 1600</span><br>
-<span style="color: red"> x &lt;- (vol_total*caminhoes)/vol1</span><br>
-<span style="color: red"> x</span><br>
-</p>
-</div>
-</div>
-</div>
-</div>
+<hr>
+</section>
+<section id="resumo-final" class="level2">
+<h2 class="anchored" data-anchor-id="resumo-final">📌 Resumo final</h2>
+<ul>
+<li>Markdown é suficiente para 80% dos casos<br>
+</li>
+<li>HTML resolve layouts complexos<br>
+</li>
+<li>LaTeX Math funciona dentro das células<br>
+</li>
+<li>CSS dá acabamento profissional<br>
+</li>
+<li>Clareza é mais importante que estética</li>
+</ul>
+<p>Este guia pode ser usado como <strong>referência padrão para criação de tabelas em Quarto (HTML)</strong>.</p>
 
 
 </section>

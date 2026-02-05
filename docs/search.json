@@ -1628,7 +1628,7 @@
     "href": "aulas/aulas.html#linguagem-r",
     "title": "Aulas",
     "section": "Linguagem R",
-    "text": "Linguagem R\n\n\nAula 01 – A Linguagem R\n\nO R é para mim?\nA linguagem R\nUm pouco de história…\nNão tenha medo do erro\nR x Python\nO pacote R\nRStudio\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – O pacote R\n\nComandos Básicos\nPacotes\nO R como calculadora\nIniciando em objetos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Objetos e Dados\n\nAtribuição\nNomeando objetos\nUtilizando objetos em R\nTipos de dados em R\nAlguns comandos\n\n➡️ Aula em breve\n\n\n\nAula 04 – Funções e objetos\n\nFunções\nCriando funções\nMais sobre objetos\nEstruturas de dados\n\n➡️ Aula em breve\n\n\n\nAula 05 – Graficos no R\n\nComo funcionam gráficos no R\nTipos de gráficos\nParâmetros gráficos\n\n➡️ Aula em breve\n\n\nAula 06 – Estatística descritiva no R\n\nEstatística descritiva\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve\n\n\nAula 07 – Testes de significância em R\n\nTestes de significância\n\nTeste t\nMann-Whitney\nQui-quadrado\nAnálise de Variância\nKruskall-Wallis\n\n\n➡️ Aula em breve"
+    "text": "Linguagem R\n\n\nAula 01 – A Linguagem R\n\nO R é para mim?\nA linguagem R\nUm pouco de história…\nNão tenha medo do erro\nR x Python\nO pacote R\nRStudio\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – O pacote R\n\nComandos Básicos\nPacotes\nO R como calculadora\nIniciando em objetos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Objetos e Dados\n\nAtribuição\nNomeando objetos\nUtilizando objetos em R\nTipos de dados em R\n\n➡️ Acessar slides da aula\n\n\n\nAula 04 – Funções e objetos\n\nFunções\nCriando funções\nMais sobre objetos\nEstruturas de dados\n\n➡️ Aula em breve\n\n\n\nAula 05 – Graficos no R\n\nComo funcionam gráficos no R\nTipos de gráficos\nParâmetros gráficos\n\n➡️ Aula em breve\n\n\nAula 06 – Estatística descritiva no R\n\nEstatística descritiva\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve\n\n\nAula 07 – Testes de significância em R\n\nTestes de significância\n\nTeste t\nMann-Whitney\nQui-quadrado\nAnálise de Variância\nKruskall-Wallis\n\n\n➡️ Aula em breve"
   },
   {
     "objectID": "aulas/guia-quarto-latex-math-html.html",
@@ -3489,8 +3489,8 @@
     "objectID": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos",
     "href": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos",
     "title": "Estatística Básica utilizando R",
-    "section": "Pacote R - Comandos Básicos",
-    "text": "Pacote R - Comandos Básicos\n\n\n\n#\n\nIndica que sequência de caracteres após “#” não deve ser lido\nPermite inserir comentários dentro do script\nMuito importante para lembrar e compartilhar os códigos"
+    "section": "",
+    "text": "#\n\nIndica que sequência de caracteres após “#” não deve ser lido\nPermite inserir comentários dentro do script\nMuito importante para lembrar e compartilhar os códigos"
   },
   {
     "objectID": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-1",
@@ -3561,5 +3561,215 @@
     "title": "Estatística Básica utilizando R",
     "section": "Pacote R - Comandos básicos",
     "text": "Pacote R - Comandos básicos\n\n\n\nObjetos\n\n &gt; x &lt;- 83\n &gt; x\n[1] 83 \n &gt; y &lt;- 10\n &gt; y\n[1] 10\n &gt; x + y\n[1] ?\n\n\n\n\n\nExercício :  (agora utilizando objetos)\n\n\\(35*7 = 245\\)\n\\(5^2 = 25\\)\n\\((2+\\frac{15}{3})*7 = 49\\)\nTrês caminhões transportam 200m³ de areia. Para transportar 1600m³ de areia, quantos caminhões iguais a esse seriam necessários? Resposta: 24 caminhões"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-2-primeiros-passos.html#teste",
+    "href": "aulas/slides/aula-R-2-primeiros-passos.html#teste",
+    "title": "Estatística Básica utilizando R",
+    "section": "teste",
+    "text": "teste\n\nx &lt;- c(1:12)\n\nxmat &lt;- matrix(x, ncol = 4)\nxmat\n\n     [,1] [,2] [,3] [,4]\n[1,]    1    4    7   10\n[2,]    2    5    8   11\n[3,]    3    6    9   12"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-3-objetos.html#pacote-r---comandos-básicos",
+    "href": "aulas/slides/aula-R-3-objetos.html#pacote-r---comandos-básicos",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R - Comandos Básicos",
+    "text": "Pacote R - Comandos Básicos\n\n\n\nNo R trabalhamos com objetos\n\nUtilizamos o operador “&lt;-” para definir os objetos\nDamos um nome e valores associados\n\nQuantitativos ou qualitativos\n\n\n\n\nx &lt;- 10\nx\n\n[1] 10\n\n\n\n\n\n\n\ny &lt;- 1:10\ny\n\n [1]  1  2  3  4  5  6  7  8  9 10"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-3-objetos.html#pacote-r---comandos-básicos-1",
+    "href": "aulas/slides/aula-R-3-objetos.html#pacote-r---comandos-básicos-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R - Comandos Básicos",
+    "text": "Pacote R - Comandos Básicos\n\n\n\nNo R trabalhamos com objetos\n\nUtilizamos o operador “&lt;-” para definir os objetos\nDamos um nome e valores associados\n\nQuantitativos ou qualitativos\n\n\n\n\nx &lt;- 10\nx\n\n[1] 10\n\n\n\n\n\n\n\ny &lt;- 1:10\ny\n\n [1]  1  2  3  4  5  6  7  8  9 10"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-3-objetos.html#pacote-r---comandos-básicos-2",
+    "href": "aulas/slides/aula-R-3-objetos.html#pacote-r---comandos-básicos-2",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R - Comandos Básicos",
+    "text": "Pacote R - Comandos Básicos\n\n\n\nNo R trabalhamos com objetos\n\nUtilizamos o operador “&lt;-” para definir os objetos\nDamos um nome e valores associados\n\nQuantitativos ou qualitativos\nCom estes objetos podemos executar funções\n\nAssociado a função sempre temos “( )”\n\nPodemos extrair parte dos objetos\n\nUtilizando “[ ]”"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-3-objetos.html#utilizando-objetos",
+    "href": "aulas/slides/aula-R-3-objetos.html#utilizando-objetos",
+    "title": "Estatística Básica utilizando R",
+    "section": "Utilizando Objetos",
+    "text": "Utilizando Objetos\n\n\n\nNo R trabalhamos com objetos\n\nUtilizamos o operador “&lt;-” para definir os objetos\nDamos um nome e valores associados\n\nQuantitativos ou qualitativos\n\n\n\n\nx &lt;- 10\nx\n\n[1] 10\n\n\n\n\n\n\n\ny &lt;- 1:10\ny\n\n [1]  1  2  3  4  5  6  7  8  9 10"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-3-objetos.html#utilizando-objetos-1",
+    "href": "aulas/slides/aula-R-3-objetos.html#utilizando-objetos-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "Utilizando Objetos",
+    "text": "Utilizando Objetos\n\n\n\nNo R trabalhamos com objetos\n\nUtilizamos o operador “&lt;-” para definir os objetos\nDamos um nome e valores associados\n\nQuantitativos ou qualitativos\n\n\n\n\nx &lt;- 10\nx\n\n[1] 10\n\n\n\n\n\n\n\ny &lt;- 1:10\ny\n\n [1]  1  2  3  4  5  6  7  8  9 10"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-3-objetos.html#utilizando-objetos-2",
+    "href": "aulas/slides/aula-R-3-objetos.html#utilizando-objetos-2",
+    "title": "Estatística Básica utilizando R",
+    "section": "Utilizando Objetos",
+    "text": "Utilizando Objetos\n\n\n\nNo R trabalhamos com objetos\n\nUtilizamos o operador “&lt;-” para definir os objetos\nDamos um nome e valores associados\n\nQuantitativos ou qualitativos\nCom estes objetos podemos executar funções\n\nAssociado a função sempre temos “( )”\n\nPodemos extrair parte dos objetos\n\nUtilizando “[ ]”"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-3-objetos.html#utilizando-objetos-3",
+    "href": "aulas/slides/aula-R-3-objetos.html#utilizando-objetos-3",
+    "title": "Estatística Básica utilizando R",
+    "section": "Utilizando Objetos",
+    "text": "Utilizando Objetos\n\n\n\n\n\n\n\n\nx &lt;- 10\nx\n\n[1] 10\n\n\n\n\n\n\n\ny &lt;- 2\ny\n\n[1] 2\n\n\n\n\n\n\n\nx + y\n\n[1] 12\n\n\n\n\n\n\n\n\n\nx^y\n\n[1] 100\n\n\n\n\n\nz &lt;- \"Olá mundo\"\nz\n\n[1] \"Olá mundo\""
+  },
+  {
+    "objectID": "aulas/slides/aula-R-3-objetos.html#utilizando-objetos-4",
+    "href": "aulas/slides/aula-R-3-objetos.html#utilizando-objetos-4",
+    "title": "Estatística Básica utilizando R",
+    "section": "Utilizando Objetos",
+    "text": "Utilizando Objetos\n\nNo R trabalhamos com objetos\n\nPodemos dar quase qualquer nome para os objetos\nNão pode iniciar em números\nNão pode possuir alguns símbolos especiais\n\nEx: ^, !, $, @, +, -, / ou *\n\nPercebe maiúsculas e minúsculas\n\n\n&gt; Numero &lt;- 10\n&gt; numero &lt;- 3"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-3-objetos.html#utilizando-objetos-5",
+    "href": "aulas/slides/aula-R-3-objetos.html#utilizando-objetos-5",
+    "title": "Estatística Básica utilizando R",
+    "section": "Utilizando Objetos",
+    "text": "Utilizando Objetos\n\nNo R trabalhamos com objetos\n\nPodemos dar quase qualquer nome para os objetos\nNão pode iniciar em números\nNão pode possuir alguns símbolos especiais\n\nEx: ^, !, $, @, +, -, / ou *\n\nPercebe maiúsculas e minúsculas\nNão pode ser “reserved words” &gt; ?reserved\n\n\n\n\n\n\n\n\n\n\nif\nfor\nFALSE\nNA_integer\n\n\nelse\nin\nNULL\nNA_real\n\n\nrepeat\nnext\nInf\nNA_complex\n\n\nwhile\nbreak\nNaN\nNA_character\n\n\nfunction\nTRUE\nNA"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas.html",
+    "href": "aulas/guia-quarto-tabelas.html",
+    "title": "Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML)",
+    "section": "",
+    "text": "Este guia apresenta todas as formas práticas de inserir, editar e controlar tabelas em documentos Quarto (.qmd) renderizados em HTML, com foco em:\n\n📋 Tabelas simples em Markdown\n\n🧱 Tabelas sem cabeçalho\n\n🎨 Alinhamento e formatação\n\n🧠 Boas práticas para material didático e científico\n\n⚙️ Quando usar Markdown, HTML ou R\n\nO objetivo é servir como referência rápida e confiável."
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas.html#objetivo-do-guia",
+    "href": "aulas/guia-quarto-tabelas.html#objetivo-do-guia",
+    "title": "Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML)",
+    "section": "",
+    "text": "Este guia apresenta todas as formas práticas de inserir, editar e controlar tabelas em documentos Quarto (.qmd) renderizados em HTML, com foco em:\n\n📋 Tabelas simples em Markdown\n\n🧱 Tabelas sem cabeçalho\n\n🎨 Alinhamento e formatação\n\n🧠 Boas práticas para material didático e científico\n\n⚙️ Quando usar Markdown, HTML ou R\n\nO objetivo é servir como referência rápida e confiável."
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas.html#conceito-fundamental",
+    "href": "aulas/guia-quarto-tabelas.html#conceito-fundamental",
+    "title": "Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML)",
+    "section": "🧠 Conceito fundamental",
+    "text": "🧠 Conceito fundamental\nNo Quarto, tabelas podem ser criadas de três formas principais:\n\nMarkdown puro → simples, rápido, didático\n\nHTML → controle total de layout\n\nR (knitr / gt / kable) → tabelas dinâmicas\n\n👉 Regra prática:\nquanto mais simples a tabela, mais simples a ferramenta."
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas.html#tabela-básica-em-markdown",
+    "href": "aulas/guia-quarto-tabelas.html#tabela-básica-em-markdown",
+    "title": "Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML)",
+    "section": "📋 Tabela básica em Markdown",
+    "text": "📋 Tabela básica em Markdown\nEstrutura:\n| Coluna A | Coluna B | Coluna C |\n|----------|----------|----------|\n| 10       | 20       | 30       |\n| 15       | 25       | 35       |\nResultado:\n\n\n\nColuna A\nColuna B\nColuna C\n\n\n\n\n10\n20\n30\n\n\n15\n25\n35"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas.html#cabeçalho-obrigatório-em-markdown",
+    "href": "aulas/guia-quarto-tabelas.html#cabeçalho-obrigatório-em-markdown",
+    "title": "Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML)",
+    "section": "📌 Cabeçalho obrigatório em Markdown",
+    "text": "📌 Cabeçalho obrigatório em Markdown\nEm Markdown, toda tabela precisa de uma linha de cabeçalho, mesmo que você não queira exibi-lo.\nSe você não quer cabeçalho visível, use um truque simples."
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas.html#tabela-sem-cabeçalho-truque-funcional",
+    "href": "aulas/guia-quarto-tabelas.html#tabela-sem-cabeçalho-truque-funcional",
+    "title": "Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML)",
+    "section": "🚫 Tabela sem cabeçalho (truque funcional)",
+    "text": "🚫 Tabela sem cabeçalho (truque funcional)\nUse nomes genéricos e oculte visualmente com CSS depois.\n|   |   |\n|---|---|\n| Média | 12.5 |\n| Desvio | 3.2 |\nResultado:\n\n\n\nMédia\n12.5\n\n\nDesvio\n3.2\n\n\n\n(O CSS pode remover a linha superior se necessário.)"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas.html#alinhamento-de-colunas",
+    "href": "aulas/guia-quarto-tabelas.html#alinhamento-de-colunas",
+    "title": "Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML)",
+    "section": "↔︎️ Alinhamento de colunas",
+    "text": "↔︎️ Alinhamento de colunas\nUse : na linha separadora.\n| Esquerda | Centro | Direita |\n|:---------|:------:|--------:|\n| a        | b      | 10      |\n| c        | d      | 20      |\nResultado:\n\n\n\nEsquerda\nCentro\nDireita\n\n\n\n\na\nb\n10\n\n\nc\nd\n20"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas.html#conteúdo-matemático-em-tabelas",
+    "href": "aulas/guia-quarto-tabelas.html#conteúdo-matemático-em-tabelas",
+    "title": "Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML)",
+    "section": "🔢 Conteúdo matemático em tabelas",
+    "text": "🔢 Conteúdo matemático em tabelas\nLaTeX Math funciona normalmente dentro das células.\n| Estatística | Fórmula |\n|-------------|---------|\n| Média | $\\bar{x} = \\frac{1}{n}\\sum x_i$ |\n| Variância | $s^2$ |\nResultado:\n\n\n\nEstatística\nFórmula\n\n\n\n\nMédia\n\\(\\bar{x} = \\frac{1}{n}\\sum x_i\\)\n\n\nVariância\n\\(s^2\\)"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas.html#ênfase-visual-dentro-da-tabela",
+    "href": "aulas/guia-quarto-tabelas.html#ênfase-visual-dentro-da-tabela",
+    "title": "Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML)",
+    "section": "🎨 Ênfase visual dentro da tabela",
+    "text": "🎨 Ênfase visual dentro da tabela\nVocê pode usar Markdown comum:\n| Item | Valor |\n|------|-------|\n| **Média** | *Alta* |\n| Desvio | **Baixo** |\nResultado:\n\n\n\nItem\nValor\n\n\n\n\nMédia\nAlta\n\n\nDesvio\nBaixo"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas.html#quebras-de-linha-dentro-da-célula",
+    "href": "aulas/guia-quarto-tabelas.html#quebras-de-linha-dentro-da-célula",
+    "title": "Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML)",
+    "section": "🧩 Quebras de linha dentro da célula",
+    "text": "🧩 Quebras de linha dentro da célula\nUse &lt;br&gt; quando necessário:\n| Variável | Descrição |\n|----------|-----------|\n| pH | Medida de acidez&lt;br&gt;Escala logarítmica |\nResultado:\n\n\n\nVariável\nDescrição\n\n\n\n\npH\nMedida de acidezEscala logarítmica"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas.html#quando-usar-tabela-em-html",
+    "href": "aulas/guia-quarto-tabelas.html#quando-usar-tabela-em-html",
+    "title": "Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML)",
+    "section": "🧱 Quando usar tabela em HTML",
+    "text": "🧱 Quando usar tabela em HTML\nUse HTML quando precisar de:\n\ncélulas mescladas\n\ncontrole total de estilo\n\nremover cabeçalhos\n\nlayout mais complexo\n\nExemplo simples:\n&lt;table&gt;\n  &lt;tr&gt;\n    &lt;td&gt;Média&lt;/td&gt;\n    &lt;td&gt;12.5&lt;/td&gt;\n  &lt;/tr&gt;\n  &lt;tr&gt;\n    &lt;td&gt;Desvio&lt;/td&gt;\n    &lt;td&gt;3.2&lt;/td&gt;\n  &lt;/tr&gt;\n&lt;/table&gt;\nResultado:\n\n\n\nMédia\n\n\n12.5\n\n\n\n\nDesvio\n\n\n3.2"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas.html#estilizando-tabelas-com-css",
+    "href": "aulas/guia-quarto-tabelas.html#estilizando-tabelas-com-css",
+    "title": "Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML)",
+    "section": "🎨 Estilizando tabelas com CSS",
+    "text": "🎨 Estilizando tabelas com CSS\nNo arquivo styles.css:\ntable {\n  border-collapse: collapse;\n  width: 100%;\n}\n\nth, td {\n  border: 1px solid #ccc;\n  padding: 6px;\n}\n\nth {\n  background-color: #f5f5f5;\n}"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas.html#tabelas-geradas-a-partir-do-r",
+    "href": "aulas/guia-quarto-tabelas.html#tabelas-geradas-a-partir-do-r",
+    "title": "Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML)",
+    "section": "📊 Tabelas geradas a partir do R",
+    "text": "📊 Tabelas geradas a partir do R\nExemplo simples com knitr::kable():\n::: {.cell}\n::: {.cell-output-display}\n\n\nTable: Primeiras linhas do mtcars\n\n|                  |  mpg| cyl| disp|  hp| drat|    wt|  qsec| vs| am| gear| carb|\n|:-----------------|----:|---:|----:|---:|----:|-----:|-----:|--:|--:|----:|----:|\n|Mazda RX4         | 21.0|   6|  160| 110| 3.90| 2.620| 16.46|  0|  1|    4|    4|\n|Mazda RX4 Wag     | 21.0|   6|  160| 110| 3.90| 2.875| 17.02|  0|  1|    4|    4|\n|Datsun 710        | 22.8|   4|  108|  93| 3.85| 2.320| 18.61|  1|  1|    4|    1|\n|Hornet 4 Drive    | 21.4|   6|  258| 110| 3.08| 3.215| 19.44|  1|  0|    3|    1|\n|Hornet Sportabout | 18.7|   8|  360| 175| 3.15| 3.440| 17.02|  0|  0|    3|    2|\n|Valiant           | 18.1|   6|  225| 105| 2.76| 3.460| 20.22|  1|  0|    3|    1|\n\n\n:::\n:::\n(Use para tabelas dinâmicas ou grandes.)"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas.html#boas-práticas-didáticas",
+    "href": "aulas/guia-quarto-tabelas.html#boas-práticas-didáticas",
+    "title": "Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML)",
+    "section": "🧠 Boas práticas didáticas",
+    "text": "🧠 Boas práticas didáticas\n\npoucas colunas\n\ncabeçalhos claros\n\nnúmeros alinhados à direita\n\nevite tabelas largas demais\n\nexplique a tabela no texto\n\n👉 Tabela boa se entende sem legenda longa."
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas.html#erros-comuns",
+    "href": "aulas/guia-quarto-tabelas.html#erros-comuns",
+    "title": "Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML)",
+    "section": "⚠️ Erros comuns",
+    "text": "⚠️ Erros comuns\n\ntabela grande demais para a página\n\nexcesso de bordas\n\nalinhamento inconsistente\n\nusar tabela quando gráfico é melhor"
+  },
+  {
+    "objectID": "aulas/guia-quarto-tabelas.html#resumo-final",
+    "href": "aulas/guia-quarto-tabelas.html#resumo-final",
+    "title": "Guia Completo – Inserção e Edição de Tabelas no Quarto (HTML)",
+    "section": "📌 Resumo final",
+    "text": "📌 Resumo final\n\nMarkdown é suficiente para 80% dos casos\n\nHTML resolve layouts complexos\n\nLaTeX Math funciona dentro das células\n\nCSS dá acabamento profissional\n\nClareza é mais importante que estética\n\nEste guia pode ser usado como referência padrão para criação de tabelas em Quarto (HTML)."
+  },
+  {
+    "objectID": "aulas/slides/aula-R-3-objetos.html",
+    "href": "aulas/slides/aula-R-3-objetos.html",
+    "title": "Estatística Básica utilizando R",
+    "section": "",
+    "text": "No R trabalhamos com objetos\n\nUtilizamos o operador “&lt;-” para definir os objetos\nDamos um nome e valores associados\n\nQuantitativos ou qualitativos\n\n\n\n\nx &lt;- 10\nx\n\n[1] 10\n\n\n\n\n\n\n\ny &lt;- 1:10\ny\n\n [1]  1  2  3  4  5  6  7  8  9 10"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-2-primeiros-passos.html",
+    "href": "aulas/slides/aula-R-2-primeiros-passos.html",
+    "title": "Estatística Básica utilizando R",
+    "section": "",
+    "text": "#\n\nIndica que sequência de caracteres após “#” não deve ser lido\nPermite inserir comentários dentro do script\nMuito importante para lembrar e compartilhar os códigos"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-3-objetos.html#utilizando-objetos-6",
+    "href": "aulas/slides/aula-R-3-objetos.html#utilizando-objetos-6",
+    "title": "Estatística Básica utilizando R",
+    "section": "Utilizando objetos",
+    "text": "Utilizando objetos\n\nTipos de dados\n\nExistem basicamente quatro tipos de dados no R\n\nNuméricos (“numeric”)\nCaracteres (“string”)\nLógicos (“logical”)\nNúmeros complexos (“complex”)\n\nFunção typeof() identifica o tipo de dado"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-3-objetos.html#utilizando-objetos-7",
+    "href": "aulas/slides/aula-R-3-objetos.html#utilizando-objetos-7",
+    "title": "Estatística Básica utilizando R",
+    "section": "Utilizando objetos",
+    "text": "Utilizando objetos\n\n\n\nTipos de dados\n\nExistem basicamente quatro tipos de dados no R\n\nNuméricos (“numeric”)\nCaracteres (“string”)\nLógicos (“logical”)\nNúmeros complexos (“complex”)\n\nFunção typeof() identifica o tipo de dado\n\n\n\nNuméricos\n\nvalor &lt;- 605\nvalor\n\n[1] 605\n\n\n\n\n\nCaracteres\n\nstring &lt;- \"Ola mundo\"\nstring\n\n[1] \"Ola mundo\"\n\n\nLógicos\n\n2&lt;6\n\n[1] TRUE\n\n\nNúmeros complexos\n\nnc  &lt;-  2 + 3i\nnc\n\n[1] 2+3i"
   }
 ]
