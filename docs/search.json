@@ -1628,7 +1628,7 @@
     "href": "aulas/aulas.html#linguagem-r",
     "title": "Aulas",
     "section": "Linguagem R",
-    "text": "Linguagem R\n\n\nAula 01 – A Linguagem R\n\nO R é para mim?\nA linguagem R\nUm pouco de história…\nNão tenha medo do erro\nR x Python\n\n➡️ Aula em breve\n\n\n\nAula 02 – O pacote R\n\nO pacote R\nRStudio\nComandos Básicos\nPacotes\nO R como calculadora\nIniciando em objetos\n\n➡️ Aula em breve\n\n\n\nAula 03 – Objetos e Dados\n\nAtribuição\nNomeando objetos\nUtilizando objetos em R\nTipos de dados em R\nAlguns comandos\n\n➡️ Aula em breve\n\n\n\nAula 04 – Funções e objetos\n\nFunções\nCriando funções\nMais sobre objetos\nEstruturas de dados\n\n➡️ Aula em breve\n\n\n\nAula 05 – Graficos no R\n\nComo funcionam gráficos no R\nTipos de gráficos\nParâmetros gráficos\n\n➡️ Aula em breve\n\n\nAula 06 – Estatística descritiva no R\n\nEstatística descritiva\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve\n\n\nAula 07 – Testes de significância em R\n\nTestes de significância\n\nTeste t\nMann-Whitney\nQui-quadrado\nAnálise de Variância\nKruskall-Wallis\n\n\n➡️ Aula em breve"
+    "text": "Linguagem R\n\n\nAula 01 – A Linguagem R\n\nO R é para mim?\nA linguagem R\nUm pouco de história…\nNão tenha medo do erro\nR x Python\nO pacote R\nRStudio\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – O pacote R\n\nComandos Básicos\nPacotes\nO R como calculadora\nIniciando em objetos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Objetos e Dados\n\nAtribuição\nNomeando objetos\nUtilizando objetos em R\nTipos de dados em R\nAlguns comandos\n\n➡️ Aula em breve\n\n\n\nAula 04 – Funções e objetos\n\nFunções\nCriando funções\nMais sobre objetos\nEstruturas de dados\n\n➡️ Aula em breve\n\n\n\nAula 05 – Graficos no R\n\nComo funcionam gráficos no R\nTipos de gráficos\nParâmetros gráficos\n\n➡️ Aula em breve\n\n\nAula 06 – Estatística descritiva no R\n\nEstatística descritiva\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve\n\n\nAula 07 – Testes de significância em R\n\nTestes de significância\n\nTeste t\nMann-Whitney\nQui-quadrado\nAnálise de Variância\nKruskall-Wallis\n\n\n➡️ Aula em breve"
   },
   {
     "objectID": "aulas/guia-quarto-latex-math-html.html",
@@ -2889,5 +2889,677 @@
     "title": "Revisão de conceitos básicos",
     "section": "Testes de significância para mais de duas amostras",
     "text": "Testes de significância para mais de duas amostras\n\nKruskal-Wallis\n\nA lógica é semelhante ao teste de Mann-Whitney\n\nSão executados para k grupos\nEstabelece postos\nCalcula os somatórios\n\n\\[\nH = \\frac{12}{n(n+1)}[\\frac{(\\sum{R_1}^2)}{n_1}+\\frac{(\\sum{R_2})^2}{n_2}+...+\\frac{(\\sum{R_n}^2)}{n_n}]-3(n+1)\n\\]\n\nCalcula o valor de H"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#o-e-é-para-mim",
+    "href": "aulas/slides/aula-R-1-introducao.html#o-e-é-para-mim",
+    "title": "Estatística Básica utilizando R",
+    "section": "O E é para mim?",
+    "text": "O E é para mim?"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#o-r-é-para-mim",
+    "href": "aulas/slides/aula-R-1-introducao.html#o-r-é-para-mim",
+    "title": "Estatística Básica utilizando R",
+    "section": "",
+    "text": "{width=“100%}”"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#a-linguagem-r",
+    "href": "aulas/slides/aula-R-1-introducao.html#a-linguagem-r",
+    "title": "Estatística Básica utilizando R",
+    "section": "A linguagem R",
+    "text": "A linguagem R"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#a-linguagem-r-1",
+    "href": "aulas/slides/aula-R-1-introducao.html#a-linguagem-r-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "A linguagem R",
+    "text": "A linguagem R\nUm pouco da história…\n\nRoss Ihaka and Robert Gentleman (1990s)\n\nDesenvolvimento a partir da linguagem S\nAmbiente livre para ensino de estatística – Universidade de Auckland\n1995 – disponibilizado como código livre (Martin Mächler)\n\n2000s\n\n2000 – Primeira versão!!! – R version 1.0.0\n2004 – R version 2.0.0\n2013 – R version 3.0.0\n2020 – R version 4.0.0\n\nR Core Team\n\nGrupo com direito de modificar o arquivo com o código fonte do R\n\n\n\n“R has now outgrown its origins and its\ndevelopment is now a collaborative effort\nundertaken using the Internet to exchange ideas\nand distribute the results.”\nRoss Ihaka"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#a-linguagem-r-2",
+    "href": "aulas/slides/aula-R-1-introducao.html#a-linguagem-r-2",
+    "title": "Estatística Básica utilizando R",
+    "section": "A linguagem R",
+    "text": "A linguagem R\n\n\n\n\nDiga ao R para fazer…\nO R consegue fazer alguma coisa?\n\n\nNão, o R é uma linguagem!\n\nDiga ao computador para fazer isto, utilizando comandos em linguagem R no console.\nLinguagem dinâmica de programação\nUsa um interpretador para transformar comandos em 0´s e 1´s"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#não-tenha-medo-do-erro",
+    "href": "aulas/slides/aula-R-1-introducao.html#não-tenha-medo-do-erro",
+    "title": "Estatística Básica utilizando R",
+    "section": "Não tenha medo do erro",
+    "text": "Não tenha medo do erro\n\n\n\nPrecisamos aprender a linguagem R para nos comunicar em R\n\n\nO erro em um comando origina uma mensagem de “Erro”\n\nMas não se irrite…\n\nLembre-se: você é capaz de aprender. O computador é simples e rápido, mas não aprende…\n\nProcure entender o que o programa não entendeu\n\n\n\nError in…\n\nWarning message:\nIn data(crabs) : data set ‘crabs’ not found\n\nWarning message:\nIn mean.default(crabs) : argumento não é numérico nem lógico: retornando NA"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r-x-python",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r-x-python",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R x Python",
+    "text": "Pacote R x Python"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r-x-python-1",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r-x-python-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R x Python",
+    "text": "Pacote R x Python"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r-x-python-2",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r-x-python-2",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R x Python",
+    "text": "Pacote R x Python"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r-x-python-3",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r-x-python-3",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R x Python",
+    "text": "Pacote R x Python"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r-x-python-4",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r-x-python-4",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R x Python",
+    "text": "Pacote R x Python"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r-x-python-5",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r-x-python-5",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R x Python",
+    "text": "Pacote R x Python"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r-x-python-6",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r-x-python-6",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R x Python",
+    "text": "Pacote R x Python"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R",
+    "text": "Pacote R"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r-1",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R",
+    "text": "Pacote R"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r-2",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r-2",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R",
+    "text": "Pacote R"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r-3",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r-3",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R",
+    "text": "Pacote R"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r-4",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r-4",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R",
+    "text": "Pacote R\n\nFUNÇÃO(parâmetros)\n\nlicense()\ncitation()\ndemo()\nhelp()\nq()\nprint()\n# - permite fazer comentários\n\nObjetos\n\nR utiliza objetos para armazenar dados na memória\n“&lt;-” ou “=”- operador de atribuição\nNomes de objetos não podem conter espaços, acentos ou caracteres especiais"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r-5",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r-5",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R",
+    "text": "Pacote R\n\nFUNÇÃO(parâmetros)\n\nlicense()\ncitation() \ndemo() \nhelp() \nq()\nprint()\n# - permite fazer comentários\n\nObjetos\n\nR utiliza objetos para armazenar dados na memória\n“&lt;-” ou “=”- operador de atribuição\nNomes de objetos não podem conter espaços, acentos ou caracteres especiais"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r-6",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r-6",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R",
+    "text": "Pacote R\n\nFUNÇÃO(parâmetros)\n\nlicense()\ncitation()  &gt;citation()\ndemo()  &gt;demo()\nhelp()  &gt;help()\nq()\nprint() &gt;print(“Ola”)\n# - permite fazer comentários\n\nObjetos\n\nR utiliza objetos para armazenar dados na memória\n“&lt;-” ou “=”- operador de atribuição\nNomes de objetos não podem conter espaços, acentos ou caracteres especiais"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r-7",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r-7",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R",
+    "text": "Pacote R\n\nFUNÇÃO(parâmetros)\n\nlicense()\ncitation()  &gt;citation()\ndemo()  &gt;demo()\nhelp()  &gt;help()\nq()\nprint() &gt;print(“Ola”)\n# - permite fazer comentários\n\nObjetos\n\nR utiliza objetos para armazenar dados na memória\n“&lt;-” ou “=”- operador de atribuição\nNomes de objetos não podem conter espaços, acentos ou caracteres especiais"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html",
+    "href": "aulas/guia-quarto-fontawesome.html",
+    "title": "Guia Completo – Font Awesome e Fontes no Quarto (HTML)",
+    "section": "",
+    "text": "Este guia explica como configurar fontes tipográficas e utilizar Font Awesome em documentos Quarto (.qmd) renderizados como página HTML, com foco em:\n\nsites de disciplinas\n\nmateriais didáticos\n\nrelatórios e guias técnicos\n\npadronização visual com ícones\n\nVocê aprenderá: - como definir fontes globais da página\n- como ajustar tamanho, peso e cor do texto\n- como inserir ícones Font Awesome corretamente\n- como usar ícones de orientação e navegação (setas)\n- como manter um dicionário amplo e consistente de ícones\n\n## 🎯 Objetivo do guia\nEste guia apresenta como instalar, configurar e utilizar Font Awesome em documentos Quarto (.qmd) renderizados em HTML, com foco em:\n\n🎨 Uso de ícones em textos, listas e títulos\n⚙️ Formas corretas de instalação no Quarto\n🧱 Integração com Markdown e HTML\n📘 Um dicionário prático dos ícones mais usados em material didático, científico e sites\n\nO material foi pensado como referência completa, para sites de disciplinas, relatórios, apresentações e documentação técnica.\n\n## 🧠 O que é Font Awesome\nFont Awesome é uma biblioteca de ícones vetoriais, baseada em fontes e SVG, amplamente usada em:\n\nSites e blogs\nDashboards\nDocumentação técnica\nMaterial didático\n\nVantagens: - Ícones leves e escaláveis - Funcionam como texto (mudam tamanho e cor) - Integração simples com HTML - Excelente compatibilidade com Quarto\n\n## ⚙️ Como usar Font Awesome no Quarto (HTML)\n### Forma 1 — Uso nativo do Quarto (RECOMENDADA)\nO Quarto já inclui Font Awesome automaticamente para HTML.\nVocê pode usar ícones diretamente no Markdown com a sintaxe:\n\nExemplo:\n Item correto\n Atenção\nResultado renderizado:\n Item correto\n Atenção\n✔️ Não requer instalação\n✔️ Funciona em HTML e slides\n✔️ Forma mais segura\n\n### Forma 2 — Usando HTML direto (opcional)\nVocê também pode usar Font Awesome via HTML:\n Concluído\n⚠️ Use apenas quando precisar de controle fino de classes.\n\n## 🧱 Uso básico em textos e listas\n### Texto corrido\n Este é um aviso importante.\n Este é um aviso importante.\n\n### Listas com ícones\n\n Estatística descritiva\n Tabelas\n Fluxogramas\n Estatística descritiva\n\n Tabelas\n\n Fluxogramas\n\n\n### Títulos com ícones\n##  Conteúdo da aula\n##  Conteúdo da aula\n\n## 🎨 Controle de tamanho e cor\n### Tamanho (CSS inline simples)\n  \n\n\n### Cor\n  \n\n💡 Ícones herdam cor e tamanho do texto.\n\n## 🧩 Uso em callouts (muito recomendado)\n::: {.callout-note}  Dica Use ícones para guiar a leitura. :::"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#quarto",
+    "href": "aulas/guia-quarto-fontawesome.html#quarto",
+    "title": "Untitled",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#running-code",
+    "href": "aulas/guia-quarto-fontawesome.html#running-code",
+    "title": "Untitled",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html",
+    "href": "aulas/slides/aula-IA-no-R.html",
+    "title": "Inteligência Artificial no R",
+    "section": "",
+    "text": "IA já faz parte da prática científica\nIgnorar a IA ❌\nUsar sem critério ❌\nUsar de forma consciente ✅"
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#por-que-falar-de-ia-no-curso",
+    "href": "aulas/slides/aula-IA-no-R.html#por-que-falar-de-ia-no-curso",
+    "title": "Inteligência Artificial no R",
+    "section": "",
+    "text": "IA já faz parte da prática científica\nIgnorar a IA ❌\nUsar sem critério ❌\nUsar de forma consciente ✅"
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#o-que-a-ia-realmente-é",
+    "href": "aulas/slides/aula-IA-no-R.html#o-que-a-ia-realmente-é",
+    "title": "Inteligência Artificial no R",
+    "section": "O que a IA realmente é",
+    "text": "O que a IA realmente é\n\nModelo de linguagem\nReconhece padrões em textos e códigos\nNão entende o experimento\nNão entende o contexto estatístico\n\n⚠️ Pode errar com muita confiança"
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#ia-não-é",
+    "href": "aulas/slides/aula-IA-no-R.html#ia-não-é",
+    "title": "Inteligência Artificial no R",
+    "section": "IA NÃO é",
+    "text": "IA NÃO é\n\nUm estatístico\nUm pesquisador\nUm substituto do raciocínio científico\nUm oráculo\n\n✔️ Ferramenta de apoio"
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#quando-a-ia-ajuda-no-r",
+    "href": "aulas/slides/aula-IA-no-R.html#quando-a-ia-ajuda-no-r",
+    "title": "Inteligência Artificial no R",
+    "section": "Quando a IA ajuda no R",
+    "text": "Quando a IA ajuda no R\n\nExplicar funções\nOrganizar scripts\nSugerir visualizações\nDepurar erros\nMelhorar legibilidade do código"
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#onde-a-ia-costuma-errar",
+    "href": "aulas/slides/aula-IA-no-R.html#onde-a-ia-costuma-errar",
+    "title": "Inteligência Artificial no R",
+    "section": "Onde a IA costuma errar",
+    "text": "Onde a IA costuma errar\n\nEscolha inadequada de testes estatísticos\nIgnorar pressupostos\nInventar funções e pacotes\nGerar análises completas sem contexto\nProduzir resultados enganosos"
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#uso-preguiçoso-da-ia",
+    "href": "aulas/slides/aula-IA-no-R.html#uso-preguiçoso-da-ia",
+    "title": "Inteligência Artificial no R",
+    "section": "Uso preguiçoso da IA",
+    "text": "Uso preguiçoso da IA\n\nCopiar e colar código\nRodar sem entender\nNão saber explicar resultados\nAprendizado superficial"
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#uso-profissional-da-ia",
+    "href": "aulas/slides/aula-IA-no-R.html#uso-profissional-da-ia",
+    "title": "Inteligência Artificial no R",
+    "section": "Uso profissional da IA",
+    "text": "Uso profissional da IA\n\nPensar antes de pedir ajuda\nDefinir objetivo e método estatístico\nUsar IA como apoio\nValidar resultados\nSaber explicar cada etapa"
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#fluxo-correto-de-uso-da-ia",
+    "href": "aulas/slides/aula-IA-no-R.html#fluxo-correto-de-uso-da-ia",
+    "title": "Inteligência Artificial no R",
+    "section": "Fluxo correto de uso da IA",
+    "text": "Fluxo correto de uso da IA\n\nEntender o problema\nEntender os dados\nEscolher o método estatístico\nUsar IA para implementar ou revisar\nConferir pressupostos\nInterpretar criticamente os resultados"
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#prompt-recomendado-no-curso",
+    "href": "aulas/slides/aula-IA-no-R.html#prompt-recomendado-no-curso",
+    "title": "Inteligência Artificial no R",
+    "section": "Prompt recomendado no curso",
+    "text": "Prompt recomendado no curso\nVocê é um assistente de programação em R e estatística.\n\nNão gere análises completas automaticamente.\n\nExplique o raciocínio estatístico antes do código.\nPergunte sobre o tipo de variável, objetivo da análise\ne pressupostos do método.\n\nAponte limitações.\n\nMeu objetivo é aprender, não copiar código."
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#situação-problema",
+    "href": "aulas/slides/aula-IA-no-R.html#situação-problema",
+    "title": "Inteligência Artificial no R",
+    "section": "Situação-problema",
+    "text": "Situação-problema\nExiste diferença no comprimento de organismos\nentre dois locais de amostragem?"
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#antes-da-ia",
+    "href": "aulas/slides/aula-IA-no-R.html#antes-da-ia",
+    "title": "Inteligência Artificial no R",
+    "section": "Antes da IA",
+    "text": "Antes da IA\nPerguntas obrigatórias:\n\nTipo de variável?\nObjetivo da análise?\nQuantos grupos?\nQual teste pode fazer sentido?"
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#criando-os-dados-no-r",
+    "href": "aulas/slides/aula-IA-no-R.html#criando-os-dados-no-r",
+    "title": "Inteligência Artificial no R",
+    "section": "Criando os dados no R",
+    "text": "Criando os dados no R\ndados &lt;- data.frame(\n  local = rep(c(\"A\", \"B\"), each = 20),\n  comprimento = c(\n    rnorm(20, mean = 10, sd = 1),\n    rnorm(20, mean = 11, sd = 1)\n  )\n)\n\nstr(dados)"
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#pedido-ruim-à-ia",
+    "href": "aulas/slides/aula-IA-no-R.html#pedido-ruim-à-ia",
+    "title": "Inteligência Artificial no R",
+    "section": "Pedido RUIM à IA",
+    "text": "Pedido RUIM à IA\nFaça uma análise estatística completa desses dados em R.\n🚫 Problema: terceiriza o raciocínio"
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#o-que-a-ia-não-perguntou",
+    "href": "aulas/slides/aula-IA-no-R.html#o-que-a-ia-não-perguntou",
+    "title": "Inteligência Artificial no R",
+    "section": "O que a IA NÃO perguntou?",
+    "text": "O que a IA NÃO perguntou?\n\nNormalidade\nHomogeneidade de variâncias\nObjetivo do estudo\nDelineamento experimental"
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#pedido-correto-à-ia",
+    "href": "aulas/slides/aula-IA-no-R.html#pedido-correto-à-ia",
+    "title": "Inteligência Artificial no R",
+    "section": "Pedido CORRETO à IA",
+    "text": "Pedido CORRETO à IA\nExplique o raciocínio estatístico antes do código\ne pergunte sobre variáveis, objetivo e pressupostos."
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#ia-agora-ajuda-corretamente",
+    "href": "aulas/slides/aula-IA-no-R.html#ia-agora-ajuda-corretamente",
+    "title": "Inteligência Artificial no R",
+    "section": "IA agora ajuda corretamente",
+    "text": "IA agora ajuda corretamente\n\nQuestiona pressupostos\nSugere verificações\nExplica alternativas\nNão decide sozinha"
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#verificando-pressupostos-no-r",
+    "href": "aulas/slides/aula-IA-no-R.html#verificando-pressupostos-no-r",
+    "title": "Inteligência Artificial no R",
+    "section": "Verificando pressupostos no R",
+    "text": "Verificando pressupostos no R\nshapiro.test(dados$comprimento[dados$local == \"A\"])\nshapiro.test(dados$comprimento[dados$local == \"B\"])\n\nvar.test(comprimento ~ local, data = dados)"
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#decisão-estatística",
+    "href": "aulas/slides/aula-IA-no-R.html#decisão-estatística",
+    "title": "Inteligência Artificial no R",
+    "section": "Decisão estatística",
+    "text": "Decisão estatística\nt.test(comprimento ~ local, data = dados)\nA escolha do teste é do pesquisador."
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#ia-como-apoio-à-interpretação",
+    "href": "aulas/slides/aula-IA-no-R.html#ia-como-apoio-à-interpretação",
+    "title": "Inteligência Artificial no R",
+    "section": "IA como apoio à interpretação",
+    "text": "IA como apoio à interpretação\nExplique este resultado de forma didática\nsem exagerar conclusões."
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#checklist-final",
+    "href": "aulas/slides/aula-IA-no-R.html#checklist-final",
+    "title": "Inteligência Artificial no R",
+    "section": "Checklist final",
+    "text": "Checklist final\nAntes de confiar na IA:\n\nEntendo o problema?\nEscolhi o método?\nConferi pressupostos?\nSei explicar o resultado?"
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#mensagem-final",
+    "href": "aulas/slides/aula-IA-no-R.html#mensagem-final",
+    "title": "Inteligência Artificial no R",
+    "section": "Mensagem final",
+    "text": "Mensagem final\nA IA não substitui quem pensa.\nEla potencializa quem já sabe pensar."
+  },
+  {
+    "objectID": "aulas/slides/aula-IA-no-R.html#conclusão",
+    "href": "aulas/slides/aula-IA-no-R.html#conclusão",
+    "title": "Inteligência Artificial no R",
+    "section": "Conclusão",
+    "text": "Conclusão\n\nIA é uma aliada poderosa\nExige conhecimento prévio\nDeve ser usada com critério\nEm R, raciocinar vem antes de programar"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#objetivo-do-guia",
+    "href": "aulas/guia-quarto-fontawesome.html#objetivo-do-guia",
+    "title": "Guia Completo – Font Awesome e Fontes no Quarto (HTML)",
+    "section": "",
+    "text": "Este guia explica como configurar fontes tipográficas e utilizar Font Awesome em documentos Quarto (.qmd) renderizados como página HTML, com foco em:\n\nsites de disciplinas\n\nmateriais didáticos\n\nrelatórios e guias técnicos\n\npadronização visual com ícones\n\nVocê aprenderá: - como definir fontes globais da página\n- como ajustar tamanho, peso e cor do texto\n- como inserir ícones Font Awesome corretamente\n- como usar ícones de orientação e navegação (setas)\n- como manter um dicionário amplo e consistente de ícones\n\n## 🎯 Objetivo do guia\nEste guia apresenta como instalar, configurar e utilizar Font Awesome em documentos Quarto (.qmd) renderizados em HTML, com foco em:\n\n🎨 Uso de ícones em textos, listas e títulos\n⚙️ Formas corretas de instalação no Quarto\n🧱 Integração com Markdown e HTML\n📘 Um dicionário prático dos ícones mais usados em material didático, científico e sites\n\nO material foi pensado como referência completa, para sites de disciplinas, relatórios, apresentações e documentação técnica.\n\n## 🧠 O que é Font Awesome\nFont Awesome é uma biblioteca de ícones vetoriais, baseada em fontes e SVG, amplamente usada em:\n\nSites e blogs\nDashboards\nDocumentação técnica\nMaterial didático\n\nVantagens: - Ícones leves e escaláveis - Funcionam como texto (mudam tamanho e cor) - Integração simples com HTML - Excelente compatibilidade com Quarto\n\n## ⚙️ Como usar Font Awesome no Quarto (HTML)\n### Forma 1 — Uso nativo do Quarto (RECOMENDADA)\nO Quarto já inclui Font Awesome automaticamente para HTML.\nVocê pode usar ícones diretamente no Markdown com a sintaxe:\n\nExemplo:\n Item correto\n Atenção\nResultado renderizado:\n Item correto\n Atenção\n✔️ Não requer instalação\n✔️ Funciona em HTML e slides\n✔️ Forma mais segura\n\n### Forma 2 — Usando HTML direto (opcional)\nVocê também pode usar Font Awesome via HTML:\n Concluído\n⚠️ Use apenas quando precisar de controle fino de classes.\n\n## 🧱 Uso básico em textos e listas\n### Texto corrido\n Este é um aviso importante.\n Este é um aviso importante.\n\n### Listas com ícones\n\n Estatística descritiva\n Tabelas\n Fluxogramas\n Estatística descritiva\n\n Tabelas\n\n Fluxogramas\n\n\n### Títulos com ícones\n##  Conteúdo da aula\n##  Conteúdo da aula\n\n## 🎨 Controle de tamanho e cor\n### Tamanho (CSS inline simples)\n  \n\n\n### Cor\n  \n\n💡 Ícones herdam cor e tamanho do texto.\n\n## 🧩 Uso em callouts (muito recomendado)\n::: {.callout-note}  Dica Use ícones para guiar a leitura. :::"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#o-que-é-font-awesome",
+    "href": "aulas/guia-quarto-fontawesome.html#o-que-é-font-awesome",
+    "title": "Guia Completo – Font Awesome no Quarto (HTML)",
+    "section": "🧠 O que é Font Awesome",
+    "text": "🧠 O que é Font Awesome\nFont Awesome é uma biblioteca de ícones vetoriais, baseada em fontes e SVG, amplamente usada em:\n\nSites e blogs\nDashboards\nDocumentação técnica\nMaterial didático\n\nVantagens: - Ícones leves e escaláveis - Funcionam como texto (mudam tamanho e cor) - Integração simples com HTML - Excelente compatibilidade com Quarto"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#como-usar-font-awesome-no-quarto-html",
+    "href": "aulas/guia-quarto-fontawesome.html#como-usar-font-awesome-no-quarto-html",
+    "title": "Guia Completo – Font Awesome no Quarto (HTML)",
+    "section": "⚙️ Como usar Font Awesome no Quarto (HTML)",
+    "text": "⚙️ Como usar Font Awesome no Quarto (HTML)\n\nForma 1 — Uso nativo do Quarto (RECOMENDADA)\nO Quarto já inclui Font Awesome automaticamente para HTML.\nVocê pode usar ícones diretamente no Markdown com a sintaxe:\n\nExemplo:\n Item correto  \n Atenção  \nResultado renderizado:\n Item correto\n Atenção\n✔️ Não requer instalação\n✔️ Funciona em HTML e slides\n✔️ Forma mais segura\n\n\n\nForma 2 — Usando HTML direto (opcional)\nVocê também pode usar Font Awesome via HTML:\n&lt;i class=\"fa-solid fa-check\"&gt;&lt;/i&gt; Concluído\n⚠️ Use apenas quando precisar de controle fino de classes."
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#uso-básico-em-textos-e-listas",
+    "href": "aulas/guia-quarto-fontawesome.html#uso-básico-em-textos-e-listas",
+    "title": "Guia Completo – Font Awesome no Quarto (HTML)",
+    "section": "🧱 Uso básico em textos e listas",
+    "text": "🧱 Uso básico em textos e listas\n\nTexto corrido\n Este é um aviso importante.\n Este é um aviso importante.\n\n\n\nListas com ícones\n-  Estatística descritiva\n-  Tabelas\n-  Fluxogramas\n\n Estatística descritiva\n\n Tabelas\n\n Fluxogramas\n\n\n\n\nTítulos com ícones\n##  Conteúdo da aula"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#conteúdo-da-aula",
+    "href": "aulas/guia-quarto-fontawesome.html#conteúdo-da-aula",
+    "title": "Guia Completo – Font Awesome no Quarto (HTML)",
+    "section": " Conteúdo da aula",
+    "text": "Conteúdo da aula"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#controle-de-tamanho-e-cor",
+    "href": "aulas/guia-quarto-fontawesome.html#controle-de-tamanho-e-cor",
+    "title": "Guia Completo – Font Awesome no Quarto (HTML)",
+    "section": "🎨 Controle de tamanho e cor",
+    "text": "🎨 Controle de tamanho e cor\n\nTamanho (CSS inline simples)\n&lt;span style=\"font-size: 1.5em;\"&gt;\n  \n&lt;/span&gt;\n\n\n\n\nCor\n&lt;span style=\"color: steelblue;\"&gt;\n  \n&lt;/span&gt;\n\n💡 Ícones herdam cor e tamanho do texto."
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#uso-em-callouts-muito-recomendado",
+    "href": "aulas/guia-quarto-fontawesome.html#uso-em-callouts-muito-recomendado",
+    "title": "Guia Completo – Font Awesome no Quarto (HTML)",
+    "section": "🧩 Uso em callouts (muito recomendado)",
+    "text": "🧩 Uso em callouts (muito recomendado)\n::: {.callout-note}\n **Dica**\nUse ícones para guiar a leitura.\n:::"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#dicionário-prático-de-ícones-font-awesome",
+    "href": "aulas/guia-quarto-fontawesome.html#dicionário-prático-de-ícones-font-awesome",
+    "title": "Guia Completo – Font Awesome no Quarto (HTML)",
+    "section": "📘 Dicionário prático de ícones Font Awesome",
+    "text": "📘 Dicionário prático de ícones Font Awesome\n(nome → uso típico)\n\n\n✔️ Status e feedback\n\n check → correto, concluído\n\n xmark → erro, incorreto\n\n triangle-exclamation → atenção\n\n circle-info → informação\n\n lightbulb → dica\n\n\n\n\n📊 Estatística e ciência de dados\n\n chart-line → tendência, regressão\n\n chart-bar → gráficos\n\n table → tabelas\n\n calculator → cálculos\n\n sigma → estatística (soma, variância)\n\n\n\n\n📚 Ensino e documentação\n\n book → conteúdo teórico\n\n chalkboard-user → aula\n\n pen → exercícios\n\n file-pdf → apostila\n\n clipboard-list → atividades\n\n\n\n\n🧪 Métodos e processos\n\n diagram-project → fluxogramas\n\n gears → método, processamento\n\n play → início\n\n stop → fim\n\n\n\n\n🌐 Navegação e sites\n\n house → página inicial\n\n arrow-right → avançar\n\n arrow-left → voltar\n\n link → referência externa\n\n download → baixar arquivo"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#como-descobrir-novos-ícones",
+    "href": "aulas/guia-quarto-fontawesome.html#como-descobrir-novos-ícones",
+    "title": "Guia Completo – Font Awesome no Quarto (HTML)",
+    "section": "🔍 Como descobrir novos ícones",
+    "text": "🔍 Como descobrir novos ícones\nConsulte a lista oficial:\n\nhttps://fontawesome.com/icons\n\nNo Quarto, use apenas o nome do ícone, sem fa-.\nExemplo: - site mostra: fa-solid fa-user - Quarto usa:"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#erros-comuns",
+    "href": "aulas/guia-quarto-fontawesome.html#erros-comuns",
+    "title": "Guia Completo – Font Awesome e Fontes no Quarto (HTML)",
+    "section": "⚠️ Erros comuns",
+    "text": "⚠️ Erros comuns\n\nexcesso de ícones\n\nícones sem função semântica\n\nmistura aleatória de estilos\n\nbaixo contraste"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#boas-práticas-finais",
+    "href": "aulas/guia-quarto-fontawesome.html#boas-práticas-finais",
+    "title": "Guia Completo – Font Awesome e Fontes no Quarto (HTML)",
+    "section": "🧭 Boas práticas finais",
+    "text": "🧭 Boas práticas finais\n\nícones orientam, não decoram\n\nmantenha padrão visual\n\nprefira clareza à estética\n\nteste leitura em tela grande\n\n\nSe o leitor entende o caminho sem ler tudo, os ícones estão funcionando."
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#resumo-final",
+    "href": "aulas/guia-quarto-fontawesome.html#resumo-final",
+    "title": "Guia Completo – Font Awesome e Fontes no Quarto (HTML)",
+    "section": "📌 Resumo final",
+    "text": "📌 Resumo final\n\nFont Awesome já vem integrado ao Quarto (HTML)\n\n é a sintaxe recomendada\n\nFontes são controladas via CSS\n\nÍcones de orientação são essenciais em guias\n\nConsistência visual é a chave\n\nEste guia pode ser usado como referência definitiva para uso de fontes e ícones em páginas HTML com Quarto."
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html",
+    "href": "aulas/slides/aula-R-1-introducao.html",
+    "title": "Estatística Básica utilizando R",
+    "section": "",
+    "text": "{width=“100%}”"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r-8",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r-8",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R",
+    "text": "Pacote R\n\nFUNÇÃO(parâmetros)\n\nlicense()\ncitation()  &gt;citation()\ndemo()  &gt;demo()\nhelp()  &gt;help()\nq()\nprint() &gt;print(“Ola”)\n# - permite fazer comentários\n\nObjetos\n\nR utiliza objetos para armazenar dados na memória\n“&lt;-” ou “=”- operador de atribuição\nNomes de objetos não podem conter espaços, acentos ou caracteres especiais"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#conceito-fundamental",
+    "href": "aulas/guia-quarto-fontawesome.html#conceito-fundamental",
+    "title": "Guia Completo – Font Awesome e Fontes no Quarto (HTML)",
+    "section": "🧠 Conceito fundamental",
+    "text": "🧠 Conceito fundamental\nEm páginas HTML feitas com Quarto:\n\no YAML define o formato da página\n\no CSS controla fontes, tamanhos e cores\n\no Markdown organiza o conteúdo\n\no Font Awesome fornece ícones vetoriais\n\n👉 Regra central:\nHTML bem feito = YAML simples + CSS claro + ícones consistentes"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#yaml-mínimo-para-slides-com-fontes-e-ícones",
+    "href": "aulas/guia-quarto-fontawesome.html#yaml-mínimo-para-slides-com-fontes-e-ícones",
+    "title": "Guia Completo – Font Awesome e Fontes em Slides Quarto (Reveal.js)",
+    "section": "🎞️ YAML mínimo para slides com fontes e ícones",
+    "text": "🎞️ YAML mínimo para slides com fontes e ícones\nEste é um exemplo funcional de cabeçalho:\n---\ntitle: \"Minha Apresentação\"\nformat:\n  revealjs:\n    theme: simple\n    center: false\n    fontsize: 32px\n    css: slides.css\n---\nO arquivo slides.css é onde o controle fino acontece."
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#definindo-a-fonte-principal-dos-slides",
+    "href": "aulas/guia-quarto-fontawesome.html#definindo-a-fonte-principal-dos-slides",
+    "title": "Guia Completo – Font Awesome e Fontes em Slides Quarto (Reveal.js)",
+    "section": "🔤 Definindo a fonte principal dos slides",
+    "text": "🔤 Definindo a fonte principal dos slides\nNo arquivo slides.css:\n.reveal {\n  font-family: \"Helvetica\", \"Arial\", sans-serif;\n  color: #222;\n}\nIsso afeta: - parágrafos - listas - textos corridos - ícones Font Awesome"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#fontes-diferentes-para-títulos-e-texto",
+    "href": "aulas/guia-quarto-fontawesome.html#fontes-diferentes-para-títulos-e-texto",
+    "title": "Guia Completo – Font Awesome e Fontes no Quarto (HTML)",
+    "section": "🧠 Fontes diferentes para títulos e texto",
+    "text": "🧠 Fontes diferentes para títulos e texto\nRecomendado para material didático:\nh1, h2, h3 {\n  font-family: \"Georgia\", serif;\n}\n\np, li {\n  font-family: \"Helvetica\", sans-serif;\n}"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#usando-fontes-externas-google-fonts",
+    "href": "aulas/guia-quarto-fontawesome.html#usando-fontes-externas-google-fonts",
+    "title": "Guia Completo – Font Awesome e Fontes no Quarto (HTML)",
+    "section": "🌐 Usando fontes externas (Google Fonts)",
+    "text": "🌐 Usando fontes externas (Google Fonts)\n\nImportação no CSS\n@import url(\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap\");\n\n\nAplicação\nbody {\n  font-family: \"Roboto\", sans-serif;\n}\nFunciona em páginas locais e GitHub Pages."
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#controle-de-tamanho-da-fonte",
+    "href": "aulas/guia-quarto-fontawesome.html#controle-de-tamanho-da-fonte",
+    "title": "Guia Completo – Font Awesome e Fontes no Quarto (HTML)",
+    "section": "📐 Controle de tamanho da fonte",
+    "text": "📐 Controle de tamanho da fonte\nbody { font-size: 16px; }\nh1 { font-size: 2.2em; }\nh2 { font-size: 1.7em; }\nh3 { font-size: 1.3em; }\nUse em para manter proporção."
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#cor-e-peso-do-texto",
+    "href": "aulas/guia-quarto-fontawesome.html#cor-e-peso-do-texto",
+    "title": "Guia Completo – Font Awesome e Fontes no Quarto (HTML)",
+    "section": "🎨 Cor e peso do texto",
+    "text": "🎨 Cor e peso do texto\nstrong { font-weight: 700; }\nem { color: #1e88e5; }\nAlto contraste melhora acessibilidade."
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#font-awesome-em-slides-quarto",
+    "href": "aulas/guia-quarto-fontawesome.html#font-awesome-em-slides-quarto",
+    "title": "Guia Completo – Font Awesome e Fontes em Slides Quarto (Reveal.js)",
+    "section": "⭐ Font Awesome em slides Quarto",
+    "text": "⭐ Font Awesome em slides Quarto\nO Quarto já inclui Font Awesome automaticamente.\nA forma recomendada é usar o shortcode:\n Tendência dos dados\n Atenção\nOs ícones: - se comportam como texto - herdam cor e tamanho - funcionam em títulos, listas e parágrafos"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#ajustando-tamanho-e-cor-dos-ícones",
+    "href": "aulas/guia-quarto-fontawesome.html#ajustando-tamanho-e-cor-dos-ícones",
+    "title": "Guia Completo – Font Awesome e Fontes no Quarto (HTML)",
+    "section": "🎨 Ajustando tamanho e cor dos ícones",
+    "text": "🎨 Ajustando tamanho e cor dos ícones\n&lt;span style=\"font-size: 1.4em; color: steelblue;\"&gt;\n  \n&lt;/span&gt;\nUse apenas para destaque pontual."
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#ícones-em-títulos",
+    "href": "aulas/guia-quarto-fontawesome.html#ícones-em-títulos",
+    "title": "Guia Completo – Font Awesome e Fontes no Quarto (HTML)",
+    "section": "🧱 Ícones em títulos",
+    "text": "🧱 Ícones em títulos\n##  Conteúdo da Aula\nAjuda na navegação visual."
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#ícones-em-listas-uso-didático",
+    "href": "aulas/guia-quarto-fontawesome.html#ícones-em-listas-uso-didático",
+    "title": "Guia Completo – Font Awesome e Fontes em Slides Quarto (Reveal.js)",
+    "section": "🧩 Ícones em listas (uso didático)",
+    "text": "🧩 Ícones em listas (uso didático)\n-  Estatística descritiva\n-  Tabelas\n-  Fluxogramas\nSempre use o mesmo ícone para o mesmo tipo de conteúdo."
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#dicionário-prático-de-font-awesome",
+    "href": "aulas/guia-quarto-fontawesome.html#dicionário-prático-de-font-awesome",
+    "title": "Guia Completo – Font Awesome e Fontes no Quarto (HTML)",
+    "section": "📘 Dicionário prático de Font Awesome",
+    "text": "📘 Dicionário prático de Font Awesome\n(ícone → código → significado)\n\n\n✔️ Status e feedback\n\n — check — correto, concluído\n\n — xmark — erro, incorreto\n\n — triangle-exclamation — atenção, alerta\n\n — circle-info — informação\n\n — lightbulb — dica\n\n\n\n\n📊 Estatística e dados\n\n — chart-line — tendência\n\n — chart-bar — barras\n\n — chart-pie — proporções\n\n — table — tabelas\n\n — calculator — cálculos\n\n\n\n\n📚 Ensino e documentação\n\n — book — teoria\n\n — chalkboard-user — aula\n\n — pen — exercícios\n\n — clipboard-list — atividades\n\n — graduation-cap — curso\n\n\n\n\n🧪 Métodos e processos\n\n — diagram-project — fluxograma\n\n — gears — método\n\n — play — início\n\n — stop — fim\n\n\n\n\n🧭 Orientação e navegação (setas)\nEsses ícones são extremamente úteis em guias, passos, tutoriais e slides.\n\n — arrow-right — avançar / próximo\n\n — arrow-left — voltar / anterior\n\n — arrow-up — subir / aumentar\n\n — arrow-down — descer / reduzir\n\n — arrows-left-right — comparação\n\n — arrows-up-down — variação vertical\n\n — chevron-right — passo seguinte\n\n — chevron-left — passo anterior\n\n — chevrons-right — avançar rápido\n\n\n\n\n🌐 Navegação e arquivos\n\n — house — página inicial\n\n — link — link externo\n\n — download — download\n\n — file-pdf — PDF\n\n — github — GitHub"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#yaml-mínimo-para-páginas-html-com-fontes-e-ícones",
+    "href": "aulas/guia-quarto-fontawesome.html#yaml-mínimo-para-páginas-html-com-fontes-e-ícones",
+    "title": "Guia Completo – Font Awesome e Fontes no Quarto (HTML)",
+    "section": "⚙️ YAML mínimo para páginas HTML com fontes e ícones",
+    "text": "⚙️ YAML mínimo para páginas HTML com fontes e ícones\nExemplo funcional:\n---\ntitle: \"Minha Página\"\nformat:\n  html:\n    theme: cosmo\n    css: styles.css\n---\nO arquivo styles.css é onde o controle fino das fontes acontece."
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#definindo-a-fonte-principal-da-página",
+    "href": "aulas/guia-quarto-fontawesome.html#definindo-a-fonte-principal-da-página",
+    "title": "Guia Completo – Font Awesome e Fontes no Quarto (HTML)",
+    "section": "🔤 Definindo a fonte principal da página",
+    "text": "🔤 Definindo a fonte principal da página\nNo arquivo styles.css:\nbody {\n  font-family: \"Helvetica\", \"Arial\", sans-serif;\n  color: #222;\n}\nIsso afeta: - parágrafos\n- listas\n- títulos\n- ícones Font Awesome"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#font-awesome-no-quarto-html",
+    "href": "aulas/guia-quarto-fontawesome.html#font-awesome-no-quarto-html",
+    "title": "Guia Completo – Font Awesome e Fontes no Quarto (HTML)",
+    "section": "⭐ Font Awesome no Quarto (HTML)",
+    "text": "⭐ Font Awesome no Quarto (HTML)\nO Quarto já inclui Font Awesome automaticamente.\nForma recomendada:\n Tendência dos dados  \n Atenção  \nÍcones: - funcionam como texto\n- herdam cor e tamanho\n- funcionam em títulos, listas e parágrafos"
+  },
+  {
+    "objectID": "aulas/guia-quarto-fontawesome.html#ícones-em-listas",
+    "href": "aulas/guia-quarto-fontawesome.html#ícones-em-listas",
+    "title": "Guia Completo – Font Awesome e Fontes no Quarto (HTML)",
+    "section": "🧩 Ícones em listas",
+    "text": "🧩 Ícones em listas\n-  Estatística descritiva\n-  Tabelas\n-  Fluxogramas\nUse sempre o mesmo ícone para o mesmo tipo de conteúdo."
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r-9",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r-9",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R",
+    "text": "Pacote R"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r-10",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r-10",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R",
+    "text": "Pacote R"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#pacote-r-11",
+    "href": "aulas/slides/aula-R-1-introducao.html#pacote-r-11",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R",
+    "text": "Pacote R"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#o-rstudio",
+    "href": "aulas/slides/aula-R-1-introducao.html#o-rstudio",
+    "title": "Estatística Básica utilizando R",
+    "section": "O RStudio",
+    "text": "O RStudio"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#o-rstudio-1",
+    "href": "aulas/slides/aula-R-1-introducao.html#o-rstudio-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "O RStudio",
+    "text": "O RStudio"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#o-rstudio-2",
+    "href": "aulas/slides/aula-R-1-introducao.html#o-rstudio-2",
+    "title": "Estatística Básica utilizando R",
+    "section": "O RStudio",
+    "text": "O RStudio\n\nEditor (Scripts) – Onde escrevemos os códigos\n\n(CTRL+SHIFT+1)\n\nConsole – Onde rodamos os códigos\n\nCTRL+SHIFT+2)\n\nAmbiente – Todos os objetos criados na sessão\n\n(CTRL+SHIFT+4)\n\n“Saída”\n\n(CTRL+SHIFT+3)\nFiles – Arquivos no diretório de trabalho ( &gt; setwd())\nPlots – Local onde são plotados os gráficos\nHelp – Janela de ajuda, onde são mostradas as funções ( &gt; help() ou &gt; ? )\nHistory – Histórico dos comandos rodados"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#o-rstudio-3",
+    "href": "aulas/slides/aula-R-1-introducao.html#o-rstudio-3",
+    "title": "Estatística Básica utilizando R",
+    "section": "O RStudio",
+    "text": "O RStudio\n\n\n\n\nAtalhos!!!\n\nO uso de atalhos ajuda muito a fluidez do trabalho\n\n\nCTRL+ENTER: roda a linha selecionada no script. MUITO USADO\nALT+-: (&lt;-) sinal de atribuição. MUITO USADO\nCTRL+SHIFT+M: (%&gt;%) operador pipe.\nCTRL+1: altera cursor para o script.\nCTRL+2: altera cursor para o console.\nCTRL+SHIFT+C: (Des)comenta a linha.\nCTRL+SHIFT+R: Cria um comentário para uma nova parte do código.\nALT+SHIFT+K: janela com todos os atalhos disponíveis"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-1-introducao.html#o-rstudio-4",
+    "href": "aulas/slides/aula-R-1-introducao.html#o-rstudio-4",
+    "title": "Estatística Básica utilizando R",
+    "section": "O RStudio",
+    "text": "O RStudio"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos",
+    "href": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R - Comandos Básicos",
+    "text": "Pacote R - Comandos Básicos\n\n\n\n#\n\nIndica que sequência de caracteres após “#” não deve ser lido\nPermite inserir comentários dentro do script\nMuito importante para lembrar e compartilhar os códigos"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-1",
+    "href": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R - Comandos Básicos",
+    "text": "Pacote R - Comandos Básicos\n\n\n\n\n\n#"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-2",
+    "href": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-2",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R - Comandos Básicos",
+    "text": "Pacote R - Comandos Básicos\n\nDefinir a pasta de trabalho\n\nVia Menu\nVia comando:\n\nsetwd()\nCuidado com a “\\”\n\nDeve ser “\\ \\”\nOu “/”"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-3",
+    "href": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-3",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R - Comandos Básicos",
+    "text": "Pacote R - Comandos Básicos\n\n\n\nPacotes\n\nCarregam conjuntos de funções e dados\nO programa já vem com 7 pacotes instalados\n\nbase: funções essenciais;\nstats: estatística paramétrica e não-paramétrica;\ngraphics: histogramas, boxplots, diagramas de dispersão;\nutils: pedir ajuda, instalar pacotes e importar dados;\ndatasets: bancos de dados de exemplo;\ngrDevices: visualizar tela e exportar gráficos; e\nmethods: ver a classe e fazer coerção de objetos.\n\n\n\n\n\n\n\nInstalação\n\nPela internet\n\nConsole  &gt; install.packages(“NOME DO PACOTE”)\nMenu Pacotes – Instalar Pacotes\n\nArquivo zip\n\nMenu Pacotes – Instalar pacote(s) de arquivos locais\n\n\n\nAbrir\n\nConsole  &gt; library(“NOME DO PACOTE”)\nMenu"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-4",
+    "href": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-4",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R - Comandos básicos",
+    "text": "Pacote R - Comandos básicos\n\n\n\nCalculadora\n\n“+” - soma\n“-” - subtração\n“/” - divisão\n“*” - multiplicação\n“^” – potência\n“()” – expressões complexas\n\n\n\n\n &gt; 5*3\n [1] 15\n &gt; 5*(3+2) \n[1] ?"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-5",
+    "href": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-5",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R - Comandos básicos",
+    "text": "Pacote R - Comandos básicos\n\n\n\nCalculadora\n\n“+” - soma\n“-” - subtração\n“/” - divisão\n“*” - multiplicação\n“^” – potência\n“()” – expressões complexas\n\n\n\n\n &gt; 5*3\n [1] 15\n &gt; 5*(3+2) \n[1] ?\n\n\n\n\n\nlog(x)  # logaritmo natural\nlog10(x)  # log de x na base 10\nlog(x,base)  # log de x na base escolhida\nabs(x)  # “valor absoluto”. \nfactorial(x)  # fatorial. \nsqrt(x)  # raiz\nprod (x,x)  # produto (mesma coisa que x*x)\nprod(x,x,x,x,x)  # confira se é igual a x^5\nprod(1,2,3,4)  # confira"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-6",
+    "href": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-6",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R - Comandos básicos",
+    "text": "Pacote R - Comandos básicos\n\n\n\nCalculadora\n\n“+” - soma\n“-” - subtração\n“/” - divisão\n“*” - multiplicação\n“^” – potência\n“()” – expressões complexas\n\n\n\n\n &gt; 5*3\n [1] 15\n &gt; 5*(3+2) \n[1] ?\n\n\n\n\n\nExercício :\n\n\\(35*7 =\\)\n\\(5^2 =\\)\n\\((2+\\frac{15}{3})*7 =\\)\nTrês caminhões transportam 200m³ de areia. Para transportar 1600m³ de areia, quantos caminhões iguais a esse seriam necessários? Resposta:"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-7",
+    "href": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-7",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R - Comandos básicos",
+    "text": "Pacote R - Comandos básicos\n\n\n\nCalculadora\n\n“+” - soma\n“-” - subtração\n“/” - divisão\n“*” - multiplicação\n“^” – potência\n“()” – expressões complexas\n\n\n\n\n &gt; 5*3\n [1] 15\n &gt; 5*(3+2) \n[1] ?\n\n\n\n\n\nExercício :\n\n\\(35*7 = 245\\)\n\\(5^2 = 25\\)\n\\((2+\\frac{15}{3})*7 = 49\\)\nTrês caminhões transportam 200m³ de areia. Para transportar 1600m³ de areia, quantos caminhões iguais a esse seriam necessários? Resposta: 24 caminhões"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-8",
+    "href": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-8",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R - Comandos básicos",
+    "text": "Pacote R - Comandos básicos\n\nPrimeiro exercício em programação\n\n\n\n &gt; print(“Olá mundo”)\n [1] “Olá mundo”"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-9",
+    "href": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-9",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R - Comandos básicos",
+    "text": "Pacote R - Comandos básicos\n\nNo R trabalhamos com objetos\n\nUtilizamos “&lt;-” ou “=” para definir os objetos\n\nDamos um nome e valores associados Quantitativos ou qualitativos\n\nCom estes objetos podemos executar funções\n\nAssociado a função sempre temos “( )”\n\nPodemos extrair parte dos objeto\n\nUtilizando “[ ]”"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-10",
+    "href": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-10",
+    "title": "Estatística Básica utilizando R",
+    "section": "Pacote R - Comandos básicos",
+    "text": "Pacote R - Comandos básicos\n\n\n\nObjetos\n\n &gt; x &lt;- 83\n &gt; x\n[1] 83 \n &gt; y &lt;- 10\n &gt; y\n[1] 10\n &gt; x + y\n[1] ?\n\n\n\n\n\nExercício :  (agora utilizando objetos)\n\n\\(35*7 = 245\\)\n\\(5^2 = 25\\)\n\\((2+\\frac{15}{3})*7 = 49\\)\nTrês caminhões transportam 200m³ de areia. Para transportar 1600m³ de areia, quantos caminhões iguais a esse seriam necessários? Resposta: 24 caminhões"
   }
 ]

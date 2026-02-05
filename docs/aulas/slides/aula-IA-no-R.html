@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Estatística Básica com R">
 
-<title>Aulas – Estatística Básica com R</title>
+<title>Inteligência Artificial no R – Estatística Básica com R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +21,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,9 +115,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Estatística Básica com R</span>
     </a>
   </div>
@@ -92,23 +128,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Início</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../aulas/aulas.html" aria-current="page"> 
+    <a class="nav-link" href="../../aulas/aulas.html"> 
 <span class="menu-text">Aulas</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../exercicios.qmd"> 
+    <a class="nav-link" href="../../exercicios.qmd"> 
 <span class="menu-text">Exercícios</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../materiais.qmd"> 
+    <a class="nav-link" href="../../materiais.qmd"> 
 <span class="menu-text">Materiais</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../envio.html"> 
+    <a class="nav-link" href="../../envio.html"> 
 <span class="menu-text">Envio</span></a>
   </li>  
 </ul>
@@ -127,43 +163,53 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#revisão-de-estatística" id="toc-revisão-de-estatística" class="nav-link active" data-scroll-target="#revisão-de-estatística">Revisão de Estatística</a>
+  <li><a href="#por-que-falar-de-ia-no-curso" id="toc-por-que-falar-de-ia-no-curso" class="nav-link active" data-scroll-target="#por-que-falar-de-ia-no-curso">Por que falar de IA no curso?</a></li>
+  <li><a href="#o-que-a-ia-realmente-é" id="toc-o-que-a-ia-realmente-é" class="nav-link" data-scroll-target="#o-que-a-ia-realmente-é">O que a IA realmente é</a></li>
+  <li><a href="#ia-não-é" id="toc-ia-não-é" class="nav-link" data-scroll-target="#ia-não-é">IA NÃO é</a></li>
+  <li><a href="#quando-a-ia-ajuda-no-r" id="toc-quando-a-ia-ajuda-no-r" class="nav-link" data-scroll-target="#quando-a-ia-ajuda-no-r">Quando a IA ajuda no R</a></li>
+  <li><a href="#onde-a-ia-costuma-errar" id="toc-onde-a-ia-costuma-errar" class="nav-link" data-scroll-target="#onde-a-ia-costuma-errar">Onde a IA costuma errar</a></li>
+  <li><a href="#uso-preguiçoso-da-ia" id="toc-uso-preguiçoso-da-ia" class="nav-link" data-scroll-target="#uso-preguiçoso-da-ia">Uso preguiçoso da IA</a></li>
+  <li><a href="#uso-profissional-da-ia" id="toc-uso-profissional-da-ia" class="nav-link" data-scroll-target="#uso-profissional-da-ia">Uso profissional da IA</a></li>
+  <li><a href="#fluxo-correto-de-uso-da-ia" id="toc-fluxo-correto-de-uso-da-ia" class="nav-link" data-scroll-target="#fluxo-correto-de-uso-da-ia">Fluxo correto de uso da IA</a></li>
+  <li><a href="#prompt-recomendado-no-curso" id="toc-prompt-recomendado-no-curso" class="nav-link" data-scroll-target="#prompt-recomendado-no-curso">Prompt recomendado no curso</a></li>
+  <li><a href="#demonstração-ao-vivo-em-r" id="toc-demonstração-ao-vivo-em-r" class="nav-link" data-scroll-target="#demonstração-ao-vivo-em-r">Demonstração ao vivo em R</a>
   <ul class="collapse">
-  <li><a href="#apresentação-introdução-ao-curso" id="toc-apresentação-introdução-ao-curso" class="nav-link" data-scroll-target="#apresentação-introdução-ao-curso">Apresentação – Introdução ao Curso</a></li>
-  <li><a href="#aula-01-conceitos-básicos" id="toc-aula-01-conceitos-básicos" class="nav-link" data-scroll-target="#aula-01-conceitos-básicos">Aula 01 – Conceitos básicos</a></li>
-  <li><a href="#aula-02-conceitos-básicos" id="toc-aula-02-conceitos-básicos" class="nav-link" data-scroll-target="#aula-02-conceitos-básicos">Aula 02 – Conceitos básicos</a></li>
-  <li><a href="#aula-03-organizando-dados" id="toc-aula-03-organizando-dados" class="nav-link" data-scroll-target="#aula-03-organizando-dados">Aula 03 – Organizando dados</a></li>
-  <li><a href="#aula-04-estatística-descritiva" id="toc-aula-04-estatística-descritiva" class="nav-link" data-scroll-target="#aula-04-estatística-descritiva">Aula 04 – Estatística descritiva</a></li>
-  <li><a href="#aula-05-testes-de-hipóteses-e-significâncias" id="toc-aula-05-testes-de-hipóteses-e-significâncias" class="nav-link" data-scroll-target="#aula-05-testes-de-hipóteses-e-significâncias">Aula 05 – Testes de hipóteses e significâncias</a></li>
-  <li><a href="#aula-06-testes-de-hipótese-1" id="toc-aula-06-testes-de-hipótese-1" class="nav-link" data-scroll-target="#aula-06-testes-de-hipótese-1">Aula 06 – Testes de hipótese 1</a></li>
-  <li><a href="#aula-07-testes-de-hipótese-2" id="toc-aula-07-testes-de-hipótese-2" class="nav-link" data-scroll-target="#aula-07-testes-de-hipótese-2">Aula 07 – Testes de hipótese 2</a></li>
-  <li><a href="#aula-08-testes-de-hipótese-3" id="toc-aula-08-testes-de-hipótese-3" class="nav-link" data-scroll-target="#aula-08-testes-de-hipótese-3">Aula 08 – Testes de hipótese 3</a></li>
-  </ul></li>
-  <li><a href="#linguagem-r" id="toc-linguagem-r" class="nav-link" data-scroll-target="#linguagem-r">Linguagem R</a>
-  <ul class="collapse">
-  <li><a href="#aula-01-a-linguagem-r" id="toc-aula-01-a-linguagem-r" class="nav-link" data-scroll-target="#aula-01-a-linguagem-r">Aula 01 – A Linguagem R</a></li>
-  <li><a href="#aula-02-o-pacote-r" id="toc-aula-02-o-pacote-r" class="nav-link" data-scroll-target="#aula-02-o-pacote-r">Aula 02 – O pacote R</a></li>
-  <li><a href="#aula-03-objetos-e-dados" id="toc-aula-03-objetos-e-dados" class="nav-link" data-scroll-target="#aula-03-objetos-e-dados">Aula 03 – Objetos e Dados</a></li>
-  <li><a href="#aula-04-funções-e-objetos" id="toc-aula-04-funções-e-objetos" class="nav-link" data-scroll-target="#aula-04-funções-e-objetos">Aula 04 – Funções e objetos</a></li>
-  <li><a href="#aula-05-graficos-no-r" id="toc-aula-05-graficos-no-r" class="nav-link" data-scroll-target="#aula-05-graficos-no-r">Aula 05 – Graficos no R</a></li>
-  <li><a href="#aula-06-estatística-descritiva-no-r" id="toc-aula-06-estatística-descritiva-no-r" class="nav-link" data-scroll-target="#aula-06-estatística-descritiva-no-r">Aula 06 – Estatística descritiva no R</a></li>
-  <li><a href="#aula-07-testes-de-significância-em-r" id="toc-aula-07-testes-de-significância-em-r" class="nav-link" data-scroll-target="#aula-07-testes-de-significância-em-r">Aula 07 – Testes de significância em R</a></li>
+  <li><a href="#situação-problema" id="toc-situação-problema" class="nav-link" data-scroll-target="#situação-problema">Situação-problema</a></li>
+  <li><a href="#antes-da-ia" id="toc-antes-da-ia" class="nav-link" data-scroll-target="#antes-da-ia">Antes da IA</a></li>
+  <li><a href="#criando-os-dados-no-r" id="toc-criando-os-dados-no-r" class="nav-link" data-scroll-target="#criando-os-dados-no-r">Criando os dados no R</a></li>
+  <li><a href="#pedido-ruim-à-ia" id="toc-pedido-ruim-à-ia" class="nav-link" data-scroll-target="#pedido-ruim-à-ia">Pedido RUIM à IA</a></li>
+  <li><a href="#o-que-a-ia-não-perguntou" id="toc-o-que-a-ia-não-perguntou" class="nav-link" data-scroll-target="#o-que-a-ia-não-perguntou">O que a IA NÃO perguntou?</a></li>
+  <li><a href="#pedido-correto-à-ia" id="toc-pedido-correto-à-ia" class="nav-link" data-scroll-target="#pedido-correto-à-ia">Pedido CORRETO à IA</a></li>
+  <li><a href="#ia-agora-ajuda-corretamente" id="toc-ia-agora-ajuda-corretamente" class="nav-link" data-scroll-target="#ia-agora-ajuda-corretamente">IA agora ajuda corretamente</a></li>
+  <li><a href="#verificando-pressupostos-no-r" id="toc-verificando-pressupostos-no-r" class="nav-link" data-scroll-target="#verificando-pressupostos-no-r">Verificando pressupostos no R</a></li>
+  <li><a href="#decisão-estatística" id="toc-decisão-estatística" class="nav-link" data-scroll-target="#decisão-estatística">Decisão estatística</a></li>
+  <li><a href="#ia-como-apoio-à-interpretação" id="toc-ia-como-apoio-à-interpretação" class="nav-link" data-scroll-target="#ia-como-apoio-à-interpretação">IA como apoio à interpretação</a></li>
+  <li><a href="#checklist-final" id="toc-checklist-final" class="nav-link" data-scroll-target="#checklist-final">Checklist final</a></li>
+  <li><a href="#mensagem-final" id="toc-mensagem-final" class="nav-link" data-scroll-target="#mensagem-final">Mensagem final</a></li>
+  <li><a href="#conclusão" id="toc-conclusão" class="nav-link" data-scroll-target="#conclusão">Conclusão</a></li>
   </ul></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Outros formatos</h2><ul><li><a href="aula-IA-no-R.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Aulas</h1>
+<h1 class="title">Inteligência Artificial no R</h1>
+<p class="subtitle lead">Uso consciente no desenvolvimento e análise de dados</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Estatística Básica com R </p>
+          </div>
+  </div>
     
   
     
@@ -174,192 +220,218 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Aulas da disciplina</p>
-<p>Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.</p>
-<hr>
-<section id="revisão-de-estatística" class="level2">
-<h2 class="anchored" data-anchor-id="revisão-de-estatística">Revisão de Estatística</h2>
-<hr>
-<section id="apresentação-introdução-ao-curso" class="level3">
-<h3 class="anchored" data-anchor-id="apresentação-introdução-ao-curso">Apresentação – Introdução ao Curso</h3>
+<section id="por-que-falar-de-ia-no-curso" class="level2">
+<h2 class="anchored" data-anchor-id="por-que-falar-de-ia-no-curso">Por que falar de IA no curso?</h2>
 <ul>
-<li>Apresentação do curso<br>
-</li>
-<li>Conteúdos programáticos<br>
-</li>
-<li>Tipografia do curso</li>
+<li>IA já faz parte da prática científica</li>
+<li>Ignorar a IA ❌</li>
+<li>Usar sem critério ❌</li>
+<li>Usar de forma consciente ✅</li>
 </ul>
-<p><a href="../aulas/slides/aula-aps-tipografia.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
 <hr>
 </section>
-<section id="aula-01-conceitos-básicos" class="level3">
-<h3 class="anchored" data-anchor-id="aula-01-conceitos-básicos">Aula 01 – Conceitos básicos</h3>
+<section id="o-que-a-ia-realmente-é" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-a-ia-realmente-é">O que a IA realmente é</h2>
 <ul>
-<li>O que é a estatística</li>
-<li>O que são Dados</li>
-<li>Amostragem e generalização</li>
-<li>Tipos de dados</li>
+<li>Modelo de linguagem</li>
+<li>Reconhece padrões em textos e códigos</li>
+<li>Não entende o experimento</li>
+<li>Não entende o contexto estatístico</li>
 </ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-1-dados.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
+<p>⚠️ Pode errar com muita confiança</p>
 <hr>
 </section>
-<section id="aula-02-conceitos-básicos" class="level3">
-<h3 class="anchored" data-anchor-id="aula-02-conceitos-básicos">Aula 02 – Conceitos básicos</h3>
+<section id="ia-não-é" class="level2">
+<h2 class="anchored" data-anchor-id="ia-não-é">IA NÃO é</h2>
 <ul>
-<li>Planejando experimentos</li>
+<li>Um estatístico</li>
+<li>Um pesquisador</li>
+<li>Um substituto do raciocínio científico</li>
+<li>Um oráculo</li>
 </ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-2-planejando.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
+<p>✔️ Ferramenta de apoio</p>
 <hr>
 </section>
-<section id="aula-03-organizando-dados" class="level3">
-<h3 class="anchored" data-anchor-id="aula-03-organizando-dados">Aula 03 – Organizando dados</h3>
+<section id="quando-a-ia-ajuda-no-r" class="level2">
+<h2 class="anchored" data-anchor-id="quando-a-ia-ajuda-no-r">Quando a IA ajuda no R</h2>
 <ul>
-<li>Tabelas do contingência</li>
-<li>Distribuição de frequências</li>
+<li>Explicar funções</li>
+<li>Organizar scripts</li>
+<li>Sugerir visualizações</li>
+<li>Depurar erros</li>
+<li>Melhorar legibilidade do código</li>
 </ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-3-organizando.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
 <hr>
 </section>
-<section id="aula-04-estatística-descritiva" class="level3">
-<h3 class="anchored" data-anchor-id="aula-04-estatística-descritiva">Aula 04 – Estatística descritiva</h3>
+<section id="onde-a-ia-costuma-errar" class="level2">
+<h2 class="anchored" data-anchor-id="onde-a-ia-costuma-errar">Onde a IA costuma errar</h2>
 <ul>
-<li>Medidas de tendência central</li>
-<li>Medidas de dispersão</li>
+<li>Escolha inadequada de testes estatísticos</li>
+<li>Ignorar pressupostos</li>
+<li>Inventar funções e pacotes</li>
+<li>Gerar análises completas sem contexto</li>
+<li>Produzir resultados enganosos</li>
 </ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-4-descritiva.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
 <hr>
 </section>
-<section id="aula-05-testes-de-hipóteses-e-significâncias" class="level3">
-<h3 class="anchored" data-anchor-id="aula-05-testes-de-hipóteses-e-significâncias">Aula 05 – Testes de hipóteses e significâncias</h3>
+<section id="uso-preguiçoso-da-ia" class="level2">
+<h2 class="anchored" data-anchor-id="uso-preguiçoso-da-ia">Uso preguiçoso da IA</h2>
 <ul>
-<li>O que são testes de hipóteses</li>
-<li>Definições
-<ul>
-<li>Hipótese nula e alternativa</li>
-<li>Erro tipo I e II</li>
-<li>Nível de significância</li>
-<li>Poder do teste</li>
-<li>Unicaudal e bicaudal</li>
-</ul></li>
+<li>Copiar e colar código</li>
+<li>Rodar sem entender</li>
+<li>Não saber explicar resultados</li>
+<li>Aprendizado superficial</li>
 </ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-5-testes-de-hipoteses.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
 <hr>
 </section>
-<section id="aula-06-testes-de-hipótese-1" class="level3">
-<h3 class="anchored" data-anchor-id="aula-06-testes-de-hipótese-1">Aula 06 – Testes de hipótese 1</h3>
+<section id="uso-profissional-da-ia" class="level2">
+<h2 class="anchored" data-anchor-id="uso-profissional-da-ia">Uso profissional da IA</h2>
 <ul>
-<li>Estatística Paramétrica</li>
-<li>Testes de significância para uma amostra</li>
-<li>Qui-quadrado</li>
-<li>Teste T para uma amostra</li>
-<li>Teste T para duas amostras independentes</li>
+<li>Pensar antes de pedir ajuda</li>
+<li>Definir objetivo e método estatístico</li>
+<li>Usar IA como apoio</li>
+<li>Validar resultados</li>
+<li>Saber explicar cada etapa</li>
 </ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
 <hr>
 </section>
-<section id="aula-07-testes-de-hipótese-2" class="level3">
-<h3 class="anchored" data-anchor-id="aula-07-testes-de-hipótese-2">Aula 07 – Testes de hipótese 2</h3>
-<ul>
-<li>Estatística paramétrica</li>
-<li>Testes de significância para mais de duas amostras</li>
-<li>ANOVA</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
+<section id="fluxo-correto-de-uso-da-ia" class="level2">
+<h2 class="anchored" data-anchor-id="fluxo-correto-de-uso-da-ia">Fluxo correto de uso da IA</h2>
+<ol type="1">
+<li>Entender o problema</li>
+<li>Entender os dados</li>
+<li>Escolher o método estatístico</li>
+<li>Usar IA para implementar ou revisar</li>
+<li>Conferir pressupostos</li>
+<li>Interpretar criticamente os resultados</li>
+</ol>
 <hr>
 </section>
-<section id="aula-08-testes-de-hipótese-3" class="level3">
-<h3 class="anchored" data-anchor-id="aula-08-testes-de-hipótese-3">Aula 08 – Testes de hipótese 3</h3>
-<ul>
-<li>Estatística não paramétrica</li>
-<li>Mann-Whitney</li>
-<li>Kruskal-Wallis</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
+<section id="prompt-recomendado-no-curso" class="level2">
+<h2 class="anchored" data-anchor-id="prompt-recomendado-no-curso">Prompt recomendado no curso</h2>
+<pre class="text"><code>Você é um assistente de programação em R e estatística.
+
+Não gere análises completas automaticamente.
+
+Explique o raciocínio estatístico antes do código.
+Pergunte sobre o tipo de variável, objetivo da análise
+e pressupostos do método.
+
+Aponte limitações.
+
+Meu objetivo é aprender, não copiar código.</code></pre>
 <hr>
 </section>
-</section>
-<section id="linguagem-r" class="level2">
-<h2 class="anchored" data-anchor-id="linguagem-r">Linguagem R</h2>
+<section id="demonstração-ao-vivo-em-r" class="level1">
+<h1>Demonstração ao vivo em R</h1>
 <hr>
-<section id="aula-01-a-linguagem-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-01-a-linguagem-r">Aula 01 – A Linguagem R</h3>
-<ul>
-<li>O R é para mim?</li>
-<li>A linguagem R</li>
-<li>Um pouco de história…</li>
-<li>Não tenha medo do erro</li>
-<li>R x Python</li>
-<li>O pacote R</li>
-<li>RStudio</li>
-</ul>
-<p><a href="../aulas/slides/aula-R-1-introducao.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
+<section id="situação-problema" class="level2">
+<h2 class="anchored" data-anchor-id="situação-problema">Situação-problema</h2>
+<p>Existe diferença no comprimento de organismos<br>
+entre dois locais de amostragem?</p>
 <hr>
 </section>
-<section id="aula-02-o-pacote-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-02-o-pacote-r">Aula 02 – O pacote R</h3>
+<section id="antes-da-ia" class="level2">
+<h2 class="anchored" data-anchor-id="antes-da-ia">Antes da IA</h2>
+<p>Perguntas obrigatórias:</p>
 <ul>
-<li>Comandos Básicos</li>
-<li>Pacotes</li>
-<li>O R como calculadora</li>
-<li>Iniciando em objetos</li>
+<li>Tipo de variável?</li>
+<li>Objetivo da análise?</li>
+<li>Quantos grupos?</li>
+<li>Qual teste pode fazer sentido?</li>
 </ul>
-<p><a href="../aulas/slides/aula-R-2-primeiros-passos.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
 <hr>
 </section>
-<section id="aula-03-objetos-e-dados" class="level3">
-<h3 class="anchored" data-anchor-id="aula-03-objetos-e-dados">Aula 03 – Objetos e Dados</h3>
-<ul>
-<li>Atribuição</li>
-<li>Nomeando objetos</li>
-<li>Utilizando objetos em R</li>
-<li>Tipos de dados em R</li>
-<li>Alguns comandos</li>
-</ul>
-<p>➡️ Aula em breve</p>
+<section id="criando-os-dados-no-r" class="level2">
+<h2 class="anchored" data-anchor-id="criando-os-dados-no-r">Criando os dados no R</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dados <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">local =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>), <span class="at">each =</span> <span class="dv">20</span>),</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">comprimento =</span> <span class="fu">c</span>(</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rnorm</span>(<span class="dv">20</span>, <span class="at">mean =</span> <span class="dv">10</span>, <span class="at">sd =</span> <span class="dv">1</span>),</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rnorm</span>(<span class="dv">20</span>, <span class="at">mean =</span> <span class="dv">11</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(dados)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
-<section id="aula-04-funções-e-objetos" class="level3">
-<h3 class="anchored" data-anchor-id="aula-04-funções-e-objetos">Aula 04 – Funções e objetos</h3>
-<ul>
-<li>Funções</li>
-<li>Criando funções</li>
-<li>Mais sobre objetos</li>
-<li>Estruturas de dados</li>
-</ul>
-<p>➡️ Aula em breve</p>
+<section id="pedido-ruim-à-ia" class="level2">
+<h2 class="anchored" data-anchor-id="pedido-ruim-à-ia">Pedido RUIM à IA</h2>
+<p>Faça uma análise estatística completa desses dados em R.</p>
+<p>🚫 Problema: terceiriza o raciocínio</p>
 <hr>
 </section>
-<section id="aula-05-graficos-no-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-05-graficos-no-r">Aula 05 – Graficos no R</h3>
+<section id="o-que-a-ia-não-perguntou" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-a-ia-não-perguntou">O que a IA NÃO perguntou?</h2>
 <ul>
-<li>Como funcionam gráficos no R</li>
-<li>Tipos de gráficos</li>
-<li>Parâmetros gráficos</li>
+<li>Normalidade</li>
+<li>Homogeneidade de variâncias</li>
+<li>Objetivo do estudo</li>
+<li>Delineamento experimental</li>
 </ul>
-<p>➡️ Aula em breve</p>
+<hr>
 </section>
-<section id="aula-06-estatística-descritiva-no-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-06-estatística-descritiva-no-r">Aula 06 – Estatística descritiva no R</h3>
-<ul>
-<li>Estatística descritiva</li>
-<li>Medidas de tendência central</li>
-<li>Medidas de dispersão</li>
-</ul>
-<p>➡️ Aula em breve</p>
+<section id="pedido-correto-à-ia" class="level2">
+<h2 class="anchored" data-anchor-id="pedido-correto-à-ia">Pedido CORRETO à IA</h2>
+<p>Explique o raciocínio estatístico antes do código<br>
+e pergunte sobre variáveis, objetivo e pressupostos.</p>
+<hr>
 </section>
-<section id="aula-07-testes-de-significância-em-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-07-testes-de-significância-em-r">Aula 07 – Testes de significância em R</h3>
+<section id="ia-agora-ajuda-corretamente" class="level2">
+<h2 class="anchored" data-anchor-id="ia-agora-ajuda-corretamente">IA agora ajuda corretamente</h2>
 <ul>
-<li>Testes de significância
-<ul>
-<li>Teste t</li>
-<li>Mann-Whitney</li>
-<li>Qui-quadrado</li>
-<li>Análise de Variância</li>
-<li>Kruskall-Wallis</li>
-</ul></li>
+<li>Questiona pressupostos</li>
+<li>Sugere verificações</li>
+<li>Explica alternativas</li>
+<li>Não decide sozinha</li>
 </ul>
-<p>➡️ Aula em breve</p>
+<hr>
+</section>
+<section id="verificando-pressupostos-no-r" class="level2">
+<h2 class="anchored" data-anchor-id="verificando-pressupostos-no-r">Verificando pressupostos no R</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(dados<span class="sc">$</span>comprimento[dados<span class="sc">$</span>local <span class="sc">==</span> <span class="st">"A"</span>])</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(dados<span class="sc">$</span>comprimento[dados<span class="sc">$</span>local <span class="sc">==</span> <span class="st">"B"</span>])</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">var.test</span>(comprimento <span class="sc">~</span> local, <span class="at">data =</span> dados)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="decisão-estatística" class="level2">
+<h2 class="anchored" data-anchor-id="decisão-estatística">Decisão estatística</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(comprimento <span class="sc">~</span> local, <span class="at">data =</span> dados)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>A escolha do teste é do pesquisador.</p>
+<hr>
+</section>
+<section id="ia-como-apoio-à-interpretação" class="level2">
+<h2 class="anchored" data-anchor-id="ia-como-apoio-à-interpretação">IA como apoio à interpretação</h2>
+<p>Explique este resultado de forma didática<br>
+sem exagerar conclusões.</p>
+<hr>
+</section>
+<section id="checklist-final" class="level2">
+<h2 class="anchored" data-anchor-id="checklist-final">Checklist final</h2>
+<p>Antes de confiar na IA:</p>
+<ul>
+<li>Entendo o problema?</li>
+<li>Escolhi o método?</li>
+<li>Conferi pressupostos?</li>
+<li>Sei explicar o resultado?</li>
+</ul>
+<hr>
+</section>
+<section id="mensagem-final" class="level2">
+<h2 class="anchored" data-anchor-id="mensagem-final">Mensagem final</h2>
+<p><strong>A IA não substitui quem pensa.<br>
+Ela potencializa quem já sabe pensar.</strong></p>
+<hr>
+</section>
+<section id="conclusão" class="level2">
+<h2 class="anchored" data-anchor-id="conclusão">Conclusão</h2>
+<ul>
+<li>IA é uma aliada poderosa</li>
+<li>Exige conhecimento prévio</li>
+<li>Deve ser usada com critério</li>
+<li>Em R, raciocinar vem antes de programar</li>
+</ul>
 
 
 </section>

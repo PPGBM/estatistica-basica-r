@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Alexandre Kassuga">
 
-<title>Aulas – Estatística Básica com R</title>
+<title>Guia Completo – Font Awesome e Fontes no Quarto (HTML) – Estatística Básica com R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-e31584831b205ffbb2d98406f31c2a5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -96,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Início</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../aulas/aulas.html" aria-current="page"> 
+    <a class="nav-link" href="../aulas/aulas.html"> 
 <span class="menu-text">Aulas</span></a>
   </li>  
   <li class="nav-item">
@@ -127,28 +130,34 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#revisão-de-estatística" id="toc-revisão-de-estatística" class="nav-link active" data-scroll-target="#revisão-de-estatística">Revisão de Estatística</a>
+  <li><a href="#objetivo-do-guia" id="toc-objetivo-do-guia" class="nav-link active" data-scroll-target="#objetivo-do-guia">🎯 Objetivo do guia</a></li>
+  <li><a href="#conceito-fundamental" id="toc-conceito-fundamental" class="nav-link" data-scroll-target="#conceito-fundamental">🧠 Conceito fundamental</a></li>
+  <li><a href="#yaml-mínimo-para-páginas-html-com-fontes-e-ícones" id="toc-yaml-mínimo-para-páginas-html-com-fontes-e-ícones" class="nav-link" data-scroll-target="#yaml-mínimo-para-páginas-html-com-fontes-e-ícones">⚙️ YAML mínimo para páginas HTML com fontes e ícones</a></li>
+  <li><a href="#definindo-a-fonte-principal-da-página" id="toc-definindo-a-fonte-principal-da-página" class="nav-link" data-scroll-target="#definindo-a-fonte-principal-da-página">🔤 Definindo a fonte principal da página</a></li>
+  <li><a href="#fontes-diferentes-para-títulos-e-texto" id="toc-fontes-diferentes-para-títulos-e-texto" class="nav-link" data-scroll-target="#fontes-diferentes-para-títulos-e-texto">🧠 Fontes diferentes para títulos e texto</a></li>
+  <li><a href="#usando-fontes-externas-google-fonts" id="toc-usando-fontes-externas-google-fonts" class="nav-link" data-scroll-target="#usando-fontes-externas-google-fonts">🌐 Usando fontes externas (Google Fonts)</a>
   <ul class="collapse">
-  <li><a href="#apresentação-introdução-ao-curso" id="toc-apresentação-introdução-ao-curso" class="nav-link" data-scroll-target="#apresentação-introdução-ao-curso">Apresentação – Introdução ao Curso</a></li>
-  <li><a href="#aula-01-conceitos-básicos" id="toc-aula-01-conceitos-básicos" class="nav-link" data-scroll-target="#aula-01-conceitos-básicos">Aula 01 – Conceitos básicos</a></li>
-  <li><a href="#aula-02-conceitos-básicos" id="toc-aula-02-conceitos-básicos" class="nav-link" data-scroll-target="#aula-02-conceitos-básicos">Aula 02 – Conceitos básicos</a></li>
-  <li><a href="#aula-03-organizando-dados" id="toc-aula-03-organizando-dados" class="nav-link" data-scroll-target="#aula-03-organizando-dados">Aula 03 – Organizando dados</a></li>
-  <li><a href="#aula-04-estatística-descritiva" id="toc-aula-04-estatística-descritiva" class="nav-link" data-scroll-target="#aula-04-estatística-descritiva">Aula 04 – Estatística descritiva</a></li>
-  <li><a href="#aula-05-testes-de-hipóteses-e-significâncias" id="toc-aula-05-testes-de-hipóteses-e-significâncias" class="nav-link" data-scroll-target="#aula-05-testes-de-hipóteses-e-significâncias">Aula 05 – Testes de hipóteses e significâncias</a></li>
-  <li><a href="#aula-06-testes-de-hipótese-1" id="toc-aula-06-testes-de-hipótese-1" class="nav-link" data-scroll-target="#aula-06-testes-de-hipótese-1">Aula 06 – Testes de hipótese 1</a></li>
-  <li><a href="#aula-07-testes-de-hipótese-2" id="toc-aula-07-testes-de-hipótese-2" class="nav-link" data-scroll-target="#aula-07-testes-de-hipótese-2">Aula 07 – Testes de hipótese 2</a></li>
-  <li><a href="#aula-08-testes-de-hipótese-3" id="toc-aula-08-testes-de-hipótese-3" class="nav-link" data-scroll-target="#aula-08-testes-de-hipótese-3">Aula 08 – Testes de hipótese 3</a></li>
+  <li><a href="#importação-no-css" id="toc-importação-no-css" class="nav-link" data-scroll-target="#importação-no-css">Importação no CSS</a></li>
+  <li><a href="#aplicação" id="toc-aplicação" class="nav-link" data-scroll-target="#aplicação">Aplicação</a></li>
   </ul></li>
-  <li><a href="#linguagem-r" id="toc-linguagem-r" class="nav-link" data-scroll-target="#linguagem-r">Linguagem R</a>
+  <li><a href="#controle-de-tamanho-da-fonte" id="toc-controle-de-tamanho-da-fonte" class="nav-link" data-scroll-target="#controle-de-tamanho-da-fonte">📐 Controle de tamanho da fonte</a></li>
+  <li><a href="#cor-e-peso-do-texto" id="toc-cor-e-peso-do-texto" class="nav-link" data-scroll-target="#cor-e-peso-do-texto">🎨 Cor e peso do texto</a></li>
+  <li><a href="#font-awesome-no-quarto-html" id="toc-font-awesome-no-quarto-html" class="nav-link" data-scroll-target="#font-awesome-no-quarto-html">⭐ Font Awesome no Quarto (HTML)</a></li>
+  <li><a href="#ajustando-tamanho-e-cor-dos-ícones" id="toc-ajustando-tamanho-e-cor-dos-ícones" class="nav-link" data-scroll-target="#ajustando-tamanho-e-cor-dos-ícones">🎨 Ajustando tamanho e cor dos ícones</a></li>
+  <li><a href="#ícones-em-títulos" id="toc-ícones-em-títulos" class="nav-link" data-scroll-target="#ícones-em-títulos">🧱 Ícones em títulos</a></li>
+  <li><a href="#ícones-em-listas" id="toc-ícones-em-listas" class="nav-link" data-scroll-target="#ícones-em-listas">🧩 Ícones em listas</a></li>
+  <li><a href="#dicionário-prático-de-font-awesome" id="toc-dicionário-prático-de-font-awesome" class="nav-link" data-scroll-target="#dicionário-prático-de-font-awesome">📘 Dicionário prático de Font Awesome</a>
   <ul class="collapse">
-  <li><a href="#aula-01-a-linguagem-r" id="toc-aula-01-a-linguagem-r" class="nav-link" data-scroll-target="#aula-01-a-linguagem-r">Aula 01 – A Linguagem R</a></li>
-  <li><a href="#aula-02-o-pacote-r" id="toc-aula-02-o-pacote-r" class="nav-link" data-scroll-target="#aula-02-o-pacote-r">Aula 02 – O pacote R</a></li>
-  <li><a href="#aula-03-objetos-e-dados" id="toc-aula-03-objetos-e-dados" class="nav-link" data-scroll-target="#aula-03-objetos-e-dados">Aula 03 – Objetos e Dados</a></li>
-  <li><a href="#aula-04-funções-e-objetos" id="toc-aula-04-funções-e-objetos" class="nav-link" data-scroll-target="#aula-04-funções-e-objetos">Aula 04 – Funções e objetos</a></li>
-  <li><a href="#aula-05-graficos-no-r" id="toc-aula-05-graficos-no-r" class="nav-link" data-scroll-target="#aula-05-graficos-no-r">Aula 05 – Graficos no R</a></li>
-  <li><a href="#aula-06-estatística-descritiva-no-r" id="toc-aula-06-estatística-descritiva-no-r" class="nav-link" data-scroll-target="#aula-06-estatística-descritiva-no-r">Aula 06 – Estatística descritiva no R</a></li>
-  <li><a href="#aula-07-testes-de-significância-em-r" id="toc-aula-07-testes-de-significância-em-r" class="nav-link" data-scroll-target="#aula-07-testes-de-significância-em-r">Aula 07 – Testes de significância em R</a></li>
+  <li><a href="#status-e-feedback" id="toc-status-e-feedback" class="nav-link" data-scroll-target="#status-e-feedback">✔️ Status e feedback</a></li>
+  <li><a href="#estatística-e-dados" id="toc-estatística-e-dados" class="nav-link" data-scroll-target="#estatística-e-dados">📊 Estatística e dados</a></li>
+  <li><a href="#ensino-e-documentação" id="toc-ensino-e-documentação" class="nav-link" data-scroll-target="#ensino-e-documentação">📚 Ensino e documentação</a></li>
+  <li><a href="#métodos-e-processos" id="toc-métodos-e-processos" class="nav-link" data-scroll-target="#métodos-e-processos">🧪 Métodos e processos</a></li>
+  <li><a href="#orientação-e-navegação-setas" id="toc-orientação-e-navegação-setas" class="nav-link" data-scroll-target="#orientação-e-navegação-setas">🧭 Orientação e navegação (setas)</a></li>
+  <li><a href="#navegação-e-arquivos" id="toc-navegação-e-arquivos" class="nav-link" data-scroll-target="#navegação-e-arquivos">🌐 Navegação e arquivos</a></li>
   </ul></li>
+  <li><a href="#erros-comuns" id="toc-erros-comuns" class="nav-link" data-scroll-target="#erros-comuns">⚠️ Erros comuns</a></li>
+  <li><a href="#boas-práticas-finais" id="toc-boas-práticas-finais" class="nav-link" data-scroll-target="#boas-práticas-finais">🧭 Boas práticas finais</a></li>
+  <li><a href="#resumo-final" id="toc-resumo-final" class="nav-link" data-scroll-target="#resumo-final">📌 Resumo final</a></li>
   </ul>
 </nav>
     </div>
@@ -157,13 +166,19 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Aulas</h1>
+<h1 class="title">Guia Completo – Font Awesome e Fontes no Quarto (HTML)</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Alexandre Kassuga </p>
+          </div>
+  </div>
     
   
     
@@ -174,195 +189,364 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Aulas da disciplina</p>
-<p>Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.</p>
-<hr>
-<section id="revisão-de-estatística" class="level2">
-<h2 class="anchored" data-anchor-id="revisão-de-estatística">Revisão de Estatística</h2>
-<hr>
-<section id="apresentação-introdução-ao-curso" class="level3">
-<h3 class="anchored" data-anchor-id="apresentação-introdução-ao-curso">Apresentação – Introdução ao Curso</h3>
+<section id="objetivo-do-guia" class="level2">
+<h2 class="anchored" data-anchor-id="objetivo-do-guia">🎯 Objetivo do guia</h2>
+<p>Este guia explica <strong>como configurar fontes tipográficas e utilizar Font Awesome em documentos Quarto (<code>.qmd</code>) renderizados como página HTML</strong>, com foco em:</p>
 <ul>
-<li>Apresentação do curso<br>
+<li>sites de disciplinas<br>
 </li>
-<li>Conteúdos programáticos<br>
+<li>materiais didáticos<br>
 </li>
-<li>Tipografia do curso</li>
+<li>relatórios e guias técnicos<br>
+</li>
+<li>padronização visual com ícones</li>
 </ul>
-<p><a href="../aulas/slides/aula-aps-tipografia.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
+<p>Você aprenderá: - como definir fontes globais da página<br>
+- como ajustar tamanho, peso e cor do texto<br>
+- como inserir ícones Font Awesome corretamente<br>
+- como usar ícones de <strong>orientação e navegação (setas)</strong><br>
+- como manter um dicionário amplo e consistente de ícones</p>
+<hr>
+<p>## 🎯 Objetivo do guia</p>
+<p>Este guia apresenta <strong>como instalar, configurar e utilizar Font Awesome em documentos Quarto (<code>.qmd</code>) renderizados em HTML</strong>, com foco em:</p>
+<ul>
+<li>🎨 Uso de ícones em textos, listas e títulos</li>
+<li>⚙️ Formas corretas de instalação no Quarto</li>
+<li>🧱 Integração com Markdown e HTML</li>
+<li>📘 Um dicionário prático dos ícones mais usados em material didático, científico e sites</li>
+</ul>
+<p>O material foi pensado como <strong>referência completa</strong>, para sites de disciplinas, relatórios, apresentações e documentação técnica.</p>
+<hr>
+<p>## 🧠 O que é Font Awesome</p>
+<p>Font Awesome é uma <strong>biblioteca de ícones vetoriais</strong>, baseada em fontes e SVG, amplamente usada em:</p>
+<ul>
+<li>Sites e blogs</li>
+<li>Dashboards</li>
+<li>Documentação técnica</li>
+<li>Material didático</li>
+</ul>
+<p>Vantagens: - Ícones leves e escaláveis - Funcionam como texto (mudam tamanho e cor) - Integração simples com HTML - Excelente compatibilidade com Quarto</p>
+<hr>
+<p>## ⚙️ Como usar Font Awesome no Quarto (HTML)</p>
+<p>### Forma 1 — Uso nativo do Quarto (RECOMENDADA)</p>
+<p>O Quarto já inclui Font Awesome automaticamente para HTML.</p>
+<p>Você pode usar ícones diretamente no Markdown com a sintaxe:</p>
+<p><i class="fa-solid fa-nome-do-icone" aria-label="nome-do-icone"></i></p>
+<p>Exemplo:</p>
+<p><i class="fa-solid fa-check" aria-label="check"></i> Item correto<br>
+<i class="fa-solid fa-triangle-exclamation" aria-label="triangle-exclamation"></i> Atenção</p>
+<p>Resultado renderizado:</p>
+<p><i class="fa-solid fa-check" aria-label="check"></i> Item correto<br>
+<i class="fa-solid fa-triangle-exclamation" aria-label="triangle-exclamation"></i> Atenção</p>
+<p>✔️ Não requer instalação<br>
+✔️ Funciona em HTML e slides<br>
+✔️ Forma mais segura</p>
+<hr>
+<p>### Forma 2 — Usando HTML direto (opcional)</p>
+<p>Você também pode usar Font Awesome via HTML:</p>
+<p><i class="fa-solid fa-check"></i> Concluído</p>
+<p>⚠️ Use apenas quando precisar de controle fino de classes.</p>
+<hr>
+<p>## 🧱 Uso básico em textos e listas</p>
+<p>### Texto corrido</p>
+<p><i class="fa-solid fa-info-circle" aria-label="info-circle"></i> Este é um aviso importante.</p>
+<p><i class="fa-solid fa-info-circle" aria-label="info-circle"></i> Este é um aviso importante.</p>
+<hr>
+<p>### Listas com ícones</p>
+<ul>
+<li><p><i class="fa-solid fa-chart-line" aria-label="chart-line"></i> Estatística descritiva</p></li>
+<li><p><i class="fa-solid fa-table" aria-label="table"></i> Tabelas</p></li>
+<li><p><i class="fa-solid fa-diagram-project" aria-label="diagram-project"></i> Fluxogramas</p></li>
+<li><p><i class="fa-solid fa-chart-line" aria-label="chart-line"></i> Estatística descritiva<br>
+</p></li>
+<li><p><i class="fa-solid fa-table" aria-label="table"></i> Tabelas<br>
+</p></li>
+<li><p><i class="fa-solid fa-diagram-project" aria-label="diagram-project"></i> Fluxogramas</p></li>
+</ul>
+<hr>
+<p>### Títulos com ícones</p>
+<p>## <i class="fa-solid fa-book" aria-label="book"></i> Conteúdo da aula</p>
+<p>## <i class="fa-solid fa-book" aria-label="book"></i> Conteúdo da aula</p>
+<hr>
+<p>## 🎨 Controle de tamanho e cor</p>
+<p>### Tamanho (CSS inline simples)</p>
+<p><span style="font-size: 1.5em;"> <i class="fa-solid fa-star" aria-label="star"></i> </span></p>
+<p><span style="font-size: 1.5em;"><i class="fa-solid fa-star" aria-label="star"></i></span></p>
+<hr>
+<p>### Cor</p>
+<p><span style="color: steelblue;"> <i class="fa-solid fa-circle-info" aria-label="circle-info"></i> </span></p>
+<p><span style="color: steelblue;"><i class="fa-solid fa-circle-info" aria-label="circle-info"></i></span></p>
+<p>💡 Ícones herdam cor e tamanho do texto.</p>
+<hr>
+<p>## 🧩 Uso em callouts (muito recomendado)</p>
+<p>::: {.callout-note} <i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> <strong>Dica</strong> Use ícones para guiar a leitura. :::</p>
 <hr>
 </section>
-<section id="aula-01-conceitos-básicos" class="level3">
-<h3 class="anchored" data-anchor-id="aula-01-conceitos-básicos">Aula 01 – Conceitos básicos</h3>
+<section id="conceito-fundamental" class="level2">
+<h2 class="anchored" data-anchor-id="conceito-fundamental">🧠 Conceito fundamental</h2>
+<p>Em páginas HTML feitas com Quarto:</p>
 <ul>
-<li>O que é a estatística</li>
-<li>O que são Dados</li>
-<li>Amostragem e generalização</li>
-<li>Tipos de dados</li>
+<li>o <strong>YAML</strong> define o formato da página<br>
+</li>
+<li>o <strong>CSS</strong> controla fontes, tamanhos e cores<br>
+</li>
+<li>o <strong>Markdown</strong> organiza o conteúdo<br>
+</li>
+<li>o <strong>Font Awesome</strong> fornece ícones vetoriais</li>
 </ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-1-dados.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
+<p>👉 Regra central:<br>
+<strong>HTML bem feito = YAML simples + CSS claro + ícones consistentes</strong></p>
 <hr>
 </section>
-<section id="aula-02-conceitos-básicos" class="level3">
-<h3 class="anchored" data-anchor-id="aula-02-conceitos-básicos">Aula 02 – Conceitos básicos</h3>
-<ul>
-<li>Planejando experimentos</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-2-planejando.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
+<section id="yaml-mínimo-para-páginas-html-com-fontes-e-ícones" class="level2">
+<h2 class="anchored" data-anchor-id="yaml-mínimo-para-páginas-html-com-fontes-e-ícones">⚙️ YAML mínimo para páginas HTML com fontes e ícones</h2>
+<p>Exemplo funcional:</p>
+<pre><code>---
+title: "Minha Página"
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+---</code></pre>
+<p>O arquivo <code>styles.css</code> é onde o controle fino das fontes acontece.</p>
 <hr>
 </section>
-<section id="aula-03-organizando-dados" class="level3">
-<h3 class="anchored" data-anchor-id="aula-03-organizando-dados">Aula 03 – Organizando dados</h3>
-<ul>
-<li>Tabelas do contingência</li>
-<li>Distribuição de frequências</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-3-organizando.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
+<section id="definindo-a-fonte-principal-da-página" class="level2">
+<h2 class="anchored" data-anchor-id="definindo-a-fonte-principal-da-página">🔤 Definindo a fonte principal da página</h2>
+<p>No arquivo <code>styles.css</code>:</p>
+<pre><code>body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #222;
+}</code></pre>
+<p>Isso afeta: - parágrafos<br>
+- listas<br>
+- títulos<br>
+- ícones Font Awesome</p>
 <hr>
 </section>
-<section id="aula-04-estatística-descritiva" class="level3">
-<h3 class="anchored" data-anchor-id="aula-04-estatística-descritiva">Aula 04 – Estatística descritiva</h3>
-<ul>
-<li>Medidas de tendência central</li>
-<li>Medidas de dispersão</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-4-descritiva.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
+<section id="fontes-diferentes-para-títulos-e-texto" class="level2">
+<h2 class="anchored" data-anchor-id="fontes-diferentes-para-títulos-e-texto">🧠 Fontes diferentes para títulos e texto</h2>
+<p>Recomendado para material didático:</p>
+<pre><code>h1, h2, h3 {
+  font-family: "Georgia", serif;
+}
+
+p, li {
+  font-family: "Helvetica", sans-serif;
+}</code></pre>
 <hr>
 </section>
-<section id="aula-05-testes-de-hipóteses-e-significâncias" class="level3">
-<h3 class="anchored" data-anchor-id="aula-05-testes-de-hipóteses-e-significâncias">Aula 05 – Testes de hipóteses e significâncias</h3>
-<ul>
-<li>O que são testes de hipóteses</li>
-<li>Definições
-<ul>
-<li>Hipótese nula e alternativa</li>
-<li>Erro tipo I e II</li>
-<li>Nível de significância</li>
-<li>Poder do teste</li>
-<li>Unicaudal e bicaudal</li>
-</ul></li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-5-testes-de-hipoteses.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
+<section id="usando-fontes-externas-google-fonts" class="level2">
+<h2 class="anchored" data-anchor-id="usando-fontes-externas-google-fonts">🌐 Usando fontes externas (Google Fonts)</h2>
+<section id="importação-no-css" class="level3">
+<h3 class="anchored" data-anchor-id="importação-no-css">Importação no CSS</h3>
+<pre><code>@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;display=swap");</code></pre>
 </section>
-<section id="aula-06-testes-de-hipótese-1" class="level3">
-<h3 class="anchored" data-anchor-id="aula-06-testes-de-hipótese-1">Aula 06 – Testes de hipótese 1</h3>
-<ul>
-<li>Estatística Paramétrica</li>
-<li>Testes de significância para uma amostra</li>
-<li>Qui-quadrado</li>
-<li>Teste T para uma amostra</li>
-<li>Teste T para duas amostras independentes</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-07-testes-de-hipótese-2" class="level3">
-<h3 class="anchored" data-anchor-id="aula-07-testes-de-hipótese-2">Aula 07 – Testes de hipótese 2</h3>
-<ul>
-<li>Estatística paramétrica</li>
-<li>Testes de significância para mais de duas amostras</li>
-<li>ANOVA</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-08-testes-de-hipótese-3" class="level3">
-<h3 class="anchored" data-anchor-id="aula-08-testes-de-hipótese-3">Aula 08 – Testes de hipótese 3</h3>
-<ul>
-<li>Estatística não paramétrica</li>
-<li>Mann-Whitney</li>
-<li>Kruskal-Wallis</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
+<section id="aplicação" class="level3">
+<h3 class="anchored" data-anchor-id="aplicação">Aplicação</h3>
+<pre><code>body {
+  font-family: "Roboto", sans-serif;
+}</code></pre>
+<p>Funciona em páginas locais e GitHub Pages.</p>
 <hr>
 </section>
 </section>
-<section id="linguagem-r" class="level2">
-<h2 class="anchored" data-anchor-id="linguagem-r">Linguagem R</h2>
-<hr>
-<section id="aula-01-a-linguagem-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-01-a-linguagem-r">Aula 01 – A Linguagem R</h3>
-<ul>
-<li>O R é para mim?</li>
-<li>A linguagem R</li>
-<li>Um pouco de história…</li>
-<li>Não tenha medo do erro</li>
-<li>R x Python</li>
-<li>O pacote R</li>
-<li>RStudio</li>
-</ul>
-<p><a href="../aulas/slides/aula-R-1-introducao.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
+<section id="controle-de-tamanho-da-fonte" class="level2">
+<h2 class="anchored" data-anchor-id="controle-de-tamanho-da-fonte">📐 Controle de tamanho da fonte</h2>
+<pre><code>body { font-size: 16px; }
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.7em; }
+h3 { font-size: 1.3em; }</code></pre>
+<p>Use <code>em</code> para manter proporção.</p>
 <hr>
 </section>
-<section id="aula-02-o-pacote-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-02-o-pacote-r">Aula 02 – O pacote R</h3>
-<ul>
-<li>Comandos Básicos</li>
-<li>Pacotes</li>
-<li>O R como calculadora</li>
-<li>Iniciando em objetos</li>
-</ul>
-<p><a href="../aulas/slides/aula-R-2-primeiros-passos.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
+<section id="cor-e-peso-do-texto" class="level2">
+<h2 class="anchored" data-anchor-id="cor-e-peso-do-texto">🎨 Cor e peso do texto</h2>
+<pre><code>strong { font-weight: 700; }
+em { color: #1e88e5; }</code></pre>
+<p>Alto contraste melhora acessibilidade.</p>
 <hr>
 </section>
-<section id="aula-03-objetos-e-dados" class="level3">
-<h3 class="anchored" data-anchor-id="aula-03-objetos-e-dados">Aula 03 – Objetos e Dados</h3>
-<ul>
-<li>Atribuição</li>
-<li>Nomeando objetos</li>
-<li>Utilizando objetos em R</li>
-<li>Tipos de dados em R</li>
-<li>Alguns comandos</li>
-</ul>
-<p>➡️ Aula em breve</p>
+<section id="font-awesome-no-quarto-html" class="level2">
+<h2 class="anchored" data-anchor-id="font-awesome-no-quarto-html">⭐ Font Awesome no Quarto (HTML)</h2>
+<p>O Quarto <strong>já inclui Font Awesome automaticamente</strong>.</p>
+<p>Forma recomendada:</p>
+<pre><code> Tendência dos dados  
+ Atenção  </code></pre>
+<p>Ícones: - funcionam como texto<br>
+- herdam cor e tamanho<br>
+- funcionam em títulos, listas e parágrafos</p>
 <hr>
 </section>
-<section id="aula-04-funções-e-objetos" class="level3">
-<h3 class="anchored" data-anchor-id="aula-04-funções-e-objetos">Aula 04 – Funções e objetos</h3>
-<ul>
-<li>Funções</li>
-<li>Criando funções</li>
-<li>Mais sobre objetos</li>
-<li>Estruturas de dados</li>
-</ul>
-<p>➡️ Aula em breve</p>
+<section id="ajustando-tamanho-e-cor-dos-ícones" class="level2">
+<h2 class="anchored" data-anchor-id="ajustando-tamanho-e-cor-dos-ícones">🎨 Ajustando tamanho e cor dos ícones</h2>
+<pre><code>&lt;span style="font-size: 1.4em; color: steelblue;"&gt;
+  
+&lt;/span&gt;</code></pre>
+<p>Use apenas para destaque pontual.</p>
 <hr>
 </section>
-<section id="aula-05-graficos-no-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-05-graficos-no-r">Aula 05 – Graficos no R</h3>
-<ul>
-<li>Como funcionam gráficos no R</li>
-<li>Tipos de gráficos</li>
-<li>Parâmetros gráficos</li>
-</ul>
-<p>➡️ Aula em breve</p>
+<section id="ícones-em-títulos" class="level2">
+<h2 class="anchored" data-anchor-id="ícones-em-títulos">🧱 Ícones em títulos</h2>
+<pre><code>##  Conteúdo da Aula</code></pre>
+<p>Ajuda na navegação visual.</p>
+<hr>
 </section>
-<section id="aula-06-estatística-descritiva-no-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-06-estatística-descritiva-no-r">Aula 06 – Estatística descritiva no R</h3>
-<ul>
-<li>Estatística descritiva</li>
-<li>Medidas de tendência central</li>
-<li>Medidas de dispersão</li>
-</ul>
-<p>➡️ Aula em breve</p>
+<section id="ícones-em-listas" class="level2">
+<h2 class="anchored" data-anchor-id="ícones-em-listas">🧩 Ícones em listas</h2>
+<pre><code>-  Estatística descritiva
+-  Tabelas
+-  Fluxogramas</code></pre>
+<p>Use sempre o mesmo ícone para o mesmo tipo de conteúdo.</p>
+<hr>
 </section>
-<section id="aula-07-testes-de-significância-em-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-07-testes-de-significância-em-r">Aula 07 – Testes de significância em R</h3>
+<section id="dicionário-prático-de-font-awesome" class="level2">
+<h2 class="anchored" data-anchor-id="dicionário-prático-de-font-awesome">📘 Dicionário prático de Font Awesome</h2>
+<p><em>(ícone → código → significado)</em></p>
+<hr>
+<section id="status-e-feedback" class="level3">
+<h3 class="anchored" data-anchor-id="status-e-feedback">✔️ Status e feedback</h3>
 <ul>
-<li>Testes de significância
-<ul>
-<li>Teste t</li>
-<li>Mann-Whitney</li>
-<li>Qui-quadrado</li>
-<li>Análise de Variância</li>
-<li>Kruskall-Wallis</li>
-</ul></li>
+<li><i class="fa-solid fa-check" aria-label="check"></i> — <code>check</code> — correto, concluído<br>
+</li>
+<li><i class="fa-solid fa-xmark" aria-label="xmark"></i> — <code>xmark</code> — erro, incorreto<br>
+</li>
+<li><i class="fa-solid fa-triangle-exclamation" aria-label="triangle-exclamation"></i> — <code>triangle-exclamation</code> — atenção, alerta<br>
+</li>
+<li><i class="fa-solid fa-circle-info" aria-label="circle-info"></i> — <code>circle-info</code> — informação<br>
+</li>
+<li><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> — <code>lightbulb</code> — dica</li>
 </ul>
-<p>➡️ Aula em breve</p>
+<hr>
+</section>
+<section id="estatística-e-dados" class="level3">
+<h3 class="anchored" data-anchor-id="estatística-e-dados">📊 Estatística e dados</h3>
+<ul>
+<li><i class="fa-solid fa-chart-line" aria-label="chart-line"></i> — <code>chart-line</code> — tendência<br>
+</li>
+<li><i class="fa-solid fa-chart-bar" aria-label="chart-bar"></i> — <code>chart-bar</code> — barras<br>
+</li>
+<li><i class="fa-solid fa-chart-pie" aria-label="chart-pie"></i> — <code>chart-pie</code> — proporções<br>
+</li>
+<li><i class="fa-solid fa-table" aria-label="table"></i> — <code>table</code> — tabelas<br>
+</li>
+<li><i class="fa-solid fa-calculator" aria-label="calculator"></i> — <code>calculator</code> — cálculos</li>
+</ul>
+<hr>
+</section>
+<section id="ensino-e-documentação" class="level3">
+<h3 class="anchored" data-anchor-id="ensino-e-documentação">📚 Ensino e documentação</h3>
+<ul>
+<li><i class="fa-solid fa-book" aria-label="book"></i> — <code>book</code> — teoria<br>
+</li>
+<li><i class="fa-solid fa-chalkboard-user" aria-label="chalkboard-user"></i> — <code>chalkboard-user</code> — aula<br>
+</li>
+<li><i class="fa-solid fa-pen" aria-label="pen"></i> — <code>pen</code> — exercícios<br>
+</li>
+<li><i class="fa-solid fa-clipboard-list" aria-label="clipboard-list"></i> — <code>clipboard-list</code> — atividades<br>
+</li>
+<li><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i> — <code>graduation-cap</code> — curso</li>
+</ul>
+<hr>
+</section>
+<section id="métodos-e-processos" class="level3">
+<h3 class="anchored" data-anchor-id="métodos-e-processos">🧪 Métodos e processos</h3>
+<ul>
+<li><i class="fa-solid fa-diagram-project" aria-label="diagram-project"></i> — <code>diagram-project</code> — fluxograma<br>
+</li>
+<li><i class="fa-solid fa-gears" aria-label="gears"></i> — <code>gears</code> — método<br>
+</li>
+<li><i class="fa-solid fa-play" aria-label="play"></i> — <code>play</code> — início<br>
+</li>
+<li><i class="fa-solid fa-stop" aria-label="stop"></i> — <code>stop</code> — fim</li>
+</ul>
+<hr>
+</section>
+<section id="orientação-e-navegação-setas" class="level3">
+<h3 class="anchored" data-anchor-id="orientação-e-navegação-setas">🧭 Orientação e navegação (setas)</h3>
+<p>Esses ícones são <strong>extremamente úteis</strong> em guias, passos, tutoriais e slides.</p>
+<ul>
+<li><i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> — <code>arrow-right</code> — avançar / próximo<br>
+</li>
+<li><i class="fa-solid fa-arrow-left" aria-label="arrow-left"></i> — <code>arrow-left</code> — voltar / anterior<br>
+</li>
+<li><i class="fa-solid fa-arrow-up" aria-label="arrow-up"></i> — <code>arrow-up</code> — subir / aumentar<br>
+</li>
+<li><i class="fa-solid fa-arrow-down" aria-label="arrow-down"></i> — <code>arrow-down</code> — descer / reduzir<br>
+</li>
+<li><i class="fa-solid fa-arrows-left-right" aria-label="arrows-left-right"></i> — <code>arrows-left-right</code> — comparação<br>
+</li>
+<li><i class="fa-solid fa-arrows-up-down" aria-label="arrows-up-down"></i> — <code>arrows-up-down</code> — variação vertical<br>
+</li>
+<li><i class="fa-solid fa-chevron-right" aria-label="chevron-right"></i> — <code>chevron-right</code> — passo seguinte<br>
+</li>
+<li><i class="fa-solid fa-chevron-left" aria-label="chevron-left"></i> — <code>chevron-left</code> — passo anterior<br>
+</li>
+<li><i class="fa-solid fa-chevrons-right" aria-label="chevrons-right"></i> — <code>chevrons-right</code> — avançar rápido</li>
+</ul>
+<hr>
+</section>
+<section id="navegação-e-arquivos" class="level3">
+<h3 class="anchored" data-anchor-id="navegação-e-arquivos">🌐 Navegação e arquivos</h3>
+<ul>
+<li><i class="fa-solid fa-house" aria-label="house"></i> — <code>house</code> — página inicial<br>
+</li>
+<li><i class="fa-solid fa-link" aria-label="link"></i> — <code>link</code> — link externo<br>
+</li>
+<li><i class="fa-solid fa-download" aria-label="download"></i> — <code>download</code> — download<br>
+</li>
+<li><i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> — <code>file-pdf</code> — PDF<br>
+</li>
+<li><i class="fa-solid fa-github" aria-label="github"></i> — <code>github</code> — GitHub</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="erros-comuns" class="level2">
+<h2 class="anchored" data-anchor-id="erros-comuns">⚠️ Erros comuns</h2>
+<ul>
+<li>excesso de ícones<br>
+</li>
+<li>ícones sem função semântica<br>
+</li>
+<li>mistura aleatória de estilos<br>
+</li>
+<li>baixo contraste</li>
+</ul>
+<hr>
+</section>
+<section id="boas-práticas-finais" class="level2">
+<h2 class="anchored" data-anchor-id="boas-práticas-finais">🧭 Boas práticas finais</h2>
+<ul>
+<li>ícones orientam, não decoram<br>
+</li>
+<li>mantenha padrão visual<br>
+</li>
+<li>prefira clareza à estética<br>
+</li>
+<li>teste leitura em tela grande</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Se o leitor entende o caminho sem ler tudo, os ícones estão funcionando.</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="resumo-final" class="level2">
+<h2 class="anchored" data-anchor-id="resumo-final">📌 Resumo final</h2>
+<ul>
+<li>Font Awesome já vem integrado ao Quarto (HTML)<br>
+</li>
+<li><code></code> é a sintaxe recomendada<br>
+</li>
+<li>Fontes são controladas via CSS<br>
+</li>
+<li>Ícones de orientação são essenciais em guias<br>
+</li>
+<li>Consistência visual é a chave</li>
+</ul>
+<p>Este guia pode ser usado como <strong>referência definitiva para uso de fontes e ícones em páginas HTML com Quarto</strong>.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

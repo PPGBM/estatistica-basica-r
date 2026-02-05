@@ -1,0 +1,240 @@
+---
+title: "Inteligência Artificial no R"
+subtitle: "Uso consciente no desenvolvimento e análise de dados"
+author: "Estatística Básica com R"
+format:
+  revealjs:
+    theme: simple
+    css: 
+      - slides.css
+      - footer.css
+    highlight-style: monokai
+    slide-number: true
+    width: 1280
+    height: 720
+execute:
+  echo: true
+---
+
+## Por que falar de IA no curso?
+
+- IA já faz parte da prática científica
+- Ignorar a IA ❌
+- Usar sem critério ❌
+- Usar de forma consciente ✅
+
+---
+
+## O que a IA realmente é
+
+- Modelo de linguagem
+- Reconhece padrões em textos e códigos
+- Não entende o experimento
+- Não entende o contexto estatístico
+
+⚠️ Pode errar com muita confiança
+
+---
+
+## IA NÃO é
+
+- Um estatístico
+- Um pesquisador
+- Um substituto do raciocínio científico
+- Um oráculo
+
+✔️ Ferramenta de apoio
+
+---
+
+## Quando a IA ajuda no R
+
+- Explicar funções
+- Organizar scripts
+- Sugerir visualizações
+- Depurar erros
+- Melhorar legibilidade do código
+
+---
+
+## Onde a IA costuma errar
+
+- Escolha inadequada de testes estatísticos
+- Ignorar pressupostos
+- Inventar funções e pacotes
+- Gerar análises completas sem contexto
+- Produzir resultados enganosos
+
+---
+
+## Uso preguiçoso da IA
+
+- Copiar e colar código
+- Rodar sem entender
+- Não saber explicar resultados
+- Aprendizado superficial
+
+---
+
+## Uso profissional da IA
+
+- Pensar antes de pedir ajuda
+- Definir objetivo e método estatístico
+- Usar IA como apoio
+- Validar resultados
+- Saber explicar cada etapa
+
+---
+
+## Fluxo correto de uso da IA
+
+1. Entender o problema
+2. Entender os dados
+3. Escolher o método estatístico
+4. Usar IA para implementar ou revisar
+5. Conferir pressupostos
+6. Interpretar criticamente os resultados
+
+---
+
+## Prompt recomendado no curso
+
+```text
+Você é um assistente de programação em R e estatística.
+
+Não gere análises completas automaticamente.
+
+Explique o raciocínio estatístico antes do código.
+Pergunte sobre o tipo de variável, objetivo da análise
+e pressupostos do método.
+
+Aponte limitações.
+
+Meu objetivo é aprender, não copiar código.
+```
+
+---
+
+# Demonstração ao vivo em R
+
+---
+
+## Situação-problema
+
+Existe diferença no comprimento de organismos  
+entre dois locais de amostragem?
+
+---
+
+## Antes da IA
+
+Perguntas obrigatórias:
+
+- Tipo de variável?
+- Objetivo da análise?
+- Quantos grupos?
+- Qual teste pode fazer sentido?
+
+---
+
+## Criando os dados no R
+
+```r
+dados <- data.frame(
+  local = rep(c("A", "B"), each = 20),
+  comprimento = c(
+    rnorm(20, mean = 10, sd = 1),
+    rnorm(20, mean = 11, sd = 1)
+  )
+)
+
+str(dados)
+```
+
+---
+
+## Pedido RUIM à IA
+
+Faça uma análise estatística completa desses dados em R.
+
+🚫 Problema: terceiriza o raciocínio
+
+---
+
+## O que a IA NÃO perguntou?
+
+- Normalidade
+- Homogeneidade de variâncias
+- Objetivo do estudo
+- Delineamento experimental
+
+---
+
+## Pedido CORRETO à IA
+
+Explique o raciocínio estatístico antes do código  
+e pergunte sobre variáveis, objetivo e pressupostos.
+
+---
+
+## IA agora ajuda corretamente
+
+- Questiona pressupostos
+- Sugere verificações
+- Explica alternativas
+- Não decide sozinha
+
+---
+
+## Verificando pressupostos no R
+
+```r
+shapiro.test(dados$comprimento[dados$local == "A"])
+shapiro.test(dados$comprimento[dados$local == "B"])
+
+var.test(comprimento ~ local, data = dados)
+```
+
+---
+
+## Decisão estatística
+
+```r
+t.test(comprimento ~ local, data = dados)
+```
+
+A escolha do teste é do pesquisador.
+
+---
+
+## IA como apoio à interpretação
+
+Explique este resultado de forma didática  
+sem exagerar conclusões.
+
+---
+
+## Checklist final
+
+Antes de confiar na IA:
+
+- Entendo o problema?
+- Escolhi o método?
+- Conferi pressupostos?
+- Sei explicar o resultado?
+
+---
+
+## Mensagem final
+
+**A IA não substitui quem pensa.  
+Ela potencializa quem já sabe pensar.**
+
+---
+
+## Conclusão
+
+- IA é uma aliada poderosa
+- Exige conhecimento prévio
+- Deve ser usada com critério
+- Em R, raciocinar vem antes de programar

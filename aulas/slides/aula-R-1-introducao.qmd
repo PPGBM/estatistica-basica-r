@@ -1,6 +1,9 @@
 ---
-title: "Revisão de conceitos básicos"
-subtitle: "Testes de hipóteses"
+title: "Estatística Básica utilizando R"
+subtitle: |
+  - R?
+  - Pacote R x Python
+  - Pacote R
 author: "Dr. Alexandre Dias Kassuga"
 format:
   revealjs:
@@ -10,309 +13,272 @@ format:
       - footer.css
     highlight-style: monokai
     slide-number: true
-    format: wide
+    width: 1280
+    height: 720
 ---
 
-## Testes de significância para mais de duas amostras
+## O R é para mim?
 
--   Análise de variância (ANOVA)
-    -   Finalidade
-        -   Verificar se há diferença entre as médias de várias populações
-    -   Condições
-        -   Dados com distribuição normal
-        -   Todas as populações possuem as mesmas variâncias (homocedasticidade)
-    -   Todas as amostras são aleatórias e independentes
+![](figuras/r-para-mim.png){width="100%}"
 
+## A linguagem R
 
+![](figuras/linguagem-r.png){width="100%"}
 
+## A linguagem R
 
+Um pouco da história...
 
-## Testes de significância para mais de duas amostras
+-   Ross Ihaka and Robert Gentleman (1990s)
+    -   Desenvolvimento a partir da linguagem S
+    -   Ambiente livre para ensino de estatística – Universidade de Auckland
+    -   1995 – disponibilizado como código livre (Martin Mächler)
+-   2000s
+    -   2000 – Primeira versão!!! – R version 1.0.0
+    -   2004 – R version 2.0.0
+    -   2013 – R version 3.0.0
+    -   2020 – R version 4.0.0
+-   R Core Team
+    -   Grupo com direito de modificar o arquivo com o código fonte do R
 
-:::: {.columns}
+::: texto-menor
+[“R has now outgrown its origins and its\
+development is now a collaborative effort\
+undertaken using the Internet to exchange ideas\
+and distribute the results.”\
+Ross Ihaka]{.absolute bottom="210" right="30"}
+:::
 
-::: {.column width="80%"}
+## A linguagem R
 
--   Análise de variância (ANOVA)
-    -   Calculamos os graus de liberdade
-        -   Dos tratamentos: $k-1$
-        -   Do total: $n-1$
-        -   Do resíduo: $(n-1)-(k-1) = n-k$
-    -   Calculamos o valor de correção (C)\
+\
+\
+
+-   Diga ao R para fazer...
+
+-   O R consegue fazer alguma coisa?\
     \
-     $C = \frac{(\sum{x})^2}{n}$ \
-     \
-    - A soma de quadrados total\
+
+-   Não, o R é uma linguagem!
+
+    -   Diga ao computador para fazer isto, utilizando comandos em linguagem R no console.
+    -   Linguagem dinâmica de programação
+    -   Usa um interpretador para transformar comandos em 0´s e 1´s
+
+![](figuras/nota.png){.absolute top="0" right="0" width="20%"}
+
+## Não tenha medo do erro
+
+\
+
+-   Precisamos aprender a linguagem R para nos comunicar em R\
     \
-     $SQT = \sum{x^2 - C}$
-     \
-    - A soma de quadrados de tratamentos\
-    \
-     $SQT_r = \sum{T^2 - C}$
 
+-   O erro em um comando origina uma mensagem de [“Erro”]{style="color: #60a5fa;"}
 
+    -   Mas não se irrite...
+
+-   Lembre-se: você é capaz de aprender. O computador é simples e rápido, mas não aprende...
+
+    -   Procure entender o que o programa não entendeu
+
+::: texto-azul
+[Error in...\
+\
+Warning message:\
+In data(crabs) : data set ‘crabs’ not found\
+\
+Warning message:\
+In mean.default(crabs) : argumento não é numérico nem lógico: retornando NA]{.absolute bottom="50" right="10"}
 :::
 
-::: {.column width="20%"}
+## Pacote R x Python
 
 \
 \
 \
-
-| A   | B   | C   | D   |
-|-----|-----|-----|-----|
-| 11  | 8   | 5   | 4   |
-| 8   | 5   | 7   | 4   |
-| 5   | 2   | 3   | 2   |
-| 8   | 5   | 3   | 0   |
-| 8   | 5   | 7   | 0   |
-|**8**|**5**|**5**|**2**|
-
-
-: Amostras
-
-:::
-
-::::
-
-
-## Testes de significância para mais de duas amostras
-
-:::: {.columns}
-
-::: {.column width="80%"}
-
--   Análise de variância (ANOVA)
-    -   Calculamos os graus de liberdade
-        -   Dos tratamentos: $k-1$
-        -   Do total: $n-1$
-        -   Do resíduo: $(n-1)-(k-1) = n-k$
-    -   Calculamos o valor de correção (C)\
-    \
-     $C = \frac{(\sum{x})^2}{n}$ \
-     \
-    - A soma de quadrados total\
-    \
-     $SQT = \sum{x^2 - C}$
-     \
-    - A soma de quadrados de tratamentos\
-    \
-     $SQT_r = \sum{T^2 - C}$
-
-
-:::
-
-::: {.column width="20%"}
-
-\
-\
 \
 
-| A   | B   | C   | D   |
-|-----|-----|-----|-----|
-|11   | 8   | 5   | 4   |
-| 8   | 5   | 7   | 4   |
-| 5   | 2   | 3   | 2   |
-| 8   | 5   | 3   | 0   |
-| 8   | 5   | 7   | 0   |
-|**8**|**5**|**5**|**2**|
+![](figuras/r-x-py-0.png)
+
+## Pacote R x Python
+
+![](figuras/r-x-py-1.png){.absolute top="0" width="100%"}
+
+## Pacote R x Python
+
+![](figuras/r-x-py-2.png){.absolute top="0" width="100%"}
+
+## Pacote R x Python
+
+![](figuras/r-x-py-3.png){.absolute top="0" width="100%"}
+
+## Pacote R x Python
+
+![](figuras/r-x-py-4.png){.absolute top="0" width="100%"}
+
+## Pacote R x Python
+
+![](figuras/r-x-py-5.png){.absolute top="0" width="100%"}
+
+## Pacote R x Python
+
+![](figuras/r-x-py-6.png){.absolute top="0" width="100%"}
+
+## Pacote R
+
+![](figuras/pac-r-1.png){fig-align="center" width="100%"}
+
+## Pacote R
+
+![](figuras/pac-r-2.png){fig-align="center" width="100%"}
+
+## Pacote R
+
+![](figuras/pac-r-3.png){fig-align="center" width="100%"}
+
+## Pacote R
+
+![](figuras/pac-r-4.png){fig-align="center" width="100%"}
+
+## Pacote R
+
+-   FUNÇÃO(parâmetros)
+    -   license()
+    -   citation()
+    -   demo()
+    -   help()
+    -   q()
+    -   print()
+    -   \# - permite fazer comentários
+-   Objetos
+    -   R utiliza objetos para armazenar dados na memória
+    -   "\<-" ou "="- operador de atribuição
+    -   Nomes de objetos não podem conter espaços, acentos ou caracteres especiais
+
+![](figuras/pac-r-console.png){.absolute top="0" right="50" width="50%"}
+
+## Pacote R
+
+-   FUNÇÃO(parâmetros)
+    -   license()
+    -   citation() [{{< fa arrow-left style="color:#fb923c;" >}}]{style="color: orange;"}
+    -   demo() [{{< fa arrow-left style="color:#fb923c;" >}}]{style="color: orange;"}
+    -   help() [{{< fa arrow-left style="color:#fb923c;" >}}]{style="color: orange;"}
+    -   q()
+    -   print()
+    -   \# - permite fazer comentários
+-   Objetos
+    -   R utiliza objetos para armazenar dados na memória
+    -   "\<-" ou "="- operador de atribuição
+    -   Nomes de objetos não podem conter espaços, acentos ou caracteres especiais
+
+![](figuras/pac-r-console.png){.absolute top="0" right="50" width="50%"}
+
+## Pacote R
+
+-   FUNÇÃO(parâmetros)
+    -   license()
+    -   citation() [{{< fa arrow-left style="color:#fb923c;" >}}]{style="color: orange;"} [ \>citation()]{style="color: red;"}
+    -   demo() [{{< fa arrow-left style="color:#fb923c;" >}}]{style="color: orange;"} [ \>demo()]{style="color: red;"}
+    -   help() [{{< fa arrow-left style="color:#fb923c;" >}}]{style="color: orange;"} [ \>help()]{style="color: red;"}
+    -   q()
+    -   print() [ \>print("Ola")]{style="color: red;"}
+    -   \# - permite fazer comentários
+-   Objetos
+    -   R utiliza objetos para armazenar dados na memória
+    -   "\<-" ou "="- operador de atribuição
+    -   Nomes de objetos não podem conter espaços, acentos ou caracteres especiais
+
+![](figuras/pac-r-console.png){.absolute top="0" right="50" width="50%"}
 
 
-: Amostras
+## Pacote R
 
-:::
+-   FUNÇÃO(parâmetros)
+    -   license()
+    -   citation() [{{< fa arrow-left style="color:#fb923c;" >}}]{style="color: orange;"} [ \>citation()]{style="color: red;"}
+    -   demo() [{{< fa arrow-left style="color:#fb923c;" >}}]{style="color: orange;"} [ \>demo()]{style="color: red;"}
+    -   help() [{{< fa arrow-left style="color:#fb923c;" >}}]{style="color: orange;"} [ \>help()]{style="color: red;"}
+    -   q()
+    -   print() [ \>print("Ola")]{style="color: red;"}
+    -   <span class="caixa-laranja">\# - permite fazer comentários</span>
+-   Objetos
+    -   R utiliza objetos para armazenar dados na memória
+    -   "\<-" ou "="- operador de atribuição
+    -   Nomes de objetos não podem conter espaços, acentos ou caracteres especiais
 
-::::
-
-::: {.absolute top="185" left="580"}
-
-![](figuras/r-repeticoes.png){width="70%"}
-:::
-
-
-::: {.absolute top="87" right="-140" width="350"}
-
-![](figuras/k-tratamentos.png){}
-
-:::
-
-
-## Testes de significância para mais de duas amostras
-
-:::: {.columns}
-
-::: {.column width="80%"}
-
--   Análise de variância (ANOVA)
-    - A soma dos quadrados de resíduo\ 
-    
-       $SQR = SQT - SQT_R$\
-       
-    - O quadrado médio de tratamentos\ 
-    
-        $QMTR = \frac{SQT_R}{k-1}$ 
-        
-    - O quadrado médio de resíduo\
-    
-        $QMR = \frac{SQR}{n-k}$\
-    
-    - O valor de F\
-    
-        $F = \frac{QMTR}{QMR}$\
-    
-
-:::
-
-::: {.column width="20%"}
-
-\
-\
-
-| A   | B   | C   | D   |
-|-----|-----|-----|-----|
-|11   | 8   | 5   | 4   |
-| 8   | 5   | 7   | 4   |
-| 5   | 2   | 3   | 2   |
-| 8   | 5   | 3   | 0   |
-| 8   | 5   | 7   | 0   |
-|**8**|**5**|**5**|**2**|
-
-
-: Amostras
-
-
-:::
-
-::::
-
-
-
-
-## Testes de significância para mais de duas amostras
-
-:::: {.columns}
-
-::: {.column width="80%"}
-
--   Análise de variância (ANOVA)
-
-\
-\
-\
-
-![](figuras/anova-causas-var.png)
-
-:::
-
-::: {.column width="20%"}
-
-\
-\
-
-| A   | B   | C   | D   |
-|-----|-----|-----|-----|
-|11   | 8   | 5   | 4   |
-| 8   | 5   | 7   | 4   |
-| 5   | 2   | 3   | 2   |
-| 8   | 5   | 3   | 0   |
-| 8   | 5   | 7   | 0   |
-|**8**|**5**|**5**|**2**|
-
-
-: Amostras
-
-
-:::
-
-::::
+![](figuras/pac-r-console-citation.png){.absolute top="0" right="50" width="50%"}
 
 
 
+## Pacote R
 
-## Testes de significância para mais de duas amostras
+-   FUNÇÃO(parâmetros)
+    -   license()
+    -   citation() [{{< fa arrow-left style="color:#fb923c;" >}}]{style="color: orange;"} [ \>citation()]{style="color: red;"}
+    -   demo() [{{< fa arrow-left style="color:#fb923c;" >}}]{style="color: orange;"} [ \>demo()]{style="color: red;"}
+    -   help() [{{< fa arrow-left style="color:#fb923c;" >}}]{style="color: orange;"} [ \>help()]{style="color: red;"}
+    -   q()
+    -   print() [ \>print("Ola")]{style="color: red;"}
+    -   <span class="caixa-laranja">\# - permite fazer comentários</span>
+-   Objetos
+    -   R utiliza objetos para armazenar dados na memória
+    -   "\<-" ou ["="]{style="background: linear-gradient(to top left, transparent 47%, red 48%, red 52%, transparent 53%);"}- operador de atribuição
+    -   Nomes de objetos não podem conter espaços, acentos ou caracteres especiais
 
-:::: {.columns}
-
-::: {.column width="80%"}
-
--   Análise de variância (ANOVA)
-
-\
-\
-\
-
-![](figuras/anova-causas-var-n.png)
+![](figuras/pac-r-console-citation.png){.absolute top="0" right="50" width="50%"}
 
 
-- Comparamos com valor de Ftab
-  - $F > F_{tab}$ – Médias são diferentes
-    - 7,06 > 3,24
-:::
+## O RStudio
 
-::: {.column width="20%"}
+![](figuras/rstudio-1.png){fig-align="center" width="100%"}
+
+## O RStudio
+
+![](figuras/rstudio-2.png){fig-align="center" width="100%"}
+
+
+## O RStudio
+
+- Editor (Scripts) 
+  – Onde escrevemos os códigos
+  - (CTRL+SHIFT+1)
+- Console 
+  – Onde rodamos os códigos 
+  - CTRL+SHIFT+2)
+- Ambiente 
+  – Todos os objetos criados na sessão 
+  - (CTRL+SHIFT+4)
+- “Saída” 
+  - (CTRL+SHIFT+3)
+  - Files – Arquivos no diretório de trabalho (<span style="color: red"> > setwd()</span>)
+  - Plots – Local onde são plotados os gráficos
+  - Help – Janela de ajuda, onde são mostradas as funções (<span style="color: red"> > help() ou > ? </span>)
+  - History – Histórico dos comandos rodados
+
+![](figuras/rstudio-2.png){.absolute top="0" right="0" width="45%"}
+
+## O RStudio
 
 \
 \
 
-| A   | B   | C   | D   |
-|-----|-----|-----|-----|
-|11   | 8   | 5   | 4   |
-| 8   | 5   | 7   | 4   |
-| 5   | 2   | 3   | 2   |
-| 8   | 5   | 3   | 0   |
-| 8   | 5   | 7   | 0   |
-|**8**|**5**|**5**|**2**|
-
-
-: Amostras
-
-
-:::
-
-::::
-
-
-## Testes de significância para mais de duas amostras
-
-:::: {.columns}
-
-::: {.column width="80%"}
-
-\
--   Análise de variância (ANOVA)
-    - ANOVA demonstra que há diferença
-    - Não demonstra onde estão as diferenças
-    - Teste a posteriori
-      - Tukey
-      
-\
-\
+- Atalhos!!!
+  - O uso de atalhos ajuda muito a fluidez do trabalho\
 \
 
-$$
-𝑑.𝑚.𝑠=𝑞\sqrt\frac{𝑄𝑀R}{𝑟}
-$$
-
-:::
-
-::: {.column width="20%"}
-
-\
-\
-
-| A   | B   | C   | D   |
-|-----|-----|-----|-----|
-|11   | 8   | 5   | 4   |
-| 8   | 5   | 7   | 4   |
-| 5   | 2   | 3   | 2   |
-| 8   | 5   | 3   | 0   |
-| 8   | 5   | 7   | 0   |
-|**8**|**5**|**5**|**2**|
+  - CTRL+ENTER: roda a linha selecionada no script. MUITO USADO 
+  - ALT+-: (<-) sinal de atribuição. MUITO USADO
+  - CTRL+SHIFT+M: (%>%) operador pipe. 
+  - CTRL+1: altera cursor para o script.
+  - CTRL+2: altera cursor para o console.
+  - CTRL+SHIFT+C: (Des)comenta a linha.
+  - CTRL+SHIFT+R: Cria um comentário para uma nova parte do código.
+  - ALT+SHIFT+K: janela com todos os atalhos disponíveis
 
 
-: Amostras
+![](figuras/dica.png){.absolute top="0" right="0" width="30%"}
 
 
-:::
 
-::::

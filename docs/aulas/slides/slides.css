@@ -276,3 +276,23 @@
 .reveal .texto-85 {
   font-size: 0.85em;
 }
+
+.reveal .texto-azul {
+  font-size: 0.85em;
+  color:#60a5fa
+}
+
+
+
+/* =========================
+   CAIXAS
+   ========================= */
+
+/* Caixa laranja com borda, sem fundo */
+.reveal .caixa-laranja {
+  border: 2px solid #fb923c;   /* laranja */
+  color: #fdba74;              /* texto laranja claro */
+  padding: 0.2em 0.5em;
+  border-radius: 8px;
+  font-weight: 500;
+}

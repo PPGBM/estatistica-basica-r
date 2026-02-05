@@ -121,21 +121,21 @@ aos conteúdos e aos slides.
 - Um pouco de história...
 - Não tenha medo do erro
 - R x Python
+- O pacote R
+- RStudio
 
-➡️ Aula em breve
+[➡️ Acessar slides da aula](slides/aula-R-1-introducao.qmd){target="_blank" rel="noopener"}
 
 ---
 
 ### Aula 02 – O pacote R
 
-- O pacote R
-- RStudio
 - Comandos Básicos
 - Pacotes
 - O R como calculadora
 - Iniciando em objetos
 
-➡️ Aula em breve
+[➡️ Acessar slides da aula](slides/aula-R-2-primeiros-passos.qmd){target="_blank" rel="noopener"}
 
 ---
 

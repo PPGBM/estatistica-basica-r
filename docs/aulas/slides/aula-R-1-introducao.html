@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.23">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr.&nbsp;Alexandre Dias Kassuga">
+
+<title>Estatística Básica utilizando R – Estatística Básica com R</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Estatística Básica com R</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Início</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../aulas/aulas.html"> 
+<span class="menu-text">Aulas</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../exercicios.qmd"> 
+<span class="menu-text">Exercícios</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../materiais.qmd"> 
+<span class="menu-text">Materiais</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../envio.html"> 
+<span class="menu-text">Envio</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#o-r-é-para-mim" id="toc-o-r-é-para-mim" class="nav-link active" data-scroll-target="#o-r-é-para-mim">O R é para mim?</a></li>
+  <li><a href="#a-linguagem-r" id="toc-a-linguagem-r" class="nav-link" data-scroll-target="#a-linguagem-r">A linguagem R</a></li>
+  <li><a href="#a-linguagem-r-1" id="toc-a-linguagem-r-1" class="nav-link" data-scroll-target="#a-linguagem-r-1">A linguagem R</a></li>
+  <li><a href="#a-linguagem-r-2" id="toc-a-linguagem-r-2" class="nav-link" data-scroll-target="#a-linguagem-r-2">A linguagem R</a></li>
+  <li><a href="#não-tenha-medo-do-erro" id="toc-não-tenha-medo-do-erro" class="nav-link" data-scroll-target="#não-tenha-medo-do-erro">Não tenha medo do erro</a></li>
+  <li><a href="#pacote-r-x-python" id="toc-pacote-r-x-python" class="nav-link" data-scroll-target="#pacote-r-x-python">Pacote R x Python</a></li>
+  <li><a href="#pacote-r-x-python-1" id="toc-pacote-r-x-python-1" class="nav-link" data-scroll-target="#pacote-r-x-python-1">Pacote R x Python</a></li>
+  <li><a href="#pacote-r-x-python-2" id="toc-pacote-r-x-python-2" class="nav-link" data-scroll-target="#pacote-r-x-python-2">Pacote R x Python</a></li>
+  <li><a href="#pacote-r-x-python-3" id="toc-pacote-r-x-python-3" class="nav-link" data-scroll-target="#pacote-r-x-python-3">Pacote R x Python</a></li>
+  <li><a href="#pacote-r-x-python-4" id="toc-pacote-r-x-python-4" class="nav-link" data-scroll-target="#pacote-r-x-python-4">Pacote R x Python</a></li>
+  <li><a href="#pacote-r-x-python-5" id="toc-pacote-r-x-python-5" class="nav-link" data-scroll-target="#pacote-r-x-python-5">Pacote R x Python</a></li>
+  <li><a href="#pacote-r-x-python-6" id="toc-pacote-r-x-python-6" class="nav-link" data-scroll-target="#pacote-r-x-python-6">Pacote R x Python</a></li>
+  <li><a href="#pacote-r" id="toc-pacote-r" class="nav-link" data-scroll-target="#pacote-r">Pacote R</a></li>
+  <li><a href="#pacote-r-1" id="toc-pacote-r-1" class="nav-link" data-scroll-target="#pacote-r-1">Pacote R</a></li>
+  <li><a href="#pacote-r-2" id="toc-pacote-r-2" class="nav-link" data-scroll-target="#pacote-r-2">Pacote R</a></li>
+  <li><a href="#pacote-r-3" id="toc-pacote-r-3" class="nav-link" data-scroll-target="#pacote-r-3">Pacote R</a></li>
+  <li><a href="#pacote-r-4" id="toc-pacote-r-4" class="nav-link" data-scroll-target="#pacote-r-4">Pacote R</a></li>
+  <li><a href="#pacote-r-5" id="toc-pacote-r-5" class="nav-link" data-scroll-target="#pacote-r-5">Pacote R</a></li>
+  <li><a href="#pacote-r-6" id="toc-pacote-r-6" class="nav-link" data-scroll-target="#pacote-r-6">Pacote R</a></li>
+  <li><a href="#pacote-r-7" id="toc-pacote-r-7" class="nav-link" data-scroll-target="#pacote-r-7">Pacote R</a></li>
+  <li><a href="#pacote-r-8" id="toc-pacote-r-8" class="nav-link" data-scroll-target="#pacote-r-8">Pacote R</a></li>
+  <li><a href="#o-rstudio" id="toc-o-rstudio" class="nav-link" data-scroll-target="#o-rstudio">O RStudio</a></li>
+  <li><a href="#o-rstudio-1" id="toc-o-rstudio-1" class="nav-link" data-scroll-target="#o-rstudio-1">O RStudio</a></li>
+  <li><a href="#o-rstudio-2" id="toc-o-rstudio-2" class="nav-link" data-scroll-target="#o-rstudio-2">O RStudio</a></li>
+  <li><a href="#o-rstudio-3" id="toc-o-rstudio-3" class="nav-link" data-scroll-target="#o-rstudio-3">O RStudio</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Outros formatos</h2><ul><li><a href="aula-R-1-introducao.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Estatística Básica utilizando R</h1>
+<p class="subtitle lead"></p><ul>
+<li>R?</li>
+<li>Pacote R x Python</li>
+<li>Pacote R</li>
+</ul><p></p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dr.&nbsp;Alexandre Dias Kassuga </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="o-r-é-para-mim" class="level2">
+<h2 class="anchored" data-anchor-id="o-r-é-para-mim">O R é para mim?</h2>
+<p><img src="figuras/r-para-mim.png" class="img-fluid">{width=“100%}”</p>
+</section>
+<section id="a-linguagem-r" class="level2">
+<h2 class="anchored" data-anchor-id="a-linguagem-r">A linguagem R</h2>
+<p><img src="figuras/linguagem-r.png" class="img-fluid" style="width:100.0%"></p>
+</section>
+<section id="a-linguagem-r-1" class="level2">
+<h2 class="anchored" data-anchor-id="a-linguagem-r-1">A linguagem R</h2>
+<p>Um pouco da história…</p>
+<ul>
+<li>Ross Ihaka and Robert Gentleman (1990s)
+<ul>
+<li>Desenvolvimento a partir da linguagem S</li>
+<li>Ambiente livre para ensino de estatística – Universidade de Auckland</li>
+<li>1995 – disponibilizado como código livre (Martin Mächler)</li>
+</ul></li>
+<li>2000s
+<ul>
+<li>2000 – Primeira versão!!! – R version 1.0.0</li>
+<li>2004 – R version 2.0.0</li>
+<li>2013 – R version 3.0.0</li>
+<li>2020 – R version 4.0.0</li>
+</ul></li>
+<li>R Core Team
+<ul>
+<li>Grupo com direito de modificar o arquivo com o código fonte do R</li>
+</ul></li>
+</ul>
+<div class="texto-menor">
+<p><span class="absolute" data-bottom="210" data-right="30">“R has now outgrown its origins and its<br>
+development is now a collaborative effort<br>
+undertaken using the Internet to exchange ideas<br>
+and distribute the results.”<br>
+Ross Ihaka</span></p>
+</div>
+</section>
+<section id="a-linguagem-r-2" class="level2">
+<h2 class="anchored" data-anchor-id="a-linguagem-r-2">A linguagem R</h2>
+<p><br>
+<br>
+</p>
+<ul>
+<li><p>Diga ao R para fazer…</p></li>
+<li><p>O R consegue fazer alguma coisa?<br>
+<br>
+</p></li>
+<li><p>Não, o R é uma linguagem!</p>
+<ul>
+<li>Diga ao computador para fazer isto, utilizando comandos em linguagem R no console.</li>
+<li>Linguagem dinâmica de programação</li>
+<li>Usa um interpretador para transformar comandos em 0´s e 1´s</li>
+</ul></li>
+</ul>
+<p><img src="figuras/nota.png" class="absolute img-fluid" style="width:20.0%" data-top="0" data-right="0"></p>
+</section>
+<section id="não-tenha-medo-do-erro" class="level2">
+<h2 class="anchored" data-anchor-id="não-tenha-medo-do-erro">Não tenha medo do erro</h2>
+<p><br>
+</p>
+<ul>
+<li><p>Precisamos aprender a linguagem R para nos comunicar em R<br>
+<br>
+</p></li>
+<li><p>O erro em um comando origina uma mensagem de <span style="color: #60a5fa;">“Erro”</span></p>
+<ul>
+<li>Mas não se irrite…</li>
+</ul></li>
+<li><p>Lembre-se: você é capaz de aprender. O computador é simples e rápido, mas não aprende…</p>
+<ul>
+<li>Procure entender o que o programa não entendeu</li>
+</ul></li>
+</ul>
+<div class="texto-azul">
+<p><span class="absolute" data-bottom="50" data-right="10">Error in…<br>
+<br>
+Warning message:<br>
+In data(crabs) : data set ‘crabs’ not found<br>
+<br>
+Warning message:<br>
+In mean.default(crabs) : argumento não é numérico nem lógico: retornando NA</span></p>
+</div>
+</section>
+<section id="pacote-r-x-python" class="level2">
+<h2 class="anchored" data-anchor-id="pacote-r-x-python">Pacote R x Python</h2>
+<p><br>
+<br>
+<br>
+<br>
+</p>
+<p><img src="figuras/r-x-py-0.png" class="img-fluid"></p>
+</section>
+<section id="pacote-r-x-python-1" class="level2">
+<h2 class="anchored" data-anchor-id="pacote-r-x-python-1">Pacote R x Python</h2>
+<p><img src="figuras/r-x-py-1.png" class="absolute img-fluid" style="width:100.0%" data-top="0"></p>
+</section>
+<section id="pacote-r-x-python-2" class="level2">
+<h2 class="anchored" data-anchor-id="pacote-r-x-python-2">Pacote R x Python</h2>
+<p><img src="figuras/r-x-py-2.png" class="absolute img-fluid" style="width:100.0%" data-top="0"></p>
+</section>
+<section id="pacote-r-x-python-3" class="level2">
+<h2 class="anchored" data-anchor-id="pacote-r-x-python-3">Pacote R x Python</h2>
+<p><img src="figuras/r-x-py-3.png" class="absolute img-fluid" style="width:100.0%" data-top="0"></p>
+</section>
+<section id="pacote-r-x-python-4" class="level2">
+<h2 class="anchored" data-anchor-id="pacote-r-x-python-4">Pacote R x Python</h2>
+<p><img src="figuras/r-x-py-4.png" class="absolute img-fluid" style="width:100.0%" data-top="0"></p>
+</section>
+<section id="pacote-r-x-python-5" class="level2">
+<h2 class="anchored" data-anchor-id="pacote-r-x-python-5">Pacote R x Python</h2>
+<p><img src="figuras/r-x-py-5.png" class="absolute img-fluid" style="width:100.0%" data-top="0"></p>
+</section>
+<section id="pacote-r-x-python-6" class="level2">
+<h2 class="anchored" data-anchor-id="pacote-r-x-python-6">Pacote R x Python</h2>
+<p><img src="figuras/r-x-py-6.png" class="absolute img-fluid" style="width:100.0%" data-top="0"></p>
+</section>
+<section id="pacote-r" class="level2">
+<h2 class="anchored" data-anchor-id="pacote-r">Pacote R</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figuras/pac-r-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</section>
+<section id="pacote-r-1" class="level2">
+<h2 class="anchored" data-anchor-id="pacote-r-1">Pacote R</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figuras/pac-r-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</section>
+<section id="pacote-r-2" class="level2">
+<h2 class="anchored" data-anchor-id="pacote-r-2">Pacote R</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figuras/pac-r-3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</section>
+<section id="pacote-r-3" class="level2">
+<h2 class="anchored" data-anchor-id="pacote-r-3">Pacote R</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figuras/pac-r-4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</section>
+<section id="pacote-r-4" class="level2">
+<h2 class="anchored" data-anchor-id="pacote-r-4">Pacote R</h2>
+<ul>
+<li>FUNÇÃO(parâmetros)
+<ul>
+<li>license()</li>
+<li>citation()</li>
+<li>demo()</li>
+<li>help()</li>
+<li>q()</li>
+<li>print()</li>
+<li># - permite fazer comentários</li>
+</ul></li>
+<li>Objetos
+<ul>
+<li>R utiliza objetos para armazenar dados na memória</li>
+<li>“&lt;-” ou “=”- operador de atribuição</li>
+<li>Nomes de objetos não podem conter espaços, acentos ou caracteres especiais</li>
+</ul></li>
+</ul>
+<p><img src="figuras/pac-r-console.png" class="absolute img-fluid" style="width:50.0%" data-top="0" data-right="50"></p>
+</section>
+<section id="pacote-r-5" class="level2">
+<h2 class="anchored" data-anchor-id="pacote-r-5">Pacote R</h2>
+<ul>
+<li>FUNÇÃO(parâmetros)
+<ul>
+<li>license()</li>
+<li>citation() <span style="color: orange;"><i class="fa-solid fa-arrow-left" aria-label="arrow-left"></i></span></li>
+<li>demo() <span style="color: orange;"><i class="fa-solid fa-arrow-left" aria-label="arrow-left"></i></span></li>
+<li>help() <span style="color: orange;"><i class="fa-solid fa-arrow-left" aria-label="arrow-left"></i></span></li>
+<li>q()</li>
+<li>print()</li>
+<li># - permite fazer comentários</li>
+</ul></li>
+<li>Objetos
+<ul>
+<li>R utiliza objetos para armazenar dados na memória</li>
+<li>“&lt;-” ou “=”- operador de atribuição</li>
+<li>Nomes de objetos não podem conter espaços, acentos ou caracteres especiais</li>
+</ul></li>
+</ul>
+<p><img src="figuras/pac-r-console.png" class="absolute img-fluid" style="width:50.0%" data-top="0" data-right="50"></p>
+</section>
+<section id="pacote-r-6" class="level2">
+<h2 class="anchored" data-anchor-id="pacote-r-6">Pacote R</h2>
+<ul>
+<li>FUNÇÃO(parâmetros)
+<ul>
+<li>license()</li>
+<li>citation() <span style="color: orange;"><i class="fa-solid fa-arrow-left" aria-label="arrow-left"></i></span> <span style="color: red;">&gt;citation()</span></li>
+<li>demo() <span style="color: orange;"><i class="fa-solid fa-arrow-left" aria-label="arrow-left"></i></span> <span style="color: red;">&gt;demo()</span></li>
+<li>help() <span style="color: orange;"><i class="fa-solid fa-arrow-left" aria-label="arrow-left"></i></span> <span style="color: red;">&gt;help()</span></li>
+<li>q()</li>
+<li>print() <span style="color: red;">&gt;print(“Ola”)</span></li>
+<li># - permite fazer comentários</li>
+</ul></li>
+<li>Objetos
+<ul>
+<li>R utiliza objetos para armazenar dados na memória</li>
+<li>“&lt;-” ou “=”- operador de atribuição</li>
+<li>Nomes de objetos não podem conter espaços, acentos ou caracteres especiais</li>
+</ul></li>
+</ul>
+<p><img src="figuras/pac-r-console.png" class="absolute img-fluid" style="width:50.0%" data-top="0" data-right="50"></p>
+</section>
+<section id="pacote-r-7" class="level2">
+<h2 class="anchored" data-anchor-id="pacote-r-7">Pacote R</h2>
+<ul>
+<li>FUNÇÃO(parâmetros)
+<ul>
+<li>license()</li>
+<li>citation() <span style="color: orange;"><i class="fa-solid fa-arrow-left" aria-label="arrow-left"></i></span> <span style="color: red;">&gt;citation()</span></li>
+<li>demo() <span style="color: orange;"><i class="fa-solid fa-arrow-left" aria-label="arrow-left"></i></span> <span style="color: red;">&gt;demo()</span></li>
+<li>help() <span style="color: orange;"><i class="fa-solid fa-arrow-left" aria-label="arrow-left"></i></span> <span style="color: red;">&gt;help()</span></li>
+<li>q()</li>
+<li>print() <span style="color: red;">&gt;print(“Ola”)</span></li>
+<li><span class="caixa-laranja"># - permite fazer comentários</span></li>
+</ul></li>
+<li>Objetos
+<ul>
+<li>R utiliza objetos para armazenar dados na memória</li>
+<li>“&lt;-” ou “=”- operador de atribuição</li>
+<li>Nomes de objetos não podem conter espaços, acentos ou caracteres especiais</li>
+</ul></li>
+</ul>
+<p><img src="figuras/pac-r-console-citation.png" class="absolute img-fluid" style="width:50.0%" data-top="0" data-right="50"></p>
+</section>
+<section id="pacote-r-8" class="level2">
+<h2 class="anchored" data-anchor-id="pacote-r-8">Pacote R</h2>
+<ul>
+<li>FUNÇÃO(parâmetros)
+<ul>
+<li>license()</li>
+<li>citation() <span style="color: orange;"><i class="fa-solid fa-arrow-left" aria-label="arrow-left"></i></span> <span style="color: red;">&gt;citation()</span></li>
+<li>demo() <span style="color: orange;"><i class="fa-solid fa-arrow-left" aria-label="arrow-left"></i></span> <span style="color: red;">&gt;demo()</span></li>
+<li>help() <span style="color: orange;"><i class="fa-solid fa-arrow-left" aria-label="arrow-left"></i></span> <span style="color: red;">&gt;help()</span></li>
+<li>q()</li>
+<li>print() <span style="color: red;">&gt;print(“Ola”)</span></li>
+<li><span class="caixa-laranja"># - permite fazer comentários</span></li>
+</ul></li>
+<li>Objetos
+<ul>
+<li>R utiliza objetos para armazenar dados na memória</li>
+<li>“&lt;-” ou <span style="background: linear-gradient(to top left, transparent 47%, red 48%, red 52%, transparent 53%);">“=”</span>- operador de atribuição</li>
+<li>Nomes de objetos não podem conter espaços, acentos ou caracteres especiais</li>
+</ul></li>
+</ul>
+<p><img src="figuras/pac-r-console-citation.png" class="absolute img-fluid" style="width:50.0%" data-top="0" data-right="50"></p>
+</section>
+<section id="o-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="o-rstudio">O RStudio</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figuras/rstudio-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</section>
+<section id="o-rstudio-1" class="level2">
+<h2 class="anchored" data-anchor-id="o-rstudio-1">O RStudio</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figuras/rstudio-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</section>
+<section id="o-rstudio-2" class="level2">
+<h2 class="anchored" data-anchor-id="o-rstudio-2">O RStudio</h2>
+<ul>
+<li>Editor (Scripts) – Onde escrevemos os códigos
+<ul>
+<li>(CTRL+SHIFT+1)</li>
+</ul></li>
+<li>Console – Onde rodamos os códigos
+<ul>
+<li>CTRL+SHIFT+2)</li>
+</ul></li>
+<li>Ambiente – Todos os objetos criados na sessão
+<ul>
+<li>(CTRL+SHIFT+4)</li>
+</ul></li>
+<li>“Saída”
+<ul>
+<li>(CTRL+SHIFT+3)</li>
+<li>Files – Arquivos no diretório de trabalho (<span style="color: red"> &gt; setwd()</span>)</li>
+<li>Plots – Local onde são plotados os gráficos</li>
+<li>Help – Janela de ajuda, onde são mostradas as funções (<span style="color: red"> &gt; help() ou &gt; ? </span>)</li>
+<li>History – Histórico dos comandos rodados</li>
+</ul></li>
+</ul>
+<p><img src="figuras/rstudio-2.png" class="absolute img-fluid" style="width:45.0%" data-top="0" data-right="0"></p>
+</section>
+<section id="o-rstudio-3" class="level2">
+<h2 class="anchored" data-anchor-id="o-rstudio-3">O RStudio</h2>
+<p><br>
+<br>
+</p>
+<ul>
+<li>Atalhos!!!
+<ul>
+<li><p>O uso de atalhos ajuda muito a fluidez do trabalho<br>
+<br>
+</p></li>
+<li><p>CTRL+ENTER: roda a linha selecionada no script. MUITO USADO</p></li>
+<li><p>ALT+-: (&lt;-) sinal de atribuição. MUITO USADO</p></li>
+<li><p>CTRL+SHIFT+M: (%&gt;%) operador pipe.</p></li>
+<li><p>CTRL+1: altera cursor para o script.</p></li>
+<li><p>CTRL+2: altera cursor para o console.</p></li>
+<li><p>CTRL+SHIFT+C: (Des)comenta a linha.</p></li>
+<li><p>CTRL+SHIFT+R: Cria um comentário para uma nova parte do código.</p></li>
+<li><p>ALT+SHIFT+K: janela com todos os atalhos disponíveis</p></li>
+</ul></li>
+</ul>
+<p><img src="figuras/dica.png" class="absolute img-fluid" style="width:30.0%" data-top="0" data-right="0"></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

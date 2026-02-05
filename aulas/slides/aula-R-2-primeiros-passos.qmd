@@ -1,0 +1,408 @@
+---
+title: "Estatística Básica utilizando R"
+subtitle: |
+  - Pacote R: primeiros comandos
+author: "Dr. Alexandre Dias Kassuga"
+format:
+  revealjs:
+    theme: simple
+    css: 
+      - slides.css
+      - footer.css
+    highlight-style: monokai
+    slide-number: true
+    width: 1280
+    height: 720
+---
+
+## Pacote R - Comandos Básicos
+
+\
+
+- \# 
+  - Indica que sequência de caracteres após "#" não deve ser lido
+  - Permite inserir comentários dentro do script
+  - Muito importante para lembrar e compartilhar os códigos
+
+\
+\
+
+![](figuras/comentarios.png){fig-align="center"width="100%}
+
+
+## Pacote R - Comandos Básicos
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+\
+
+- \# 
+
+
+
+![](figuras/sem-comentarios.png){fig-align="center"width="100%"}
+
+:::
+
+::: {.column width="50%"}
+
+![](figuras/com-comentarios.png){fig-align="center"width="100%"}
+
+:::
+
+::::
+
+
+## Pacote R - Comandos Básicos
+
+- Definir a pasta de trabalho
+  - Via Menu
+  - Via comando:
+    - setwd()
+    - Cuidado com a "\\"
+      - Deve ser "\\ \\"
+      - Ou "/"
+
+
+![](figuras/diretorio.png){.absolute top="0" right="0 "width="50%"}
+
+
+## Pacote R - Comandos Básicos
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+- Pacotes
+  - Carregam conjuntos de funções e dados
+  - O programa já vem com 7 pacotes instalados
+    - base: funções essenciais;
+    - stats: estatística paramétrica e não-paramétrica;
+    - graphics: histogramas, boxplots, diagramas de dispersão;
+    - utils: pedir ajuda, instalar pacotes e importar dados;
+    - datasets: bancos de dados de exemplo;
+    - grDevices: visualizar tela e exportar gráficos; e
+    - methods: ver a classe e fazer coerção de objetos.
+
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="45%"}
+
+  - Instalação
+    - Pela internet
+      - Console <span style="color: red"> > install.packages("NOME DO PACOTE")</span>
+      - Menu Pacotes – Instalar Pacotes
+    - Arquivo zip
+      - Menu Pacotes – Instalar pacote(s) de arquivos locais
+      \
+      
+  - Abrir
+    - Console <span style="color: red"> > library("NOME DO PACOTE")</span>
+    - Menu 
+
+:::
+
+::::
+
+
+## Pacote R - Comandos básicos
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+- Calculadora
+  - "+" - soma
+  - "-" - subtração 
+  - "/" - divisão
+  - "*" - multiplicação
+  - "^" – potência
+  - "()" – expressões complexas
+
+\
+
+<span style="color: red"> > 5*3</span>\
+<span style="color: blue"> [1] 15</span>\
+<span style="color: red"> > 5\*(3+2) </span>\
+<span style="color: blue">[1]</span> ?\
+
+
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="45%"}
+
+![](figuras/pac-r-console.png){width="100%"}
+
+:::
+
+::::
+
+
+
+
+
+
+
+## Pacote R - Comandos básicos
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+- Calculadora
+  - "+" - soma
+  - "-" - subtração 
+  - "/" - divisão
+  - "*" - multiplicação
+  - "^" – potência
+  - "()" – expressões complexas
+
+\
+
+<span style="color: red"> > 5*3</span>\
+<span style="color: blue"> [1] 15</span>\
+<span style="color: red"> > 5\*(3+2) </span>\
+<span style="color: blue">[1]</span> ?\
+
+
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="45%"}
+
+- log(x) <span style="color: yellow"> \# logaritmo natural</span>
+- log10(x) <span style="color: yellow"> \# log de x na base 10</span>
+- log(x,base) <span style="color: yellow"> \# log de x na base escolhida</span>
+- abs(x) <span style="color: yellow"> \# "valor absoluto". </span>
+- factorial(x) <span style="color: yellow"> \# fatorial. </span>
+- sqrt(x) <span style="color: yellow"> \# raiz</span>
+- prod (x,x) <span style="color: yellow"> \# produto (mesma coisa que x*x)</span>
+- prod(x,x,x,x,x) <span style="color: yellow"> \# confira se é igual a x^5</span>
+- prod(1,2,3,4) <span style="color: yellow"> \# confira</span>
+
+
+:::
+
+::::
+
+
+
+## Pacote R - Comandos básicos
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+- Calculadora
+  - "+" - soma
+  - "-" - subtração 
+  - "/" - divisão
+  - "*" - multiplicação
+  - "^" – potência
+  - "()" – expressões complexas
+
+\
+
+<span style="color: red"> > 5*3</span>\
+<span style="color: blue"> [1] 15</span>\
+<span style="color: red"> > 5\*(3+2) </span>\
+<span style="color: blue">[1]</span> ?\
+
+
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="45%"}
+
+- Exercício :
+  - $35*7 =$
+  - $5^2 =$
+  - $(2+\frac{15}{3})*7 =$ 
+  - Três caminhões transportam 200m³ de areia. Para transportar 1600m³ de areia, quantos caminhões iguais a esse seriam necessários? Resposta: 
+
+:::
+
+::::
+
+
+## Pacote R - Comandos básicos
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+- Calculadora
+  - "+" - soma
+  - "-" - subtração 
+  - "/" - divisão
+  - "*" - multiplicação
+  - "^" – potência
+  - "()" – expressões complexas
+
+\
+
+<span style="color: red"> > 5*3</span>\
+<span style="color: blue"> [1] 15</span>\
+<span style="color: red"> > 5\*(3+2) </span>\
+<span style="color: blue">[1]</span> ?\
+
+
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="45%"}
+
+- Exercício :
+  - $35*7 = 245$
+  - $5^2 = 25$
+  - $(2+\frac{15}{3})*7 = 49$ 
+  - Três caminhões transportam 200m³ de areia. Para transportar 1600m³ de areia, quantos caminhões iguais a esse seriam necessários? Resposta: 24 caminhões
+
+:::
+
+::::
+
+
+
+## Pacote R - Comandos básicos
+
+-  Primeiro exercício em programação
+
+\
+     
+<span style="color: red"> > print("Olá mundo")</span>\
+<span style="color: blue"> [1] "Olá mundo" </span>
+
+
+![](figuras/funcao-print.png){fig-align="center" width="50%"}
+
+
+## Pacote R - Comandos básicos
+
+- No R trabalhamos com objetos
+  - Utilizamos "<-" ou "=" para definir os objetos
+    - Damos um nome e valores associados
+     Quantitativos ou qualitativos
+  - Com estes objetos podemos executar funções
+    - Associado a função sempre temos "( )"
+  - Podemos extrair parte dos objeto
+    - Utilizando "[ ]"
+
+
+## Pacote R - Comandos básicos
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+- Objetos
+
+<span style="color: red"> > x <- 83</span>\
+<span style="color: red"> > x</span>\
+<span style="color: blue">[1] 83 </span>\
+<span style="color: red"> > y <- 10</span>\
+<span style="color: red"> > y</span>\
+<span style="color: blue">[1] 10</span>\
+<span style="color: red"> > x + y</span>\
+<span style="color: blue">[1]</span> ?\
+
+
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="45%"}
+
+- Exercício : <span style="color: red"> (agora utilizando objetos)</span>
+  - $35*7 = 245$
+  - $5^2 = 25$
+  - $(2+\frac{15}{3})*7 = 49$ 
+  - Três caminhões transportam 200m³ de areia. Para transportar 1600m³ de areia, quantos caminhões iguais a esse seriam necessários? Resposta: 24 caminhões
+
+:::
+
+::::
+
+
+# Pacote R - Comandos básicos
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+- Objetos
+
+<span style="color: red"> > x <- 83</span>\
+<span style="color: red"> > x</span>\
+<span style="color: blue">[1] 83 </span>\
+<span style="color: red"> > y <- 10</span>\
+<span style="color: red"> > y</span>\
+<span style="color: blue">[1] 10</span>\
+<span style="color: red"> > x + y</span>\
+<span style="color: blue">[1]</span> ?\
+
+
+:::
+
+
+::: {.column width="45%"}
+
+- Exercício : <span style="color: red"> (agora utilizando objetos)</span>
+  - $35*7 = 245$
+    - <span style="color: red"> > x <- 35</span>\
+    - <span style="color: red"> > y <- 7</span>\
+    - <span style="color: red"> > x \* y</span>\
+  - $5^2 = 25$
+    - <span style="color: red"> > x <- 5</span>\
+    - <span style="color: red"> > y <- 2</span>\
+    - <span style="color: red"> > x^y</span>\ 
+  - $(2+\frac{15}{3})*7 = 49$ 
+    - <span style="color: red"> > x <- 2</span>\
+    - <span style="color: red"> > y <- 15/3</span>\
+    - <span style="color: red"> > z <- 7</span>\
+    - <span style="color: red"> > z <- 7</span>\
+
+:::: texto-65
+    
+::: {.absolute bottom="200" right="0"}
+
+Três caminhões transportam 200m³ de\
+areia.Para transportar 1600m³ de areia,\
+quantos caminhões iguais a esse seriam\
+necessários?\
+Resposta: 24 caminhões\
+    <span style="color: red"> > vol1 <- 200</span>\
+    <span style="color: red"> > caminhoes <- 3</span>\
+    <span style="color: red"> vol_total <- 1600</span>\
+    <span style="color: red"> x <- (vol_total*caminhoes)/vol1</span>\
+   <span style="color: red"> x</span>\
+
+:::
+
+::::
+
+:::
+
+::::
+     
