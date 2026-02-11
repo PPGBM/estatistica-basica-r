@@ -1628,7 +1628,7 @@
     "href": "aulas/aulas.html#linguagem-r",
     "title": "Aulas",
     "section": "Linguagem R",
-    "text": "Linguagem R\n\n\nAula 01 – A Linguagem R\n\nO R é para mim?\nA linguagem R\nUm pouco de história…\nNão tenha medo do erro\nR x Python\nO pacote R\nRStudio\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – O pacote R\n\nComandos Básicos\nPacotes\nO R como calculadora\nIniciando em objetos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Objetos e Dados\n\nAtribuição\nNomeando objetos\nUtilizando objetos em R\nTipos de dados em R\n\n➡️ Acessar slides da aula\n\n\n\nAula 04 – Funções e objetos\n\nFunções\nCriando funções\nMais sobre objetos\nEstruturas de dados\n\n➡️ Aula em breve\n\n\n\nAula 05 – Graficos no R\n\nComo funcionam gráficos no R\nTipos de gráficos\nParâmetros gráficos\n\n➡️ Aula em breve\n\n\nAula 06 – Estatística descritiva no R\n\nEstatística descritiva\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve\n\n\nAula 07 – Testes de significância em R\n\nTestes de significância\n\nTeste t\nMann-Whitney\nQui-quadrado\nAnálise de Variância\nKruskall-Wallis\n\n\n➡️ Aula em breve"
+    "text": "Linguagem R\n\n\nAula 01 – A Linguagem R\n\nO R é para mim?\nA linguagem R\nUm pouco de história…\nNão tenha medo do erro\nR x Python\nO pacote R\nRStudio\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – O pacote R\n\nComandos Básicos\nPacotes\nO R como calculadora\nIniciando em objetos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Objetos e Dados\n\nAtribuição\nNomeando objetos\nUtilizando objetos em R\nTipos de dados em R\n\n➡️ Acessar slides da aula\n\n\n\nAula 04 – Funções e objetos\n\nEstruturas de dados\nTrabalhando com vetores\n\n➡️ Acessar slides da aula\n\n\n\nAula 05 – Graficos no R\n\nComo funcionam gráficos no R\nTipos de gráficos\nParâmetros gráficos\n\n➡️ Aula em breve\n\n\nAula 06 – Estatística descritiva no R\n\nEstatística descritiva\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve\n\n\nAula 07 – Testes de significância em R\n\nTestes de significância\n\nTeste t\nMann-Whitney\nQui-quadrado\nAnálise de Variância\nKruskall-Wallis\n\n\n➡️ Aula em breve"
   },
   {
     "objectID": "aulas/guia-quarto-latex-math-html.html",
@@ -3771,5 +3771,229 @@
     "title": "Estatística Básica utilizando R",
     "section": "Utilizando objetos",
     "text": "Utilizando objetos\n\n\n\nTipos de dados\n\nExistem basicamente quatro tipos de dados no R\n\nNuméricos (“numeric”)\nCaracteres (“string”)\nLógicos (“logical”)\nNúmeros complexos (“complex”)\n\nFunção typeof() identifica o tipo de dado\n\n\n\nNuméricos\n\nvalor &lt;- 605\nvalor\n\n[1] 605\n\n\n\n\n\nCaracteres\n\nstring &lt;- \"Ola mundo\"\nstring\n\n[1] \"Ola mundo\"\n\n\nLógicos\n\n2&lt;6\n\n[1] TRUE\n\n\nNúmeros complexos\n\nnc  &lt;-  2 + 3i\nnc\n\n[1] 2+3i"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\n\n\nVetores são a estrutura de dados mais básica do R\nVetores\n\n\nx &lt;- c(1,2,3,4,5)\nx\n\n[1] 1 2 3 4 5\n\n\n\n\n\ny &lt;- c(6,7,8,9,10)\ny\n\n[1]  6  7  8  9 10\n\n\n\nx+y ?"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-1",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\n\n\nVetores são a estrutura de dados mais básica do R\nVetores\n\n\nx &lt;- c(1,2,3,4,5)\nx\n\n[1] 1 2 3 4 5\n\n\n\n\n\ny &lt;- c(6,7,8,9,10)\ny\n\n[1]  6  7  8  9 10\n\n\n\nx+y ?"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-2",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-2",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\n\n\nVetores são a estrutura de dados mais básica do R\nVetores\n\n\nx &lt;- c(1,2,3,4,5)\nx\n\n[1] 1 2 3 4 5\n\n\n\n\n\ny &lt;- c(6,7,8,9,10)\ny\n\n[1]  6  7  8  9 10\n\n\n\nx+y ?"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-3",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-3",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\n\n\nVetores são a estrutura de dados mais básica do R\nVetores\n\n\nx &lt;- c(1,2,3,4,5)\nx\n\n[1] 1 2 3 4 5\n\n\n\n\n\ny &lt;- c(6,7,8,9,10)\ny\n\n[1]  6  7  8  9 10\n\n\n\nx+y ?"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-4",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-4",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\n\n\nobjeto1 &lt;- 1:5\nobjeto1 #confira seu objeto\n\n[1] 1 2 3 4 5\n\n\n\n\n\n\n\n6:10 -&gt; objeto2\nobjeto2\n\n[1]  6  7  8  9 10\n\n\n\n\n\n\n\nobjeto3 &lt;- 10+10\nobjeto3 \n\n[1] 20\n\n\n\n\n\n\nls()\n\n[1] \"objeto1\" \"objeto2\" \"objeto3\" \"x\"       \"y\""
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-5",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-5",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\n\n\nobjeto1 &lt;- 1:5\nobjeto1 #confira seu objeto\n\n[1] 1 2 3 4 5\n\n\n\n\n\n\n\n6:10 -&gt; objeto2\nobjeto2\n\n[1]  6  7  8  9 10\n\n\n\n\n\n\n\nobjeto3 &lt;- 10+10\nobjeto3 \n\n[1] 20\n\n\n\n\n\n\nls()\n\n[1] \"objeto1\" \"objeto2\" \"objeto3\" \"x\"       \"y\""
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-6",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-6",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\n\n\nobjeto2 #mostra o objeto2\n\n[1]  6  7  8  9 10"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-7",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-7",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\n\n\nobjeto2 #mostra o objeto2\n\n[1]  6  7  8  9 10\n\n\n\n\n\n\nComo obter um valor em uma posição especifica? “[ ]”"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-8",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-8",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\n\n\nobjeto2 #mostra o objeto2\n\n[1]  6  7  8  9 10\n\n\n\n\n\n\nComo obter um valor em uma posição especifica? “[ ]”\n\n\nobjeto2[3]\n\n[1] 8\n\n\n\n\n\n\n\nlog(objeto2[3])\n\n[1] 2.079442\n\n\n\n\n\n\n#mostra o terceiro valor do objeto2\n#[ x ] retorna o elemento x de um objeto\n\n\n#executa a função log sobre o\n#terceiro elemento do objeto2"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-9",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-9",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\n\n\nobjeto2 #mostra o objeto2\n\n[1]  6  7  8  9 10\n\n\n\n\n\n\nComo obter um valor em uma posição especifica? “[ ]”\n\n\nobjeto2[3]\n\n[1] 8\n\n\n\n\n\n\n\nlog(objeto2[3])\n\n[1] 2.079442\n\n\n\n\n\nExercício:\n\nCrie um objeto “valores” com uma sequência de 1 a 500\nRetorne o objeto “valores”\nObserve o resultado\n\n\n\n#mostra o terceiro valor do objeto2\n#[ x ] retorna o elemento x de um objeto\n\n\n#executa a função log sobre o\n#terceiro elemento do objeto2"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#teste",
+    "href": "aulas/slides/aula-R-4-vetores.html#teste",
+    "title": "Estatística Básica utilizando R",
+    "section": "teste",
+    "text": "teste"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-10",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-10",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\n\n\nobjeto2 #mostra o objeto2\n\n[1]  6  7  8  9 10\n\n\n\n\n\n\nComo obter um valor em uma posição especifica? “[ ]”\n\n\nobjeto2[3]\n\n[1] 8\n\n\n\n\n\n\n\nlog(objeto2[3])\n\n[1] 2.079442\n\n\n\n\n\nExercício:\n\nCrie um objeto “valores” com uma sequência de 1 a 500\nRetorne o objeto “valores”\nObserve o resultado\n\n\n\n\n#mostra o terceiro valor do objeto2\n#[ x ] retorna o elemento x de um objeto\n\n\n#executa a função log sobre o\n#terceiro elemento do objeto2"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-11",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-11",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\n\n\nobjeto2 #mostra o objeto2\n\n[1]  6  7  8  9 10\n\n\n\n\n\n\na &lt;- c(1:5) #cria objeto a\nb &lt;- c(6:10) #cria objeto b\nc &lt;- (a+b) # cria objeto c, que é a soma de \n      ## cada elemento de a com cada de b. \n      ## resulta no mesmo numero de elementos\n\nd &lt;- c(a,b) # concatenando vetores\nd\nd*2\n(d*2)+3"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-12",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-12",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\n\n\nobjeto2 #mostra o objeto2\n\n[1]  6  7  8  9 10\n\n\n\n\n\n\n\n\n\nd\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\n\n\n\n\n\n\n\n\n\n\n\nd[6] # extrai um determinado valor do vetor\nd[-c(2:5)] # Elementos de d exceto de 2 a 5\nd[d&lt;=5] # Extrai valores de d &lt; ou = a 5\n          # \"==\" – exatamente igual\n          # \"&gt;=\" – maior ou igual\n          # \"!=\" – diferente"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-13",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-13",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\n\n\nobjeto2 #mostra o objeto2\n\n[1]  6  7  8  9 10\n\n\n\n\n\n\n\n\n\nd\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\n\n\n\n\n\n\n\n\n\n\n\nd[6] # extrai um determinado valor do vetor\nd[-c(2:5)] # Elementos de d exceto de 2 a 5\nd[d&lt;=5] # Extrai valores de d &lt; ou = a 5\n          # \"==\" – exatamente igual\n          # \"&gt;=\" – maior ou igual\n          # \"!=\" – diferente"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-14",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-14",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\n\n\nobjeto2 #mostra o objeto2\n\n[1]  6  7  8  9 10\n\n\n\n\n\n\n\n\n\nd\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\n\n\n\n\n\n\n\n\n\n\n\nd[6] # extrai um determinado valor do vetor\nd[-c(2:5)] # Elementos de d exceto de 2 a 5\nd[d&lt;=5] # Extrai valores de d &lt; ou = a 5\n          # \"==\" – exatamente igual\n          # \"&gt;=\" – maior ou igual\n          # \"!=\" – diferente"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-15",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-15",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\n\n\nobjeto2 #mostra o objeto2\n\n[1]  6  7  8  9 10\n\n\n\n\n\n\n\n\n\nd\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\n\n\n\n\n\n\n\n\n\n\n\nd[6] # extrai um determinado valor do vetor\nd[-c(2:5)] # Elementos de d exceto de 2 a 5\nd[d&lt;=5] # Extrai valores de d &lt; ou = a 5\n          # \"==\" – exatamente igual\n          # \"&gt;=\" – maior ou igual\n          # \"!=\" – diferente"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-16",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-16",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\n\n\nobjeto2 #mostra o objeto2\n\n[1]  6  7  8  9 10\n\n\n\n\n\n\n\n\n\nd\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\n\n\n\n\n\n\n\n\n\n\n\nd[6] # extrai um determinado valor do vetor\nd[-c(2:5)] # Elementos de d exceto de 2 a 5\nd[d&lt;=5] # Extrai valores de d &lt; ou = a 5\nd[d&gt;=4&d&lt;8] # valores de \"d\" entre 4 E 8,\n            # incluindo 4\n              # & - adiciona condições (\"E\")"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-17",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-17",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\nAdicionando valores a um vetor\n\n\nobjeto4  &lt;-  c(objeto1, objeto2, \"a\") #concatenou obj1 com obj2 com a letra a. \nobjeto5  &lt;-  c(objeto1, objeto2) #concatenou obj1 com obj2\n objeto4 \n objeto5\n\nE se eu quiser adicionar o valor “35” ao objeto5?"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-18",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-18",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\nAdicionando valores a um vetor\n\n\nobjeto4  &lt;-  c(objeto1, objeto2, \"a\") #concatenou obj1 com obj2 com a letra a. \nobjeto5  &lt;-  c(objeto1, objeto2) #concatenou obj1 com obj2\n objeto4 \n objeto5\n\nE se eu quiser adicionar o valor “35” ao objeto5?\n\nobjeto5 &lt;- c(objeto5, 35) # cria um \"novo\" objeto5 composto pelos\n                          # valores já presentes mais o valor 35"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-19",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-19",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\nAdicionando valores a um vetor\n\n\nobjeto4  &lt;-  c(objeto1, objeto2, \"a\") #concatenou obj1 com obj2 com a letra a. \nobjeto5  &lt;-  c(objeto1, objeto2) #concatenou obj1 com obj2\n objeto4 \n objeto5\n\nE se eu quiser adicionar o valor “35” ao objeto5?\n\nobjeto5 &lt;- c(objeto5, 35) # cria um \"novo\" objeto5 composto pelos\n                          # valores já presentes mais o valor 35\n\n\nnumeros  &lt;-  scan() #cria o objeto numeros vazio, no qual pode digitar os elementos\nnumeros\n\nnumeric(0)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-20",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-20",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\nPodemos utilizar a função length() para determinar o número de elementos\nUtilizando “[ ]” podemos designar a posição dos elementos\n\nlength(d) # retorna o número de elementos de um vetor ou\n          # de intervalos de valores. \n\nlength(d[d&gt;=5]) # número de elementos do objeto que são maiores ou\n                # iguais a 5\n\n# A função sum() retorna a soma dos elementos do vetor\n\nsum(d)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-21",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-21",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\nNomeando valores\n\n\npd_vermelha &lt;- c(5,10,3)\nnames(pd_vermelha) &lt;- c(\"sp1\", \"sp2\", \"sp3\") # dá nomes aos valores de\n                                             # \"pd_vermelha\"\n\n# Agora podemos pedir por um valor específico\n\npd_vermelha[\"sp1\"]\n\nsp1 \n  5"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-22",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-22",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\nExercícios\n\nCrie um objeto “dados” com os seguintes números:\n\n1, 2, 3, 4, 5, 16, 17, 18, 19, 20, 0.5, 0.9, 0.75\n\nCalcule a média de “dados” utilizando as funções length() e sum()"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-23",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-23",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\nExercícios\n\nCrie um objeto “dados” com os seguintes números:\n\n1, 2, 3, 4, 5, 16, 17, 18, 19, 20, 0.5, 0.9, 0.75\n\nCalcule a média de “dados” utilizando as funções length() e sum()\n\n\n\n\n\ndados &lt;- c(1,2,3,4,5,16,17,18,19,20,\n           0.5,0.9,0.75)\n# outra forma: \n## dados &lt;- c(1:5, 16:20, 0.5,0.9,0.75)\num &lt;- c(1:5)\ndois &lt;- c(16:20)\ntres &lt;- c(0.5, 0.9, 0.75)\ndados &lt;- c(um, dois, tres)\ndados \n\n [1]  1.00  2.00  3.00  4.00  5.00 16.00 17.00 18.00 19.00 20.00  0.50  0.90\n[13]  0.75"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-24",
+    "href": "aulas/slides/aula-R-4-vetores.html#trabalhando-com-vetores-24",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com vetores",
+    "text": "Trabalhando com vetores\n\nExercícios\n\nCrie um objeto “dados” com os seguintes números:\n\n1, 2, 3, 4, 5, 16, 17, 18, 19, 20, 0.5, 0.9, 0.75\n\nCalcule a média de “dados” utilizando as funções length() e sum()\n\n\n\n\n\ndados &lt;- c(1,2,3,4,5,16,17,18,19,20,\n           0.5,0.9,0.75)\n# outra forma: \n## dados &lt;- c(1:5, 16:20, 0.5,0.9,0.75)\num &lt;- c(1:5)\ndois &lt;- c(16:20)\ntres &lt;- c(0.5, 0.9, 0.75)\ndados &lt;- c(um, dois, tres)\ndados \n\n [1]  1.00  2.00  3.00  4.00  5.00 16.00 17.00 18.00 19.00 20.00  0.50  0.90\n[13]  0.75\n\n\n\n\nmedia &lt;- sum(dados)/length(dados) \nmedia\n\n[1] 8.242308"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#sequencias-distribuições-e-amostragens",
+    "href": "aulas/slides/aula-R-4-vetores.html#sequencias-distribuições-e-amostragens",
+    "title": "Estatística Básica utilizando R",
+    "section": "Sequencias, distribuições e amostragens",
+    "text": "Sequencias, distribuições e amostragens\n\n“:” - nos ja vimos este\n“seq()”\n\ncria sequências de números seq(inicio, fim, intervalo)\n\n“rep()”\n\nrepete um valor ou um vetor &gt; rep(valor, vezes)\n\n“runif()”\n\ngera números aleatórios de uma distribuição uniforme &gt; runif(n, min, max)\n\n\n\nseq(1, 10)\nseq(1, 10, 2)\n\nnumeros &lt;- c(1:3)\nrep(numeros, 3)\nrep(numeros, 1:3)\n\nfator &lt;- c(\"A\", \"B\", \"C\")\nrep(fator, each = 5)\n\nrunif(100, 1, 25)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#sequencias-distribuições-e-amostragenws",
+    "href": "aulas/slides/aula-R-4-vetores.html#sequencias-distribuições-e-amostragenws",
+    "title": "Estatística Básica utilizando R",
+    "section": "Sequencias, distribuições e amostragenws",
+    "text": "Sequencias, distribuições e amostragenws\n\nPodemos criar sequencias com distribuição normal, com média e desvio conhecidos\nrnorm()\n\nCria uma sequencia com &gt; rnorm(n, mean = , sd = )\n\nO R possui funções que podem criar diversos tipos de distribuição diferentes\n\n\n\n\ndistnorm &lt;- rnorm(100, mean = 25, sd = 10)\ndistnorm\n\n  [1] 17.081032 19.561967 34.590324 10.147682 19.505648  4.427268 21.826768\n  [8] 13.671276 13.714717 31.565568 23.100996 37.909101 17.968977 26.844779\n [15] 32.853713 26.924654 17.360859 29.322131 19.172713 10.519161 12.676954\n [22] 17.429305 17.467810 28.537136 26.487296 27.796937 31.203960 -5.302708\n [29]  6.459013 30.655248 30.719183 16.333287  7.078035 28.311178 11.383085\n [36] 25.724208 33.634892 15.456030 22.333032 19.124565 30.909668 10.349636\n [43] 10.771628 32.918673 27.684269 35.126828 17.186877 17.448886 35.205138\n [50] 15.591731 34.036756 21.642353 30.768283  1.932533 41.586288 20.837487\n [57] 25.460439 32.809960 34.603107 29.593031 28.500482 21.808293 44.610827\n [64] 40.348077 17.029492 39.973316 38.534627 15.241712 16.898282 29.330654\n [71] 23.282803 12.337178 34.997324 22.190928 20.142415 25.780330 22.468911\n [78] 19.147722 25.484646 32.290065 22.858369 12.825680  5.934951  8.928289\n [85] 19.731782 22.232419 43.371431 35.858168 17.168965 27.049490 17.243942\n [92] 32.282293 23.422289 38.959030 23.645289 30.002003 18.843657 24.518771\n [99] 10.611175 29.143185\n\n\n\nPodemos observar graficamente"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#sequencias-distribuições-e-amostragenws-1",
+    "href": "aulas/slides/aula-R-4-vetores.html#sequencias-distribuições-e-amostragenws-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "Sequencias, distribuições e amostragenws",
+    "text": "Sequencias, distribuições e amostragenws\n\nPodemos sortear valores dentro de um vetor\n\nsample(x, size = , replace = )\n\n\n\nd6 &lt;- c(1:6)\nsample(d6, 3)\n\n[1] 2 1 5\n\nmoeda &lt;- c(\"cara\", \"coroa\")\njogo &lt;- sample(moeda, 100, replace = TRUE)\n\n#jogando na Sena\nsena &lt;- c(1:60)\n\nsample(sena, 6, replace = FALSE)\n\n[1] 56 13 23 36 47 22"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#algumas-funções-importantes",
+    "href": "aulas/slides/aula-R-4-vetores.html#algumas-funções-importantes",
+    "title": "Estatística Básica utilizando R",
+    "section": "Algumas funções importantes",
+    "text": "Algumas funções importantes\n\nx &lt;- rnorm(10)\nsort(x) #ordena os valores de x.\n\n [1] -1.35676581 -0.69980737 -0.63489576 -0.08721925 -0.02829917  0.34576236\n [7]  0.79155641  0.86155256  0.91066746  1.65344863\n\nsort(x, decreasing = T) #organiza em ordem decrescente\n\n [1]  1.65344863  0.91066746  0.86155256  0.79155641  0.34576236 -0.02829917\n [7] -0.08721925 -0.63489576 -0.69980737 -1.35676581\n\norder(x) #retorna os postos de x\n\n [1]  8  2  4 10  7  9  6  5  1  3\n\n\nCrie o objeto y com os valores de x ordenados e veja os postos"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#algumas-funções-importantes-1",
+    "href": "aulas/slides/aula-R-4-vetores.html#algumas-funções-importantes-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "Algumas funções importantes",
+    "text": "Algumas funções importantes\nCrie o objeto y com os valores de x ordenados e veja os postos\n\ny &lt;- order(sort(x))\nsort(y)\n\n [1]  1  2  3  4  5  6  7  8  9 10"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#vetores",
+    "href": "aulas/slides/aula-R-4-vetores.html#vetores",
+    "title": "Estatística Básica utilizando R",
+    "section": "Vetores",
+    "text": "Vetores\nLista de Exercícios 1"
   }
 ]

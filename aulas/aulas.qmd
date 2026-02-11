@@ -153,13 +153,11 @@ aos conteúdos e aos slides.
 
 ### Aula 04 – Funções e objetos
 
-- Funções
-- Criando funções
-- Mais sobre objetos
+
 - Estruturas de dados
+- Trabalhando com vetores
 
-
-➡️ Aula em breve
+[➡️ Acessar slides da aula](slides/aula-R-4-vetores.qmd){target="_blank" rel="noopener"}
 
 ---
 

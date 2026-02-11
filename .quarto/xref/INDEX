@@ -130,5 +130,8 @@
   },
   "aulas/guia-quarto-tabelas.qmd": {
     "guia-quarto-tabelas.html": "d4f546f2"
+  },
+  "aulas/slides/aula-R-4-vetores.qmd": {
+    "aula-R-4-vetores.html": "5d6e69e5"
   }
 }
