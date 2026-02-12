@@ -1293,6 +1293,8 @@ media
 
 ## Sequencias, distribuições e amostragens
 
+::: {.texto-menor}
+
 - ":" - nos ja vimos este
 - "seq()" 
   - cria sequências de números `seq(inicio, fim, intervalo)`
@@ -1300,6 +1302,8 @@ media
   - repete um valor ou um vetor `> rep(valor, vezes)`
 - "runif()"
   - gera números aleatórios de uma distribuição uniforme `> runif(n, min, max)`
+
+::: 
 
 ```{r}
 #| echo: true
@@ -1317,16 +1321,19 @@ rep(fator, each = 5)
 
 runif(100, 1, 25)
 
-
 ```
 
 
-## Sequencias, distribuições e amostragenws
+## Sequencias, distribuições e amostragens
+
+::: {.texto-menor}
 
 - Podemos criar sequencias com distribuição normal, com média e desvio conhecidos
 - rnorm()
   - Cria uma sequencia com `> rnorm(n, mean = , sd = )`
 - O R possui funções que podem criar diversos tipos de distribuição diferentes
+
+:::
 
 :::: {.columns}
 
@@ -1355,7 +1362,7 @@ hist(distnorm)
 
 ::::
 
-## Sequencias, distribuições e amostragenws
+## Sequencias, distribuições e amostragens
 
 - Podemos sortear valores dentro de um vetor
   - `sample(x, size = , replace = )`

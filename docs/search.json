@@ -3959,28 +3959,28 @@
     "href": "aulas/slides/aula-R-4-vetores.html#sequencias-distribuições-e-amostragens",
     "title": "Estatística Básica utilizando R",
     "section": "Sequencias, distribuições e amostragens",
-    "text": "Sequencias, distribuições e amostragens\n\n“:” - nos ja vimos este\n“seq()”\n\ncria sequências de números seq(inicio, fim, intervalo)\n\n“rep()”\n\nrepete um valor ou um vetor &gt; rep(valor, vezes)\n\n“runif()”\n\ngera números aleatórios de uma distribuição uniforme &gt; runif(n, min, max)\n\n\n\nseq(1, 10)\nseq(1, 10, 2)\n\nnumeros &lt;- c(1:3)\nrep(numeros, 3)\nrep(numeros, 1:3)\n\nfator &lt;- c(\"A\", \"B\", \"C\")\nrep(fator, each = 5)\n\nrunif(100, 1, 25)"
+    "text": "Sequencias, distribuições e amostragens\n\n\n“:” - nos ja vimos este\n“seq()”\n\ncria sequências de números seq(inicio, fim, intervalo)\n\n“rep()”\n\nrepete um valor ou um vetor &gt; rep(valor, vezes)\n\n“runif()”\n\ngera números aleatórios de uma distribuição uniforme &gt; runif(n, min, max)\n\n\n\n\nseq(1, 10)\nseq(1, 10, 2)\n\nnumeros &lt;- c(1:3)\nrep(numeros, 3)\nrep(numeros, 1:3)\n\nfator &lt;- c(\"A\", \"B\", \"C\")\nrep(fator, each = 5)\n\nrunif(100, 1, 25)"
   },
   {
     "objectID": "aulas/slides/aula-R-4-vetores.html#sequencias-distribuições-e-amostragenws",
     "href": "aulas/slides/aula-R-4-vetores.html#sequencias-distribuições-e-amostragenws",
     "title": "Estatística Básica utilizando R",
     "section": "Sequencias, distribuições e amostragenws",
-    "text": "Sequencias, distribuições e amostragenws\n\nPodemos criar sequencias com distribuição normal, com média e desvio conhecidos\nrnorm()\n\nCria uma sequencia com &gt; rnorm(n, mean = , sd = )\n\nO R possui funções que podem criar diversos tipos de distribuição diferentes\n\n\n\n\ndistnorm &lt;- rnorm(100, mean = 25, sd = 10)\ndistnorm\n\n  [1] 17.081032 19.561967 34.590324 10.147682 19.505648  4.427268 21.826768\n  [8] 13.671276 13.714717 31.565568 23.100996 37.909101 17.968977 26.844779\n [15] 32.853713 26.924654 17.360859 29.322131 19.172713 10.519161 12.676954\n [22] 17.429305 17.467810 28.537136 26.487296 27.796937 31.203960 -5.302708\n [29]  6.459013 30.655248 30.719183 16.333287  7.078035 28.311178 11.383085\n [36] 25.724208 33.634892 15.456030 22.333032 19.124565 30.909668 10.349636\n [43] 10.771628 32.918673 27.684269 35.126828 17.186877 17.448886 35.205138\n [50] 15.591731 34.036756 21.642353 30.768283  1.932533 41.586288 20.837487\n [57] 25.460439 32.809960 34.603107 29.593031 28.500482 21.808293 44.610827\n [64] 40.348077 17.029492 39.973316 38.534627 15.241712 16.898282 29.330654\n [71] 23.282803 12.337178 34.997324 22.190928 20.142415 25.780330 22.468911\n [78] 19.147722 25.484646 32.290065 22.858369 12.825680  5.934951  8.928289\n [85] 19.731782 22.232419 43.371431 35.858168 17.168965 27.049490 17.243942\n [92] 32.282293 23.422289 38.959030 23.645289 30.002003 18.843657 24.518771\n [99] 10.611175 29.143185\n\n\n\nPodemos observar graficamente"
+    "text": "Sequencias, distribuições e amostragenws\n\nPodemos sortear valores dentro de um vetor\n\nsample(x, size = , replace = )\n\n\n\nd6 &lt;- c(1:6)\nsample(d6, 3)\n\n[1] 1 5 3\n\nmoeda &lt;- c(\"cara\", \"coroa\")\njogo &lt;- sample(moeda, 100, replace = TRUE)\n\n#jogando na Sena\nsena &lt;- c(1:60)\n\nsample(sena, 6, replace = FALSE)\n\n[1] 24 21  8 42 40 11"
   },
   {
     "objectID": "aulas/slides/aula-R-4-vetores.html#sequencias-distribuições-e-amostragenws-1",
     "href": "aulas/slides/aula-R-4-vetores.html#sequencias-distribuições-e-amostragenws-1",
     "title": "Estatística Básica utilizando R",
     "section": "Sequencias, distribuições e amostragenws",
-    "text": "Sequencias, distribuições e amostragenws\n\nPodemos sortear valores dentro de um vetor\n\nsample(x, size = , replace = )\n\n\n\nd6 &lt;- c(1:6)\nsample(d6, 3)\n\n[1] 2 1 5\n\nmoeda &lt;- c(\"cara\", \"coroa\")\njogo &lt;- sample(moeda, 100, replace = TRUE)\n\n#jogando na Sena\nsena &lt;- c(1:60)\n\nsample(sena, 6, replace = FALSE)\n\n[1] 56 13 23 36 47 22"
+    "text": "Sequencias, distribuições e amostragenws\n\nPodemos sortear valores dentro de um vetor\n\nsample(x, size = , replace = )\n\n\n\nd6 &lt;- c(1:6)\nsample(d6, 3)\n\n[1] 5 6 1\n\nmoeda &lt;- c(\"cara\", \"coroa\")\njogo &lt;- sample(moeda, 100, replace = TRUE)\n\n#jogando na Sena\nsena &lt;- c(1:60)\n\nsample(sena, 6, replace = FALSE)\n\n[1] 45 48 11  8 56 58"
   },
   {
     "objectID": "aulas/slides/aula-R-4-vetores.html#algumas-funções-importantes",
     "href": "aulas/slides/aula-R-4-vetores.html#algumas-funções-importantes",
     "title": "Estatística Básica utilizando R",
     "section": "Algumas funções importantes",
-    "text": "Algumas funções importantes\n\nx &lt;- rnorm(10)\nsort(x) #ordena os valores de x.\n\n [1] -1.35676581 -0.69980737 -0.63489576 -0.08721925 -0.02829917  0.34576236\n [7]  0.79155641  0.86155256  0.91066746  1.65344863\n\nsort(x, decreasing = T) #organiza em ordem decrescente\n\n [1]  1.65344863  0.91066746  0.86155256  0.79155641  0.34576236 -0.02829917\n [7] -0.08721925 -0.63489576 -0.69980737 -1.35676581\n\norder(x) #retorna os postos de x\n\n [1]  8  2  4 10  7  9  6  5  1  3\n\n\nCrie o objeto y com os valores de x ordenados e veja os postos"
+    "text": "Algumas funções importantes\n\nx &lt;- rnorm(10)\nsort(x) #ordena os valores de x.\n\n [1] -1.49707194 -0.43454769 -0.22871574 -0.02470874  0.12016771  0.50014746\n [7]  0.68407399  0.79974804  0.89250057  0.94839150\n\nsort(x, decreasing = T) #organiza em ordem decrescente\n\n [1]  0.94839150  0.89250057  0.79974804  0.68407399  0.50014746  0.12016771\n [7] -0.02470874 -0.22871574 -0.43454769 -1.49707194\n\norder(x) #retorna os postos de x\n\n [1]  1  8  9  6  2  3  5 10  7  4\n\n\nCrie o objeto y com os valores de x ordenados e veja os postos"
   },
   {
     "objectID": "aulas/slides/aula-R-4-vetores.html#algumas-funções-importantes-1",
@@ -3995,5 +3995,19 @@
     "title": "Estatística Básica utilizando R",
     "section": "Vetores",
     "text": "Vetores\nLista de Exercícios 1"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#sequencias-distribuições-e-amostragens-1",
+    "href": "aulas/slides/aula-R-4-vetores.html#sequencias-distribuições-e-amostragens-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "Sequencias, distribuições e amostragens",
+    "text": "Sequencias, distribuições e amostragens\n\n\nPodemos criar sequencias com distribuição normal, com média e desvio conhecidos\nrnorm()\n\nCria uma sequencia com &gt; rnorm(n, mean = , sd = )\n\nO R possui funções que podem criar diversos tipos de distribuição diferentes\n\n\n\n\n\ndistnorm &lt;- rnorm(100, mean = 25, sd = 10)\ndistnorm\n\n  [1] 32.314839 29.120740 32.718892 30.478932  5.853063 26.374348 32.862763\n  [8] 33.849564 29.957731 -0.308164 29.744132 44.609945 35.087440 21.320851\n [15] 10.426451 25.420793 24.679257 37.988781 17.618819 29.372169 20.061494\n [22] 35.178903 13.037884 25.468221 17.829899 32.419414 19.335578 21.568087\n [29] 24.953170 23.864436 23.594536 35.667856 25.330198 -5.082451 31.991956\n [36] 32.259717 26.500406 31.960167 39.395287 19.166321 34.719188 17.616632\n [43] 25.647413 25.988869 19.614360 18.845260 28.398411 30.661901 40.690496\n [50] 26.947452 14.010700 35.495315 22.458766 28.972791 25.189489 11.122240\n [57] 24.850208 15.163376 22.722113 22.868882 24.025667 37.997647 33.076005\n [64] 25.105825 33.815118 32.139143 28.192552 14.121906  7.387452 21.420390\n [71] 23.821194 37.294122 17.206513 21.692271 30.907792 35.394748 22.812408\n [78] 26.687105 33.208474 38.166930 18.941387 20.836430 13.047730 22.980702\n [85] 24.440766 18.478172 31.376778 24.345050 23.770037 28.153158 16.882095\n [92] 14.557003 19.138206 39.622738 26.324574 39.531639 38.514357 20.849084\n [99] 35.093614 23.558882\n\n\n\nPodemos observar graficamente"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-4-vetores.html#sequencias-distribuições-e-amostragens-2",
+    "href": "aulas/slides/aula-R-4-vetores.html#sequencias-distribuições-e-amostragens-2",
+    "title": "Estatística Básica utilizando R",
+    "section": "Sequencias, distribuições e amostragens",
+    "text": "Sequencias, distribuições e amostragens\n\nPodemos sortear valores dentro de um vetor\n\nsample(x, size = , replace = )\n\n\n\nd6 &lt;- c(1:6)\nsample(d6, 3)\n\n[1] 1 5 6\n\nmoeda &lt;- c(\"cara\", \"coroa\")\njogo &lt;- sample(moeda, 100, replace = TRUE)\n\n#jogando na Sena\nsena &lt;- c(1:60)\n\nsample(sena, 6, replace = FALSE)\n\n[1]  5 57 56 30 13 46"
   }
 ]

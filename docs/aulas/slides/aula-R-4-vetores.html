@@ -1102,6 +1102,7 @@ Utilizando “[ ]” podemos designar a posição dos elementos</p>
 </section>
 <section id="sequencias-distribuições-e-amostragens" class="slide level2">
 <h2>Sequencias, distribuições e amostragens</h2>
+<div class="texto-menor">
 <ul>
 <li>“:” - nos ja vimos este</li>
 <li>“seq()”
@@ -1117,6 +1118,7 @@ Utilizando “[ ]” podemos designar a posição dos elementos</p>
 <li>gera números aleatórios de uma distribuição uniforme <code>&gt; runif(n, min, max)</code></li>
 </ul></li>
 </ul>
+</div>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb99"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb99-1"><a></a><span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">10</span>)</span>
 <span id="cb99-2"><a></a><span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">2</span>)</span>
@@ -1131,8 +1133,9 @@ Utilizando “[ ]” podemos designar a posição dos elementos</p>
 <span id="cb99-11"><a></a><span class="fu">runif</span>(<span class="dv">100</span>, <span class="dv">1</span>, <span class="dv">25</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="sequencias-distribuições-e-amostragenws" class="slide level2">
-<h2>Sequencias, distribuições e amostragenws</h2>
+<section id="sequencias-distribuições-e-amostragens-1" class="slide level2">
+<h2>Sequencias, distribuições e amostragens</h2>
+<div class="texto-menor">
 <ul>
 <li>Podemos criar sequencias com distribuição normal, com média e desvio conhecidos</li>
 <li>rnorm()
@@ -1141,27 +1144,28 @@ Utilizando “[ ]” podemos designar a posição dos elementos</p>
 </ul></li>
 <li>O R possui funções que podem criar diversos tipos de distribuição diferentes</li>
 </ul>
+</div>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb100"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb100-1"><a></a>distnorm <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">25</span>, <span class="at">sd =</span> <span class="dv">10</span>)</span>
 <span id="cb100-2"><a></a>distnorm</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>  [1] 17.081032 19.561967 34.590324 10.147682 19.505648  4.427268 21.826768
-  [8] 13.671276 13.714717 31.565568 23.100996 37.909101 17.968977 26.844779
- [15] 32.853713 26.924654 17.360859 29.322131 19.172713 10.519161 12.676954
- [22] 17.429305 17.467810 28.537136 26.487296 27.796937 31.203960 -5.302708
- [29]  6.459013 30.655248 30.719183 16.333287  7.078035 28.311178 11.383085
- [36] 25.724208 33.634892 15.456030 22.333032 19.124565 30.909668 10.349636
- [43] 10.771628 32.918673 27.684269 35.126828 17.186877 17.448886 35.205138
- [50] 15.591731 34.036756 21.642353 30.768283  1.932533 41.586288 20.837487
- [57] 25.460439 32.809960 34.603107 29.593031 28.500482 21.808293 44.610827
- [64] 40.348077 17.029492 39.973316 38.534627 15.241712 16.898282 29.330654
- [71] 23.282803 12.337178 34.997324 22.190928 20.142415 25.780330 22.468911
- [78] 19.147722 25.484646 32.290065 22.858369 12.825680  5.934951  8.928289
- [85] 19.731782 22.232419 43.371431 35.858168 17.168965 27.049490 17.243942
- [92] 32.282293 23.422289 38.959030 23.645289 30.002003 18.843657 24.518771
- [99] 10.611175 29.143185</code></pre>
+<pre><code>  [1] 32.314839 29.120740 32.718892 30.478932  5.853063 26.374348 32.862763
+  [8] 33.849564 29.957731 -0.308164 29.744132 44.609945 35.087440 21.320851
+ [15] 10.426451 25.420793 24.679257 37.988781 17.618819 29.372169 20.061494
+ [22] 35.178903 13.037884 25.468221 17.829899 32.419414 19.335578 21.568087
+ [29] 24.953170 23.864436 23.594536 35.667856 25.330198 -5.082451 31.991956
+ [36] 32.259717 26.500406 31.960167 39.395287 19.166321 34.719188 17.616632
+ [43] 25.647413 25.988869 19.614360 18.845260 28.398411 30.661901 40.690496
+ [50] 26.947452 14.010700 35.495315 22.458766 28.972791 25.189489 11.122240
+ [57] 24.850208 15.163376 22.722113 22.868882 24.025667 37.997647 33.076005
+ [64] 25.105825 33.815118 32.139143 28.192552 14.121906  7.387452 21.420390
+ [71] 23.821194 37.294122 17.206513 21.692271 30.907792 35.394748 22.812408
+ [78] 26.687105 33.208474 38.166930 18.941387 20.836430 13.047730 22.980702
+ [85] 24.440766 18.478172 31.376778 24.345050 23.770037 28.153158 16.882095
+ [92] 14.557003 19.138206 39.622738 26.324574 39.531639 38.514357 20.849084
+ [99] 35.093614 23.558882</code></pre>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
@@ -1177,8 +1181,8 @@ Utilizando “[ ]” podemos designar a posição dos elementos</p>
 </div>
 </div></div>
 </section>
-<section id="sequencias-distribuições-e-amostragenws-1" class="slide level2">
-<h2>Sequencias, distribuições e amostragenws</h2>
+<section id="sequencias-distribuições-e-amostragens-2" class="slide level2">
+<h2>Sequencias, distribuições e amostragens</h2>
 <ul>
 <li>Podemos sortear valores dentro de um vetor
 <ul>
@@ -1189,7 +1193,7 @@ Utilizando “[ ]” podemos designar a posição dos elementos</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb102"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb102-1"><a></a>d6 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>)</span>
 <span id="cb102-2"><a></a><span class="fu">sample</span>(d6, <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 2 1 5</code></pre>
+<pre><code>[1] 1 5 6</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb104"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb104-1"><a></a>moeda <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"cara"</span>, <span class="st">"coroa"</span>)</span>
 <span id="cb104-2"><a></a>jogo <span class="ot">&lt;-</span> <span class="fu">sample</span>(moeda, <span class="dv">100</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
@@ -1199,7 +1203,7 @@ Utilizando “[ ]” podemos designar a posição dos elementos</p>
 <span id="cb104-6"><a></a></span>
 <span id="cb104-7"><a></a><span class="fu">sample</span>(sena, <span class="dv">6</span>, <span class="at">replace =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 56 13 23 36 47 22</code></pre>
+<pre><code>[1]  5 57 56 30 13 46</code></pre>
 </div>
 </div>
 </section>
@@ -1209,17 +1213,17 @@ Utilizando “[ ]” podemos designar a posição dos elementos</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb106"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb106-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>)</span>
 <span id="cb106-2"><a></a><span class="fu">sort</span>(x) <span class="co">#ordena os valores de x.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] -1.35676581 -0.69980737 -0.63489576 -0.08721925 -0.02829917  0.34576236
- [7]  0.79155641  0.86155256  0.91066746  1.65344863</code></pre>
+<pre><code> [1] -1.49707194 -0.43454769 -0.22871574 -0.02470874  0.12016771  0.50014746
+ [7]  0.68407399  0.79974804  0.89250057  0.94839150</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb108"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb108-1"><a></a><span class="fu">sort</span>(x, <span class="at">decreasing =</span> T) <span class="co">#organiza em ordem decrescente</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1]  1.65344863  0.91066746  0.86155256  0.79155641  0.34576236 -0.02829917
- [7] -0.08721925 -0.63489576 -0.69980737 -1.35676581</code></pre>
+<pre><code> [1]  0.94839150  0.89250057  0.79974804  0.68407399  0.50014746  0.12016771
+ [7] -0.02470874 -0.22871574 -0.43454769 -1.49707194</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb110"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb110-1"><a></a><span class="fu">order</span>(x) <span class="co">#retorna os postos de x</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1]  8  2  4 10  7  9  6  5  1  3</code></pre>
+<pre><code> [1]  1  8  9  6  2  3  5 10  7  4</code></pre>
 </div>
 </div>
 <p>Crie o objeto y com os valores de x ordenados e veja os postos</p>
