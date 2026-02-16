@@ -335,3 +335,17 @@
 .table-invisible td {
   border: none !important;
 }
+
+
+/* Slide com código centralizado */
+.reveal .codigo-central {
+  display: flex;
+  justify-content: center;   /* centraliza horizontal */
+  align-items: center;       /* centraliza vertical */
+  height: 80%;
+}
+
+/* Código maior para destaque */
+.reveal .codigo-central pre code.sourceCode {
+  font-size: 36px;           /* maior que o padrão */
+}

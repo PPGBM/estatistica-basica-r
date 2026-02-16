@@ -4009,5 +4009,201 @@
     "title": "Estatística Básica utilizando R",
     "section": "Sequencias, distribuições e amostragens",
     "text": "Sequencias, distribuições e amostragens\n\nPodemos sortear valores dentro de um vetor\n\nsample(x, size = , replace = )\n\n\n\nd6 &lt;- c(1:6)\nsample(d6, 3)\n\n[1] 1 5 6\n\nmoeda &lt;- c(\"cara\", \"coroa\")\njogo &lt;- sample(moeda, 100, replace = TRUE)\n\n#jogando na Sena\nsena &lt;- c(1:60)\n\nsample(sena, 6, replace = FALSE)\n\n[1]  5 57 56 30 13 46"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes-objetos.html#mais-sobre-funções",
+    "href": "aulas/slides/aula-R-5-funcoes-objetos.html#mais-sobre-funções",
+    "title": "Estatística Básica utilizando R",
+    "section": "Mais sobre funções",
+    "text": "Mais sobre funções\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes-objetos.html#mais-sobre-objetos",
+    "href": "aulas/slides/aula-R-5-funcoes-objetos.html#mais-sobre-objetos",
+    "title": "Estatística Básica utilizando R",
+    "section": "Mais sobre objetos",
+    "text": "Mais sobre objetos"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes-objetos.html#funções",
+    "href": "aulas/slides/aula-R-5-funcoes-objetos.html#funções",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\nfunção(parâmetros)\nJá utilizamos algumas funções\n\ncitation()\ndemo(graphics)\n\nPodem ter “0” ou mais parâmetros\n\ncitation()\ncitation(\"MASS\") citar determinado pacote\nrep(1:3, each = 3)\n\ncria sequencia de 1 a 3, com três repetições de cada"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-1",
+    "href": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\nPodemos criar nossas próprias funções\n\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-2",
+    "href": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-2",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\nPodemos criar nossas próprias funções\n\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-3",
+    "href": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-3",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\nPodemos criar nossas próprias funções\n\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-4",
+    "href": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-4",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\nPodemos criar nossas próprias funções\n\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-5",
+    "href": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-5",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\n\n\nPodemos criar nossas próprias funções\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }\n\n\nExemplo\n\n\ndobro &lt;- function(x){\n\n            exemplo &lt;- x*2\n\n                                 }"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-6",
+    "href": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-6",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\n\n\nPodemos criar nossas próprias funções\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }\n\n\nExemplo (Verifique o resultado)\n\n\ndobro &lt;- function(x){\n\n            exemplo &lt;- x*2\n\n                                 }"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-7",
+    "href": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-7",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\n\n\nPodemos criar nossas próprias funções\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }\n\n\nExemplo\n\n\ndobro &lt;- function(x){\n\n            exemplo &lt;- x*2\n\n                                 }\n\n\n\n\n\n\n\n\n\n\nCom “return()”\n\n\ndobro &lt;- function(x){\n\n            exemplo &lt;- x*2\n            return(exemplo)\n                                 }"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-8",
+    "href": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-8",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\n\n\nPodemos criar nossas próprias funções\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }\n\n\nExercício:\n\nFaça uma função para calcular a média de um vetor"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-9",
+    "href": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-9",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\n\n\nPodemos criar nossas próprias funções\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }\n\n\nExercício:\n\nFaça uma função para calcular a média de um vetor\n\n\n\nmedia &lt;- function(x){\n\n            valor &lt;- sum(x)/length(x)\n\n                                 }"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes-objetos.html#linhas-extras",
+    "href": "aulas/slides/aula-R-5-funcoes-objetos.html#linhas-extras",
+    "title": "Estatística Básica utilizando R",
+    "section": "LINHAS EXTRAS",
+    "text": "LINHAS EXTRAS"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-10",
+    "href": "aulas/slides/aula-R-5-funcoes-objetos.html#funções-10",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\n\n\nPodemos criar nossas próprias funções\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }\n\n\nQual a diferença entre as duas?\n\n\nmedia &lt;- function(x){\n\n            valor &lt;- sum(x)/length(x)\n            return(valor)\n\n                                 }\n\n\n\n\n\n\n\n\n\n\n\n\nmedia &lt;- sum(x)/length(x)\n\nmedia"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes-objetos.html#section",
+    "href": "aulas/slides/aula-R-5-funcoes-objetos.html#section",
+    "title": "Estatística Básica utilizando R",
+    "section": "",
+    "text": "Desafio\n\nCrie um vetor “d6” que represente um dados de 6 lados\nCrie uma função que jogue o dado “d6” duas vezes e retorne o resultado"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes.html#funções",
+    "href": "aulas/slides/aula-R-5-funcoes.html#funções",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\nfunção(parâmetros)\nJá utilizamos algumas funções\n\ncitation()\ndemo(graphics)\n\nPodem ter “0” ou mais parâmetros\n\ncitation()\ncitation(\"MASS\") citar determinado pacote\nrep(1:3, each = 3)\n\ncria sequencia de 1 a 3, com três repetições de cada"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes.html#funções-1",
+    "href": "aulas/slides/aula-R-5-funcoes.html#funções-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\nPodemos criar nossas próprias funções\n\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes.html#funções-2",
+    "href": "aulas/slides/aula-R-5-funcoes.html#funções-2",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\nPodemos criar nossas próprias funções\n\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes.html#funções-3",
+    "href": "aulas/slides/aula-R-5-funcoes.html#funções-3",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\nPodemos criar nossas próprias funções\n\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes.html#funções-4",
+    "href": "aulas/slides/aula-R-5-funcoes.html#funções-4",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\nPodemos criar nossas próprias funções\n\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes.html#funções-5",
+    "href": "aulas/slides/aula-R-5-funcoes.html#funções-5",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\n\n\nPodemos criar nossas próprias funções\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }\n\n\nExemplo\n\n\ndobro &lt;- function(x){\n\n            exemplo &lt;- x*2\n\n                                 }"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes.html#funções-6",
+    "href": "aulas/slides/aula-R-5-funcoes.html#funções-6",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\n\n\nPodemos criar nossas próprias funções\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }\n\n\nExemplo (Verifique o resultado)\n\n\ndobro &lt;- function(x){\n\n            exemplo &lt;- x*2\n\n                                 }"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes.html#funções-7",
+    "href": "aulas/slides/aula-R-5-funcoes.html#funções-7",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\n\n\nPodemos criar nossas próprias funções\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }\n\n\nExemplo\n\n\ndobro &lt;- function(x){\n\n            exemplo &lt;- x*2\n\n                                 }\n\n\n\n\n\n\n\n\n\n\nCom “return()”\n\n\ndobro &lt;- function(x){\n\n            exemplo &lt;- x*2\n            return(exemplo)\n                                 }"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes.html#funções-8",
+    "href": "aulas/slides/aula-R-5-funcoes.html#funções-8",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\n\n\nPodemos criar nossas próprias funções\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }\n\n\nExercício:\n\nFaça uma função para calcular a média de um vetor"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes.html#funções-9",
+    "href": "aulas/slides/aula-R-5-funcoes.html#funções-9",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\n\n\nPodemos criar nossas próprias funções\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }\n\n\nExercício:\n\nFaça uma função para calcular a média de um vetor\n\n\n\nmedia &lt;- function(x){\n\n            valor &lt;- sum(x)/length(x)\n\n                                 }"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes.html#funções-10",
+    "href": "aulas/slides/aula-R-5-funcoes.html#funções-10",
+    "title": "Estatística Básica utilizando R",
+    "section": "Funções",
+    "text": "Funções\n\n\n\nPodemos criar nossas próprias funções\n\n\nnome_da_função &lt;- function(x){\n\n                \"o que você quiser fazer\"\n\n                                 }\n\n\nQual a diferença entre as duas?\n\n\nmedia &lt;- function(x){\n\n            valor &lt;- sum(x)/length(x)\n            return(valor)\n\n                                 }\n\n\n\n\n\n\n\n\n\n\n\n\nmedia &lt;- sum(x)/length(x)\n\nmedia"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes.html#section",
+    "href": "aulas/slides/aula-R-5-funcoes.html#section",
+    "title": "Estatística Básica utilizando R",
+    "section": "",
+    "text": "Desafio\n\nCrie um vetor “d6” que represente um dados de 6 lados\nCrie uma função que jogue o dado “d6” duas vezes e retorne o resultado"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-5-funcoes.html#linhas-extras",
+    "href": "aulas/slides/aula-R-5-funcoes.html#linhas-extras",
+    "title": "Estatística Básica utilizando R",
+    "section": "LINHAS EXTRAS",
+    "text": "LINHAS EXTRAS"
   }
 ]

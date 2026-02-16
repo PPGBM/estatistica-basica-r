@@ -1,0 +1,561 @@
+---
+title: "Estatística Básica utilizando R"
+subtitle: |
+  - Mais sobre fuinções
+author: "Dr. Alexandre Dias Kassuga"
+format:
+  revealjs:
+    theme: simple
+    css: 
+      - slides.css
+      - footer.css
+    highlight-style: monokai
+    slide-number: true
+    width: 1280
+    height: 720
+---
+
+## Funções
+
+- função(parâmetros)
+
+- Já utilizamos algumas funções
+  - `citation()`
+  - `demo(graphics)`
+
+- Podem ter "0" ou mais parâmetros
+  - `citation()`
+  - `citation("MASS")` citar determinado pacote
+  - `rep(1:3, each = 3)` 
+    - cria sequencia de 1 a 3, com três repetições de cada
+
+
+
+## Funções
+
+- Podemos criar nossas próprias funções
+
+::: {.codigo-central}
+
+```{r}  
+#| echo: true
+#| output: false
+
+nome_da_função <- function(x){
+
+				"o que você quiser fazer"
+
+	     				         }
+
+
+```
+
+:::
+
+
+
+
+## Funções
+
+- Podemos criar nossas próprias funções
+
+::: {.codigo-central}
+
+```{r}  
+#| echo: true
+#| output: false
+
+nome_da_função <- function(x){
+
+				"o que você quiser fazer"
+
+	     				         }
+
+
+```
+
+:::
+
+
+::: {.absolute top="210" left="535"}
+
+![](figuras/funcoes-1.png){width="75%"}
+
+:::
+
+
+
+
+## Funções
+
+- Podemos criar nossas próprias funções
+
+::: {.codigo-central}
+
+```{r}  
+#| echo: true
+#| output: false
+
+nome_da_função <- function(x){
+
+				"o que você quiser fazer"
+
+	     				         }
+
+
+```
+
+:::
+
+
+::: {.absolute top="280" left="230"}
+
+![](figuras/funcoes-2.png){width="50%"}
+
+:::
+
+
+
+
+
+
+
+
+
+## Funções
+
+- Podemos criar nossas próprias funções
+
+::: {.codigo-central}
+
+```{r}  
+#| echo: true
+#| output: false
+
+nome_da_função <- function(x){
+
+				"o que você quiser fazer"
+
+	     				         }
+
+
+```
+
+:::
+
+
+::: {.absolute top="200" left="400"}
+
+![](figuras/funcoes-3-1.png){width="50%"}
+
+:::
+
+
+::: {.absolute top="375" left="275"}
+
+![](figuras/funcoes-3-2.png){width="75%"}
+
+:::
+
+
+::: {.absolute top="490" left="880"}
+
+![](figuras/funcoes-3-3.png){width="75%"}
+
+:::
+
+## Funções
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+- Podemos criar nossas próprias funções
+
+```{r}  
+#| echo: true
+#| output: false
+
+nome_da_função <- function(x){
+
+				"o que você quiser fazer"
+
+	     				         }
+
+
+```
+
+- Exemplo
+
+```{r}  
+#| echo: true
+#| output: false
+
+dobro <- function(x){
+
+		    exemplo <- x*2
+
+	     				         }
+
+
+```
+
+:::
+
+::: {.column width="50%"}
+
+:::
+
+::::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Funções
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+- Podemos criar nossas próprias funções
+
+```{r}  
+#| echo: true
+#| output: false
+
+nome_da_função <- function(x){
+
+				"o que você quiser fazer"
+
+	     				         }
+
+
+```
+
+- Exemplo (Verifique o resultado)
+
+```{r}  
+#| echo: true
+#| output: false
+
+dobro <- function(x){
+
+		    exemplo <- x*2
+
+	     				         }
+
+
+```
+
+:::
+
+::: {.column width="50%"}
+
+:::
+
+::::
+
+
+
+
+## Funções
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+- Podemos criar nossas próprias funções
+
+```{r}  
+#| echo: true
+#| output: false
+
+nome_da_função <- function(x){
+
+				"o que você quiser fazer"
+
+	     				         }
+
+
+```
+
+- Exemplo
+
+```{r}  
+#| echo: true
+#| output: false
+
+dobro <- function(x){
+
+		    exemplo <- x*2
+
+	     				         }
+
+
+```
+
+:::
+
+::: {.column width="50%"}
+
+\
+\
+\
+\
+\
+\
+
+- Com "return()"
+
+```{r}  
+#| echo: true
+#| output: false
+
+dobro <- function(x){
+
+		    exemplo <- x*2
+		    return(exemplo)
+	     				         }
+
+
+```
+
+
+:::
+
+::::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Funções
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+- Podemos criar nossas próprias funções
+
+```{r}  
+#| echo: true
+#| output: false
+
+nome_da_função <- function(x){
+
+				"o que você quiser fazer"
+
+	     				         }
+
+
+```
+
+- Exercício: 
+  - Faça uma função para calcular a média de um vetor
+
+
+```{r}  
+#| echo: false
+#| output: false
+
+media <- function(x){
+
+		    valor <- sum(x)/length(x)
+
+	     				         }
+
+
+```
+
+:::
+
+::: {.column width="50%"}
+
+
+
+:::
+
+::::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Funções
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+- Podemos criar nossas próprias funções
+
+```{r}  
+#| echo: true
+#| output: false
+
+nome_da_função <- function(x){
+
+				"o que você quiser fazer"
+
+	     				         }
+
+
+```
+
+- Exercício: 
+  - Faça uma função para calcular a média de um vetor
+
+
+```{r}  
+#| echo: true
+#| output: false
+
+media <- function(x){
+
+		    valor <- sum(x)/length(x)
+
+	     				         }
+
+
+```
+
+:::
+
+::: {.column width="50%"}
+
+	     			
+:::
+
+::::
+
+
+
+## Funções
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+- Podemos criar nossas próprias funções
+
+```{r}  
+#| echo: true
+#| output: false
+
+nome_da_função <- function(x){
+
+				"o que você quiser fazer"
+
+	     				         }
+
+
+```
+
+- Qual a diferença entre as duas?
+
+
+```{r}  
+#| echo: true
+#| output: false
+
+media <- function(x){
+
+		    valor <- sum(x)/length(x)
+		    return(valor)
+
+	     				         }
+
+
+```
+
+:::
+
+::: {.column width="50%"}
+
+\
+\
+\
+\
+\
+\
+\
+\
+
+
+```{r}  
+#| echo: false
+#| output: false
+
+x <- c(1,2,3,4,5)
+
+```
+
+```{r}  
+#| echo: true
+#| output: false
+
+media <- sum(x)/length(x)
+
+media
+
+```
+
+
+:::
+
+::::
+
+
+## 
+
+![](figuras/desafio.png){.nostretch fig-align="right" width="50%" }
+
+Desafio
+
+- Crie um vetor “d6” que represente um dados de 6 lados
+- Crie uma função que jogue o dado “d6” duas vezes e retorne o resultado
+

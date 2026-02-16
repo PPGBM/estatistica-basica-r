@@ -133,5 +133,11 @@
   },
   "aulas/slides/aula-R-4-vetores.qmd": {
     "aula-R-4-vetores.html": "5d6e69e5"
+  },
+  "aulas/slides/aula-R-5-funcoes-objetos.qmd": {
+    "aula-R-5-funcoes-objetos.html": "b933adb3"
+  },
+  "aulas/slides/aula-R-5-funcoes.qmd": {
+    "aula-R-5-funcoes.html": "d71c6e93"
   }
 }
