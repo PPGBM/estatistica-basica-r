@@ -4217,7 +4217,126 @@
     "objectID": "aulas/slides/aula-R-6-objetos.html#mais-sobre-objetos",
     "href": "aulas/slides/aula-R-6-objetos.html#mais-sobre-objetos",
     "title": "Estatística Básica utilizando R",
-    "section": "",
-    "text": "o R trabalha com diferentes tipos de objetos e estruturas"
+    "section": "Mais sobre objetos",
+    "text": "Mais sobre objetos\nO R trabalha com diferentes tipos de objetos e estruturas\n\n\n\nEstruturas\n\nVetores\nMatrizes\nArrays\nListas\nData frames"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#mais-sobre-objetos-1",
+    "href": "aulas/slides/aula-R-6-objetos.html#mais-sobre-objetos-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "Mais sobre objetos",
+    "text": "Mais sobre objetos\nO R trabalha com diferentes tipos de objetos e estruturas\n\n\n\nEstruturas\n\nVetores\nMatrizes\nArrays\nListas\nData frames\n\n\n\n\nEstrutura mais simples em R\n\nPodem conter um único valor\n\n\n\nx &lt;- 10\nx\n\n[1] 10\n\n\n\nOu múltiplos valores\n\n\nx &lt;- c(1, 2, 3, 4, 5)\nx\n\n[1] 1 2 3 4 5"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#linhas-extras",
+    "href": "aulas/slides/aula-R-6-objetos.html#linhas-extras",
+    "title": "Estatística Básica utilizando R",
+    "section": "linhas extras",
+    "text": "linhas extras"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#mais-sobre-objetos-2",
+    "href": "aulas/slides/aula-R-6-objetos.html#mais-sobre-objetos-2",
+    "title": "Estatística Básica utilizando R",
+    "section": "Mais sobre objetos",
+    "text": "Mais sobre objetos\nO R trabalha com diferentes tipos de objetos e estruturas\n\n\n\nEstruturas\n\nVetores\nMatrizes\nArrays\nListas\nData frames\n\n\n\n\nDados organizados em linhas x colunas\n\nDados de um único tipo\n\nNuméricos, lógicos,…\n\nMuito importante para análises multivariadas"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#mais-sobre-objetos-3",
+    "href": "aulas/slides/aula-R-6-objetos.html#mais-sobre-objetos-3",
+    "title": "Estatística Básica utilizando R",
+    "section": "Mais sobre objetos",
+    "text": "Mais sobre objetos\no R trabalha com diferentes tipos de objetos e estruturas\n\n\n\nEstruturas\n\nVetores\nMatrizes\nArrays\nListas\nData frames\n\n\n\n\nSão objetos n-dimensionais\nComportam-se como matrizes\n\nUm tipo de dados\n\nNão customizável como a matriz"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#mais-sobre-objetos-4",
+    "href": "aulas/slides/aula-R-6-objetos.html#mais-sobre-objetos-4",
+    "title": "Estatística Básica utilizando R",
+    "section": "Mais sobre objetos",
+    "text": "Mais sobre objetos\nO R trabalha com diferentes tipos de objetos e estruturas\n\n\n\nEstruturas\n\nVetores\nMatrizes\nArrays\nListas\nData frames\n\n\n\n\nSemelhantes a vetores\nAgrupam dados em organização unidimensional\nNão agrupam valores individuais\nAgrupam objetos\n\nVetores\nOutras listas"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#mais-sobre-objetos-5",
+    "href": "aulas/slides/aula-R-6-objetos.html#mais-sobre-objetos-5",
+    "title": "Estatística Básica utilizando R",
+    "section": "Mais sobre objetos",
+    "text": "Mais sobre objetos\nO R trabalha com diferentes tipos de objetos e estruturas\n\n\n\nEstruturas\n\nVetores\nMatrizes\nArrays\nListas\nData frames\n\n\n\n\nVersão bidimensional da lista\nDados organizados em linhas e colunas\nDados de tipos diferentes\nCada coluna deve conter o mesmo tipo de dado\nCada linha é uma “observação”\nVamos utilizar com mais frequência nas nossas análises"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#mais-sobre-objetos-6",
+    "href": "aulas/slides/aula-R-6-objetos.html#mais-sobre-objetos-6",
+    "title": "Estatística Básica utilizando R",
+    "section": "Mais sobre objetos",
+    "text": "Mais sobre objetos\nO R trabalha com diferentes tipos de objetos e estruturas\n\n\n\nEstruturas\n\nVetores\nMatrizes\nArrays\nListas\nData frames\n\n\n\n\nVersão bidimensional da lista\nDados organizados em linhas e colunas\nDados de tipos diferentes\nCada coluna deve conter o mesmo tipo de dado\nCada linha é uma “observação”\nVamos utilizar com mais frequência nas nossas análises"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nMatriz\n\nDados organizados em linhas x colunas\nDados de um único tipo\nNuméricos, lógicos,…\nMuito importante para análises multivariadas\n\n\n\n\n\n\n\n\n\nData frame\n\nDados organizados em linhas e colunas\nDados de tipos diferentes\nCada coluna é um atributo\nCada linha é uma “observação”\nVamos utilizar com mais frequência nas nossas análises"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-1",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nMatriz\n\n\nx &lt;- c(1:12)\n\n\nCrie a matriz xmat com objetos de x em 4 colunas\n\n\nxmat  &lt;-  matrix(x, ncol = 4)\nxmat\n\n\nmatrix(x, byrow = T)\n# byrow indica se deve montar a \n## matriz com os valores por \n## linhas ou por colunas\n\nmatrix(x, nrow=3, byrow = F)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-2",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-2",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nMatriz\n\n\nx &lt;- c(1:12)\n\n\nCrie a matriz xmat com objetos de x em 4 colunas\n\n\nxmat  &lt;-  matrix(x, ncol = 4) \nxmat\n\n\nmatrix(x, byrow = T)\n# byrow indica se deve montar a \n## matriz com os valores por \n## linhas ou por colunas\n\nmatrix(x, nrow=3, byrow = F)\n\n\n\n\n\n\n\nxmat  &lt;-  matrix(x, ncol = 4) \nxmat\n\n     [,1] [,2] [,3] [,4]\n[1,]    1    4    7   10\n[2,]    2    5    8   11\n[3,]    3    6    9   12"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-3",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-3",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nMatriz\n\n\nx &lt;- c(1:12)\n\n\nCrie a matriz xmat com objetos de x em 4 colunas\n\n\nxmat  &lt;-  matrix(x, ncol = 4) \nxmat\n\n\nmatrix(x, byrow = T)\n# byrow indica se deve montar a \n## matriz com os valores por \n## linhas ou por colunas\n\nmatrix(x, nrow=3, byrow = F)\n\n\n\n\n\n\n\nxmat  &lt;-  matrix(x, ncol = 4) \nxmat\n\n     [,1] [,2] [,3] [,4]\n[1,]    1    4    7   10\n[2,]    2    5    8   11\n[3,]    3    6    9   12\n\n\n\n\n\n\n\n\nmatrix(x, byrow = T) \n\n      [,1]\n [1,]    1\n [2,]    2\n [3,]    3\n [4,]    4\n [5,]    5\n [6,]    6\n [7,]    7\n [8,]    8\n [9,]    9\n[10,]   10\n[11,]   11\n[12,]   12"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#slide-105",
+    "href": "aulas/slides/aula-R-6-objetos.html#slide-105",
+    "title": "Estatística Básica utilizando R",
+    "section": "slide 105",
+    "text": "slide 105"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-4",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-4",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nMatriz\n\n\nx &lt;- c(1:12)\n\n\nCrie a matriz xmat com objetos de x em 4 colunas\n\n\nxmat  &lt;-  matrix(x, ncol = 4) \nxmat\n\n\nmatrix(x, byrow = T)\n# byrow indica se deve montar a \n## matriz com os valores por \n## linhas ou por colunas\n\nmatrix(x, nrow=3, byrow = F)\n\n\n\n\n\n\n\nxmat  &lt;-  matrix(x, ncol = 4) \nxmat\n\n     [,1] [,2] [,3] [,4]\n[1,]    1    4    7   10\n[2,]    2    5    8   11\n[3,]    3    6    9   12\n\n\n\n\n\nmatrix(x, nrow = 3, byrow = F)\n\n     [,1] [,2] [,3] [,4]\n[1,]    1    4    7   10\n[2,]    2    5    8   11\n[3,]    3    6    9   12\n\n\n\n\n\n\n\n\nmatrix(x, ncol = 4, byrow = T) \n\n     [,1] [,2] [,3] [,4]\n[1,]    1    2    3    4\n[2,]    5    6    7    8\n[3,]    9   10   11   12"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-5",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-5",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nMatriz\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n     [,1] [,2] [,3] [,4]\n[1,]    1    4    7   10\n[2,]    2    5    8   11\n[3,]    3    6    9   12"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-6",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-6",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nMatriz\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n     [,1] [,2] [,3] [,4]\n[1,]    1    4    7   10\n[2,]    2    5    8   11\n[3,]    3    6    9   12"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-7",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-7",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nMatriz\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n     [,1] [,2] [,3] [,4]\n[1,]    1    4    7   10\n[2,]    2    5    8   11\n[3,]    3    6    9   12\n\n\n\n\n\n\n\nEncontrando coisas dentro da matriz\n\n\nxmat[2,3]\n\n[1] 8\n\n\n\nEncontra o valor na linha 2, coluna 3"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#slide-109",
+    "href": "aulas/slides/aula-R-6-objetos.html#slide-109",
+    "title": "Estatística Básica utilizando R",
+    "section": "slide 109",
+    "text": "slide 109"
   }
 ]

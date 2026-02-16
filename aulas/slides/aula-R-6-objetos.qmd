@@ -17,5 +17,852 @@ format:
 
 ## Mais sobre objetos
 
-- o R trabalha com diferentes tipos de objetos e estruturas
+O R trabalha com diferentes tipos de objetos e estruturas
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Estruturas
+  - Vetores
+  - Matrizes
+  - Arrays
+  - Listas
+  - Data frames
+
+:::
+
+::: {.column width="50%"}
+
+![](figuras/estruturas.png){width="80%"}
+
+:::
+
+::::
+
+
+## Mais sobre objetos
+
+O R trabalha com diferentes tipos de objetos e estruturas
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Estruturas
+  - **Vetores**
+  - [Matrizes]{style="color: gray; opacity: 0.5;"}
+  - [Arrays]{style="color: gray; opacity: 0.5;"}
+  - [Listas]{style="color: gray; opacity: 0.5;"}
+  - [Data frames]{style="color: gray; opacity: 0.5;"}
+
+:::
+
+::: {.column width="50%"}
+
+- Estrutura mais simples em R
+  - Podem conter um único valor
+
+```{r}
+#| echo: true
+#| output: true
+
+x <- 10
+x
+
+```
+
+  - Ou múltiplos valores
+
+```{r}
+#| echo: true
+#| output: true
+
+x <- c(1, 2, 3, 4, 5)
+x
+
+```
+
+:::
+
+::::
+
+
+
+## Mais sobre objetos
+
+O R trabalha com diferentes tipos de objetos e estruturas
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Estruturas
+  - [Vetores]{style="color: gray; opacity: 0.5;"}
+  - **Matrizes**
+  - [Arrays]{style="color: gray; opacity: 0.5;"}
+  - [Listas]{style="color: gray; opacity: 0.5;"}
+  - [Data frames]{style="color: gray; opacity: 0.5;"}
+
+:::
+
+::: {.column width="50%"}
+
+- Dados organizados em linhas x colunas
+  - Dados de um único tipo
+    - Numéricos, lógicos,...
+  - Muito importante para análises multivariadas
+
+![](figuras/matriz.png){fig-align="center"width="80%"}
+
+:::
+
+::::
+
+## Mais sobre objetos
+
+o R trabalha com diferentes tipos de objetos e estruturas
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Estruturas
+  - [Vetores]{style="color: gray; opacity: 0.5;"}
+  - [Matrizes]{style="color: gray; opacity: 0.5;"}
+  - **Arrays**
+  - [Listas]{style="color: gray; opacity: 0.5;"}
+  - [Data frames]{style="color: gray; opacity: 0.5;"}
+
+:::
+
+::: {.column width="50%"}
+
+- São objetos n-dimensionais
+- Comportam-se como matrizes
+  - Um tipo de dados
+- Não customizável como a matriz
+
+
+:::
+
+::::
+
+## Mais sobre objetos
+
+O R trabalha com diferentes tipos de objetos e estruturas
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Estruturas
+  - [Vetores]{style="color: gray; opacity: 0.5;"}
+  - [Matrizes]{style="color: gray; opacity: 0.5;"}
+  - [Arrays]{style="color: gray; opacity: 0.5;"}
+  - **Listas**
+  - [Data frames]{style="color: gray; opacity: 0.5;"}
+
+:::
+
+::: {.column width="50%"}
+
+- Semelhantes a vetores
+- Agrupam dados em organização unidimensional
+- Não agrupam valores individuais
+- Agrupam objetos
+  - Vetores
+  - Outras listas
+
+:::
+
+::::
+
+## Mais sobre objetos
+
+O R trabalha com diferentes tipos de objetos e estruturas
+
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+- Estruturas
+  - [Vetores]{style="color: gray; opacity: 0.5;"}
+  - [Matrizes]{style="color: gray; opacity: 0.5;"}
+  - [Arrays]{style="color: gray; opacity: 0.5;"}
+  - [Listas]{style="color: gray; opacity: 0.5;"}
+  - **Data frames**
+
+:::
+
+::: {.column width="45%"}
+
+- Versão bidimensional da lista
+- Dados organizados em linhas e colunas
+- Dados de tipos diferentes
+- Cada coluna deve conter o mesmo tipo de dado
+- Cada linha é uma "observação"
+- Vamos utilizar com mais frequência nas nossas análises
+
+
+:::
+
+::: {.column width="25%"}
+
+![](figuras/dataframe-1.png){fig-align="right" width="50%"}
+
+::: 
+
+::::
+
+
+
+## Mais sobre objetos
+
+O R trabalha com diferentes tipos de objetos e estruturas
+
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+- Estruturas
+  - [Vetores]{style="color: gray; opacity: 0.5;"}
+  - [Matrizes]{style="color: gray; opacity: 0.5;"}
+  - [Arrays]{style="color: gray; opacity: 0.5;"}
+  - [Listas]{style="color: gray; opacity: 0.5;"}
+  - **Data frames**
+
+:::
+
+::: {.column width="45%"}
+
+- Versão bidimensional da lista
+- Dados organizados em linhas e colunas
+- Dados de tipos diferentes
+- Cada coluna deve conter o mesmo tipo de dado
+- Cada linha é uma "observação"
+- Vamos utilizar com mais frequência nas nossas análises
+
+
+:::
+
+::: {.column width="25%"}
+
+![](figuras/dataframe-2.png){fig-align="right" width="100%"}
+
+::: 
+
+::::
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+- Matriz
+  - Dados organizados em linhas x colunas
+  - Dados de um único tipo
+  - Numéricos, lógicos,...
+  - Muito importante para análises multivariadas
+
+![](figuras/matriz.png){fig-align="center"width="80%"}
+
+
+:::
+
+::: {.column width="40%"}
+
+- Data frame
+  - Dados organizados em linhas e colunas
+  - Dados de tipos diferentes
+  - Cada coluna é um atributo
+  - Cada linha é uma "observação"
+  - Vamos utilizar com mais frequência nas nossas análises
+
+
+
+:::
+
+::: {.column width="20%"}
+
+![](figuras/dataframe-1.png){fig-align="right" width="50%"}
+
+
+:::
+
+::::
+
+
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="38%"}
+
+- Matriz
+
+```{r}
+#| echo: true
+#| output: false
+
+x <- c(1:12)
+
+```
+
+- Crie a matriz **xmat** com objetos de x em 4 colunas
+
+
+```{r}
+#| echo: true
+#| output: false
+
+xmat  <-  matrix(x, ncol = 4)
+xmat
+
+```
+
+```{r}
+#| echo: true
+#| output: false
+#| 
+matrix(x, byrow = T)
+# byrow indica se deve montar a 
+## matriz com os valores por 
+## linhas ou por colunas
+
+matrix(x, nrow=3, byrow = F)
+
+```
+
+
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="35%"}
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+::::
+
+
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="38%"}
+
+- Matriz
+
+```{r}
+#| echo: true
+#| output: false
+
+x <- c(1:12)
+
+```
+
+- Crie a matriz **xmat** com objetos de x em 4 colunas
+
+
+```{r}
+#| echo: true
+#| output: false
+
+xmat  <-  matrix(x, ncol = 4) 
+xmat
+
+```
+
+```{r}
+#| echo: true
+#| output: false
+#| 
+matrix(x, byrow = T)
+# byrow indica se deve montar a 
+## matriz com os valores por 
+## linhas ou por colunas
+
+matrix(x, nrow=3, byrow = F)
+
+```
+
+
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column .codigo-pequeno .output-pequeno width="35%"}
+
+
+\
+
+```{r}
+#| echo: true
+#| output: true
+
+xmat  <-  matrix(x, ncol = 4) 
+xmat
+
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="20%"}
+
+:::
+
+::::
+
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="38%"}
+
+- Matriz
+
+```{r}
+#| echo: true
+#| output: false
+
+x <- c(1:12)
+
+```
+
+- Crie a matriz **xmat** com objetos de x em 4 colunas
+
+
+```{r}
+#| echo: true
+#| output: false
+
+xmat  <-  matrix(x, ncol = 4) 
+xmat
+
+```
+
+```{r}
+#| echo: true
+#| output: false
+#| 
+matrix(x, byrow = T)
+# byrow indica se deve montar a 
+## matriz com os valores por 
+## linhas ou por colunas
+
+matrix(x, nrow=3, byrow = F)
+
+```
+
+
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column .codigo-pequeno .output-pequeno width="35%" }
+
+
+\
+
+```{r}
+#| echo: true
+#| output: true
+
+xmat  <-  matrix(x, ncol = 4) 
+xmat
+
+```
+
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column .codigo-pequeno .output-pequeno  width="23%"}
+
+\
+
+```{r}
+#| echo: true
+#| output: true
+#| code-block-font-size: 0.5em
+
+
+matrix(x, byrow = T) 
+
+```
+
+:::
+
+::::
+
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="38%"}
+
+- Matriz
+
+```{r}
+#| echo: true
+#| output: false
+
+x <- c(1:12)
+
+```
+
+- Crie a matriz **xmat** com objetos de x em 4 colunas
+
+
+```{r}
+#| echo: true
+#| output: false
+
+xmat  <-  matrix(x, ncol = 4) 
+xmat
+
+```
+
+```{r}
+#| echo: true
+#| output: false
+#| 
+matrix(x, byrow = T)
+# byrow indica se deve montar a 
+## matriz com os valores por 
+## linhas ou por colunas
+
+matrix(x, nrow=3, byrow = F)
+
+```
+
+
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column .codigo-pequeno .output-pequeno width="35%" }
+
+
+\
+
+```{r}
+#| echo: true
+#| output: true
+
+xmat  <-  matrix(x, ncol = 4) 
+xmat
+
+```
+
+\
+
+```{r}
+#| echo: true
+#| output: true
+
+matrix(x, nrow = 3, byrow = F)
+```
+
+
+
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column .codigo-pequeno .output-pequeno  width="23%"}
+
+\
+
+```{r}
+#| echo: true
+#| output: true
+#| code-block-font-size: 0.5em
+
+
+matrix(x, ncol = 4, byrow = T) 
+
+```
+
+:::
+
+::::
+
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+- Matriz
+
+\
+
+![](figuras/matriz-1.png){fig-align="center" width="100%"}
+
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column .codigo-pequeno .output-pequeno width="30%" }
+
+\
+\
+\
+
+![](figuras/matriz-2.gif){fig-align="center" width="100%"}
+
+
+
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="36%"}
+
+\
+
+```{r}
+#| echo: false
+#| output: true
+
+xmat
+
+```
+
+:::
+
+::::
+
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+- Matriz
+
+\
+
+![](figuras/matriz-1.png){fig-align="center" width="100%"}
+
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column .codigo-pequeno .output-pequeno width="30%" }
+
+\
+\
+\
+
+![](figuras/matriz-2.gif){fig-align="center" width="100%"}
+
+
+
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="36%"}
+
+\
+
+```{r}
+#| echo: false
+#| output: true
+
+xmat
+
+```
+
+:::
+
+::::
+
+::: {.absolute top="25" left="685"}
+
+![](figuras/linha-col.png){width="65%"}
+
+:::
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+- Matriz
+
+\
+
+![](figuras/matriz-1.png){fig-align="center" width="100%"}
+
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column .codigo-pequeno .output-pequeno width="30%" }
+
+\
+\
+\
+
+![](figuras/matriz-2.gif){fig-align="center" width="100%"}
+
+
+
+:::
+
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="36%"}
+
+\
+
+```{r}
+#| echo: false
+#| output: true
+
+xmat
+
+```
+
+\
+\
+
+::: {.texto-menor}
+
+- Encontrando coisas dentro da matriz
+
+```{r}
+#| echo: true
+#| output: true
+
+xmat[2,3]
+
+```
+
+- Encontra o valor na linha 2, coluna 3
+
+:::
+
+:::
+
+::::
+
+::: {.absolute top="25" left="685"}
+
+![](figuras/linha-col.png){width="65%"}
+
+:::
+
+::: {.absolute top="190" left="1045"}
+
+![](figuras/mat23.png){width="65%"}
+
+:::
+
+
+## slide 109
+
+## linhas extras
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

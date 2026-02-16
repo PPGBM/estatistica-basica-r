@@ -349,3 +349,14 @@
 .reveal .codigo-central pre code.sourceCode {
   font-size: 36px;           /* maior que o padrão */
 }
+
+/* Código menor em colunas */
+.reveal .codigo-pequeno pre code {
+  font-size: 0.9em !important;
+}
+
+.reveal .output-pequeno .cell-output pre code {
+  font-size: 0.8em !important;
+}
+
+
