@@ -163,13 +163,24 @@ aos conteúdos e aos slides.
 
 ### Aula 05 – Graficos no R
 
+- Mais sobre funções
+
+[➡️ Acessar slides da aula](slides/aula-R-5-funcoes.qmd){target="_blank" rel="noopener"}
+
+
+### Aula 06 – Estatística descritiva no R
+
+- Mais sobre objetos
+
+### Aula 07 – Estatística descritiva no R
+
 - Como funcionam gráficos no R
 - Tipos de gráficos
 - Parâmetros gráficos
 
 ➡️ Aula em breve
 
-### Aula 06 – Estatística descritiva no R
+### Aula 08 – Estatística descritiva no R
 
 - Estatística descritiva
 - Medidas de tendência central
@@ -177,7 +188,7 @@ aos conteúdos e aos slides.
 
 ➡️ Aula em breve
 
-### Aula 07 – Testes de significância em R
+### Aula 09 – Testes de significância em R
 
 - Testes de significância
   - Teste t

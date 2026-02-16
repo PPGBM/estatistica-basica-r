@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Dr.&nbsp;Alexandre Dias Kassuga">
 
-<title>Aulas – Estatística Básica com R</title>
+<title>Estatística Básica utilizando R – Estatística Básica com R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Estatística Básica com R</span>
     </a>
   </div>
@@ -92,23 +93,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Início</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../aulas/aulas.html" aria-current="page"> 
+    <a class="nav-link" href="../../aulas/aulas.html"> 
 <span class="menu-text">Aulas</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../exercicios.qmd"> 
+    <a class="nav-link" href="../../exercicios.qmd"> 
 <span class="menu-text">Exercícios</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../materiais.qmd"> 
+    <a class="nav-link" href="../../materiais.qmd"> 
 <span class="menu-text">Materiais</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../envio.html"> 
+    <a class="nav-link" href="../../envio.html"> 
 <span class="menu-text">Envio</span></a>
   </li>  
 </ul>
@@ -127,45 +128,31 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Nesta página</h2>
    
   <ul>
-  <li><a href="#revisão-de-estatística" id="toc-revisão-de-estatística" class="nav-link active" data-scroll-target="#revisão-de-estatística">Revisão de Estatística</a>
-  <ul class="collapse">
-  <li><a href="#apresentação-introdução-ao-curso" id="toc-apresentação-introdução-ao-curso" class="nav-link" data-scroll-target="#apresentação-introdução-ao-curso">Apresentação – Introdução ao Curso</a></li>
-  <li><a href="#aula-01-conceitos-básicos" id="toc-aula-01-conceitos-básicos" class="nav-link" data-scroll-target="#aula-01-conceitos-básicos">Aula 01 – Conceitos básicos</a></li>
-  <li><a href="#aula-02-conceitos-básicos" id="toc-aula-02-conceitos-básicos" class="nav-link" data-scroll-target="#aula-02-conceitos-básicos">Aula 02 – Conceitos básicos</a></li>
-  <li><a href="#aula-03-organizando-dados" id="toc-aula-03-organizando-dados" class="nav-link" data-scroll-target="#aula-03-organizando-dados">Aula 03 – Organizando dados</a></li>
-  <li><a href="#aula-04-estatística-descritiva" id="toc-aula-04-estatística-descritiva" class="nav-link" data-scroll-target="#aula-04-estatística-descritiva">Aula 04 – Estatística descritiva</a></li>
-  <li><a href="#aula-05-testes-de-hipóteses-e-significâncias" id="toc-aula-05-testes-de-hipóteses-e-significâncias" class="nav-link" data-scroll-target="#aula-05-testes-de-hipóteses-e-significâncias">Aula 05 – Testes de hipóteses e significâncias</a></li>
-  <li><a href="#aula-06-testes-de-hipótese-1" id="toc-aula-06-testes-de-hipótese-1" class="nav-link" data-scroll-target="#aula-06-testes-de-hipótese-1">Aula 06 – Testes de hipótese 1</a></li>
-  <li><a href="#aula-07-testes-de-hipótese-2" id="toc-aula-07-testes-de-hipótese-2" class="nav-link" data-scroll-target="#aula-07-testes-de-hipótese-2">Aula 07 – Testes de hipótese 2</a></li>
-  <li><a href="#aula-08-testes-de-hipótese-3" id="toc-aula-08-testes-de-hipótese-3" class="nav-link" data-scroll-target="#aula-08-testes-de-hipótese-3">Aula 08 – Testes de hipótese 3</a></li>
-  </ul></li>
-  <li><a href="#linguagem-r" id="toc-linguagem-r" class="nav-link" data-scroll-target="#linguagem-r">Linguagem R</a>
-  <ul class="collapse">
-  <li><a href="#aula-01-a-linguagem-r" id="toc-aula-01-a-linguagem-r" class="nav-link" data-scroll-target="#aula-01-a-linguagem-r">Aula 01 – A Linguagem R</a></li>
-  <li><a href="#aula-02-o-pacote-r" id="toc-aula-02-o-pacote-r" class="nav-link" data-scroll-target="#aula-02-o-pacote-r">Aula 02 – O pacote R</a></li>
-  <li><a href="#aula-03-objetos-e-dados" id="toc-aula-03-objetos-e-dados" class="nav-link" data-scroll-target="#aula-03-objetos-e-dados">Aula 03 – Objetos e Dados</a></li>
-  <li><a href="#aula-04-funções-e-objetos" id="toc-aula-04-funções-e-objetos" class="nav-link" data-scroll-target="#aula-04-funções-e-objetos">Aula 04 – Funções e objetos</a></li>
-  <li><a href="#aula-05-graficos-no-r" id="toc-aula-05-graficos-no-r" class="nav-link" data-scroll-target="#aula-05-graficos-no-r">Aula 05 – Graficos no R</a></li>
-  <li><a href="#aula-06-estatística-descritiva-no-r" id="toc-aula-06-estatística-descritiva-no-r" class="nav-link" data-scroll-target="#aula-06-estatística-descritiva-no-r">Aula 06 – Estatística descritiva no R</a></li>
-  <li><a href="#aula-07-estatística-descritiva-no-r" id="toc-aula-07-estatística-descritiva-no-r" class="nav-link" data-scroll-target="#aula-07-estatística-descritiva-no-r">Aula 07 – Estatística descritiva no R</a></li>
-  <li><a href="#aula-08-estatística-descritiva-no-r" id="toc-aula-08-estatística-descritiva-no-r" class="nav-link" data-scroll-target="#aula-08-estatística-descritiva-no-r">Aula 08 – Estatística descritiva no R</a></li>
-  <li><a href="#aula-09-testes-de-significância-em-r" id="toc-aula-09-testes-de-significância-em-r" class="nav-link" data-scroll-target="#aula-09-testes-de-significância-em-r">Aula 09 – Testes de significância em R</a></li>
-  </ul></li>
+  <li><a href="#mais-sobre-objetos" id="toc-mais-sobre-objetos" class="nav-link active" data-scroll-target="#mais-sobre-objetos">Mais sobre objetos</a></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Outros formatos</h2><ul><li><a href="aula-R-6-objetos.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Aulas</h1>
+<h1 class="title">Estatística Básica utilizando R</h1>
+<p class="subtitle lead"></p><ul>
+<li>Mais sobre objetos</li>
+</ul><p></p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dr.&nbsp;Alexandre Dias Kassuga </p>
+          </div>
+  </div>
     
   
     
@@ -176,205 +163,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Aulas da disciplina</p>
-<p>Abaixo estão listadas as aulas do curso, com acesso direto aos conteúdos e aos slides.</p>
-<hr>
-<section id="revisão-de-estatística" class="level2">
-<h2 class="anchored" data-anchor-id="revisão-de-estatística">Revisão de Estatística</h2>
-<hr>
-<section id="apresentação-introdução-ao-curso" class="level3">
-<h3 class="anchored" data-anchor-id="apresentação-introdução-ao-curso">Apresentação – Introdução ao Curso</h3>
+<section id="mais-sobre-objetos" class="level2">
+<h2 class="anchored" data-anchor-id="mais-sobre-objetos">Mais sobre objetos</h2>
 <ul>
-<li>Apresentação do curso<br>
-</li>
-<li>Conteúdos programáticos<br>
-</li>
-<li>Tipografia do curso</li>
+<li>o R trabalha com diferentes tipos de objetos e estruturas</li>
 </ul>
-<p><a href="../aulas/slides/aula-aps-tipografia.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-01-conceitos-básicos" class="level3">
-<h3 class="anchored" data-anchor-id="aula-01-conceitos-básicos">Aula 01 – Conceitos básicos</h3>
-<ul>
-<li>O que é a estatística</li>
-<li>O que são Dados</li>
-<li>Amostragem e generalização</li>
-<li>Tipos de dados</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-1-dados.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-02-conceitos-básicos" class="level3">
-<h3 class="anchored" data-anchor-id="aula-02-conceitos-básicos">Aula 02 – Conceitos básicos</h3>
-<ul>
-<li>Planejando experimentos</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-2-planejando.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-03-organizando-dados" class="level3">
-<h3 class="anchored" data-anchor-id="aula-03-organizando-dados">Aula 03 – Organizando dados</h3>
-<ul>
-<li>Tabelas do contingência</li>
-<li>Distribuição de frequências</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-3-organizando.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-04-estatística-descritiva" class="level3">
-<h3 class="anchored" data-anchor-id="aula-04-estatística-descritiva">Aula 04 – Estatística descritiva</h3>
-<ul>
-<li>Medidas de tendência central</li>
-<li>Medidas de dispersão</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-4-descritiva.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-05-testes-de-hipóteses-e-significâncias" class="level3">
-<h3 class="anchored" data-anchor-id="aula-05-testes-de-hipóteses-e-significâncias">Aula 05 – Testes de hipóteses e significâncias</h3>
-<ul>
-<li>O que são testes de hipóteses</li>
-<li>Definições
-<ul>
-<li>Hipótese nula e alternativa</li>
-<li>Erro tipo I e II</li>
-<li>Nível de significância</li>
-<li>Poder do teste</li>
-<li>Unicaudal e bicaudal</li>
-</ul></li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-5-testes-de-hipoteses.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-06-testes-de-hipótese-1" class="level3">
-<h3 class="anchored" data-anchor-id="aula-06-testes-de-hipótese-1">Aula 06 – Testes de hipótese 1</h3>
-<ul>
-<li>Estatística Paramétrica</li>
-<li>Testes de significância para uma amostra</li>
-<li>Qui-quadrado</li>
-<li>Teste T para uma amostra</li>
-<li>Teste T para duas amostras independentes</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-6-testes-de-hipoteses-2.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-07-testes-de-hipótese-2" class="level3">
-<h3 class="anchored" data-anchor-id="aula-07-testes-de-hipótese-2">Aula 07 – Testes de hipótese 2</h3>
-<ul>
-<li>Estatística paramétrica</li>
-<li>Testes de significância para mais de duas amostras</li>
-<li>ANOVA</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-7-testes-de-hipoteses-3.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-08-testes-de-hipótese-3" class="level3">
-<h3 class="anchored" data-anchor-id="aula-08-testes-de-hipótese-3">Aula 08 – Testes de hipótese 3</h3>
-<ul>
-<li>Estatística não paramétrica</li>
-<li>Mann-Whitney</li>
-<li>Kruskal-Wallis</li>
-</ul>
-<p><a href="../aulas/slides/aula-conceitos-basicos-8-testes-de-hipoteses-4.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-</section>
-<section id="linguagem-r" class="level2">
-<h2 class="anchored" data-anchor-id="linguagem-r">Linguagem R</h2>
-<hr>
-<section id="aula-01-a-linguagem-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-01-a-linguagem-r">Aula 01 – A Linguagem R</h3>
-<ul>
-<li>O R é para mim?</li>
-<li>A linguagem R</li>
-<li>Um pouco de história…</li>
-<li>Não tenha medo do erro</li>
-<li>R x Python</li>
-<li>O pacote R</li>
-<li>RStudio</li>
-</ul>
-<p><a href="../aulas/slides/aula-R-1-introducao.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-02-o-pacote-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-02-o-pacote-r">Aula 02 – O pacote R</h3>
-<ul>
-<li>Comandos Básicos</li>
-<li>Pacotes</li>
-<li>O R como calculadora</li>
-<li>Iniciando em objetos</li>
-</ul>
-<p><a href="../aulas/slides/aula-R-2-primeiros-passos.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-03-objetos-e-dados" class="level3">
-<h3 class="anchored" data-anchor-id="aula-03-objetos-e-dados">Aula 03 – Objetos e Dados</h3>
-<ul>
-<li>Atribuição</li>
-<li>Nomeando objetos</li>
-<li>Utilizando objetos em R</li>
-<li>Tipos de dados em R</li>
-</ul>
-<p><a href="../aulas/slides/aula-R-3-objetos.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-04-funções-e-objetos" class="level3">
-<h3 class="anchored" data-anchor-id="aula-04-funções-e-objetos">Aula 04 – Funções e objetos</h3>
-<ul>
-<li>Estruturas de dados</li>
-<li>Trabalhando com vetores</li>
-</ul>
-<p><a href="../aulas/slides/aula-R-4-vetores.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-<hr>
-</section>
-<section id="aula-05-graficos-no-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-05-graficos-no-r">Aula 05 – Graficos no R</h3>
-<ul>
-<li>Mais sobre funções</li>
-</ul>
-<p><a href="../aulas/slides/aula-R-5-funcoes.html" target="_blank" rel="noopener">➡️ Acessar slides da aula</a></p>
-</section>
-<section id="aula-06-estatística-descritiva-no-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-06-estatística-descritiva-no-r">Aula 06 – Estatística descritiva no R</h3>
-<ul>
-<li>Mais sobre objetos</li>
-</ul>
-</section>
-<section id="aula-07-estatística-descritiva-no-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-07-estatística-descritiva-no-r">Aula 07 – Estatística descritiva no R</h3>
-<ul>
-<li>Como funcionam gráficos no R</li>
-<li>Tipos de gráficos</li>
-<li>Parâmetros gráficos</li>
-</ul>
-<p>➡️ Aula em breve</p>
-</section>
-<section id="aula-08-estatística-descritiva-no-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-08-estatística-descritiva-no-r">Aula 08 – Estatística descritiva no R</h3>
-<ul>
-<li>Estatística descritiva</li>
-<li>Medidas de tendência central</li>
-<li>Medidas de dispersão</li>
-</ul>
-<p>➡️ Aula em breve</p>
-</section>
-<section id="aula-09-testes-de-significância-em-r" class="level3">
-<h3 class="anchored" data-anchor-id="aula-09-testes-de-significância-em-r">Aula 09 – Testes de significância em R</h3>
-<ul>
-<li>Testes de significância
-<ul>
-<li>Teste t</li>
-<li>Mann-Whitney</li>
-<li>Qui-quadrado</li>
-<li>Análise de Variância</li>
-<li>Kruskall-Wallis</li>
-</ul></li>
-</ul>
-<p>➡️ Aula em breve</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

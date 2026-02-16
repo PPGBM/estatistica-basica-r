@@ -1628,7 +1628,7 @@
     "href": "aulas/aulas.html#linguagem-r",
     "title": "Aulas",
     "section": "Linguagem R",
-    "text": "Linguagem R\n\n\nAula 01 – A Linguagem R\n\nO R é para mim?\nA linguagem R\nUm pouco de história…\nNão tenha medo do erro\nR x Python\nO pacote R\nRStudio\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – O pacote R\n\nComandos Básicos\nPacotes\nO R como calculadora\nIniciando em objetos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Objetos e Dados\n\nAtribuição\nNomeando objetos\nUtilizando objetos em R\nTipos de dados em R\n\n➡️ Acessar slides da aula\n\n\n\nAula 04 – Funções e objetos\n\nEstruturas de dados\nTrabalhando com vetores\n\n➡️ Acessar slides da aula\n\n\n\nAula 05 – Graficos no R\n\nComo funcionam gráficos no R\nTipos de gráficos\nParâmetros gráficos\n\n➡️ Aula em breve\n\n\nAula 06 – Estatística descritiva no R\n\nEstatística descritiva\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve\n\n\nAula 07 – Testes de significância em R\n\nTestes de significância\n\nTeste t\nMann-Whitney\nQui-quadrado\nAnálise de Variância\nKruskall-Wallis\n\n\n➡️ Aula em breve"
+    "text": "Linguagem R\n\n\nAula 01 – A Linguagem R\n\nO R é para mim?\nA linguagem R\nUm pouco de história…\nNão tenha medo do erro\nR x Python\nO pacote R\nRStudio\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – O pacote R\n\nComandos Básicos\nPacotes\nO R como calculadora\nIniciando em objetos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Objetos e Dados\n\nAtribuição\nNomeando objetos\nUtilizando objetos em R\nTipos de dados em R\n\n➡️ Acessar slides da aula\n\n\n\nAula 04 – Funções e objetos\n\nEstruturas de dados\nTrabalhando com vetores\n\n➡️ Acessar slides da aula\n\n\n\nAula 05 – Graficos no R\n\nMais sobre funções\n\n➡️ Acessar slides da aula\n\n\nAula 06 – Estatística descritiva no R\n\nMais sobre objetos\n\n\n\nAula 07 – Estatística descritiva no R\n\nComo funcionam gráficos no R\nTipos de gráficos\nParâmetros gráficos\n\n➡️ Aula em breve\n\n\nAula 08 – Estatística descritiva no R\n\nEstatística descritiva\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve\n\n\nAula 09 – Testes de significância em R\n\nTestes de significância\n\nTeste t\nMann-Whitney\nQui-quadrado\nAnálise de Variância\nKruskall-Wallis\n\n\n➡️ Aula em breve"
   },
   {
     "objectID": "aulas/guia-quarto-latex-math-html.html",
@@ -4205,5 +4205,19 @@
     "title": "Estatística Básica utilizando R",
     "section": "LINHAS EXTRAS",
     "text": "LINHAS EXTRAS"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html",
+    "href": "aulas/slides/aula-R-6-objetos.html",
+    "title": "Estatística Básica utilizando R",
+    "section": "",
+    "text": "o R trabalha com diferentes tipos de objetos e estruturas"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#mais-sobre-objetos",
+    "href": "aulas/slides/aula-R-6-objetos.html#mais-sobre-objetos",
+    "title": "Estatística Básica utilizando R",
+    "section": "",
+    "text": "o R trabalha com diferentes tipos de objetos e estruturas"
   }
 ]
