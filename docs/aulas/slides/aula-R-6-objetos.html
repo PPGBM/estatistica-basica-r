@@ -819,11 +819,780 @@ Dr.&nbsp;Alexandre Dias Kassuga
 <p><img data-src="figuras/mat23.png" style="width:65.0%"></p>
 </div>
 </section>
-<section id="slide-109" class="slide level2">
-<h2>slide 109</h2>
+<section id="matriz-x-data-frame-8" class="slide level2">
+<h2>Matriz x data frame</h2>
+<div class="columns">
+<div class="column codigo-pequeno" style="width:50%;">
+<ul>
+<li>Matriz</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a><span class="fu">colnames</span>(xmat) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"sp1"</span>,<span class="st">"sp2"</span>,<span class="st">"sp3"</span>,<span class="st">"sp4"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><span class="texto-menor">Nomeia as colunas da matriz xmat</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a><span class="fu">rownames</span>(xmat) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"porcos"</span>,<span class="st">"abobrinha"</span>,<span class="st">"maramuta"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><span class="texto-menor">nomeia as linhas da matriz</span></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>          sp1 sp2 sp3 sp4
+porcos      1   4   7  10
+abobrinha   2   5   8  11
+maramuta    3   6   9  12</code></pre>
+</div>
+</div>
+</div></div>
 </section>
-<section id="linhas-extras" class="slide level2">
-<h2>linhas extras</h2>
+<section id="matriz-x-data-frame-9" class="slide level2">
+<h2>Matriz x data frame</h2>
+<div class="columns">
+<div class="column codigo-pequeno" style="width:50%;">
+<ul>
+<li>Matriz</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a><span class="fu">colnames</span>(xmat) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"sp1"</span>,<span class="st">"sp2"</span>,<span class="st">"sp3"</span>,<span class="st">"sp4"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><span class="texto-menor">Nomeia as colunas da matriz xmat</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a></a><span class="fu">rownames</span>(xmat) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"porcos"</span>,<span class="st">"abobrinha"</span>,<span class="st">"maramuta"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><span class="texto-menor">nomeia as linhas da matriz</span></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>          sp1 sp2 sp3 sp4
+porcos      1   4   7  10
+abobrinha   2   5   8  11
+maramuta    3   6   9  12</code></pre>
+</div>
+</div>
+</div></div>
+<div class="absolute" style="top: 60px; left: 45px; ">
+<p><img data-src="figuras/colnames.png" style="width:82.0%"></p>
+</div>
+<div class="absolute" style="top: 115px; left: 25px; ">
+<p><img data-src="figuras/rownames.png" style="width:65.0%"></p>
+</div>
+</section>
+<section id="matriz-x-data-frame-10" class="slide level2">
+<h2>Matriz x data frame</h2>
+<div class="columns">
+<div class="column codigo-pequeno" style="width:50%;">
+<ul>
+<li>Matriz</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a></a><span class="fu">colnames</span>(xmat) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"sp1"</span>,<span class="st">"sp2"</span>,<span class="st">"sp3"</span>,<span class="st">"sp4"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><span class="texto-menor">Nomeia as colunas da matriz xmat</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a></a><span class="fu">rownames</span>(xmat) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"porcos"</span>,<span class="st">"abobrinha"</span>,<span class="st">"maramuta"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><span class="texto-menor">nomeia as linhas da matriz</span></p>
+<p><span class="texto-menor">Funções utilizadas em matrizes</span></p>
+<p><code>rowSums(xmat)</code> <span class="texto-menor">#soma os valores das linhas da matriz</span><br>
+<code>sum(xmat[2,])</code> <span class="texto-menor">#neste caso soma os valores da linha 2</span><br>
+<code>colSums(xmat)</code> <span class="texto-menor">#soma os valores das colunas</span><br>
+<code>rowMeans(xmat)</code> <span class="texto-menor">#média das linhas</span><br>
+<code>colMeans(xmat)</code> <span class="texto-menor">#média das colunas</span></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>          sp1 sp2 sp3 sp4
+porcos      1   4   7  10
+abobrinha   2   5   8  11
+maramuta    3   6   9  12</code></pre>
+</div>
+</div>
+</div></div>
+<div class="absolute" style="top: 60px; left: 45px; ">
+<p><img data-src="figuras/colnames.png" style="width:82.0%"></p>
+</div>
+<div class="absolute" style="top: 115px; left: 25px; ">
+<p><img data-src="figuras/rownames.png" style="width:65.0%"></p>
+</div>
+</section>
+<section id="matriz-x-data-frame-11" class="slide level2">
+<h2>Matriz x data frame</h2>
+<div class="columns">
+<div class="column codigo-pequeno" style="width:50%;">
+<ul>
+<li>Matriz
+<ul>
+<li>Adicionando dados
+<ul>
+<li><code>cbind</code> - junta tudo por colunas</li>
+<li><code>rbind</code> - junta por linhas</li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a></a>xmat  <span class="ot">&lt;-</span>  <span class="fu">cbind</span>(xmat, <span class="fu">c</span>(<span class="dv">13</span>,<span class="dv">14</span>,<span class="dv">15</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><span class="texto-menor">Adiciona os valores 13, 14 e 15 em nova coluna</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a></a><span class="fu">colnames</span>(xmat)  <span class="ot">&lt;-</span>  <span class="fu">c</span>(<span class="st">"sp1"</span>,<span class="st">"sp2"</span>,<span class="st">"sp3"</span>,<span class="st">"sp4"</span>,<span class="st">"sp5"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><span class="texto-menor">Renomeia as colunas</span></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>          sp1 sp2 sp3 sp4 sp5
+porcos      1   4   7  10  13
+abobrinha   2   5   8  11  14
+maramuta    3   6   9  12  15</code></pre>
+</div>
+</div>
+</div></div>
+</section>
+<section id="matriz-x-data-frame-12" class="slide level2">
+<h2>Matriz x data frame</h2>
+<ul>
+<li>Matriz
+<ul>
+<li>Algumas funções importantes (apply)</li>
+<li>Apply - aplica uma função em linhas ou colunas da matriz</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a></a>soma.xmat <span class="ot">&lt;-</span> <span class="fu">apply</span>(xmat, <span class="dv">2</span>, sum)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><span class="texto-menor">Compare o resultado com <code>colSums(xmat)</code></span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a></a>c.xmat <span class="ot">&lt;-</span> <span class="fu">apply</span>(xmat, <span class="dv">2</span>, sample)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><span class="texto-menor">Compare com <code>xmat</code></span></p>
+</section>
+<section id="matriz-x-data-frame-13" class="slide level2">
+<h2>Matriz x data frame</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Matriz
+<ul>
+<li>Algumas funções importantes (sapply)</li>
+<li>sapply - realiza uma função em um data frame</li>
+</ul></li>
+</ul>
+<p><span class="texto-menor">Criamos uma lista</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a></a>lista <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">a =</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>), <span class="at">b =</span> <span class="fu">c</span>(<span class="dv">11</span><span class="sc">:</span><span class="dv">20</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><span class="texto-menor">Aplicamos a função</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a></a><span class="fu">sapply</span>(lista, sum)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  a   b 
+ 55 155 </code></pre>
+</div>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<p><br>
+<br>
+<br>
+</p>
+<p><span class="texto-menor">lapply - retorna o resultado em forma de lista</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a></a><span class="fu">lapply</span>(lista, sum)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$a
+[1] 55
+
+$b
+[1] 155</code></pre>
+</div>
+</div>
+</div></div>
+</section>
+<section id="matriz-x-data-frame-14" class="slide level2">
+<h2>Matriz x data frame</h2>
+<ul>
+<li>Data frame</li>
+</ul>
+
+<img data-src="figuras/df.png" style="width:100.0%" class="r-stretch"></section>
+<section id="matriz-x-data-frame-15" class="slide level2">
+<h2>Matriz x Data frame</h2>
+<div class="columns">
+<div class="column codigo-pequeno" style="width:50%;">
+<ul>
+<li>Data frame</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a></a>ouricos <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>)</span>
+<span id="cb53-2"><a></a>peixes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">6</span><span class="sc">:</span><span class="dv">10</span>)</span>
+<span id="cb53-3"><a></a>crustaceos <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">6</span><span class="sc">:</span><span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a></a>dados.df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(ouricos, peixes, crustaceos)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><span class="texto-menor">Cria o objeto dados.df como um data frame</span></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column codigo-pequeno" style="width:45%;">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a></a><span class="fu">cbind</span>(ouricos, peixes, crustaceos)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     ouricos peixes crustaceos
+[1,]       1      6          6
+[2,]       2      7          7
+[3,]       3      8          8
+[4,]       4      9          9
+[5,]       5     10         10</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a></a>dados.df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  ouricos peixes crustaceos
+1       1      6          6
+2       2      7          7
+3       3      8          8
+4       4      9          9
+5       5     10         10</code></pre>
+</div>
+</div>
+</div></div>
+</section>
+<section id="matriz-x-data-frame-16" class="slide level2">
+<h2>Matriz x data frame</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Data frame
+<ul>
+<li><code>$</code>
+<ul>
+<li>Indica uma variável -Só funciona em um data frame</li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb59"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a></a>dados.df<span class="sc">$</span>peixes</span>
+<span id="cb59-2"><a></a>dados.df<span class="sc">$</span>ouricos</span>
+<span id="cb59-3"><a></a>dados.df<span class="sc">$</span>crustaceos</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><span class="texto-menor">Pode ser usado dentro de funções</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb60"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a></a><span class="fu">mean</span>(dados.df<span class="sc">$</span>peixes)</span>
+<span id="cb60-2"><a></a><span class="fu">sum</span>(dados.df<span class="sc">$</span>peixes)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb61"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a></a>dados.df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  ouricos peixes crustaceos
+1       1      6          6
+2       2      7          7
+3       3      8          8
+4       4      9          9
+5       5     10         10</code></pre>
+</div>
+</div>
+</div></div>
+</section>
+<section id="matriz-x-data-frame-17" class="slide level2">
+<h2>Matriz x data frame</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Data frame
+<ul>
+<li><code>$</code>
+<ul>
+<li>Indica uma variável -Só funciona em um data frame</li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a></a>dados.df<span class="sc">$</span>peixes</span>
+<span id="cb63-2"><a></a>dados.df<span class="sc">$</span>ouricos</span>
+<span id="cb63-3"><a></a>dados.df<span class="sc">$</span>crustaceos</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><span class="texto-menor">Pode ser usado dentro de funções</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a></a><span class="fu">mean</span>(dados.df<span class="sc">$</span>peixes)</span>
+<span id="cb64-2"><a></a><span class="fu">sum</span>(dados.df<span class="sc">$</span>peixes)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb65"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a></a>dados.df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  ouricos peixes crustaceos
+1       1      6          6
+2       2      7          7
+3       3      8          8
+4       4      9          9
+5       5     10         10</code></pre>
+</div>
+</div>
+<div class="texto-05">
+<p>&nbsp;</p>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb67"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a></a><span class="fu">mean</span>(dados.df<span class="sc">$</span>peixes)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 8</code></pre>
+</div>
+</div>
+<div class="texto-05">
+<p>&nbsp;</p>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb69"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a></a><span class="fu">sum</span>(dados.df<span class="sc">$</span>peixes)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 40</code></pre>
+</div>
+</div>
+</div></div>
+<div class="absolute" style="top: 140px; left: 845px; ">
+<p><img data-src="figuras/retangulo.png" style="width:35.0%"></p>
+</div>
+</section>
+<section id="matriz-x-data-frame-18" class="slide level2">
+<h2>Matriz x data frame</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Data frame
+<ul>
+<li>Exemplo com fator (001-criadf.xls)</li>
+<li>Alimentação de primeiro estágio larval de camarões</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="figuras/tetra-1.png" class="quarto-figure quarto-figure-right" style="width:60.0%"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="matriz-x-data-frame-19" class="slide level2">
+<h2>Matriz x data frame</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Data frame
+<ul>
+<li>Exemplo com fator</li>
+<li>Alimentação de primeiro estágio larval de camarões</li>
+<li>Tratamentos
+<ul>
+<li>tetra</li>
+<li>duna</li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb71"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a></a>trat <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"duna"</span>, <span class="st">"duna"</span>, <span class="st">"duna"</span>,  </span>
+<span id="cb71-2"><a></a>          <span class="st">"tetra"</span>, <span class="st">"tetra"</span>, <span class="st">"tetra"</span>, </span>
+<span id="cb71-3"><a></a>          <span class="st">"duna"</span>, <span class="st">"duna"</span>, <span class="st">"duna"</span>,  </span>
+<span id="cb71-4"><a></a>          <span class="st">"tetra"</span>, <span class="st">"tetra"</span>, <span class="st">"tetra"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="figuras/tetra-1.png" class="quarto-figure quarto-figure-right" style="width:60.0%"></p>
+</figure>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb72"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb72-1"><a></a>trat</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "duna"  "duna"  "duna"  "tetra" "tetra" "tetra" "duna"  "duna"  "duna" 
+[10] "tetra" "tetra" "tetra"</code></pre>
+</div>
+</div>
+</div></div>
+<div class="absolute" style="top: 0px; left: 930px; ">
+<p><img data-src="figuras/tetra-setas.png" style="width:100.0%"></p>
+</div>
+</section>
+<section id="matriz-x-data-frame-20" class="slide level2">
+<h2>Matriz x data frame</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Data frame
+<ul>
+<li>Exemplo com fator</li>
+<li>Alimentação de primeiro estágio larval de camarões</li>
+<li>Tratamentos
+<ul>
+<li>tetra (1)</li>
+<li>duna (2)</li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb74"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb74-1"><a></a>trat <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="figuras/tetra-1.png" class="quarto-figure quarto-figure-right" style="width:60.0%"></p>
+</figure>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb75"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a></a>trat</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 1 1 1 2 2 2 1 1 1 2 2 2</code></pre>
+</div>
+</div>
+</div></div>
+<div class="absolute" style="top: 0px; left: 930px; ">
+<p><img data-src="figuras/tetra-setas.png" style="width:100.0%"></p>
+</div>
+</section>
+<section id="matriz-x-data-frame-21" class="slide level2">
+<h2>Matriz x data frame</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Data frame
+<ul>
+<li>Exemplo com fator</li>
+<li>Alimentação de primeiro estágio larval de camarões</li>
+<li>Temperatura
+<ul>
+<li>26C</li>
+<li>22C</li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb77"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a></a>temp <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">26</span>, <span class="dv">6</span>),<span class="fu">rep</span>(<span class="dv">22</span>, <span class="dv">6</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="figuras/tetra-1.png" class="quarto-figure quarto-figure-right" style="width:60.0%"></p>
+</figure>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb78"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb78-1"><a></a>temp</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 26 26 26 26 26 26 22 22 22 22 22 22</code></pre>
+</div>
+</div>
+</div></div>
+<div class="absolute" style="top: 0px; left: 930px; ">
+<p><img data-src="figuras/tetra-setas.png" style="width:100.0%"></p>
+</div>
+</section>
+<section id="matriz-x-data-frame-22" class="slide level2">
+<h2>Matriz x data frame</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Data frame
+<ul>
+<li>Exemplo com fator</li>
+<li>Alimentação de primeiro estágio larval de camarões</li>
+<li>Tratamentos</li>
+<li>Z2
+<ul>
+<li>Diversos valores</li>
+</ul></li>
+<li>Dias
+<ul>
+<li>Diversos valores</li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb80"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a></a>z2 <span class="ot">&lt;-</span> <span class="fu">scan</span>()</span>
+<span id="cb80-2"><a></a></span>
+<span id="cb80-3"><a></a>dias <span class="ot">&lt;-</span> <span class="fu">scan</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="figuras/tetra-1.png" class="quarto-figure quarto-figure-right" style="width:60.0%"></p>
+</figure>
+</div>
+</div></div>
+<div class="absolute" style="top: 0px; left: 930px; ">
+<p><img data-src="figuras/tetra-setas.png" style="width:100.0%"></p>
+</div>
+</section>
+<section id="matriz-x-data-frame-23" class="slide level2">
+<h2>Matriz x data frame</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Data frame
+<ul>
+<li>Exemplo com fator</li>
+<li>Alimentação de primeiro estágio larval de camarões</li>
+<li>Tratamentos</li>
+<li>Criar o data frame</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb81"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">cbind</span>(trat, temp, z2, dias))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="figuras/tetra-1.png" class="quarto-figure quarto-figure-right" style="width:60.0%"></p>
+</figure>
+</div>
+</div></div>
+<div class="absolute" style="top: 0px; left: 930px; ">
+<p><img data-src="figuras/tetra-setas.png" style="width:100.0%"></p>
+</div>
+</section>
+<section id="matriz-x-data-frame-24" class="slide level2">
+<h2>Matriz x data frame</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Data frame
+<ul>
+<li>Exemplo com fator</li>
+<li>Alimentação de primeiro estágio larval de camarões</li>
+<li>Tratamentos</li>
+<li>Criar o data frame</li>
+</ul></li>
+</ul>
+<p><span class="texto-menor">#Transformar os dados em caracteres</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb82"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a></a>df<span class="sc">$</span>trat <span class="ot">&lt;-</span> <span class="fu">as.character</span>(df<span class="sc">$</span>trat)</span>
+<span id="cb82-2"><a></a></span>
+<span id="cb82-3"><a></a><span class="co">#verifica o tipo de dado</span></span>
+<span id="cb82-4"><a></a><span class="fu">mode</span>(df<span class="sc">$</span>trat)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "character"</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb84"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   trat temp  z2 dias
+1     1   26  80    3
+2     1   26  90    4
+3     1   26 100    4
+4     2   26  80    4
+5     2   26  80    5
+6     2   26 100    4
+7     1   22  70    7
+8     1   22 100    9
+9     1   22  70    6
+10    2   22  70    7
+11    2   22  10    8
+12    2   22  10    8</code></pre>
+</div>
+</div>
+</div></div>
+</section>
+<section id="matriz-x-data-frame-25" class="slide level2">
+<h2>Matriz x data frame</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Data frame
+<ul>
+<li>Exemplo com fator</li>
+<li>Alimentação de primeiro estágio larval de camarões</li>
+<li>Tratamentos</li>
+<li>Criar o data frame</li>
+</ul></li>
+</ul>
+<p><span class="texto-menor">#trocar os valores de tetra</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb86"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a></a>df<span class="sc">$</span>trat[df<span class="sc">$</span>trat <span class="sc">==</span> <span class="st">"1"</span>] <span class="ot">&lt;-</span> <span class="st">"tetra"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><span class="texto-menor">#trocar os valores de duna</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb87"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a></a>df<span class="sc">$</span>trat[df<span class="sc">$</span>trat <span class="sc">==</span> <span class="st">"2"</span>] <span class="ot">&lt;-</span> <span class="st">"duna"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb88"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    trat temp  z2 dias
+1  tetra   26  80    3
+2  tetra   26  90    4
+3  tetra   26 100    4
+4   duna   26  80    4
+5   duna   26  80    5
+6   duna   26 100    4
+7  tetra   22  70    7
+8  tetra   22 100    9
+9  tetra   22  70    6
+10  duna   22  70    7
+11  duna   22  10    8
+12  duna   22  10    8</code></pre>
+</div>
+</div>
+</div></div>
+</section>
+<section id="matriz-x-data-frame-26" class="slide level2">
+<h2>Matriz x data frame</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Data frame
+<ul>
+<li>Exemplo com fator</li>
+<li>Alimentação de primeiro estágio larval de camarões</li>
+<li>Tratamentos</li>
+<li>Criar o data frame</li>
+</ul></li>
+</ul>
+<p><span class="texto-menor">## Façam o mesmo para temperatura: 22 = 22C e 26 = 26C</span></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb90"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    trat temp  z2 dias
+1  tetra   26  80    3
+2  tetra   26  90    4
+3  tetra   26 100    4
+4   duna   26  80    4
+5   duna   26  80    5
+6   duna   26 100    4
+7  tetra   22  70    7
+8  tetra   22 100    9
+9  tetra   22  70    6
+10  duna   22  70    7
+11  duna   22  10    8
+12  duna   22  10    8</code></pre>
+</div>
+</div>
+</div></div>
+</section>
+<section id="matriz-x-data-frame-27" class="slide level2">
+<h2>Matriz x data frame</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Data frame
+<ul>
+<li>Exemplo com fator</li>
+<li>Alimentação de primeiro estágio larval de camarões</li>
+<li>Tratamentos</li>
+<li>Criar o data frame</li>
+</ul></li>
+</ul>
+<p><span class="texto-menor">## Façam o mesmo para temperatura: 22 = 22C e 26 = 26C</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb92"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a></a>df<span class="sc">$</span>temp <span class="ot">&lt;-</span> <span class="fu">as.character</span>(df<span class="sc">$</span>temp)</span>
+<span id="cb92-2"><a></a></span>
+<span id="cb92-3"><a></a>df<span class="sc">$</span>temp[df<span class="sc">$</span>temp <span class="sc">==</span> <span class="st">"22"</span>] <span class="ot">&lt;-</span> <span class="st">"22C"</span></span>
+<span id="cb92-4"><a></a>df<span class="sc">$</span>temp[df<span class="sc">$</span>temp <span class="sc">==</span> <span class="st">"26"</span>] <span class="ot">&lt;-</span> <span class="st">"26C"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:45%;">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb93"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb93-1"><a></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    trat temp  z2 dias
+1  tetra  26C  80    3
+2  tetra  26C  90    4
+3  tetra  26C 100    4
+4   duna  26C  80    4
+5   duna  26C  80    5
+6   duna  26C 100    4
+7  tetra  22C  70    7
+8  tetra  22C 100    9
+9  tetra  22C  70    6
+10  duna  22C  70    7
+11  duna  22C  10    8
+12  duna  22C  10    8</code></pre>
+</div>
+</div>
+</div></div>
+</section>
+<section id="importando-arquivos" class="slide level2">
+<h2>Importando arquivos</h2>
+<ul>
+<li>Importando arquivos
+<ul>
+<li>Para dados criados em outros programas</li>
+<li>read.table()</li>
+<li>Parâmetros
+<ul>
+<li>dec</li>
+<li>header</li>
+<li>sep</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="center"><code>mat &lt;- read.table("expind.txt", header=T, dec=",")</code></span></p>
+</section>
+<section id="importando-arquivos-1" class="slide level2">
+<h2>Importando arquivos</h2>
+<ul>
+<li>Importando arquivos
+<ul>
+<li>Para dados criados em outros programas</li>
+<li>read.table()</li>
+<li>Parâmetros
+<ul>
+<li>dec</li>
+<li>header</li>
+<li>sep</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="center"><code>mat &lt;- read.table("expind.txt", header=T, dec=",")</code></span></p>
+<div class="absolute" style="top: 65px; left: 90px; ">
+<p><img data-src="figuras/import.png" style="width:100.0%"></p>
+</div>
+</section>
+<section id="importando-arquivos-2" class="slide level2">
+<h2>Importando arquivos</h2>
+<ul>
+<li>Importando arquivos
+<ul>
+<li>Abrir o arquivo “001-criadf.xls”</li>
+<li>Salvar como MS-DOS txt</li>
+<li>Abrir o arquivo de texto
+<ul>
+<li>Notepad, etc…</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="center"><code>mat &lt;- read.table("001-criadf2.txt", header=T, dec=",")</code></span></p>
 
 
 </section>

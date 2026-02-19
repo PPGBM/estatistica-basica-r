@@ -161,16 +161,20 @@ aos conteúdos e aos slides.
 
 ---
 
-### Aula 05 – Graficos no R
+### Aula 05 – Mais sobre funções
 
 - Mais sobre funções
 
 [➡️ Acessar slides da aula](slides/aula-R-5-funcoes.qmd){target="_blank" rel="noopener"}
 
 
-### Aula 06 – Estatística descritiva no R
+### Aula 06 – Mais sobre objetos
 
-- Mais sobre objetos
+- Estruturas de dados
+- Matriz x Data frame
+- Importando dados
+
+[➡️ Acessar slides da aula](slides/aula-R-6-objetos.qmd){target="_blank" rel="noopener"}
 
 ### Aula 07 – Estatística descritiva no R
 

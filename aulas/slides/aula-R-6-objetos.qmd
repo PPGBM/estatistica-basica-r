@@ -810,21 +810,797 @@ xmat[2,3]
 :::
 
 
-## slide 109
+## Matriz x data frame
 
-## linhas extras
+:::: {.columns}
 
+::: {.column .codigo-pequeno width="50%"}
 
+- Matriz
 
-
-
-
-
-
-
-
+```{r}
+#| echo: true
+#| output: false
 
 
+colnames(xmat) <- c("sp1","sp2","sp3","sp4")
+
+```
+
+[Nomeia as colunas da matriz xmat]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+rownames(xmat) <- c("porcos","abobrinha","maramuta")
+
+```
+
+[nomeia as linhas da matriz]{.texto-menor}
+
+:::
+
+::: {.column width="5%"}
+
+
+:::
+
+::: {.column width="45%"}
+
+```{r}
+#| echo: false
+#| output: true
+
+xmat
+
+```
+
+:::
+
+::::
+
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column .codigo-pequeno width="50%"}
+
+- Matriz
+
+```{r}
+#| echo: true
+#| output: false
+
+
+colnames(xmat) <- c("sp1","sp2","sp3","sp4")
+
+```
+
+[Nomeia as colunas da matriz xmat]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+rownames(xmat) <- c("porcos","abobrinha","maramuta")
+
+```
+
+[nomeia as linhas da matriz]{.texto-menor}
+
+:::
+
+::: {.column width="5%"}
+
+
+:::
+
+::: {.column width="45%"}
+
+```{r}
+#| echo: false
+#| output: true
+
+xmat
+
+```
+
+:::
+
+::::
+
+
+::: {.absolute top="60" left="45"}
+
+![](figuras/colnames.png){width="82%"}
+
+:::
+
+::: {.absolute top="115" left="25"}
+
+![](figuras/rownames.png){width="65%"}
+
+:::
+
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column .codigo-pequeno width="50%"}
+
+- Matriz
+
+```{r}
+#| echo: true
+#| output: false
+
+
+colnames(xmat) <- c("sp1","sp2","sp3","sp4")
+
+```
+
+[Nomeia as colunas da matriz xmat]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+rownames(xmat) <- c("porcos","abobrinha","maramuta")
+
+```
+
+[nomeia as linhas da matriz]{.texto-menor}
+
+[Funções utilizadas em matrizes]{.texto-menor}
+
+`rowSums(xmat)` [#soma os valores das linhas da matriz]{.texto-menor}\
+`sum(xmat[2,])` [#neste caso soma os valores da linha 2]{.texto-menor}\
+`colSums(xmat)` [#soma os valores das colunas]{.texto-menor}\
+`rowMeans(xmat)` [#média das linhas]{.texto-menor}\
+`colMeans(xmat)` [#média das colunas]{.texto-menor}
+
+
+:::
+
+::: {.column width="5%"}
+
+
+:::
+
+::: {.column width="45%"}
+
+```{r}
+#| echo: false
+#| output: true
+
+xmat
+
+```
+
+:::
+
+::::
+
+
+::: {.absolute top="60" left="45"}
+
+![](figuras/colnames.png){width="82%"}
+
+:::
+
+::: {.absolute top="115" left="25"}
+
+![](figuras/rownames.png){width="65%"}
+
+:::
+
+
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column .codigo-pequeno width="50%"}
+
+- Matriz
+  - Adicionando dados
+    - `cbind` - junta tudo por colunas
+    - `rbind` - junta por linhas
+
+
+```{r}
+#| echo: true
+#| output: false
+
+
+xmat  <-  cbind(xmat, c(13,14,15))
+
+```
+
+[Adiciona os valores 13, 14 e 15 em nova coluna]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+colnames(xmat)  <-  c("sp1","sp2","sp3","sp4","sp5")
+
+```
+
+[Renomeia as colunas]{.texto-menor}
+
+
+
+:::
+
+::: {.column width="5%"}
+
+
+:::
+
+::: {.column width="45%"}
+
+```{r}
+#| echo: false
+#| output: true
+
+xmat
+
+```
+
+:::
+
+::::
+
+
+## Matriz x data frame
+
+- Matriz
+  - Algumas funções importantes (apply)
+  - Apply - aplica uma função em linhas ou colunas da matriz
+  
+
+```{r}
+#| echo: true
+#| output: false
+
+soma.xmat <- apply(xmat, 2, sum)
+```
+
+[Compare o resultado com `colSums(xmat)`]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+c.xmat <- apply(xmat, 2, sample)
+```
+
+[Compare com `xmat`]{.texto-menor}
+
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Matriz
+  - Algumas funções importantes (sapply)
+  - sapply - realiza uma função em um data frame
+  
+[Criamos uma lista]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+lista <- list(a = c(1:10), b = c(11:20))
+
+```
+
+[Aplicamos a função]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: true
+
+sapply(lista, sum)
+
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+\
+\
+\
+
+[lapply - retorna o resultado em forma de lista]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: true
+
+lapply(lista, sum)
+
+```
+
+:::
+
+::::
+
+## Matriz x data frame
+
+- Data frame
+
+![](figuras/df.png){width="100%"}
+
+## Matriz x Data frame
+
+:::: {.columns}
+
+::: {.column width="50%" .codigo-pequeno}
+
+- Data frame
+
+```{r}
+#| echo: true
+#| output: false
+
+ouricos <- c(1:5)
+peixes <- c(6:10)
+crustaceos <- c(6:10)
+
+```
+
+
+```{r}
+#| echo: true
+#| output: false
+
+dados.df <- data.frame(ouricos, peixes, crustaceos)
+```
+
+[Cria o objeto dados.df como um data frame]{.texto-menor}
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%" .codigo-pequeno}
+
+
+```{r}
+#| echo: true
+#| output: true
+
+cbind(ouricos, peixes, crustaceos)
+
+```
+
+```{r}
+#| echo: true
+#| output: true
+
+dados.df
+
+```
+:::
+
+::::
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Data frame
+  - `$`
+    - Indica uma variável
+    -Só funciona em um data frame
+    
+
+```{r}
+#| echo: true
+#| output: false
+
+dados.df$peixes
+dados.df$ouricos
+dados.df$crustaceos
+
+```
+
+[Pode ser usado dentro de funções]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+mean(dados.df$peixes)
+sum(dados.df$peixes)
+
+```
+
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+
+```{r}
+#| echo: true
+#| output: true
+
+dados.df
+
+```
+
+:::
+
+::::
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Data frame
+  - `$`
+    - Indica uma variável
+    -Só funciona em um data frame
+    
+
+```{r}
+#| echo: true
+#| output: false
+
+dados.df$peixes
+dados.df$ouricos
+dados.df$crustaceos
+
+```
+
+[Pode ser usado dentro de funções]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+mean(dados.df$peixes)
+sum(dados.df$peixes)
+
+```
+
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+
+```{r}
+#| echo: true
+#| output: true
+
+dados.df
+
+```
+
+::: {.texto-05}
+
+\ 
+
+::: 
+
+```{r}
+#| echo: true
+#| output: true
+
+mean(dados.df$peixes)
+
+```
+
+
+::: {.texto-05}
+
+\ 
+
+::: 
+
+
+```{r}
+#| echo: true
+#| output: true
+
+sum(dados.df$peixes)
+
+```
+
+:::
+
+::::
+
+::: {.absolute top="140" left="845"}
+
+![](figuras/retangulo.png){width="35%"}
+
+:::
+
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Data frame
+  - Exemplo com fator (001-criadf.xls)
+  - Alimentação de primeiro estágio larval de camarões
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+![](figuras/tetra-1.png){width="60%" fig-align="right"}
+
+:::
+
+::::
+
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Data frame
+  - Exemplo com fator
+  - Alimentação de primeiro estágio larval de camarões
+  - Tratamentos 
+    - tetra
+    - duna
+
+
+
+```{r}
+#| echo: true
+#| output: false
+
+trat <- c("duna", "duna", "duna",  
+          "tetra", "tetra", "tetra", 
+          "duna", "duna", "duna",  
+          "tetra", "tetra", "tetra")
+
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+![](figuras/tetra-1.png){width="60%" fig-align="right"}
+
+
+```{r}
+#| echo: true
+#| output: true
+
+trat
+
+```
+
+:::
+
+::::
+
+::: {.absolute top="0" left="930"}
+
+![](figuras/tetra-setas.png){width="100%"}
+
+:::
+
+
+
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Data frame
+  - Exemplo com fator
+  - Alimentação de primeiro estágio larval de camarões
+  - Tratamentos 
+    - tetra (1)
+    - duna (2)
+
+
+
+```{r}
+#| echo: true
+#| output: false
+
+trat <- c(1,1,1,2,2,2,1,1,1,2,2,2)
+
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+![](figuras/tetra-1.png){width="60%" fig-align="right"}
+
+
+```{r}
+#| echo: true
+#| output: true
+
+trat
+
+```
+
+:::
+
+::::
+
+::: {.absolute top="0" left="930"}
+
+![](figuras/tetra-setas.png){width="100%"}
+
+:::
+
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Data frame
+  - Exemplo com fator
+  - Alimentação de primeiro estágio larval de camarões
+  - Temperatura
+    - 26C
+    - 22C
+
+
+
+```{r}
+#| echo: true
+#| output: false
+
+temp <- c(rep(26, 6),rep(22, 6))
+
+
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+![](figuras/tetra-1.png){width="60%" fig-align="right"}
+
+
+```{r}
+#| echo: true
+#| output: true
+
+temp
+
+```
+
+:::
+
+::::
+
+::: {.absolute top="0" left="930"}
+
+![](figuras/tetra-setas.png){width="100%"}
+
+:::
+
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Data frame
+  - Exemplo com fator
+  - Alimentação de primeiro estágio larval de camarões
+  - Tratamentos 
+  - Z2
+    - Diversos valores
+  - Dias
+    - Diversos valores
+
+
+
+
+```{r}
+#| echo: true
+#| output: false
+
+z2 <- scan()
+
+dias <- scan()
+
+```
+
+```{r}
+#| echo: false
+#| output: false
+
+z2 <- c(80,90,100,80,80,100,70,100,70,70,10,10)
+
+dias <- c(3,4,4,4,5,4,7,9,6,7,8,8)
+
+```
+
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+![](figuras/tetra-1.png){width="60%" fig-align="right"}
+
+
+:::
+
+::::
+
+::: {.absolute top="0" left="930"}
+
+![](figuras/tetra-setas.png){width="100%"}
+
+:::
 
 
 
@@ -832,6 +1608,51 @@ xmat[2,3]
 
 
 
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Data frame
+  - Exemplo com fator
+  - Alimentação de primeiro estágio larval de camarões
+  - Tratamentos 
+  - Criar o data frame
+
+
+
+
+```{r}
+#| echo: true
+#| output: false
+
+df <- data.frame(cbind(trat, temp, z2, dias))
+
+
+```
+
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+![](figuras/tetra-1.png){width="60%" fig-align="right"}
+
+
+:::
+
+::::
+
+::: {.absolute top="0" left="930"}
+
+![](figuras/tetra-setas.png){width="100%"}
+
+:::
 
 
 
@@ -839,29 +1660,256 @@ xmat[2,3]
 
 
 
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Data frame
+  - Exemplo com fator
+  - Alimentação de primeiro estágio larval de camarões
+  - Tratamentos 
+  - Criar o data frame
+
+
+[#Transformar os dados em caracteres]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: true
+
+df$trat <- as.character(df$trat)
+
+#verifica o tipo de dado
+mode(df$trat)
+
+```
+
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+
+```{r}
+#| echo: true
+#| output: true
+
+df
+
+```
+
+:::
+
+::::
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Data frame
+  - Exemplo com fator
+  - Alimentação de primeiro estágio larval de camarões
+  - Tratamentos 
+  - Criar o data frame
+
+
+[#trocar os valores de tetra]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+df$trat[df$trat == "1"] <- "tetra"
+
+```
+
+[#trocar os valores de duna]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+df$trat[df$trat == "2"] <- "duna"
+
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+
+```{r}
+#| echo: true
+#| output: true
+
+df
+
+```
+
+:::
+
+::::
+
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Data frame
+  - Exemplo com fator
+  - Alimentação de primeiro estágio larval de camarões
+  - Tratamentos 
+  - Criar o data frame
+
+
+[## Façam o mesmo para temperatura: 22 = 22C e 26 = 26C]{.texto-menor}
+
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+
+```{r}
+#| echo: true
+#| output: true
+
+df
+
+```
+
+:::
+
+::::
+
+
+
+## Matriz x data frame
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Data frame
+  - Exemplo com fator
+  - Alimentação de primeiro estágio larval de camarões
+  - Tratamentos 
+  - Criar o data frame
+
+
+[## Façam o mesmo para temperatura: 22 = 22C e 26 = 26C]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+df$temp <- as.character(df$temp)
+
+df$temp[df$temp == "22"] <- "22C"
+df$temp[df$temp == "26"] <- "26C"
+
+
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+
+```{r}
+#| echo: true
+#| output: true
+
+df
+
+```
+
+:::
+
+::::
+
+## Importando arquivos
+
+- Importando arquivos
+  - Para dados criados em outros programas
+  - read.table()
+  - Parâmetros
+    - dec
+    - header
+    - sep
+
+
+
+
+                                       
+[`mat <- read.table("expind.txt", header=T, dec=",")`]{.center}
+
+
+
+
+## Importando arquivos
+
+- Importando arquivos
+  - Para dados criados em outros programas
+  - read.table()
+  - Parâmetros
+    - dec
+    - header
+    - sep
 
 
 
 
 
+                                       
+[`mat <- read.table("expind.txt", header=T, dec=",")`]{.center}
+
+
+::: {.absolute top="65" left="90"}
+
+![](figuras/import.png){width="100%"}
+
+:::
+
+
+
+## Importando arquivos
+
+- Importando arquivos
+  - Abrir o arquivo "001-criadf.xls"
+  - Salvar como MS-DOS txt
+  - Abrir o arquivo de texto
+    - Notepad, etc...
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                       
+[`mat <- read.table("001-criadf2.txt", header=T, dec=",")`]{.center}
 
 
 

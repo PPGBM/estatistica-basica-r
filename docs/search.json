@@ -1628,7 +1628,7 @@
     "href": "aulas/aulas.html#linguagem-r",
     "title": "Aulas",
     "section": "Linguagem R",
-    "text": "Linguagem R\n\n\nAula 01 – A Linguagem R\n\nO R é para mim?\nA linguagem R\nUm pouco de história…\nNão tenha medo do erro\nR x Python\nO pacote R\nRStudio\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – O pacote R\n\nComandos Básicos\nPacotes\nO R como calculadora\nIniciando em objetos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Objetos e Dados\n\nAtribuição\nNomeando objetos\nUtilizando objetos em R\nTipos de dados em R\n\n➡️ Acessar slides da aula\n\n\n\nAula 04 – Funções e objetos\n\nEstruturas de dados\nTrabalhando com vetores\n\n➡️ Acessar slides da aula\n\n\n\nAula 05 – Graficos no R\n\nMais sobre funções\n\n➡️ Acessar slides da aula\n\n\nAula 06 – Estatística descritiva no R\n\nMais sobre objetos\n\n\n\nAula 07 – Estatística descritiva no R\n\nComo funcionam gráficos no R\nTipos de gráficos\nParâmetros gráficos\n\n➡️ Aula em breve\n\n\nAula 08 – Estatística descritiva no R\n\nEstatística descritiva\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve\n\n\nAula 09 – Testes de significância em R\n\nTestes de significância\n\nTeste t\nMann-Whitney\nQui-quadrado\nAnálise de Variância\nKruskall-Wallis\n\n\n➡️ Aula em breve"
+    "text": "Linguagem R\n\n\nAula 01 – A Linguagem R\n\nO R é para mim?\nA linguagem R\nUm pouco de história…\nNão tenha medo do erro\nR x Python\nO pacote R\nRStudio\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – O pacote R\n\nComandos Básicos\nPacotes\nO R como calculadora\nIniciando em objetos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Objetos e Dados\n\nAtribuição\nNomeando objetos\nUtilizando objetos em R\nTipos de dados em R\n\n➡️ Acessar slides da aula\n\n\n\nAula 04 – Funções e objetos\n\nEstruturas de dados\nTrabalhando com vetores\n\n➡️ Acessar slides da aula\n\n\n\nAula 05 – Mais sobre funções\n\nMais sobre funções\n\n➡️ Acessar slides da aula\n\n\nAula 06 – Mais sobre objetos\n\nEstruturas de dados\nMatriz x Data frame\nImportando dados\n\n➡️ Acessar slides da aula\n\n\nAula 07 – Estatística descritiva no R\n\nComo funcionam gráficos no R\nTipos de gráficos\nParâmetros gráficos\n\n➡️ Aula em breve\n\n\nAula 08 – Estatística descritiva no R\n\nEstatística descritiva\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve\n\n\nAula 09 – Testes de significância em R\n\nTestes de significância\n\nTeste t\nMann-Whitney\nQui-quadrado\nAnálise de Variância\nKruskall-Wallis\n\n\n➡️ Aula em breve"
   },
   {
     "objectID": "aulas/guia-quarto-latex-math-html.html",
@@ -4338,5 +4338,180 @@
     "title": "Estatística Básica utilizando R",
     "section": "slide 109",
     "text": "slide 109"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-8",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-8",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nMatriz\n\n\ncolnames(xmat) &lt;- c(\"sp1\",\"sp2\",\"sp3\",\"sp4\")\n\nNomeia as colunas da matriz xmat\n\nrownames(xmat) &lt;- c(\"porcos\",\"abobrinha\",\"maramuta\")\n\nnomeia as linhas da matriz\n\n\n\n\n\n          sp1 sp2 sp3 sp4\nporcos      1   4   7  10\nabobrinha   2   5   8  11\nmaramuta    3   6   9  12"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-9",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-9",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nMatriz\n\n\ncolnames(xmat) &lt;- c(\"sp1\",\"sp2\",\"sp3\",\"sp4\")\n\nNomeia as colunas da matriz xmat\n\nrownames(xmat) &lt;- c(\"porcos\",\"abobrinha\",\"maramuta\")\n\nnomeia as linhas da matriz\n\n\n\n\n\n          sp1 sp2 sp3 sp4\nporcos      1   4   7  10\nabobrinha   2   5   8  11\nmaramuta    3   6   9  12"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-10",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-10",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nMatriz\n\n\ncolnames(xmat) &lt;- c(\"sp1\",\"sp2\",\"sp3\",\"sp4\")\n\nNomeia as colunas da matriz xmat\n\nrownames(xmat) &lt;- c(\"porcos\",\"abobrinha\",\"maramuta\")\n\nnomeia as linhas da matriz\nFunções utilizadas em matrizes\nrowSums(xmat) #soma os valores das linhas da matriz\nsum(xmat[2,]) #neste caso soma os valores da linha 2\ncolSums(xmat) #soma os valores das colunas\nrowMeans(xmat) #média das linhas\ncolMeans(xmat) #média das colunas\n\n\n\n\n\n          sp1 sp2 sp3 sp4\nporcos      1   4   7  10\nabobrinha   2   5   8  11\nmaramuta    3   6   9  12"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-11",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-11",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nMatriz\n\nAdicionando dados\n\ncbind - junta tudo por colunas\nrbind - junta por linhas\n\n\n\n\nxmat  &lt;-  cbind(xmat, c(13,14,15))\n\nAdiciona os valores 13, 14 e 15 em nova coluna\n\ncolnames(xmat)  &lt;-  c(\"sp1\",\"sp2\",\"sp3\",\"sp4\",\"sp5\")\n\nRenomeia as colunas\n\n\n\n\n\n          sp1 sp2 sp3 sp4 sp5\nporcos      1   4   7  10  13\nabobrinha   2   5   8  11  14\nmaramuta    3   6   9  12  15"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-12",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-12",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\nMatriz\n\nAlgumas funções importantes (apply)\nApply - aplica uma função em linhas ou colunas da matriz\n\n\n\nsoma.xmat &lt;- apply(xmat, 2, sum)\n\nCompare o resultado com colSums(xmat)\n\nc.xmat &lt;- apply(xmat, 2, sample)\n\nCompare com xmat"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-13",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-13",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nMatriz\n\nAlgumas funções importantes (sapply)\nsapply - realiza uma função em um data frame\n\n\nCriamos uma lista\n\nlista &lt;- list(a = c(1:10), b = c(11:20))\n\nAplicamos a função\n\nsapply(lista, sum)\n\n  a   b \n 55 155 \n\n\n\n\n\n\n\n\n\nlapply - retorna o resultado em forma de lista\n\nlapply(lista, sum)\n\n$a\n[1] 55\n\n$b\n[1] 155"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-14",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-14",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\nData frame"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-15",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-15",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x Data frame",
+    "text": "Matriz x Data frame\n\n\n\nData frame\n\n\nouricos &lt;- c(1:5)\npeixes &lt;- c(6:10)\ncrustaceos &lt;- c(6:10)\n\n\ndados.df &lt;- data.frame(ouricos, peixes, crustaceos)\n\nCria o objeto dados.df como um data frame\n\n\n\n\ncbind(ouricos, peixes, crustaceos)\n\n     ouricos peixes crustaceos\n[1,]       1      6          6\n[2,]       2      7          7\n[3,]       3      8          8\n[4,]       4      9          9\n[5,]       5     10         10\n\n\n\ndados.df\n\n  ouricos peixes crustaceos\n1       1      6          6\n2       2      7          7\n3       3      8          8\n4       4      9          9\n5       5     10         10"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-16",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-16",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nData frame\n\n$\n\nIndica uma variável -Só funciona em um data frame\n\n\n\n\ndados.df$peixes\ndados.df$ouricos\ndados.df$crustaceos\n\nPode ser usado dentro de funções\n\nmean(dados.df$peixes)\nsum(dados.df$peixes)\n\n\n\n\n\ndados.df\n\n  ouricos peixes crustaceos\n1       1      6          6\n2       2      7          7\n3       3      8          8\n4       4      9          9\n5       5     10         10"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#testando-codes-anottations",
+    "href": "aulas/slides/aula-R-6-objetos.html#testando-codes-anottations",
+    "title": "Estatística Básica utilizando R",
+    "section": "testando codes anottations",
+    "text": "testando codes anottations\n\n1x &lt;- rnorm(10)\n2mean(x)\n3sd(x)\n\n\n1\n\nAqui criamos um vetor aleatório\n\n2\n\nCalculamos a média\n\n3\n\nCalculamos o desvio padrão\n\n\n\n\n[1] 0.2842503\n[1] 1.065453"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#trabalhando-com-uma-coluna-específica",
+    "href": "aulas/slides/aula-R-6-objetos.html#trabalhando-com-uma-coluna-específica",
+    "title": "Estatística Básica utilizando R",
+    "section": "Trabalhando com uma coluna específica",
+    "text": "Trabalhando com uma coluna específica\n\nlibrary(gt)\n\ndados &lt;- data.frame(\n  nome   = c(\"Ana\", \"Bruno\", \"Carlos\", \"Diana\"),\n  altura = c(170, 165, 180, 175),\n  peso   = c(65, 70, 85, 68)\n)\n\ndados |&gt;\n  gt() |&gt;\n  tab_style(\n    style = list(\n      cell_fill(color = \"#fff3b0\"),\n      cell_borders(\n        sides = \"all\",\n        color = \"red\",\n        weight = px(3)\n      )\n    ),\n    locations = cells_body(columns = altura)\n  )\n\n\n\n\n\n\n\nnome\naltura\npeso\n\n\n\n\nAna\n170\n65\n\n\nBruno\n165\n70\n\n\nCarlos\n180\n85\n\n\nDiana\n175\n68"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-17",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-17",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nData frame\n\n$\n\nIndica uma variável -Só funciona em um data frame\n\n\n\n\ndados.df$peixes\ndados.df$ouricos\ndados.df$crustaceos\n\nPode ser usado dentro de funções\n\nmean(dados.df$peixes)\nsum(dados.df$peixes)\n\n\n\n\n\ndados.df\n\n  ouricos peixes crustaceos\n1       1      6          6\n2       2      7          7\n3       3      8          8\n4       4      9          9\n5       5     10         10\n\n\n\n \n\n\nmean(dados.df$peixes)\n\n[1] 8\n\n\n\n \n\n\nsum(dados.df$peixes)\n\n[1] 40"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-18",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-18",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nData frame\n\nExemplo com fator (001-criadf.xls)\nAlimentação de primeiro estágio larval de camarões"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-19",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-19",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nData frame\n\nExemplo com fator\nAlimentação de primeiro estágio larval de camarões\nTratamentos\n\ntetra\nduna\n\n\n\n\ntrat &lt;- c(\"duna\", \"duna\", \"duna\",  \n          \"tetra\", \"tetra\", \"tetra\", \n          \"duna\", \"duna\", \"duna\",  \n          \"tetra\", \"tetra\", \"tetra\")\n\n\n\n\n\n\n\n\n\n\ntrat\n\n [1] \"duna\"  \"duna\"  \"duna\"  \"tetra\" \"tetra\" \"tetra\" \"duna\"  \"duna\"  \"duna\" \n[10] \"tetra\" \"tetra\" \"tetra\""
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-20",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-20",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nData frame\n\nExemplo com fator\nAlimentação de primeiro estágio larval de camarões\nTratamentos\n\ntetra (1)\nduna (2)\n\n\n\n\ntrat &lt;- c(1,1,1,2,2,2,1,1,1,2,2,2)\n\n\n\n\n\n\n\n\n\n\ntrat\n\n [1] 1 1 1 2 2 2 1 1 1 2 2 2"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-21",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-21",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nData frame\n\nExemplo com fator\nAlimentação de primeiro estágio larval de camarões\nTemperatura\n\n26C\n22C\n\n\n\n\ntemp &lt;- c(rep(26, 6),rep(22, 6))\n\n\n\n\n\n\n\n\n\n\ntemp\n\n [1] 26 26 26 26 26 26 22 22 22 22 22 22"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-22",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-22",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nData frame\n\nExemplo com fator\nAlimentação de primeiro estágio larval de camarões\nTratamentos\nZ2\n\nDiversos valores\n\nDias\n\nDiversos valores\n\n\n\n\nz2 &lt;- scan()\n\ndias &lt;- scan()"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-23",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-23",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nData frame\n\nExemplo com fator\nAlimentação de primeiro estágio larval de camarões\nTratamentos\nCriar o data frame\n\n\n\ndf &lt;- data.frame(cbind(trat, temp, z2, dias))"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-24",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-24",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nData frame\n\nExemplo com fator\nAlimentação de primeiro estágio larval de camarões\nTratamentos\nCriar o data frame\n\n\n#Transformar os dados em caracteres\n\ndf$trat &lt;- as.character(df$trat)\n\n#verifica o tipo de dado\nmode(df$trat)\n\n[1] \"character\"\n\n\n\n\n\n\ndf\n\n   trat temp  z2 dias\n1     1   26  80    3\n2     1   26  90    4\n3     1   26 100    4\n4     2   26  80    4\n5     2   26  80    5\n6     2   26 100    4\n7     1   22  70    7\n8     1   22 100    9\n9     1   22  70    6\n10    2   22  70    7\n11    2   22  10    8\n12    2   22  10    8"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-25",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-25",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nData frame\n\nExemplo com fator\nAlimentação de primeiro estágio larval de camarões\nTratamentos\nCriar o data frame\n\n\n#trocar os valores de tetra\n\ndf$trat[df$trat == \"1\"] &lt;- \"tetra\"\n\n#trocar os valores de duna\n\ndf$trat[df$trat == \"2\"] &lt;- \"duna\"\n\n\n\n\n\ndf\n\n    trat temp  z2 dias\n1  tetra   26  80    3\n2  tetra   26  90    4\n3  tetra   26 100    4\n4   duna   26  80    4\n5   duna   26  80    5\n6   duna   26 100    4\n7  tetra   22  70    7\n8  tetra   22 100    9\n9  tetra   22  70    6\n10  duna   22  70    7\n11  duna   22  10    8\n12  duna   22  10    8"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-26",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-26",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nData frame\n\nExemplo com fator\nAlimentação de primeiro estágio larval de camarões\nTratamentos\nCriar o data frame\n\n\n## Façam o mesmo para temperatura: 22 = 22C e 26 = 26C\n\n\n\n\ndf\n\n    trat temp  z2 dias\n1  tetra   26  80    3\n2  tetra   26  90    4\n3  tetra   26 100    4\n4   duna   26  80    4\n5   duna   26  80    5\n6   duna   26 100    4\n7  tetra   22  70    7\n8  tetra   22 100    9\n9  tetra   22  70    6\n10  duna   22  70    7\n11  duna   22  10    8\n12  duna   22  10    8"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-27",
+    "href": "aulas/slides/aula-R-6-objetos.html#matriz-x-data-frame-27",
+    "title": "Estatística Básica utilizando R",
+    "section": "Matriz x data frame",
+    "text": "Matriz x data frame\n\n\n\nData frame\n\nExemplo com fator\nAlimentação de primeiro estágio larval de camarões\nTratamentos\nCriar o data frame\n\n\n## Façam o mesmo para temperatura: 22 = 22C e 26 = 26C\n\ndf$temp &lt;- as.character(df$temp)\n\ndf$temp[df$temp == \"22\"] &lt;- \"22C\"\ndf$temp[df$temp == \"26\"] &lt;- \"26C\"\n\n\n\n\n\ndf\n\n    trat temp  z2 dias\n1  tetra  26C  80    3\n2  tetra  26C  90    4\n3  tetra  26C 100    4\n4   duna  26C  80    4\n5   duna  26C  80    5\n6   duna  26C 100    4\n7  tetra  22C  70    7\n8  tetra  22C 100    9\n9  tetra  22C  70    6\n10  duna  22C  70    7\n11  duna  22C  10    8\n12  duna  22C  10    8"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#importando-arquivos",
+    "href": "aulas/slides/aula-R-6-objetos.html#importando-arquivos",
+    "title": "Estatística Básica utilizando R",
+    "section": "Importando arquivos",
+    "text": "Importando arquivos\n\nImportando arquivos\n\nPara dados criados em outros programas\nread.table()\nParâmetros\n\ndec\nheader\nsep\n\n\n\n                                        mat &lt;- read.table(\"expind.txt\", header=T, dec=\",\")"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#importando-arquivos-1",
+    "href": "aulas/slides/aula-R-6-objetos.html#importando-arquivos-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "Importando arquivos",
+    "text": "Importando arquivos\n\nImportando arquivos\n\nPara dados criados em outros programas\nread.table()\nParâmetros\n\ndec\nheader\nsep\n\n\n\n                                        mat &lt;- read.table(\"expind.txt\", header=T, dec=\",\")"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-6-objetos.html#importando-arquivos-2",
+    "href": "aulas/slides/aula-R-6-objetos.html#importando-arquivos-2",
+    "title": "Estatística Básica utilizando R",
+    "section": "Importando arquivos",
+    "text": "Importando arquivos\n\nImportando arquivos\n\nAbrir o arquivo “001-criadf.xls”\nSalvar como MS-DOS txt\nAbrir o arquivo de texto\n\nNotepad, etc…\n\n\n\n                                        mat &lt;- read.table(\"001-criadf2.txt\", header=T, dec=\",\")"
   }
 ]
