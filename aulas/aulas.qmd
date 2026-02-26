@@ -190,7 +190,7 @@ aos conteúdos e aos slides.
 - Medidas de tendência central
 - Medidas de dispersão
 
-➡️ Aula em breve
+[➡️ Acessar slides da aula](slides/aula-R-8-descritiva.qmd){target="_blank" rel="noopener"}
 
 ### Aula 09 – Testes de significância em R
 

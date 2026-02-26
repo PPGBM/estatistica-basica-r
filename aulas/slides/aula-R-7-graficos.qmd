@@ -831,165 +831,33 @@ barplot(x)
 
 ::::
 
----
 
-# Gráficos Essenciais no R Base  
-## Estatística Básica (1 Semana)
 
----
+## Dicas sobre gráficos
 
-## 1️⃣ Dispersão – Relação entre variáveis
 
-Pergunta científica:  
-> Temperatura influencia o oxigênio dissolvido?
 
-```{r}
-set.seed(1)
 
-temp <- runif(40, 15, 30)
-ox <- 12 - 0.3*temp + rnorm(40, 0, 0.5)
 
-plot(temp, ox,
-     pch = 19,
-     col = "black",
-     xlab = "Temperatura (°C)",
-     ylab = "O2 (mg/L)",
-     main = "Relação entre Temperatura e O2")
 
-abline(lm(ox ~ temp), lwd = 2)
-```
 
-Funções essenciais:  
-`plot()` · `abline()`  
 
----
 
-## 2️⃣ Histograma – Como os dados se distribuem?
 
-Pergunta científica:  
-> O tamanho dos peixes tem distribuição simétrica?
 
-```{r}
-set.seed(2)
 
-tamanho <- rlnorm(200, 2.5, 0.3)
 
-hist(tamanho,
-     probability = TRUE,
-     col = "gray70",
-     border = "white",
-     xlab = "Comprimento (cm)",
-     main = "Distribuição do tamanho")
 
-lines(density(tamanho), lwd = 2)
-```
 
-Funções essenciais:  
-`hist()` · `density()` · `lines()`
 
----
 
-## 3️⃣ Boxplot – Comparação entre grupos
 
-Pergunta científica:  
-> A biomassa difere entre habitats?
 
-```{r}
-set.seed(3)
 
-habitat <- rep(c("Recife","Areia","Mangue"), each = 40)
 
-biomassa <- c(rnorm(40, 18, 3),
-              rnorm(40, 10, 2),
-              rnorm(40, 22, 4))
 
-boxplot(biomassa ~ habitat,
-        col = "white",
-        border = "black",
-        ylab = "Biomassa (g/m²)",
-        main = "Comparação entre habitats")
-```
 
-Função essencial:  
-`boxplot()`  
 
----
 
-## 4️⃣ Barplot – Frequência categórica
 
-Pergunta científica:  
-> Qual habitat possui mais indivíduos amostrados?
 
-```{r}
-freq <- table(habitat)
-
-barplot(freq,
-        col = "gray70",
-        ylab = "Frequência",
-        main = "Número de indivíduos por habitat")
-```
-
-Funções essenciais:  
-`table()` · `barplot()`
-
----
-
-## 5️⃣ ANOVA – Visualização + teste
-
-Pergunta científica:  
-> O tamanho médio difere entre tratamentos?
-
-```{r}
-set.seed(4)
-
-trat <- rep(c("Controle","Nutriente","Impacto"), each = 50)
-
-tamanho2 <- c(rnorm(50, 18, 2),
-              rnorm(50, 22, 2),
-              rnorm(50, 15, 2))
-
-boxplot(tamanho2 ~ trat,
-        col = "white",
-        border = "black",
-        ylab = "Comprimento (cm)",
-        main = "Tamanho por tratamento")
-
-modelo <- aov(tamanho2 ~ trat)
-summary(modelo)
-```
-
-Funções essenciais:  
-`boxplot()` · `aov()`  
-
----
-
-## 6️⃣ Diagnóstico de Modelo
-
-Pergunta científica:  
-> O modelo linear atende aos pressupostos?
-
-```{r}
-modelo_lm <- lm(ox ~ temp)
-
-par(mfrow = c(2,2))
-plot(modelo_lm)
-```
-
-Função essencial:  
-`plot(lm)`  
-
----
-
-# Essencial da Semana
-
-Você precisa dominar:
-
-- `plot()`  
-- `hist()`  
-- `boxplot()`  
-- `barplot()`  
-- `aov()`  
-- `lm()`  
-- `par()`  
-
-Com isso, você faz 90% da Estatística Básica aplicada.

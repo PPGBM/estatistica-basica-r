@@ -1,0 +1,734 @@
+---
+title: "Estatística Básica utilizando R"
+subtitle: Estatística descrita em R
+author: "Dr. Alexandre Dias Kassuga"
+format:
+  revealjs:
+    theme: simple
+    css: 
+      - slides.css
+      - footer.css
+    highlight-style: monokai
+    slide-number: true
+    width: 1280
+    height: 720
+---
+
+## Estatística descritiva
+
+
+### Média
+
+
+
+:::: {.columns}
+
+::: {.column width="45%" .codigo-pequeno}
+
+- Já vimos como criar uma função para média
+
+[# Criamos os vetores]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+dados1 <- c(10,12,11,13,11,15,14)
+dados2 <- c(10,12, 11, 13, 11, 15, 50)
+
+```
+
+[# Verificamos o comprimento de cada um]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+length(dados1)
+length(dados2)
+
+```
+
+[# Verificamos a soma]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+sum(dados1)
+sum(dados2)
+
+```
+
+
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%" .codigo-pequeno}
+
+\
+\
+\
+
+[# Podemos executar de duas formas]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+mu.dados1 <- sum(dados1)/length(dados1)
+mu.dados2 <- sum(dados2)/length(dados2)
+
+```
+
+[# Ou pela função]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+mean(dados1)
+mean(dados2)
+
+```
+
+
+
+:::
+
+::::
+
+::: {.absolute top="10" left="900"}
+
+$$
+\mu = \frac{\sum_{i=1}^{N} X_i}{N}
+$$
+:::
+
+
+
+## Estatística descritiva
+
+
+### Mediana
+
+:::: {.columns}
+
+::: {.column width="45%" .codigo-pequeno}
+
+- Também apresenta uma função
+  - `median()`
+  - Pode verificar um resumo
+    - summary()
+
+
+```{r}
+#| echo: true
+#| output: false
+
+median(dados1)
+median(dados2)
+
+```
+
+\
+
+```{r}
+#| echo: true
+#| output: false
+
+summary(dados1)
+summary(dados2)
+
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%" .codigo-pequeno}
+
+:::
+
+::::
+
+
+## Estatística descritiva
+
+### Moda
+
+:::: {.columns}
+
+::: {.column width="45%" .codigo-pequeno}
+
+- Não existe função
+  - `mode()` – indica o tipo de objeto
+
+
+[# podemos organizar os dados]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+sort(dados1)
+
+```
+
+[# Podemos usar a função `table()`]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+table(dados1)
+table(dados2)
+
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%" .output-pequeno}
+
+\
+\
+\
+\
+
+```{r}
+#| echo: false
+#| output: true
+
+sort(dados1)
+
+```
+
+\
+
+```{r}
+#| echo: false
+#| output: true
+
+table(dados1)
+table(dados2)
+
+```
+
+
+:::
+
+::::
+
+## Estatística descritiva
+
+### Moda
+
+:::: {.columns}
+
+::: {.column width="45%" .codigo-pequeno}
+
+- Não existe função
+  - `mode()` – indica o tipo de objeto
+
+
+[# podemos organizar os dados]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+sort(dados1)
+
+```
+
+[# Podemos usar a função `table()`]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+table(dados1)
+table(dados2)
+
+```
+
+[# Visualizando em gráfico`]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+barplot(table(dados1))
+barplot(table(dados2))
+
+```
+
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%" .output-pequeno}
+
+
+```{r}
+#| echo: false
+#| output: true
+
+barplot(table(dados1))
+
+```
+
+```{r}
+#| echo: false
+#| output: true
+
+barplot(table(dados2))
+
+
+```
+
+:::
+
+::::
+
+
+## Estatística descritiva
+
+### Moda
+
+:::: {.columns}
+
+::: {.column width="45%" .codigo-pequeno}
+
+- Não existe função
+  - `mode()` – indica o tipo de objeto
+
+
+[# podemos organizar os dados]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+sort(dados1)
+
+```
+
+[# Podemos usar a função `table()`]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+table(dados1)
+table(dados2)
+
+```
+
+[# Visualizando em gráfico`]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+barplot(table(dados1))
+barplot(table(dados2))
+
+```
+
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%" .output-pequeno}
+
+
+```{r}
+#| echo: false
+#| output: true
+#| fig-height: 5
+#| fig-width: 7
+
+hist(c(rnorm(1000), rnorm(1000, mean = 2, sd = 1), rnorm(1000, mean = 3, sd = 1), rnorm(1000, mean = 4, sd = 1)), breaks = 100, main = " ", xlab = " ")
+
+```
+
+:::
+
+::::
+
+::: {.absolute top="550" left="600"}
+
+![](figuras/moda.png){width="65%"}
+
+:::
+
+
+## Estatística descritiva
+
+### Moda
+
+:::: {.columns}
+
+::: {.column width="45%" .codigo-pequeno}
+
+- Não existe função
+  - `mode()` – indica o tipo de objeto
+
+
+[# podemos organizar os dados]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+sort(dados1)
+
+```
+
+[# Podemos usar a função `table()`]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+table(dados1)
+table(dados2)
+
+```
+
+[# Visualizando em gráfico`]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+barplot(table(dados1))
+barplot(table(dados2))
+
+```
+
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%" .output-pequeno}
+
+![](figuras/moda2.png){width="85%" fig-align="center"}
+
+:::
+
+::::
+
+
+## Estatística Descritiva
+
+### Amplitude
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Função `range()`
+- Opções
+  - `min()`
+  - `max()`
+  
+
+```{r}
+#| echo: true
+#| output: true
+
+range(dados1)
+range(dados2)
+
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+
+```{r}
+#| echo: true
+#| output: true
+
+min(dados1)
+min(dados2)
+max(dados1)
+max(dados2)
+
+```
+
+:::
+
+::::
+
+
+::: {.absolute top="10" left="800"}
+
+$$
+A = X_{max} - X_{min}
+$$
+
+::: 
+
+## Estatística Descritiva
+
+### Variância
+
+:::: {.columns}
+
+::: {.column width="50%" .codigo-menor .output-menor}
+
+- Podemos montar os vetores com os cálculos
+- Ou podemos utilizar a função `var()`
+
+[# Visualizando em gráfico`]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+desvios <- dados1 - mean(dados1)
+qd <- desvios^2
+sqd <- sum(qd)
+v <- sqd/(length(dados1)-1)
+v
+```
+
+
+
+```{r}
+#| echo: false
+#| output: true
+
+v
+
+```
+
+[# Façam o mesmo para dados2]{.texto-menor}
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+:::
+
+::::
+
+::: {.absolute top="10" left="800"}
+
+$$
+{\small s^2 = \frac{\sum (x-\bar{X})^2}{N}}
+$$
+
+:::
+
+
+## Estatística Descritiva
+
+### Variância
+
+:::: {.columns}
+
+::: {.column width="50%" .codigo-menor .output-menor}
+
+- Podemos montar os vetores com os cálculos
+- Ou podemos utilizar a função `var()`
+
+[# Visualizando em gráfico`]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+desvios <- dados1 - mean(dados1)
+qd <- desvios^2
+sqd <- sum(qd)
+v <- sqd/(length(dados1)-1)
+v
+```
+
+
+
+```{r}
+#| echo: false
+#| output: true
+
+v
+
+```
+
+[# Façam o mesmo para dados2]{.texto-menor}
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+\
+\
+\
+
+[# Função `var()`]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: true
+
+var(dados1)
+var(dados2)
+
+```
+
+
+:::
+
+::::
+
+::: {.absolute top="10" left="800"}
+
+$$
+{\small s^2 = \frac{\sum (x-\bar{X})^2}{N}}
+$$
+
+:::
+
+
+
+## Estatística Descritiva
+
+### Coeficiente de variação
+
+:::: {.columns}
+
+::: {.column width="45%" .codigo-menor .output-menor}
+
+- Exemplo Dois grupos
+  - Grupo A (Idade)
+    - 3; 2; 5
+  - Grupo B (Idade)
+    - 55; 57; 53
+
+[# criamos os vetores]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+a <- c(3,2,5)
+b <- c(55, 57, 53)
+
+```
+
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="50%" .codigo-menor .output-menor}
+
+[# calculamos a média e o desvio]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+m.a <- mean(a)
+m.b <- mean(b)
+sd.a <- sd(a)
+sd.b <- sd(b)
+
+```
+
+[# calculamos o coeficiente de variação]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+cv.a <- (sd.a/m.a)*100
+cv.b <- (sd.b/m.b)*100
+ 
+```
+
+
+```{r}
+#| echo: false
+#| output: true
+
+cv.a
+cv.b
+ 
+```
+
+
+:::
+
+::::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
