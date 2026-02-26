@@ -1628,7 +1628,7 @@
     "href": "aulas/aulas.html#linguagem-r",
     "title": "Aulas",
     "section": "Linguagem R",
-    "text": "Linguagem R\n\n\nAula 01 – A Linguagem R\n\nO R é para mim?\nA linguagem R\nUm pouco de história…\nNão tenha medo do erro\nR x Python\nO pacote R\nRStudio\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – O pacote R\n\nComandos Básicos\nPacotes\nO R como calculadora\nIniciando em objetos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Objetos e Dados\n\nAtribuição\nNomeando objetos\nUtilizando objetos em R\nTipos de dados em R\n\n➡️ Acessar slides da aula\n\n\n\nAula 04 – Funções e objetos\n\nEstruturas de dados\nTrabalhando com vetores\n\n➡️ Acessar slides da aula\n\n\n\nAula 05 – Mais sobre funções\n\nMais sobre funções\n\n➡️ Acessar slides da aula\n\n\nAula 06 – Mais sobre objetos\n\nEstruturas de dados\nMatriz x Data frame\nImportando dados\n\n➡️ Acessar slides da aula\n\n\nAula 07 – Estatística descritiva no R\n\nComo funcionam gráficos no R\nTipos de gráficos\nParâmetros gráficos\n\n➡️ Aula em breve\n\n\nAula 08 – Estatística descritiva no R\n\nEstatística descritiva\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve\n\n\nAula 09 – Testes de significância em R\n\nTestes de significância\n\nTeste t\nMann-Whitney\nQui-quadrado\nAnálise de Variância\nKruskall-Wallis\n\n\n➡️ Aula em breve"
+    "text": "Linguagem R\n\n\nAula 01 – A Linguagem R\n\nO R é para mim?\nA linguagem R\nUm pouco de história…\nNão tenha medo do erro\nR x Python\nO pacote R\nRStudio\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – O pacote R\n\nComandos Básicos\nPacotes\nO R como calculadora\nIniciando em objetos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Objetos e Dados\n\nAtribuição\nNomeando objetos\nUtilizando objetos em R\nTipos de dados em R\n\n➡️ Acessar slides da aula\n\n\n\nAula 04 – Funções e objetos\n\nEstruturas de dados\nTrabalhando com vetores\n\n➡️ Acessar slides da aula\n\n\n\nAula 05 – Mais sobre funções\n\nMais sobre funções\n\n➡️ Acessar slides da aula\n\n\nAula 06 – Mais sobre objetos\n\nEstruturas de dados\nMatriz x Data frame\nImportando dados\n\n➡️ Acessar slides da aula\n\n\nAula 07 – Gráficos em R\n\nComo funcionam gráficos no R\nTipos de gráficos\nParâmetros gráficos\n\n➡️ Acessar slides da aula\n\n\nAula 08 – Estatística descritiva no R\n\nEstatística descritiva\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Aula em breve\n\n\nAula 09 – Testes de significância em R\n\nTestes de significância\n\nTeste t\nMann-Whitney\nQui-quadrado\nAnálise de Variância\nKruskall-Wallis\n\n\n➡️ Aula em breve"
   },
   {
     "objectID": "aulas/guia-quarto-latex-math-html.html",
@@ -4513,5 +4513,502 @@
     "title": "Estatística Básica utilizando R",
     "section": "Importando arquivos",
     "text": "Importando arquivos\n\nImportando arquivos\n\nAbrir o arquivo “001-criadf.xls”\nSalvar como MS-DOS txt\nAbrir o arquivo de texto\n\nNotepad, etc…\n\n\n\n                                        mat &lt;- read.table(\"001-criadf2.txt\", header=T, dec=\",\")"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#gráficos-no-r",
+    "href": "aulas/slides/aula-R-7-graficos.html#gráficos-no-r",
+    "title": "Estatística Básica utilizando R",
+    "section": "Gráficos no R",
+    "text": "Gráficos no R"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#slide",
+    "href": "aulas/slides/aula-R-7-graficos.html#slide",
+    "title": "Estatística Básica utilizando R",
+    "section": "slide",
+    "text": "slide"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#gráficos-no-r-1",
+    "href": "aulas/slides/aula-R-7-graficos.html#gráficos-no-r-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "Gráficos no R",
+    "text": "Gráficos no R"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#gráficos-no-r-2",
+    "href": "aulas/slides/aula-R-7-graficos.html#gráficos-no-r-2",
+    "title": "Estatística Básica utilizando R",
+    "section": "Gráficos no R",
+    "text": "Gráficos no R\n\n\n\nO R possui diversos tipos de gráficos no pacote básico\n\nplot\nbarplot\npie\nhist\n\n\n\n#Forma mais simples de plotar um gráfico\nplot(1:10)\n\n\n#Podemos plotar uma variável \n##contra a outra\nx &lt;- c(1:10)\ny &lt;- c(10:1)\nplot(x,y)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#graficos-em-r",
+    "href": "aulas/slides/aula-R-7-graficos.html#graficos-em-r",
+    "title": "Estatística Básica utilizando R",
+    "section": "Graficos em R",
+    "text": "Graficos em R\n\n\n\nO R possui diversos tipos de gráficos no pacote básico\n\nplot\nbarplot\npie\nhist\n\n\n\nDiversos parâmetros\nplot(x, #vetor x\n         y, #vetor y\n          xlab = \" \", #Nome do eixo x\n          ylab = \" \", #Nome do eixo y\n          pch = , #tipo de ponto (1:25)\n          col = \" \", #cor do ponto (nome da cor em inglês)\n          main = \" \", ...) #Titulo do gráfico"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-1",
+    "href": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "Graficos em R",
+    "text": "Graficos em R\nQual a diferença entre estes dois?\n\n\n\nplot(x,\n  y,\n  pch = 19,\n  col = \"red\")\n\n\n\n\n\nplot(x,  y,  pch = 19,  col = \"red\")"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-2",
+    "href": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-2",
+    "title": "Estatística Básica utilizando R",
+    "section": "Graficos em R",
+    "text": "Graficos em R\nQual a diferença entre estes dois?\n\n\n\nplot(x,\n  y,\n  pch = 19,\n  col = \"red\")\n\n\n\n\n\n\n\n\n\n\n\n\nplot(x,  y,  pch = 19,  col = \"red\")"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-3",
+    "href": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-3",
+    "title": "Estatística Básica utilizando R",
+    "section": "Graficos em R",
+    "text": "Graficos em R\n\n\n\nO R possui diversos tipos de gráficos no pacote básico\n\nplot\nbarplot\npie\nhist\n\n\nFunção para gráfico de barras\n\n\nbarplot(x)\nbarplot(y)\n\n#Tente criar o gráfico plot(x,y)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-4",
+    "href": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-4",
+    "title": "Estatística Básica utilizando R",
+    "section": "Graficos em R",
+    "text": "Graficos em R\n\n\n\nO R possui diversos tipos de gráficos no pacote básico\n\nplot\nbarplot\npie\nhist\n\n\nFunção para gráfico de barras\n\n\nbarplot(x)\nbarplot(y)\n\n#Tente criar o gráfico plot(x,y)\n?plot"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-5",
+    "href": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-5",
+    "title": "Estatística Básica utilizando R",
+    "section": "Graficos em R",
+    "text": "Graficos em R\n\n\n\nO R possui diversos tipos de gráficos no pacote básico\n\nplot\nbarplot\npie\nhist\n\n\nOs parâmetros gerais também funcionam\n\n\nbarplot(x, xlab = \"Eixo x\", ylab = \"Eixo y\", col = \"blue\")\n\n\n\nmain = “Titulo do gráfico”\nxlab = “Nome do eixo x”\nylab = “Nome do eixo y”\ncol = “cor do da barra” (nome da cor em inglês)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-6",
+    "href": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-6",
+    "title": "Estatística Básica utilizando R",
+    "section": "Graficos em R",
+    "text": "Graficos em R\n\n\n\nO R possui diversos tipos de gráficos no pacote básico\n\nplot\nbarplot\npie\nhist\n\n\nGráfico de pizza\n\n\npie(10, 20, 30)\n# podemos dar nomes\n\npizza &lt;- c(10, 20, 30)\nnames(pizza) &lt;- c(\"a\", \"b\", \"c\")\npie(pizza, col = c(\"green\", \"darkred\", \"white\"))"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-7",
+    "href": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-7",
+    "title": "Estatística Básica utilizando R",
+    "section": "Graficos em R",
+    "text": "Graficos em R\n\n\n\nO R possui diversos tipos de gráficos no pacote básico\n\nplot\nbarplot\npie\nhist\n\n\nHistograma\n\n\nhist(rnorm(100))"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-8",
+    "href": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-8",
+    "title": "Estatística Básica utilizando R",
+    "section": "Graficos em R",
+    "text": "Graficos em R\n\n\n\nO R possui diversos tipos de gráficos no pacote básico\n\nplot\nbarplot\npie\nhist\n\n\nHistograma\n\n\nhist(rnorm(100))\n# podemos adicionar a curva normal\n\nx &lt;- rnorm(1000)\nhist(x, col = \"gray\", freq = F)\ncurve(dnorm(x), add = T)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-9",
+    "href": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-9",
+    "title": "Estatística Básica utilizando R",
+    "section": "Graficos em R",
+    "text": "Graficos em R\n\n\n\nModificando os parâmetros gráficos\n\nA função par()\n\nPermite configurar a área gráfica\nNúmero de gráficos, margens, tamanho, etc…\n\n\n\n\n\npar(mfrow = c(1,2))\nx &lt;- 1:10\nplot(x,y)\nbarplot(x)\n# Abra a ajuda para verificar outros parâmetros\n\n?par"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#teste",
+    "href": "aulas/slides/aula-R-7-graficos.html#teste",
+    "title": "Estatística Básica utilizando R",
+    "section": "teste",
+    "text": "teste"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#dicas-sobre-gráficos",
+    "href": "aulas/slides/aula-R-7-graficos.html#dicas-sobre-gráficos",
+    "title": "Estatística Básica utilizando R",
+    "section": "Dicas sobre gráficos",
+    "text": "Dicas sobre gráficos"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#um-exemplo-ruim",
+    "href": "aulas/slides/aula-R-7-graficos.html#um-exemplo-ruim",
+    "title": "Estatística Básica utilizando R",
+    "section": "Um exemplo ruim",
+    "text": "Um exemplo ruim"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#como-escolher-símbolo-para-publicação",
+    "href": "aulas/slides/aula-R-7-graficos.html#como-escolher-símbolo-para-publicação",
+    "title": "Estatística Básica utilizando R",
+    "section": "Como escolher símbolo para publicação?",
+    "text": "Como escolher símbolo para publicação?\n✔ Legibilidade\n\nFunciona em preto e branco?\nPermanece claro em tamanho reduzido?\n\n✔ Contraste\n\nDiferencia grupos claramente?\n\n✔ Reprodutibilidade\n\nFunciona em PDF?\nFunciona impresso?\n\n✔ Simplicidade\n\nEvita poluição visual"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#comparação-direta",
+    "href": "aulas/slides/aula-R-7-graficos.html#comparação-direta",
+    "title": "Estatística Básica utilizando R",
+    "section": "Comparação direta",
+    "text": "Comparação direta"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#diferenciando-grupos-cientificamente",
+    "href": "aulas/slides/aula-R-7-graficos.html#diferenciando-grupos-cientificamente",
+    "title": "Estatística Básica utilizando R",
+    "section": "Diferenciando grupos cientificamente",
+    "text": "Diferenciando grupos cientificamente"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#mensagem-final",
+    "href": "aulas/slides/aula-R-7-graficos.html#mensagem-final",
+    "title": "Estatística Básica utilizando R",
+    "section": "Mensagem Final",
+    "text": "Mensagem Final\nO R base não é limitado.\nEle é fundamental.\nSe você entende essas funções,\nvocê entende qualquer sistema gráfico no R."
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#anova-o-tamanho-médio-difere-entre-tratamentos",
+    "href": "aulas/slides/aula-R-7-graficos.html#anova-o-tamanho-médio-difere-entre-tratamentos",
+    "title": "Estatística Básica utilizando R",
+    "section": "ANOVA – O tamanho médio difere entre tratamentos?",
+    "text": "ANOVA – O tamanho médio difere entre tratamentos?\n\n\n             Df Sum Sq Mean Sq F value Pr(&gt;F)    \ntrat          2 1735.2   867.6   161.5 &lt;2e-16 ***\nResiduals   177  951.2     5.4                   \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#visualizando-a-anova-boxplot",
+    "href": "aulas/slides/aula-R-7-graficos.html#visualizando-a-anova-boxplot",
+    "title": "Estatística Básica utilizando R",
+    "section": "Visualizando a ANOVA – Boxplot",
+    "text": "Visualizando a ANOVA – Boxplot"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#distribuição-por-tratamento-histogramas",
+    "href": "aulas/slides/aula-R-7-graficos.html#distribuição-por-tratamento-histogramas",
+    "title": "Estatística Básica utilizando R",
+    "section": "Distribuição por tratamento (histogramas)",
+    "text": "Distribuição por tratamento (histogramas)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#incluindo-sexo-macho-vs-fêmea",
+    "href": "aulas/slides/aula-R-7-graficos.html#incluindo-sexo-macho-vs-fêmea",
+    "title": "Estatística Básica utilizando R",
+    "section": "Incluindo sexo (macho vs fêmea)",
+    "text": "Incluindo sexo (macho vs fêmea)\n\n\n             Df Sum Sq Mean Sq F value   Pr(&gt;F)    \ntrat          2 1497.6   748.8  170.58  &lt; 2e-16 ***\nsexo          1  261.1   261.1   59.48 9.15e-13 ***\ntrat:sexo     2    6.4     3.2    0.73    0.483    \nResiduals   174  763.8     4.4                     \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#visualizando-tratamento-sexo",
+    "href": "aulas/slides/aula-R-7-graficos.html#visualizando-tratamento-sexo",
+    "title": "Estatística Básica utilizando R",
+    "section": "Visualizando tratamento + sexo",
+    "text": "Visualizando tratamento + sexo"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#versão-aula-mais-visual",
+    "href": "aulas/slides/aula-R-7-graficos.html#versão-aula-mais-visual",
+    "title": "Estatística Básica utilizando R",
+    "section": "Versão Aula (mais visual)",
+    "text": "Versão Aula (mais visual)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#versão-artigo-científico-mais-sóbria",
+    "href": "aulas/slides/aula-R-7-graficos.html#versão-artigo-científico-mais-sóbria",
+    "title": "Estatística Básica utilizando R",
+    "section": "Versão Artigo Científico (mais sóbria)",
+    "text": "Versão Artigo Científico (mais sóbria)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#reflexão-final",
+    "href": "aulas/slides/aula-R-7-graficos.html#reflexão-final",
+    "title": "Estatística Básica utilizando R",
+    "section": "Reflexão Final",
+    "text": "Reflexão Final\n\nAula: - Cores fortes\n- Ênfase didática\n- Impacto visual\n\n\nArtigo científico: - Contraste em preto e branco\n- Legibilidade em impressão\n- Simplicidade e sobriedade"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#o-mesmo-dado-diferentes-visões",
+    "href": "aulas/slides/aula-R-7-graficos.html#o-mesmo-dado-diferentes-visões",
+    "title": "Estatística Básica utilizando R",
+    "section": "O mesmo dado, diferentes visões",
+    "text": "O mesmo dado, diferentes visões"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#comparação-entre-tratamentos-boxplot",
+    "href": "aulas/slides/aula-R-7-graficos.html#comparação-entre-tratamentos-boxplot",
+    "title": "Estatística Básica utilizando R",
+    "section": "Comparação entre tratamentos (boxplot)",
+    "text": "Comparação entre tratamentos (boxplot)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#agora-incluindo-sexo-padrão-visual-consistente",
+    "href": "aulas/slides/aula-R-7-graficos.html#agora-incluindo-sexo-padrão-visual-consistente",
+    "title": "Estatística Básica utilizando R",
+    "section": "Agora incluindo sexo (padrão visual consistente)",
+    "text": "Agora incluindo sexo (padrão visual consistente)\nPadrão gráfico:\n\nTratamento → tonalidade\nSexo → preenchido (Macho) vs vazio (Fêmea)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#alternativa-mais-científica-preto-e-branco",
+    "href": "aulas/slides/aula-R-7-graficos.html#alternativa-mais-científica-preto-e-branco",
+    "title": "Estatística Básica utilizando R",
+    "section": "Alternativa mais científica (preto e branco)",
+    "text": "Alternativa mais científica (preto e branco)\nSexo diferenciado por preenchimento"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#mensagem-conceitual",
+    "href": "aulas/slides/aula-R-7-graficos.html#mensagem-conceitual",
+    "title": "Estatística Básica utilizando R",
+    "section": "Mensagem Conceitual",
+    "text": "Mensagem Conceitual\n\n\n\nO dado não mudou.\nA forma de enxergar mudou.\n\n\n\n\nHistograma → forma da distribuição\nBoxplot → comparação entre grupos\nFator adicional → estrutura hierárquica"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#gráficos-no-r-base",
+    "href": "aulas/slides/aula-R-7-graficos.html#gráficos-no-r-base",
+    "title": "Estatística Básica utilizando R",
+    "section": "Gráficos no R Base",
+    "text": "Gráficos no R Base\n(Pacotes: graphics, stats, grDevices)\nO R base já possui um sistema gráfico completo.\nSem tidyverse.\nSem pacotes externos."
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#funções-gerais-de-plotagem",
+    "href": "aulas/slides/aula-R-7-graficos.html#funções-gerais-de-plotagem",
+    "title": "Estatística Básica utilizando R",
+    "section": "1️⃣ Funções Gerais de Plotagem",
+    "text": "1️⃣ Funções Gerais de Plotagem\n\nplot() → função genérica principal\n\npoints() → adiciona pontos\n\nlines() → adiciona linhas\n\nabline() → adiciona retas\n\ncurve() → plota funções matemáticas\n\nsegments() → desenha segmentos\n\narrows() → desenha setas\n\npolygon() → desenha polígonos\n\nrect() → desenha retângulos\n\ntext() / mtext() → adiciona texto\n\nlegend() → cria legenda"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#distribuição-e-estatística-descritiva",
+    "href": "aulas/slides/aula-R-7-graficos.html#distribuição-e-estatística-descritiva",
+    "title": "Estatística Básica utilizando R",
+    "section": "2️⃣ Distribuição e Estatística Descritiva",
+    "text": "2️⃣ Distribuição e Estatística Descritiva\n\nhist() → histograma\n\nboxplot() → boxplot\n\nstripchart() → pontos individuais\n\ndotchart() → gráfico de pontos ordenados\n\nbarplot() → gráfico de barras\n\npie() → gráfico de pizza\n\nstem() → gráfico ramo-e-folha"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#relação-entre-variáveis",
+    "href": "aulas/slides/aula-R-7-graficos.html#relação-entre-variáveis",
+    "title": "Estatística Básica utilizando R",
+    "section": "3️⃣ Relação entre Variáveis",
+    "text": "3️⃣ Relação entre Variáveis\n\npairs() → matriz de dispersão\n\ncoplot() → gráfico condicionado\n\ninteraction.plot() → gráfico de interação (ANOVA)\n\nassocplot() → associação em tabelas\n\nmosaicplot() → gráfico mosaico"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#séries-temporais",
+    "href": "aulas/slides/aula-R-7-graficos.html#séries-temporais",
+    "title": "Estatística Básica utilizando R",
+    "section": "4️⃣ Séries Temporais",
+    "text": "4️⃣ Séries Temporais\n\nplot.ts() → método automático para objetos ts\n\nts.plot() → múltiplas séries\n\nacf() → autocorrelação\n\npacf() → autocorrelação parcial\n\nccf() → correlação cruzada\n\nspec.pgram() → análise espectral"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#superfícies-e-representação-2d3d",
+    "href": "aulas/slides/aula-R-7-graficos.html#superfícies-e-representação-2d3d",
+    "title": "Estatística Básica utilizando R",
+    "section": "5️⃣ Superfícies e Representação 2D/3D",
+    "text": "5️⃣ Superfícies e Representação 2D/3D\n\nimage() → mapa de cores (heatmap simples)\n\ncontour() → curvas de nível\n\nfilled.contour() → curvas preenchidas\n\npersp() → superfície 3D"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#gráficos-multivariados",
+    "href": "aulas/slides/aula-R-7-graficos.html#gráficos-multivariados",
+    "title": "Estatística Básica utilizando R",
+    "section": "6️⃣ Gráficos Multivariados",
+    "text": "6️⃣ Gráficos Multivariados\n\nsymbols() → símbolos proporcionais\n\nstars() → star plot\n\nsmoothScatter() → dispersão suavizada"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#funções-estatísticas-que-geram-gráficos",
+    "href": "aulas/slides/aula-R-7-graficos.html#funções-estatísticas-que-geram-gráficos",
+    "title": "Estatística Básica utilizando R",
+    "section": "7️⃣ Funções Estatísticas que Geram Gráficos",
+    "text": "7️⃣ Funções Estatísticas que Geram Gráficos\n\nqqnorm() → QQ-plot normal\n\nqqline() → linha do QQ-plot\n\ndensity() → estimativa de densidade\n\nfourfoldplot() → tabelas 2x2"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#layout-e-controle-gráfico",
+    "href": "aulas/slides/aula-R-7-graficos.html#layout-e-controle-gráfico",
+    "title": "Estatística Básica utilizando R",
+    "section": "8️⃣ Layout e Controle Gráfico",
+    "text": "8️⃣ Layout e Controle Gráfico\n\npar() → parâmetros gráficos\n\nlayout() → layout complexo\n\nsplit.screen() → divisão manual de tela"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#dispositivos-gráficos-exportação",
+    "href": "aulas/slides/aula-R-7-graficos.html#dispositivos-gráficos-exportação",
+    "title": "Estatística Básica utilizando R",
+    "section": "9️⃣ Dispositivos Gráficos (Exportação)",
+    "text": "9️⃣ Dispositivos Gráficos (Exportação)\n\npdf()\n\npng()\n\njpeg()\n\nsvg()\n\ntiff()\n\nPermitem gerar arquivos para publicação científica."
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-10",
+    "href": "aulas/slides/aula-R-7-graficos.html#graficos-em-r-10",
+    "title": "Estatística Básica utilizando R",
+    "section": "Graficos em R",
+    "text": "Graficos em R\n\n\n\nModificando os parâmetros gráficos\n\nA função par()\n\nPermite configurar a área gráfica\nNúmero de gráficos, margens, tamanho, etc…\n\n\n\n\n\npar(mfrow = c(1,2))\nx &lt;- 1:10\nplot(x,y)\nbarplot(x)\n# Abra a ajuda para verificar outros parâmetros\n\n?par"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#estatística-básica-1-semana",
+    "href": "aulas/slides/aula-R-7-graficos.html#estatística-básica-1-semana",
+    "title": "Estatística Básica utilizando R",
+    "section": "Estatística Básica (1 Semana)",
+    "text": "Estatística Básica (1 Semana)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#dispersão-relação-entre-variáveis",
+    "href": "aulas/slides/aula-R-7-graficos.html#dispersão-relação-entre-variáveis",
+    "title": "Estatística Básica utilizando R",
+    "section": "1️⃣ Dispersão – Relação entre variáveis",
+    "text": "1️⃣ Dispersão – Relação entre variáveis\nPergunta científica:\n&gt; Temperatura influencia o oxigênio dissolvido?\n\nFunções essenciais:\nplot() · abline()"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#histograma-como-os-dados-se-distribuem",
+    "href": "aulas/slides/aula-R-7-graficos.html#histograma-como-os-dados-se-distribuem",
+    "title": "Estatística Básica utilizando R",
+    "section": "2️⃣ Histograma – Como os dados se distribuem?",
+    "text": "2️⃣ Histograma – Como os dados se distribuem?\nPergunta científica:\n&gt; O tamanho dos peixes tem distribuição simétrica?\n\nFunções essenciais:\nhist() · density() · lines()"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#boxplot-comparação-entre-grupos",
+    "href": "aulas/slides/aula-R-7-graficos.html#boxplot-comparação-entre-grupos",
+    "title": "Estatística Básica utilizando R",
+    "section": "3️⃣ Boxplot – Comparação entre grupos",
+    "text": "3️⃣ Boxplot – Comparação entre grupos\nPergunta científica:\n&gt; A biomassa difere entre habitats?\n\nFunção essencial:\nboxplot()"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#barplot-frequência-categórica",
+    "href": "aulas/slides/aula-R-7-graficos.html#barplot-frequência-categórica",
+    "title": "Estatística Básica utilizando R",
+    "section": "4️⃣ Barplot – Frequência categórica",
+    "text": "4️⃣ Barplot – Frequência categórica\nPergunta científica:\n&gt; Qual habitat possui mais indivíduos amostrados?\n\nFunções essenciais:\ntable() · barplot()"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#anova-visualização-teste",
+    "href": "aulas/slides/aula-R-7-graficos.html#anova-visualização-teste",
+    "title": "Estatística Básica utilizando R",
+    "section": "5️⃣ ANOVA – Visualização + teste",
+    "text": "5️⃣ ANOVA – Visualização + teste\nPergunta científica:\n&gt; O tamanho médio difere entre tratamentos?\n\n\n\n             Df Sum Sq Mean Sq F value Pr(&gt;F)    \ntrat          2 1222.6   611.3   173.2 &lt;2e-16 ***\nResiduals   147  518.7     3.5                   \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\nFunções essenciais:\nboxplot() · aov()"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos.html#diagnóstico-de-modelo",
+    "href": "aulas/slides/aula-R-7-graficos.html#diagnóstico-de-modelo",
+    "title": "Estatística Básica utilizando R",
+    "section": "6️⃣ Diagnóstico de Modelo",
+    "text": "6️⃣ Diagnóstico de Modelo\nPergunta científica:\n&gt; O modelo linear atende aos pressupostos?\n\nFunção essencial:\nplot(lm)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-tipos.html#estatística-básica-1-semana",
+    "href": "aulas/slides/aula-R-7-graficos-tipos.html#estatística-básica-1-semana",
+    "title": "Estatística Básica utilizando R",
+    "section": "Estatística Básica (1 Semana)",
+    "text": "Estatística Básica (1 Semana)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-tipos.html#dispersão-relação-entre-variáveis",
+    "href": "aulas/slides/aula-R-7-graficos-tipos.html#dispersão-relação-entre-variáveis",
+    "title": "Estatística Básica utilizando R",
+    "section": "1️⃣ Dispersão – Relação entre variáveis",
+    "text": "1️⃣ Dispersão – Relação entre variáveis\nPergunta científica:\n&gt; Temperatura influencia o oxigênio dissolvido?\n\nset.seed(1)\n\ntemp &lt;- runif(40, 15, 30)\nox &lt;- 12 - 0.3*temp + rnorm(40, 0, 0.5)\n\nplot(temp, ox,\n     pch = 19,\n     col = \"black\",\n     xlab = \"Temperatura (°C)\",\n     ylab = \"O2 (mg/L)\",\n     main = \"Relação entre Temperatura e O2\")\n\nabline(lm(ox ~ temp), lwd = 2)\n\n\n\n\n\n\n\n\nFunções essenciais:\nplot() · abline()"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-tipos.html#histograma-como-os-dados-se-distribuem",
+    "href": "aulas/slides/aula-R-7-graficos-tipos.html#histograma-como-os-dados-se-distribuem",
+    "title": "Estatística Básica utilizando R",
+    "section": "2️⃣ Histograma – Como os dados se distribuem?",
+    "text": "2️⃣ Histograma – Como os dados se distribuem?\nPergunta científica:\n&gt; O tamanho dos peixes tem distribuição simétrica?\n\nset.seed(2)\n\ntamanho &lt;- rlnorm(200, 2.5, 0.3)\n\nhist(tamanho,\n     probability = TRUE,\n     col = \"gray70\",\n     border = \"white\",\n     xlab = \"Comprimento (cm)\",\n     main = \"Distribuição do tamanho\")\n\nlines(density(tamanho), lwd = 2)\n\n\n\n\n\n\n\n\nFunções essenciais:\nhist() · density() · lines()"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-tipos.html#boxplot-comparação-entre-grupos",
+    "href": "aulas/slides/aula-R-7-graficos-tipos.html#boxplot-comparação-entre-grupos",
+    "title": "Estatística Básica utilizando R",
+    "section": "3️⃣ Boxplot – Comparação entre grupos",
+    "text": "3️⃣ Boxplot – Comparação entre grupos\nPergunta científica:\n&gt; A biomassa difere entre habitats?\n\nset.seed(3)\n\nhabitat &lt;- rep(c(\"Recife\",\"Areia\",\"Mangue\"), each = 40)\n\nbiomassa &lt;- c(rnorm(40, 18, 3),\n              rnorm(40, 10, 2),\n              rnorm(40, 22, 4))\n\nboxplot(biomassa ~ habitat,\n        col = \"white\",\n        border = \"black\",\n        ylab = \"Biomassa (g/m²)\",\n        main = \"Comparação entre habitats\")\n\n\n\n\n\n\n\n\nFunção essencial:\nboxplot()"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-tipos.html#barplot-frequência-categórica",
+    "href": "aulas/slides/aula-R-7-graficos-tipos.html#barplot-frequência-categórica",
+    "title": "Estatística Básica utilizando R",
+    "section": "4️⃣ Barplot – Frequência categórica",
+    "text": "4️⃣ Barplot – Frequência categórica\nPergunta científica:\n&gt; Qual habitat possui mais indivíduos amostrados?\n\nfreq &lt;- table(habitat)\n\nbarplot(freq,\n        col = \"gray70\",\n        ylab = \"Frequência\",\n        main = \"Número de indivíduos por habitat\")\n\n\n\n\n\n\n\n\nFunções essenciais:\ntable() · barplot()"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-tipos.html#anova-visualização-teste",
+    "href": "aulas/slides/aula-R-7-graficos-tipos.html#anova-visualização-teste",
+    "title": "Estatística Básica utilizando R",
+    "section": "5️⃣ ANOVA – Visualização + teste",
+    "text": "5️⃣ ANOVA – Visualização + teste\nPergunta científica:\n&gt; O tamanho médio difere entre tratamentos?\n\nset.seed(4)\n\ntrat &lt;- rep(c(\"Controle\",\"Nutriente\",\"Impacto\"), each = 50)\n\ntamanho2 &lt;- c(rnorm(50, 18, 2),\n              rnorm(50, 22, 2),\n              rnorm(50, 15, 2))\n\nboxplot(tamanho2 ~ trat,\n        col = \"white\",\n        border = \"black\",\n        ylab = \"Comprimento (cm)\",\n        main = \"Tamanho por tratamento\")\n\n\n\n\n\n\n\nmodelo &lt;- aov(tamanho2 ~ trat)\nsummary(modelo)\n\n             Df Sum Sq Mean Sq F value Pr(&gt;F)    \ntrat          2 1222.6   611.3   173.2 &lt;2e-16 ***\nResiduals   147  518.7     3.5                   \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\nFunções essenciais:\nboxplot() · aov()"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-tipos.html#diagnóstico-de-modelo",
+    "href": "aulas/slides/aula-R-7-graficos-tipos.html#diagnóstico-de-modelo",
+    "title": "Estatística Básica utilizando R",
+    "section": "6️⃣ Diagnóstico de Modelo",
+    "text": "6️⃣ Diagnóstico de Modelo\nPergunta científica:\n&gt; O modelo linear atende aos pressupostos?\n\nmodelo_lm &lt;- lm(ox ~ temp)\n\npar(mfrow = c(2,2))\nplot(modelo_lm)\n\n\n\n\n\n\n\n\nFunção essencial:\nplot(lm)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-dicas.html",
+    "href": "aulas/slides/aula-R-7-graficos-dicas.html",
+    "title": "Estatística Básica utilizando R",
+    "section": "",
+    "text": "set.seed(1)\nx &lt;- rnorm(50)\ny &lt;- rnorm(50)\n\npar(mar = c(4,4,3,1))\n\nplot(x, y,\n     pch = 8,\n     col = \"yellow\",\n     cex = 2,\n     main = \"Vocês publicariam este gráfico?\",\n     xlab = \"Variável X\",\n     ylab = \"Variável Y\")"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-dicas.html#um-exemplo-ruim",
+    "href": "aulas/slides/aula-R-7-graficos-dicas.html#um-exemplo-ruim",
+    "title": "Estatística Básica utilizando R",
+    "section": "",
+    "text": "set.seed(1)\nx &lt;- rnorm(50)\ny &lt;- rnorm(50)\n\npar(mar = c(4,4,3,1))\n\nplot(x, y,\n     pch = 8,\n     col = \"yellow\",\n     cex = 2,\n     main = \"Vocês publicariam este gráfico?\",\n     xlab = \"Variável X\",\n     ylab = \"Variável Y\")"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-dicas.html#como-escolher-símbolo-para-publicação",
+    "href": "aulas/slides/aula-R-7-graficos-dicas.html#como-escolher-símbolo-para-publicação",
+    "title": "Estatística Básica utilizando R",
+    "section": "Como escolher símbolo para publicação?",
+    "text": "Como escolher símbolo para publicação?\n\n✔ Legibilidade\n\nFunciona em preto e branco?\nPermanece claro em tamanho reduzido?\n\n\n\n✔ Contraste\n\nDiferencia grupos claramente?\n\n\n\n✔ Reprodutibilidade\n\nFunciona em PDF?\nFunciona impresso?\n\n\n\n✔ Simplicidade\n\nEvita poluição visual"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-dicas.html#comparação-direta",
+    "href": "aulas/slides/aula-R-7-graficos-dicas.html#comparação-direta",
+    "title": "Estatística Básica utilizando R",
+    "section": "Comparação direta",
+    "text": "Comparação direta\n\npar(mfrow = c(1,2),\n    mar = c(4,4,3,1))\n\n# Exemplo fraco\nplot(x, y,\n     pch = 3,\n     col = \"gray80\",\n     main = \"Visual fraco\",\n     xlab = \"X\",\n     ylab = \"Y\")\n\n# Exemplo adequado\nplot(x, y,\n     pch = 19,\n     col = \"black\",\n     cex = 1.2,\n     main = \"Visual adequado\",\n     xlab = \"X\",\n     ylab = \"Y\")"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-dicas.html#diferenciando-grupos-cientificamente",
+    "href": "aulas/slides/aula-R-7-graficos-dicas.html#diferenciando-grupos-cientificamente",
+    "title": "Estatística Básica utilizando R",
+    "section": "Diferenciando grupos cientificamente",
+    "text": "Diferenciando grupos cientificamente\n\nset.seed(2)\ngrupo &lt;- rep(c(\"Controle\",\"Impacto\"), each = 30)\nx2 &lt;- rnorm(60)\ny2 &lt;- rnorm(60)\n\npar(mar = c(4,4,3,1))\n\nplot(x2, y2,\n     pch = ifelse(grupo == \"Controle\", 1, 19),\n     col = \"black\",\n     main = \"Forma comunica categoria\",\n     xlab = \"Variável X\",\n     ylab = \"Variável Y\")\n\nlegend(\"bottomleft\",\n       legend = c(\"Controle\",\"Impacto\"),\n       pch = c(1,19),\n       bty = \"n\")"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-dicas.html#mensagem-final",
+    "href": "aulas/slides/aula-R-7-graficos-dicas.html#mensagem-final",
+    "title": "Estatística Básica utilizando R",
+    "section": "Mensagem final",
+    "text": "Mensagem final\n\n\n\nUm gráfico científico não é decorativo.\nEle é uma ferramenta de comunicação.\n\n\n\n\nForma comunica categoria.\nCor deve ser complementar, não essencial."
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-dicas.html#o-mesmo-dado-diferentes-visões",
+    "href": "aulas/slides/aula-R-7-graficos-dicas.html#o-mesmo-dado-diferentes-visões",
+    "title": "Estatística Básica utilizando R",
+    "section": "O mesmo dado, diferentes visões",
+    "text": "O mesmo dado, diferentes visões\n\nset.seed(42)\n\ntrat &lt;- rep(c(\"Controle\",\"Nutriente\",\"Impacto\"), each = 80)\nsexo &lt;- rep(rep(c(\"Macho\",\"Fêmea\"), each = 40), 3)\n\ntamanho &lt;- c(rnorm(40, 18, 2), rnorm(40, 19.5, 2),\n             rnorm(40, 22, 2.5), rnorm(40, 23.5, 2.5),\n             rnorm(40, 15, 1.8), rnorm(40, 16.5, 1.8))"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-dicas.html#distribuição-por-tratamento-histogramas",
+    "href": "aulas/slides/aula-R-7-graficos-dicas.html#distribuição-por-tratamento-histogramas",
+    "title": "Estatística Básica utilizando R",
+    "section": "Distribuição por tratamento (histogramas)",
+    "text": "Distribuição por tratamento (histogramas)\n\npar(mfrow = c(1,3),\n    mar = c(4,4,3,1))\n\ncores_trat &lt;- c(\"gray70\",\"gray50\",\"gray30\")\n\nfor(i in 1:3){\n  hist(tamanho[trat == levels(as.factor(trat))[i]],\n       col = cores_trat[i],\n       border = \"white\",\n       main = levels(as.factor(trat))[i],\n       xlab = \"Comprimento (cm)\")\n}"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-dicas.html#comparação-entre-tratamentos-boxplot",
+    "href": "aulas/slides/aula-R-7-graficos-dicas.html#comparação-entre-tratamentos-boxplot",
+    "title": "Estatística Básica utilizando R",
+    "section": "Comparação entre tratamentos (boxplot)",
+    "text": "Comparação entre tratamentos (boxplot)\n\npar(mar = c(4,4,3,1))\n\nboxplot(tamanho ~ trat,\n        col = cores_trat,\n        border = \"black\",\n        main = \"Mesmos dados – visão comparativa\",\n        ylab = \"Comprimento (cm)\",\n        xlab = \"Tratamento\")"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-dicas.html#agora-incluindo-sexo-padrão-visual-consistente",
+    "href": "aulas/slides/aula-R-7-graficos-dicas.html#agora-incluindo-sexo-padrão-visual-consistente",
+    "title": "Estatística Básica utilizando R",
+    "section": "Agora incluindo sexo (padrão visual consistente)",
+    "text": "Agora incluindo sexo (padrão visual consistente)\nPadrão gráfico:\n\nTratamento → tonalidade\nSexo → preenchido (Macho) vs vazio (Fêmea)\n\n\npar(mar = c(5,4,3,1))\n\n# Cria fator combinado\ngrupo &lt;- interaction(trat, sexo)\n\n# Define cores por tratamento\ncores_rep &lt;- rep(cores_trat, each = 2)\n\n# Define padrão sexo\nbg_sexo &lt;- rep(c(\"white\",\"black\"), 3)\n\nboxplot(tamanho ~ grupo,\n        col = cores_rep,\n        border = \"black\",\n        las = 2,\n        main = \"Tratamento + Sexo\",\n        ylab = \"Comprimento (cm)\")"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-dicas.html#alternativa-mais-científica-preto-e-branco",
+    "href": "aulas/slides/aula-R-7-graficos-dicas.html#alternativa-mais-científica-preto-e-branco",
+    "title": "Estatística Básica utilizando R",
+    "section": "Alternativa mais científica (preto e branco)",
+    "text": "Alternativa mais científica (preto e branco)\nSexo diferenciado por preenchimento\n\npar(mar = c(5,4,3,1))\n\nboxplot(tamanho ~ grupo,\n        col = rep(c(\"white\",\"gray70\"), 3),\n        border = \"black\",\n        las = 2,\n        main = \"\",\n        ylab = \"Fish length (cm)\",\n        xlab = \"Treatment × Sex\")"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-7-graficos-dicas.html#mensagem-final-1",
+    "href": "aulas/slides/aula-R-7-graficos-dicas.html#mensagem-final-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "Mensagem Final",
+    "text": "Mensagem Final\n\n\n\n\n\nO dado não mudou.\nA forma de enxergar mudou.\n\n\n\n\nHistograma → forma da distribuição\nBoxplot → comparação entre grupos\nFator adicional → estrutura hierárquica"
   }
 ]

@@ -142,5 +142,14 @@
   },
   "aulas/slides/aula-R-6-objetos.qmd": {
     "aula-R-6-objetos.html": "445a5ead"
+  },
+  "aulas/slides/aula-R-7-graficos.qmd": {
+    "aula-R-7-graficos.html": "d572d8de"
+  },
+  "aulas/slides/aula-R-7-graficos-dicas.qmd": {
+    "aula-R-7-graficos-dicas.html": "1371233f"
+  },
+  "aulas/slides/aula-R-7-graficos-tipos.qmd": {
+    "aula-R-7-graficos-tipos.html": "fa2972cf"
   }
 }

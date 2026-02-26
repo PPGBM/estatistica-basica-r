@@ -176,13 +176,13 @@ aos conteúdos e aos slides.
 
 [➡️ Acessar slides da aula](slides/aula-R-6-objetos.qmd){target="_blank" rel="noopener"}
 
-### Aula 07 – Estatística descritiva no R
+### Aula 07 – Gráficos em R
 
 - Como funcionam gráficos no R
 - Tipos de gráficos
 - Parâmetros gráficos
 
-➡️ Aula em breve
+[➡️ Acessar slides da aula](slides/aula-R-7-graficos.qmd){target="_blank" rel="noopener"}
 
 ### Aula 08 – Estatística descritiva no R
 

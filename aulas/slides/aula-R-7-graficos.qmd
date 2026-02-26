@@ -1,0 +1,995 @@
+---
+title: "Estatística Básica utilizando R"
+subtitle: Gráficos no R
+author: "Dr. Alexandre Dias Kassuga"
+format:
+  revealjs:
+    theme: simple
+    css: 
+      - slides.css
+      - footer.css
+    highlight-style: monokai
+    slide-number: true
+    width: 1280
+    height: 720
+---
+
+## Gráficos no R
+
+
+```{r}
+#| echo: false
+#| output: true
+
+par(mfrow = c(2,3),
+    mar = c(4,4,2,1),
+    bg = "gray95")
+
+set.seed(42)
+
+# 1) Temperatura x Oxigênio Dissolvido (Regressão)
+temp <- runif(120, 12, 30)
+ox <- 12 - 0.25*temp + rnorm(120, 0, 0.7)
+
+plot(temp, ox,
+     pch = 19,
+     col = rgb(0,0,1,0.5),
+     main = "Temperatura x O2 Dissolvido",
+     xlab = "Temperatura (°C)",
+     ylab = "O2 (mg/L)")
+abline(lm(ox ~ temp),
+       col = "red",
+       lwd = 3)
+
+
+
+# 2) Biomassa por Habitat
+habitat <- rep(c("Recife", "Areia", "Mangue"), each = 40)
+biomassa <- c(rnorm(40, 18, 3),
+              rnorm(40, 9, 2),
+              rnorm(40, 22, 4))
+
+boxplot(biomassa ~ habitat,
+        col = c("#FF6B6B","#FFD166","#06D6A0"),
+        main = "Biomassa por Habitat",
+        ylab = "Biomassa (g/m²)")
+
+
+
+# 3) Distribuição de Tamanho de Peixes (Log-normal)
+tamanho <- rlnorm(300, 2.6, 0.35)
+
+hist(tamanho,
+     probability = TRUE,
+     col = "#A8DADC",
+     border = "white",
+     main = "Tamanho de Peixes",
+     xlab = "Comprimento (cm)")
+lines(density(tamanho),
+      col = "#1D3557",
+      lwd = 3)
+
+
+
+# 4) Série Temporal – Temperatura Superficial do Mar
+mes <- 1:120
+sst <- 26 + 1.5*sin(mes/12*2*pi) + rnorm(120,0,0.4)
+
+plot(mes, sst,
+     type = "l",
+     lwd = 2,
+     col = "#E63946",
+     main = "SST (Sazonalidade)",
+     xlab = "Mês",
+     ylab = "Temperatura (°C)")
+
+
+
+# 5) Mapa – Pontos de Amostragem Costeiros
+library(maps)
+
+map("world",
+    fill = TRUE,
+    col = "gray85",
+    border = "white",
+    main = "Pontos de Amostragem")
+
+lon <- runif(40, -50, -30)
+lat <- runif(40, -30, 5)
+
+points(lon, lat,
+       col = "blue",
+       pch = 19)
+
+
+
+# 6) Superfície 3D – Batimetria Simulada
+x <- seq(-8, 8, length = 40)
+y <- seq(-8, 8, length = 40)
+z <- outer(x, y, function(x,y) -sqrt(x^2 + y^2))
+
+persp(x, y, z,
+      theta = 40,
+      phi = 25,
+      col = "lightblue",
+      shade = 0.7,
+      border = NA,
+      main = "Modelo de Batimetria 3D")
+
+```
+
+## Gráficos no R
+
+```{r}
+#| echo: false
+#| output: true
+
+par(mfrow = c(2,3),
+    mar = c(4,4,3,1),
+    bg = "gray95")
+
+set.seed(42)
+
+# 1) A temperatura influencia o oxigênio dissolvido?
+temp <- runif(120, 12, 30)
+ox <- 12 - 0.25*temp + rnorm(120, 0, 0.7)
+
+plot(temp, ox,
+     pch = 19,
+     col = rgb(0,0,1,0.5),
+     main = "A temperatura influencia o O2?",
+     xlab = "Temperatura (°C)",
+     ylab = "O2 (mg/L)")
+abline(lm(ox ~ temp),
+       col = "red",
+       lwd = 3)
+
+
+
+# 2) A biomassa difere entre habitats?
+habitat <- rep(c("Recife", "Areia", "Mangue"), each = 40)
+biomassa <- c(rnorm(40, 18, 3),
+              rnorm(40, 9, 2),
+              rnorm(40, 22, 4))
+
+boxplot(biomassa ~ habitat,
+        col = c("#FF6B6B","#FFD166","#06D6A0"),
+        main = "A biomassa difere entre habitats?",
+        ylab = "Biomassa (g/m²)")
+
+
+
+# 3) Como é a distribuição do tamanho dos peixes?
+tamanho <- rlnorm(300, 2.6, 0.35)
+
+hist(tamanho,
+     probability = TRUE,
+     col = "#A8DADC",
+     border = "white",
+     main = "Como se distribuem os tamanhos?",
+     xlab = "Comprimento (cm)")
+lines(density(tamanho),
+      col = "#1D3557",
+      lwd = 3)
+
+
+
+# 4) Existe sazonalidade na temperatura superficial?
+mes <- 1:120
+sst <- 26 + 1.5*sin(mes/12*2*pi) + rnorm(120,0,0.4)
+
+plot(mes, sst,
+     type = "l",
+     lwd = 2,
+     col = "#E63946",
+     main = "Existe sazonalidade na SST?",
+     xlab = "Mês",
+     ylab = "Temperatura (°C)")
+
+
+
+# 5) Onde estão os pontos de amostragem?
+library(maps)
+
+map("world",
+    fill = TRUE,
+    col = "gray85",
+    border = "white",
+    main = "Onde estão os pontos amostrados?")
+
+lon <- runif(40, -50, -30)
+lat <- runif(40, -30, 5)
+
+points(lon, lat,
+       col = "blue",
+       pch = 19)
+
+
+
+# 6) Como é a estrutura do fundo marinho?
+x <- seq(-8, 8, length = 40)
+y <- seq(-8, 8, length = 40)
+z <- outer(x, y, function(x,y) -sqrt(x^2 + y^2))
+
+persp(x, y, z,
+      theta = 40,
+      phi = 25,
+      col = "lightblue",
+      shade = 0.7,
+      border = NA,
+      main = "Como é a estrutura do fundo?")
+
+```
+
+## Gráficos no R
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- O R possui diversos tipos de gráficos no pacote básico
+  - plot
+  - barplot
+  - pie
+  - hist
+
+
+```{r}
+#| echo: true
+#| output: false
+
+#Forma mais simples de plotar um gráfico
+plot(1:10)
+
+```
+
+
+```{r}
+#| echo: true
+#| output: false
+
+#Podemos plotar uma variável 
+##contra a outra
+x <- c(1:10)
+y <- c(10:1)
+plot(x,y)
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+```{r}
+#| echo: false
+#| output: true
+#| fig-width: 8
+#| fig-height: 8
+#| out-width: 100%
+
+
+plot(x,y)
+```
+
+:::
+
+::::
+
+## Graficos em R
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- O R possui diversos tipos de gráficos no pacote básico
+  - plot
+  - barplot
+  - pie
+  - hist
+
+
+::: {.texto-menor}
+
+Diversos parâmetros\
+`plot(x,` #vetor x\
+         `y,` #vetor y\
+             `xlab = " ",` #Nome do eixo x\
+             `ylab = " ",` #Nome do eixo y\
+             `pch = ,` #tipo de ponto (1:25)\
+             `col = " ",` #cor do ponto (nome da cor em inglês)\
+             `main = " ", ...)` #Titulo do gráfico\
+
+::: 
+
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+```{r}
+#| echo: false
+#| output: true
+#| fig-width: 8
+#| fig-height: 8
+#| out-width: 100%
+
+par(mar = c(2,2,3,2))
+
+# Define grade 6 x 5
+n_col <- 6
+n_row <- 5
+
+plot(0, 0,
+     type = "n",
+     xlim = c(0.5, n_col + 0.5),
+     ylim = c(0.5, n_row + 0.5),
+     xaxt = "n",
+     yaxt = "n",
+     xlab = "",
+     ylab = "",
+     asp = 1,
+     main = "Tabela de Símbolos pch (0–25)")
+
+# Desenha grade (opcional, mas ajuda visualmente)
+#abline(h = 1:n_row + 0.5, col = "gray90")
+#abline(v = 1:n_col + 0.5, col = "gray90")
+
+k <- 0
+for (row in n_row:1) {
+  for (col in 1:n_col) {
+    if (k <= 25) {
+      points(col, row, pch = k, cex = 2)
+      text(col, row - 0.35, labels = k, cex = 0.8)
+      k <- k + 1
+    }
+  }
+}
+
+```
+
+:::
+
+::::
+
+## Graficos em R
+
+Qual a diferença entre estes dois?
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+plot(x,
+  y,
+  pch = 19,
+  col = "red")
+
+```
+
+
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="45%"}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+plot(x,  y,  pch = 19,  col = "red")
+
+```
+
+:::
+
+::::
+
+## Graficos em R
+
+Qual a diferença entre estes dois?
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+
+```{r}
+#| echo: true
+#| output: true
+#| fig-width: 6
+#| fig-height: 4
+
+plot(x,
+  y,
+  pch = 19,
+  col = "red")
+
+```
+
+
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="45%"}
+
+
+```{r}
+#| echo: true
+#| output: true
+#| fig-width: 6
+#| fig-height: 4
+
+plot(x,  y,  pch = 19,  col = "red")
+
+```
+
+
+
+:::
+
+::::
+
+
+## Graficos em R
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+- O R possui diversos tipos de gráficos no pacote básico
+  - plot
+  - barplot
+  - pie
+  - hist
+
+Função para gráfico de barras
+
+::: {.codigo-pequeno}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+barplot(x)
+barplot(y)
+
+```
+
+[#Tente criar o gráfico `plot(x,y)`]{.texto-menor}
+
+:::
+
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="45%"}
+
+
+```{r}
+#| echo: false
+#| output: true
+#| fig-width: 6
+#| fig-height: 6
+
+barplot(x)
+
+```
+
+:::
+
+::::
+
+## Graficos em R
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+- O R possui diversos tipos de gráficos no pacote básico
+  - plot
+  - barplot
+  - pie
+  - hist
+
+Função para gráfico de barras
+
+::: {.codigo-pequeno}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+barplot(x)
+barplot(y)
+
+```
+
+[#Tente criar o gráfico `plot(x,y)`]{.texto-menor}
+
+
+`?plot`
+
+:::
+
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="45%"}
+
+
+```{r}
+#| echo: false
+#| output: true
+#| fig-width: 6
+#| fig-height: 6
+
+barplot(x)
+
+```
+
+:::
+
+::::
+
+
+## Graficos em R
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- O R possui diversos tipos de gráficos no pacote básico
+  - plot
+  - barplot
+  - pie
+  - hist
+
+Os parâmetros gerais também funcionam
+
+::: {.codigo-pequeno}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+barplot(x, xlab = "Eixo x", ylab = "Eixo y", col = "blue")
+
+```
+
+::: 
+
+- [main = "Titulo do gráfico"]{.texto-menor}
+- [xlab = "Nome do eixo x"]{.texto-menor}
+- [ylab = "Nome do eixo y"]{.texto-menor}
+- [col = "cor do da barra" (nome da cor em inglês)]{.texto-menor}
+
+:::
+
+
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+
+```{r}
+#| echo: false
+#| output: true
+#| fig-width: 6
+#| fig-height: 6
+
+barplot(x, xlab = "Eixo x", ylab = "Eixo y", col = "blue")
+
+```
+
+:::
+
+::::
+
+
+
+
+## Graficos em R
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- O R possui diversos tipos de gráficos no pacote básico
+  - plot
+  - barplot
+  - pie
+  - hist
+
+Gráfico de pizza
+
+::: {.codigo-pequeno}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+pie(10, 20, 30)
+
+# podemos dar nomes
+
+pizza <- c(10, 20, 30)
+names(pizza) <- c("a", "b", "c")
+pie(pizza, col = c("green", "darkred", "white"))
+
+```
+
+::: 
+
+
+:::
+
+
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+
+```{r}
+#| echo: false
+#| output: true
+#| fig-width: 6
+#| fig-height: 6
+
+pie(pizza, col = c("green", "darkred", "white"))
+```
+
+:::
+
+::::
+
+## Graficos em R
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- O R possui diversos tipos de gráficos no pacote básico
+  - plot
+  - barplot
+  - pie
+  - hist
+
+Histograma
+
+::: {.codigo-pequeno}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+hist(rnorm(100))
+
+
+
+```
+
+::: 
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+
+```{r}
+#| echo: false
+#| output: true
+#| fig-width: 6
+#| fig-height: 6
+
+hist(rnorm(100))
+```
+
+:::
+
+::::
+
+
+## Graficos em R
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- O R possui diversos tipos de gráficos no pacote básico
+  - plot
+  - barplot
+  - pie
+  - hist
+
+Histograma
+
+::: {.codigo-pequeno}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+hist(rnorm(100))
+
+# podemos adicionar a curva normal
+
+x <- rnorm(1000)
+hist(x, col = "gray", freq = F)
+curve(dnorm(x), add = T)
+
+```
+
+::: 
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+
+```{r}
+#| echo: false
+#| output: true
+#| fig-width: 6
+#| fig-height: 6
+
+hist(x, col = "gray", freq = F)
+curve(dnorm(x), add = T)
+
+```
+
+:::
+
+::::
+
+
+## Graficos em R
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Modificando os parâmetros gráficos
+  - A função par()
+    - Permite configurar a área gráfica
+    - Número de gráficos, margens, tamanho, etc...
+
+
+::: {.codigo-pequeno}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+par(mfrow = c(1,2))
+x <- 1:10
+plot(x,y)
+barplot(x)
+
+# Abra a ajuda para verificar outros parâmetros
+```
+
+`?par`
+
+::: 
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+
+:::
+
+::::
+
+---
+
+# Gráficos Essenciais no R Base  
+## Estatística Básica (1 Semana)
+
+---
+
+## 1️⃣ Dispersão – Relação entre variáveis
+
+Pergunta científica:  
+> Temperatura influencia o oxigênio dissolvido?
+
+```{r}
+set.seed(1)
+
+temp <- runif(40, 15, 30)
+ox <- 12 - 0.3*temp + rnorm(40, 0, 0.5)
+
+plot(temp, ox,
+     pch = 19,
+     col = "black",
+     xlab = "Temperatura (°C)",
+     ylab = "O2 (mg/L)",
+     main = "Relação entre Temperatura e O2")
+
+abline(lm(ox ~ temp), lwd = 2)
+```
+
+Funções essenciais:  
+`plot()` · `abline()`  
+
+---
+
+## 2️⃣ Histograma – Como os dados se distribuem?
+
+Pergunta científica:  
+> O tamanho dos peixes tem distribuição simétrica?
+
+```{r}
+set.seed(2)
+
+tamanho <- rlnorm(200, 2.5, 0.3)
+
+hist(tamanho,
+     probability = TRUE,
+     col = "gray70",
+     border = "white",
+     xlab = "Comprimento (cm)",
+     main = "Distribuição do tamanho")
+
+lines(density(tamanho), lwd = 2)
+```
+
+Funções essenciais:  
+`hist()` · `density()` · `lines()`
+
+---
+
+## 3️⃣ Boxplot – Comparação entre grupos
+
+Pergunta científica:  
+> A biomassa difere entre habitats?
+
+```{r}
+set.seed(3)
+
+habitat <- rep(c("Recife","Areia","Mangue"), each = 40)
+
+biomassa <- c(rnorm(40, 18, 3),
+              rnorm(40, 10, 2),
+              rnorm(40, 22, 4))
+
+boxplot(biomassa ~ habitat,
+        col = "white",
+        border = "black",
+        ylab = "Biomassa (g/m²)",
+        main = "Comparação entre habitats")
+```
+
+Função essencial:  
+`boxplot()`  
+
+---
+
+## 4️⃣ Barplot – Frequência categórica
+
+Pergunta científica:  
+> Qual habitat possui mais indivíduos amostrados?
+
+```{r}
+freq <- table(habitat)
+
+barplot(freq,
+        col = "gray70",
+        ylab = "Frequência",
+        main = "Número de indivíduos por habitat")
+```
+
+Funções essenciais:  
+`table()` · `barplot()`
+
+---
+
+## 5️⃣ ANOVA – Visualização + teste
+
+Pergunta científica:  
+> O tamanho médio difere entre tratamentos?
+
+```{r}
+set.seed(4)
+
+trat <- rep(c("Controle","Nutriente","Impacto"), each = 50)
+
+tamanho2 <- c(rnorm(50, 18, 2),
+              rnorm(50, 22, 2),
+              rnorm(50, 15, 2))
+
+boxplot(tamanho2 ~ trat,
+        col = "white",
+        border = "black",
+        ylab = "Comprimento (cm)",
+        main = "Tamanho por tratamento")
+
+modelo <- aov(tamanho2 ~ trat)
+summary(modelo)
+```
+
+Funções essenciais:  
+`boxplot()` · `aov()`  
+
+---
+
+## 6️⃣ Diagnóstico de Modelo
+
+Pergunta científica:  
+> O modelo linear atende aos pressupostos?
+
+```{r}
+modelo_lm <- lm(ox ~ temp)
+
+par(mfrow = c(2,2))
+plot(modelo_lm)
+```
+
+Função essencial:  
+`plot(lm)`  
+
+---
+
+# Essencial da Semana
+
+Você precisa dominar:
+
+- `plot()`  
+- `hist()`  
+- `boxplot()`  
+- `barplot()`  
+- `aov()`  
+- `lm()`  
+- `par()`  
+
+Com isso, você faz 90% da Estatística Básica aplicada.
