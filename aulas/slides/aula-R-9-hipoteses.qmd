@@ -1,0 +1,912 @@
+---
+title: "Estatística Básica utilizando R"
+subtitle: Testes de significância
+author: "Dr. Alexandre Dias Kassuga"
+format:
+  revealjs:
+    theme: simple
+    css: 
+      - slides.css
+      - footer.css
+    highlight-style: monokai
+    slide-number: true
+    width: 1280
+    height: 720
+---
+
+## Testes de significância
+
+### Teste t para uma amostra
+
+- Problema: Sabemos que a média de peso de uma população de pinguins era 30 kg em 2015. Uma nova amostragem em 2016 resultou nos seguintes valores:
+  - (35.2, 28.1, 24.8, 29.5, 30.5, 26.3, 31.4, 24.5, 29.6, 31.3, 28.5, 20.4)
+  - Podemos dizer que o peso dos pinguins diminuiu?
+  
+
+![](figuras/pinguim.png){width="100%"}
+
+
+## Testes de significância
+
+### Teste t para uma amostra
+
+:::: {.columns}
+
+::: {.column width="50%" .codigo-pequeno .output-pequeno}
+
+- Problema: Sabemos que a média de peso de uma população de pinguins era 30 kg em 2015. Uma nova amostragem em 2016 resultou nos seguintes valores:
+  - (35.2, 28.1, 24.8, 29.5, 30.5, 26.3, 31.4, 24.5, 29.6, 31.3, 28.5, 20.4)
+  - Podemos dizer que o peso dos pinguins diminuiu?
+
+
+[# criamos o vetor]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+pinguim <- c(35.2, 28.1, 24.8, 29.5, 30.5, 26.3, 31.4, 24.5, 
+            29.6, 31.3, 28.5)
+
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+![](figuras/pinguim2.png){width="50%" fig-align="right"}
+
+:::
+
+::::
+
+
+## Testes de significância
+
+### Teste t para uma amostra
+
+:::: {.columns}
+
+::: {.column width="50%" .codigo-pequeno .output-pequeno}
+
+- Problema: Sabemos que a média de peso de uma população de pinguins era 30 kg em 2015. Uma nova amostragem em 2016 resultou nos seguintes valores:
+  - (35.2, 28.1, 24.8, 29.5, 30.5, 26.3, 31.4, 24.5, 29.6, 31.3, 28.5, 20.4)
+  - Podemos dizer que o peso dos pinguins diminuiu?
+
+
+[# criamos o vetor]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+pinguim <- c(35.2, 28.1, 24.8, 29.5, 30.5, 26.3, 31.4, 24.5, 
+             29.6, 31.3, 28.5)
+
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%" .codigo-pequeno .output-pequeno}
+
+
+
+[# testamos a normalidade]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+shapiro.test(pinguim)
+
+```
+
+[# testamos a normalidade]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+shapiro.test(pinguim)
+
+```
+
+[# Realizamos o teste com a função t.test]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+t.test(pinguim, mu = 30)
+
+```
+
+
+:::
+
+::::
+
+::: {.absolute top="420" left="710"}
+
+![](figuras/testet.png){width="75%"}
+
+:::
+
+
+## Testes de significância
+
+### Teste t para uma amostra
+
+:::: {.columns}
+
+::: {.column width="50%" .codigo-pequeno .output-pequeno}
+
+- Problema: Sabemos que a média de peso de uma população de pinguins era 30 kg em 2015. Uma nova amostragem em 2016 resultou nos seguintes valores:
+  - (35.2, 28.1, 24.8, 29.5, 30.5, 26.3, 31.4, 24.5, 29.6, 31.3, 28.5, 20.4)
+  - Podemos dizer que o peso dos pinguins diminuiu?
+
+
+[# criamos o vetor]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+pinguim <- c(35.2, 28.1, 24.8, 29.5, 30.5, 26.3, 31.4, 24.5, 
+             29.6, 31.3, 28.5)
+
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%" .codigo-pequeno .output-pequeno}
+
+
+
+[# Realizamos o teste com a função t.test]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: true
+
+t.test(pinguim, mu = 30)
+
+```
+
+
+:::
+
+::::
+
+## Testes de significância
+
+### Qui quadrado $(X^1)$
+
+:::: {.columns}
+
+::: {.column width="50%" .codigo-pequeno}
+
+- O cruza-bico (Loxia curvirostra)
+  - Ponta do bico superior ultrapassa o inferior pela esquerda ou pela direita
+  - Hipótese nula: A razão de bicos para esquerda e para direita é 1:1.
+  - Em uma coleta foram observados:
+    - 1752 com bico a direita
+    - 1895 com bico a esquerda
+
+[Criamos os vetores com o observado e esperado]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+obs <- c(1752, 1895)
+esp <- c(0.5,0.5)
+
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%" .codigo-pequeno .output-pequeno}
+
+![](figuras/cruza.png){width="100%"}
+
+:::
+
+::::
+
+## Testes de significância
+
+### Qui quadrado $(X^1)$
+
+:::: {.columns}
+
+::: {.column width="50%" .codigo-pequeno}
+
+- O cruza-bico (Loxia curvirostra)
+  - Ponta do bico superior ultrapassa o inferior pela esquerda ou pela direita
+  - Hipótese nula: A razão de bicos para esquerda e para direita é 1:1.
+  - Em uma coleta foram observados:
+    - 1752 com bico a direita
+    - 1895 com bico a esquerda
+
+[Criamos os vetores com o observado e esperado]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+obs <- c(1752, 1895)
+esp <- c(0.5,0.5)
+
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%" .codigo-pequeno .output-pequeno}
+
+![](figuras/cruza.png){width="100%"}
+
+
+[# Função chisq.test()]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+chisq.test(x = obs, p = esp)
+
+```
+
+:::
+
+::::
+
+## Testes de significância
+
+### Qui quadrado $(X^1)$
+
+:::: {.columns}
+
+::: {.column width="50%" .codigo-pequeno}
+
+- O cruza-bico (Loxia curvirostra)
+  - Ponta do bico superior ultrapassa o inferior pela esquerda ou pela direita
+  - Hipótese nula: A razão de bicos para esquerda e para direita é 1:1.
+  - Em uma coleta foram observados:
+    - 1752 com bico a direita
+    - 1895 com bico a esquerda
+
+[Criamos os vetores com o observado e esperado]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+obs <- c(1752, 1895)
+esp <- c(0.5,0.5)
+
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%" .codigo-pequeno .output-pequeno}
+
+
+[# Função chisq.test()]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: true
+
+chisq.test(x = obs, p = esp)
+
+```
+
+:::
+
+::::
+
+
+## Testes de significância
+
+### Teste t para duas amostras independentes
+
+
+:::: {.columns}
+
+::: {.column width="50%" .codigo-pequeno}
+
+- Foram coletadas duas espécies do gênero Leptograpsus e realizada análise morfométrica
+- Pergunta: Existe diferença no tamanho entre machos e fêmeas das duas espécies?
+
+[# Abrimos o pacote MASS e visualizamos o dataframe crabs]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+library(MASS)
+crabs
+
+```
+
+![](figuras/crab.png){width="40%" fig-align="center"}
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%" .codigo-pequeno .output-pequeno}
+
+[# Verificamos as premissas]{.texto-menor}
+[#NORMALIDADE]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+#| 
+shapiro.test(crabs[1:50,7])
+
+```
+
+[#ou]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+shapiro.test(crabs$CW[1:50])
+
+```
+
+
+
+[#HOMOGENEIDADE]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+var.test(crabs$CW[1:50], crabs$CW[51:100])
+
+```
+
+
+:::
+
+::::
+
+## Testes de significância
+
+### Teste t para duas amostras independentes
+
+
+:::: {.columns}
+
+::: {.column width="50%" .codigo-pequeno}
+
+- Foram coletadas duas espécies do gênero Leptograpsus e realizada análise morfométrica
+- Pergunta: Existe diferença no tamanho entre machos e fêmeas das duas espécies?
+
+![](figuras/crab.png){width="60%" fig-align="center"}
+
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%" .codigo-pequeno .output-pequeno}
+
+[# executamos o teste]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+t.test(crabs$CW[crabs$sex=="M"&crabs$sp=="B"],
+      crabs$CW[crabs$sex=="F"&crabs$sp=="B"])
+
+
+```
+
+:::
+
+::::
+
+
+## Testes de significância
+
+### Teste t para duas amostras independentes
+
+
+:::: {.columns}
+
+::: {.column width="50%" .codigo-pequeno}
+
+- Foram coletadas duas espécies do gênero Leptograpsus e realizada análise morfométrica
+- Pergunta: Existe diferença no tamanho entre machos e fêmeas das duas espécies?
+
+![](figuras/crab.png){width="60%" fig-align="center"}
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%" .codigo-pequeno .output-pequeno}
+
+[# executamos o teste]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: true
+
+t.test(crabs$CW[crabs$sex=="M"&crabs$sp=="B"],
+      crabs$CW[crabs$sex=="F"&crabs$sp=="B"])
+
+
+```
+
+:::
+
+::::
+
+## Testes de significância
+
+### Teste t para duas amostras independentes
+
+
+:::: {.columns}
+
+::: {.column width="55%" .codigo-pequeno}
+
+- Apresentando em gráfico
+
+[# Criamos um dataframe com as duas series de dados]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+crabs.df <- data.frame(cbind(crabs$CW[crabs$sex=="M"&crabs$sp=="B"],
+                             crabs$CW[crabs$sex=="F"&crabs$sp=="B"]))
+names(crabs.df) <- c("Male", "Female")
+
+```
+
+
+[# Criamos um objeto com o barplot]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+grafico <- barplot(sapply(crabs.df, mean), 
+                   ylim =c(0, max(crabs.df)), 
+                   ylab="CW", 
+                   las = 1)
+
+# inserimos as barras de desvio
+arrows(grafico, sapply(crabs.df, mean), 
+       grafico, sapply(crabs.df, mean)+sapply(crabs.df, sd), 	
+       length = 0.1, angle = 90, code = 3)
+
+```
+
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="40%" .codigo-pequeno .output-pequeno}
+
+
+```{r}
+#| echo: false
+#| output: true
+#| fig-height: 6
+#| fig-width: 6
+
+grafico <- barplot(sapply(crabs.df, mean), 
+                   ylim =c(0, max(crabs.df)), 
+                   ylab="CW", 
+                   las = 1)
+
+arrows(grafico, sapply(crabs.df, mean), 
+       grafico, sapply(crabs.df, mean)+sapply(crabs.df, sd), 	
+       length = 0.1, angle = 90, code = 3)
+
+```
+
+
+:::
+
+::::
+
+
+## Testes de significância
+
+### Análise de variância
+
+:::: {.columns}
+
+::: {.column width="50%" .codigo-pequeno}
+
+- Três espécies de camarão foram coletadas em um arrasto.
+- Pergunta: Existe diferença no tamanho entre as três espécies?
+
+
+```{r}
+#| echo: false
+#| output: false
+
+cam <- read.csv("../../materiais/cam_aov.txt", sep = ",")
+```
+
+[# Realizamos o teste]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+modelo.aov <- aov(cam$CT~especie, data=cam)
+summary(modelo.aov)
+
+```
+
+[# São diferentes, realizamos o post-hoc]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+tukey<-TukeyHSD(modelo.aov)
+tukey
+
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+![](figuras/camarao.png){width="100%"}
+
+:::
+
+::::
+
+
+
+## Testes de significância
+
+### Análise de variância
+
+:::: {.columns}
+
+::: {.column width="50%" .codigo-pequeno}
+
+- Plotando os resultados
+- Da mesma forma que o anterior
+
+[# Montamos o data frame]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+
+cam.df <- data.frame(cbind(cam$CT[cam$especie=="sp1"],
+                           cam$CT[cam$especie=="sp2"],
+                           cam$CT[cam$especie=="sp3"]))
+names(cam.df) <-c("sp1", "sp2", "sp3")
+
+
+```
+
+[# Montamos o objeto grafico]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+grafico <- barplot(sapply(cam.df, mean), 
+                   ylim =c(0, max(cam.df)), ylab="CT", las = 1)
+arrows(grafico, sapply(cam.df, mean), grafico,
+       sapply(cam.df,mean)+sapply(cam.df, sd),
+       length = 0.1, angle = 90, code = 3)
+
+# Inserimos as letras dos grupos
+text(grafico, sapply(cam.df,mean)+sapply(cam.df, sd)+1, 
+     labels = c("a", "a", "b"), cex = 1.3)
+```
+
+:::
+
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+:::
+
+::::
+
+
+## Testes de significância
+
+### Análise de variância
+
+:::: {.columns}
+
+::: {.column width="50%" .codigo-pequeno}
+
+- Plotando os resultados
+- Da mesma forma que o anterior
+
+[# Montamos o data frame]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+
+cam.df <- data.frame(cbind(cam$CT[cam$especie=="sp1"],
+                           cam$CT[cam$especie=="sp2"],
+                           cam$CT[cam$especie=="sp3"]))
+names(cam.df) <-c("sp1", "sp2", "sp3")
+
+
+```
+
+[# Montamos o objeto grafico]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+grafico <- barplot(sapply(cam.df, mean), 
+                   ylim =c(0, max(cam.df)), ylab="CT", las = 1)
+arrows(grafico, sapply(cam.df, mean), grafico,
+       sapply(cam.df,mean)+sapply(cam.df, sd),
+       length = 0.1, angle = 90, code = 3)
+
+# Inserimos as letras dos grupos
+text(grafico, sapply(cam.df,mean)+sapply(cam.df, sd)+1, 
+     labels = c("a", "a", "b"), cex = 1.3)
+```
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+```{r}
+#| echo: false
+#| output: true
+#| fig-height: 6
+#| fig-width: 6
+
+grafico <- barplot(sapply(cam.df, mean), 
+                   ylim =c(0, max(cam.df)), ylab="CT", las = 1)
+arrows(grafico, sapply(cam.df, mean), grafico,
+       sapply(cam.df,mean)+sapply(cam.df, sd),
+       length = 0.1, angle = 90, code = 3)
+
+# Inserimos as letras dos grupos
+text(grafico, sapply(cam.df,mean)+sapply(cam.df, sd)+1, 
+     labels = c("a", "a", "b"), cex = 1.3)
+```
+
+:::
+
+::::
+
+
+## Testes de significância
+
+### Mann-Whitney
+
+- Medimos a altura de alunos em duas turmas
+- Pergunta: Existe diferença na altura entre as turmas?
+
+::: {.codigo-pequeno}
+
+[# Abrimos o arquivo com os dados]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+#| 
+data <- read.table("../../materiais/hora_mw.txt")
+
+```
+
+[# Verificamos as premissas]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+shapiro.test(data$alt[data$hora=="2 pm"])
+var.test(data$alt[data$hora=="2 pm"], data$alt[data$hora=="5 pm"])
+
+```
+
+
+[# Executamos o teste]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+wilcox.test(data$alt[data$hora=="2 pm"], data$alt[data$hora=="5 pm"])
+
+```
+
+:::
+
+
+## Testes de significância
+
+### Kruskall-Wallis
+
+:::: {.columns}
+
+::: {.column width="50%" .codigo-pequeno}
+
+
+- Coletamos 3 espécies de lagostim
+- Pergunta: Existe diferença no comprimento entre estas espécies?
+
+[# Abrimos o arquivo com os dados]{.texto-menor}
+
+```{r}
+#| echo: true
+#| output: false
+
+lag <- read.table("../../materiais/munida_kw.txt")
+
+```
+
+
+[# Criamos o fator]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+especie <- as.factor(lag$especie)
+
+```
+
+
+[# Verificamos as premissas]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: false
+
+shapiro.test(lag$cl[lag$especie=="iris"])
+bartlett.test(lag$cl~especie, data = lag)
+
+```
+
+
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%" .codigo-pequeno .output-pequeno}
+
+
+[# Realizamos o teste]{.texto-menor}
+
+
+```{r}
+#| echo: true
+#| output: true
+
+kruskal.test(lag$cl~especie, data = lag)
+
+```
+
+:::
+
+::::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

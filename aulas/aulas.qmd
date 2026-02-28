@@ -201,4 +201,4 @@ aos conteúdos e aos slides.
   - Análise de Variância
   - Kruskall-Wallis
 
-➡️ Aula em breve
+[➡️ Acessar slides da aula](slides/aula-R-9-hipoteses.qmd){target="_blank" rel="noopener"}

@@ -1628,7 +1628,7 @@
     "href": "aulas/aulas.html#linguagem-r",
     "title": "Aulas",
     "section": "Linguagem R",
-    "text": "Linguagem R\n\n\nAula 01 – A Linguagem R\n\nO R é para mim?\nA linguagem R\nUm pouco de história…\nNão tenha medo do erro\nR x Python\nO pacote R\nRStudio\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – O pacote R\n\nComandos Básicos\nPacotes\nO R como calculadora\nIniciando em objetos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Objetos e Dados\n\nAtribuição\nNomeando objetos\nUtilizando objetos em R\nTipos de dados em R\n\n➡️ Acessar slides da aula\n\n\n\nAula 04 – Funções e objetos\n\nEstruturas de dados\nTrabalhando com vetores\n\n➡️ Acessar slides da aula\n\n\n\nAula 05 – Mais sobre funções\n\nMais sobre funções\n\n➡️ Acessar slides da aula\n\n\nAula 06 – Mais sobre objetos\n\nEstruturas de dados\nMatriz x Data frame\nImportando dados\n\n➡️ Acessar slides da aula\n\n\nAula 07 – Gráficos em R\n\nComo funcionam gráficos no R\nTipos de gráficos\nParâmetros gráficos\n\n➡️ Acessar slides da aula\n\n\nAula 08 – Estatística descritiva no R\n\nEstatística descritiva\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Acessar slides da aula\n\n\nAula 09 – Testes de significância em R\n\nTestes de significância\n\nTeste t\nMann-Whitney\nQui-quadrado\nAnálise de Variância\nKruskall-Wallis\n\n\n➡️ Aula em breve"
+    "text": "Linguagem R\n\n\nAula 01 – A Linguagem R\n\nO R é para mim?\nA linguagem R\nUm pouco de história…\nNão tenha medo do erro\nR x Python\nO pacote R\nRStudio\n\n➡️ Acessar slides da aula\n\n\n\nAula 02 – O pacote R\n\nComandos Básicos\nPacotes\nO R como calculadora\nIniciando em objetos\n\n➡️ Acessar slides da aula\n\n\n\nAula 03 – Objetos e Dados\n\nAtribuição\nNomeando objetos\nUtilizando objetos em R\nTipos de dados em R\n\n➡️ Acessar slides da aula\n\n\n\nAula 04 – Funções e objetos\n\nEstruturas de dados\nTrabalhando com vetores\n\n➡️ Acessar slides da aula\n\n\n\nAula 05 – Mais sobre funções\n\nMais sobre funções\n\n➡️ Acessar slides da aula\n\n\nAula 06 – Mais sobre objetos\n\nEstruturas de dados\nMatriz x Data frame\nImportando dados\n\n➡️ Acessar slides da aula\n\n\nAula 07 – Gráficos em R\n\nComo funcionam gráficos no R\nTipos de gráficos\nParâmetros gráficos\n\n➡️ Acessar slides da aula\n\n\nAula 08 – Estatística descritiva no R\n\nEstatística descritiva\nMedidas de tendência central\nMedidas de dispersão\n\n➡️ Acessar slides da aula\n\n\nAula 09 – Testes de significância em R\n\nTestes de significância\n\nTeste t\nMann-Whitney\nQui-quadrado\nAnálise de Variância\nKruskall-Wallis\n\n\n➡️ Acessar slides da aula"
   },
   {
     "objectID": "aulas/guia-quarto-latex-math-html.html",
@@ -5080,5 +5080,117 @@
     "title": "Estatística Básica utilizando R",
     "section": "Estatística Descritiva",
     "text": "Estatística Descritiva\nCoeficiente de variação\n\n\n\nExemplo Dois grupos\n\nGrupo A (Idade)\n\n3; 2; 5\n\nGrupo B (Idade)\n\n55; 57; 53\n\n\n\n# criamos os vetores\n\na &lt;- c(3,2,5)\nb &lt;- c(55, 57, 53)\n\n\n\n\n# calculamos a média e o desvio\n\nm.a &lt;- mean(a)\nm.b &lt;- mean(b)\nsd.a &lt;- sd(a)\nsd.b &lt;- sd(b)\n\n# calculamos o coeficiente de variação\n\ncv.a &lt;- (sd.a/m.a)*100\ncv.b &lt;- (sd.b/m.b)*100\n\n\n\n[1] 45.82576\n\n\n[1] 3.636364"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância",
+    "href": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância",
+    "title": "Estatística Básica utilizando R",
+    "section": "Testes de significância",
+    "text": "Testes de significância\nTeste t para uma amostra\n\nProblema: Sabemos que a média de peso de uma população de pinguins era 30 kg em 2015. Uma nova amostragem em 2016 resultou nos seguintes valores:\n\n(35.2, 28.1, 24.8, 29.5, 30.5, 26.3, 31.4, 24.5, 29.6, 31.3, 28.5, 20.4)\nPodemos dizer que o peso dos pinguins diminuiu?"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-1",
+    "href": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-1",
+    "title": "Estatística Básica utilizando R",
+    "section": "Testes de significância",
+    "text": "Testes de significância\nTeste t para uma amostra\n\n\n\nProblema: Sabemos que a média de peso de uma população de pinguins era 30 kg em 2015. Uma nova amostragem em 2016 resultou nos seguintes valores:\n\n(35.2, 28.1, 24.8, 29.5, 30.5, 26.3, 31.4, 24.5, 29.6, 31.3, 28.5, 20.4)\nPodemos dizer que o peso dos pinguins diminuiu?\n\n\n# criamos o vetor\n\npinguim &lt;- c(35.2, 28.1, 24.8, 29.5, 30.5, 26.3, 31.4, 24.5, \n            29.6, 31.3, 28.5)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-2",
+    "href": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-2",
+    "title": "Estatística Básica utilizando R",
+    "section": "Testes de significância",
+    "text": "Testes de significância\nTeste t para uma amostra\n\n\n\nProblema: Sabemos que a média de peso de uma população de pinguins era 30 kg em 2015. Uma nova amostragem em 2016 resultou nos seguintes valores:\n\n(35.2, 28.1, 24.8, 29.5, 30.5, 26.3, 31.4, 24.5, 29.6, 31.3, 28.5, 20.4)\nPodemos dizer que o peso dos pinguins diminuiu?\n\n\n# criamos o vetor\n\npinguim &lt;- c(35.2, 28.1, 24.8, 29.5, 30.5, 26.3, 31.4, 24.5, \n             29.6, 31.3, 28.5)\n\n\n\n\n# testamos a normalidade\n\nshapiro.test(pinguim)\n\n# testamos a normalidade\n\nshapiro.test(pinguim)\n\n# Realizamos o teste com a função t.test\n\nt.test(pinguim, mu = 30)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-3",
+    "href": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-3",
+    "title": "Estatística Básica utilizando R",
+    "section": "Testes de significância",
+    "text": "Testes de significância\nTeste t para uma amostra\n\n\n\nProblema: Sabemos que a média de peso de uma população de pinguins era 30 kg em 2015. Uma nova amostragem em 2016 resultou nos seguintes valores:\n\n(35.2, 28.1, 24.8, 29.5, 30.5, 26.3, 31.4, 24.5, 29.6, 31.3, 28.5, 20.4)\nPodemos dizer que o peso dos pinguins diminuiu?\n\n\n# criamos o vetor\n\npinguim &lt;- c(35.2, 28.1, 24.8, 29.5, 30.5, 26.3, 31.4, 24.5, \n             29.6, 31.3, 28.5)\n\n\n\n\n# Realizamos o teste com a função t.test\n\nt.test(pinguim, mu = 30)\n\n\n    One Sample t-test\n\ndata:  pinguim\nt = -0.98929, df = 10, p-value = 0.3459\nalternative hypothesis: true mean is not equal to 30\n95 percent confidence interval:\n 26.95470 31.17258\nsample estimates:\nmean of x \n 29.06364"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-4",
+    "href": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-4",
+    "title": "Estatística Básica utilizando R",
+    "section": "Testes de significância",
+    "text": "Testes de significância\nQui quadrado \\((X^1)\\)\n\n\n\nO cruza-bico (Loxia curvirostra)\n\nPonta do bico superior ultrapassa o inferior pela esquerda ou pela direita\nHipótese nula: A razão de bicos para esquerda e para direita é 1:1.\nEm uma coleta foram observados:\n\n1752 com bico a direita\n1895 com bico a esquerda\n\n\n\nCriamos os vetores com o observado e esperado\n\nobs &lt;- c(1752, 1895)\nesp &lt;- c(0.5,0.5)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-5",
+    "href": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-5",
+    "title": "Estatística Básica utilizando R",
+    "section": "Testes de significância",
+    "text": "Testes de significância\nQui quadrado \\((X^1)\\)\n\n\n\nO cruza-bico (Loxia curvirostra)\n\nPonta do bico superior ultrapassa o inferior pela esquerda ou pela direita\nHipótese nula: A razão de bicos para esquerda e para direita é 1:1.\nEm uma coleta foram observados:\n\n1752 com bico a direita\n1895 com bico a esquerda\n\n\n\nCriamos os vetores com o observado e esperado\n\nobs &lt;- c(1752, 1895)\nesp &lt;- c(0.5,0.5)\n\n\n\n\n\n# Função chisq.test()\n\nchisq.test(x = obs, p = esp)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-6",
+    "href": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-6",
+    "title": "Estatística Básica utilizando R",
+    "section": "Testes de significância",
+    "text": "Testes de significância\nQui quadrado \\((X^1)\\)\n\n\n\nO cruza-bico (Loxia curvirostra)\n\nPonta do bico superior ultrapassa o inferior pela esquerda ou pela direita\nHipótese nula: A razão de bicos para esquerda e para direita é 1:1.\nEm uma coleta foram observados:\n\n1752 com bico a direita\n1895 com bico a esquerda\n\n\n\nCriamos os vetores com o observado e esperado\n\nobs &lt;- c(1752, 1895)\nesp &lt;- c(0.5,0.5)\n\n\n\n\n# Função chisq.test()\n\nchisq.test(x = obs, p = esp)\n\n\n    Chi-squared test for given probabilities\n\ndata:  obs\nX-squared = 5.6071, df = 1, p-value = 0.01789"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-7",
+    "href": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-7",
+    "title": "Estatística Básica utilizando R",
+    "section": "Testes de significância",
+    "text": "Testes de significância\nTeste t para duas amostras independentes\n\n\n\nForam coletadas duas espécies do gênero Leptograpsus e realizada análise morfométrica\nPergunta: Existe diferença no tamanho entre machos e fêmeas das duas espécies?\n\n# Abrimos o pacote MASS e visualizamos o dataframe crabs\n\nlibrary(MASS)\ncrabs\n\n\n\n\n\n\n\n\n\n# Verificamos as premissas #NORMALIDADE\n\nshapiro.test(crabs[1:50,7])\n\n#ou\n\nshapiro.test(crabs$CW[1:50])\n\n#HOMOGENEIDADE\n\nvar.test(crabs$CW[1:50], crabs$CW[51:100])"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-8",
+    "href": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-8",
+    "title": "Estatística Básica utilizando R",
+    "section": "Testes de significância",
+    "text": "Testes de significância\nTeste t para duas amostras independentes\n\n\n\nForam coletadas duas espécies do gênero Leptograpsus e realizada análise morfométrica\nPergunta: Existe diferença no tamanho entre machos e fêmeas das duas espécies?\n\n\n\n\n\n\n\n\n\n# executamos o teste\n\nt.test(crabs$CW[crabs$sex==\"M\"&crabs$sp==\"B\"],\n      crabs$CW[crabs$sex==\"F\"&crabs$sp==\"B\"])"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-9",
+    "href": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-9",
+    "title": "Estatística Básica utilizando R",
+    "section": "Testes de significância",
+    "text": "Testes de significância\nTeste t para duas amostras independentes\n\n\n\nForam coletadas duas espécies do gênero Leptograpsus e realizada análise morfométrica\nPergunta: Existe diferença no tamanho entre machos e fêmeas das duas espécies?\n\n\n\n\n\n\n\n\n\n# executamos o teste\n\nt.test(crabs$CW[crabs$sex==\"M\"&crabs$sp==\"B\"],\n      crabs$CW[crabs$sex==\"F\"&crabs$sp==\"B\"])\n\n\n    Welch Two Sample t-test\n\ndata:  crabs$CW[crabs$sex == \"M\" & crabs$sp == \"B\"] and crabs$CW[crabs$sex == \"F\" & crabs$sp == \"B\"]\nt = 2.7474, df = 94.144, p-value = 0.007199\nalternative hypothesis: true difference in means is not equal to 0\n95 percent confidence interval:\n 1.160866 7.211134\nsample estimates:\nmean of x mean of y \n   36.810    32.624"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-10",
+    "href": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-10",
+    "title": "Estatística Básica utilizando R",
+    "section": "Testes de significância",
+    "text": "Testes de significância\nTeste t para duas amostras independentes\n\n\n\nApresentando em gráfico\n\n# Criamos um dataframe com as duas series de dados\n\ncrabs.df &lt;- data.frame(cbind(crabs$CW[crabs$sex==\"M\"&crabs$sp==\"B\"],\n                             crabs$CW[crabs$sex==\"F\"&crabs$sp==\"B\"]))\nnames(crabs.df) &lt;- c(\"Male\", \"Female\")\n\n# Criamos um objeto com o barplot\n\ngrafico &lt;- barplot(sapply(crabs.df, mean), \n                   ylim =c(0, max(crabs.df)), \n                   ylab=\"CW\", \n                   las = 1)\n\n# inserimos as barras de desvio\narrows(grafico, sapply(crabs.df, mean), \n       grafico, sapply(crabs.df, mean)+sapply(crabs.df, sd),    \n       length = 0.1, angle = 90, code = 3)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-11",
+    "href": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-11",
+    "title": "Estatística Básica utilizando R",
+    "section": "Testes de significância",
+    "text": "Testes de significância\nAnálise de variância\n\n\n\nTrês espécies de camarão foram coletadas em um arrasto.\nPergunta: Existe diferença no tamanho entre as três espécies?\n\n# Realizamos o teste\n\nmodelo.aov &lt;- aov(cam$CT~especie, data=cam)\nsummary(modelo.aov)\n\n# São diferentes, realizamos o post-hoc\n\ntukey&lt;-TukeyHSD(modelo.aov)\ntukey"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-12",
+    "href": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-12",
+    "title": "Estatística Básica utilizando R",
+    "section": "Testes de significância",
+    "text": "Testes de significância\nAnálise de variância\n\n\n\nPlotando os resultados\nDa mesma forma que o anterior\n\n# Montamos o data frame\n\ncam.df &lt;- data.frame(cbind(cam$CT[cam$especie==\"sp1\"],\n                           cam$CT[cam$especie==\"sp2\"],\n                           cam$CT[cam$especie==\"sp3\"]))\nnames(cam.df) &lt;-c(\"sp1\", \"sp2\", \"sp3\")\n\n# Montamos o objeto grafico\n\ngrafico &lt;- barplot(sapply(cam.df, mean), \n                   ylim =c(0, max(cam.df)), ylab=\"CT\", las = 1)\narrows(grafico, sapply(cam.df, mean), grafico,\n       sapply(cam.df,mean)+sapply(cam.df, sd),\n       length = 0.1, angle = 90, code = 3)\n\n# Inserimos as letras dos grupos\ntext(grafico, sapply(cam.df,mean)+sapply(cam.df, sd)+1, \n     labels = c(\"a\", \"a\", \"b\"), cex = 1.3)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-13",
+    "href": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-13",
+    "title": "Estatística Básica utilizando R",
+    "section": "Testes de significância",
+    "text": "Testes de significância\nAnálise de variância\n\n\n\nPlotando os resultados\nDa mesma forma que o anterior\n\n# Montamos o data frame\n\ncam.df &lt;- data.frame(cbind(cam$CT[cam$especie==\"sp1\"],\n                           cam$CT[cam$especie==\"sp2\"],\n                           cam$CT[cam$especie==\"sp3\"]))\nnames(cam.df) &lt;-c(\"sp1\", \"sp2\", \"sp3\")\n\n# Montamos o objeto grafico\n\ngrafico &lt;- barplot(sapply(cam.df, mean), \n                   ylim =c(0, max(cam.df)), ylab=\"CT\", las = 1)\narrows(grafico, sapply(cam.df, mean), grafico,\n       sapply(cam.df,mean)+sapply(cam.df, sd),\n       length = 0.1, angle = 90, code = 3)\n\n# Inserimos as letras dos grupos\ntext(grafico, sapply(cam.df,mean)+sapply(cam.df, sd)+1, \n     labels = c(\"a\", \"a\", \"b\"), cex = 1.3)"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-14",
+    "href": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-14",
+    "title": "Estatística Básica utilizando R",
+    "section": "Testes de significância",
+    "text": "Testes de significância\nMann-Whitney\n\nMedimos a altura de alunos em duas turmas\nPergunta: Existe diferença na altura entre as turmas?\n\n\n# Abrimos o arquivo com os dados\n\ndata &lt;- read.table(\"../../materiais/hora_mw.txt\")\n\n# Verificamos as premissas\n\nshapiro.test(data$alt[data$hora==\"2 pm\"])\nvar.test(data$alt[data$hora==\"2 pm\"], data$alt[data$hora==\"5 pm\"])\n\n# Executamos o teste\n\nwilcox.test(data$alt[data$hora==\"2 pm\"], data$alt[data$hora==\"5 pm\"])"
+  },
+  {
+    "objectID": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-15",
+    "href": "aulas/slides/aula-R-9-hipoteses.html#testes-de-significância-15",
+    "title": "Estatística Básica utilizando R",
+    "section": "Testes de significância",
+    "text": "Testes de significância\nKruskall-Wallis\n\n\n\nColetamos 3 espécies de lagostim\nPergunta: Existe diferença no comprimento entre estas espécies?\n\n# Abrimos o arquivo com os dados\n\nlag &lt;- read.table(\"../../materiais/munida_kw.txt\")\n\n# Criamos o fator\n\nespecie &lt;- as.factor(lag$especie)\n\n# Verificamos as premissas\n\nshapiro.test(lag$cl[lag$especie==\"iris\"])\nbartlett.test(lag$cl~especie, data = lag)\n\n\n\n\n# Realizamos o teste\n\nkruskal.test(lag$cl~especie, data = lag)\n\n\n    Kruskal-Wallis rank sum test\n\ndata:  lag$cl by especie\nKruskal-Wallis chi-squared = 0.37511, df = 2, p-value = 0.829"
   }
 ]
