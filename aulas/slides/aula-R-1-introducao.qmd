@@ -19,7 +19,7 @@ format:
 
 ## O R é para mim?
 
-![](figuras/r-para-mim.png){width="100%}"
+![](figuras/r-para-mim.png){width="100%"}
 
 ## A linguagem R
 

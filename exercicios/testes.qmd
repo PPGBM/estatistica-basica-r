@@ -1,0 +1,161 @@
+---
+title: "Testes Estatísticos"
+format: html
+---
+
+# 🧪 Testes Estatísticos
+
+> Inferência estatística e tomada de decisão baseada em dados.
+
+---
+
+::: {.callout-note}
+### 🎯 Objetivos do módulo
+
+- Formular hipóteses estatísticas
+- Aplicar testes adequados aos dados
+- Interpretar valores-p
+- Relacionar significância estatística e relevância biológica
+:::
+
+---
+
+::: {.callout-tip}
+### ✔ Pré-requisitos
+
+- Estatística descritiva
+- Interpretação gráfica
+- Organização de dados em data frames
+:::
+
+---
+
+# ⭐ Exercícios Básicos
+
+---
+
+### Exercício 1 — Formulação de Hipóteses
+
+**Objetivo:** Estruturar hipóteses estatísticas corretamente.
+
+**Tarefa:**
+
+1. Considere dois grupos com médias diferentes.
+2. Formule a hipótese nula (H0).
+3. Formule a hipótese alternativa (H1).
+4. Explique a diferença entre erro tipo I e erro tipo II.
+
+---
+
+### Exercício 2 — Teste t Simples
+
+**Objetivo:** Aplicar teste t para comparação de médias.
+
+**Tarefa:**
+
+1. Utilize o dataset `mtcars`.
+2. Compare `mpg` entre carros automáticos e manuais.
+3. Execute o teste t apropriado.
+4. Registre o valor-p obtido.
+
+---
+
+# ⭐⭐ Exercícios Intermediários
+
+---
+
+### Exercício 3 — Verificação de Pressupostos
+
+**Objetivo:** Avaliar condições para aplicação do teste t.
+
+**Tarefa:**
+
+1. Utilize os mesmos grupos do exercício anterior.
+2. Verifique normalidade utilizando `shapiro.test()`.
+3. Avalie homogeneidade de variâncias.
+4. Decida se o teste t é apropriado.
+
+---
+
+🔎 **Interpretação**
+
+1. Os dados atendem aos pressupostos?
+2. Caso não atendam, qual alternativa poderia ser utilizada?
+3. A decisão estatística foi adequada?
+
+---
+
+### Exercício 4 — Teste Não Paramétrico
+
+**Objetivo:** Aplicar teste alternativo ao teste t.
+
+**Tarefa:**
+
+1. Utilize os mesmos dados do exercício anterior.
+2. Execute o teste de Wilcoxon.
+3. Compare o valor-p com o teste t.
+4. Organize os resultados em uma tabela resumo.
+
+---
+
+🔎 **Interpretação**
+
+1. Os resultados dos testes diferem?
+2. Qual teste parece mais adequado?
+3. A conclusão muda dependendo do teste aplicado?
+
+---
+
+# ⭐⭐⭐ Exercícios Avançados
+
+---
+
+### Exercício 5 — Correlação
+
+**Objetivo:** Avaliar relação entre variáveis quantitativas.
+
+**Tarefa:**
+
+1. Utilize o dataset `mtcars`.
+2. Avalie a correlação entre `wt` e `mpg`.
+3. Execute o teste de correlação apropriado.
+4. Registre coeficiente e valor-p.
+
+---
+
+🔎 **Interpretação Crítica**
+
+1. A correlação é forte ou fraca?
+2. A relação é positiva ou negativa?
+3. Correlação implica causalidade?
+4. Que fatores poderiam influenciar essa relação?
+
+---
+
+### Exercício 6 — Qui-Quadrado
+
+**Objetivo:** Avaliar associação entre variáveis categóricas.
+
+**Tarefa:**
+
+1. Crie uma tabela de contingência com duas variáveis categóricas.
+2. Aplique o teste qui-quadrado.
+3. Registre o valor-p obtido.
+4. Avalie frequências esperadas.
+
+---
+
+🔎 **Interpretação Crítica**
+
+1. Existe associação entre as variáveis?
+2. As frequências esperadas atendem aos critérios do teste?
+3. O resultado é biologicamente relevante?
+4. Que limitações o teste apresenta?
+
+---
+
+## 📤 Envio dos Exercícios
+
+- Nome do arquivo: `nome_sobrenome_testes.R`
+- O código deve conter comentários explicativos.
+- Enviar via repositório da disciplina.

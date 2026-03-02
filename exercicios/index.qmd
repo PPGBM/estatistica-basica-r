@@ -1,0 +1,109 @@
+---
+title: "Exercícios"
+format: html
+---
+
+# Exercícios
+
+Os exercícios estão organizados por módulo, acompanhando a progressão da disciplina.
+
+Recomenda-se seguir a ordem proposta.  
+Os exercícios intermediários e avançados exigem interpretação estatística.
+
+---
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+<div class="card-modulo">
+
+### 📘 Fundamentos do R  
+Sintaxe básica, objetos e organização de scripts  
+
+**5 exercícios**  
+Nível: Básico → Avançado  
+
+<a href="fundamentos.qmd" class="card-link">Acessar módulo →</a>
+
+</div>
+
+:::
+
+::: {.column width="50%"}
+
+<div class="card-modulo">
+
+### 🧩 Estruturas em R  
+Vetores, matrizes, listas e data frames  
+
+**6 exercícios**  
+Nível: Básico → Avançado  
+
+<a href="estruturas.qmd" class="card-link">Acessar módulo →</a>
+
+</div>
+
+:::
+
+:::
+
+---
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+<div class="card-modulo">
+
+### 📊 Estatística Descritiva  
+Medidas resumo e interpretação  
+
+**5 exercícios**  
+Nível: Básico → Avançado  
+
+<a href="descritiva.qmd" class="card-link">Acessar módulo →</a>
+
+</div>
+
+:::
+
+::: {.column width="50%"}
+
+<div class="card-modulo">
+
+### 📈 Gráficos em R  
+Visualização e leitura crítica de dados  
+
+**6 exercícios**  
+Nível: Básico → Avançado  
+
+<a href="graficos.qmd" class="card-link">Acessar módulo →</a>
+
+</div>
+
+:::
+
+:::
+
+---
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+<div class="card-modulo">
+
+### 🧪 Testes Estatísticos  
+Inferência e tomada de decisão  
+
+**6 exercícios**  
+Nível: Básico → Avançado  
+
+<a href="testes.qmd" class="card-link">Acessar módulo →</a>
+
+</div>
+
+:::
+
+:::

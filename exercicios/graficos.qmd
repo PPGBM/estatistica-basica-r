@@ -1,0 +1,163 @@
+---
+title: "Gráficos em R"
+format: html
+---
+
+# 📈 Gráficos em R
+
+> Visualização de dados e interpretação gráfica aplicada à análise estatística.
+
+---
+
+::: {.callout-note}
+### 🎯 Objetivos do módulo
+
+- Construir gráficos básicos no R
+- Personalizar elementos gráficos
+- Comparar grupos visualmente
+- Interpretar padrões e tendências
+:::
+
+---
+
+::: {.callout-tip}
+### ✔ Pré-requisitos
+
+- Vetores e data frames
+- Estatística descritiva
+- Uso básico de funções no R
+:::
+
+---
+
+# ⭐ Exercícios Básicos
+
+---
+
+### Exercício 1 — Gráfico de Dispersão
+
+**Objetivo:** Construir gráfico simples com `plot()`.
+
+**Tarefa:**
+
+1. Crie dois vetores numéricos com 15 valores cada.
+2. Construa um gráfico de dispersão utilizando `plot()`.
+3. Adicione título ao gráfico.
+4. Nomeie os eixos adequadamente.
+
+---
+
+### Exercício 2 — Histograma
+
+**Objetivo:** Visualizar distribuição de dados.
+
+**Tarefa:**
+
+1. Utilize o dataset `iris`.
+2. Construa um histograma de `Sepal.Length`.
+3. Ajuste o número de classes.
+4. Adicione título e rótulos aos eixos.
+
+---
+
+# ⭐⭐ Exercícios Intermediários
+
+---
+
+### Exercício 3 — Boxplot por Grupo
+
+**Objetivo:** Comparar grupos visualmente.
+
+**Tarefa:**
+
+1. Utilize o dataset `iris`.
+2. Construa um boxplot de `Sepal.Length` por espécie.
+3. Ajuste cores do gráfico.
+4. Inclua título e rótulos apropriados.
+
+---
+
+🔎 **Interpretação**
+
+1. Há diferença visual evidente entre as espécies?
+2. Existem possíveis outliers?
+3. A variabilidade parece semelhante entre grupos?
+
+---
+
+### Exercício 4 — Personalização Gráfica
+
+**Objetivo:** Ajustar parâmetros visuais.
+
+**Tarefa:**
+
+1. Utilize o dataset `mtcars`.
+2. Construa gráfico de dispersão entre `wt` e `mpg`.
+3. Altere o tipo de ponto (`pch`).
+4. Ajuste cor e tamanho dos pontos.
+5. Adicione uma linha de tendência utilizando `abline()`.
+
+---
+
+🔎 **Interpretação**
+
+1. A relação parece linear?
+2. Existe tendência positiva ou negativa?
+3. Há pontos influentes que podem afetar a análise?
+
+---
+
+# ⭐⭐⭐ Exercícios Avançados
+
+---
+
+### Exercício 5 — Comparação de Distribuições
+
+**Objetivo:** Visualizar e comparar distribuições simultaneamente.
+
+**Tarefa:**
+
+1. Utilize o dataset `mtcars`.
+2. Crie histogramas separados para carros automáticos e manuais.
+3. Ajuste escalas para permitir comparação.
+4. Organize os gráficos na mesma janela utilizando `par(mfrow=...)`.
+
+---
+
+🔎 **Interpretação Crítica**
+
+1. As distribuições parecem diferentes?
+2. Há indícios de assimetria?
+3. A diferença visual sugere possível significância estatística?
+4. Que teste poderia ser aplicado posteriormente?
+
+---
+
+### Exercício 6 — Visualização para Comunicação Científica
+
+**Objetivo:** Produzir gráfico adequado para relatório científico.
+
+**Tarefa:**
+
+1. Escolha uma variável contínua do dataset `iris`.
+2. Escolha uma variável categórica para agrupamento.
+3. Construa gráfico claro e informativo.
+4. Ajuste título, legenda e rótulos de forma adequada.
+5. Garanta que o gráfico seja legível para publicação.
+
+---
+
+🔎 **Interpretação Crítica**
+
+1. O gráfico comunica claramente a informação?
+2. Há excesso ou falta de elementos visuais?
+3. A escolha do tipo de gráfico foi adequada?
+4. Como o gráfico poderia ser melhorado?
+
+---
+
+## 📤 Envio dos Exercícios
+
+- Nome do arquivo: `nome_sobrenome_graficos.R`
+- O código deve conter comentários explicativos.
+- Enviar via repositório da disciplina.

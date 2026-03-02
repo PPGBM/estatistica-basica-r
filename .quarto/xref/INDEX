@@ -157,5 +157,23 @@
   },
   "aulas/slides/aula-R-9-hipoteses.qmd": {
     "aula-R-9-hipoteses.html": "4838407c"
+  },
+  "exercicios/index.qmd": {
+    "index.html": "149a9d9d"
+  },
+  "exercicios/fundamentos.qmd": {
+    "fundamentos.html": "38358670"
+  },
+  "exercicios/estruturas.qmd": {
+    "estruturas.html": "187ea77b"
+  },
+  "exercicios/descritiva.qmd": {
+    "descritiva.html": "3978a84a"
+  },
+  "exercicios/graficos.qmd": {
+    "graficos.html": "f566c8a6"
+  },
+  "exercicios/testes.qmd": {
+    "testes.html": "1aae1051"
   }
 }

@@ -1,0 +1,136 @@
+---
+title: "Fundamentos do R"
+format: html
+---
+
+# 📘 Fundamentos do R
+
+> Sintaxe básica, criação de objetos e organização de scripts.
+
+---
+
+::: {.callout-note}
+### 🎯 Objetivos do módulo
+
+- Criar objetos no R
+- Realizar operações matemáticas básicas
+- Utilizar funções simples
+- Organizar scripts adequadamente
+:::
+
+---
+
+::: {.callout-tip}
+### ✔ Pré-requisitos
+
+Nenhum. Este é o primeiro módulo prático.
+:::
+
+---
+
+# ⭐ Exercícios Básicos
+
+---
+
+### Exercício 1 — Operações com Objetos
+
+**Objetivo:** Trabalhar com objetos numéricos e operações básicas.
+
+**Tarefa:**
+
+1. Crie três objetos numéricos distintos.
+2. Realize pelo menos duas operações matemáticas entre eles.
+3. Armazene o resultado em um novo objeto.
+4. Exiba o resultado no console.
+
+---
+
+### Exercício 2 — Uso de Funções Simples
+
+**Objetivo:** Aplicar funções estatísticas básicas.
+
+**Tarefa:**
+
+1. Crie um vetor com 10 valores numéricos.
+2. Calcule a média do vetor.
+3. Calcule o desvio padrão.
+4. Identifique o valor máximo.
+
+---
+
+# ⭐⭐ Exercícios Intermediários
+
+---
+
+### Exercício 3 — Organização de Script
+
+**Objetivo:** Estruturar código de forma clara e organizada.
+
+**Tarefa:**
+
+1. Reescreva os exercícios anteriores em um único script.
+2. Separe cada etapa com comentários explicativos.
+3. Organize o código em blocos lógicos.
+
+---
+
+🔎 **Interpretação**
+
+1. O desvio padrão obtido indica alta ou baixa variabilidade?
+2. A média representa bem os dados?
+3. Se esses valores representassem dados biológicos, o que a variabilidade poderia indicar?
+
+---
+
+### Exercício 4 — Manipulação de Vetores
+
+**Objetivo:** Trabalhar com indexação e operações vetoriais.
+
+**Tarefa:**
+
+1. Crie um vetor com 15 valores.
+2. Extraia apenas os valores maiores que a média.
+3. Calcule a soma desses valores.
+4. Armazene o resultado em um novo objeto.
+
+---
+
+🔎 **Interpretação**
+
+1. Qual a proporção de valores acima da média?
+2. Isso sugere simetria nos dados?
+3. Há indícios de assimetria?
+
+---
+
+# ⭐⭐⭐ Exercícios Avançados
+
+---
+
+### Exercício 5 — Criação de Função Personalizada
+
+**Objetivo:** Criar uma função simples no R.
+
+**Tarefa:**
+
+1. Crie uma função que receba um vetor numérico.
+2. A função deve retornar a média e o desvio padrão.
+3. Teste a função com dois vetores diferentes.
+4. Organize o código com comentários explicativos.
+
+---
+
+🔎 **Interpretação Crítica**
+
+1. A função funciona para qualquer tamanho de vetor?
+2. Existem limitações na implementação?
+3. Como a função poderia ser aprimorada?
+4. Que cuidados devem ser tomados ao reutilizá-la?
+
+---
+
+## 📤 Envio dos Exercícios
+
+- Nome do arquivo: `nome_sobrenome_fundamentos.R`
+- O código deve conter comentários explicativos.
+- Enviar via repositório da disciplina.

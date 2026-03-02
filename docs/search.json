@@ -2901,8 +2901,8 @@
     "objectID": "aulas/slides/aula-R-1-introducao.html#o-r-é-para-mim",
     "href": "aulas/slides/aula-R-1-introducao.html#o-r-é-para-mim",
     "title": "Estatística Básica utilizando R",
-    "section": "",
-    "text": "{width=“100%}”"
+    "section": "O R é para mim?",
+    "text": "O R é para mim?"
   },
   {
     "objectID": "aulas/slides/aula-R-1-introducao.html#a-linguagem-r",
@@ -3489,8 +3489,8 @@
     "objectID": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos",
     "href": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos",
     "title": "Estatística Básica utilizando R",
-    "section": "",
-    "text": "#\n\nIndica que sequência de caracteres após “#” não deve ser lido\nPermite inserir comentários dentro do script\nMuito importante para lembrar e compartilhar os códigos"
+    "section": "Pacote R - Comandos Básicos",
+    "text": "Pacote R - Comandos Básicos\n\n\n\n#\n\nIndica que sequência de caracteres após “#” não deve ser lido\nPermite inserir comentários dentro do script\nMuito importante para lembrar e compartilhar os códigos"
   },
   {
     "objectID": "aulas/slides/aula-R-2-primeiros-passos.html#pacote-r---comandos-básicos-1",
@@ -5192,5 +5192,82 @@
     "title": "Estatística Básica utilizando R",
     "section": "Testes de significância",
     "text": "Testes de significância\nKruskall-Wallis\n\n\n\nColetamos 3 espécies de lagostim\nPergunta: Existe diferença no comprimento entre estas espécies?\n\n# Abrimos o arquivo com os dados\n\nlag &lt;- read.table(\"../../materiais/munida_kw.txt\")\n\n# Criamos o fator\n\nespecie &lt;- as.factor(lag$especie)\n\n# Verificamos as premissas\n\nshapiro.test(lag$cl[lag$especie==\"iris\"])\nbartlett.test(lag$cl~especie, data = lag)\n\n\n\n\n# Realizamos o teste\n\nkruskal.test(lag$cl~especie, data = lag)\n\n\n    Kruskal-Wallis rank sum test\n\ndata:  lag$cl by especie\nKruskal-Wallis chi-squared = 0.37511, df = 2, p-value = 0.829"
+  },
+  {
+    "objectID": "exercicios/index.html",
+    "href": "exercicios/index.html",
+    "title": "Exercícios",
+    "section": "",
+    "text": "Exercícios\nOs exercícios estão organizados por módulo, acompanhando a progressão da disciplina.\nRecomenda-se seguir a ordem proposta.\nOs exercícios intermediários e avançados exigem interpretação estatística.\n\n\n\n\n📘 Fundamentos do R\nSintaxe básica, objetos e organização de scripts\n5 exercícios\nNível: Básico → Avançado\nAcessar módulo →\n\n\n\n🧩 Estruturas em R\nVetores, matrizes, listas e data frames\n6 exercícios\nNível: Básico → Avançado\nAcessar módulo →\n\n\n\n\n\n\n\n📊 Estatística Descritiva\nMedidas resumo e interpretação\n5 exercícios\nNível: Básico → Avançado\nAcessar módulo →\n\n\n\n📈 Gráficos em R\nVisualização e leitura crítica de dados\n6 exercícios\nNível: Básico → Avançado\nAcessar módulo →\n\n\n\n\n\n\n\n🧪 Testes Estatísticos\nInferência e tomada de decisão\n6 exercícios\nNível: Básico → Avançado\nAcessar módulo →"
+  },
+  {
+    "objectID": "exercicios/fundamentos.html",
+    "href": "exercicios/fundamentos.html",
+    "title": "Fundamentos do R",
+    "section": "",
+    "text": "Sintaxe básica, criação de objetos e organização de scripts.\n\n\n\n\n\n\n\n\nNota🎯 Objetivos do módulo\n\n\n\n\nCriar objetos no R\nRealizar operações matemáticas básicas\nUtilizar funções simples\nOrganizar scripts adequadamente\n\n\n\n\n\n\n\n\n\n\nDica✔ Pré-requisitos\n\n\n\nNenhum. Este é o primeiro módulo prático."
+  },
+  {
+    "objectID": "exercicios/fundamentos.html#envio-dos-exercícios",
+    "href": "exercicios/fundamentos.html#envio-dos-exercícios",
+    "title": "Fundamentos do R",
+    "section": "📤 Envio dos Exercícios",
+    "text": "📤 Envio dos Exercícios\n\nNome do arquivo: nome_sobrenome_fundamentos.R\nO código deve conter comentários explicativos.\nEnviar via repositório da disciplina."
+  },
+  {
+    "objectID": "exercicios/estruturas.html",
+    "href": "exercicios/estruturas.html",
+    "title": "Estruturas em R",
+    "section": "",
+    "text": "Vetores, matrizes, listas e data frames aplicados à organização de dados.\n\n\n\n\n\n\n\n\nNota🎯 Objetivos do módulo\n\n\n\n\nCriar e manipular vetores\nTrabalhar com matrizes\nOrganizar dados em data frames\nUtilizar listas para estruturar objetos complexos\n\n\n\n\n\n\n\n\n\n\nDica✔ Pré-requisitos\n\n\n\n\nCriação de objetos no R\nOperações matemáticas básicas\nUso de funções simples"
+  },
+  {
+    "objectID": "exercicios/estruturas.html#envio-dos-exercícios",
+    "href": "exercicios/estruturas.html#envio-dos-exercícios",
+    "title": "Estruturas em R",
+    "section": "📤 Envio dos Exercícios",
+    "text": "📤 Envio dos Exercícios\n\nNome do arquivo: nome_sobrenome_estruturas.R\nO código deve conter comentários explicativos.\nEnviar via repositório da disciplina."
+  },
+  {
+    "objectID": "exercicios/descritiva.html",
+    "href": "exercicios/descritiva.html",
+    "title": "Estatística Descritiva",
+    "section": "",
+    "text": "Medidas resumo e interpretação da variabilidade dos dados.\n\n\n\n\n\n\n\n\nNota🎯 Objetivos do módulo\n\n\n\n\nCalcular medidas de tendência central\nCalcular medidas de dispersão\nInterpretar variabilidade\nRelacionar medidas estatísticas ao contexto científico\n\n\n\n\n\n\n\n\n\n\nDica✔ Pré-requisitos\n\n\n\n\nCriação de vetores e data frames\nUso de funções básicas no R"
+  },
+  {
+    "objectID": "exercicios/descritiva.html#envio-dos-exercícios",
+    "href": "exercicios/descritiva.html#envio-dos-exercícios",
+    "title": "Estatística Descritiva",
+    "section": "📤 Envio dos Exercícios",
+    "text": "📤 Envio dos Exercícios\n\nNome do arquivo: nome_sobrenome_descritiva.R\nO código deve conter comentários explicativos.\nEnviar via repositório da disciplina."
+  },
+  {
+    "objectID": "exercicios/graficos.html",
+    "href": "exercicios/graficos.html",
+    "title": "Gráficos em R",
+    "section": "",
+    "text": "Visualização de dados e interpretação gráfica aplicada à análise estatística.\n\n\n\n\n\n\n\n\nNota🎯 Objetivos do módulo\n\n\n\n\nConstruir gráficos básicos no R\nPersonalizar elementos gráficos\nComparar grupos visualmente\nInterpretar padrões e tendências\n\n\n\n\n\n\n\n\n\n\nDica✔ Pré-requisitos\n\n\n\n\nVetores e data frames\nEstatística descritiva\nUso básico de funções no R"
+  },
+  {
+    "objectID": "exercicios/graficos.html#envio-dos-exercícios",
+    "href": "exercicios/graficos.html#envio-dos-exercícios",
+    "title": "Gráficos em R",
+    "section": "📤 Envio dos Exercícios",
+    "text": "📤 Envio dos Exercícios\n\nNome do arquivo: nome_sobrenome_graficos.R\nO código deve conter comentários explicativos.\nEnviar via repositório da disciplina."
+  },
+  {
+    "objectID": "exercicios/testes.html",
+    "href": "exercicios/testes.html",
+    "title": "Testes Estatísticos",
+    "section": "",
+    "text": "Inferência estatística e tomada de decisão baseada em dados.\n\n\n\n\n\n\n\n\nNota🎯 Objetivos do módulo\n\n\n\n\nFormular hipóteses estatísticas\nAplicar testes adequados aos dados\nInterpretar valores-p\nRelacionar significância estatística e relevância biológica\n\n\n\n\n\n\n\n\n\n\nDica✔ Pré-requisitos\n\n\n\n\nEstatística descritiva\nInterpretação gráfica\nOrganização de dados em data frames"
+  },
+  {
+    "objectID": "exercicios/testes.html#envio-dos-exercícios",
+    "href": "exercicios/testes.html#envio-dos-exercícios",
+    "title": "Testes Estatísticos",
+    "section": "📤 Envio dos Exercícios",
+    "text": "📤 Envio dos Exercícios\n\nNome do arquivo: nome_sobrenome_testes.R\nO código deve conter comentários explicativos.\nEnviar via repositório da disciplina."
   }
 ]

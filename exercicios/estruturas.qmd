@@ -1,0 +1,167 @@
+---
+title: "Estruturas em R"
+format: html
+---
+
+# 🧩 Estruturas em R
+
+> Vetores, matrizes, listas e data frames aplicados à organização de dados.
+
+---
+
+::: {.callout-note}
+### 🎯 Objetivos do módulo
+
+- Criar e manipular vetores
+- Trabalhar com matrizes
+- Organizar dados em data frames
+- Utilizar listas para estruturar objetos complexos
+:::
+
+---
+
+::: {.callout-tip}
+### ✔ Pré-requisitos
+
+- Criação de objetos no R
+- Operações matemáticas básicas
+- Uso de funções simples
+:::
+
+---
+
+# ⭐ Exercícios Básicos
+
+---
+
+### Exercício 1 — Criação e Manipulação de Vetores
+
+**Objetivo:** Trabalhar com vetores numéricos e operações básicas.
+
+**Tarefa:**
+
+1. Crie um vetor com 12 valores numéricos.
+2. Calcule a média do vetor.
+3. Identifique os valores maiores que a média.
+4. Conte quantos valores são maiores que a média.
+
+---
+
+### Exercício 2 — Construção de Matrizes
+
+**Objetivo:** Criar e manipular matrizes.
+
+**Tarefa:**
+
+1. Crie uma matriz 3x4 com valores numéricos.
+2. Calcule a soma de cada linha.
+3. Calcule a soma de cada coluna.
+4. Extraia o elemento da segunda linha e terceira coluna.
+
+---
+
+# ⭐⭐ Exercícios Intermediários
+
+---
+
+### Exercício 3 — Criação de Data Frame
+
+**Objetivo:** Organizar dados em formato tabular.
+
+**Tarefa:**
+
+1. Crie um data frame com três variáveis:
+   - Espécie
+   - Tamanho
+   - Peso
+2. Insira pelo menos 8 observações.
+3. Calcule a média do peso.
+4. Filtre apenas indivíduos com peso acima da média.
+
+---
+
+🔎 **Interpretação**
+
+1. Qual a proporção de indivíduos acima da média?
+2. O conjunto parece homogêneo ou heterogêneo?
+3. A média é uma boa medida para representar o peso?
+
+---
+
+### Exercício 4 — Indexação e Subconjuntos
+
+**Objetivo:** Aplicar indexação em estruturas de dados.
+
+**Tarefa:**
+
+1. Utilize o data frame criado anteriormente.
+2. Selecione apenas a coluna "Tamanho".
+3. Extraia as três primeiras linhas.
+4. Crie um subconjunto contendo apenas uma espécie específica.
+
+---
+
+🔎 **Interpretação**
+
+1. A espécie selecionada apresenta padrão distinto?
+2. Há indícios de variabilidade relevante?
+3. Que outras variáveis poderiam ser analisadas?
+
+---
+
+# ⭐⭐⭐ Exercícios Avançados
+
+---
+
+### Exercício 5 — Criação de Listas
+
+**Objetivo:** Trabalhar com listas contendo diferentes tipos de objetos.
+
+**Tarefa:**
+
+1. Crie uma lista contendo:
+   - Um vetor numérico
+   - Uma matriz
+   - Um data frame
+2. Acesse cada elemento individualmente.
+3. Modifique um dos elementos.
+4. Exiba a estrutura da lista utilizando `str()`.
+
+---
+
+🔎 **Interpretação Crítica**
+
+1. Em que situações listas são mais adequadas que data frames?
+2. Quais vantagens oferecem na organização de dados?
+3. Existem limitações no uso de listas?
+4. Como isso se relaciona com organização de dados científicos?
+
+---
+
+### Exercício 6 — Aplicação de Funções em Estruturas
+
+**Objetivo:** Aplicar funções a estruturas de dados.
+
+**Tarefa:**
+
+1. Crie uma matriz com valores numéricos.
+2. Utilize `apply()` para calcular a média por linha.
+3. Utilize `apply()` para calcular a média por coluna.
+4. Compare os resultados.
+
+---
+
+🔎 **Interpretação Crítica**
+
+1. Há diferença entre médias por linha e por coluna?
+2. O que essa diferença representa?
+3. Em um experimento real, como essa informação poderia ser interpretada?
+4. Que cuidados devem ser tomados ao aplicar funções a estruturas maiores?
+
+---
+
+## 📤 Envio dos Exercícios
+
+- Nome do arquivo: `nome_sobrenome_estruturas.R`
+- O código deve conter comentários explicativos.
+- Enviar via repositório da disciplina.

@@ -1,0 +1,160 @@
+---
+title: "Estatística Descritiva"
+format: html
+---
+
+# 📊 Estatística Descritiva
+
+> Medidas resumo e interpretação da variabilidade dos dados.
+
+---
+
+::: {.callout-note}
+### 🎯 Objetivos do módulo
+
+- Calcular medidas de tendência central
+- Calcular medidas de dispersão
+- Interpretar variabilidade
+- Relacionar medidas estatísticas ao contexto científico
+:::
+
+---
+
+::: {.callout-tip}
+### ✔ Pré-requisitos
+
+- Criação de vetores e data frames
+- Uso de funções básicas no R
+:::
+
+---
+
+# ⭐ Exercícios Básicos
+
+---
+
+### Exercício 1 — Medidas de Tendência Central
+
+**Objetivo:** Calcular média e mediana.
+
+**Tarefa:**
+
+1. Crie um vetor com 20 valores numéricos.
+2. Calcule a média.
+3. Calcule a mediana.
+4. Compare os dois valores obtidos.
+
+---
+
+### Exercício 2 — Medidas de Dispersão
+
+**Objetivo:** Calcular variabilidade dos dados.
+
+**Tarefa:**
+
+1. Utilize o vetor criado anteriormente.
+2. Calcule a variância.
+3. Calcule o desvio padrão.
+4. Calcule o coeficiente de variação.
+
+---
+
+# ⭐⭐ Exercícios Intermediários
+
+---
+
+### Exercício 3 — Exploração do Dataset `iris`
+
+**Objetivo:** Aplicar estatística descritiva a dados reais.
+
+**Tarefa:**
+
+1. Carregue o dataset `iris`.
+2. Calcule a média de `Sepal.Length`.
+3. Calcule o desvio padrão de `Sepal.Length`.
+4. Calcule a média de `Sepal.Length` para cada espécie.
+
+---
+
+🔎 **Interpretação**
+
+1. Há diferença evidente entre as espécies?
+2. A variabilidade parece semelhante entre grupos?
+3. A média é suficiente para representar os dados?
+
+---
+
+### Exercício 4 — Análise por Grupo
+
+**Objetivo:** Comparar medidas resumo entre categorias.
+
+**Tarefa:**
+
+1. Utilize o dataset `mtcars`.
+2. Calcule a média de `mpg` para carros automáticos e manuais.
+3. Calcule o desvio padrão para cada grupo.
+4. Organize os resultados em uma tabela resumo.
+
+---
+
+🔎 **Interpretação**
+
+1. Há diferença aparente entre os grupos?
+2. A variabilidade é semelhante?
+3. Essa diferença sugere possível significância estatística?
+
+---
+
+# ⭐⭐⭐ Exercícios Avançados
+
+---
+
+### Exercício 5 — Identificação de Outliers
+
+**Objetivo:** Detectar valores extremos.
+
+**Tarefa:**
+
+1. Utilize `Sepal.Length` do dataset `iris`.
+2. Calcule os quartis.
+3. Calcule o intervalo interquartil (IQR).
+4. Identifique possíveis outliers.
+
+---
+
+🔎 **Interpretação Crítica**
+
+1. Existem valores extremos relevantes?
+2. Esses valores devem ser removidos?
+3. Que critérios justificariam a remoção?
+4. Como outliers podem afetar média e desvio padrão?
+
+---
+
+### Exercício 6 — Assimetria e Distribuição
+
+**Objetivo:** Avaliar características da distribuição.
+
+**Tarefa:**
+
+1. Crie um vetor com dados assimétricos.
+2. Calcule média e mediana.
+3. Compare os resultados.
+4. Gere um histograma.
+
+---
+
+🔎 **Interpretação Crítica**
+
+1. A distribuição é simétrica?
+2. A média representa bem os dados?
+3. Quando a mediana é mais adequada?
+4. Que implicações isso tem para análise científica?
+
+---
+
+## 📤 Envio dos Exercícios
+
+- Nome do arquivo: `nome_sobrenome_descritiva.R`
+- O código deve conter comentários explicativos.
+- Enviar via repositório da disciplina.
